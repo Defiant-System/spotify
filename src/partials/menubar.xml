@@ -1,0 +1,12 @@
+<MenuBar>
+	<Menu name="Spotify">
+		<Menu name="About Spotify" shell="win -a"/>
+		<Menu type="divider"/>
+		<Menu name="Quit Spotify" shell="win -c"/>
+	</Menu>
+	<Menu name="Help">
+		<Menu name="Help" click="open-help"/>
+		<Menu type="divider"/>
+		<Menu name="License"/>
+	</Menu>
+</MenuBar>
