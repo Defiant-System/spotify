@@ -24,6 +24,13 @@ border-radius: 29px;
 	i[class^="icon-"] {
 		opacity: .5;
 	}
+	.progress {
+		.progress-track {
+			.progress-played {
+				background: #00ea89;
+			}
+		}
+	}
 }
 
 
@@ -246,7 +253,7 @@ content {
 		transition: 150ms ease-in-out;
 
 		.progress-played {
-			background: #00ea89;
+			background: #00a762;
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -255,6 +262,7 @@ content {
 			display: inline-block;
 			border-radius: inherit;
 			pointer-events: none;
+			transition: background 150ms ease-in-out;
 		}
 	}
 }
