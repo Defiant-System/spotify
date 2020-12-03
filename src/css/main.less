@@ -1,5 +1,5 @@
 
-@import (css) url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 
 background-color: rgba(0,0,0,.75);
 backdrop-filter: blur(21px);
@@ -42,12 +42,12 @@ border-radius: 29px;
 		opacity: .5;
 	}
 
-	.left-controls .ctrl-range .volume-track,
+	.right-controls .ctrl-range .volume-track,
 	.progress .progress-track {
 		background: #555;
 	}
-	
-	.left-controls .ctrl-range .volume-track .volume-amount,
+
+	.right-controls .ctrl-range .volume-track .volume-amount,
 	.progress .progress-track .progress-played {
 		background: #00ea89;
 	}
@@ -78,7 +78,7 @@ i[class^="icon-"] {
 	&.icon-player-repeat   { background-image: url(~/icons/icon-repeat.png); }
 }
 
-content {
+layout {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -90,7 +90,7 @@ content {
 
 .top-title {
 	position: absolute;
-	top: 2px;
+	top: 1px;
 	left: 37px;
 	right: 37px;
 	height: 22px;
@@ -112,11 +112,21 @@ content {
 	}
 }
 
-.left-controls {
+content {
+	position: absolute;
+	top: 27px;
+	left: 27px;
+	right: 27px;
+	bottom: 27px;
+	border-radius: 3px;
+}
+
+.left-controls,
+.right-controls {
 	// background: rgba(100,100,100,.2);
 	position: absolute;
 	top: 107px;
-	bottom: 37px;
+	bottom: 29px;
 	left: 1px;
 	width: 24px;
 	padding: 3px 0 0 1px;
@@ -164,6 +174,7 @@ content {
 			left: 7px;
 			width: 2px;
 			border-radius: 5px;
+			transition: background 150ms ease-in-out;
 			
 			.volume-amount {
 				background: #008951;
@@ -176,6 +187,12 @@ content {
 			}
 		}
 	}
+}
+
+.right-controls {
+	top: 29px;
+	left: auto;
+	right: 1px;
 }
 
 .bottom-controls {
