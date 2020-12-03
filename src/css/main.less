@@ -6,8 +6,25 @@ backdrop-filter: blur(21px);
 border-radius: 29px;
 
 .win-caption-buttons_ {
-	top: 6px;
-	left: 28px;
+	top: 29px;
+	left: 6px;
+	width: 15px;
+	height: 56px;
+
+	btn {
+		width: 13px;
+		height: 13px;
+		left: 1px;
+
+		span {
+			width: 9px;
+			height: 9px;
+		}
+
+		&:nth-child(1) { top: 2px; }
+		&:nth-child(2) { top: 23px; }
+		&:nth-child(3) { top: 44px; }
+	}
 }
 
 &.antwin-headless_ .win-body_ {
@@ -69,8 +86,8 @@ content {
 .top-title {
 	position: absolute;
 	top: 2px;
-	left: 90px;
-	right: 90px;
+	left: 37px;
+	right: 37px;
 	height: 22px;
 	padding: 4px 0 0;
 	text-align: center;
@@ -93,16 +110,16 @@ content {
 .left-controls {
 	// background: rgba(100,100,100,.2);
 	position: absolute;
-	top: 29px;
+	top: 91px;
 	bottom: 29px;
 	left: 1px;
 	width: 24px;
-	padding: 17px 0 0 1px;
+	padding: 3px 0 0 1px;
 
 	> span {
 		display: inline-block;
 		padding: 3px;
-		margin: 2px 0;
+		margin: 1px 0;
 		cursor: pointer;
 
 		&:hover i[class^="icon-"] {
