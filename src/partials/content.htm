@@ -1,12 +1,28 @@
 <content>
+	<!-- top title bar -->
+	<div class="top-title">
+		<span class="band-name">Metallica</span>
+		<span class="song-name">Nothing Else Matters</span>
+	</div>
+
 	<!-- left side controls -->
 	<div class="left-controls">
-		
+		<span class="ctrl-home" data-click="go-to-home">
+			<i class="icon-home"></i>
+		</span>
+		<span class="ctrl-browse" data-click="go-to-browse">
+			<i class="icon-browse"></i>
+		</span>
+		<span class="ctrl-radio" data-click="go-to-radio">
+			<i class="icon-radio"></i>
+		</span>
 	</div>
 
 	<!-- right side controls -->
 	<div class="right-controls">
-		
+		<span class="ctrl-volume" data-click="toggle-volume">
+			<i class="icon-volume"></i>
+		</span>
 	</div>
 
 	<!-- bottom controls -->
@@ -14,23 +30,25 @@
 		<!-- progress bar -->
 		<div class="progress">
 			<span class="time-played">1:09</span>
-			<span class="progress-played"></span>
+			<span class="progress-track">
+				<span class="progress-played"></span>
+			</span>
 			<span class="time-total">4:25</span>
 		</div>
-		
-		<span class="btn-random" data-click="play-random">
+
+		<span class="ctrl-random" data-click="play-random">
 			<i class="icon-player-random"></i>
 		</span>
-		<span class="btn-prev" data-click="play-prev">
+		<span class="ctrl-prev" data-click="play-prev">
 			<i class="icon-player-previous"></i>
 		</span>
-		<span class="btn-play" data-click="toggle-play">
+		<span class="ctrl-play" data-click="toggle-play">
 			<i class="icon-player-play"></i>
 		</span>
-		<span class="btn-next" data-click="play-next">
+		<span class="ctrl-next" data-click="play-next">
 			<i class="icon-player-next"></i>
 		</span>
-		<span class="btn-repeat" data-click="play-repeat">
+		<span class="ctrl-repeat" data-click="play-repeat">
 			<i class="icon-player-repeat"></i>
 		</span>
 	</div>
