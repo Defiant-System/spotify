@@ -41,12 +41,15 @@ border-radius: 29px;
 	i[class^="icon-"] {
 		opacity: .5;
 	}
-	.progress {
-		.progress-track {
-			.progress-played {
-				background: #00ea89;
-			}
-		}
+
+	.left-controls .ctrl-range .volume-track,
+	.progress .progress-track {
+		background: #555;
+	}
+	
+	.left-controls .ctrl-range .volume-track .volume-amount,
+	.progress .progress-track .progress-played {
+		background: #00ea89;
 	}
 }
 
@@ -64,6 +67,8 @@ i[class^="icon-"] {
 	&.icon-home     { background-image: url(~/icons/icon-home.png); }
 	&.icon-browse   { background-image: url(~/icons/icon-browse.png); }
 	&.icon-radio    { background-image: url(~/icons/icon-radio.png); }
+	&.icon-queue    { background-image: url(~/icons/icon-queue.png); }
+	&.icon-devices    { background-image: url(~/icons/icon-devices.png); }
 	&.icon-volume   { background-image: url(~/icons/icon-volume.png); }
 
 	&.icon-player-random   { background-image: url(~/icons/icon-random.png); }
@@ -110,13 +115,23 @@ content {
 .left-controls {
 	// background: rgba(100,100,100,.2);
 	position: absolute;
-	top: 91px;
-	bottom: 29px;
+	top: 107px;
+	bottom: 37px;
 	left: 1px;
 	width: 24px;
 	padding: 3px 0 0 1px;
+	display: flex;
+	flex-flow: column;
 
-	> span {
+	.top {
+		flex: 1;
+	}
+
+	.bottom {
+
+	}
+
+	> div > span {
 		display: inline-block;
 		padding: 3px;
 		margin: 1px 0;
@@ -131,59 +146,34 @@ content {
 			height: 17px;
 		}
 	}
-}
-
-.right-controls {
-	// background: rgba(100,100,100,.2);
-	position: absolute;
-	top: 23px;
-	bottom: 23px;
-	right: 1px;
-	width: 24px;
-	display: flex;
-	flex-flow: column-reverse;
-	padding: 0 3px 0 0;
 
 	.ctrl-range {
 		// background: rgba(255,255,255,.2);
 		position: relative;
-		top: -7px;
-		left: 2px;
+		top: 0;
+		left: 3px;
 		width: 20px;
 		height: 83px;
+		margin-bottom: 7px;
 
 		.volume-track {
-			background: #555;
+			background: #333;
 			position: absolute;
 			top: 0;
 			bottom: 0;
 			left: 7px;
-			width: 3px;
+			width: 2px;
 			border-radius: 5px;
 			
 			.volume-amount {
-				background: #00a762;
+				background: #008951;
 				position: absolute;
 				bottom: 0;
 				height: 31%;
 				width: inherit;
 				border-radius: inherit;
+				transition: background 150ms ease-in-out;
 			}
-		}
-	}
-
-	> span {
-		display: inline-block;
-		padding: 3px;
-		cursor: pointer;
-
-		&:hover i[class^="icon-"] {
-			opacity: 1;
-		}
-
-		i[class^="icon-"] {
-			width: 17px;
-			height: 17px;
 		}
 	}
 }
@@ -288,7 +278,7 @@ content {
 	}
 
 	.progress-track {
-		background: #555;
+		background: #444;
 		position: absolute;
 		top: 0px;
 		left: 2px;
@@ -298,7 +288,7 @@ content {
 		transition: 150ms ease-in-out;
 
 		.progress-played {
-			background: #00a762;
+			background: #008951;
 			position: absolute;
 			top: 0;
 			left: 0;
