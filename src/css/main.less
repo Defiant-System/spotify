@@ -31,14 +31,13 @@ border-radius: 29px;
 	background: transparent;
 	font-family: "Lato", sans-serif;
 	font-size: 13px;
-	line-height: 1.25;
 	overflow: visible;
 	box-shadow: inset 0 0 0 27px #000;
     border-radius: inherit;
 }
 
 &:hover {
-	i[class^="icon-"] {
+	div[class*="-controls"] i[class^="icon-"] {
 		opacity: .5;
 	}
 
@@ -68,7 +67,7 @@ i[class^="icon-"] {
 	&.icon-browse   { background-image: url(~/icons/icon-browse.png); }
 	&.icon-radio    { background-image: url(~/icons/icon-radio.png); }
 	&.icon-queue    { background-image: url(~/icons/icon-queue.png); }
-	&.icon-devices    { background-image: url(~/icons/icon-devices.png); }
+	&.icon-devices  { background-image: url(~/icons/icon-devices.png); }
 	&.icon-volume   { background-image: url(~/icons/icon-volume.png); }
 
 	&.icon-player-random   { background-image: url(~/icons/icon-random.png); }
@@ -76,6 +75,10 @@ i[class^="icon-"] {
 	&.icon-player-play     { background-image: url(~/icons/icon-play.png); }
 	&.icon-player-next     { background-image: url(~/icons/icon-next.png); }
 	&.icon-player-repeat   { background-image: url(~/icons/icon-repeat.png); }
+
+	&.icon-clock       { background-image: url(~/icons/icon-clock.png); }
+	&.icon-heart       { background-image: url(~/icons/icon-heart.png); }
+	&.icon-heart-full  { background-image: url(~/icons/icon-heart-full.png); }
 }
 
 layout {
@@ -94,7 +97,7 @@ layout {
 	left: 37px;
 	right: 37px;
 	height: 22px;
-	padding: 4px 0 0;
+	padding: 6px 0 0;
 	text-align: center;
 
 	.band-name {
@@ -110,15 +113,6 @@ layout {
 	.song-name {
 		color: #bbb;
 	}
-}
-
-content {
-	position: absolute;
-	top: 27px;
-	left: 27px;
-	right: 27px;
-	bottom: 27px;
-	border-radius: 3px;
 }
 
 .left-controls,
@@ -316,5 +310,126 @@ content {
 			pointer-events: none;
 			transition: background 150ms ease-in-out;
 		}
+	}
+}
+
+content {
+	position: absolute;
+	top: 27px;
+	left: 27px;
+	right: 27px;
+	bottom: 27px;
+	border-radius: 3px;
+	padding: 23px 19px;
+	color: #bbb;
+	font-weight: 100;
+	line-height: 1.8;
+}
+
+
+.playlist-head {
+	// background: rgba(0,0,0,.5);
+	height: 70px;
+
+	h2 {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 27px;
+		color: #eee;
+	}
+
+	.albums {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 0;
+		margin-right: 42px;
+
+		&:hover {
+			.album:not(:last-child) {
+				margin-right: 7px;
+			}
+		}
+
+		.album {
+			background-image: var(--mosaic-url);
+			background-size: 200%;
+			background-repeat: no-repeat;
+			position: relative;
+			width: 47px;
+			height: 47px;
+			border-radius: 50%;
+			box-shadow: inset 0 0 0 2px rgba(255,255,255,.75),
+						2px 2px 5px rgba(0,0,0,.5);
+			display: inline-block;
+			margin-right: -29px;
+			transition: margin-right 150ms ease-in-out;
+
+			&:nth-child(1) { z-index: 4; background-position: 0 0; }
+			&:nth-child(2) { z-index: 3; background-position: 100% 0; }
+			&:nth-child(3) { z-index: 2; background-position: 0 100%; }
+			&:nth-child(4) { z-index: 1; background-position: 100% 100%; }
+		}
+	}
+}
+
+
+.table {
+	i[class^="icon-"] {
+		width: 15px;
+		height: 15px;
+		vertical-align: top;
+	}
+
+	.row {
+		display: flex;
+		border-bottom: 1px solid #66666640;
+
+		&:hover:not(.head) {
+			color: #fff;
+			background: #66666630;
+		}
+
+		&.head {
+			text-transform: uppercase;
+			font-size: 12px;
+			color: #777;
+
+			.cell i.icon-clock {
+				margin: -1px 3px -3px 0;
+			}
+		}
+
+		&.playing {
+			color: #00ea89;
+
+			.cell:nth-child(1):before {
+				content: "";
+				display: inline-block;
+				width: 17px;
+				height: 17px;
+				background: url(~/icons/icon-volume.png) 0 0 no-repeat;
+				opacity: .2;
+				margin-top: -1px;
+				margin-right: 9px;
+				vertical-align: top;
+			}
+		}
+	}
+
+	.cell {
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		padding: 7px 3px 5px;
+
+		&:nth-child(1) {
+			width: 59px;
+			text-align: right;
+			padding: 11px 11px 0 0;
+		}
+		&:nth-child(2) { flex: 1; }
+		&:nth-child(3) { width: 180px; }
+		&:nth-child(4) { width: 160px; }
+		&:nth-child(5) { width: 50px; text-align: right; padding-right: 7px; }
 	}
 }
