@@ -37,8 +37,14 @@ border-radius: 29px;
 }
 
 &:hover {
-	div[class*="-controls"] i[class^="icon-"] {
-		opacity: .5;
+	div[class*="-controls"] {
+		.active i[class^="icon-"] {
+			opacity: .75;
+		}
+
+		i[class^="icon-"] {
+			opacity: .5;
+		}
 	}
 
 	.right-controls .ctrl-range .volume-track,
@@ -141,11 +147,19 @@ layout {
 		margin: 1px 0;
 		cursor: pointer;
 
+		&.active {
+			i[class^="icon-"] {
+				opacity: .5;
+				filter: none;
+			}
+		}
+
 		&:hover i[class^="icon-"] {
 			opacity: 1;
 		}
 
 		i[class^="icon-"] {
+			filter: grayscale();
 			width: 17px;
 			height: 17px;
 		}
