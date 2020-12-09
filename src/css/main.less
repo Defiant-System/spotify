@@ -339,6 +339,8 @@ content {
 	}
 
 	.albums {
+		background-size: 0;
+		background-repeat: no-repeat;
 		display: inline-block;
 		vertical-align: middle;
 		font-size: 0;
@@ -351,7 +353,7 @@ content {
 		}
 
 		.album {
-			background-image: var(--mosaic-url);
+			background-image: inherit;
 			background-size: 200%;
 			background-repeat: no-repeat;
 			position: relative;
