@@ -404,34 +404,84 @@ content {
 	border-radius: inherit;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
-	padding: 7px 13px;
-	background-color: rgba(20,20,20,.9);
+	padding: 7px 17px;
+	background-color: rgba(10,25,10,.925);
 	backdrop-filter: blur(9px);
-	box-shadow: 2px 0 3px rgba(0,0,0,.85);
-	clip-path: inset(0px -5px 0px 0);
-	color: #ccc;
+	box-shadow: 2px 0 7px rgba(0,0,0,.5);
+	clip-path: inset(0px -7px 0px 0);
+	color: #bbb;
 
 	h2 {
 		font-size: 11px;
 		letter-spacing: 1px;
 		text-transform: uppercase;
-		padding: 5px 0;
+		padding: 5px 0 7px;
 		color: #777;
 	}
 
 	h5 {
 		font-size: 13px;
-		padding: 4px 0 5px;
+		padding: 5px 0 5px;
 		cursor: pointer;
-
-		&:hover {
-			color: #fff;
-		}
 	}
 
 	ul {
 		list-style: none;
 		padding: 0;
+
+		li {
+			position: relative;
+
+			&:hover > h5 {
+				color: #fff;
+			}
+
+			&.active {
+				> h5 {
+					color: #fff;
+				}
+
+				&:before {
+					content: "";
+					position: absolute;
+					top: 8px;
+					left: -12px;
+					width: 6px;
+					height: 6px;
+					border-radius: 50%;
+					background: #00ea89;
+				}
+			}
+
+			&.folder {
+				> h5:after {
+					content: "";
+					position: absolute;
+					top: 5px;
+					right: -3px;
+					width: 10px;
+					height: 10px;
+					opacity: .75;
+					cursor: pointer;
+					background: url(~/icons/icon-chevron-left.png) 50% 50% no-repeat;
+					transition: transform 120ms ease-in-out;
+				}
+
+				&.expanded {
+					> h5:after {
+						transform: rotate(90deg);
+					}
+				}
+
+				&:hover > h5:after {
+					opacity: 1;
+				}
+			}
+		}
+
+		ul {
+			padding: 0 0 0 13px;
+		}
 	}
 }
 
