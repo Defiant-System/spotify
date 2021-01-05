@@ -33,7 +33,9 @@
 		<div class="bottom">
 			<div class="ctrl-range">
 				<span class="volume-track">
-					<span class="volume-amount"></span>
+					<span class="volume-amount">
+						<span class="knob"></span>
+					</span>
 				</span>
 			</div>
 
@@ -49,7 +51,9 @@
 		<div class="progress">
 			<span class="time-played">1:09</span>
 			<span class="progress-track">
-				<span class="progress-played"></span>
+				<span class="progress-played">
+					<span class="knob"></span>
+				</span>
 			</span>
 			<span class="time-total">4:25</span>
 		</div>
@@ -72,9 +76,34 @@
 	</div>
 
 	<content>
-		
-		@import "static/playlist-head.htm"
-		@import "static/playlist.htm"
+		<div class="sidebar">
+			<h2>Playlists</h2>
+			<ul>
+				<li><h5>Reggae</h5></li>
+				<li><h5>70s, 80s</h5></li>
+				<li><h5>Jazz &amp; Blues</h5></li>
+				<li><h5>chillout 2</h5></li>
+				<li><h5>Chillout</h5></li>
+				<li><h5>Friday</h5></li>
+				<li><h5>Southern Gothic</h5></li>
+				<li><h5>Sv Klassiker</h5></li>
+				<li>
+					<h5>Hiphop</h5>
+					<ul>
+						<li><h5>Sv. Hiohop</h5></li>
+						<li><h5>Hiphop</h5></li>
+						<li><h5>Turkisk Hiphop</h5></li>
+					</ul>
+				</li>
+				<li><h5>Turkisk</h5></li>
+				<li><h5>Rock</h5></li>
+				<li><h5>House</h5></li>
+			</ul>
+		</div>
 
+		<div class="body">
+			@import "static/playlist-head.htm"
+			@import "static/playlist.htm"
+		</div>
 	</content>
 </layout>
