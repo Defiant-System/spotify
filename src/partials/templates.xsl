@@ -26,8 +26,16 @@
 		</div>
 		<div class="table-body">
 			<xsl:for-each select="./*">
+				<xsl:sort order="ascending" select="@_index"/>
 				<div class="row">
-					<div class="cell"><i class="icon-heart"></i></div>
+					<div class="cell">
+						<i class="icon-player-play"></i>
+						<i class="icon-heart">
+							<xsl:if test="position() &lt; 5">
+								<xsl:attribute name="class">icon-heart-full</xsl:attribute>
+							</xsl:if>
+						</i>
+					</div>
 					<div class="cell"><xsl:value-of select="@name"/></div>
 					<div class="cell"><xsl:value-of select="artists/@name"/></div>
 					<div class="cell"><xsl:value-of select="album/@name"/></div>

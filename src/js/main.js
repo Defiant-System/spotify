@@ -5,6 +5,7 @@ const spotify = {
 		this.els = {
 			content: window.find("content"),
 			body: window.find("content .body"),
+			sidebar: window.find("content .sidebar"),
 		};
 
 		window.render({
@@ -32,10 +33,10 @@ const spotify = {
 				}
 				break;
 			case "go-to-home":
-				Self.els.content.find(".sidebar").addClass("show");
+				Self.els.sidebar.addClass("show");
 				break;
 			case "go-to-browse":
-				Self.els.content.find(".sidebar").removeClass("show");
+				Self.els.sidebar.removeClass("show");
 				break;
 		}
 	}
