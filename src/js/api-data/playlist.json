@@ -1,0 +1,179 @@
+/*
+	ID:		4Wqhmyri54LKWet5NmrIRY
+	FIELDS:	items(track(name,href,duration_ms,artist(name,href),album(name,href)))
+*/
+
+{
+  "items": [
+    {
+      "track": {
+        "album": {
+          "href": "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
+          "name": "Connected"
+        },
+        "artists": [
+          {
+            "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+            "name": "Stereo MC's"
+          }
+        ],
+        "duration_ms": 252666,
+        "href": "https://api.spotify.com/v1/tracks/1UgsbIteej4QpAcX3aUFeV",
+        "name": "Ground Level"
+      }
+    },
+    {
+      "track": {
+        "album": {
+          "href": "https://api.spotify.com/v1/albums/6ydThtRPfXjHS79flxvVMC",
+          "name": "Paradise"
+        },
+        "artists": [
+          {
+            "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+            "name": "Stereo MC's"
+          }
+        ],
+        "duration_ms": 274720,
+        "href": "https://api.spotify.com/v1/tracks/0XM5qsvRQGSWE1hlSq4E5b",
+        "name": "I Feel You"
+      }
+    },
+    {
+      "track": {
+        "album": {
+          "href": "https://api.spotify.com/v1/albums/3EqE50w57ZSxSDGhmL1tg4",
+          "name": "Supernatural"
+        },
+        "artists": [
+          {
+            "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+            "name": "Stereo MC's"
+          }
+        ],
+        "duration_ms": 196826,
+        "href": "https://api.spotify.com/v1/tracks/7uABD1Cd6M8SGA75OxeUqB",
+        "name": "Elevate My Mind"
+      }
+    },
+    {
+      "track": {
+        "album": {
+          "href": "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
+          "name": "Connected"
+        },
+        "artists": [
+          {
+            "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+            "name": "Stereo MC's"
+          }
+        ],
+        "duration_ms": 313000,
+        "href": "https://api.spotify.com/v1/tracks/1ZoE2naC9ySlPLdBZhS1rM",
+        "name": "Connected"
+      }
+    },
+    {
+      "track": {
+        "album": {
+          "href": "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
+          "name": "Connected"
+        },
+        "artists": [
+          {
+            "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+            "name": "Stereo MC's"
+          }
+        ],
+        "duration_ms": 301000,
+        "href": "https://api.spotify.com/v1/tracks/6Y1HIgqlgYSzMalK6eBiEP",
+        "name": "Step It Up"
+      }
+    },
+    {
+      "track": {
+        "album": {
+          "href": "https://api.spotify.com/v1/albums/1XlIVmi1cBZvBrdhzDeYTO",
+          "name": "Deep Down & Dirty"
+        },
+        "artists": [
+          {
+            "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+            "name": "Stereo MC's"
+          }
+        ],
+        "duration_ms": 315600,
+        "href": "https://api.spotify.com/v1/tracks/02I0QezAPPO9Q9i1or053S",
+        "name": "Traffic"
+      }
+    },
+    {
+      "track": {
+        "album": {
+          "href": "https://api.spotify.com/v1/albums/1XlIVmi1cBZvBrdhzDeYTO",
+          "name": "Deep Down & Dirty"
+        },
+        "artists": [
+          {
+            "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+            "name": "Stereo MC's"
+          }
+        ],
+        "duration_ms": 280906,
+        "href": "https://api.spotify.com/v1/tracks/4Mo94v268UDbjG9QLGTWBb",
+        "name": "The Right Effect"
+      }
+    },
+    {
+      "track": {
+        "album": {
+          "href": "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
+          "name": "Connected"
+        },
+        "artists": [
+          {
+            "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+            "name": "Stereo MC's"
+          }
+        ],
+        "duration_ms": 304000,
+        "href": "https://api.spotify.com/v1/tracks/2RAX6iVOjhH5vL33shTzfX",
+        "name": "Creation"
+      }
+    },
+    {
+      "track": {
+        "album": {
+          "href": "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
+          "name": "Connected"
+        },
+        "artists": [
+          {
+            "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+            "name": "Stereo MC's"
+          }
+        ],
+        "duration_ms": 229840,
+        "href": "https://api.spotify.com/v1/tracks/4kWFbqvYW3izvkcCmQVyG0",
+        "name": "The End"
+      }
+    },
+    {
+      "track": {
+        "album": {
+          "href": "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
+          "name": "Connected"
+        },
+        "artists": [
+          {
+            "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+            "name": "Stereo MC's"
+          }
+        ],
+        "duration_ms": 343666,
+        "href": "https://api.spotify.com/v1/tracks/31z4dKubn9SVuuo4ZAj5R1",
+        "name": "Sketch"
+      }
+    }
+  ]
+}

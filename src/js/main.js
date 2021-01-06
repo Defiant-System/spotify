@@ -2,7 +2,16 @@
 const spotify = {
 	init() {
 		// fast references
-		this.content = window.find("content");
+		this.els = {
+			content: window.find("content"),
+			body: window.find("content .body"),
+		};
+
+		window.render({
+			template: "playlist",
+			match: "//Playlist",
+			target: this.els.body
+		});
 	},
 	dispatch(event) {
 		let Self = spotify,
@@ -23,10 +32,10 @@ const spotify = {
 				}
 				break;
 			case "go-to-home":
-				Self.content.find(".sidebar").addClass("show");
+				Self.els.content.find(".sidebar").addClass("show");
 				break;
 			case "go-to-browse":
-				Self.content.find(".sidebar").removeClass("show");
+				Self.els.content.find(".sidebar").removeClass("show");
 				break;
 		}
 	}
