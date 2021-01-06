@@ -393,6 +393,21 @@ content {
 	bottom: 27px;
 	border-radius: 3px;
 	overflow: hidden;
+
+	&.panel-showing .cover {
+		display: block;
+	}
+
+	.cover {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 97;
+		background: transparent;
+	}
 }
 
 div[data-area="panel"] {

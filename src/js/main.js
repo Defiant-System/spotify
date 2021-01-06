@@ -20,6 +20,9 @@ const spotify = {
 			case "open-help":
 				defiant.shell("fs -u '~/help/index.md'");
 				break;
+			case "close-panel":
+				Self.sidebar.dispatch(event);
+				break;
 			/*
 			case "do-sidebar-list":
 				el = $(event.target);
