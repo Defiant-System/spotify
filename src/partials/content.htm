@@ -6,28 +6,28 @@
 	</div>
 
 	<!-- left side controls -->
-	<div class="left-controls">
+	<div data-area="sidebar">
 		<div class="top">
-			<span class="ctrl-home active" title="Home" data-click="go-to-home">
+			<span class="ctrl-home active" title="Home" data-click="go-home">
 				<i class="icon-home"></i>
 			</span>
-			<span class="ctrl-browse" title="Browse" data-click="go-to-browse">
+			<span class="ctrl-browse" title="Browse" data-click="go-browse">
 				<i class="icon-browse"></i>
 			</span>
-			<span class="ctrl-radio" title="Radio" data-click="go-to-radio">
+			<span class="ctrl-radio" title="Radio" data-click="go-radio">
 				<i class="icon-radio"></i>
 			</span>
-			<span class="ctrl-queue" title="Queue" data-click="go-to-queue">
+			<span class="ctrl-queue" title="Queue" data-click="go-queue">
 				<i class="icon-queue"></i>
 			</span>
-			<span class="ctrl-devices" title="Devices Available" data-click="go-to-devices">
+			<span class="ctrl-devices" title="Devices Available" data-click="go-devices">
 				<i class="icon-devices"></i>
 			</span>
 		</div>
 	</div>
 
 	<!-- left side controls -->
-	<div class="right-controls">
+	<div data-area="volume">
 		<div class="top">
 		</div>
 		<div class="bottom">
@@ -46,7 +46,7 @@
 	</div>
 
 	<!-- bottom controls -->
-	<div class="bottom-controls">
+	<div data-area="player">
 		<!-- progress bar -->
 		<div class="progress">
 			<span class="time-played">1:09</span>
@@ -76,9 +76,9 @@
 	</div>
 
 	<content>
-		<div class="sidebar">
+		<div data-area="panel">
 			<h2>Playlists</h2>
-			<ul data-click="do-sidebar-list">
+			<ul data-click="toggle-list-folder">
 				<li class="item"><h5>Reggae</h5></li>
 				<li class="item"><h5>70s, 80s</h5></li>
 				<li class="item"><h5>Jazz &amp; Blues</h5></li>

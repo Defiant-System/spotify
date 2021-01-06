@@ -4,15 +4,12 @@ const spotify = {
 		// fast references
 		this.els = {
 			content: window.find("content"),
-			body: window.find("content .body"),
-			sidebar: window.find("content .sidebar"),
+			// body: window.find("content .body"),
+			// sidebar: window.find("content .sidebar"),
 		};
 
-		window.render({
-			template: "playlist",
-			match: "//Playlist",
-			target: this.els.body
-		});
+		// init sub modules
+		Object.keys(this).filter(i => this[i].init).map(i => this[i].init());
 	},
 	dispatch(event) {
 		let Self = spotify,
@@ -23,6 +20,7 @@ const spotify = {
 			case "open-help":
 				defiant.shell("fs -u '~/help/index.md'");
 				break;
+			/*
 			case "do-sidebar-list":
 				el = $(event.target);
 				if (el.hasClass("folder")) {
@@ -38,8 +36,22 @@ const spotify = {
 			case "go-to-browse":
 				Self.els.sidebar.removeClass("show");
 				break;
+			*/
+			default:
+				if (event.el) {
+					let pEl = event.el.parents("[data-area]");
+					let area = pEl.data("area");
+					if (pEl.length && Self[area].dispatch) {
+						Self[area].dispatch(event);
+					}
+				}
 		}
-	}
+	},
+	panel:    @import "modules/panel.js",
+	sidebar:  @import "modules/sidebar.js",
+	playlist: @import "modules/playlist.js",
+	volume:   @import "modules/volume.js",
+	player:   @import "modules/player.js",
 };
 
 window.exports = spotify;
