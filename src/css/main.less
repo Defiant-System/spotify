@@ -464,7 +464,7 @@ content {
 			}
 
 			&.folder {
-				> h5:after {
+				&:after {
 					content: "";
 					position: absolute;
 					top: 5px;
@@ -478,7 +478,7 @@ content {
 				}
 
 				&.expanded {
-					> h5:after {
+					&:after {
 						transform: rotate(90deg);
 					}
 
@@ -487,7 +487,7 @@ content {
 					}
 				}
 
-				&:hover > h5:after {
+				&:hover:after {
 					opacity: 1;
 				}
 			}
