@@ -455,8 +455,9 @@ div[data-area="panel"] {
 
 		li {
 			position: relative;
+			cursor: pointer;
 
-			&:not(.expanded):hover > h5 {
+			&:not(.expanded):not(.active):hover > h5 {
 				color: #fff;
 			}
 
@@ -538,20 +539,41 @@ div[data-area="panel"] {
 
 	.playlist-head {
 		height: 83px;
-		padding: 23px 19px;
+		padding: 17px 19px;
 
 		h2 {
 			display: inline-block;
-			vertical-align: middle;
-			font-size: 27px;
+			font-size: 25px;
+			line-height: 1.5;
 			color: #eee;
+
+			.playlist-owner {
+				color: #999;
+				font-size: 12px;
+				margin-top: -5px;
+
+				span {
+					color: #ddd;
+
+					&:after {
+						content: "";
+						background: #777;
+						width: 4px;
+						height: 4px;
+						vertical-align: middle;
+						display: inline-block;
+						border-radius: 50%;
+						margin: -1px 5px 0;
+					}
+				}
+			}
 		}
 
 		.albums {
 			background-size: 0;
 			background-repeat: no-repeat;
 			display: inline-block;
-			vertical-align: middle;
+			vertical-align: bottom;
 			font-size: 0;
 			margin-right: 42px;
 
@@ -589,7 +611,7 @@ div[data-area="panel"] {
 		display: flex;
 		flex-direction: column;
 		overflow: hidden;
-		padding: 5px 0 0;
+		padding: 1px 0 0;
 
 		i[class^="icon-"] {
 			width: 15px;
@@ -678,12 +700,12 @@ div[data-area="panel"] {
 			white-space: nowrap;
 			text-overflow: ellipsis;
 			overflow: hidden;
-			padding: 7px 3px 5px;
+			padding: 6px 3px;
 
 			&:nth-child(1) {
 				width: 59px;
 				text-align: right;
-				padding: 11px 11px 0 0;
+				padding: 10px 11px 0 0;
 			}
 			&:nth-child(2) { flex: 1; min-width: 21%; }
 			&:nth-child(3) { width: 180px; }

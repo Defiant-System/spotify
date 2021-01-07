@@ -1,7 +1,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 
-<xsl:template name="playlist-head">
+<xsl:template name="playlist-view">
 	<div class="playlist-head">
 		<div class="albums" style="background-image: url(~/img/mosaic.jpeg);">
 			<div class="album"></div>
@@ -9,15 +9,16 @@
 			<div class="album"></div>
 			<div class="album"></div>
 		</div>
-		<h2>Old Playlist</h2>
+		<h2>
+			Old Playlist
+			<div class="playlist-owner">
+				Created by <span>Hakan Bilgin</span>
+				(123 songs)
+			</div>
+		</h2>
 	</div>
-</xsl:template>
-
-
-<xsl:template name="playlist">
-	<xsl:call-template name="playlist-head" />
 	<div class="table">
-		<div class="row head">
+		<div class="row head" data-click="sort-list">
 			<div class="cell"></div>
 			<div class="cell">Title</div>
 			<div class="cell">Artist</div>
@@ -46,6 +47,11 @@
 			</xsl:for-each>
 		</div>
 	</div>
+</xsl:template>
+
+
+<xsl:template name="artist-view">
+	test
 </xsl:template>
 
 

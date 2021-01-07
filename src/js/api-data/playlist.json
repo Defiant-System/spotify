@@ -1,1525 +1,1856 @@
 /*
 	ID:		4Wqhmyri54LKWet5NmrIRY
-	FIELDS:	name,owner(display_name),images,tracks(items(track(name,href,duration_ms,artists(name,href),album(name,href))))
+	FIELDS:	name,type,uri,owner(display_name),images,tracks(items(track(name,uri,duration_ms,artists(name,uri),album(name,uri))))
 */
 
 {
-  "images" : [ {
-    "height" : 640,
-    "url" : "https://mosaic.scdn.co/640/ab67616d0000b2731dafb37287f4aeb796695849ab67616d0000b2733bdf8d1559780fc9598d9f1eab67616d0000b27342f3ccbc77ffa9a06e6e92d1ab67616d0000b273e8c0eca5da75269b2d229116",
-    "width" : 640
-  }, {
-    "height" : 300,
-    "url" : "https://mosaic.scdn.co/300/ab67616d0000b2731dafb37287f4aeb796695849ab67616d0000b2733bdf8d1559780fc9598d9f1eab67616d0000b27342f3ccbc77ffa9a06e6e92d1ab67616d0000b273e8c0eca5da75269b2d229116",
-    "width" : 300
-  }, {
-    "height" : 60,
-    "url" : "https://mosaic.scdn.co/60/ab67616d0000b2731dafb37287f4aeb796695849ab67616d0000b2733bdf8d1559780fc9598d9f1eab67616d0000b27342f3ccbc77ffa9a06e6e92d1ab67616d0000b273e8c0eca5da75269b2d229116",
-    "width" : 60
-  } ],
-  "name" : "old",
-  "owner" : {
-    "display_name" : "Hakan Bilgin"
-  },
-  "tracks" : {
-    "items" : [ {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
-          "name" : "Connected"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 252666,
-        "href" : "https://api.spotify.com/v1/tracks/1UgsbIteej4QpAcX3aUFeV",
-        "name" : "Ground Level"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/6ydThtRPfXjHS79flxvVMC",
-          "name" : "Paradise"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 274720,
-        "href" : "https://api.spotify.com/v1/tracks/0XM5qsvRQGSWE1hlSq4E5b",
-        "name" : "I Feel You"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3EqE50w57ZSxSDGhmL1tg4",
-          "name" : "Supernatural"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 196826,
-        "href" : "https://api.spotify.com/v1/tracks/7uABD1Cd6M8SGA75OxeUqB",
-        "name" : "Elevate My Mind"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
-          "name" : "Connected"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 313000,
-        "href" : "https://api.spotify.com/v1/tracks/1ZoE2naC9ySlPLdBZhS1rM",
-        "name" : "Connected"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
-          "name" : "Connected"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 301000,
-        "href" : "https://api.spotify.com/v1/tracks/6Y1HIgqlgYSzMalK6eBiEP",
-        "name" : "Step It Up"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/1XlIVmi1cBZvBrdhzDeYTO",
-          "name" : "Deep Down & Dirty"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 315600,
-        "href" : "https://api.spotify.com/v1/tracks/02I0QezAPPO9Q9i1or053S",
-        "name" : "Traffic"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/1XlIVmi1cBZvBrdhzDeYTO",
-          "name" : "Deep Down & Dirty"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 280906,
-        "href" : "https://api.spotify.com/v1/tracks/4Mo94v268UDbjG9QLGTWBb",
-        "name" : "The Right Effect"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
-          "name" : "Connected"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 304000,
-        "href" : "https://api.spotify.com/v1/tracks/2RAX6iVOjhH5vL33shTzfX",
-        "name" : "Creation"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
-          "name" : "Connected"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 229840,
-        "href" : "https://api.spotify.com/v1/tracks/4kWFbqvYW3izvkcCmQVyG0",
-        "name" : "The End"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
-          "name" : "Connected"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 343666,
-        "href" : "https://api.spotify.com/v1/tracks/31z4dKubn9SVuuo4ZAj5R1",
-        "name" : "Sketch"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
-          "name" : "Connected"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 266000,
-        "href" : "https://api.spotify.com/v1/tracks/1omeMDcIlyoUuDzeD6XxfS",
-        "name" : "Fade Away"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
-          "name" : "Connected"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 258826,
-        "href" : "https://api.spotify.com/v1/tracks/5F6Yu1s3rvN7UQV5l04Hkl",
-        "name" : "Playing With Fire"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
-          "name" : "Connected"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 230840,
-        "href" : "https://api.spotify.com/v1/tracks/6GFvGV6yLGInltTbxlzonn",
-        "name" : "Pressure"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
-          "name" : "Connected"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 229160,
-        "href" : "https://api.spotify.com/v1/tracks/6N0o3pElcfEqTgIdQzLU19",
-        "name" : "Chicken Shake"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/1XlIVmi1cBZvBrdhzDeYTO",
-          "name" : "Deep Down & Dirty"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 261399,
-        "href" : "https://api.spotify.com/v1/tracks/16WyvPp6nfgSYgJWPrlXM5",
-        "name" : "Deep Down & Dirty - Original Version"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/1XlIVmi1cBZvBrdhzDeYTO",
-          "name" : "Deep Down & Dirty"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 279040,
-        "href" : "https://api.spotify.com/v1/tracks/1TKdwordQKlZalI2ESv1St",
-        "name" : "We Belong In This World Together"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/1XlIVmi1cBZvBrdhzDeYTO",
-          "name" : "Deep Down & Dirty"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 265933,
-        "href" : "https://api.spotify.com/v1/tracks/3HB0sDUD3fZaCRjxEKlwMq",
-        "name" : "Breeze"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/1XlIVmi1cBZvBrdhzDeYTO",
-          "name" : "Deep Down & Dirty"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 293800,
-        "href" : "https://api.spotify.com/v1/tracks/1SSaGZeeQzUdFwCYQJyl7h",
-        "name" : "Running"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/1XlIVmi1cBZvBrdhzDeYTO",
-          "name" : "Deep Down & Dirty"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 154466,
-        "href" : "https://api.spotify.com/v1/tracks/65XGZ9EfS121FjuIKIUKPR",
-        "name" : "Graffiti - Pt. 1"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/1XlIVmi1cBZvBrdhzDeYTO",
-          "name" : "Deep Down & Dirty"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 169493,
-        "href" : "https://api.spotify.com/v1/tracks/5xs1Is4ObVZd3hmxk8336q",
-        "name" : "Graffiti - Pt. 2"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/1XlIVmi1cBZvBrdhzDeYTO",
-          "name" : "Deep Down & Dirty"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 254733,
-        "href" : "https://api.spotify.com/v1/tracks/7DUteeNU9KwbyBHGyhGOUJ",
-        "name" : "Sofisticated"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/1XlIVmi1cBZvBrdhzDeYTO",
-          "name" : "Deep Down & Dirty"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 245533,
-        "href" : "https://api.spotify.com/v1/tracks/2nn5oxWxi70dY78vNcpB5t",
-        "name" : "Unconscious"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/1XlIVmi1cBZvBrdhzDeYTO",
-          "name" : "Deep Down & Dirty"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 293293,
-        "href" : "https://api.spotify.com/v1/tracks/2snvxQ3MoCphseaTuBlg3P",
-        "name" : "Shameless"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/1XlIVmi1cBZvBrdhzDeYTO",
-          "name" : "Deep Down & Dirty"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "name" : "Stereo MC's"
-        } ],
-        "duration_ms" : 241760,
-        "href" : "https://api.spotify.com/v1/tracks/59nPyncSoJ0wVkvwqSRVxJ",
-        "name" : "Stop At Nothing"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/1GbtB4zTqAsyfZEsm1RZfx",
-          "name" : "A Night At The Opera (2011 Remaster)"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
-          "name" : "Queen"
-        } ],
-        "duration_ms" : 354320,
-        "href" : "https://api.spotify.com/v1/tracks/4u7EnebtmKWzUH433cf5Qv",
-        "name" : "Bohemian Rhapsody - Remastered 2011"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/58alCatewkjNm9IM1Ucj67",
-          "name" : "The Game (2011 Remaster)"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
-          "name" : "Queen"
-        } ],
-        "duration_ms" : 214653,
-        "href" : "https://api.spotify.com/v1/tracks/5vdp5UmvTsnMEMESIF2Ym7",
-        "name" : "Another One Bites The Dust - Remastered 2011"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/6reTSIf5MoBco62rk8T7Q1",
-          "name" : "Hot Space (2011 Remaster)"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
-          "name" : "Queen"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/0oSGxfWSnnOXhD2fKuz2Gy",
-          "name" : "David Bowie"
-        } ],
-        "duration_ms" : 248440,
-        "href" : "https://api.spotify.com/v1/tracks/2fuCquhmrzHpu5xcA1ci9x",
-        "name" : "Under Pressure - Remastered 2011"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/5RS9xkMuDmeVISqGDBmnSa",
-          "name" : "The Works (2011 Remaster)"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
-          "name" : "Queen"
-        } ],
-        "duration_ms" : 348226,
-        "href" : "https://api.spotify.com/v1/tracks/1nQRg9q9uwALGzouOX5OyQ",
-        "name" : "Radio Ga Ga - Remastered 2011"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/61foK8xa76FEOk36uOxoc9",
-          "name" : "The Works (Deluxe Edition 2011 Remaster)"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
-          "name" : "Queen"
-        } ],
-        "duration_ms" : 258013,
-        "href" : "https://api.spotify.com/v1/tracks/2AkmdLbVKS1steeZdy8H1l",
-        "name" : "I Want To Break Free - Single Remix"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/43lok9zd7BW5CoYkXZs7S0",
-          "name" : "Celebration (double disc version)"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/6tbjWDEIzxoDsBA1FuhfPW",
-          "name" : "Madonna"
-        } ],
-        "duration_ms" : 285093,
-        "href" : "https://api.spotify.com/v1/tracks/2m0M7YqCy4lXfedh18qd8N",
-        "name" : "Into the Groove"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/6gHhunUztPgpyBmzeie6MH",
-          "name" : "Spellbound"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/4PpmBoqphQusNFsxuVKb6j",
-          "name" : "Paula Abdul"
-        } ],
-        "duration_ms" : 292933,
-        "href" : "https://api.spotify.com/v1/tracks/015qd1I4v00JIoK7yOUgKC",
-        "name" : "Rush Rush"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/7zduRJgS6v79QmNUhKGozu",
-          "name" : "Forever Your Girl"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/4PpmBoqphQusNFsxuVKb6j",
-          "name" : "Paula Abdul"
-        } ],
-        "duration_ms" : 251466,
-        "href" : "https://api.spotify.com/v1/tracks/5xl5582IihbEZAnfj0xyso",
-        "name" : "Straight Up"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/7zduRJgS6v79QmNUhKGozu",
-          "name" : "Forever Your Girl"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/4PpmBoqphQusNFsxuVKb6j",
-          "name" : "Paula Abdul"
-        } ],
-        "duration_ms" : 231400,
-        "href" : "https://api.spotify.com/v1/tracks/6jrp8qBMJO6vhAeYVAsdk9",
-        "name" : "Cold Hearted"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/4tUxQkrduOE8sfgwJ5BI2F",
-          "name" : "Gorillaz"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ",
-          "name" : "Gorillaz"
-        } ],
-        "duration_ms" : 340920,
-        "href" : "https://api.spotify.com/v1/tracks/1RKUoGiLEbcXN4GY4spQDx",
-        "name" : "Clint Eastwood"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3jknvlUSe6D9Oyn2E3JBLO",
-          "name" : "Cooleyhighharmony (Bonus Tracks Version)"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/6O74knDqdv3XaWtkII7Xjp",
-          "name" : "Boyz II Men"
-        } ],
-        "duration_ms" : 235226,
-        "href" : "https://api.spotify.com/v1/tracks/4LxIGAVfcQIw0zAQRyFhU8",
-        "name" : "Motownphilly"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/03vJ0BcslLb4fKyBYN78Gy",
-          "name" : "Strut"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/5gznATMVO85ZcLTkE9ULU7",
-          "name" : "Lenny Kravitz"
-        } ],
-        "duration_ms" : 297320,
-        "href" : "https://api.spotify.com/v1/tracks/2wBW9jGZRRMbQ416NDc7LW",
-        "name" : "The Chamber"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3T63sUIqazFcBbodR7xe10",
-          "name" : "One More"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/134GdR5tUtxJrf8cpsfpyY",
-          "name" : "Elliphant"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/19ljcscFgVcdmlNNTYnejw",
-          "name" : "MO"
-        } ],
-        "duration_ms" : 208221,
-        "href" : "https://api.spotify.com/v1/tracks/4nnKErDH3XokK9cG2tMs6a",
-        "name" : "One More"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/5eg56dCpFn32neJak2vk0f",
-          "name" : "Crazysexycool"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/0TImkz4nPqjegtVSMZnMRq",
-          "name" : "TLC"
-        } ],
-        "duration_ms" : 268533,
-        "href" : "https://api.spotify.com/v1/tracks/1aWV3uY3SIEZVbmv45oFWS",
-        "name" : "Creep"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/1CvjjpvqVMoyprsf74bpYW",
-          "name" : "Fanmail"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/0TImkz4nPqjegtVSMZnMRq",
-          "name" : "TLC"
-        } ],
-        "duration_ms" : 214400,
-        "href" : "https://api.spotify.com/v1/tracks/1KGi9sZVMeszgZOWivFpxs",
-        "name" : "No Scrubs"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/5eg56dCpFn32neJak2vk0f",
-          "name" : "Crazysexycool"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/0TImkz4nPqjegtVSMZnMRq",
-          "name" : "TLC"
-        } ],
-        "duration_ms" : 303960,
-        "href" : "https://api.spotify.com/v1/tracks/6dW75XbJ1WAMljOXWjTK46",
-        "name" : "Red Light Special"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/5eg56dCpFn32neJak2vk0f",
-          "name" : "Crazysexycool"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/0TImkz4nPqjegtVSMZnMRq",
-          "name" : "TLC"
-        } ],
-        "duration_ms" : 254560,
-        "href" : "https://api.spotify.com/v1/tracks/2W2vmNmTLERMWT9XBxm35E",
-        "name" : "Diggin' On You"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/5eg56dCpFn32neJak2vk0f",
-          "name" : "Crazysexycool"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/0TImkz4nPqjegtVSMZnMRq",
-          "name" : "TLC"
-        } ],
-        "duration_ms" : 279506,
-        "href" : "https://api.spotify.com/v1/tracks/6qspW4YKycviDFjHBOaqUY",
-        "name" : "Waterfalls"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/6MpXazCWGzqGQiz8XfaghM",
-          "name" : "Revolution"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/7EIe1Y7mnJmzqQ3OzrDHWq",
-          "name" : "Dilba"
-        } ],
-        "duration_ms" : 225680,
-        "href" : "https://api.spotify.com/v1/tracks/747Zu3dIc2iLzg0ZauUOO7",
-        "name" : "Every Little Thing"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3WPr3e2yvKTjNS2JJi4tGk",
-          "name" : "The Complete Decca Studio Albums Collection"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1T0wRBO0CK0vK8ouUMqEl5",
-          "name" : "Tom Jones"
-        } ],
-        "duration_ms" : 172466,
-        "href" : "https://api.spotify.com/v1/tracks/5QfQ5iROTerk3MZ5amX01z",
-        "name" : "She's A Lady"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/4LbbUj2bytdZ1PWEs69QCn",
-          "name" : "'90s Soul Number 1's"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/62sPt3fswraiEPnKQpAbdE",
-          "name" : "Bobby Brown"
-        } ],
-        "duration_ms" : 322000,
-        "href" : "https://api.spotify.com/v1/tracks/3FsPxHAATCITLHZZVIa7Us",
-        "name" : "Humpin' Around - Radio Edit"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/4JYhOe7TlnOQkwWNAcCfPt",
-          "name" : "Don't Be Cruel"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/62sPt3fswraiEPnKQpAbdE",
-          "name" : "Bobby Brown"
-        } ],
-        "duration_ms" : 288800,
-        "href" : "https://api.spotify.com/v1/tracks/0FjMLXne5a6RXzlZyl6ftr",
-        "name" : "My Prerogative"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/6fpPZS13ImRVpr7Tqs6yP9",
-          "name" : "Christina Aguilera (Expanded Edition)"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1l7ZsJRRS8wlW3WfJfPfNS",
-          "name" : "Christina Aguilera"
-        } ],
-        "duration_ms" : 217573,
-        "href" : "https://api.spotify.com/v1/tracks/11mwFrKvLXCbcVGNxffGyP",
-        "name" : "Genie In a Bottle"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/2USigX9DhGuAini71XZEEK",
-          "name" : "Stripped"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1l7ZsJRRS8wlW3WfJfPfNS",
-          "name" : "Christina Aguilera"
-        } ],
-        "duration_ms" : 245960,
-        "href" : "https://api.spotify.com/v1/tracks/7nXq1vaZiz7PdbfojpPjW5",
-        "name" : "Fighter"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/5cbAqQZSEgRiiNjuEHWTXc",
-          "name" : "Moulin Rouge"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1l7ZsJRRS8wlW3WfJfPfNS",
-          "name" : "Christina Aguilera"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/5tth2a3v0sWwV1C7bApBdX",
-          "name" : "Lil' Kim"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/6lHL3ubAMgSasKjNqKb8HF",
-          "name" : "Mýa"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/1KCSPY1glIKqW2TotWuXOR",
-          "name" : "P!nk"
-        } ],
-        "duration_ms" : 264893,
-        "href" : "https://api.spotify.com/v1/tracks/7GbqE3MlkKosIaCvf50JRK",
-        "name" : "Lady Marmalade - From \"Moulin Rouge\" Soundtrack"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/0zRJsgzHZUUdk8Rjk6Segd",
-          "name" : "Back To Basics"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1l7ZsJRRS8wlW3WfJfPfNS",
-          "name" : "Christina Aguilera"
-        } ],
-        "duration_ms" : 228906,
-        "href" : "https://api.spotify.com/v1/tracks/7huo2wvrCgRucUsjdSDLQV",
-        "name" : "Ain't No Other Man"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/2USigX9DhGuAini71XZEEK",
-          "name" : "Stripped"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1l7ZsJRRS8wlW3WfJfPfNS",
-          "name" : "Christina Aguilera"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/7xTKLpo7UCzXSnlH7fOIoM",
-          "name" : "Redman"
-        } ],
-        "duration_ms" : 298853,
-        "href" : "https://api.spotify.com/v1/tracks/59ZTxQo8rBycIXPLUIKvE2",
-        "name" : "Dirrty (feat. Redman)"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/6fpPZS13ImRVpr7Tqs6yP9",
-          "name" : "Christina Aguilera (Expanded Edition)"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1l7ZsJRRS8wlW3WfJfPfNS",
-          "name" : "Christina Aguilera"
-        } ],
-        "duration_ms" : 215800,
-        "href" : "https://api.spotify.com/v1/tracks/5bGmuxShUba9maPswDnhCs",
-        "name" : "What a Girl Wants"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/17mrdLXkhmlY36jRm9cUbw",
-          "name" : "C.M.B."
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1QtIfAa6y7w2JhxYJhYeUG",
-          "name" : "Color Me Badd"
-        } ],
-        "duration_ms" : 211493,
-        "href" : "https://api.spotify.com/v1/tracks/4XmsMIMjvDIFEjeY3ycMzW",
-        "name" : "All 4 Love"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/17mrdLXkhmlY36jRm9cUbw",
-          "name" : "C.M.B."
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/1QtIfAa6y7w2JhxYJhYeUG",
-          "name" : "Color Me Badd"
-        } ],
-        "duration_ms" : 236946,
-        "href" : "https://api.spotify.com/v1/tracks/1kPBHRXyXdrtYfUfeRwBko",
-        "name" : "I Wanna Sex You Up - Single Mix"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3g7HQDyHtfgIUf9qle9iFl",
-          "name" : "Sunmachine"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/3Eo78i1MPfle0XVjMvia8A",
-          "name" : "Dario G"
-        } ],
-        "duration_ms" : 379200,
-        "href" : "https://api.spotify.com/v1/tracks/7bRFOn6x2XT1mPNuBL6DHs",
-        "name" : "Sunchyme"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/7K3z58HrZ2RJR2j82xWbsc",
-          "name" : "Och vinnaren är..."
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/2OIWxN9xUhgUHkeUCWCaNs",
-          "name" : "Veronica Maggio"
-        } ],
-        "duration_ms" : 205546,
-        "href" : "https://api.spotify.com/v1/tracks/4MXHBiKcdqHBJ4PeHQJBHO",
-        "name" : "Måndagsbarn"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3cj1E5Fhfjmj3nj6BIzrK2",
-          "name" : "Vatten och bröd"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/2OIWxN9xUhgUHkeUCWCaNs",
-          "name" : "Veronica Maggio"
-        } ],
-        "duration_ms" : 183600,
-        "href" : "https://api.spotify.com/v1/tracks/6bvNKLqRlzXrBxfjjETvD3",
-        "name" : "Nöjd? - Radio Version"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/7K3z58HrZ2RJR2j82xWbsc",
-          "name" : "Och vinnaren är..."
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/2OIWxN9xUhgUHkeUCWCaNs",
-          "name" : "Veronica Maggio"
-        } ],
-        "duration_ms" : 214960,
-        "href" : "https://api.spotify.com/v1/tracks/5F7bTcdeDDs4CA7R1eNWGL",
-        "name" : "V för Vendetta"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/7K3z58HrZ2RJR2j82xWbsc",
-          "name" : "Och vinnaren är..."
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/2OIWxN9xUhgUHkeUCWCaNs",
-          "name" : "Veronica Maggio"
-        } ],
-        "duration_ms" : 186466,
-        "href" : "https://api.spotify.com/v1/tracks/6XJI8e062EqXIO4SMXkP83",
-        "name" : "Stopp"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3x2jF7blR6bFHtk4MccsyJ",
-          "name" : "Spice"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/0uq5PttqEjj3IH1bzwcrXF",
-          "name" : "Spice Girls"
-        } ],
-        "duration_ms" : 173026,
-        "href" : "https://api.spotify.com/v1/tracks/1Je1IMUlBXcx1Fz0WE7oPT",
-        "name" : "Wannabe"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/2XLpqfYjGTecYQJQU9wFxG",
-          "name" : "Greatest Hits"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/0uq5PttqEjj3IH1bzwcrXF",
-          "name" : "Spice Girls"
-        } ],
-        "duration_ms" : 175813,
-        "href" : "https://api.spotify.com/v1/tracks/0Co5UMAXjlBvElEAtFegdt",
-        "name" : "Spice Up Your Life"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3x2jF7blR6bFHtk4MccsyJ",
-          "name" : "Spice"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/0uq5PttqEjj3IH1bzwcrXF",
-          "name" : "Spice Girls"
-        } ],
-        "duration_ms" : 235973,
-        "href" : "https://api.spotify.com/v1/tracks/1yTQ39my3MoNROlFw3RDNy",
-        "name" : "Say You'll Be There"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3sr6lAuO3nmB1u8ZuQgpiX",
-          "name" : "Spiceworld"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/0uq5PttqEjj3IH1bzwcrXF",
-          "name" : "Spice Girls"
-        } ],
-        "duration_ms" : 204753,
-        "href" : "https://api.spotify.com/v1/tracks/3FteycP8CaXS1MhjcXekVT",
-        "name" : "Stop"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3x2jF7blR6bFHtk4MccsyJ",
-          "name" : "Spice"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/0uq5PttqEjj3IH1bzwcrXF",
-          "name" : "Spice Girls"
-        } ],
-        "duration_ms" : 240706,
-        "href" : "https://api.spotify.com/v1/tracks/1jI1aLmm5HTwiMtvsbwDJw",
-        "name" : "Who Do You Think You Are"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3sr6lAuO3nmB1u8ZuQgpiX",
-          "name" : "Spiceworld"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/0uq5PttqEjj3IH1bzwcrXF",
-          "name" : "Spice Girls"
-        } ],
-        "duration_ms" : 310666,
-        "href" : "https://api.spotify.com/v1/tracks/6BPDPcnbDMDf58srVzbfX9",
-        "name" : "Viva Forever"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/2XLpqfYjGTecYQJQU9wFxG",
-          "name" : "Greatest Hits"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/0uq5PttqEjj3IH1bzwcrXF",
-          "name" : "Spice Girls"
-        } ],
-        "duration_ms" : 163760,
-        "href" : "https://api.spotify.com/v1/tracks/6hXb6O286px9J2Qyd5G3Nu",
-        "name" : "Move Over"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3sr6lAuO3nmB1u8ZuQgpiX",
-          "name" : "Spiceworld"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/0uq5PttqEjj3IH1bzwcrXF",
-          "name" : "Spice Girls"
-        } ],
-        "duration_ms" : 173666,
-        "href" : "https://api.spotify.com/v1/tracks/5qGwqO0lkbBXw4xNfzT7SF",
-        "name" : "Spice Up Your Life"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/2XLpqfYjGTecYQJQU9wFxG",
-          "name" : "Greatest Hits"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/0uq5PttqEjj3IH1bzwcrXF",
-          "name" : "Spice Girls"
-        } ],
-        "duration_ms" : 236586,
-        "href" : "https://api.spotify.com/v1/tracks/36dQazx2WAniLorlTihOtW",
-        "name" : "Holler"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/7r14xPWDHH2ao9gLrDxHMd",
-          "name" : "Schizophonic"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/5orH1OWgjAYUX8sZ5gihTv",
-          "name" : "Geri Halliwell"
-        } ],
-        "duration_ms" : 193466,
-        "href" : "https://api.spotify.com/v1/tracks/3Qu88IYwuDpUQNi6UwJsDz",
-        "name" : "Mi chico latino"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/7r14xPWDHH2ao9gLrDxHMd",
-          "name" : "Schizophonic"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/5orH1OWgjAYUX8sZ5gihTv",
-          "name" : "Geri Halliwell"
-        } ],
-        "duration_ms" : 272160,
-        "href" : "https://api.spotify.com/v1/tracks/7jsYlbbaAzP2VHkLGlfn6r",
-        "name" : "Look at Me"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/6TjfhQSmmBOEwIXkoT3fdZ",
-          "name" : "Northern Star"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/60vX3zLcdKRXvKLITVh5Df",
-          "name" : "Melanie C"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/64ccradw8gAQn9gMQZmEha",
-          "name" : "Lisa \"Left Eye\" Lopes"
-        } ],
-        "duration_ms" : 294200,
-        "href" : "https://api.spotify.com/v1/tracks/79EAVfOpzgfHx3IE2BVFQv",
-        "name" : "Never Be The Same Again"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/6TjfhQSmmBOEwIXkoT3fdZ",
-          "name" : "Northern Star"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/60vX3zLcdKRXvKLITVh5Df",
-          "name" : "Melanie C"
-        } ],
-        "duration_ms" : 352173,
-        "href" : "https://api.spotify.com/v1/tracks/1Le4SDanBrX8OtmnnyTNrh",
-        "name" : "I Turn To You"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/62Qu5QoNx3De0p5qQT0u7o",
-          "name" : "Here Comes The Fuzz"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/3hv9jJF3adDNsBSIQDqcjp",
-          "name" : "Mark Ronson"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/6FD0unjzGQhX3b6eMccMJe",
-          "name" : "Ghostface Killah"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/1Oa0bMld0A3u5OTYfMzp5h",
-          "name" : "Nate Dogg"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/3wPM3fbGYp56vzXMId27qs",
-          "name" : "Trife"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/0mTfntDCCWRozUnyxpGf6E",
-          "name" : "Saigon"
-        } ],
-        "duration_ms" : 209626,
-        "href" : "https://api.spotify.com/v1/tracks/4WimB4Ei0LU3MotHhL3kBL",
-        "name" : "Ooh Wee (feat. Ghostface Killah, Nate Dogg, Trife & Saigon)"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "album_type" : null,
-          "artists" : [ ],
-          "available_markets" : [ ],
-          "external_urls" : { },
-          "href" : null,
-          "id" : null,
-          "images" : [ ],
-          "name" : "Present Shock Value (Deluxe Edition)",
-          "release_date" : null,
-          "release_date_precision" : null,
-          "type" : "album",
-          "uri" : null
-        },
-        "artists" : [ {
-          "external_urls" : { },
-          "href" : null,
-          "id" : null,
-          "name" : "Timbaland",
-          "type" : "artist",
-          "uri" : null
-        } ],
-        "available_markets" : [ ],
-        "disc_number" : 0,
-        "duration_ms" : 234000,
-        "explicit" : false,
-        "external_ids" : { },
-        "external_urls" : { },
-        "href" : null,
-        "id" : null,
-        "is_local" : true,
-        "name" : "Give It To Me (Feat Nelly Furtado & Justin Timberlake)",
-        "popularity" : 0,
-        "preview_url" : null,
-        "track_number" : 0,
-        "type" : "track",
-        "uri" : "spotify:local:Timbaland:Present+Shock+Value+%28Deluxe+Edition%29:Give+It+To+Me+%28Feat+Nelly+Furtado+%26+Justin+Timberlake%29:234"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/4DcIgdBbqm0Fqhmh5RcoCD",
-          "name" : "Non Zero Sumness Plus One"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/4c4Ce4N4vJOs3Tzee020S4",
-          "name" : "Planet Funk"
-        } ],
-        "duration_ms" : 233040,
-        "href" : "https://api.spotify.com/v1/tracks/2mkBHN67xLpHrpqOuj79Yz",
-        "name" : "Chase the Sun"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/0H8w0t8lsZiSTVA3yORSVP",
-          "name" : "The Definitive 80's (eighties)"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/2PvqyOwynRF4BveaU6IA7S",
-          "name" : "S'Express"
-        } ],
-        "duration_ms" : 234080,
-        "href" : "https://api.spotify.com/v1/tracks/1ZT36B4fO2R7rBCGRb3XIM",
-        "name" : "Theme from S-Express"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/4r1WecJyt5FOhglysp9zhN",
-          "name" : "Please Hammer Don't Hurt 'Em"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/2rblp9fJo16ZPTcKDtlmKW",
-          "name" : "MC Hammer"
-        } ],
-        "duration_ms" : 257360,
-        "href" : "https://api.spotify.com/v1/tracks/1B75hgRqe7A4fwee3g3Wmu",
-        "name" : "U Can't Touch This"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/6eGYLONkDMja0MNtZWnRRB",
-          "name" : "Hello Nasty (Deluxe Version/Remastered 2009)"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/03r4iKL2g2442PT9n2UKsx",
-          "name" : "Beastie Boys"
-        } ],
-        "duration_ms" : 231493,
-        "href" : "https://api.spotify.com/v1/tracks/5fpizYGbi5IQoEraj6FP0R",
-        "name" : "Intergalactic - Remastered"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/6lfjbwFGzQ6aSNP1N3JlT8",
-          "name" : "Ill Communication"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/03r4iKL2g2442PT9n2UKsx",
-          "name" : "Beastie Boys"
-        } ],
-        "duration_ms" : 178440,
-        "href" : "https://api.spotify.com/v1/tracks/0Puj4YlTm6xNzDDADXHMI9",
-        "name" : "Sabotage"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/11oR0ZuqB3ucZwb5TGbZxb",
-          "name" : "Licensed To Ill"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/03r4iKL2g2442PT9n2UKsx",
-          "name" : "Beastie Boys"
-        } ],
-        "duration_ms" : 208653,
-        "href" : "https://api.spotify.com/v1/tracks/5NLuC70kZQv8q34QyQa1DP",
-        "name" : "Fight For Your Right"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/2W2EmEpud13QHlhCFS9P8g",
-          "name" : "Very Necessary"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/7wqtxqI3eo7Gn1P7SpP6cQ",
-          "name" : "Salt-N-Pepa"
-        } ],
-        "duration_ms" : 248573,
-        "href" : "https://api.spotify.com/v1/tracks/0Pu71wxadDlB8fJXfjIjeJ",
-        "name" : "Shoop"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/5QFYPgLGw6DYz8S3TrLM2d",
-          "name" : "Hot, Cool & Vicious"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/7wqtxqI3eo7Gn1P7SpP6cQ",
-          "name" : "Salt-N-Pepa"
-        } ],
-        "duration_ms" : 272133,
-        "href" : "https://api.spotify.com/v1/tracks/6sT9MWlJManry3EQwf4V80",
-        "name" : "Push It"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/2W2EmEpud13QHlhCFS9P8g",
-          "name" : "Very Necessary"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/7wqtxqI3eo7Gn1P7SpP6cQ",
-          "name" : "Salt-N-Pepa"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/5fikk4h5qbEebqK2Fc6e48",
-          "name" : "En Vogue"
-        } ],
-        "duration_ms" : 308360,
-        "href" : "https://api.spotify.com/v1/tracks/7sJN693sYKEIEMu7fc5VnJ",
-        "name" : "Whatta Man"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/23KueVfptj2FK6Wk5ZMKPk",
-          "name" : "Bread & Barrels Of Water"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/5tqMW5dSAlvh0GvgD3XfDy",
-          "name" : "Outlandish"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/31aoUeWDfZNAfgdDmGFCgw",
-          "name" : "Isam Bachiri"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/689gVHpG7iFqqN8Su9k1lF",
-          "name" : "Waqas Qadri"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/07CyZVvGY4aiBrf14etUAC",
-          "name" : "Lenny Martinez"
-        } ],
-        "duration_ms" : 275680,
-        "href" : "https://api.spotify.com/v1/tracks/7mze3mJmu79AJu8SnS37pS",
-        "name" : "Aicha"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/23KueVfptj2FK6Wk5ZMKPk",
-          "name" : "Bread & Barrels Of Water"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/5tqMW5dSAlvh0GvgD3XfDy",
-          "name" : "Outlandish"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/31aoUeWDfZNAfgdDmGFCgw",
-          "name" : "Isam Bachiri"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/689gVHpG7iFqqN8Su9k1lF",
-          "name" : "Waqas Qadri"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/07CyZVvGY4aiBrf14etUAC",
-          "name" : "Lenny Martinez"
-        } ],
-        "duration_ms" : 234600,
-        "href" : "https://api.spotify.com/v1/tracks/1tLRQ2BjSoSpEkq3EOQyuD",
-        "name" : "Walou"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/5lyr6aF1azrH77MAkWrO6o",
-          "name" : "Choose Life"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/4Je0lOFAaFI0xXIddnctaj",
-          "name" : "PF Project"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/105Paee9vmV5rfLSG652e1",
-          "name" : "Ewan McGregor"
-        } ],
-        "duration_ms" : 231466,
-        "href" : "https://api.spotify.com/v1/tracks/3ieiClXnS99ctYrUSeZPGu",
-        "name" : "Choose Life"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/6OMYQUITdN6wBaWfEtgooI",
-          "name" : "The Age of Consent"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/2wpWOzQE5TpA0dVnh5YD08",
-          "name" : "Bronski Beat"
-        } ],
-        "duration_ms" : 302413,
-        "href" : "https://api.spotify.com/v1/tracks/5vmRQ3zELMLUQPo2FLQ76x",
-        "name" : "Smalltown Boy"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/5QXK9xXDSYvSOXYSJHdwOD",
-          "name" : "The Collection"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/2FjkZT851ez950cyPjeYid",
-          "name" : "Bobby McFerrin"
-        } ],
-        "duration_ms" : 292400,
-        "href" : "https://api.spotify.com/v1/tracks/5YbgcwHjQhdT1BYQ4rxWlD",
-        "name" : "Don't Worry Be Happy"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/3myPwaMYjdwhtq0nFgeG6W",
-          "name" : "Songs From The Big Chair (Super Deluxe Edition)"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/4bthk9UfsYUYdcFyqxmSUU",
-          "name" : "Tears For Fears"
-        } ],
-        "duration_ms" : 251488,
-        "href" : "https://api.spotify.com/v1/tracks/4RvWPyQ5RL0ao9LPZeSouE",
-        "name" : "Everybody Wants To Rule The World"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/1BAmE3bdBnxej0umzyHQ5x",
-          "name" : "Forever Young (Super Deluxe Edition; 2019 Remaster)"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/0xliTEbFfy5HQHvsTknTkX",
-          "name" : "Alphaville"
-        } ],
-        "duration_ms" : 284625,
-        "href" : "https://api.spotify.com/v1/tracks/7wnagOAqma4Sg6JOGjWr5R",
-        "name" : "Big in Japan - 2019 Remaster"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/1qgGxfnTXeBOkBNnLzDi36",
-          "name" : "Up"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/15ajdFAi5bjj5pS9laBfBL",
-          "name" : "Right Said Fred"
-        } ],
-        "duration_ms" : 170466,
-        "href" : "https://api.spotify.com/v1/tracks/2WElktskrNJEwgpp5Vouxk",
-        "name" : "I'm Too Sexy"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/6ZMxoed3JJVjSzDQ2iVeYN",
-          "name" : "Amplified Heart"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/13ccXrK7AmXb4TddMkE7jy",
-          "name" : "Everything But The Girl"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/3dE92yGWcrboP1kC5SWyqu",
-          "name" : "Todd Terry"
-        } ],
-        "duration_ms" : 249533,
-        "href" : "https://api.spotify.com/v1/tracks/36sL3KPEfXIp5KH3tDO7oo",
-        "name" : "Missing - Todd Terry Club Mix / US Radio Edit"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/5uuAdNhG4ruMYRFPVCW8gL",
-          "name" : "Best Of"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/2Cd98zHVdZeOCisc6Gi2sB",
-          "name" : "Technotronic"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/1pvibpCqTQG4mnbZ7vVSDj",
-          "name" : "Felly"
-        } ],
-        "duration_ms" : 215040,
-        "href" : "https://api.spotify.com/v1/tracks/0UAEHlFR79k9CJvknSGUNf",
-        "name" : "Pump Up The Jam - Edit"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/1RM6MGv6bcl6NrAG8PGoZk",
-          "name" : "Confessions (Expanded Edition)"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/23zg3TcAtWQy7J6upgbUnj",
-          "name" : "Usher"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/7sfl4Xt5KmfyDs2T3SVSMK",
-          "name" : "Lil Jon"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/3ipn9JLAPI5GUEo4y4jcoi",
-          "name" : "Ludacris"
-        } ],
-        "duration_ms" : 250373,
-        "href" : "https://api.spotify.com/v1/tracks/5rb9QrpfcKFHM1EUbSIurX",
-        "name" : "Yeah! (feat. Lil Jon & Ludacris)"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/0RUjiRi4UXzRUdTq1ANou7",
-          "name" : "Bizarre Fruit"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/3lcbKPLl0ci2mKRdcP5Etf",
-          "name" : "M People"
-        } ],
-        "duration_ms" : 340933,
-        "href" : "https://api.spotify.com/v1/tracks/0vT1Q3qFCQgJcyLsFuK60O",
-        "name" : "Sugar Town"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/0f7ZSi2EcurDJU0UeKFjuZ",
-          "name" : "SNAP! The Power Greatest Hits"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/2FrKQPjJe4pVMZOgm0ESOx",
-          "name" : "SNAP!"
-        }, {
-          "href" : "https://api.spotify.com/v1/artists/6AKDBd8dDnM715jeUivRm1",
-          "name" : "Niki Haris"
-        } ],
-        "duration_ms" : 254791,
-        "href" : "https://api.spotify.com/v1/tracks/1ClsTc9ppIu8aU3KaGAB0g",
-        "name" : "Do You See the Light? (Looking For) [feat. Niki Haris] - 7\" Edit"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/5sCp2ukwrtpYj5wGfMx78M",
-          "name" : "Catalogue"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/4aaBjq7VqqQvpSF69GglvO",
-          "name" : "Moloko"
-        } ],
-        "duration_ms" : 222226,
-        "href" : "https://api.spotify.com/v1/tracks/7xG0XZhUxTu6Axewwq0jfN",
-        "name" : "Time Is Now"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/44UH34qoCNNfEqo0VnOkGd",
-          "name" : "Who Let The Dogs Out"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/67FFKYikvTlvsPNk4NPOYJ",
-          "name" : "Baha Men"
-        } ],
-        "duration_ms" : 198400,
-        "href" : "https://api.spotify.com/v1/tracks/1H5tvpoApNDxvxDexoaAUo",
-        "name" : "Who Let The Dogs Out"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/0eVj6uUqoagjDPSOmz2rRj",
-          "name" : "Mr. Vain"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/0BZ3BHzfYwpd3k5TDnvAz8",
-          "name" : "Culture Beat"
-        } ],
-        "duration_ms" : 257466,
-        "href" : "https://api.spotify.com/v1/tracks/4ih3dyFZoeTdaeJW9mPbOI",
-        "name" : "Mr. Vain - Original Radio Edit"
-      }
-    }, {
-      "track" : {
-        "album" : {
-          "href" : "https://api.spotify.com/v1/albums/1LAx7yCVbGwskdnGDof8SC",
-          "name" : "The Album"
-        },
-        "artists" : [ {
-          "href" : "https://api.spotify.com/v1/artists/0Suv0tRrNrUlRzAy8aXjma",
-          "name" : "Haddaway"
-        } ],
-        "duration_ms" : 270373,
-        "href" : "https://api.spotify.com/v1/tracks/2IHaGyfxNoFPLJnaEg4GTs",
-        "name" : "What Is Love - 7\" Mix"
-      }
-    } ]
-  }
+	"type": "playlist",
+	"name": "old",
+	"owner": {
+		"display_name": "Hakan Bilgin"
+	},
+	"uri": "spotify:playlist:4Wqhmyri54LKWet5NmrIRY",
+	"images": [
+		{
+			"height": 640,
+			"url": "https://mosaic.scdn.co/640/ab67616d0000b2731dafb37287f4aeb796695849ab67616d0000b2733bdf8d1559780fc9598d9f1eab67616d0000b27342f3ccbc77ffa9a06e6e92d1ab67616d0000b273e8c0eca5da75269b2d229116",
+			"width": 640
+		},
+		{
+			"height": 300,
+			"url": "https://mosaic.scdn.co/300/ab67616d0000b2731dafb37287f4aeb796695849ab67616d0000b2733bdf8d1559780fc9598d9f1eab67616d0000b27342f3ccbc77ffa9a06e6e92d1ab67616d0000b273e8c0eca5da75269b2d229116",
+			"width": 300
+		},
+		{
+			"height": 60,
+			"url": "https://mosaic.scdn.co/60/ab67616d0000b2731dafb37287f4aeb796695849ab67616d0000b2733bdf8d1559780fc9598d9f1eab67616d0000b27342f3ccbc77ffa9a06e6e92d1ab67616d0000b273e8c0eca5da75269b2d229116",
+			"width": 60
+		}
+	],
+	"tracks": {
+		"items": [
+			{
+				"track": {
+					"album": {
+						"name": "Connected",
+						"uri": "spotify:album:3NRQnGdFznbXtP8u2O4VKB"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 252666,
+					"name": "Ground Level",
+					"uri": "spotify:track:1UgsbIteej4QpAcX3aUFeV"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Paradise",
+						"uri": "spotify:album:6ydThtRPfXjHS79flxvVMC"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 274720,
+					"name": "I Feel You",
+					"uri": "spotify:track:0XM5qsvRQGSWE1hlSq4E5b"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Supernatural",
+						"uri": "spotify:album:3EqE50w57ZSxSDGhmL1tg4"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 196826,
+					"name": "Elevate My Mind",
+					"uri": "spotify:track:7uABD1Cd6M8SGA75OxeUqB"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Connected",
+						"uri": "spotify:album:3NRQnGdFznbXtP8u2O4VKB"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 313000,
+					"name": "Connected",
+					"uri": "spotify:track:1ZoE2naC9ySlPLdBZhS1rM"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Connected",
+						"uri": "spotify:album:3NRQnGdFznbXtP8u2O4VKB"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 301000,
+					"name": "Step It Up",
+					"uri": "spotify:track:6Y1HIgqlgYSzMalK6eBiEP"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Deep Down & Dirty",
+						"uri": "spotify:album:1XlIVmi1cBZvBrdhzDeYTO"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 315600,
+					"name": "Traffic",
+					"uri": "spotify:track:02I0QezAPPO9Q9i1or053S"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Deep Down & Dirty",
+						"uri": "spotify:album:1XlIVmi1cBZvBrdhzDeYTO"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 280906,
+					"name": "The Right Effect",
+					"uri": "spotify:track:4Mo94v268UDbjG9QLGTWBb"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Connected",
+						"uri": "spotify:album:3NRQnGdFznbXtP8u2O4VKB"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 304000,
+					"name": "Creation",
+					"uri": "spotify:track:2RAX6iVOjhH5vL33shTzfX"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Connected",
+						"uri": "spotify:album:3NRQnGdFznbXtP8u2O4VKB"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 229840,
+					"name": "The End",
+					"uri": "spotify:track:4kWFbqvYW3izvkcCmQVyG0"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Connected",
+						"uri": "spotify:album:3NRQnGdFznbXtP8u2O4VKB"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 343666,
+					"name": "Sketch",
+					"uri": "spotify:track:31z4dKubn9SVuuo4ZAj5R1"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Connected",
+						"uri": "spotify:album:3NRQnGdFznbXtP8u2O4VKB"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 266000,
+					"name": "Fade Away",
+					"uri": "spotify:track:1omeMDcIlyoUuDzeD6XxfS"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Connected",
+						"uri": "spotify:album:3NRQnGdFznbXtP8u2O4VKB"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 258826,
+					"name": "Playing With Fire",
+					"uri": "spotify:track:5F6Yu1s3rvN7UQV5l04Hkl"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Connected",
+						"uri": "spotify:album:3NRQnGdFznbXtP8u2O4VKB"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 230840,
+					"name": "Pressure",
+					"uri": "spotify:track:6GFvGV6yLGInltTbxlzonn"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Connected",
+						"uri": "spotify:album:3NRQnGdFznbXtP8u2O4VKB"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 229160,
+					"name": "Chicken Shake",
+					"uri": "spotify:track:6N0o3pElcfEqTgIdQzLU19"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Deep Down & Dirty",
+						"uri": "spotify:album:1XlIVmi1cBZvBrdhzDeYTO"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 261399,
+					"name": "Deep Down & Dirty - Original Version",
+					"uri": "spotify:track:16WyvPp6nfgSYgJWPrlXM5"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Deep Down & Dirty",
+						"uri": "spotify:album:1XlIVmi1cBZvBrdhzDeYTO"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 279040,
+					"name": "We Belong In This World Together",
+					"uri": "spotify:track:1TKdwordQKlZalI2ESv1St"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Deep Down & Dirty",
+						"uri": "spotify:album:1XlIVmi1cBZvBrdhzDeYTO"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 265933,
+					"name": "Breeze",
+					"uri": "spotify:track:3HB0sDUD3fZaCRjxEKlwMq"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Deep Down & Dirty",
+						"uri": "spotify:album:1XlIVmi1cBZvBrdhzDeYTO"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 293800,
+					"name": "Running",
+					"uri": "spotify:track:1SSaGZeeQzUdFwCYQJyl7h"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Deep Down & Dirty",
+						"uri": "spotify:album:1XlIVmi1cBZvBrdhzDeYTO"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 154466,
+					"name": "Graffiti - Pt. 1",
+					"uri": "spotify:track:65XGZ9EfS121FjuIKIUKPR"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Deep Down & Dirty",
+						"uri": "spotify:album:1XlIVmi1cBZvBrdhzDeYTO"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 169493,
+					"name": "Graffiti - Pt. 2",
+					"uri": "spotify:track:5xs1Is4ObVZd3hmxk8336q"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Deep Down & Dirty",
+						"uri": "spotify:album:1XlIVmi1cBZvBrdhzDeYTO"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 254733,
+					"name": "Sofisticated",
+					"uri": "spotify:track:7DUteeNU9KwbyBHGyhGOUJ"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Deep Down & Dirty",
+						"uri": "spotify:album:1XlIVmi1cBZvBrdhzDeYTO"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 245533,
+					"name": "Unconscious",
+					"uri": "spotify:track:2nn5oxWxi70dY78vNcpB5t"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Deep Down & Dirty",
+						"uri": "spotify:album:1XlIVmi1cBZvBrdhzDeYTO"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 293293,
+					"name": "Shameless",
+					"uri": "spotify:track:2snvxQ3MoCphseaTuBlg3P"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Deep Down & Dirty",
+						"uri": "spotify:album:1XlIVmi1cBZvBrdhzDeYTO"
+					},
+					"artists": [
+						{
+							"name": "Stereo MC's",
+							"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+						}
+					],
+					"duration_ms": 241760,
+					"name": "Stop At Nothing",
+					"uri": "spotify:track:59nPyncSoJ0wVkvwqSRVxJ"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "A Night At The Opera (2011 Remaster)",
+						"uri": "spotify:album:1GbtB4zTqAsyfZEsm1RZfx"
+					},
+					"artists": [
+						{
+							"name": "Queen",
+							"uri": "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+						}
+					],
+					"duration_ms": 354320,
+					"name": "Bohemian Rhapsody - Remastered 2011",
+					"uri": "spotify:track:4u7EnebtmKWzUH433cf5Qv"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "The Game (2011 Remaster)",
+						"uri": "spotify:album:58alCatewkjNm9IM1Ucj67"
+					},
+					"artists": [
+						{
+							"name": "Queen",
+							"uri": "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+						}
+					],
+					"duration_ms": 214653,
+					"name": "Another One Bites The Dust - Remastered 2011",
+					"uri": "spotify:track:5vdp5UmvTsnMEMESIF2Ym7"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Hot Space (2011 Remaster)",
+						"uri": "spotify:album:6reTSIf5MoBco62rk8T7Q1"
+					},
+					"artists": [
+						{
+							"name": "Queen",
+							"uri": "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+						},
+						{
+							"name": "David Bowie",
+							"uri": "spotify:artist:0oSGxfWSnnOXhD2fKuz2Gy"
+						}
+					],
+					"duration_ms": 248440,
+					"name": "Under Pressure - Remastered 2011",
+					"uri": "spotify:track:2fuCquhmrzHpu5xcA1ci9x"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "The Works (2011 Remaster)",
+						"uri": "spotify:album:5RS9xkMuDmeVISqGDBmnSa"
+					},
+					"artists": [
+						{
+							"name": "Queen",
+							"uri": "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+						}
+					],
+					"duration_ms": 348226,
+					"name": "Radio Ga Ga - Remastered 2011",
+					"uri": "spotify:track:1nQRg9q9uwALGzouOX5OyQ"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "The Works (Deluxe Edition 2011 Remaster)",
+						"uri": "spotify:album:61foK8xa76FEOk36uOxoc9"
+					},
+					"artists": [
+						{
+							"name": "Queen",
+							"uri": "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+						}
+					],
+					"duration_ms": 258013,
+					"name": "I Want To Break Free - Single Remix",
+					"uri": "spotify:track:2AkmdLbVKS1steeZdy8H1l"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Celebration (double disc version)",
+						"uri": "spotify:album:43lok9zd7BW5CoYkXZs7S0"
+					},
+					"artists": [
+						{
+							"name": "Madonna",
+							"uri": "spotify:artist:6tbjWDEIzxoDsBA1FuhfPW"
+						}
+					],
+					"duration_ms": 285093,
+					"name": "Into the Groove",
+					"uri": "spotify:track:2m0M7YqCy4lXfedh18qd8N"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Spellbound",
+						"uri": "spotify:album:6gHhunUztPgpyBmzeie6MH"
+					},
+					"artists": [
+						{
+							"name": "Paula Abdul",
+							"uri": "spotify:artist:4PpmBoqphQusNFsxuVKb6j"
+						}
+					],
+					"duration_ms": 292933,
+					"name": "Rush Rush",
+					"uri": "spotify:track:015qd1I4v00JIoK7yOUgKC"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Forever Your Girl",
+						"uri": "spotify:album:7zduRJgS6v79QmNUhKGozu"
+					},
+					"artists": [
+						{
+							"name": "Paula Abdul",
+							"uri": "spotify:artist:4PpmBoqphQusNFsxuVKb6j"
+						}
+					],
+					"duration_ms": 251466,
+					"name": "Straight Up",
+					"uri": "spotify:track:5xl5582IihbEZAnfj0xyso"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Forever Your Girl",
+						"uri": "spotify:album:7zduRJgS6v79QmNUhKGozu"
+					},
+					"artists": [
+						{
+							"name": "Paula Abdul",
+							"uri": "spotify:artist:4PpmBoqphQusNFsxuVKb6j"
+						}
+					],
+					"duration_ms": 231400,
+					"name": "Cold Hearted",
+					"uri": "spotify:track:6jrp8qBMJO6vhAeYVAsdk9"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Gorillaz",
+						"uri": "spotify:album:4tUxQkrduOE8sfgwJ5BI2F"
+					},
+					"artists": [
+						{
+							"name": "Gorillaz",
+							"uri": "spotify:artist:3AA28KZvwAUcZuOKwyblJQ"
+						}
+					],
+					"duration_ms": 340920,
+					"name": "Clint Eastwood",
+					"uri": "spotify:track:1RKUoGiLEbcXN4GY4spQDx"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Cooleyhighharmony (Bonus Tracks Version)",
+						"uri": "spotify:album:3jknvlUSe6D9Oyn2E3JBLO"
+					},
+					"artists": [
+						{
+							"name": "Boyz II Men",
+							"uri": "spotify:artist:6O74knDqdv3XaWtkII7Xjp"
+						}
+					],
+					"duration_ms": 235226,
+					"name": "Motownphilly",
+					"uri": "spotify:track:4LxIGAVfcQIw0zAQRyFhU8"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Strut",
+						"uri": "spotify:album:03vJ0BcslLb4fKyBYN78Gy"
+					},
+					"artists": [
+						{
+							"name": "Lenny Kravitz",
+							"uri": "spotify:artist:5gznATMVO85ZcLTkE9ULU7"
+						}
+					],
+					"duration_ms": 297320,
+					"name": "The Chamber",
+					"uri": "spotify:track:2wBW9jGZRRMbQ416NDc7LW"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "One More",
+						"uri": "spotify:album:3T63sUIqazFcBbodR7xe10"
+					},
+					"artists": [
+						{
+							"name": "Elliphant",
+							"uri": "spotify:artist:134GdR5tUtxJrf8cpsfpyY"
+						},
+						{
+							"name": "MO",
+							"uri": "spotify:artist:19ljcscFgVcdmlNNTYnejw"
+						}
+					],
+					"duration_ms": 208221,
+					"name": "One More",
+					"uri": "spotify:track:4nnKErDH3XokK9cG2tMs6a"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Crazysexycool",
+						"uri": "spotify:album:5eg56dCpFn32neJak2vk0f"
+					},
+					"artists": [
+						{
+							"name": "TLC",
+							"uri": "spotify:artist:0TImkz4nPqjegtVSMZnMRq"
+						}
+					],
+					"duration_ms": 268533,
+					"name": "Creep",
+					"uri": "spotify:track:1aWV3uY3SIEZVbmv45oFWS"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Fanmail",
+						"uri": "spotify:album:1CvjjpvqVMoyprsf74bpYW"
+					},
+					"artists": [
+						{
+							"name": "TLC",
+							"uri": "spotify:artist:0TImkz4nPqjegtVSMZnMRq"
+						}
+					],
+					"duration_ms": 214400,
+					"name": "No Scrubs",
+					"uri": "spotify:track:1KGi9sZVMeszgZOWivFpxs"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Crazysexycool",
+						"uri": "spotify:album:5eg56dCpFn32neJak2vk0f"
+					},
+					"artists": [
+						{
+							"name": "TLC",
+							"uri": "spotify:artist:0TImkz4nPqjegtVSMZnMRq"
+						}
+					],
+					"duration_ms": 303960,
+					"name": "Red Light Special",
+					"uri": "spotify:track:6dW75XbJ1WAMljOXWjTK46"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Crazysexycool",
+						"uri": "spotify:album:5eg56dCpFn32neJak2vk0f"
+					},
+					"artists": [
+						{
+							"name": "TLC",
+							"uri": "spotify:artist:0TImkz4nPqjegtVSMZnMRq"
+						}
+					],
+					"duration_ms": 254560,
+					"name": "Diggin' On You",
+					"uri": "spotify:track:2W2vmNmTLERMWT9XBxm35E"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Crazysexycool",
+						"uri": "spotify:album:5eg56dCpFn32neJak2vk0f"
+					},
+					"artists": [
+						{
+							"name": "TLC",
+							"uri": "spotify:artist:0TImkz4nPqjegtVSMZnMRq"
+						}
+					],
+					"duration_ms": 279506,
+					"name": "Waterfalls",
+					"uri": "spotify:track:6qspW4YKycviDFjHBOaqUY"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Revolution",
+						"uri": "spotify:album:6MpXazCWGzqGQiz8XfaghM"
+					},
+					"artists": [
+						{
+							"name": "Dilba",
+							"uri": "spotify:artist:7EIe1Y7mnJmzqQ3OzrDHWq"
+						}
+					],
+					"duration_ms": 225680,
+					"name": "Every Little Thing",
+					"uri": "spotify:track:747Zu3dIc2iLzg0ZauUOO7"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "The Complete Decca Studio Albums Collection",
+						"uri": "spotify:album:3WPr3e2yvKTjNS2JJi4tGk"
+					},
+					"artists": [
+						{
+							"name": "Tom Jones",
+							"uri": "spotify:artist:1T0wRBO0CK0vK8ouUMqEl5"
+						}
+					],
+					"duration_ms": 172466,
+					"name": "She's A Lady",
+					"uri": "spotify:track:5QfQ5iROTerk3MZ5amX01z"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "'90s Soul Number 1's",
+						"uri": "spotify:album:4LbbUj2bytdZ1PWEs69QCn"
+					},
+					"artists": [
+						{
+							"name": "Bobby Brown",
+							"uri": "spotify:artist:62sPt3fswraiEPnKQpAbdE"
+						}
+					],
+					"duration_ms": 322000,
+					"name": "Humpin' Around - Radio Edit",
+					"uri": "spotify:track:3FsPxHAATCITLHZZVIa7Us"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Don't Be Cruel",
+						"uri": "spotify:album:4JYhOe7TlnOQkwWNAcCfPt"
+					},
+					"artists": [
+						{
+							"name": "Bobby Brown",
+							"uri": "spotify:artist:62sPt3fswraiEPnKQpAbdE"
+						}
+					],
+					"duration_ms": 288800,
+					"name": "My Prerogative",
+					"uri": "spotify:track:0FjMLXne5a6RXzlZyl6ftr"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Christina Aguilera (Expanded Edition)",
+						"uri": "spotify:album:6fpPZS13ImRVpr7Tqs6yP9"
+					},
+					"artists": [
+						{
+							"name": "Christina Aguilera",
+							"uri": "spotify:artist:1l7ZsJRRS8wlW3WfJfPfNS"
+						}
+					],
+					"duration_ms": 217573,
+					"name": "Genie In a Bottle",
+					"uri": "spotify:track:11mwFrKvLXCbcVGNxffGyP"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Stripped",
+						"uri": "spotify:album:2USigX9DhGuAini71XZEEK"
+					},
+					"artists": [
+						{
+							"name": "Christina Aguilera",
+							"uri": "spotify:artist:1l7ZsJRRS8wlW3WfJfPfNS"
+						}
+					],
+					"duration_ms": 245960,
+					"name": "Fighter",
+					"uri": "spotify:track:7nXq1vaZiz7PdbfojpPjW5"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Moulin Rouge",
+						"uri": "spotify:album:5cbAqQZSEgRiiNjuEHWTXc"
+					},
+					"artists": [
+						{
+							"name": "Christina Aguilera",
+							"uri": "spotify:artist:1l7ZsJRRS8wlW3WfJfPfNS"
+						},
+						{
+							"name": "Lil' Kim",
+							"uri": "spotify:artist:5tth2a3v0sWwV1C7bApBdX"
+						},
+						{
+							"name": "Mýa",
+							"uri": "spotify:artist:6lHL3ubAMgSasKjNqKb8HF"
+						},
+						{
+							"name": "P!nk",
+							"uri": "spotify:artist:1KCSPY1glIKqW2TotWuXOR"
+						}
+					],
+					"duration_ms": 264893,
+					"name": "Lady Marmalade - From \"Moulin Rouge\" Soundtrack",
+					"uri": "spotify:track:7GbqE3MlkKosIaCvf50JRK"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Back To Basics",
+						"uri": "spotify:album:0zRJsgzHZUUdk8Rjk6Segd"
+					},
+					"artists": [
+						{
+							"name": "Christina Aguilera",
+							"uri": "spotify:artist:1l7ZsJRRS8wlW3WfJfPfNS"
+						}
+					],
+					"duration_ms": 228906,
+					"name": "Ain't No Other Man",
+					"uri": "spotify:track:7huo2wvrCgRucUsjdSDLQV"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Stripped",
+						"uri": "spotify:album:2USigX9DhGuAini71XZEEK"
+					},
+					"artists": [
+						{
+							"name": "Christina Aguilera",
+							"uri": "spotify:artist:1l7ZsJRRS8wlW3WfJfPfNS"
+						},
+						{
+							"name": "Redman",
+							"uri": "spotify:artist:7xTKLpo7UCzXSnlH7fOIoM"
+						}
+					],
+					"duration_ms": 298853,
+					"name": "Dirrty (feat. Redman)",
+					"uri": "spotify:track:59ZTxQo8rBycIXPLUIKvE2"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Christina Aguilera (Expanded Edition)",
+						"uri": "spotify:album:6fpPZS13ImRVpr7Tqs6yP9"
+					},
+					"artists": [
+						{
+							"name": "Christina Aguilera",
+							"uri": "spotify:artist:1l7ZsJRRS8wlW3WfJfPfNS"
+						}
+					],
+					"duration_ms": 215800,
+					"name": "What a Girl Wants",
+					"uri": "spotify:track:5bGmuxShUba9maPswDnhCs"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "C.M.B.",
+						"uri": "spotify:album:17mrdLXkhmlY36jRm9cUbw"
+					},
+					"artists": [
+						{
+							"name": "Color Me Badd",
+							"uri": "spotify:artist:1QtIfAa6y7w2JhxYJhYeUG"
+						}
+					],
+					"duration_ms": 211493,
+					"name": "All 4 Love",
+					"uri": "spotify:track:4XmsMIMjvDIFEjeY3ycMzW"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "C.M.B.",
+						"uri": "spotify:album:17mrdLXkhmlY36jRm9cUbw"
+					},
+					"artists": [
+						{
+							"name": "Color Me Badd",
+							"uri": "spotify:artist:1QtIfAa6y7w2JhxYJhYeUG"
+						}
+					],
+					"duration_ms": 236946,
+					"name": "I Wanna Sex You Up - Single Mix",
+					"uri": "spotify:track:1kPBHRXyXdrtYfUfeRwBko"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Sunmachine",
+						"uri": "spotify:album:3g7HQDyHtfgIUf9qle9iFl"
+					},
+					"artists": [
+						{
+							"name": "Dario G",
+							"uri": "spotify:artist:3Eo78i1MPfle0XVjMvia8A"
+						}
+					],
+					"duration_ms": 379200,
+					"name": "Sunchyme",
+					"uri": "spotify:track:7bRFOn6x2XT1mPNuBL6DHs"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Och vinnaren är...",
+						"uri": "spotify:album:7K3z58HrZ2RJR2j82xWbsc"
+					},
+					"artists": [
+						{
+							"name": "Veronica Maggio",
+							"uri": "spotify:artist:2OIWxN9xUhgUHkeUCWCaNs"
+						}
+					],
+					"duration_ms": 205546,
+					"name": "Måndagsbarn",
+					"uri": "spotify:track:4MXHBiKcdqHBJ4PeHQJBHO"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Vatten och bröd",
+						"uri": "spotify:album:3cj1E5Fhfjmj3nj6BIzrK2"
+					},
+					"artists": [
+						{
+							"name": "Veronica Maggio",
+							"uri": "spotify:artist:2OIWxN9xUhgUHkeUCWCaNs"
+						}
+					],
+					"duration_ms": 183600,
+					"name": "Nöjd? - Radio Version",
+					"uri": "spotify:track:6bvNKLqRlzXrBxfjjETvD3"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Och vinnaren är...",
+						"uri": "spotify:album:7K3z58HrZ2RJR2j82xWbsc"
+					},
+					"artists": [
+						{
+							"name": "Veronica Maggio",
+							"uri": "spotify:artist:2OIWxN9xUhgUHkeUCWCaNs"
+						}
+					],
+					"duration_ms": 214960,
+					"name": "V för Vendetta",
+					"uri": "spotify:track:5F7bTcdeDDs4CA7R1eNWGL"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Och vinnaren är...",
+						"uri": "spotify:album:7K3z58HrZ2RJR2j82xWbsc"
+					},
+					"artists": [
+						{
+							"name": "Veronica Maggio",
+							"uri": "spotify:artist:2OIWxN9xUhgUHkeUCWCaNs"
+						}
+					],
+					"duration_ms": 186466,
+					"name": "Stopp",
+					"uri": "spotify:track:6XJI8e062EqXIO4SMXkP83"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Spice",
+						"uri": "spotify:album:3x2jF7blR6bFHtk4MccsyJ"
+					},
+					"artists": [
+						{
+							"name": "Spice Girls",
+							"uri": "spotify:artist:0uq5PttqEjj3IH1bzwcrXF"
+						}
+					],
+					"duration_ms": 173026,
+					"name": "Wannabe",
+					"uri": "spotify:track:1Je1IMUlBXcx1Fz0WE7oPT"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Greatest Hits",
+						"uri": "spotify:album:2XLpqfYjGTecYQJQU9wFxG"
+					},
+					"artists": [
+						{
+							"name": "Spice Girls",
+							"uri": "spotify:artist:0uq5PttqEjj3IH1bzwcrXF"
+						}
+					],
+					"duration_ms": 175813,
+					"name": "Spice Up Your Life",
+					"uri": "spotify:track:0Co5UMAXjlBvElEAtFegdt"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Spice",
+						"uri": "spotify:album:3x2jF7blR6bFHtk4MccsyJ"
+					},
+					"artists": [
+						{
+							"name": "Spice Girls",
+							"uri": "spotify:artist:0uq5PttqEjj3IH1bzwcrXF"
+						}
+					],
+					"duration_ms": 235973,
+					"name": "Say You'll Be There",
+					"uri": "spotify:track:1yTQ39my3MoNROlFw3RDNy"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Spiceworld",
+						"uri": "spotify:album:3sr6lAuO3nmB1u8ZuQgpiX"
+					},
+					"artists": [
+						{
+							"name": "Spice Girls",
+							"uri": "spotify:artist:0uq5PttqEjj3IH1bzwcrXF"
+						}
+					],
+					"duration_ms": 204753,
+					"name": "Stop",
+					"uri": "spotify:track:3FteycP8CaXS1MhjcXekVT"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Spice",
+						"uri": "spotify:album:3x2jF7blR6bFHtk4MccsyJ"
+					},
+					"artists": [
+						{
+							"name": "Spice Girls",
+							"uri": "spotify:artist:0uq5PttqEjj3IH1bzwcrXF"
+						}
+					],
+					"duration_ms": 240706,
+					"name": "Who Do You Think You Are",
+					"uri": "spotify:track:1jI1aLmm5HTwiMtvsbwDJw"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Spiceworld",
+						"uri": "spotify:album:3sr6lAuO3nmB1u8ZuQgpiX"
+					},
+					"artists": [
+						{
+							"name": "Spice Girls",
+							"uri": "spotify:artist:0uq5PttqEjj3IH1bzwcrXF"
+						}
+					],
+					"duration_ms": 310666,
+					"name": "Viva Forever",
+					"uri": "spotify:track:6BPDPcnbDMDf58srVzbfX9"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Greatest Hits",
+						"uri": "spotify:album:2XLpqfYjGTecYQJQU9wFxG"
+					},
+					"artists": [
+						{
+							"name": "Spice Girls",
+							"uri": "spotify:artist:0uq5PttqEjj3IH1bzwcrXF"
+						}
+					],
+					"duration_ms": 163760,
+					"name": "Move Over",
+					"uri": "spotify:track:6hXb6O286px9J2Qyd5G3Nu"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Spiceworld",
+						"uri": "spotify:album:3sr6lAuO3nmB1u8ZuQgpiX"
+					},
+					"artists": [
+						{
+							"name": "Spice Girls",
+							"uri": "spotify:artist:0uq5PttqEjj3IH1bzwcrXF"
+						}
+					],
+					"duration_ms": 173666,
+					"name": "Spice Up Your Life",
+					"uri": "spotify:track:5qGwqO0lkbBXw4xNfzT7SF"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Greatest Hits",
+						"uri": "spotify:album:2XLpqfYjGTecYQJQU9wFxG"
+					},
+					"artists": [
+						{
+							"name": "Spice Girls",
+							"uri": "spotify:artist:0uq5PttqEjj3IH1bzwcrXF"
+						}
+					],
+					"duration_ms": 236586,
+					"name": "Holler",
+					"uri": "spotify:track:36dQazx2WAniLorlTihOtW"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Schizophonic",
+						"uri": "spotify:album:7r14xPWDHH2ao9gLrDxHMd"
+					},
+					"artists": [
+						{
+							"name": "Geri Halliwell",
+							"uri": "spotify:artist:5orH1OWgjAYUX8sZ5gihTv"
+						}
+					],
+					"duration_ms": 193466,
+					"name": "Mi chico latino",
+					"uri": "spotify:track:3Qu88IYwuDpUQNi6UwJsDz"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Schizophonic",
+						"uri": "spotify:album:7r14xPWDHH2ao9gLrDxHMd"
+					},
+					"artists": [
+						{
+							"name": "Geri Halliwell",
+							"uri": "spotify:artist:5orH1OWgjAYUX8sZ5gihTv"
+						}
+					],
+					"duration_ms": 272160,
+					"name": "Look at Me",
+					"uri": "spotify:track:7jsYlbbaAzP2VHkLGlfn6r"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Northern Star",
+						"uri": "spotify:album:6TjfhQSmmBOEwIXkoT3fdZ"
+					},
+					"artists": [
+						{
+							"name": "Melanie C",
+							"uri": "spotify:artist:60vX3zLcdKRXvKLITVh5Df"
+						},
+						{
+							"name": "Lisa \"Left Eye\" Lopes",
+							"uri": "spotify:artist:64ccradw8gAQn9gMQZmEha"
+						}
+					],
+					"duration_ms": 294200,
+					"name": "Never Be The Same Again",
+					"uri": "spotify:track:79EAVfOpzgfHx3IE2BVFQv"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Northern Star",
+						"uri": "spotify:album:6TjfhQSmmBOEwIXkoT3fdZ"
+					},
+					"artists": [
+						{
+							"name": "Melanie C",
+							"uri": "spotify:artist:60vX3zLcdKRXvKLITVh5Df"
+						}
+					],
+					"duration_ms": 352173,
+					"name": "I Turn To You",
+					"uri": "spotify:track:1Le4SDanBrX8OtmnnyTNrh"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Here Comes The Fuzz",
+						"uri": "spotify:album:62Qu5QoNx3De0p5qQT0u7o"
+					},
+					"artists": [
+						{
+							"name": "Mark Ronson",
+							"uri": "spotify:artist:3hv9jJF3adDNsBSIQDqcjp"
+						},
+						{
+							"name": "Ghostface Killah",
+							"uri": "spotify:artist:6FD0unjzGQhX3b6eMccMJe"
+						},
+						{
+							"name": "Nate Dogg",
+							"uri": "spotify:artist:1Oa0bMld0A3u5OTYfMzp5h"
+						},
+						{
+							"name": "Trife",
+							"uri": "spotify:artist:3wPM3fbGYp56vzXMId27qs"
+						},
+						{
+							"name": "Saigon",
+							"uri": "spotify:artist:0mTfntDCCWRozUnyxpGf6E"
+						}
+					],
+					"duration_ms": 209626,
+					"name": "Ooh Wee (feat. Ghostface Killah, Nate Dogg, Trife & Saigon)",
+					"uri": "spotify:track:4WimB4Ei0LU3MotHhL3kBL"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"album_type": null,
+						"artists": [],
+						"available_markets": [],
+						"external_urls": {},
+						"href": null,
+						"id": null,
+						"images": [],
+						"name": "Present Shock Value (Deluxe Edition)",
+						"release_date": null,
+						"release_date_precision": null,
+						"type": "album",
+						"uri": null
+					},
+					"artists": [
+						{
+							"external_urls": {},
+							"href": null,
+							"id": null,
+							"name": "Timbaland",
+							"type": "artist",
+							"uri": null
+						}
+					],
+					"available_markets": [],
+					"disc_number": 0,
+					"duration_ms": 234000,
+					"explicit": false,
+					"external_ids": {},
+					"external_urls": {},
+					"href": null,
+					"id": null,
+					"is_local": true,
+					"name": "Give It To Me (Feat Nelly Furtado & Justin Timberlake)",
+					"popularity": 0,
+					"preview_url": null,
+					"track_number": 0,
+					"type": "track",
+					"uri": "spotify:local:Timbaland:Present+Shock+Value+%28Deluxe+Edition%29:Give+It+To+Me+%28Feat+Nelly+Furtado+%26+Justin+Timberlake%29:234"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Non Zero Sumness Plus One",
+						"uri": "spotify:album:4DcIgdBbqm0Fqhmh5RcoCD"
+					},
+					"artists": [
+						{
+							"name": "Planet Funk",
+							"uri": "spotify:artist:4c4Ce4N4vJOs3Tzee020S4"
+						}
+					],
+					"duration_ms": 233040,
+					"name": "Chase the Sun",
+					"uri": "spotify:track:2mkBHN67xLpHrpqOuj79Yz"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "The Definitive 80's (eighties)",
+						"uri": "spotify:album:0H8w0t8lsZiSTVA3yORSVP"
+					},
+					"artists": [
+						{
+							"name": "S'Express",
+							"uri": "spotify:artist:2PvqyOwynRF4BveaU6IA7S"
+						}
+					],
+					"duration_ms": 234080,
+					"name": "Theme from S-Express",
+					"uri": "spotify:track:1ZT36B4fO2R7rBCGRb3XIM"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Please Hammer Don't Hurt 'Em",
+						"uri": "spotify:album:4r1WecJyt5FOhglysp9zhN"
+					},
+					"artists": [
+						{
+							"name": "MC Hammer",
+							"uri": "spotify:artist:2rblp9fJo16ZPTcKDtlmKW"
+						}
+					],
+					"duration_ms": 257360,
+					"name": "U Can't Touch This",
+					"uri": "spotify:track:1B75hgRqe7A4fwee3g3Wmu"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Hello Nasty (Deluxe Version/Remastered 2009)",
+						"uri": "spotify:album:6eGYLONkDMja0MNtZWnRRB"
+					},
+					"artists": [
+						{
+							"name": "Beastie Boys",
+							"uri": "spotify:artist:03r4iKL2g2442PT9n2UKsx"
+						}
+					],
+					"duration_ms": 231493,
+					"name": "Intergalactic - Remastered",
+					"uri": "spotify:track:5fpizYGbi5IQoEraj6FP0R"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Ill Communication",
+						"uri": "spotify:album:6lfjbwFGzQ6aSNP1N3JlT8"
+					},
+					"artists": [
+						{
+							"name": "Beastie Boys",
+							"uri": "spotify:artist:03r4iKL2g2442PT9n2UKsx"
+						}
+					],
+					"duration_ms": 178440,
+					"name": "Sabotage",
+					"uri": "spotify:track:0Puj4YlTm6xNzDDADXHMI9"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Licensed To Ill",
+						"uri": "spotify:album:11oR0ZuqB3ucZwb5TGbZxb"
+					},
+					"artists": [
+						{
+							"name": "Beastie Boys",
+							"uri": "spotify:artist:03r4iKL2g2442PT9n2UKsx"
+						}
+					],
+					"duration_ms": 208653,
+					"name": "Fight For Your Right",
+					"uri": "spotify:track:5NLuC70kZQv8q34QyQa1DP"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Very Necessary",
+						"uri": "spotify:album:2W2EmEpud13QHlhCFS9P8g"
+					},
+					"artists": [
+						{
+							"name": "Salt-N-Pepa",
+							"uri": "spotify:artist:7wqtxqI3eo7Gn1P7SpP6cQ"
+						}
+					],
+					"duration_ms": 248573,
+					"name": "Shoop",
+					"uri": "spotify:track:0Pu71wxadDlB8fJXfjIjeJ"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Hot, Cool & Vicious",
+						"uri": "spotify:album:5QFYPgLGw6DYz8S3TrLM2d"
+					},
+					"artists": [
+						{
+							"name": "Salt-N-Pepa",
+							"uri": "spotify:artist:7wqtxqI3eo7Gn1P7SpP6cQ"
+						}
+					],
+					"duration_ms": 272133,
+					"name": "Push It",
+					"uri": "spotify:track:6sT9MWlJManry3EQwf4V80"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Very Necessary",
+						"uri": "spotify:album:2W2EmEpud13QHlhCFS9P8g"
+					},
+					"artists": [
+						{
+							"name": "Salt-N-Pepa",
+							"uri": "spotify:artist:7wqtxqI3eo7Gn1P7SpP6cQ"
+						},
+						{
+							"name": "En Vogue",
+							"uri": "spotify:artist:5fikk4h5qbEebqK2Fc6e48"
+						}
+					],
+					"duration_ms": 308360,
+					"name": "Whatta Man",
+					"uri": "spotify:track:7sJN693sYKEIEMu7fc5VnJ"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Bread & Barrels Of Water",
+						"uri": "spotify:album:23KueVfptj2FK6Wk5ZMKPk"
+					},
+					"artists": [
+						{
+							"name": "Outlandish",
+							"uri": "spotify:artist:5tqMW5dSAlvh0GvgD3XfDy"
+						},
+						{
+							"name": "Isam Bachiri",
+							"uri": "spotify:artist:31aoUeWDfZNAfgdDmGFCgw"
+						},
+						{
+							"name": "Waqas Qadri",
+							"uri": "spotify:artist:689gVHpG7iFqqN8Su9k1lF"
+						},
+						{
+							"name": "Lenny Martinez",
+							"uri": "spotify:artist:07CyZVvGY4aiBrf14etUAC"
+						}
+					],
+					"duration_ms": 275680,
+					"name": "Aicha",
+					"uri": "spotify:track:7mze3mJmu79AJu8SnS37pS"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Bread & Barrels Of Water",
+						"uri": "spotify:album:23KueVfptj2FK6Wk5ZMKPk"
+					},
+					"artists": [
+						{
+							"name": "Outlandish",
+							"uri": "spotify:artist:5tqMW5dSAlvh0GvgD3XfDy"
+						},
+						{
+							"name": "Isam Bachiri",
+							"uri": "spotify:artist:31aoUeWDfZNAfgdDmGFCgw"
+						},
+						{
+							"name": "Waqas Qadri",
+							"uri": "spotify:artist:689gVHpG7iFqqN8Su9k1lF"
+						},
+						{
+							"name": "Lenny Martinez",
+							"uri": "spotify:artist:07CyZVvGY4aiBrf14etUAC"
+						}
+					],
+					"duration_ms": 234600,
+					"name": "Walou",
+					"uri": "spotify:track:1tLRQ2BjSoSpEkq3EOQyuD"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Choose Life",
+						"uri": "spotify:album:5lyr6aF1azrH77MAkWrO6o"
+					},
+					"artists": [
+						{
+							"name": "PF Project",
+							"uri": "spotify:artist:4Je0lOFAaFI0xXIddnctaj"
+						},
+						{
+							"name": "Ewan McGregor",
+							"uri": "spotify:artist:105Paee9vmV5rfLSG652e1"
+						}
+					],
+					"duration_ms": 231466,
+					"name": "Choose Life",
+					"uri": "spotify:track:3ieiClXnS99ctYrUSeZPGu"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "The Age of Consent",
+						"uri": "spotify:album:6OMYQUITdN6wBaWfEtgooI"
+					},
+					"artists": [
+						{
+							"name": "Bronski Beat",
+							"uri": "spotify:artist:2wpWOzQE5TpA0dVnh5YD08"
+						}
+					],
+					"duration_ms": 302413,
+					"name": "Smalltown Boy",
+					"uri": "spotify:track:5vmRQ3zELMLUQPo2FLQ76x"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "The Collection",
+						"uri": "spotify:album:5QXK9xXDSYvSOXYSJHdwOD"
+					},
+					"artists": [
+						{
+							"name": "Bobby McFerrin",
+							"uri": "spotify:artist:2FjkZT851ez950cyPjeYid"
+						}
+					],
+					"duration_ms": 292400,
+					"name": "Don't Worry Be Happy",
+					"uri": "spotify:track:5YbgcwHjQhdT1BYQ4rxWlD"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Songs From The Big Chair (Super Deluxe Edition)",
+						"uri": "spotify:album:3myPwaMYjdwhtq0nFgeG6W"
+					},
+					"artists": [
+						{
+							"name": "Tears For Fears",
+							"uri": "spotify:artist:4bthk9UfsYUYdcFyqxmSUU"
+						}
+					],
+					"duration_ms": 251488,
+					"name": "Everybody Wants To Rule The World",
+					"uri": "spotify:track:4RvWPyQ5RL0ao9LPZeSouE"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Forever Young (Super Deluxe Edition; 2019 Remaster)",
+						"uri": "spotify:album:1BAmE3bdBnxej0umzyHQ5x"
+					},
+					"artists": [
+						{
+							"name": "Alphaville",
+							"uri": "spotify:artist:0xliTEbFfy5HQHvsTknTkX"
+						}
+					],
+					"duration_ms": 284625,
+					"name": "Big in Japan - 2019 Remaster",
+					"uri": "spotify:track:7wnagOAqma4Sg6JOGjWr5R"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Up",
+						"uri": "spotify:album:1qgGxfnTXeBOkBNnLzDi36"
+					},
+					"artists": [
+						{
+							"name": "Right Said Fred",
+							"uri": "spotify:artist:15ajdFAi5bjj5pS9laBfBL"
+						}
+					],
+					"duration_ms": 170466,
+					"name": "I'm Too Sexy",
+					"uri": "spotify:track:2WElktskrNJEwgpp5Vouxk"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Amplified Heart",
+						"uri": "spotify:album:6ZMxoed3JJVjSzDQ2iVeYN"
+					},
+					"artists": [
+						{
+							"name": "Everything But The Girl",
+							"uri": "spotify:artist:13ccXrK7AmXb4TddMkE7jy"
+						},
+						{
+							"name": "Todd Terry",
+							"uri": "spotify:artist:3dE92yGWcrboP1kC5SWyqu"
+						}
+					],
+					"duration_ms": 249533,
+					"name": "Missing - Todd Terry Club Mix / US Radio Edit",
+					"uri": "spotify:track:36sL3KPEfXIp5KH3tDO7oo"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Best Of",
+						"uri": "spotify:album:5uuAdNhG4ruMYRFPVCW8gL"
+					},
+					"artists": [
+						{
+							"name": "Technotronic",
+							"uri": "spotify:artist:2Cd98zHVdZeOCisc6Gi2sB"
+						},
+						{
+							"name": "Felly",
+							"uri": "spotify:artist:1pvibpCqTQG4mnbZ7vVSDj"
+						}
+					],
+					"duration_ms": 215040,
+					"name": "Pump Up The Jam - Edit",
+					"uri": "spotify:track:0UAEHlFR79k9CJvknSGUNf"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Confessions (Expanded Edition)",
+						"uri": "spotify:album:1RM6MGv6bcl6NrAG8PGoZk"
+					},
+					"artists": [
+						{
+							"name": "Usher",
+							"uri": "spotify:artist:23zg3TcAtWQy7J6upgbUnj"
+						},
+						{
+							"name": "Lil Jon",
+							"uri": "spotify:artist:7sfl4Xt5KmfyDs2T3SVSMK"
+						},
+						{
+							"name": "Ludacris",
+							"uri": "spotify:artist:3ipn9JLAPI5GUEo4y4jcoi"
+						}
+					],
+					"duration_ms": 250373,
+					"name": "Yeah! (feat. Lil Jon & Ludacris)",
+					"uri": "spotify:track:5rb9QrpfcKFHM1EUbSIurX"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Bizarre Fruit",
+						"uri": "spotify:album:0RUjiRi4UXzRUdTq1ANou7"
+					},
+					"artists": [
+						{
+							"name": "M People",
+							"uri": "spotify:artist:3lcbKPLl0ci2mKRdcP5Etf"
+						}
+					],
+					"duration_ms": 340933,
+					"name": "Sugar Town",
+					"uri": "spotify:track:0vT1Q3qFCQgJcyLsFuK60O"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "SNAP! The Power Greatest Hits",
+						"uri": "spotify:album:0f7ZSi2EcurDJU0UeKFjuZ"
+					},
+					"artists": [
+						{
+							"name": "SNAP!",
+							"uri": "spotify:artist:2FrKQPjJe4pVMZOgm0ESOx"
+						},
+						{
+							"name": "Niki Haris",
+							"uri": "spotify:artist:6AKDBd8dDnM715jeUivRm1"
+						}
+					],
+					"duration_ms": 254791,
+					"name": "Do You See the Light? (Looking For) [feat. Niki Haris] - 7\" Edit",
+					"uri": "spotify:track:1ClsTc9ppIu8aU3KaGAB0g"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Catalogue",
+						"uri": "spotify:album:5sCp2ukwrtpYj5wGfMx78M"
+					},
+					"artists": [
+						{
+							"name": "Moloko",
+							"uri": "spotify:artist:4aaBjq7VqqQvpSF69GglvO"
+						}
+					],
+					"duration_ms": 222226,
+					"name": "Time Is Now",
+					"uri": "spotify:track:7xG0XZhUxTu6Axewwq0jfN"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Who Let The Dogs Out",
+						"uri": "spotify:album:44UH34qoCNNfEqo0VnOkGd"
+					},
+					"artists": [
+						{
+							"name": "Baha Men",
+							"uri": "spotify:artist:67FFKYikvTlvsPNk4NPOYJ"
+						}
+					],
+					"duration_ms": 198400,
+					"name": "Who Let The Dogs Out",
+					"uri": "spotify:track:1H5tvpoApNDxvxDexoaAUo"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Mr. Vain",
+						"uri": "spotify:album:0eVj6uUqoagjDPSOmz2rRj"
+					},
+					"artists": [
+						{
+							"name": "Culture Beat",
+							"uri": "spotify:artist:0BZ3BHzfYwpd3k5TDnvAz8"
+						}
+					],
+					"duration_ms": 257466,
+					"name": "Mr. Vain - Original Radio Edit",
+					"uri": "spotify:track:4ih3dyFZoeTdaeJW9mPbOI"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "The Album",
+						"uri": "spotify:album:1LAx7yCVbGwskdnGDof8SC"
+					},
+					"artists": [
+						{
+							"name": "Haddaway",
+							"uri": "spotify:artist:0Suv0tRrNrUlRzAy8aXjma"
+						}
+					],
+					"duration_ms": 270373,
+					"name": "What Is Love - 7\" Mix",
+					"uri": "spotify:track:2IHaGyfxNoFPLJnaEg4GTs"
+				}
+			}
+		]
+	}
 }

@@ -18,6 +18,9 @@
 			case "go-radio":
 			case "go-queue":
 			case "go-devices":
+				if (Self.els.panel.hasClass("show")) {
+					return Self.dispatch({ type: "close-panel" });
+				}
 				Self.els.content.addClass("panel-showing");
 				Self.els.panel.addClass("show");
 				break;

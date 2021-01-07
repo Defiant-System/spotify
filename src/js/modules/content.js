@@ -1,5 +1,5 @@
 
-// spotify.playlist
+// spotify.content
 
 {
 	init() {
@@ -7,9 +7,15 @@
 			body: window.find("content .body")
 		};
 
+		// window.render({
+		// 	template: "playlist-view",
+		// 	match: "//Playlist",
+		// 	target: this.els.body
+		// });
+
 		window.render({
-			template: "playlist",
-			match: "//Playlist",
+			template: "artist-view",
+			match: "//Artist",
 			target: this.els.body
 		});
 	},
