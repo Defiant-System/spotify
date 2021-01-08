@@ -13,11 +13,11 @@
 		// 	target: this.els.body
 		// });
 
-		window.render({
-			template: "artist-view",
-			match: "//Artist",
-			target: this.els.body
-		});
+		// window.render({
+		// 	template: "artist-view",
+		// 	match: "//Artist",
+		// 	target: this.els.body
+		// });
 	},
 	dispatch(event) {
 		let Self = spotify.playlist,

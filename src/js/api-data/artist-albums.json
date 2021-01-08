@@ -1,0 +1,970 @@
+{
+  "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8/albums?offset=0&limit=10&include_groups=album,single,compilation,appears_on",
+  "items": [
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+          },
+          "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+          "id": "1k8VBufn1nBs8LN9n4snc8",
+          "name": "Stereo MC's",
+          "type": "artist",
+          "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5ZrGK55yglfGEOvnB2japP"
+          },
+          "href": "https://api.spotify.com/v1/artists/5ZrGK55yglfGEOvnB2japP",
+          "id": "5ZrGK55yglfGEOvnB2japP",
+          "name": "Terranova",
+          "type": "artist",
+          "uri": "spotify:artist:5ZrGK55yglfGEOvnB2japP"
+        }
+      ],
+      "available_markets": [
+        "AD",
+        "AE",
+        "AL",
+        "AR",
+        "AT",
+        "AU",
+        "BA",
+        "BE",
+        "BG",
+        "BH",
+        "BO",
+        "BR",
+        "BY",
+        "CA",
+        "CH",
+        "CL",
+        "CO",
+        "CR",
+        "CY",
+        "CZ",
+        "DE",
+        "DK",
+        "DO",
+        "DZ",
+        "EC",
+        "EE",
+        "EG",
+        "ES",
+        "FI",
+        "FR",
+        "GB",
+        "GR",
+        "GT",
+        "HK",
+        "HN",
+        "HR",
+        "HU",
+        "ID",
+        "IE",
+        "IL",
+        "IN",
+        "IS",
+        "IT",
+        "JO",
+        "JP",
+        "KW",
+        "KZ",
+        "LB",
+        "LI",
+        "LT",
+        "LU",
+        "LV",
+        "MA",
+        "MC",
+        "MD",
+        "ME",
+        "MK",
+        "MT",
+        "MX",
+        "MY",
+        "NI",
+        "NL",
+        "NO",
+        "NZ",
+        "OM",
+        "PA",
+        "PE",
+        "PH",
+        "PL",
+        "PS",
+        "PT",
+        "PY",
+        "QA",
+        "RO",
+        "RS",
+        "RU",
+        "SA",
+        "SE",
+        "SG",
+        "SI",
+        "SK",
+        "SV",
+        "TH",
+        "TN",
+        "TR",
+        "TW",
+        "UA",
+        "US",
+        "UY",
+        "VN",
+        "XK",
+        "ZA"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1CrWJpmft9yYG3rlBDlAz9"
+      },
+      "href": "https://api.spotify.com/v1/albums/1CrWJpmft9yYG3rlBDlAz9",
+      "id": "1CrWJpmft9yYG3rlBDlAz9",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27385ffb810ec4a8c1e4277bc74",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0285ffb810ec4a8c1e4277bc74",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485185ffb810ec4a8c1e4277bc74",
+          "width": 64
+        }
+      ],
+      "name": "Deeper/Turnaround Remixes",
+      "release_date": "2016-05-06",
+      "release_date_precision": "day",
+      "total_tracks": 5,
+      "type": "album",
+      "uri": "spotify:album:1CrWJpmft9yYG3rlBDlAz9"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+          },
+          "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+          "id": "1k8VBufn1nBs8LN9n4snc8",
+          "name": "Stereo MC's",
+          "type": "artist",
+          "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+        }
+      ],
+      "available_markets": [
+        "AU",
+        "NZ"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/04sGfReWxvZGjA9GUvEO1y"
+      },
+      "href": "https://api.spotify.com/v1/albums/04sGfReWxvZGjA9GUvEO1y",
+      "id": "04sGfReWxvZGjA9GUvEO1y",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273ac7538fe6ce5206e21b01e58",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02ac7538fe6ce5206e21b01e58",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851ac7538fe6ce5206e21b01e58",
+          "width": 64
+        }
+      ],
+      "name": "Emperor's Nightingale",
+      "release_date": "2011-10-07",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:04sGfReWxvZGjA9GUvEO1y"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+          },
+          "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+          "id": "1k8VBufn1nBs8LN9n4snc8",
+          "name": "Stereo MC's",
+          "type": "artist",
+          "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+        }
+      ],
+      "available_markets": [
+        "AD",
+        "AE",
+        "AL",
+        "AR",
+        "AT",
+        "AU",
+        "BA",
+        "BE",
+        "BG",
+        "BH",
+        "BO",
+        "BR",
+        "BY",
+        "CA",
+        "CH",
+        "CL",
+        "CO",
+        "CR",
+        "CY",
+        "CZ",
+        "DE",
+        "DK",
+        "DO",
+        "DZ",
+        "EC",
+        "EE",
+        "EG",
+        "ES",
+        "FI",
+        "FR",
+        "GB",
+        "GR",
+        "GT",
+        "HK",
+        "HN",
+        "HR",
+        "HU",
+        "ID",
+        "IE",
+        "IL",
+        "IN",
+        "IS",
+        "IT",
+        "JO",
+        "JP",
+        "KW",
+        "KZ",
+        "LB",
+        "LI",
+        "LT",
+        "LU",
+        "LV",
+        "MA",
+        "MC",
+        "MD",
+        "ME",
+        "MK",
+        "MT",
+        "MX",
+        "MY",
+        "NI",
+        "NL",
+        "NO",
+        "NZ",
+        "OM",
+        "PA",
+        "PE",
+        "PH",
+        "PL",
+        "PS",
+        "PT",
+        "PY",
+        "QA",
+        "RO",
+        "RS",
+        "RU",
+        "SA",
+        "SE",
+        "SG",
+        "SI",
+        "SK",
+        "SV",
+        "TH",
+        "TN",
+        "TR",
+        "TW",
+        "UA",
+        "US",
+        "UY",
+        "VN",
+        "XK",
+        "ZA"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6p8AijdP91q12DuAVZETSf"
+      },
+      "href": "https://api.spotify.com/v1/albums/6p8AijdP91q12DuAVZETSf",
+      "id": "6p8AijdP91q12DuAVZETSf",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2736fe9a0e5618c995348d9cf1e",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e026fe9a0e5618c995348d9cf1e",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048516fe9a0e5618c995348d9cf1e",
+          "width": 64
+        }
+      ],
+      "name": "Double Bubble",
+      "release_date": "2008-07-27",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:6p8AijdP91q12DuAVZETSf"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+          },
+          "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+          "id": "1k8VBufn1nBs8LN9n4snc8",
+          "name": "Stereo MC's",
+          "type": "artist",
+          "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+        }
+      ],
+      "available_markets": [
+        "AU",
+        "NZ"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1sPb729vniBwMblKuf5zWW"
+      },
+      "href": "https://api.spotify.com/v1/albums/1sPb729vniBwMblKuf5zWW",
+      "id": "1sPb729vniBwMblKuf5zWW",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2732b9bfec5e2e92f059584e485",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e022b9bfec5e2e92f059584e485",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048512b9bfec5e2e92f059584e485",
+          "width": 64
+        }
+      ],
+      "name": "Double Bubble",
+      "release_date": "2008-07-26",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:1sPb729vniBwMblKuf5zWW"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+          },
+          "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+          "id": "1k8VBufn1nBs8LN9n4snc8",
+          "name": "Stereo MC's",
+          "type": "artist",
+          "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+        }
+      ],
+      "available_markets": [
+        "AD",
+        "AL",
+        "BA",
+        "BE",
+        "BG",
+        "BY",
+        "CY",
+        "CZ",
+        "DK",
+        "EE",
+        "ES",
+        "FI",
+        "FR",
+        "GR",
+        "HR",
+        "HU",
+        "IS",
+        "IT",
+        "LI",
+        "LT",
+        "LU",
+        "LV",
+        "MC",
+        "MD",
+        "ME",
+        "MK",
+        "MT",
+        "NL",
+        "NO",
+        "PL",
+        "PT",
+        "RO",
+        "RS",
+        "RU",
+        "SE",
+        "SI",
+        "SK",
+        "TR",
+        "UA",
+        "XK"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1w7JNvHN5xBoBpbCjxMTpJ"
+      },
+      "href": "https://api.spotify.com/v1/albums/1w7JNvHN5xBoBpbCjxMTpJ",
+      "id": "1w7JNvHN5xBoBpbCjxMTpJ",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273832ce8bbeb737ae482152f36",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02832ce8bbeb737ae482152f36",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851832ce8bbeb737ae482152f36",
+          "width": 64
+        }
+      ],
+      "name": "Double Bubble",
+      "release_date": "2008-07-21",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:1w7JNvHN5xBoBpbCjxMTpJ"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+          },
+          "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+          "id": "1k8VBufn1nBs8LN9n4snc8",
+          "name": "Stereo MC's",
+          "type": "artist",
+          "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+        }
+      ],
+      "available_markets": [
+        "AT",
+        "CH",
+        "DE"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5gajIht84JG53juOqec0j0"
+      },
+      "href": "https://api.spotify.com/v1/albums/5gajIht84JG53juOqec0j0",
+      "id": "5gajIht84JG53juOqec0j0",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273c17e8d1d5648a15ea2805c55",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02c17e8d1d5648a15ea2805c55",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851c17e8d1d5648a15ea2805c55",
+          "width": 64
+        }
+      ],
+      "name": "Double Bubble",
+      "release_date": "2008-07-11",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:5gajIht84JG53juOqec0j0"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+          },
+          "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+          "id": "1k8VBufn1nBs8LN9n4snc8",
+          "name": "Stereo MC's",
+          "type": "artist",
+          "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+        }
+      ],
+      "available_markets": [
+        "AD",
+        "AE",
+        "AR",
+        "AT",
+        "AU",
+        "BA",
+        "BE",
+        "BG",
+        "BH",
+        "BO",
+        "BR",
+        "CA",
+        "CH",
+        "CL",
+        "CO",
+        "CR",
+        "CY",
+        "CZ",
+        "DE",
+        "DK",
+        "DO",
+        "DZ",
+        "EC",
+        "EE",
+        "EG",
+        "ES",
+        "FI",
+        "FR",
+        "GB",
+        "GR",
+        "GT",
+        "HK",
+        "HN",
+        "HR",
+        "HU",
+        "ID",
+        "IE",
+        "IL",
+        "IN",
+        "IS",
+        "IT",
+        "JO",
+        "JP",
+        "KW",
+        "LB",
+        "LI",
+        "LT",
+        "LV",
+        "MA",
+        "MC",
+        "ME",
+        "MK",
+        "MT",
+        "MX",
+        "MY",
+        "NI",
+        "NL",
+        "NO",
+        "NZ",
+        "OM",
+        "PA",
+        "PE",
+        "PH",
+        "PL",
+        "PT",
+        "PY",
+        "QA",
+        "RO",
+        "RS",
+        "RU",
+        "SA",
+        "SE",
+        "SG",
+        "SI",
+        "SK",
+        "SV",
+        "TH",
+        "TN",
+        "TR",
+        "TW",
+        "UA",
+        "US",
+        "VN",
+        "XK",
+        "ZA"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4pki1vSTj72VCyiQyIzsFl"
+      },
+      "href": "https://api.spotify.com/v1/albums/4pki1vSTj72VCyiQyIzsFl",
+      "id": "4pki1vSTj72VCyiQyIzsFl",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273e748cffd978af5f43d08c73d",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02e748cffd978af5f43d08c73d",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851e748cffd978af5f43d08c73d",
+          "width": 64
+        }
+      ],
+      "name": "Live at The BBC",
+      "release_date": "2007-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 18,
+      "type": "album",
+      "uri": "spotify:album:4pki1vSTj72VCyiQyIzsFl"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+          },
+          "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+          "id": "1k8VBufn1nBs8LN9n4snc8",
+          "name": "Stereo MC's",
+          "type": "artist",
+          "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+        }
+      ],
+      "available_markets": [
+        "AD",
+        "AE",
+        "AL",
+        "AR",
+        "AT",
+        "AU",
+        "BA",
+        "BE",
+        "BG",
+        "BH",
+        "BO",
+        "BR",
+        "BY",
+        "CA",
+        "CH",
+        "CL",
+        "CO",
+        "CR",
+        "CY",
+        "CZ",
+        "DE",
+        "DK",
+        "DO",
+        "DZ",
+        "EC",
+        "EE",
+        "EG",
+        "ES",
+        "FI",
+        "FR",
+        "GB",
+        "GR",
+        "GT",
+        "HK",
+        "HN",
+        "HR",
+        "HU",
+        "ID",
+        "IE",
+        "IL",
+        "IN",
+        "IS",
+        "IT",
+        "JO",
+        "JP",
+        "KW",
+        "KZ",
+        "LB",
+        "LI",
+        "LT",
+        "LU",
+        "LV",
+        "MA",
+        "MC",
+        "MD",
+        "ME",
+        "MK",
+        "MT",
+        "MX",
+        "MY",
+        "NI",
+        "NL",
+        "NO",
+        "NZ",
+        "OM",
+        "PA",
+        "PE",
+        "PH",
+        "PL",
+        "PS",
+        "PT",
+        "PY",
+        "QA",
+        "RO",
+        "RS",
+        "RU",
+        "SA",
+        "SE",
+        "SG",
+        "SI",
+        "SK",
+        "SV",
+        "TH",
+        "TN",
+        "TR",
+        "TW",
+        "UA",
+        "US",
+        "UY",
+        "VN",
+        "XK",
+        "ZA"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6ydThtRPfXjHS79flxvVMC"
+      },
+      "href": "https://api.spotify.com/v1/albums/6ydThtRPfXjHS79flxvVMC",
+      "id": "6ydThtRPfXjHS79flxvVMC",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2733bdf8d1559780fc9598d9f1e",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e023bdf8d1559780fc9598d9f1e",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048513bdf8d1559780fc9598d9f1e",
+          "width": 64
+        }
+      ],
+      "name": "Paradise",
+      "release_date": "2005-08-25",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:6ydThtRPfXjHS79flxvVMC"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+          },
+          "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+          "id": "1k8VBufn1nBs8LN9n4snc8",
+          "name": "Stereo MC's",
+          "type": "artist",
+          "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+        }
+      ],
+      "available_markets": [
+        "AU",
+        "GB",
+        "IE",
+        "JP"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/07elBQXEpSU4finsqzW6uO"
+      },
+      "href": "https://api.spotify.com/v1/albums/07elBQXEpSU4finsqzW6uO",
+      "id": "07elBQXEpSU4finsqzW6uO",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27376d4d8c7910b72efef2c7bdb",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0276d4d8c7910b72efef2c7bdb",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485176d4d8c7910b72efef2c7bdb",
+          "width": 64
+        }
+      ],
+      "name": "Deep Down & Dirty",
+      "release_date": "2001-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 13,
+      "type": "album",
+      "uri": "spotify:album:07elBQXEpSU4finsqzW6uO"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+          },
+          "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+          "id": "1k8VBufn1nBs8LN9n4snc8",
+          "name": "Stereo MC's",
+          "type": "artist",
+          "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+        }
+      ],
+      "available_markets": [
+        "AD",
+        "AE",
+        "AR",
+        "AT",
+        "AU",
+        "BE",
+        "BG",
+        "BH",
+        "BO",
+        "BR",
+        "CA",
+        "CH",
+        "CL",
+        "CO",
+        "CR",
+        "CY",
+        "CZ",
+        "DE",
+        "DK",
+        "DO",
+        "EC",
+        "EE",
+        "EG",
+        "ES",
+        "FI",
+        "FR",
+        "GB",
+        "GR",
+        "GT",
+        "HK",
+        "HN",
+        "HR",
+        "HU",
+        "ID",
+        "IE",
+        "IL",
+        "IN",
+        "IS",
+        "IT",
+        "JO",
+        "JP",
+        "LB",
+        "LI",
+        "LT",
+        "LU",
+        "LV",
+        "MC",
+        "MT",
+        "MX",
+        "MY",
+        "NI",
+        "NL",
+        "NO",
+        "NZ",
+        "OM",
+        "PA",
+        "PE",
+        "PH",
+        "PL",
+        "PT",
+        "PY",
+        "QA",
+        "RO",
+        "RU",
+        "SA",
+        "SE",
+        "SG",
+        "SI",
+        "SK",
+        "SV",
+        "TH",
+        "TN",
+        "TR",
+        "TW",
+        "UA",
+        "US",
+        "VN",
+        "ZA"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1XlIVmi1cBZvBrdhzDeYTO"
+      },
+      "href": "https://api.spotify.com/v1/albums/1XlIVmi1cBZvBrdhzDeYTO",
+      "id": "1XlIVmi1cBZvBrdhzDeYTO",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273e8c0eca5da75269b2d229116",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02e8c0eca5da75269b2d229116",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851e8c0eca5da75269b2d229116",
+          "width": 64
+        }
+      ],
+      "name": "Deep Down & Dirty",
+      "release_date": "2001-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:1XlIVmi1cBZvBrdhzDeYTO"
+    }
+  ],
+  "limit": 10,
+  "next": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8/albums?offset=10&limit=10&include_groups=album,single,compilation,appears_on",
+  "offset": 0,
+  "previous": null,
+  "total": 139
+}
