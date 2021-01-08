@@ -1,5 +1,10 @@
 {
-  "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8/albums?offset=0&limit=10&include_groups=album,single,compilation,appears_on",
+  "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8/albums?offset=0&limit=10&include_groups=album,single,compilation,appears_on&market=SE",
+  "limit": 10,
+  "next": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8/albums?offset=10&limit=10&include_groups=album,single,compilation,appears_on&market=SE",
+  "offset": 0,
+  "previous": null,
+  "total": 98,
   "items": [
     {
       "album_group": "album",
@@ -25,100 +30,6 @@
           "type": "artist",
           "uri": "spotify:artist:5ZrGK55yglfGEOvnB2japP"
         }
-      ],
-      "available_markets": [
-        "AD",
-        "AE",
-        "AL",
-        "AR",
-        "AT",
-        "AU",
-        "BA",
-        "BE",
-        "BG",
-        "BH",
-        "BO",
-        "BR",
-        "BY",
-        "CA",
-        "CH",
-        "CL",
-        "CO",
-        "CR",
-        "CY",
-        "CZ",
-        "DE",
-        "DK",
-        "DO",
-        "DZ",
-        "EC",
-        "EE",
-        "EG",
-        "ES",
-        "FI",
-        "FR",
-        "GB",
-        "GR",
-        "GT",
-        "HK",
-        "HN",
-        "HR",
-        "HU",
-        "ID",
-        "IE",
-        "IL",
-        "IN",
-        "IS",
-        "IT",
-        "JO",
-        "JP",
-        "KW",
-        "KZ",
-        "LB",
-        "LI",
-        "LT",
-        "LU",
-        "LV",
-        "MA",
-        "MC",
-        "MD",
-        "ME",
-        "MK",
-        "MT",
-        "MX",
-        "MY",
-        "NI",
-        "NL",
-        "NO",
-        "NZ",
-        "OM",
-        "PA",
-        "PE",
-        "PH",
-        "PL",
-        "PS",
-        "PT",
-        "PY",
-        "QA",
-        "RO",
-        "RS",
-        "RU",
-        "SA",
-        "SE",
-        "SG",
-        "SI",
-        "SK",
-        "SV",
-        "TH",
-        "TN",
-        "TR",
-        "TW",
-        "UA",
-        "US",
-        "UY",
-        "VN",
-        "XK",
-        "ZA"
       ],
       "external_urls": {
         "spotify": "https://open.spotify.com/album/1CrWJpmft9yYG3rlBDlAz9"
@@ -164,148 +75,6 @@
           "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
         }
       ],
-      "available_markets": [
-        "AU",
-        "NZ"
-      ],
-      "external_urls": {
-        "spotify": "https://open.spotify.com/album/04sGfReWxvZGjA9GUvEO1y"
-      },
-      "href": "https://api.spotify.com/v1/albums/04sGfReWxvZGjA9GUvEO1y",
-      "id": "04sGfReWxvZGjA9GUvEO1y",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab67616d0000b273ac7538fe6ce5206e21b01e58",
-          "width": 640
-        },
-        {
-          "height": 300,
-          "url": "https://i.scdn.co/image/ab67616d00001e02ac7538fe6ce5206e21b01e58",
-          "width": 300
-        },
-        {
-          "height": 64,
-          "url": "https://i.scdn.co/image/ab67616d00004851ac7538fe6ce5206e21b01e58",
-          "width": 64
-        }
-      ],
-      "name": "Emperor's Nightingale",
-      "release_date": "2011-10-07",
-      "release_date_precision": "day",
-      "total_tracks": 14,
-      "type": "album",
-      "uri": "spotify:album:04sGfReWxvZGjA9GUvEO1y"
-    },
-    {
-      "album_group": "album",
-      "album_type": "album",
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
-          },
-          "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "id": "1k8VBufn1nBs8LN9n4snc8",
-          "name": "Stereo MC's",
-          "type": "artist",
-          "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
-        }
-      ],
-      "available_markets": [
-        "AD",
-        "AE",
-        "AL",
-        "AR",
-        "AT",
-        "AU",
-        "BA",
-        "BE",
-        "BG",
-        "BH",
-        "BO",
-        "BR",
-        "BY",
-        "CA",
-        "CH",
-        "CL",
-        "CO",
-        "CR",
-        "CY",
-        "CZ",
-        "DE",
-        "DK",
-        "DO",
-        "DZ",
-        "EC",
-        "EE",
-        "EG",
-        "ES",
-        "FI",
-        "FR",
-        "GB",
-        "GR",
-        "GT",
-        "HK",
-        "HN",
-        "HR",
-        "HU",
-        "ID",
-        "IE",
-        "IL",
-        "IN",
-        "IS",
-        "IT",
-        "JO",
-        "JP",
-        "KW",
-        "KZ",
-        "LB",
-        "LI",
-        "LT",
-        "LU",
-        "LV",
-        "MA",
-        "MC",
-        "MD",
-        "ME",
-        "MK",
-        "MT",
-        "MX",
-        "MY",
-        "NI",
-        "NL",
-        "NO",
-        "NZ",
-        "OM",
-        "PA",
-        "PE",
-        "PH",
-        "PL",
-        "PS",
-        "PT",
-        "PY",
-        "QA",
-        "RO",
-        "RS",
-        "RU",
-        "SA",
-        "SE",
-        "SG",
-        "SI",
-        "SK",
-        "SV",
-        "TH",
-        "TN",
-        "TR",
-        "TW",
-        "UA",
-        "US",
-        "UY",
-        "VN",
-        "XK",
-        "ZA"
-      ],
       "external_urls": {
         "spotify": "https://open.spotify.com/album/6p8AijdP91q12DuAVZETSf"
       },
@@ -349,96 +118,6 @@
           "type": "artist",
           "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
         }
-      ],
-      "available_markets": [
-        "AU",
-        "NZ"
-      ],
-      "external_urls": {
-        "spotify": "https://open.spotify.com/album/1sPb729vniBwMblKuf5zWW"
-      },
-      "href": "https://api.spotify.com/v1/albums/1sPb729vniBwMblKuf5zWW",
-      "id": "1sPb729vniBwMblKuf5zWW",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab67616d0000b2732b9bfec5e2e92f059584e485",
-          "width": 640
-        },
-        {
-          "height": 300,
-          "url": "https://i.scdn.co/image/ab67616d00001e022b9bfec5e2e92f059584e485",
-          "width": 300
-        },
-        {
-          "height": 64,
-          "url": "https://i.scdn.co/image/ab67616d000048512b9bfec5e2e92f059584e485",
-          "width": 64
-        }
-      ],
-      "name": "Double Bubble",
-      "release_date": "2008-07-26",
-      "release_date_precision": "day",
-      "total_tracks": 11,
-      "type": "album",
-      "uri": "spotify:album:1sPb729vniBwMblKuf5zWW"
-    },
-    {
-      "album_group": "album",
-      "album_type": "album",
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
-          },
-          "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "id": "1k8VBufn1nBs8LN9n4snc8",
-          "name": "Stereo MC's",
-          "type": "artist",
-          "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
-        }
-      ],
-      "available_markets": [
-        "AD",
-        "AL",
-        "BA",
-        "BE",
-        "BG",
-        "BY",
-        "CY",
-        "CZ",
-        "DK",
-        "EE",
-        "ES",
-        "FI",
-        "FR",
-        "GR",
-        "HR",
-        "HU",
-        "IS",
-        "IT",
-        "LI",
-        "LT",
-        "LU",
-        "LV",
-        "MC",
-        "MD",
-        "ME",
-        "MK",
-        "MT",
-        "NL",
-        "NO",
-        "PL",
-        "PT",
-        "RO",
-        "RS",
-        "RU",
-        "SE",
-        "SI",
-        "SK",
-        "TR",
-        "UA",
-        "XK"
       ],
       "external_urls": {
         "spotify": "https://open.spotify.com/album/1w7JNvHN5xBoBpbCjxMTpJ"
@@ -484,142 +163,6 @@
           "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
         }
       ],
-      "available_markets": [
-        "AT",
-        "CH",
-        "DE"
-      ],
-      "external_urls": {
-        "spotify": "https://open.spotify.com/album/5gajIht84JG53juOqec0j0"
-      },
-      "href": "https://api.spotify.com/v1/albums/5gajIht84JG53juOqec0j0",
-      "id": "5gajIht84JG53juOqec0j0",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab67616d0000b273c17e8d1d5648a15ea2805c55",
-          "width": 640
-        },
-        {
-          "height": 300,
-          "url": "https://i.scdn.co/image/ab67616d00001e02c17e8d1d5648a15ea2805c55",
-          "width": 300
-        },
-        {
-          "height": 64,
-          "url": "https://i.scdn.co/image/ab67616d00004851c17e8d1d5648a15ea2805c55",
-          "width": 64
-        }
-      ],
-      "name": "Double Bubble",
-      "release_date": "2008-07-11",
-      "release_date_precision": "day",
-      "total_tracks": 12,
-      "type": "album",
-      "uri": "spotify:album:5gajIht84JG53juOqec0j0"
-    },
-    {
-      "album_group": "album",
-      "album_type": "album",
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
-          },
-          "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "id": "1k8VBufn1nBs8LN9n4snc8",
-          "name": "Stereo MC's",
-          "type": "artist",
-          "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
-        }
-      ],
-      "available_markets": [
-        "AD",
-        "AE",
-        "AR",
-        "AT",
-        "AU",
-        "BA",
-        "BE",
-        "BG",
-        "BH",
-        "BO",
-        "BR",
-        "CA",
-        "CH",
-        "CL",
-        "CO",
-        "CR",
-        "CY",
-        "CZ",
-        "DE",
-        "DK",
-        "DO",
-        "DZ",
-        "EC",
-        "EE",
-        "EG",
-        "ES",
-        "FI",
-        "FR",
-        "GB",
-        "GR",
-        "GT",
-        "HK",
-        "HN",
-        "HR",
-        "HU",
-        "ID",
-        "IE",
-        "IL",
-        "IN",
-        "IS",
-        "IT",
-        "JO",
-        "JP",
-        "KW",
-        "LB",
-        "LI",
-        "LT",
-        "LV",
-        "MA",
-        "MC",
-        "ME",
-        "MK",
-        "MT",
-        "MX",
-        "MY",
-        "NI",
-        "NL",
-        "NO",
-        "NZ",
-        "OM",
-        "PA",
-        "PE",
-        "PH",
-        "PL",
-        "PT",
-        "PY",
-        "QA",
-        "RO",
-        "RS",
-        "RU",
-        "SA",
-        "SE",
-        "SG",
-        "SI",
-        "SK",
-        "SV",
-        "TH",
-        "TN",
-        "TR",
-        "TW",
-        "UA",
-        "US",
-        "VN",
-        "XK",
-        "ZA"
-      ],
       "external_urls": {
         "spotify": "https://open.spotify.com/album/4pki1vSTj72VCyiQyIzsFl"
       },
@@ -663,100 +206,6 @@
           "type": "artist",
           "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
         }
-      ],
-      "available_markets": [
-        "AD",
-        "AE",
-        "AL",
-        "AR",
-        "AT",
-        "AU",
-        "BA",
-        "BE",
-        "BG",
-        "BH",
-        "BO",
-        "BR",
-        "BY",
-        "CA",
-        "CH",
-        "CL",
-        "CO",
-        "CR",
-        "CY",
-        "CZ",
-        "DE",
-        "DK",
-        "DO",
-        "DZ",
-        "EC",
-        "EE",
-        "EG",
-        "ES",
-        "FI",
-        "FR",
-        "GB",
-        "GR",
-        "GT",
-        "HK",
-        "HN",
-        "HR",
-        "HU",
-        "ID",
-        "IE",
-        "IL",
-        "IN",
-        "IS",
-        "IT",
-        "JO",
-        "JP",
-        "KW",
-        "KZ",
-        "LB",
-        "LI",
-        "LT",
-        "LU",
-        "LV",
-        "MA",
-        "MC",
-        "MD",
-        "ME",
-        "MK",
-        "MT",
-        "MX",
-        "MY",
-        "NI",
-        "NL",
-        "NO",
-        "NZ",
-        "OM",
-        "PA",
-        "PE",
-        "PH",
-        "PL",
-        "PS",
-        "PT",
-        "PY",
-        "QA",
-        "RO",
-        "RS",
-        "RU",
-        "SA",
-        "SE",
-        "SG",
-        "SI",
-        "SK",
-        "SV",
-        "TH",
-        "TN",
-        "TR",
-        "TW",
-        "UA",
-        "US",
-        "UY",
-        "VN",
-        "XK",
-        "ZA"
       ],
       "external_urls": {
         "spotify": "https://open.spotify.com/album/6ydThtRPfXjHS79flxvVMC"
@@ -802,136 +251,6 @@
           "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
         }
       ],
-      "available_markets": [
-        "AU",
-        "GB",
-        "IE",
-        "JP"
-      ],
-      "external_urls": {
-        "spotify": "https://open.spotify.com/album/07elBQXEpSU4finsqzW6uO"
-      },
-      "href": "https://api.spotify.com/v1/albums/07elBQXEpSU4finsqzW6uO",
-      "id": "07elBQXEpSU4finsqzW6uO",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab67616d0000b27376d4d8c7910b72efef2c7bdb",
-          "width": 640
-        },
-        {
-          "height": 300,
-          "url": "https://i.scdn.co/image/ab67616d00001e0276d4d8c7910b72efef2c7bdb",
-          "width": 300
-        },
-        {
-          "height": 64,
-          "url": "https://i.scdn.co/image/ab67616d0000485176d4d8c7910b72efef2c7bdb",
-          "width": 64
-        }
-      ],
-      "name": "Deep Down & Dirty",
-      "release_date": "2001-01-01",
-      "release_date_precision": "day",
-      "total_tracks": 13,
-      "type": "album",
-      "uri": "spotify:album:07elBQXEpSU4finsqzW6uO"
-    },
-    {
-      "album_group": "album",
-      "album_type": "album",
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
-          },
-          "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-          "id": "1k8VBufn1nBs8LN9n4snc8",
-          "name": "Stereo MC's",
-          "type": "artist",
-          "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
-        }
-      ],
-      "available_markets": [
-        "AD",
-        "AE",
-        "AR",
-        "AT",
-        "AU",
-        "BE",
-        "BG",
-        "BH",
-        "BO",
-        "BR",
-        "CA",
-        "CH",
-        "CL",
-        "CO",
-        "CR",
-        "CY",
-        "CZ",
-        "DE",
-        "DK",
-        "DO",
-        "EC",
-        "EE",
-        "EG",
-        "ES",
-        "FI",
-        "FR",
-        "GB",
-        "GR",
-        "GT",
-        "HK",
-        "HN",
-        "HR",
-        "HU",
-        "ID",
-        "IE",
-        "IL",
-        "IN",
-        "IS",
-        "IT",
-        "JO",
-        "JP",
-        "LB",
-        "LI",
-        "LT",
-        "LU",
-        "LV",
-        "MC",
-        "MT",
-        "MX",
-        "MY",
-        "NI",
-        "NL",
-        "NO",
-        "NZ",
-        "OM",
-        "PA",
-        "PE",
-        "PH",
-        "PL",
-        "PT",
-        "PY",
-        "QA",
-        "RO",
-        "RU",
-        "SA",
-        "SE",
-        "SG",
-        "SI",
-        "SK",
-        "SV",
-        "TH",
-        "TN",
-        "TR",
-        "TW",
-        "UA",
-        "US",
-        "VN",
-        "ZA"
-      ],
       "external_urls": {
         "spotify": "https://open.spotify.com/album/1XlIVmi1cBZvBrdhzDeYTO"
       },
@@ -960,11 +279,192 @@
       "total_tracks": 12,
       "type": "album",
       "uri": "spotify:album:1XlIVmi1cBZvBrdhzDeYTO"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+          },
+          "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+          "id": "1k8VBufn1nBs8LN9n4snc8",
+          "name": "Stereo MC's",
+          "type": "artist",
+          "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3NRQnGdFznbXtP8u2O4VKB"
+      },
+      "href": "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
+      "id": "3NRQnGdFznbXtP8u2O4VKB",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27342f3ccbc77ffa9a06e6e92d1",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0242f3ccbc77ffa9a06e6e92d1",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485142f3ccbc77ffa9a06e6e92d1",
+          "width": 64
+        }
+      ],
+      "name": "Connected",
+      "release_date": "1992-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:3NRQnGdFznbXtP8u2O4VKB"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+          },
+          "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+          "id": "1k8VBufn1nBs8LN9n4snc8",
+          "name": "Stereo MC's",
+          "type": "artist",
+          "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3EqE50w57ZSxSDGhmL1tg4"
+      },
+      "href": "https://api.spotify.com/v1/albums/3EqE50w57ZSxSDGhmL1tg4",
+      "id": "3EqE50w57ZSxSDGhmL1tg4",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2731dafb37287f4aeb796695849",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e021dafb37287f4aeb796695849",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048511dafb37287f4aeb796695849",
+          "width": 64
+        }
+      ],
+      "name": "Supernatural",
+      "release_date": "1990-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 16,
+      "type": "album",
+      "uri": "spotify:album:3EqE50w57ZSxSDGhmL1tg4"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+          },
+          "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+          "id": "1k8VBufn1nBs8LN9n4snc8",
+          "name": "Stereo MC's",
+          "type": "artist",
+          "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4LsiTBzfADOAlVlWB1D2uH"
+      },
+      "href": "https://api.spotify.com/v1/albums/4LsiTBzfADOAlVlWB1D2uH",
+      "id": "4LsiTBzfADOAlVlWB1D2uH",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273651a3f0e36a8e1a4c700e0b3",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02651a3f0e36a8e1a4c700e0b3",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851651a3f0e36a8e1a4c700e0b3",
+          "width": 64
+        }
+      ],
+      "name": "33-45-78",
+      "release_date": "1989-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 15,
+      "type": "album",
+      "uri": "spotify:album:4LsiTBzfADOAlVlWB1D2uH"
+    },
+    {
+      "album_group": "single",
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+          },
+          "href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+          "id": "1k8VBufn1nBs8LN9n4snc8",
+          "name": "Stereo MC's",
+          "type": "artist",
+          "uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2loEsOijJ6XiGzWYFXMIRk"
+          },
+          "href": "https://api.spotify.com/v1/artists/2loEsOijJ6XiGzWYFXMIRk",
+          "id": "2loEsOijJ6XiGzWYFXMIRk",
+          "name": "Adam Port",
+          "type": "artist",
+          "uri": "spotify:artist:2loEsOijJ6XiGzWYFXMIRk"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4uxUNz6PS8hOfcbStN0t7P"
+      },
+      "href": "https://api.spotify.com/v1/albums/4uxUNz6PS8hOfcbStN0t7P",
+      "id": "4uxUNz6PS8hOfcbStN0t7P",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273656243f2d4a052a746c0c990",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02656243f2d4a052a746c0c990",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851656243f2d4a052a746c0c990",
+          "width": 64
+        }
+      ],
+      "name": "Changes",
+      "release_date": "2017-01-27",
+      "release_date_precision": "day",
+      "total_tracks": 3,
+      "type": "album",
+      "uri": "spotify:album:4uxUNz6PS8hOfcbStN0t7P"
     }
-  ],
-  "limit": 10,
-  "next": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8/albums?offset=10&limit=10&include_groups=album,single,compilation,appears_on",
-  "offset": 0,
-  "previous": null,
-  "total": 139
+  ]
 }

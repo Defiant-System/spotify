@@ -53,7 +53,66 @@
 
 
 <xsl:template name="artist-view">
-	
+	<section class="artist">
+		<div class="artist-head">
+			<div class="artist-image" style="background-image: url(~/img/mosaic.jpeg);"></div>
+			<h2>
+				Stereo MC's
+				<div class="genre">
+					<span>big beat</span>
+					<span>electronica</span>
+					<span>hip house</span>
+				</div>
+			</h2>
+		</div>
+
+		<div class="tabs">
+			<span class="active">Top Tracks</span>
+			<span>Albums</span>
+			<span>About</span>
+			<span>Fans Also Like</span>
+		</div>
+
+		<div class="artist-body">
+			<xsl:call-template name="artist-top-tracks" />
+		</div>
+	</section>
+</xsl:template>
+
+
+<xsl:template name="artist-top-tracks">
+	<div class="artist-top-tracks">
+		<div class="table enum">
+			<div class="row head">
+				<div class="cell"></div>
+				<div class="cell">Title</div>
+				<div class="cell">Album</div>
+				<div class="cell"><i class="icon-clock"></i></div>
+				<div class="cell"></div>
+			</div>
+			<div class="table-body">
+				<xsl:for-each select="./*">
+					<div class="row">
+						<div class="cell">
+							<i class="icon-player-play"></i>
+							<i class="icon-heart"></i>
+						</div>
+						<div class="cell"><xsl:value-of select="@name"/></div>
+						<div class="cell"><xsl:value-of select="album/@name"/></div>
+						<div class="cell"><xsl:call-template name="translate-duration">
+							<xsl:with-param name="ms" select="@duration_ms" />
+						</xsl:call-template></div>
+						<div class="cell"><i class="icon-bars"></i></div>
+					</div>
+				</xsl:for-each>
+			</div>
+		</div>
+	</div>
+</xsl:template>
+
+
+<xsl:template name="artist-albums">
+
 </xsl:template>
 
 
