@@ -611,6 +611,27 @@ div[data-area="panel"] {
 			}
 		}
 
+		&.enum {
+			counter-reset: row-num;
+
+			.row {
+				counter-increment: row-num;
+
+				.cell:nth-child(1) {
+					width: 89px;
+
+					&:before {
+						content: counter(row-num);
+						display: inline-block;
+						position: relative;
+						top: -4px;
+						left: -7px;
+						text-align: right;
+					}
+				}
+			}
+		}
+
 		.table-body {
 			position: relative;
 			overflow-y: auto;
@@ -754,7 +775,12 @@ div[data-area="panel"] {
 
 		h2 {
 			.genre {
+				font-size: 0;
 				line-height: 3px;
+
+				span {
+					font-size: 12px;
+				}
 			}
 		}
 	}
