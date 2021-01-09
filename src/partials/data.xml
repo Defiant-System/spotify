@@ -42,7 +42,29 @@
 		</track>
 	</Artist>
 
+	<Album>
+		<track name="Ground Level" duration_ms="252666" popularity="34"/>
+		<track name="I feel You" duration_ms="252666" populairty="34"/>
+		<track name="Elevate My Mind" duration_ms="252666" populairty="34"/>
+		<track name="Connected" duration_ms="252666" populairty="34"/>
+		<track name="Step It Up" duration_ms="252666" populairty="34"/>
+		<track name="Traffic" duration_ms="252666" populairty="34"/>
+		<track name="The Right Effect" duration_ms="252666" populairty="34"/>
+		<track name="Creation" duration_ms="252666" populairty="34"/>
+		<track name="The End" duration_ms="252666" populairty="34"/>
+		<track name="sketch" duration_ms="252666" populairty="34"/>
+	</Album>
+
 	<Albums>
+		<album name="Deeper/Turnaround Remixes" release_date="2016-05-06" total_tracks="5" image="https://i.scdn.co/image/ab67616d0000485185ffb810ec4a8c1e4277bc74"/>
+		<album name="Double Bubble" release_date="2008-07-27" total_tracks="12" image="https://i.scdn.co/image/ab67616d000048516fe9a0e5618c995348d9cf1e"/>
+		<album name="Double Bubble" release_date="2008-07-21" total_tracks="12" image="https://i.scdn.co/image/ab67616d00001e02832ce8bbeb737ae482152f36"/>
+		<album name="Live at The BBC" release_date="2007-01-01" total_tracks="18" image="https://i.scdn.co/image/ab67616d00001e02e748cffd978af5f43d08c73d"/>
+		<album name="Paradise" release_date="2005-08-25" total_tracks="12" image="https://i.scdn.co/image/ab67616d00001e023bdf8d1559780fc9598d9f1e"/>
+		<album name="Deep Down &amp; Dirty" release_date="2001-01-01" total_tracks="12" image="https://i.scdn.co/image/ab67616d00001e02e8c0eca5da75269b2d229116"/>
+		<album name="Connected" release_date="1992-01-01" total_tracks="12" image="https://i.scdn.co/image/ab67616d00001e0242f3ccbc77ffa9a06e6e92d1"/>
+		<album name="Supernatural" release_date="1990-01-01" total_tracks="16" image="https://i.scdn.co/image/ab67616d000048511dafb37287f4aeb796695849"/>
+		<album name="33-45-78" release_date="1989-01-01" total_tracks="15" image="https://i.scdn.co/image/ab67616d00004851651a3f0e36a8e1a4c700e0b3"/>
 		<album name="Deeper/Turnaround Remixes" release_date="2016-05-06" total_tracks="5" image="https://i.scdn.co/image/ab67616d0000485185ffb810ec4a8c1e4277bc74"/>
 		<album name="Double Bubble" release_date="2008-07-27" total_tracks="12" image="https://i.scdn.co/image/ab67616d000048516fe9a0e5618c995348d9cf1e"/>
 		<album name="Double Bubble" release_date="2008-07-21" total_tracks="12" image="https://i.scdn.co/image/ab67616d00001e02832ce8bbeb737ae482152f36"/>

@@ -100,6 +100,7 @@ i[class^="icon-"] {
 	&.icon-player-play     { background-image: url(~/icons/icon-play.png); }
 	&.icon-player-next     { background-image: url(~/icons/icon-next.png); }
 	&.icon-player-repeat   { background-image: url(~/icons/icon-repeat.png); }
+	&.icon-chevron-left    { background-image: url(~/icons/icon-chevron-left.png); }
 
 	&.icon-clock       { background-image: url(~/icons/icon-clock.png); }
 	&.icon-heart       { background-image: url(~/icons/icon-heart.png); }
@@ -414,6 +415,31 @@ content {
 		display: flex;
 		flex: 1;
 		overflow: auto;
+
+		.icon-player-play {
+			position: relative;
+			width: 17px;
+			height: 17px;
+			margin-right: 7px;
+			background-size: 43% 43%;
+			cursor: pointer;
+			transition: opacity 120ms ease-in-out;
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: -2px;
+				left: -2px;
+				right: -2px;
+				bottom: -2px;
+				border: 2px solid #fff;
+				border-radius: 50%;
+			}
+
+			&:hover {
+				opacity: 1;
+			}
+		}
 	}
 }
 
@@ -598,6 +624,7 @@ div[data-area="panel"] {
 		flex-direction: column;
 		overflow: hidden;
 		padding: 1px 0 0;
+		line-height: 23px;
 
 		i[class^="icon-"] {
 			width: 15px;
@@ -605,30 +632,8 @@ div[data-area="panel"] {
 			vertical-align: top;
 
 			&.icon-player-play {
-				position: relative;
 				top: -1px;
-				width: 17px;
-				height: 17px;
-				margin-right: 7px;
-				background-size: 43% 43%;
-				cursor: pointer;
 				opacity: 0;
-				transition: opacity 120ms ease-in-out;
-
-				&:before {
-					content: "";
-					position: absolute;
-					top: -2px;
-					left: -2px;
-					right: -2px;
-					bottom: -2px;
-					border: 2px solid #fff;
-					border-radius: 50%;
-				}
-
-				&:hover {
-					opacity: 1;
-				}
 			}
 
 			&.icon-bars {
@@ -907,22 +912,65 @@ div[data-area="panel"] {
 			font-size: 0;
 			padding: 17px 19px;
 
+			.column-left,
+			.column-right {
+				vertical-align: top;
+				display: inline-block;
+				width: 50%;
+
+				&.column-left { padding-right: 5px; }
+				&.column-right { padding-left: 5px; }
+			}
+
 			.album {
 				position: relative;
-				display: inline-block;
-				width: calc( 50% - 5px );
-				border-radius: 5px;
-				padding: 11px 11px 11px 57px;
+				border-radius: 7px;
+				padding: 11px;
 				margin: 0 5px 10px 0;
+				cursor: pointer;
 				line-height: 1;
-
-				&:nth-child(2n) {
-					margin-left: 5px;
-					margin-right: 0;
-				}
+				transition: background 100ms ease-in-out;
 
 				&:hover {
-					background: rgba(100,100,100,.25);
+					background: rgba(100,100,100,.2);
+
+					.album-cover {
+						&:before {
+							opacity: .6;
+						}
+
+						.icon-player-play {
+							opacity: 1;
+						}
+					}
+
+					.album-info {
+						h4 {
+							color: #fff;
+						}
+
+						.icon-chevron-left {
+							opacity: 1;
+						}
+					}
+				}
+
+				&.expand {
+					background: rgba(100,100,100,.2);
+
+					.album-info {
+						.icon-chevron-left {
+							transform: rotate(90deg);
+						}
+					}
+
+					.album-tracks {
+						padding-top: 3px;
+
+						.table {
+							margin-top: 0;
+						}
+					}
 				}
 
 				.album-cover {
@@ -933,14 +981,95 @@ div[data-area="panel"] {
 					left: 11px;
 					width: 37px;
 					height: 37px;
+
+					&:before {
+						content: "";
+						background: #000;
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						opacity: 0;
+						z-index: 1;
+						transition: opacity 100ms ease-in-out;
+					}
+
+					.icon-player-play {
+						background-size: 47% 47%;
+						top: 7px;
+						left: 7px;
+						width: 23px;
+						height: 23px;
+						z-index: 2;
+						opacity: 0;
+						transition: opacity 100ms ease-in-out;
+					}
 				}
 
 				.album-info {
 					flex: 1;
+					position: relative;
+					padding-left: 57px;
+					padding-right: 37px;
+					pointer-events: none;
 
 					.album-year {
+						color: #777;
 						font-size: 11px;
 						padding-bottom: 3px;
+					}
+
+					h4 {
+						color: #bbb;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						overflow: hidden;
+					}
+
+					.icon-chevron-left {
+						position: absolute;
+						top: 12px;
+						right: 7px;
+						width: 13px;
+						height: 13px;
+						opacity: 0;
+						transition: transform 100ms ease-in-out;
+					}
+				}
+
+				.album-tracks {
+					overflow: hidden;
+					font-size: 13px;
+
+					.table {
+						display: block;
+						overflow: initial;
+						margin-top: -100%;
+						transition: margin-top 300ms ease-in-out;
+
+						.table-body {
+							padding-bottom: 3px;
+						}
+
+						.row {
+							margin: 0;
+
+							&:last-child {
+								border-bottom-width: 0;
+							}
+
+							.cell {
+								&:last-child {
+									width: 67px;
+								}
+							}
+						}
+
+						.icon-player-play {
+							background-size: 44% 44%;
+							left: -3px;
+						}
 					}
 				}
 			}

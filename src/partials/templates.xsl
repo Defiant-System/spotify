@@ -113,18 +113,68 @@
 
 
 <xsl:template name="artist-albums">
-	<div class="artist-albums">
-		<xsl:for-each select="./*">
-			<div class="album">
-				<div class="album-cover">
-					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+	<div class="artist-albums" data-click="toggle-album">
+		<div class="column-left">
+			<xsl:for-each select="./*">
+				<xsl:if test="position() mod 2 = 1">
+					<div class="album">
+						<div class="album-cover">
+							<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+							<i class="icon-player-play" data-click="play-album"></i>
+						</div>
+						<div class="album-info">
+							<span class="album-year"><xsl:value-of select="substring( @release_date, 1, 4 )"/></span>
+							<h4><xsl:value-of select="@name"/></h4>
+							<i class="icon-chevron-left"></i>
+						</div>
+						<div class="album-tracks"></div>
+					</div>
+				</xsl:if>
+			</xsl:for-each>
+		</div>
+		<div class="column-right">
+			<xsl:for-each select="./*">
+				<xsl:if test="position() mod 2 = 0">
+					<div class="album">
+						<div class="album-cover">
+							<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+							<i class="icon-player-play" data-click="play-album"></i>
+						</div>
+						<div class="album-info">
+							<span class="album-year"><xsl:value-of select="@release_date"/></span>
+							<h4><xsl:value-of select="@name"/></h4>
+							<i class="icon-chevron-left"></i>
+						</div>
+						<div class="album-tracks"></div>
+					</div>
+				</xsl:if>
+			</xsl:for-each>
+		</div>
+	</div>
+</xsl:template>
+
+
+<xsl:template name="artist-album">
+	<div class="table enum">
+		<div class="row head">
+			<div class="cell"></div>
+			<div class="cell">Title</div>
+			<div class="cell"></div>
+		</div>
+		<div class="table-body">
+			<xsl:for-each select="./*">
+				<div class="row">
+					<div class="cell">
+						<i class="icon-player-play"></i>
+						<i class="icon-heart"></i>
+					</div>
+					<div class="cell"><xsl:value-of select="@name"/></div>
+					<div class="cell"><xsl:call-template name="translate-duration">
+						<xsl:with-param name="ms" select="@duration_ms" />
+					</xsl:call-template></div>
 				</div>
-				<div class="album-info">
-					<span class="album-year"><xsl:value-of select="substring( @release_date, 1, 4 )"/></span>
-					<h4><xsl:value-of select="@name"/></h4>
-				</div>
-			</div>
-		</xsl:for-each>
+			</xsl:for-each>
+		</div>
 	</div>
 </xsl:template>
 
