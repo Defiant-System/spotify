@@ -6,20 +6,6 @@
 		this.els = {
 			body: window.find("content .body")
 		};
-
-		// window.render({
-		// 	template: "playlist-view",
-		// 	match: "//Playlist",
-		// 	target: this.els.body
-		// });
-
-		window.render({
-			template: "artist-view",
-			match: "//Artist",
-			target: this.els.body
-		});
-
-		setTimeout(() => this.els.body.find(`.tabs [data-type="albums"]`).trigger("click"), 300);
 	},
 	dispatch(event) {
 		let Self = spotify.content,
@@ -28,6 +14,23 @@
 			target,
 			el;
 		switch (event.type) {
+			case "artist-view":
+				window.render({
+					template: "artist-view",
+					match: "//Artist",
+					target: Self.els.body
+				});
+
+				// setTimeout(() =>
+				// 	Self.els.body.find(`.tabs [data-type="albums"]`).trigger("click"), 300);
+				break;
+			case "playlist-view":
+				window.render({
+					template: "playlist-view",
+					match: "//Playlist",
+					target: Self.els.body
+				});
+				break;
 			case "sort-list":
 				break;
 			case "play-album":

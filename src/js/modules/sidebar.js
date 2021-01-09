@@ -10,11 +10,24 @@
 		}
 	},
 	dispatch(event) {
-		let Self = spotify.sidebar,
+		let APP = spotify,
+			Self = APP.sidebar,
 			el;
 		switch (event.type) {
 			case "go-home":
+				el = $(event.target);
+				el.parent().find(".active").removeClass("active");
+				el.addClass("active");
+
+				APP.content.dispatch({ type: "playlist-view" });
+				break;
 			case "go-browse":
+				el = $(event.target);
+				el.parent().find(".active").removeClass("active");
+				el.addClass("active");
+				
+				APP.content.dispatch({ type: "artist-view" });
+				break;
 			case "go-radio":
 			case "go-queue":
 			case "go-devices":

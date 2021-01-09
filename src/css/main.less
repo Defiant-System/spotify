@@ -182,6 +182,7 @@ div[data-area="volume"] {
 			filter: grayscale();
 			width: 17px;
 			height: 17px;
+			pointer-events: none;
 		}
 	}
 
@@ -421,7 +422,7 @@ content {
 			width: 17px;
 			height: 17px;
 			margin-right: 7px;
-			background-size: 43% 43%;
+			background-size: 44% 44%;
 			cursor: pointer;
 			transition: opacity 120ms ease-in-out;
 
@@ -720,7 +721,7 @@ div[data-area="panel"] {
 				color: #777;
 
 				.cell i.icon-clock {
-					margin: -1px 3px -3px 0;
+					margin: 3px 3px -3px 0;
 				}
 			}
 
@@ -904,6 +905,10 @@ div[data-area="panel"] {
 				&:last-child {
 					width: 67px;
 				}
+
+				.icon-player-play {
+					margin-right: 12px;
+				}
 			}
 		}
 
@@ -1071,7 +1076,6 @@ div[data-area="panel"] {
 						}
 
 						.icon-player-play {
-							background-size: 44% 44%;
 							left: -3px;
 						}
 					}
