@@ -1,0 +1,674 @@
+/*
+	https://api.spotify.com/v1/albums/6bPPRGbZHRoXUVLvx4SB0M/tracks
+*/
+
+{
+	"href": "https://api.spotify.com/v1/albums/6bPPRGbZHRoXUVLvx4SB0M/tracks?offset=0&limit=20&market=SE",
+	"limit": 20,
+	"next": "https://api.spotify.com/v1/albums/6bPPRGbZHRoXUVLvx4SB0M/tracks?offset=20&limit=20&market=SE",
+	"offset": 0,
+	"previous": null,
+	"total": 23,
+	"items": [
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/7t0rwkOPGlDPEhaOcVtOt9"
+					},
+					"href": "https://api.spotify.com/v1/artists/7t0rwkOPGlDPEhaOcVtOt9",
+					"id": "7t0rwkOPGlDPEhaOcVtOt9",
+					"name": "The Cranberries",
+					"type": "artist",
+					"uri": "spotify:artist:7t0rwkOPGlDPEhaOcVtOt9"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 270786,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/0o5mhUptW4xKf9yUfigTpg"
+			},
+			"href": "https://api.spotify.com/v1/tracks/0o5mhUptW4xKf9yUfigTpg",
+			"id": "0o5mhUptW4xKf9yUfigTpg",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Ode To My Family",
+			"preview_url": "https://p.scdn.co/mp3-preview/4eda164f5528790809a356fc1d818b9b0ee202f7?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 1,
+			"type": "track",
+			"uri": "spotify:track:0o5mhUptW4xKf9yUfigTpg"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/5gznATMVO85ZcLTkE9ULU7"
+					},
+					"href": "https://api.spotify.com/v1/artists/5gznATMVO85ZcLTkE9ULU7",
+					"id": "5gznATMVO85ZcLTkE9ULU7",
+					"name": "Lenny Kravitz",
+					"type": "artist",
+					"uri": "spotify:artist:5gznATMVO85ZcLTkE9ULU7"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 228933,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/71FgYtRBUJaGUkB7Ci4aTx"
+			},
+			"href": "https://api.spotify.com/v1/tracks/71FgYtRBUJaGUkB7Ci4aTx",
+			"id": "71FgYtRBUJaGUkB7Ci4aTx",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Again",
+			"preview_url": "https://p.scdn.co/mp3-preview/0c7944b15a9a16b4bbdeea47f5ccb865f1ab731d?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 2,
+			"type": "track",
+			"uri": "spotify:track:71FgYtRBUJaGUkB7Ci4aTx"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/3nlHsNqwCSvT988ZfSW1Yh"
+					},
+					"href": "https://api.spotify.com/v1/artists/3nlHsNqwCSvT988ZfSW1Yh",
+					"id": "3nlHsNqwCSvT988ZfSW1Yh",
+					"name": "Ronan Keating",
+					"type": "artist",
+					"uri": "spotify:artist:3nlHsNqwCSvT988ZfSW1Yh"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 259173,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/4H5ObMdYFCfsuo25BHSNlS"
+			},
+			"href": "https://api.spotify.com/v1/tracks/4H5ObMdYFCfsuo25BHSNlS",
+			"id": "4H5ObMdYFCfsuo25BHSNlS",
+			"is_local": false,
+			"is_playable": true,
+			"name": "When You Say Nothing At All",
+			"preview_url": "https://p.scdn.co/mp3-preview/340caae52f4d1e1204f13fe868452873256246a5?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 3,
+			"type": "track",
+			"uri": "spotify:track:4H5ObMdYFCfsuo25BHSNlS"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/5gznATMVO85ZcLTkE9ULU7"
+					},
+					"href": "https://api.spotify.com/v1/artists/5gznATMVO85ZcLTkE9ULU7",
+					"id": "5gznATMVO85ZcLTkE9ULU7",
+					"name": "Lenny Kravitz",
+					"type": "artist",
+					"uri": "spotify:artist:5gznATMVO85ZcLTkE9ULU7"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 261706,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/0ZlFKM2ayeXTrWpZUct7iw"
+			},
+			"href": "https://api.spotify.com/v1/tracks/0ZlFKM2ayeXTrWpZUct7iw",
+			"id": "0ZlFKM2ayeXTrWpZUct7iw",
+			"is_local": false,
+			"is_playable": true,
+			"name": "American Woman",
+			"preview_url": "https://p.scdn.co/mp3-preview/63e5ccf5f4fd5ecd449e9dc4378bc7f33bd3fce3?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 4,
+			"type": "track",
+			"uri": "spotify:track:0ZlFKM2ayeXTrWpZUct7iw"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/3Z02hBLubJxuFJfhacLSDc"
+					},
+					"href": "https://api.spotify.com/v1/artists/3Z02hBLubJxuFJfhacLSDc",
+					"id": "3Z02hBLubJxuFJfhacLSDc",
+					"name": "Bryan Adams",
+					"type": "artist",
+					"uri": "spotify:artist:3Z02hBLubJxuFJfhacLSDc"
+				},
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/0Ty63ceoRnnJKVEYP0VQpk"
+					},
+					"href": "https://api.spotify.com/v1/artists/0Ty63ceoRnnJKVEYP0VQpk",
+					"id": "0Ty63ceoRnnJKVEYP0VQpk",
+					"name": "Sting",
+					"type": "artist",
+					"uri": "spotify:artist:0Ty63ceoRnnJKVEYP0VQpk"
+				},
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/2y8Jo9CKhJvtfeKOsYzRdT"
+					},
+					"href": "https://api.spotify.com/v1/artists/2y8Jo9CKhJvtfeKOsYzRdT",
+					"id": "2y8Jo9CKhJvtfeKOsYzRdT",
+					"name": "Rod Stewart",
+					"type": "artist",
+					"uri": "spotify:artist:2y8Jo9CKhJvtfeKOsYzRdT"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 283706,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/73141J8lIcoG8hw3IJVIpi"
+			},
+			"href": "https://api.spotify.com/v1/tracks/73141J8lIcoG8hw3IJVIpi",
+			"id": "73141J8lIcoG8hw3IJVIpi",
+			"is_local": false,
+			"is_playable": true,
+			"name": "All For Love - From \"The Three Musketeers\" Soundtrack",
+			"preview_url": "https://p.scdn.co/mp3-preview/813f1153e22c45bef1e290527ee429f4529677de?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 5,
+			"type": "track",
+			"uri": "spotify:track:73141J8lIcoG8hw3IJVIpi"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/7t0rwkOPGlDPEhaOcVtOt9"
+					},
+					"href": "https://api.spotify.com/v1/artists/7t0rwkOPGlDPEhaOcVtOt9",
+					"id": "7t0rwkOPGlDPEhaOcVtOt9",
+					"name": "The Cranberries",
+					"type": "artist",
+					"uri": "spotify:artist:7t0rwkOPGlDPEhaOcVtOt9"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 221293,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/4kdiB0UCW7NqjarRVo163A"
+			},
+			"href": "https://api.spotify.com/v1/tracks/4kdiB0UCW7NqjarRVo163A",
+			"id": "4kdiB0UCW7NqjarRVo163A",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Just My Imagination",
+			"preview_url": "https://p.scdn.co/mp3-preview/a784bf9add0079f7d1e9b03e58b3ab00612a3e21?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 6,
+			"type": "track",
+			"uri": "spotify:track:4kdiB0UCW7NqjarRVo163A"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/2yEkZBBjhzKzt6LF5XMaFi"
+					},
+					"href": "https://api.spotify.com/v1/artists/2yEkZBBjhzKzt6LF5XMaFi",
+					"id": "2yEkZBBjhzKzt6LF5XMaFi",
+					"name": "Blue",
+					"type": "artist",
+					"uri": "spotify:artist:2yEkZBBjhzKzt6LF5XMaFi"
+				},
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/3PhoLpVuITZKcymswpck5b"
+					},
+					"href": "https://api.spotify.com/v1/artists/3PhoLpVuITZKcymswpck5b",
+					"id": "3PhoLpVuITZKcymswpck5b",
+					"name": "Elton John",
+					"type": "artist",
+					"uri": "spotify:artist:3PhoLpVuITZKcymswpck5b"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 210066,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/2YzGCMLcjpdrPIJ8rerDeK"
+			},
+			"href": "https://api.spotify.com/v1/tracks/2YzGCMLcjpdrPIJ8rerDeK",
+			"id": "2YzGCMLcjpdrPIJ8rerDeK",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Sorry Seems To Be The Hardest Word - Radio Edit",
+			"preview_url": "https://p.scdn.co/mp3-preview/2a092a3fda2907d997325ecd0c0f7e9221a14d6e?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 7,
+			"type": "track",
+			"uri": "spotify:track:2YzGCMLcjpdrPIJ8rerDeK"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/3X0tJzVYoWlfjLYI0Ridsw"
+					},
+					"href": "https://api.spotify.com/v1/artists/3X0tJzVYoWlfjLYI0Ridsw",
+					"id": "3X0tJzVYoWlfjLYI0Ridsw",
+					"name": "Suzanne Vega",
+					"type": "artist",
+					"uri": "spotify:artist:3X0tJzVYoWlfjLYI0Ridsw"
+				},
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/5ISgOPcI1bY7Rd28GUWWE8"
+					},
+					"href": "https://api.spotify.com/v1/artists/5ISgOPcI1bY7Rd28GUWWE8",
+					"id": "5ISgOPcI1bY7Rd28GUWWE8",
+					"name": "DNA",
+					"type": "artist",
+					"uri": "spotify:artist:5ISgOPcI1bY7Rd28GUWWE8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 228413,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/6JxUZpphDrhaEN9uEG2esp"
+			},
+			"href": "https://api.spotify.com/v1/tracks/6JxUZpphDrhaEN9uEG2esp",
+			"id": "6JxUZpphDrhaEN9uEG2esp",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Tom's Diner",
+			"preview_url": "https://p.scdn.co/mp3-preview/cee27fcc7490fdadca43259d8429d369f8dc02f5?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 8,
+			"type": "track",
+			"uri": "spotify:track:6JxUZpphDrhaEN9uEG2esp"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/3DmG65yHQsMms7WAvrZOdt"
+					},
+					"href": "https://api.spotify.com/v1/artists/3DmG65yHQsMms7WAvrZOdt",
+					"id": "3DmG65yHQsMms7WAvrZOdt",
+					"name": "Enigma",
+					"type": "artist",
+					"uri": "spotify:artist:3DmG65yHQsMms7WAvrZOdt"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 258906,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/0jQBp680d0HpJoJz6rfmU6"
+			},
+			"href": "https://api.spotify.com/v1/tracks/0jQBp680d0HpJoJz6rfmU6",
+			"id": "0jQBp680d0HpJoJz6rfmU6",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Return To Innocence",
+			"preview_url": "https://p.scdn.co/mp3-preview/0341b4927ca8a76a5e0684017f8f636699382b7b?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 9,
+			"type": "track",
+			"uri": "spotify:track:0jQBp680d0HpJoJz6rfmU6"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+					},
+					"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+					"id": "1k8VBufn1nBs8LN9n4snc8",
+					"name": "Stereo MC's",
+					"type": "artist",
+					"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 313000,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/5LJpbHGAg6YAQ3E6DuQHbG"
+			},
+			"href": "https://api.spotify.com/v1/tracks/5LJpbHGAg6YAQ3E6DuQHbG",
+			"id": "5LJpbHGAg6YAQ3E6DuQHbG",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Connected",
+			"preview_url": "https://p.scdn.co/mp3-preview/2c322d0dce68b86766a78581703185a1198ddbef?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 10,
+			"type": "track",
+			"uri": "spotify:track:5LJpbHGAg6YAQ3E6DuQHbG"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/6FXMGgJwohJLUSr5nVlf9X"
+					},
+					"href": "https://api.spotify.com/v1/artists/6FXMGgJwohJLUSr5nVlf9X",
+					"id": "6FXMGgJwohJLUSr5nVlf9X",
+					"name": "Massive Attack",
+					"type": "artist",
+					"uri": "spotify:artist:6FXMGgJwohJLUSr5nVlf9X"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 312293,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/2ILV289GkWV4uhR2ZdfgEQ"
+			},
+			"href": "https://api.spotify.com/v1/tracks/2ILV289GkWV4uhR2ZdfgEQ",
+			"id": "2ILV289GkWV4uhR2ZdfgEQ",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Unfinished Sympathy",
+			"preview_url": "https://p.scdn.co/mp3-preview/2eac1678e8cc3da5d9d8fcce3788da90b11ff4a3?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 11,
+			"type": "track",
+			"uri": "spotify:track:2ILV289GkWV4uhR2ZdfgEQ"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/58lV9VcRSjABbAbfWS6skp"
+					},
+					"href": "https://api.spotify.com/v1/artists/58lV9VcRSjABbAbfWS6skp",
+					"id": "58lV9VcRSjABbAbfWS6skp",
+					"name": "Bon Jovi",
+					"type": "artist",
+					"uri": "spotify:artist:58lV9VcRSjABbAbfWS6skp"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 394400,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/1ggbwrcAE6pOp9CZnnAwp0"
+			},
+			"href": "https://api.spotify.com/v1/tracks/1ggbwrcAE6pOp9CZnnAwp0",
+			"id": "1ggbwrcAE6pOp9CZnnAwp0",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Bed Of Roses",
+			"preview_url": "https://p.scdn.co/mp3-preview/a9e3b382834dce9a72f6703b9712b7001dd91aef?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 12,
+			"type": "track",
+			"uri": "spotify:track:1ggbwrcAE6pOp9CZnnAwp0"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/2Cd98zHVdZeOCisc6Gi2sB"
+					},
+					"href": "https://api.spotify.com/v1/artists/2Cd98zHVdZeOCisc6Gi2sB",
+					"id": "2Cd98zHVdZeOCisc6Gi2sB",
+					"name": "Technotronic",
+					"type": "artist",
+					"uri": "spotify:artist:2Cd98zHVdZeOCisc6Gi2sB"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 320306,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/2Idrsdl0Mxrwm4LtVBlSsT"
+			},
+			"href": "https://api.spotify.com/v1/tracks/2Idrsdl0Mxrwm4LtVBlSsT",
+			"id": "2Idrsdl0Mxrwm4LtVBlSsT",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Pump Up The Jam",
+			"preview_url": "https://p.scdn.co/mp3-preview/c189ea590a9497fb38066b7f13adc35fe12a0fbf?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 13,
+			"type": "track",
+			"uri": "spotify:track:2Idrsdl0Mxrwm4LtVBlSsT"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/7wqtxqI3eo7Gn1P7SpP6cQ"
+					},
+					"href": "https://api.spotify.com/v1/artists/7wqtxqI3eo7Gn1P7SpP6cQ",
+					"id": "7wqtxqI3eo7Gn1P7SpP6cQ",
+					"name": "Salt-N-Pepa",
+					"type": "artist",
+					"uri": "spotify:artist:7wqtxqI3eo7Gn1P7SpP6cQ"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 209933,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/4K7seCAeduQ5tVWtobs6UX"
+			},
+			"href": "https://api.spotify.com/v1/tracks/4K7seCAeduQ5tVWtobs6UX",
+			"id": "4K7seCAeduQ5tVWtobs6UX",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Let's Talk About Sex",
+			"preview_url": "https://p.scdn.co/mp3-preview/e5be6089f6b874ae5a0f33f486a5f919f0d21676?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 14,
+			"type": "track",
+			"uri": "spotify:track:4K7seCAeduQ5tVWtobs6UX"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/0TcYeHEK9sBtv7xPbKhzHz"
+					},
+					"href": "https://api.spotify.com/v1/artists/0TcYeHEK9sBtv7xPbKhzHz",
+					"id": "0TcYeHEK9sBtv7xPbKhzHz",
+					"name": "Chumbawamba",
+					"type": "artist",
+					"uri": "spotify:artist:0TcYeHEK9sBtv7xPbKhzHz"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 213226,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/1yPPK8ZqLLf8QOf3H6FwQZ"
+			},
+			"href": "https://api.spotify.com/v1/tracks/1yPPK8ZqLLf8QOf3H6FwQZ",
+			"id": "1yPPK8ZqLLf8QOf3H6FwQZ",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Tubthumping - Radio Edit",
+			"preview_url": "https://p.scdn.co/mp3-preview/2f831395e75740d63cd225e3cb032b399b8d9c63?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 15,
+			"type": "track",
+			"uri": "spotify:track:1yPPK8ZqLLf8QOf3H6FwQZ"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/4LtIfuFeAamus9OOItuWDD"
+					},
+					"href": "https://api.spotify.com/v1/artists/4LtIfuFeAamus9OOItuWDD",
+					"id": "4LtIfuFeAamus9OOItuWDD",
+					"name": "Us3",
+					"type": "artist",
+					"uri": "spotify:artist:4LtIfuFeAamus9OOItuWDD"
+				},
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/2cNCyL3WSlAatld5duatyD"
+					},
+					"href": "https://api.spotify.com/v1/artists/2cNCyL3WSlAatld5duatyD",
+					"id": "2cNCyL3WSlAatld5duatyD",
+					"name": "Rahsaan",
+					"type": "artist",
+					"uri": "spotify:artist:2cNCyL3WSlAatld5duatyD"
+				},
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/5A8UenAZRv51yZVv13nFQo"
+					},
+					"href": "https://api.spotify.com/v1/artists/5A8UenAZRv51yZVv13nFQo",
+					"id": "5A8UenAZRv51yZVv13nFQo",
+					"name": "Gerard Presencer",
+					"type": "artist",
+					"uri": "spotify:artist:5A8UenAZRv51yZVv13nFQo"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 279706,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/2X988BZZAut9gQeVOlymSJ"
+			},
+			"href": "https://api.spotify.com/v1/tracks/2X988BZZAut9gQeVOlymSJ",
+			"id": "2X988BZZAut9gQeVOlymSJ",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Cantaloop (Flip Fantasia)",
+			"preview_url": "https://p.scdn.co/mp3-preview/1426fc0c53d843404bba623da42b39a35f0d5e29?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 16,
+			"type": "track",
+			"uri": "spotify:track:2X988BZZAut9gQeVOlymSJ"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/7wqtxqI3eo7Gn1P7SpP6cQ"
+					},
+					"href": "https://api.spotify.com/v1/artists/7wqtxqI3eo7Gn1P7SpP6cQ",
+					"id": "7wqtxqI3eo7Gn1P7SpP6cQ",
+					"name": "Salt-N-Pepa",
+					"type": "artist",
+					"uri": "spotify:artist:7wqtxqI3eo7Gn1P7SpP6cQ"
+				},
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/5fikk4h5qbEebqK2Fc6e48"
+					},
+					"href": "https://api.spotify.com/v1/artists/5fikk4h5qbEebqK2Fc6e48",
+					"id": "5fikk4h5qbEebqK2Fc6e48",
+					"name": "En Vogue",
+					"type": "artist",
+					"uri": "spotify:artist:5fikk4h5qbEebqK2Fc6e48"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 308173,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/7KoZuNVANn88W4zesyhGLM"
+			},
+			"href": "https://api.spotify.com/v1/tracks/7KoZuNVANn88W4zesyhGLM",
+			"id": "7KoZuNVANn88W4zesyhGLM",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Whatta Man",
+			"preview_url": "https://p.scdn.co/mp3-preview/42002395ab0ab2c6d51989b9c4da9336de582a4a?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 17,
+			"type": "track",
+			"uri": "spotify:track:7KoZuNVANn88W4zesyhGLM"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/4sLklwvfOYr12fMGwrnlc7"
+					},
+					"href": "https://api.spotify.com/v1/artists/4sLklwvfOYr12fMGwrnlc7",
+					"id": "4sLklwvfOYr12fMGwrnlc7",
+					"name": "Apache Indian",
+					"type": "artist",
+					"uri": "spotify:artist:4sLklwvfOYr12fMGwrnlc7"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 271333,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/7lrRH7iBcHtqMEud5THuT9"
+			},
+			"href": "https://api.spotify.com/v1/tracks/7lrRH7iBcHtqMEud5THuT9",
+			"id": "7lrRH7iBcHtqMEud5THuT9",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Boom Shack-A-Lak",
+			"preview_url": "https://p.scdn.co/mp3-preview/40073428c3c9862b004beffecbcdebcc3a82b2c8?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 18,
+			"type": "track",
+			"uri": "spotify:track:7lrRH7iBcHtqMEud5THuT9"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/3aTuTR5Nf6pVW3837q2ZL7"
+					},
+					"href": "https://api.spotify.com/v1/artists/3aTuTR5Nf6pVW3837q2ZL7",
+					"id": "3aTuTR5Nf6pVW3837q2ZL7",
+					"name": "Maxi Priest",
+					"type": "artist",
+					"uri": "spotify:artist:3aTuTR5Nf6pVW3837q2ZL7"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 331093,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/1Swiu9dwcBukWzu712ttoo"
+			},
+			"href": "https://api.spotify.com/v1/tracks/1Swiu9dwcBukWzu712ttoo",
+			"id": "1Swiu9dwcBukWzu712ttoo",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Close To You",
+			"preview_url": "https://p.scdn.co/mp3-preview/39094d0ae61d4a4fab1a1a1933ceabba7ab0417c?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 19,
+			"type": "track",
+			"uri": "spotify:track:1Swiu9dwcBukWzu712ttoo"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/5e4Dhzv426EvQe3aDb64jL"
+					},
+					"href": "https://api.spotify.com/v1/artists/5e4Dhzv426EvQe3aDb64jL",
+					"id": "5e4Dhzv426EvQe3aDb64jL",
+					"name": "Shania Twain",
+					"type": "artist",
+					"uri": "spotify:artist:5e4Dhzv426EvQe3aDb64jL"
+				},
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/45kyLFJs5SIEqyzfVopuSc"
+					},
+					"href": "https://api.spotify.com/v1/artists/45kyLFJs5SIEqyzfVopuSc",
+					"id": "45kyLFJs5SIEqyzfVopuSc",
+					"name": "Bryan White",
+					"type": "artist",
+					"uri": "spotify:artist:45kyLFJs5SIEqyzfVopuSc"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 291640,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/0f8D8Szgfk0DMc2XWmt1yK"
+			},
+			"href": "https://api.spotify.com/v1/tracks/0f8D8Szgfk0DMc2XWmt1yK",
+			"id": "0f8D8Szgfk0DMc2XWmt1yK",
+			"is_local": false,
+			"is_playable": true,
+			"name": "From This Moment On",
+			"preview_url": "https://p.scdn.co/mp3-preview/509e3237f37f6198d31c57d3cc58fd2a09e13197?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 20,
+			"type": "track",
+			"uri": "spotify:track:0f8D8Szgfk0DMc2XWmt1yK"
+		}
+	]
+}

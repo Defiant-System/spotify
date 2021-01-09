@@ -26,13 +26,20 @@
 					target: Self.els.body
 				});
 				// temp
-				setTimeout(() =>
-					Self.els.body.find(`.tabs [data-type="albums"]`).trigger("click"), 300);
+				// setTimeout(() =>
+				// 	Self.els.body.find(`.tabs [data-type="albums"]`).trigger("click"), 300);
 				break;
 			case "playlist-view":
 				window.render({
 					template: "playlist-view",
 					match: "//Playlist",
+					target: Self.els.body
+				});
+				break;
+			case "compilation-view":
+				window.render({
+					template: "compilation-view",
+					match: "//Compilation",
 					target: Self.els.body
 				});
 				break;

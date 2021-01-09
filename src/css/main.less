@@ -871,6 +871,67 @@ div[data-area="panel"] {
 	}
 }
 
+.compilation {
+	.compilation-head {
+		height: 73px;
+		padding: 17px 19px;
+
+		.compilation-image {
+			background-image: inherit;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: relative;
+			width: 47px;
+			height: 47px;
+			vertical-align: bottom;
+			border-radius: 7px;
+			box-shadow: inset 0 0 0 2px rgba(200,200,200,.85),
+						2px 2px 5px rgba(0,0,0,.5);
+			display: inline-block;
+			margin-right: 13px;
+		}
+
+		h2 {
+			.genre {
+				font-size: 0;
+				line-height: 7px;
+
+				span {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+
+	.view-body {
+		.table {
+			.table-body {
+				padding-bottom: 3px;
+			}
+
+			.row {
+				&:last-child {
+					border-bottom-width: 0;
+				}
+
+				.cell {
+					&:nth-child(4) {
+						text-align: right;
+						width: 53px;
+					}
+					&:last-child {
+						width: 53px;
+					}
+				}
+			}
+
+			.icon-player-play {
+				left: -3px;
+			}
+		}
+	}
+}
+
 .artist {
 	.artist-head {
 		height: 89px;

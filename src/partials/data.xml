@@ -65,6 +65,39 @@
 		<i name="Stairway to Heaven 5" release_date="2019-11-25" uri="spotify:album:06FfYW4XUF1vsD6NM5ak7m" image="https://i.scdn.co/image/ab67616d00001e027772259bbf0c019149124e59"/>
 	</Appears>
 
+	<Compilation>
+		<track name="Ground Level" duration_ms="252666" uri="spotify:track:1UgsbIteej4QpAcX3aUFeV">
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
+		</track>
+		<track name="I Feel You" duration_ms="274720" uri="spotify:track:0XM5qsvRQGSWE1hlSq4E5b">
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
+		</track>
+		<track name="Elevate My Mind" duration_ms="196826" uri="spotify:track:7uABD1Cd6M8SGA75OxeUqB">
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
+		</track>
+		<track name="Connected" duration_ms="313000" uri="spotify:track:1ZoE2naC9ySlPLdBZhS1rM">
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
+		</track>
+		<track name="Step It Up" duration_ms="301000" uri="spotify:track:6Y1HIgqlgYSzMalK6eBiEP">
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
+		</track>
+		<track name="Traffic" duration_ms="315600" uri="spotify:track:02I0QezAPPO9Q9i1or053S">
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
+		</track>
+		<track name="The Right Effect" duration_ms="280906" uri="spotify:track:4Mo94v268UDbjG9QLGTWBb">
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
+		</track>
+		<track name="Creation" duration_ms="304000" uri="spotify:track:2RAX6iVOjhH5vL33shTzfX">
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
+		</track>
+		<track name="The End" duration_ms="229840" uri="spotify:track:4kWFbqvYW3izvkcCmQVyG0">
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
+		</track>
+		<track name="Sketch" duration_ms="343666" uri="spotify:track:31z4dKubn9SVuuo4ZAj5R1">
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
+		</track>
+	</Compilation>
+
 	<Related>
 		<artist name="Bomb The Bass" uri="spotify:artist:1G3Eh23f2hwhEnAMw7HsZ6" image="https://i.scdn.co/image/03702d59c0121251fb4d4a633754f81852ad881b"/>
 		<artist name="Propellerheads" uri="spotify:artist:3Z7thZHrtFvqp8OpPffPKp" image="https://i.scdn.co/image/745855335bb56bc90fb95bec043f21e79d65ffeb"/>

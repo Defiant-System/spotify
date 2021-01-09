@@ -29,6 +29,12 @@
 				APP.content.dispatch({ type: "artist-view" });
 				break;
 			case "go-radio":
+				el = $(event.target);
+				el.parent().find(".active").removeClass("active");
+				el.addClass("active");
+				
+				APP.content.dispatch({ type: "compilation-view" });
+				break;
 			case "go-queue":
 			case "go-devices":
 				if (Self.els.panel.hasClass("show")) {

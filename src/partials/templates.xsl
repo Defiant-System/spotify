@@ -54,6 +54,56 @@
 </xsl:template>
 
 
+<xsl:template name="compilation-view">
+	<section class="compilation">
+		<div class="compilation-head">
+			<div class="compilation-image" style="background-image: url(https://i.scdn.co/image/ab67616d00004851ca56ba31dcd3d6f07a2d227b);"></div>
+			<h2>
+				90's Hits
+				<div class="genre">
+					<span>Compilation</span>
+					<span>2000</span>
+					<span>23 songs</span>
+				</div>
+			</h2>
+		</div>
+
+		<div class="view-body">
+			<div class="table enum">
+				<div class="row head" data-click="sort-list">
+					<div class="cell"></div>
+					<div class="cell">Title</div>
+					<div class="cell">Artist</div>
+					<div class="cell"><i class="icon-clock"></i></div>
+					<div class="cell"></div>
+				</div>
+				<div class="table-body">
+					<xsl:for-each select="./*">
+						<xsl:sort order="ascending" select="@_index"/>
+						<div class="row">
+							<div class="cell">
+								<i class="icon-player-play"></i>
+								<i class="icon-heart">
+									<xsl:if test="position() &lt; 5">
+										<xsl:attribute name="class">icon-heart-full</xsl:attribute>
+									</xsl:if>
+								</i>
+							</div>
+							<div class="cell"><xsl:value-of select="@name"/></div>
+							<div class="cell"><xsl:value-of select="artists/@name"/></div>
+							<div class="cell"><xsl:call-template name="translate-duration">
+								<xsl:with-param name="ms" select="@duration_ms" />
+							</xsl:call-template></div>
+							<div class="cell"><i class="icon-bars"></i></div>
+						</div>
+					</xsl:for-each>
+				</div>
+			</div>
+		</div>
+	</section>
+</xsl:template>
+
+
 <xsl:template name="artist-view">
 	<section class="artist">
 		<div class="artist-head">
