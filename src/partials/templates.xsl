@@ -159,6 +159,7 @@
 		<div class="row head">
 			<div class="cell"></div>
 			<div class="cell">Title</div>
+			<div class="cell"><i class="icon-clock"></i></div>
 			<div class="cell"></div>
 		</div>
 		<div class="table-body">
@@ -172,6 +173,7 @@
 					<div class="cell"><xsl:call-template name="translate-duration">
 						<xsl:with-param name="ms" select="@duration_ms" />
 					</xsl:call-template></div>
+					<div class="cell"><i class="icon-bars"></i></div>
 				</div>
 			</xsl:for-each>
 		</div>
