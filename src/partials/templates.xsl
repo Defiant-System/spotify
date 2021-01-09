@@ -71,6 +71,7 @@
 		<div class="tabs" data-click="select-tab">
 			<span data-type="top-tracks" class="active">Top Tracks</span>
 			<span data-type="albums">Albums</span>
+			<span data-type="appears-on">Appears on</span>
 			<span data-type="fans-also-like">Fans Also Like</span>
 		</div>
 
@@ -141,7 +142,7 @@
 							<i class="icon-player-play" data-click="play-album"></i>
 						</div>
 						<div class="album-info">
-							<span class="album-year"><xsl:value-of select="@release_date"/></span>
+							<span class="album-year"><xsl:value-of select="substring( @release_date, 1, 4 )"/></span>
 							<h4><xsl:value-of select="@name"/></h4>
 							<i class="icon-chevron-left"></i>
 						</div>
@@ -181,9 +182,24 @@
 </xsl:template>
 
 
+<xsl:template name="artist-appears-on">
+	<div class="artist-appears-on">
+		<h3>Appears on</h3>
+	</div>
+</xsl:template>
+
+
 <xsl:template name="artist-fans-also-like">
-	<div class="artist-albums">
-		<h3>Discover more artists</h3>
+	<div class="related-artists">
+		<xsl:for-each select="./*">
+			<div class="artist">
+				<div class="image">
+					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+					<i class="icon-player-play"></i>
+				</div>
+				<h5><xsl:value-of select="@name"/></h5>
+			</div>
+		</xsl:for-each>
 	</div>
 </xsl:template>
 

@@ -422,7 +422,7 @@ content {
 			width: 17px;
 			height: 17px;
 			margin-right: 7px;
-			background-size: 44% 44%;
+			background-size: 0 0;
 			cursor: pointer;
 			transition: opacity 120ms ease-in-out;
 
@@ -433,8 +433,20 @@ content {
 				left: -2px;
 				right: -2px;
 				bottom: -2px;
+				background: rgba(0,0,0,.25);
 				border: 2px solid #fff;
 				border-radius: 50%;
+			}
+
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: inherit;
+				height: inherit;
+				background: inherit;
+				background-size: 44% 44%;
 			}
 
 			&:hover {
@@ -899,11 +911,11 @@ div[data-area="panel"] {
 			.cell {
 				&:nth-child(4) {
 					text-align: right;
-					width: 50px;
+					width: 73px;
 				}
 
 				&:last-child {
-					width: 67px;
+					width: 73px;
 				}
 
 				.icon-player-play {
@@ -931,7 +943,7 @@ div[data-area="panel"] {
 				position: relative;
 				border-radius: 7px;
 				padding: 11px;
-				margin: 0 5px 10px 0;
+				margin: 0 5px 3px 0;
 				cursor: pointer;
 				line-height: 1;
 				transition: background 100ms ease-in-out;
@@ -971,6 +983,7 @@ div[data-area="panel"] {
 
 					.album-tracks {
 						padding-top: 3px;
+						max-height: 1000px;
 
 						.table {
 							margin-top: 0;
@@ -1015,8 +1028,7 @@ div[data-area="panel"] {
 				.album-info {
 					flex: 1;
 					position: relative;
-					padding-left: 57px;
-					padding-right: 37px;
+					padding: 2px 37px 3px 57px;
 					pointer-events: none;
 
 					.album-year {
@@ -1027,6 +1039,7 @@ div[data-area="panel"] {
 
 					h4 {
 						color: #bbb;
+						font-size: 15px;
 						text-overflow: ellipsis;
 						white-space: nowrap;
 						overflow: hidden;
@@ -1044,8 +1057,10 @@ div[data-area="panel"] {
 				}
 
 				.album-tracks {
+					max-height: 0;
 					overflow: hidden;
 					font-size: 13px;
+					transition: max-height 300ms ease-in-out;
 
 					.table {
 						display: block;
@@ -1067,7 +1082,7 @@ div[data-area="panel"] {
 							.cell {
 								&:nth-child(3) {
 									text-align: right;
-									width: 53px;
+									width: 47px;
 								}
 								&:last-child {
 									width: 53px;
@@ -1079,6 +1094,76 @@ div[data-area="panel"] {
 							left: -3px;
 						}
 					}
+				}
+			}
+		}
+
+		.artist-appears-on {
+			width: 100%;
+			padding: 17px 19px;
+		}
+
+		.related-artists {
+			width: 100%;
+			padding: 17px 0;
+			font-size: 0;
+
+			.artist {
+				display: inline-block;
+				width: 20%;
+				text-align: center;
+				padding: 0 19px 37px;
+				cursor: pointer;
+
+				&:hover {
+					.image {
+						.icon-player-play {
+							opacity: 1;
+
+							&:hover {
+								transform: translateX(-50%) translateY(-50%) scale(1);
+							}
+						}
+					}
+
+					h5 {
+						color: #fff;
+					}
+				}
+
+				.image {
+					position: relative;
+					width: 91%;
+					display: inline-block;
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: 50% 50%;
+					border-radius: 50%;
+					margin-bottom: 5px;
+
+					&:before {
+						content: "";
+						display: block;
+						padding-top: 100%;
+					}
+
+					.icon-player-play {
+						opacity: 0;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						width: 47px;
+						height: 47px;
+						transform: translateX(-50%) translateY(-50%) scale(.95);
+					}
+				}
+
+				h5 {
+					font-size: 13px;
+					color: #bbb;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
 				}
 			}
 		}

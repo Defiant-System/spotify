@@ -42,6 +42,22 @@
 		</track>
 	</Artist>
 
+	<Appears>
+	</Appears>
+
+	<Related>
+		<artist name="Bomb The Bass" uri="spotify:artist:1G3Eh23f2hwhEnAMw7HsZ6" image="https://i.scdn.co/image/03702d59c0121251fb4d4a633754f81852ad881b"/>
+		<artist name="Propellerheads" uri="spotify:artist:3Z7thZHrtFvqp8OpPffPKp" image="https://i.scdn.co/image/745855335bb56bc90fb95bec043f21e79d65ffeb"/>
+		<artist name="Fun Lovin' Criminals" uri="spotify:artist:0hWRiJV8KlRZvsZeemUJVv" image="https://i.scdn.co/image/04c35d0d00f1a60baabf85b20ae62c51ce2b572f"/>
+		<artist name="Us3" uri="spotify:artist:4LtIfuFeAamus9OOItuWDD" image="https://i.scdn.co/image/4e40387c8a3c70236ecd41bf070c84ca7ab554be"/>
+		<artist name="Terranova" uri="spotify:artist:5ZrGK55yglfGEOvnB2japP" image="https://i.scdn.co/image/99040d33f46f29f141eed8720465efa7566480eb"/>
+		<artist name="Apollo 440" uri="spotify:artist:37f9cjf8Ic4t7vYNRYAzI7" image="https://i.scdn.co/image/cded57f5cf8616175a6a6a74e6025bceaecc2b87"/>
+		<artist name="Rae &amp; Christian" uri="spotify:artist:75WMfaHMMwtiMW8tfR92Pn" image="https://i.scdn.co/image/7435c478c8d9acdbe3372a223a361a88f596f660"/>
+		<artist name="Death In Vegas" uri="spotify:artist:5aj3LEYRbuaabjjHkj5oE1" image="https://i.scdn.co/image/2c1783e7481e9f354bd946a4af97904230b8c385"/>
+		<artist name="Tosca" uri="spotify:artist:0TYvluyvV1Es8lTHiBfnAn" image="https://i.scdn.co/image/e1acc19280bafd14cc3a121dd454ec7f588f6a50"/>
+		<artist name="Sofa Surfers" uri="spotify:artist:0pNP0TPeyffi8QbE8U5D1X" image="https://i.scdn.co/image/99c5faa5c1b0dec842252bdb1c63631c7158bb30"/>
+	</Related>
+
 	<Album>
 		<track name="Ground Level" duration_ms="252666" popularity="34"/>
 		<track name="I feel You" duration_ms="252666" populairty="34"/>

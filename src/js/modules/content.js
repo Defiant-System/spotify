@@ -2,6 +2,12 @@
 // spotify.content
 
 {
+	templates: {
+		"top-tracks": "//Artist",
+		"albums": "//Albums",
+		"appears-on": "//Appears",
+		"fans-also-like": "//Related",
+	},
 	init() {
 		this.els = {
 			body: window.find("content .body")
@@ -9,7 +15,6 @@
 	},
 	dispatch(event) {
 		let Self = spotify.content,
-			data,
 			match,
 			target,
 			el;
@@ -20,9 +25,9 @@
 					match: "//Artist",
 					target: Self.els.body
 				});
-
-				// setTimeout(() =>
-				// 	Self.els.body.find(`.tabs [data-type="albums"]`).trigger("click"), 300);
+				// temp
+				setTimeout(() =>
+					Self.els.body.find(`.tabs [data-type="fans-also-like"]`).trigger("click"), 300);
 				break;
 			case "playlist-view":
 				window.render({
@@ -42,32 +47,24 @@
 				if (el.hasClass("expand")) {
 					el.removeClass("expand");
 				} else {
-
+					// render area
 					window.render({
 						template: "artist-album",
 						match: "//Album",
 						target: el.find(".album-tracks")
 					});
-
+					// expand album after render
 					requestAnimationFrame(() => el.addClass("expand"));
 				}
 				break;
 			case "top-tracks":
 			case "albums":
+			case "appears-on":
 			case "fans-also-like":
 				target = Self.els.body.find(".view-body");
-
-				data = {
-					"top-tracks": "//Artist",
-					"albums": "//Albums",
-					"fans-also-like": "//Albums",
-				}
-
-				window.render({
-					template: "artist-"+ event.type,
-					match: data[event.type],
-					target
-				});
+				match = Self.templates[event.type];
+				// render area
+				window.render({ template: "artist-"+ event.type, match, target });
 				break;
 		}
 	}
