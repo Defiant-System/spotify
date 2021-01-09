@@ -3,10 +3,15 @@
 
 {
 	templates: {
-		"top-tracks": "//Artist",
-		"albums": "//Albums",
-		"appears-on": "//Appears",
-		"fans-also-like": "//Related",
+		"artist-top-tracks": "//Artist",
+		"artist-albums": "//Albums",
+		"artist-appears-on": "//Appears",
+		"artist-fans-also-like": "//Related",
+
+		"search-tracks": "//Search/Tracks",
+		"search-artists": "//Search/Artists",
+		"search-albums": "//Search/Albums",
+		"search-playlists": "//Search/Playlists",
 	},
 	init() {
 		this.els = {
@@ -50,6 +55,13 @@
 					target: Self.els.body
 				});
 				break;
+			case "search-view":
+				window.render({
+					template: "search-view",
+					match: "//Search",
+					target: Self.els.body
+				});
+				break;
 			case "sort-list":
 				break;
 			case "play-album":
@@ -71,14 +83,23 @@
 					requestAnimationFrame(() => el.addClass("expand"));
 				}
 				break;
-			case "top-tracks":
-			case "albums":
-			case "appears-on":
-			case "fans-also-like":
+			case "search-tracks":
+			case "search-artists":
+			case "search-albums":
+			case "search-playlists":
 				target = Self.els.body.find(".view-body");
 				match = Self.templates[event.type];
 				// render area
-				window.render({ template: "artist-"+ event.type, match, target });
+				window.render({ template: event.type, match, target });
+				break;
+			case "artist-top-tracks":
+			case "artist-albums":
+			case "artist-appears-on":
+			case "artist-fans-also-like":
+				target = Self.els.body.find(".view-body");
+				match = Self.templates[event.type];
+				// render area
+				window.render({ template: event.type, match, target });
 				break;
 		}
 	}

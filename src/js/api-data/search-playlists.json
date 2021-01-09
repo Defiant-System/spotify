@@ -1,0 +1,191 @@
+{
+	"playlists": {
+		"href": "https://api.spotify.com/v1/search?query=holiday&type=playlist&market=SE&offset=0&limit=5",
+		"limit": 5,
+		"next": "https://api.spotify.com/v1/search?query=holiday&type=playlist&market=SE&offset=5&limit=5",
+		"offset": 0,
+		"previous": null,
+		"total": 115009,
+		"items": [
+			{
+				"collaborative": false,
+				"description": "La musica Indie per la tua spensieratezza. Per maggiori info inviaci una mail ad info.marketlab@icloud.com",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/4GxYWwe4QEzLofaRn9a4af"
+				},
+				"href": "https://api.spotify.com/v1/playlists/4GxYWwe4QEzLofaRn9a4af",
+				"id": "4GxYWwe4QEzLofaRn9a4af",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706c0000bebb258fc2fb43d2a59b38e5b28f",
+						"width": null
+					}
+				],
+				"name": "Holidays Pop",
+				"owner": {
+					"display_name": "Market Lab",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/if5k0zwssare00ok5z09muvmx"
+					},
+					"href": "https://api.spotify.com/v1/users/if5k0zwssare00ok5z09muvmx",
+					"id": "if5k0zwssare00ok5z09muvmx",
+					"type": "user",
+					"uri": "spotify:user:if5k0zwssare00ok5z09muvmx"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "MTcsOTUyMDg1MzA1MTM5YjhhYjU4MWY1NjYyZTEzOGMxZmFhN2JhZjg2ZQ==",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/4GxYWwe4QEzLofaRn9a4af/tracks",
+					"total": 31
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:4GxYWwe4QEzLofaRn9a4af"
+			},
+			{
+				"collaborative": false,
+				"description": "Spread some cheer with this list of new and old seasonal favorites.",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/37i9dQZF1DX0HWhBzpBj05"
+				},
+				"href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0HWhBzpBj05",
+				"id": "37i9dQZF1DX0HWhBzpBj05",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706f00000003012147aa36dafb6530edda75",
+						"width": null
+					}
+				],
+				"name": "Happy Holidays",
+				"owner": {
+					"display_name": "Spotify",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/spotify"
+					},
+					"href": "https://api.spotify.com/v1/users/spotify",
+					"id": "spotify",
+					"type": "user",
+					"uri": "spotify:user:spotify"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "MTYwNjAwMzUyNiwwMDAwMDAwZDAwMDAwMTc1ZWQ0NTBiNGIwMDAwMDE2Y2Y2OGE5Yjc2",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0HWhBzpBj05/tracks",
+					"total": 61
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:37i9dQZF1DX0HWhBzpBj05"
+			},
+			{
+				"collaborative": false,
+				"description": "",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/4fVEWoG84wjkeDGOcxOcEK"
+				},
+				"href": "https://api.spotify.com/v1/playlists/4fVEWoG84wjkeDGOcxOcEK",
+				"id": "4fVEWoG84wjkeDGOcxOcEK",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706c0000bebbe866e6bfc2ace7580fe62775",
+						"width": null
+					}
+				],
+				"name": "Holidays",
+				"owner": {
+					"display_name": "hgsuio@eslink.me",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/7a2ujv4m30qffohr1akx9z3av"
+					},
+					"href": "https://api.spotify.com/v1/users/7a2ujv4m30qffohr1akx9z3av",
+					"id": "7a2ujv4m30qffohr1akx9z3av",
+					"type": "user",
+					"uri": "spotify:user:7a2ujv4m30qffohr1akx9z3av"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "MTksYTJkZDdmZjYxYmY5OTE0ZTgwMTIzODBhNGE2NmNkOWE0YWRiNjc3MQ==",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/4fVEWoG84wjkeDGOcxOcEK/tracks",
+					"total": 14
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:4fVEWoG84wjkeDGOcxOcEK"
+			},
+			{
+				"collaborative": false,
+				"description": "'Tis the season! All new holiday releases. Cover: Dolly Parton",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/37i9dQZF1DX5vMTfJy5XKE"
+				},
+				"href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5vMTfJy5XKE",
+				"id": "37i9dQZF1DX5vMTfJy5XKE",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706f000000033b176faf43fe51fd45308271",
+						"width": null
+					}
+				],
+				"name": "New Music Holiday",
+				"owner": {
+					"display_name": "Spotify",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/spotify"
+					},
+					"href": "https://api.spotify.com/v1/users/spotify",
+					"id": "spotify",
+					"type": "user",
+					"uri": "spotify:user:spotify"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "MTYxMDIyNTc3OSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5vMTfJy5XKE/tracks",
+					"total": 100
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:37i9dQZF1DX5vMTfJy5XKE"
+			},
+			{
+				"collaborative": false,
+				"description": "",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/7CXbFDNOOTBZncUN4QSPmd"
+				},
+				"href": "https://api.spotify.com/v1/playlists/7CXbFDNOOTBZncUN4QSPmd",
+				"id": "7CXbFDNOOTBZncUN4QSPmd",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706c0000bebbb1191c9f85bab2422cbfdd20",
+						"width": null
+					}
+				],
+				"name": "HolidayStreamingforBE",
+				"owner": {
+					"display_name": "USBTSARMY",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/14ixyg71rwi6gtmtpgi44jryc"
+					},
+					"href": "https://api.spotify.com/v1/users/14ixyg71rwi6gtmtpgi44jryc",
+					"id": "14ixyg71rwi6gtmtpgi44jryc",
+					"type": "user",
+					"uri": "spotify:user:14ixyg71rwi6gtmtpgi44jryc"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "OTEsOTQ1MWU0YjRmYTE3ZGE4M2UxMWUyY2VlZWRhNDA4OTRhNTU3NWY0NQ==",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/7CXbFDNOOTBZncUN4QSPmd/tracks",
+					"total": 25
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:7CXbFDNOOTBZncUN4QSPmd"
+			}
+		]	}
+}

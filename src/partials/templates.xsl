@@ -1,6 +1,29 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 
+<xsl:template name="search-view">
+	<section class="search">
+		<div class="search-head">
+			<div class="search-icon">
+				<i class="icon-search"></i>
+			</div>
+			<h2>holiday</h2>
+		</div>
+
+		<div class="tabs" data-click="select-tab">
+			<span data-type="search-tracks" class="active">Tracks</span>
+			<span data-type="search-artists">Artists</span>
+			<span data-type="search-albums">Albums</span>
+			<span data-type="search-playlists">Playlists</span>
+		</div>
+
+		<div class="view-body">
+			<xsl:call-template name="mixed-tracks"/>
+		</div>
+	</section>
+</xsl:template>
+
+
 <xsl:template name="playlist-view">
 	<section class="playlist">
 		<div class="playlist-head">
@@ -19,38 +42,43 @@
 			</h2>
 		</div>
 		<div class="view-body">
-			<div class="table">
-				<div class="row head" data-click="sort-list">
-					<div class="cell"></div>
-					<div class="cell">Title</div>
-					<div class="cell">Artist</div>
-					<div class="cell">Album</div>
-					<div class="cell"><i class="icon-clock"></i></div>
-				</div>
-				<div class="table-body">
-					<xsl:for-each select="./*">
-						<xsl:sort order="ascending" select="@_index"/>
-						<div class="row">
-							<div class="cell">
-								<i class="icon-player-play"></i>
-								<i class="icon-heart">
-									<xsl:if test="position() &lt; 5">
-										<xsl:attribute name="class">icon-heart-full</xsl:attribute>
-									</xsl:if>
-								</i>
-							</div>
-							<div class="cell"><xsl:value-of select="@name"/></div>
-							<div class="cell"><xsl:value-of select="artists/@name"/></div>
-							<div class="cell"><xsl:value-of select="album/@name"/></div>
-							<div class="cell"><xsl:call-template name="translate-duration">
-								<xsl:with-param name="ms" select="@duration_ms" />
-							</xsl:call-template></div>
-						</div>
-					</xsl:for-each>
-				</div>
-			</div>
+			<xsl:call-template name="mixed-tracks"/>
 		</div>
 	</section>
+</xsl:template>
+
+
+<xsl:template name="mixed-tracks">
+	<div class="table">
+		<div class="row head" data-click="sort-list">
+			<div class="cell"></div>
+			<div class="cell">Title</div>
+			<div class="cell">Artist</div>
+			<div class="cell">Album</div>
+			<div class="cell"><i class="icon-clock"></i></div>
+		</div>
+		<div class="table-body">
+			<xsl:for-each select="./*">
+				<xsl:sort order="ascending" select="@_index"/>
+				<div class="row">
+					<div class="cell">
+						<i class="icon-player-play"></i>
+						<i class="icon-heart">
+							<xsl:if test="position() &lt; 5">
+								<xsl:attribute name="class">icon-heart-full</xsl:attribute>
+							</xsl:if>
+						</i>
+					</div>
+					<div class="cell"><xsl:value-of select="@name"/></div>
+					<div class="cell"><xsl:value-of select="artists/@name"/></div>
+					<div class="cell"><xsl:value-of select="album/@name"/></div>
+					<div class="cell"><xsl:call-template name="translate-duration">
+						<xsl:with-param name="ms" select="@duration_ms" />
+					</xsl:call-template></div>
+				</div>
+			</xsl:for-each>
+		</div>
+	</div>
 </xsl:template>
 
 
@@ -167,10 +195,10 @@
 		</div>
 
 		<div class="tabs" data-click="select-tab">
-			<span data-type="top-tracks" class="active">Top Tracks</span>
-			<span data-type="albums">Albums</span>
-			<span data-type="appears-on">Appears on</span>
-			<span data-type="fans-also-like">Fans Also Like</span>
+			<span data-type="artist-top-tracks" class="active">Top Tracks</span>
+			<span data-type="artist-albums">Albums</span>
+			<span data-type="artist-appears-on">Appears on</span>
+			<span data-type="artist-fans-also-like">Fans Also Like</span>
 		</div>
 
 		<div class="view-body">

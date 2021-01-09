@@ -1,0 +1,237 @@
+{
+	"albums": {
+		"href": "https://api.spotify.com/v1/search?query=holiday&type=album&market=SE&offset=0&limit=5",
+		"limit": 5,
+		"next": "https://api.spotify.com/v1/search?query=holiday&type=album&market=SE&offset=5&limit=5",
+		"offset": 0,
+		"previous": null,
+		"total": 10002,
+		"items": [
+			{
+				"album_type": "single",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/7jVv8c5Fj3E9VhNjxT4snq"
+						},
+						"href": "https://api.spotify.com/v1/artists/7jVv8c5Fj3E9VhNjxT4snq",
+						"id": "7jVv8c5Fj3E9VhNjxT4snq",
+						"name": "Lil Nas X",
+						"type": "artist",
+						"uri": "spotify:artist:7jVv8c5Fj3E9VhNjxT4snq"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/4EvukZrmNBiqJbs3LwOSHu"
+				},
+				"href": "https://api.spotify.com/v1/albums/4EvukZrmNBiqJbs3LwOSHu",
+				"id": "4EvukZrmNBiqJbs3LwOSHu",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b2736771a05f34d77e5fc2bde64c",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e026771a05f34d77e5fc2bde64c",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d000048516771a05f34d77e5fc2bde64c",
+						"width": 64
+					}
+				],
+				"name": "HOLIDAY",
+				"release_date": "2020-11-13",
+				"release_date_precision": "day",
+				"total_tracks": 1,
+				"type": "album",
+				"uri": "spotify:album:4EvukZrmNBiqJbs3LwOSHu"
+			},
+			{
+				"album_type": "album",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/6ZjFtWeHP9XN7FeKSUe80S"
+						},
+						"href": "https://api.spotify.com/v1/artists/6ZjFtWeHP9XN7FeKSUe80S",
+						"id": "6ZjFtWeHP9XN7FeKSUe80S",
+						"name": "Bing Crosby",
+						"type": "artist",
+						"uri": "spotify:artist:6ZjFtWeHP9XN7FeKSUe80S"
+					},
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/4BtDAwCZhR6nPrJtbVgQNX"
+						},
+						"href": "https://api.spotify.com/v1/artists/4BtDAwCZhR6nPrJtbVgQNX",
+						"id": "4BtDAwCZhR6nPrJtbVgQNX",
+						"name": "Fred Astaire",
+						"type": "artist",
+						"uri": "spotify:artist:4BtDAwCZhR6nPrJtbVgQNX"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/4ZZvKnA1YJ2KcwjMmHBinq"
+				},
+				"href": "https://api.spotify.com/v1/albums/4ZZvKnA1YJ2KcwjMmHBinq",
+				"id": "4ZZvKnA1YJ2KcwjMmHBinq",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b273481bb0db1e8bd0c7104368a4",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e02481bb0db1e8bd0c7104368a4",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d00004851481bb0db1e8bd0c7104368a4",
+						"width": 64
+					}
+				],
+				"name": "Holiday Inn (Original Motion Picture Soundtrack)",
+				"release_date": "1942-01-01",
+				"release_date_precision": "day",
+				"total_tracks": 12,
+				"type": "album",
+				"uri": "spotify:album:4ZZvKnA1YJ2KcwjMmHBinq"
+			},
+			{
+				"album_type": "album",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/73Np75Wv2tju61Eo9Zw4IR"
+						},
+						"href": "https://api.spotify.com/v1/artists/73Np75Wv2tju61Eo9Zw4IR",
+						"id": "73Np75Wv2tju61Eo9Zw4IR",
+						"name": "Idina Menzel",
+						"type": "artist",
+						"uri": "spotify:artist:73Np75Wv2tju61Eo9Zw4IR"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/0EGX5qfw6VEPOMoCUFJFHl"
+				},
+				"href": "https://api.spotify.com/v1/albums/0EGX5qfw6VEPOMoCUFJFHl",
+				"id": "0EGX5qfw6VEPOMoCUFJFHl",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b273b942e9ff43d692b700328ecc",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e02b942e9ff43d692b700328ecc",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d00004851b942e9ff43d692b700328ecc",
+						"width": 64
+					}
+				],
+				"name": "Holiday Wishes",
+				"release_date": "2014-10-10",
+				"release_date_precision": "day",
+				"total_tracks": 12,
+				"type": "album",
+				"uri": "spotify:album:0EGX5qfw6VEPOMoCUFJFHl"
+			},
+			{
+				"album_type": "album",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/7n2wHs1TKAczGzO7Dd2rGr"
+						},
+						"href": "https://api.spotify.com/v1/artists/7n2wHs1TKAczGzO7Dd2rGr",
+						"id": "7n2wHs1TKAczGzO7Dd2rGr",
+						"name": "Shawn Mendes",
+						"type": "artist",
+						"uri": "spotify:artist:7n2wHs1TKAczGzO7Dd2rGr"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/01haNCctw4EUPl8xUHVhdl"
+				},
+				"href": "https://api.spotify.com/v1/albums/01haNCctw4EUPl8xUHVhdl",
+				"id": "01haNCctw4EUPl8xUHVhdl",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b273c6da225391c1c8319a016ce1",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e02c6da225391c1c8319a016ce1",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d00004851c6da225391c1c8319a016ce1",
+						"width": 64
+					}
+				],
+				"name": "Wonder (Holiday Deluxe)",
+				"release_date": "2020-12-05",
+				"release_date_precision": "day",
+				"total_tracks": 16,
+				"type": "album",
+				"uri": "spotify:album:01haNCctw4EUPl8xUHVhdl"
+			},
+			{
+				"album_type": "single",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/2dxYzyXrxRkUSwbG2ksVI1"
+						},
+						"href": "https://api.spotify.com/v1/artists/2dxYzyXrxRkUSwbG2ksVI1",
+						"id": "2dxYzyXrxRkUSwbG2ksVI1",
+						"name": "Amelia van Hootens",
+						"type": "artist",
+						"uri": "spotify:artist:2dxYzyXrxRkUSwbG2ksVI1"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/0pCLie2ziptu5IJwLPJzhI"
+				},
+				"href": "https://api.spotify.com/v1/albums/0pCLie2ziptu5IJwLPJzhI",
+				"id": "0pCLie2ziptu5IJwLPJzhI",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b273d4d1dbc213728fd8337d974d",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e02d4d1dbc213728fd8337d974d",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d00004851d4d1dbc213728fd8337d974d",
+						"width": 64
+					}
+				],
+				"name": "Holiday Piano EP",
+				"release_date": "2016-11-22",
+				"release_date_precision": "day",
+				"total_tracks": 3,
+				"type": "album",
+				"uri": "spotify:album:0pCLie2ziptu5IJwLPJzhI"
+			}
+		]
+	}
+}

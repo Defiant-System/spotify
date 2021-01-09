@@ -92,6 +92,7 @@ i[class^="icon-"] {
 	&.icon-radio    { background-image: url(~/icons/icon-radio.png); }
 	&.icon-queue    { background-image: url(~/icons/icon-queue.png); }
 	&.icon-devices  { background-image: url(~/icons/icon-devices.png); }
+	&.icon-search   { background-image: url(~/icons/icon-search.png); }
 	&.icon-volume   { background-image: url(~/icons/icon-volume.png); }
 	&.icon-bars     { background-image: url(~/icons/icon-bars.png); }
 
@@ -820,6 +821,34 @@ div[data-area="panel"] {
 		}
 	}
 }
+
+.search {
+	.search-head {
+		height: 83px;
+		padding: 17px 19px;
+
+		.search-icon {
+			background: rgba(0,0,0,.2);
+			position: relative;
+			width: 47px;
+			height: 47px;
+			vertical-align: top;
+			display: inline-block;
+			margin-right: 13px;
+
+			.icon-search {
+				width: inherit;
+				height: inherit;
+				filter: grayscale(100%);
+			}
+
+			h2 {
+				padding-top: 9px;
+			}
+		}
+	}
+}
+
 
 .playlist {
 	.playlist-head {

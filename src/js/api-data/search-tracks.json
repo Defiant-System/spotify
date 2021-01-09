@@ -1,0 +1,441 @@
+{
+	"tracks": {
+		"href": "https://api.spotify.com/v1/search?query=holiday&type=track&market=SE&offset=0&limit=5",
+		"limit": 5,
+		"next": "https://api.spotify.com/v1/search?query=holiday&type=track&market=SE&offset=5&limit=5",
+		"offset": 0,
+		"previous": null,
+		"total": 250003,
+		"items": [
+			{
+				"album": {
+					"album_type": "single",
+					"artists": [
+						{
+							"external_urls": {
+								"spotify": "https://open.spotify.com/artist/7jVv8c5Fj3E9VhNjxT4snq"
+							},
+							"href": "https://api.spotify.com/v1/artists/7jVv8c5Fj3E9VhNjxT4snq",
+							"id": "7jVv8c5Fj3E9VhNjxT4snq",
+							"name": "Lil Nas X",
+							"type": "artist",
+							"uri": "spotify:artist:7jVv8c5Fj3E9VhNjxT4snq"
+						}
+					],
+					"external_urls": {
+						"spotify": "https://open.spotify.com/album/4EvukZrmNBiqJbs3LwOSHu"
+					},
+					"href": "https://api.spotify.com/v1/albums/4EvukZrmNBiqJbs3LwOSHu",
+					"id": "4EvukZrmNBiqJbs3LwOSHu",
+					"images": [
+						{
+							"height": 640,
+							"url": "https://i.scdn.co/image/ab67616d0000b2736771a05f34d77e5fc2bde64c",
+							"width": 640
+						},
+						{
+							"height": 300,
+							"url": "https://i.scdn.co/image/ab67616d00001e026771a05f34d77e5fc2bde64c",
+							"width": 300
+						},
+						{
+							"height": 64,
+							"url": "https://i.scdn.co/image/ab67616d000048516771a05f34d77e5fc2bde64c",
+							"width": 64
+						}
+					],
+					"name": "HOLIDAY",
+					"release_date": "2020-11-13",
+					"release_date_precision": "day",
+					"total_tracks": 1,
+					"type": "album",
+					"uri": "spotify:album:4EvukZrmNBiqJbs3LwOSHu"
+				},
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/7jVv8c5Fj3E9VhNjxT4snq"
+						},
+						"href": "https://api.spotify.com/v1/artists/7jVv8c5Fj3E9VhNjxT4snq",
+						"id": "7jVv8c5Fj3E9VhNjxT4snq",
+						"name": "Lil Nas X",
+						"type": "artist",
+						"uri": "spotify:artist:7jVv8c5Fj3E9VhNjxT4snq"
+					}
+				],
+				"disc_number": 1,
+				"duration_ms": 154997,
+				"explicit": true,
+				"external_ids": {
+					"isrc": "USSM12006375"
+				},
+				"external_urls": {
+					"spotify": "https://open.spotify.com/track/6zFMeegAMYQo0mt8rXtrli"
+				},
+				"href": "https://api.spotify.com/v1/tracks/6zFMeegAMYQo0mt8rXtrli",
+				"id": "6zFMeegAMYQo0mt8rXtrli",
+				"is_local": false,
+				"is_playable": true,
+				"name": "HOLIDAY",
+				"popularity": 95,
+				"preview_url": "https://p.scdn.co/mp3-preview/1a3815e2255842f57ffccc5941dba4ab95153167?cid=774b29d4f13844c495f206cafdad9c86",
+				"track_number": 1,
+				"type": "track",
+				"uri": "spotify:track:6zFMeegAMYQo0mt8rXtrli"
+			},
+			{
+				"album": {
+					"album_type": "album",
+					"artists": [
+						{
+							"external_urls": {
+								"spotify": "https://open.spotify.com/artist/6JL8zeS1NmiOftqZTRgdTz"
+							},
+							"href": "https://api.spotify.com/v1/artists/6JL8zeS1NmiOftqZTRgdTz",
+							"id": "6JL8zeS1NmiOftqZTRgdTz",
+							"name": "Meghan Trainor",
+							"type": "artist",
+							"uri": "spotify:artist:6JL8zeS1NmiOftqZTRgdTz"
+						}
+					],
+					"external_urls": {
+						"spotify": "https://open.spotify.com/album/2Mb2HvX9H2J98qOvZGdsFf"
+					},
+					"href": "https://api.spotify.com/v1/albums/2Mb2HvX9H2J98qOvZGdsFf",
+					"id": "2Mb2HvX9H2J98qOvZGdsFf",
+					"images": [
+						{
+							"height": 640,
+							"url": "https://i.scdn.co/image/ab67616d0000b27388da41ccfcea521999d2c212",
+							"width": 640
+						},
+						{
+							"height": 300,
+							"url": "https://i.scdn.co/image/ab67616d00001e0288da41ccfcea521999d2c212",
+							"width": 300
+						},
+						{
+							"height": 64,
+							"url": "https://i.scdn.co/image/ab67616d0000485188da41ccfcea521999d2c212",
+							"width": 64
+						}
+					],
+					"name": "A Very Trainor Christmas",
+					"release_date": "2020-10-30",
+					"release_date_precision": "day",
+					"total_tracks": 18,
+					"type": "album",
+					"uri": "spotify:album:2Mb2HvX9H2J98qOvZGdsFf"
+				},
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/6JL8zeS1NmiOftqZTRgdTz"
+						},
+						"href": "https://api.spotify.com/v1/artists/6JL8zeS1NmiOftqZTRgdTz",
+						"id": "6JL8zeS1NmiOftqZTRgdTz",
+						"name": "Meghan Trainor",
+						"type": "artist",
+						"uri": "spotify:artist:6JL8zeS1NmiOftqZTRgdTz"
+					},
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/4QQgXkCYTt3BlENzhyNETg"
+						},
+						"href": "https://api.spotify.com/v1/artists/4QQgXkCYTt3BlENzhyNETg",
+						"id": "4QQgXkCYTt3BlENzhyNETg",
+						"name": "Earth, Wind & Fire",
+						"type": "artist",
+						"uri": "spotify:artist:4QQgXkCYTt3BlENzhyNETg"
+					}
+				],
+				"disc_number": 1,
+				"duration_ms": 165333,
+				"explicit": false,
+				"external_ids": {
+					"isrc": "USSM12005072"
+				},
+				"external_urls": {
+					"spotify": "https://open.spotify.com/track/0Yeh2VJCsxSgbftSGTiUbN"
+				},
+				"href": "https://api.spotify.com/v1/tracks/0Yeh2VJCsxSgbftSGTiUbN",
+				"id": "0Yeh2VJCsxSgbftSGTiUbN",
+				"is_local": false,
+				"is_playable": true,
+				"name": "Holidays (feat. Earth, Wind & Fire)",
+				"popularity": 78,
+				"preview_url": "https://p.scdn.co/mp3-preview/c4abfd0c89602acf643263d2754a4c58ff165c94?cid=774b29d4f13844c495f206cafdad9c86",
+				"track_number": 5,
+				"type": "track",
+				"uri": "spotify:track:0Yeh2VJCsxSgbftSGTiUbN"
+			},
+			{
+				"album": {
+					"album_type": "album",
+					"artists": [
+						{
+							"external_urls": {
+								"spotify": "https://open.spotify.com/artist/6ZjFtWeHP9XN7FeKSUe80S"
+							},
+							"href": "https://api.spotify.com/v1/artists/6ZjFtWeHP9XN7FeKSUe80S",
+							"id": "6ZjFtWeHP9XN7FeKSUe80S",
+							"name": "Bing Crosby",
+							"type": "artist",
+							"uri": "spotify:artist:6ZjFtWeHP9XN7FeKSUe80S"
+						},
+						{
+							"external_urls": {
+								"spotify": "https://open.spotify.com/artist/4BtDAwCZhR6nPrJtbVgQNX"
+							},
+							"href": "https://api.spotify.com/v1/artists/4BtDAwCZhR6nPrJtbVgQNX",
+							"id": "4BtDAwCZhR6nPrJtbVgQNX",
+							"name": "Fred Astaire",
+							"type": "artist",
+							"uri": "spotify:artist:4BtDAwCZhR6nPrJtbVgQNX"
+						}
+					],
+					"external_urls": {
+						"spotify": "https://open.spotify.com/album/4ZZvKnA1YJ2KcwjMmHBinq"
+					},
+					"href": "https://api.spotify.com/v1/albums/4ZZvKnA1YJ2KcwjMmHBinq",
+					"id": "4ZZvKnA1YJ2KcwjMmHBinq",
+					"images": [
+						{
+							"height": 640,
+							"url": "https://i.scdn.co/image/ab67616d0000b273481bb0db1e8bd0c7104368a4",
+							"width": 640
+						},
+						{
+							"height": 300,
+							"url": "https://i.scdn.co/image/ab67616d00001e02481bb0db1e8bd0c7104368a4",
+							"width": 300
+						},
+						{
+							"height": 64,
+							"url": "https://i.scdn.co/image/ab67616d00004851481bb0db1e8bd0c7104368a4",
+							"width": 64
+						}
+					],
+					"name": "Holiday Inn (Original Motion Picture Soundtrack)",
+					"release_date": "1942-01-01",
+					"release_date_precision": "day",
+					"total_tracks": 12,
+					"type": "album",
+					"uri": "spotify:album:4ZZvKnA1YJ2KcwjMmHBinq"
+				},
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/6ZjFtWeHP9XN7FeKSUe80S"
+						},
+						"href": "https://api.spotify.com/v1/artists/6ZjFtWeHP9XN7FeKSUe80S",
+						"id": "6ZjFtWeHP9XN7FeKSUe80S",
+						"name": "Bing Crosby",
+						"type": "artist",
+						"uri": "spotify:artist:6ZjFtWeHP9XN7FeKSUe80S"
+					},
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/69UfPJgUmFFAVT740qGVZi"
+						},
+						"href": "https://api.spotify.com/v1/artists/69UfPJgUmFFAVT740qGVZi",
+						"id": "69UfPJgUmFFAVT740qGVZi",
+						"name": "Ken Darby Singers",
+						"type": "artist",
+						"uri": "spotify:artist:69UfPJgUmFFAVT740qGVZi"
+					},
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/735L650pvygCZZlPMyHqsN"
+						},
+						"href": "https://api.spotify.com/v1/artists/735L650pvygCZZlPMyHqsN",
+						"id": "735L650pvygCZZlPMyHqsN",
+						"name": "John Scott Trotter & His Orchestra",
+						"type": "artist",
+						"uri": "spotify:artist:735L650pvygCZZlPMyHqsN"
+					}
+				],
+				"disc_number": 1,
+				"duration_ms": 177480,
+				"explicit": false,
+				"external_ids": {
+					"isrc": "USMC14750470"
+				},
+				"external_urls": {
+					"spotify": "https://open.spotify.com/track/4so0Wek9Ig1p6CRCHuINwW"
+				},
+				"href": "https://api.spotify.com/v1/tracks/4so0Wek9Ig1p6CRCHuINwW",
+				"id": "4so0Wek9Ig1p6CRCHuINwW",
+				"is_local": false,
+				"is_playable": true,
+				"name": "White Christmas",
+				"popularity": 88,
+				"preview_url": null,
+				"track_number": 11,
+				"type": "track",
+				"uri": "spotify:track:4so0Wek9Ig1p6CRCHuINwW"
+			},
+			{
+				"album": {
+					"album_type": "single",
+					"artists": [
+						{
+							"external_urls": {
+								"spotify": "https://open.spotify.com/artist/7oPftvlwr6VrsViSDV7fJY"
+							},
+							"href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY",
+							"id": "7oPftvlwr6VrsViSDV7fJY",
+							"name": "Green Day",
+							"type": "artist",
+							"uri": "spotify:artist:7oPftvlwr6VrsViSDV7fJY"
+						}
+					],
+					"external_urls": {
+						"spotify": "https://open.spotify.com/album/1SPzhFzjXrz9OXLP2rKg1C"
+					},
+					"href": "https://api.spotify.com/v1/albums/1SPzhFzjXrz9OXLP2rKg1C",
+					"id": "1SPzhFzjXrz9OXLP2rKg1C",
+					"images": [
+						{
+							"height": 640,
+							"url": "https://i.scdn.co/image/ab67616d0000b2731bb1db39abc18755d7ab2114",
+							"width": 640
+						},
+						{
+							"height": 300,
+							"url": "https://i.scdn.co/image/ab67616d00001e021bb1db39abc18755d7ab2114",
+							"width": 300
+						},
+						{
+							"height": 64,
+							"url": "https://i.scdn.co/image/ab67616d000048511bb1db39abc18755d7ab2114",
+							"width": 64
+						}
+					],
+					"name": "Holiday",
+					"release_date": "2005-03-30",
+					"release_date_precision": "day",
+					"total_tracks": 2,
+					"type": "album",
+					"uri": "spotify:album:1SPzhFzjXrz9OXLP2rKg1C"
+				},
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/7oPftvlwr6VrsViSDV7fJY"
+						},
+						"href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY",
+						"id": "7oPftvlwr6VrsViSDV7fJY",
+						"name": "Green Day",
+						"type": "artist",
+						"uri": "spotify:artist:7oPftvlwr6VrsViSDV7fJY"
+					}
+				],
+				"disc_number": 1,
+				"duration_ms": 233026,
+				"explicit": false,
+				"external_ids": {
+					"isrc": "USRE10500451"
+				},
+				"external_urls": {
+					"spotify": "https://open.spotify.com/track/5vfjUAhefN7IjHbTvVCT4Z"
+				},
+				"href": "https://api.spotify.com/v1/tracks/5vfjUAhefN7IjHbTvVCT4Z",
+				"id": "5vfjUAhefN7IjHbTvVCT4Z",
+				"is_local": false,
+				"is_playable": true,
+				"name": "Holiday",
+				"popularity": 70,
+				"preview_url": "https://p.scdn.co/mp3-preview/0e1a3330527a1f570a4d1428f32be931c055232b?cid=774b29d4f13844c495f206cafdad9c86",
+				"track_number": 1,
+				"type": "track",
+				"uri": "spotify:track:5vfjUAhefN7IjHbTvVCT4Z"
+			},
+			{
+				"album": {
+					"album_type": "single",
+					"artists": [
+						{
+							"external_urls": {
+								"spotify": "https://open.spotify.com/artist/5HUGPIHRwh79LbffYIUJeJ"
+							},
+							"href": "https://api.spotify.com/v1/artists/5HUGPIHRwh79LbffYIUJeJ",
+							"id": "5HUGPIHRwh79LbffYIUJeJ",
+							"name": "The Mamas",
+							"type": "artist",
+							"uri": "spotify:artist:5HUGPIHRwh79LbffYIUJeJ"
+						}
+					],
+					"external_urls": {
+						"spotify": "https://open.spotify.com/album/37ntTCjFmGPkfViJd4vjvK"
+					},
+					"href": "https://api.spotify.com/v1/albums/37ntTCjFmGPkfViJd4vjvK",
+					"id": "37ntTCjFmGPkfViJd4vjvK",
+					"images": [
+						{
+							"height": 640,
+							"url": "https://i.scdn.co/image/ab67616d0000b273e9ffa57745e91e7ec09f02cd",
+							"width": 640
+						},
+						{
+							"height": 300,
+							"url": "https://i.scdn.co/image/ab67616d00001e02e9ffa57745e91e7ec09f02cd",
+							"width": 300
+						},
+						{
+							"height": 64,
+							"url": "https://i.scdn.co/image/ab67616d00004851e9ffa57745e91e7ec09f02cd",
+							"width": 64
+						}
+					],
+					"name": "All I Want For December",
+					"release_date": "2020-11-20",
+					"release_date_precision": "day",
+					"total_tracks": 6,
+					"type": "album",
+					"uri": "spotify:album:37ntTCjFmGPkfViJd4vjvK"
+				},
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/5HUGPIHRwh79LbffYIUJeJ"
+						},
+						"href": "https://api.spotify.com/v1/artists/5HUGPIHRwh79LbffYIUJeJ",
+						"id": "5HUGPIHRwh79LbffYIUJeJ",
+						"name": "The Mamas",
+						"type": "artist",
+						"uri": "spotify:artist:5HUGPIHRwh79LbffYIUJeJ"
+					},
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/73kWcRbUOA5MqXZDvzZEeX"
+						},
+						"href": "https://api.spotify.com/v1/artists/73kWcRbUOA5MqXZDvzZEeX",
+						"id": "73kWcRbUOA5MqXZDvzZEeX",
+						"name": "Dinah Yonas Manna",
+						"type": "artist",
+						"uri": "spotify:artist:73kWcRbUOA5MqXZDvzZEeX"
+					}
+				],
+				"disc_number": 1,
+				"duration_ms": 260386,
+				"explicit": false,
+				"external_ids": {
+					"isrc": "SEUM72001371"
+				},
+				"external_urls": {
+					"spotify": "https://open.spotify.com/track/1unpst6H0uMsDKghmIxwjs"
+				},
+				"href": "https://api.spotify.com/v1/tracks/1unpst6H0uMsDKghmIxwjs",
+				"id": "1unpst6H0uMsDKghmIxwjs",
+				"is_local": false,
+				"is_playable": true,
+				"name": "Another Holiday",
+				"popularity": 56,
+				"preview_url": null,
+				"track_number": 6,
+				"type": "track",
+				"uri": "spotify:track:1unpst6H0uMsDKghmIxwjs"
+			}
+		]	}
+}
