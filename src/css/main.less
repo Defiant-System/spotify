@@ -433,7 +433,7 @@ content {
 				left: -2px;
 				right: -2px;
 				bottom: -2px;
-				background: rgba(0,0,0,.25);
+				background: rgba(0,0,0,.35);
 				border: 2px solid #fff;
 				border-radius: 50%;
 			}
@@ -952,6 +952,8 @@ div[data-area="panel"] {
 					background: rgba(100,100,100,.2);
 
 					.album-cover {
+						box-shadow: 0 0 0 3px #000;
+
 						&:before {
 							opacity: .6;
 						}
@@ -982,7 +984,6 @@ div[data-area="panel"] {
 					}
 
 					.album-tracks {
-						padding-top: 3px;
 						max-height: 1000px;
 
 						.table {
@@ -999,6 +1000,7 @@ div[data-area="panel"] {
 					left: 11px;
 					width: 37px;
 					height: 37px;
+					border-radius: 3px;
 
 					&:before {
 						content: "";
@@ -1010,6 +1012,7 @@ div[data-area="panel"] {
 						bottom: 0;
 						opacity: 0;
 						z-index: 1;
+						border-radius: inherit;
 						transition: opacity 100ms ease-in-out;
 					}
 
@@ -1057,6 +1060,8 @@ div[data-area="panel"] {
 				}
 
 				.album-tracks {
+					position: relative;
+					top: 3px;
 					max-height: 0;
 					overflow: hidden;
 					font-size: 13px;
@@ -1100,7 +1105,67 @@ div[data-area="panel"] {
 
 		.artist-appears-on {
 			width: 100%;
-			padding: 17px 19px;
+			padding: 17px 0;
+			font-size: 0;
+
+			.appears-item {
+				display: inline-block;
+				width: 20%;
+				text-align: center;
+				padding: 0 19px 37px;
+				cursor: pointer;
+
+				&:hover {
+					.image {
+						.icon-player-play {
+							opacity: 1;
+
+							&:hover {
+								transform: translateX(-50%) translateY(-50%) scale(1);
+							}
+						}
+					}
+
+					h5 {
+						color: #fff;
+					}
+				}
+
+				.image {
+					position: relative;
+					width: 91%;
+					display: inline-block;
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: 50% 50%;
+					margin-bottom: 5px;
+					border-radius: 7px;
+
+					&:before {
+						content: "";
+						display: block;
+						padding-top: 100%;
+					}
+
+					.icon-player-play {
+						opacity: 0;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						width: 47px;
+						height: 47px;
+						transform: translateX(-50%) translateY(-50%) scale(.95);
+					}
+				}
+
+				h5 {
+					font-size: 13px;
+					color: #bbb;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+			}
 		}
 
 		.related-artists {

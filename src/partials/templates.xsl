@@ -184,7 +184,15 @@
 
 <xsl:template name="artist-appears-on">
 	<div class="artist-appears-on">
-		<h3>Appears on</h3>
+		<xsl:for-each select="./*">
+			<div class="appears-item">
+				<div class="image">
+					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+					<i class="icon-player-play"></i>
+				</div>
+				<h5><xsl:value-of select="@name"/></h5>
+			</div>
+		</xsl:for-each>
 	</div>
 </xsl:template>
 

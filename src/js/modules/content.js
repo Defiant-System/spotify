@@ -27,7 +27,7 @@
 				});
 				// temp
 				setTimeout(() =>
-					Self.els.body.find(`.tabs [data-type="fans-also-like"]`).trigger("click"), 300);
+					Self.els.body.find(`.tabs [data-type="albums"]`).trigger("click"), 300);
 				break;
 			case "playlist-view":
 				window.render({

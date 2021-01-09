@@ -1,0 +1,890 @@
+{
+	"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8/albums?offset=0&limit=20&include_groups=appears_on&market=SE",
+	"limit": 20,
+	"next": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8/albums?offset=20&limit=20&include_groups=appears_on&market=SE",
+	"offset": 0,
+	"previous": null,
+	"total": 76,
+	"items": [
+		{
+			"album_group": "appears_on",
+			"album_type": "compilation",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+					},
+					"href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+					"id": "0LyfQWJT6nXafLPZqxe9Of",
+					"name": "Various Artists",
+					"type": "artist",
+					"uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/4pzTLmB6ChwgcTAmKWWYGY"
+			},
+			"href": "https://api.spotify.com/v1/albums/4pzTLmB6ChwgcTAmKWWYGY",
+			"id": "4pzTLmB6ChwgcTAmKWWYGY",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b273aa212ff72bf6d74a0116284b",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e02aa212ff72bf6d74a0116284b",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d00004851aa212ff72bf6d74a0116284b",
+					"width": 64
+				}
+			],
+			"name": "90s New Year's Party",
+			"release_date": "2020-12-16",
+			"release_date_precision": "day",
+			"total_tracks": 46,
+			"type": "album",
+			"uri": "spotify:album:4pzTLmB6ChwgcTAmKWWYGY"
+		},
+		{
+			"album_group": "appears_on",
+			"album_type": "album",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+					},
+					"href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+					"id": "0LyfQWJT6nXafLPZqxe9Of",
+					"name": "Various Artists",
+					"type": "artist",
+					"uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/3PlexHHhQvy1SoZrmYBsWM"
+			},
+			"href": "https://api.spotify.com/v1/albums/3PlexHHhQvy1SoZrmYBsWM",
+			"id": "3PlexHHhQvy1SoZrmYBsWM",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b27333df3e71ce47ecab2bc1c0db",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e0233df3e71ce47ecab2bc1c0db",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d0000485133df3e71ce47ecab2bc1c0db",
+					"width": 64
+				}
+			],
+			"name": "Electronic Aspects VIII",
+			"release_date": "2020-12-06",
+			"release_date_precision": "day",
+			"total_tracks": 24,
+			"type": "album",
+			"uri": "spotify:album:3PlexHHhQvy1SoZrmYBsWM"
+		},
+		{
+			"album_group": "appears_on",
+			"album_type": "compilation",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+					},
+					"href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+					"id": "0LyfQWJT6nXafLPZqxe9Of",
+					"name": "Various Artists",
+					"type": "artist",
+					"uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/6bPPRGbZHRoXUVLvx4SB0M"
+			},
+			"href": "https://api.spotify.com/v1/albums/6bPPRGbZHRoXUVLvx4SB0M",
+			"id": "6bPPRGbZHRoXUVLvx4SB0M",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b273ca56ba31dcd3d6f07a2d227b",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e02ca56ba31dcd3d6f07a2d227b",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d00004851ca56ba31dcd3d6f07a2d227b",
+					"width": 64
+				}
+			],
+			"name": "90´s Hits",
+			"release_date": "2020-10-30",
+			"release_date_precision": "day",
+			"total_tracks": 23,
+			"type": "album",
+			"uri": "spotify:album:6bPPRGbZHRoXUVLvx4SB0M"
+		},
+		{
+			"album_group": "appears_on",
+			"album_type": "single",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/3RWRlV5ZZpIVFYdqHutuqo"
+					},
+					"href": "https://api.spotify.com/v1/artists/3RWRlV5ZZpIVFYdqHutuqo",
+					"id": "3RWRlV5ZZpIVFYdqHutuqo",
+					"name": "Pressure Drop",
+					"type": "artist",
+					"uri": "spotify:artist:3RWRlV5ZZpIVFYdqHutuqo"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/3aLZs3frlARGPNAqKB2jo1"
+			},
+			"href": "https://api.spotify.com/v1/albums/3aLZs3frlARGPNAqKB2jo1",
+			"id": "3aLZs3frlARGPNAqKB2jo1",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b273ad8115a6bca51ccfc94f1865",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e02ad8115a6bca51ccfc94f1865",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d00004851ad8115a6bca51ccfc94f1865",
+					"width": 64
+				}
+			],
+			"name": "Silently Bad Minded",
+			"release_date": "2020-10-23",
+			"release_date_precision": "day",
+			"total_tracks": 6,
+			"type": "album",
+			"uri": "spotify:album:3aLZs3frlARGPNAqKB2jo1"
+		},
+		{
+			"album_group": "appears_on",
+			"album_type": "compilation",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+					},
+					"href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+					"id": "0LyfQWJT6nXafLPZqxe9Of",
+					"name": "Various Artists",
+					"type": "artist",
+					"uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/68fsEFgE6ycJNIZ5TRI0qu"
+			},
+			"href": "https://api.spotify.com/v1/albums/68fsEFgE6ycJNIZ5TRI0qu",
+			"id": "68fsEFgE6ycJNIZ5TRI0qu",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b2738d72907f7012372290195abe",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e028d72907f7012372290195abe",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d000048518d72907f7012372290195abe",
+					"width": 64
+				}
+			],
+			"name": "Wasted Berlin Youth, Vol. 17",
+			"release_date": "2020-09-18",
+			"release_date_precision": "day",
+			"total_tracks": 22,
+			"type": "album",
+			"uri": "spotify:album:68fsEFgE6ycJNIZ5TRI0qu"
+		},
+		{
+			"album_group": "appears_on",
+			"album_type": "album",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/3AE5c8fBFJYdxXHCSXAyVx"
+					},
+					"href": "https://api.spotify.com/v1/artists/3AE5c8fBFJYdxXHCSXAyVx",
+					"id": "3AE5c8fBFJYdxXHCSXAyVx",
+					"name": "Re.You",
+					"type": "artist",
+					"uri": "spotify:artist:3AE5c8fBFJYdxXHCSXAyVx"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/0sdpLNuVlwTakX1YPljA1P"
+			},
+			"href": "https://api.spotify.com/v1/albums/0sdpLNuVlwTakX1YPljA1P",
+			"id": "0sdpLNuVlwTakX1YPljA1P",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b27375b1a20ab2142fef199566c2",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e0275b1a20ab2142fef199566c2",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d0000485175b1a20ab2142fef199566c2",
+					"width": 64
+				}
+			],
+			"name": "Maison 'The Remixes'",
+			"release_date": "2020-07-24",
+			"release_date_precision": "day",
+			"total_tracks": 10,
+			"type": "album",
+			"uri": "spotify:album:0sdpLNuVlwTakX1YPljA1P"
+		},
+		{
+			"album_group": "appears_on",
+			"album_type": "compilation",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+					},
+					"href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+					"id": "0LyfQWJT6nXafLPZqxe9Of",
+					"name": "Various Artists",
+					"type": "artist",
+					"uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/1ojrKbjzykigeta5GfATDs"
+			},
+			"href": "https://api.spotify.com/v1/albums/1ojrKbjzykigeta5GfATDs",
+			"id": "1ojrKbjzykigeta5GfATDs",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b2731c9e34da332dc67d1b028579",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e021c9e34da332dc67d1b028579",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d000048511c9e34da332dc67d1b028579",
+					"width": 64
+				}
+			],
+			"name": "Forgotten Hits",
+			"release_date": "2020-07-03",
+			"release_date_precision": "day",
+			"total_tracks": 38,
+			"type": "album",
+			"uri": "spotify:album:1ojrKbjzykigeta5GfATDs"
+		},
+		{
+			"album_group": "appears_on",
+			"album_type": "compilation",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+					},
+					"href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+					"id": "0LyfQWJT6nXafLPZqxe9Of",
+					"name": "Various Artists",
+					"type": "artist",
+					"uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/5IzqvZmaStxwdPopEyw3B1"
+			},
+			"href": "https://api.spotify.com/v1/albums/5IzqvZmaStxwdPopEyw3B1",
+			"id": "5IzqvZmaStxwdPopEyw3B1",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b2731a37b2ad81a1d2f7545f5874",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e021a37b2ad81a1d2f7545f5874",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d000048511a37b2ad81a1d2f7545f5874",
+					"width": 64
+				}
+			],
+			"name": "SWAG",
+			"release_date": "2020-07-03",
+			"release_date_precision": "day",
+			"total_tracks": 32,
+			"type": "album",
+			"uri": "spotify:album:5IzqvZmaStxwdPopEyw3B1"
+		},
+		{
+			"album_group": "appears_on",
+			"album_type": "compilation",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+					},
+					"href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+					"id": "0LyfQWJT6nXafLPZqxe9Of",
+					"name": "Various Artists",
+					"type": "artist",
+					"uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/3pSuW7LhWBu42KK3JDkcyN"
+			},
+			"href": "https://api.spotify.com/v1/albums/3pSuW7LhWBu42KK3JDkcyN",
+			"id": "3pSuW7LhWBu42KK3JDkcyN",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b273416cbad446d418656660cbc6",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e02416cbad446d418656660cbc6",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d00004851416cbad446d418656660cbc6",
+					"width": 64
+				}
+			],
+			"name": "Summer In The 90s",
+			"release_date": "2020-06-26",
+			"release_date_precision": "day",
+			"total_tracks": 23,
+			"type": "album",
+			"uri": "spotify:album:3pSuW7LhWBu42KK3JDkcyN"
+		},
+		{
+			"album_group": "appears_on",
+			"album_type": "compilation",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+					},
+					"href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+					"id": "0LyfQWJT6nXafLPZqxe9Of",
+					"name": "Various Artists",
+					"type": "artist",
+					"uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/7aNaGQIeZug57ZDBvdplbu"
+			},
+			"href": "https://api.spotify.com/v1/albums/7aNaGQIeZug57ZDBvdplbu",
+			"id": "7aNaGQIeZug57ZDBvdplbu",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b273a1e818acb7020ec2f56a566c",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e02a1e818acb7020ec2f56a566c",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d00004851a1e818acb7020ec2f56a566c",
+					"width": 64
+				}
+			],
+			"name": "Basketball Songs",
+			"release_date": "2020-06-05",
+			"release_date_precision": "day",
+			"total_tracks": 22,
+			"type": "album",
+			"uri": "spotify:album:7aNaGQIeZug57ZDBvdplbu"
+		},
+		{
+			"album_group": "appears_on",
+			"album_type": "single",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/2hUQOoksqlWm7bXkZ2FDqu"
+					},
+					"href": "https://api.spotify.com/v1/artists/2hUQOoksqlWm7bXkZ2FDqu",
+					"id": "2hUQOoksqlWm7bXkZ2FDqu",
+					"name": "Elias",
+					"type": "artist",
+					"uri": "spotify:artist:2hUQOoksqlWm7bXkZ2FDqu"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/6CdOZQKHC3aDPzfUz1xA8F"
+			},
+			"href": "https://api.spotify.com/v1/albums/6CdOZQKHC3aDPzfUz1xA8F",
+			"id": "6CdOZQKHC3aDPzfUz1xA8F",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b2732e5311f02a356137bd96d56b",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e022e5311f02a356137bd96d56b",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d000048512e5311f02a356137bd96d56b",
+					"width": 64
+				}
+			],
+			"name": "Olodumare",
+			"release_date": "2020-06-05",
+			"release_date_precision": "day",
+			"total_tracks": 5,
+			"type": "album",
+			"uri": "spotify:album:6CdOZQKHC3aDPzfUz1xA8F"
+		},
+		{
+			"album_group": "appears_on",
+			"album_type": "album",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/3AE5c8fBFJYdxXHCSXAyVx"
+					},
+					"href": "https://api.spotify.com/v1/artists/3AE5c8fBFJYdxXHCSXAyVx",
+					"id": "3AE5c8fBFJYdxXHCSXAyVx",
+					"name": "Re.You",
+					"type": "artist",
+					"uri": "spotify:artist:3AE5c8fBFJYdxXHCSXAyVx"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/4M28pdTLFYIDAvgbsqnSvC"
+			},
+			"href": "https://api.spotify.com/v1/albums/4M28pdTLFYIDAvgbsqnSvC",
+			"id": "4M28pdTLFYIDAvgbsqnSvC",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b273176e0311a50b5f448dcc41a3",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e02176e0311a50b5f448dcc41a3",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d00004851176e0311a50b5f448dcc41a3",
+					"width": 64
+				}
+			],
+			"name": "Maison",
+			"release_date": "2020-05-29",
+			"release_date_precision": "day",
+			"total_tracks": 9,
+			"type": "album",
+			"uri": "spotify:album:4M28pdTLFYIDAvgbsqnSvC"
+		},
+		{
+			"album_group": "appears_on",
+			"album_type": "single",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/4lSumeUuEBPEwWcozc0oba"
+					},
+					"href": "https://api.spotify.com/v1/artists/4lSumeUuEBPEwWcozc0oba",
+					"id": "4lSumeUuEBPEwWcozc0oba",
+					"name": "Yotam Avni",
+					"type": "artist",
+					"uri": "spotify:artist:4lSumeUuEBPEwWcozc0oba"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/0wxpFYWSih6ozFuLGFxZ5n"
+			},
+			"href": "https://api.spotify.com/v1/albums/0wxpFYWSih6ozFuLGFxZ5n",
+			"id": "0wxpFYWSih6ozFuLGFxZ5n",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b273bb25e8b89cc41770473083be",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e02bb25e8b89cc41770473083be",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d00004851bb25e8b89cc41770473083be",
+					"width": 64
+				}
+			],
+			"name": "It's Time EP",
+			"release_date": "2020-04-24",
+			"release_date_precision": "day",
+			"total_tracks": 3,
+			"type": "album",
+			"uri": "spotify:album:0wxpFYWSih6ozFuLGFxZ5n"
+		},
+		{
+			"album_group": "appears_on",
+			"album_type": "compilation",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+					},
+					"href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+					"id": "0LyfQWJT6nXafLPZqxe9Of",
+					"name": "Various Artists",
+					"type": "artist",
+					"uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/3L5lMEG8C7JLOpB7zyFloz"
+			},
+			"href": "https://api.spotify.com/v1/albums/3L5lMEG8C7JLOpB7zyFloz",
+			"id": "3L5lMEG8C7JLOpB7zyFloz",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b273912fb469483ac148a1570432",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e02912fb469483ac148a1570432",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d00004851912fb469483ac148a1570432",
+					"width": 64
+				}
+			],
+			"name": "Let's Go 90s Party!",
+			"release_date": "2020-03-20",
+			"release_date_precision": "day",
+			"total_tracks": 34,
+			"type": "album",
+			"uri": "spotify:album:3L5lMEG8C7JLOpB7zyFloz"
+		},
+		{
+			"album_group": "appears_on",
+			"album_type": "single",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/3TjRLW97EAU4w6knKVBl73"
+					},
+					"href": "https://api.spotify.com/v1/artists/3TjRLW97EAU4w6knKVBl73",
+					"id": "3TjRLW97EAU4w6knKVBl73",
+					"name": "Dave Seaman",
+					"type": "artist",
+					"uri": "spotify:artist:3TjRLW97EAU4w6knKVBl73"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/3NbTpc8jMqi603IIgCgmI1"
+			},
+			"href": "https://api.spotify.com/v1/albums/3NbTpc8jMqi603IIgCgmI1",
+			"id": "3NbTpc8jMqi603IIgCgmI1",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b273aff0a71a60b8a84bdf8da9b8",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e02aff0a71a60b8a84bdf8da9b8",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d00004851aff0a71a60b8a84bdf8da9b8",
+					"width": 64
+				}
+			],
+			"name": "Donkey Engine",
+			"release_date": "2020-02-07",
+			"release_date_precision": "day",
+			"total_tracks": 4,
+			"type": "album",
+			"uri": "spotify:album:3NbTpc8jMqi603IIgCgmI1"
+		},
+		{
+			"album_group": "appears_on",
+			"album_type": "compilation",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+					},
+					"href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+					"id": "0LyfQWJT6nXafLPZqxe9Of",
+					"name": "Various Artists",
+					"type": "artist",
+					"uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/7IZMbQe3H6rQbgdPj2nCB4"
+			},
+			"href": "https://api.spotify.com/v1/albums/7IZMbQe3H6rQbgdPj2nCB4",
+			"id": "7IZMbQe3H6rQbgdPj2nCB4",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b27392296c9a65dce88b2376de3b",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e0292296c9a65dce88b2376de3b",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d0000485192296c9a65dce88b2376de3b",
+					"width": 64
+				}
+			],
+			"name": "Tech House Skulls, Vol. 11",
+			"release_date": "2020-01-27",
+			"release_date_precision": "day",
+			"total_tracks": 23,
+			"type": "album",
+			"uri": "spotify:album:7IZMbQe3H6rQbgdPj2nCB4"
+		},
+		{
+			"album_group": "appears_on",
+			"album_type": "compilation",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/7AjadUCPS3CyVaeyQYySfd"
+					},
+					"href": "https://api.spotify.com/v1/artists/7AjadUCPS3CyVaeyQYySfd",
+					"id": "7AjadUCPS3CyVaeyQYySfd",
+					"name": "Anthony Pappa",
+					"type": "artist",
+					"uri": "spotify:artist:7AjadUCPS3CyVaeyQYySfd"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/0Ds9Gk1WuPwd5Q90afa6TM"
+			},
+			"href": "https://api.spotify.com/v1/albums/0Ds9Gk1WuPwd5Q90afa6TM",
+			"id": "0Ds9Gk1WuPwd5Q90afa6TM",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b2734e3028abf40762eca561072f",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e024e3028abf40762eca561072f",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d000048514e3028abf40762eca561072f",
+					"width": 64
+				}
+			],
+			"name": "Selected Works 2020 (Mixed by Anthony Pappa)",
+			"release_date": "2020-01-01",
+			"release_date_precision": "day",
+			"total_tracks": 20,
+			"type": "album",
+			"uri": "spotify:album:0Ds9Gk1WuPwd5Q90afa6TM"
+		},
+		{
+			"album_group": "appears_on",
+			"album_type": "compilation",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+					},
+					"href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+					"id": "0LyfQWJT6nXafLPZqxe9Of",
+					"name": "Various Artists",
+					"type": "artist",
+					"uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/2H1X1HGQKoG4KXR4Zlhi7Y"
+			},
+			"href": "https://api.spotify.com/v1/albums/2H1X1HGQKoG4KXR4Zlhi7Y",
+			"id": "2H1X1HGQKoG4KXR4Zlhi7Y",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b273ece2c1fc385e3c867049c413",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e02ece2c1fc385e3c867049c413",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d00004851ece2c1fc385e3c867049c413",
+					"width": 64
+				}
+			],
+			"name": "Jazz Hip Hop",
+			"release_date": "2019-12-06",
+			"release_date_precision": "day",
+			"total_tracks": 29,
+			"type": "album",
+			"uri": "spotify:album:2H1X1HGQKoG4KXR4Zlhi7Y"
+		},
+		{
+			"album_group": "appears_on",
+			"album_type": "compilation",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+					},
+					"href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+					"id": "0LyfQWJT6nXafLPZqxe9Of",
+					"name": "Various Artists",
+					"type": "artist",
+					"uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/4f7yEoRedZPPnnxYmUyWKH"
+			},
+			"href": "https://api.spotify.com/v1/albums/4f7yEoRedZPPnnxYmUyWKH",
+			"id": "4f7yEoRedZPPnnxYmUyWKH",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b27391ca5341c64ad647a9ff5144",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e0291ca5341c64ad647a9ff5144",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d0000485191ca5341c64ad647a9ff5144",
+					"width": 64
+				}
+			],
+			"name": "Jazz Hip Hop",
+			"release_date": "2019-12-06",
+			"release_date_precision": "day",
+			"total_tracks": 29,
+			"type": "album",
+			"uri": "spotify:album:4f7yEoRedZPPnnxYmUyWKH"
+		},
+		{
+			"album_group": "appears_on",
+			"album_type": "compilation",
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+					},
+					"href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+					"id": "0LyfQWJT6nXafLPZqxe9Of",
+					"name": "Various Artists",
+					"type": "artist",
+					"uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+				}
+			],
+			"external_urls": {
+				"spotify": "https://open.spotify.com/album/06FfYW4XUF1vsD6NM5ak7m"
+			},
+			"href": "https://api.spotify.com/v1/albums/06FfYW4XUF1vsD6NM5ak7m",
+			"id": "06FfYW4XUF1vsD6NM5ak7m",
+			"images": [
+				{
+					"height": 640,
+					"url": "https://i.scdn.co/image/ab67616d0000b2737772259bbf0c019149124e59",
+					"width": 640
+				},
+				{
+					"height": 300,
+					"url": "https://i.scdn.co/image/ab67616d00001e027772259bbf0c019149124e59",
+					"width": 300
+				},
+				{
+					"height": 64,
+					"url": "https://i.scdn.co/image/ab67616d000048517772259bbf0c019149124e59",
+					"width": 64
+				}
+			],
+			"name": "Stairway to Heaven 5",
+			"release_date": "2019-11-25",
+			"release_date_precision": "day",
+			"total_tracks": 22,
+			"type": "album",
+			"uri": "spotify:album:06FfYW4XUF1vsD6NM5ak7m"
+		}
+	]
+}
