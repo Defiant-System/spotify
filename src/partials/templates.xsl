@@ -104,6 +104,54 @@
 </xsl:template>
 
 
+<xsl:template name="album-view">
+	<section class="album">
+		<div class="album-head">
+			<div class="album-image" style="background-image: url(https://i.scdn.co/image/ab67616d00001e02e8c0eca5da75269b2d229116);"></div>
+			<h2>
+				Deep Down &amp; Dirty
+				<div class="genre">
+					<span>Album</span>
+					<span>2001</span>
+					<span>12 songs</span>
+				</div>
+			</h2>
+		</div>
+
+		<div class="view-body">
+			<div class="table enum">
+				<div class="row head" data-click="sort-list">
+					<div class="cell"></div>
+					<div class="cell">Title</div>
+					<div class="cell"><i class="icon-clock"></i></div>
+					<div class="cell"></div>
+				</div>
+				<div class="table-body">
+					<xsl:for-each select="./*">
+						<xsl:sort order="ascending" select="@_index"/>
+						<div class="row">
+							<div class="cell">
+								<i class="icon-player-play"></i>
+								<i class="icon-heart">
+									<xsl:if test="position() &lt; 5">
+										<xsl:attribute name="class">icon-heart-full</xsl:attribute>
+									</xsl:if>
+								</i>
+							</div>
+							<div class="cell"><xsl:value-of select="@name"/></div>
+							<div class="cell"><xsl:call-template name="translate-duration">
+								<xsl:with-param name="ms" select="@duration_ms" />
+							</xsl:call-template></div>
+							<div class="cell"><i class="icon-bars"></i></div>
+						</div>
+					</xsl:for-each>
+				</div>
+			</div>
+		</div>
+	</section>
+</xsl:template>
+
+
 <xsl:template name="artist-view">
 	<section class="artist">
 		<div class="artist-head">

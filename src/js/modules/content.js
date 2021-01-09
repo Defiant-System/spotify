@@ -43,6 +43,13 @@
 					target: Self.els.body
 				});
 				break;
+			case "album-view":
+				window.render({
+					template: "album-view",
+					match: "//Album",
+					target: Self.els.body
+				});
+				break;
 			case "sort-list":
 				break;
 			case "play-album":

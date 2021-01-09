@@ -12,7 +12,7 @@ const spotify = {
 		Object.keys(this).filter(i => this[i].init).map(i => this[i].init());
 
 		// temp
-		window.find(`.top span[data-click="go-radio"]`).trigger("click");
+		window.find(`.top span[data-click="go-queue"]`).trigger("click");
 	},
 	dispatch(event) {
 		let Self = spotify,

@@ -36,6 +36,12 @@
 				APP.content.dispatch({ type: "compilation-view" });
 				break;
 			case "go-queue":
+				el = $(event.target);
+				el.parent().find(".active").removeClass("active");
+				el.addClass("active");
+				
+				APP.content.dispatch({ type: "album-view" });
+				break;
 			case "go-devices":
 				if (Self.els.panel.hasClass("show")) {
 					return Self.dispatch({ type: "close-panel" });

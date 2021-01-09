@@ -871,11 +871,14 @@ div[data-area="panel"] {
 	}
 }
 
+.album,
 .compilation {
+	.album-head,
 	.compilation-head {
 		height: 73px;
 		padding: 17px 19px;
 
+		.album-image,
 		.compilation-image {
 			background-image: inherit;
 			background-size: contain;
@@ -885,10 +888,10 @@ div[data-area="panel"] {
 			height: 47px;
 			vertical-align: bottom;
 			border-radius: 7px;
-			box-shadow: inset 0 0 0 2px rgba(200,200,200,.85),
-						2px 2px 5px rgba(0,0,0,.5);
 			display: inline-block;
 			margin-right: 13px;
+			box-shadow: inset 0 0 0 2px rgba(200,200,200,.85),
+						2px 2px 5px rgba(0,0,0,.5);
 		}
 
 		h2 {
@@ -920,13 +923,28 @@ div[data-area="panel"] {
 						width: 53px;
 					}
 					&:last-child {
-						width: 53px;
+						width: 59;
 					}
 				}
 			}
 
 			.icon-player-play {
 				left: -3px;
+			}
+		}
+	}
+}
+
+.album {
+	.view-body {
+		.table {
+			.row {
+				.cell {
+					&:nth-child(3) {
+						text-align: right;
+						width: 53px;
+					}
+				}
 			}
 		}
 	}
