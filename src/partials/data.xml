@@ -1,110 +1,123 @@
 <Data>
 	<Artist>
 		<track _index="0" name="Ground Level" duration_ms="252666" uri="spotify:track:1UgsbIteej4QpAcX3aUFeV">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
 		</track>
 		<track _index="1" name="I Feel You" duration_ms="274720" uri="spotify:track:0XM5qsvRQGSWE1hlSq4E5b">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Paradise" uri="spotify:album:6ydThtRPfXjHS79flxvVMC"/>
 		</track>
 		<track _index="2" name="Elevate My Mind" duration_ms="196826" uri="spotify:track:7uABD1Cd6M8SGA75OxeUqB">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Supernatural" uri="spotify:album:3EqE50w57ZSxSDGhmL1tg4"/>
 		</track>
 		<track _index="3" name="Connected" duration_ms="313000" uri="spotify:track:1ZoE2naC9ySlPLdBZhS1rM">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
 		</track>
 		<track _index="4" name="Step It Up" duration_ms="301000" uri="spotify:track:6Y1HIgqlgYSzMalK6eBiEP">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
 		</track>
 		<track _index="5" name="Traffic" duration_ms="315600" uri="spotify:track:02I0QezAPPO9Q9i1or053S">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
 		</track>
 		<track _index="6" name="The Right Effect" duration_ms="280906" uri="spotify:track:4Mo94v268UDbjG9QLGTWBb">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
 		</track>
 		<track _index="7" name="Creation" duration_ms="304000" uri="spotify:track:2RAX6iVOjhH5vL33shTzfX">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
 		</track>
 		<track _index="8" name="The End" duration_ms="229840" uri="spotify:track:4kWFbqvYW3izvkcCmQVyG0">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
 		</track>
 		<track _index="9" name="Sketch" duration_ms="343666" uri="spotify:track:31z4dKubn9SVuuo4ZAj5R1">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
 		</track>
 	</Artist>
 
+	<Albums>
+		<album name="Deeper/Turnaround Remixes" release_date="2016-05-06" total_tracks="5" image="https://i.scdn.co/image/ab67616d0000485185ffb810ec4a8c1e4277bc74"/>
+		<album name="Double Bubble" release_date="2008-07-27" total_tracks="12" image="https://i.scdn.co/image/ab67616d000048516fe9a0e5618c995348d9cf1e"/>
+		<album name="Double Bubble" release_date="2008-07-21" total_tracks="12" image="https://i.scdn.co/image/ab67616d00001e02832ce8bbeb737ae482152f36"/>
+		<album name="Live at The BBC" release_date="2007-01-01" total_tracks="18" image="https://i.scdn.co/image/ab67616d00001e02e748cffd978af5f43d08c73d"/>
+		<album name="Paradise" release_date="2005-08-25" total_tracks="12" image="https://i.scdn.co/image/ab67616d00001e023bdf8d1559780fc9598d9f1e"/>
+		<album name="Deep Down &amp; Dirty" release_date="2001-01-01" total_tracks="12" image="https://i.scdn.co/image/ab67616d00001e02e8c0eca5da75269b2d229116"/>
+		<album name="Connected" release_date="1992-01-01" total_tracks="12" image="https://i.scdn.co/image/ab67616d00001e0242f3ccbc77ffa9a06e6e92d1"/>
+		<album name="Supernatural" release_date="1990-01-01" total_tracks="16" image="https://i.scdn.co/image/ab67616d000048511dafb37287f4aeb796695849"/>
+		<album name="33-45-78" release_date="1989-01-01" total_tracks="15" image="https://i.scdn.co/image/ab67616d00004851651a3f0e36a8e1a4c700e0b3"/>
+		<album name="Changes" release_date="2017-01-27" total_tracks="3" image="https://i.scdn.co/image/ab67616d00004851656243f2d4a052a746c0c990"/>
+	</Albums>
+
 	<Playlist>
 		<track _index="0" name="Ground Level" duration_ms="252666" uri="spotify:track:1UgsbIteej4QpAcX3aUFeV">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
 		</track>
 		<track _index="1" name="I Feel You" duration_ms="274720" uri="spotify:track:0XM5qsvRQGSWE1hlSq4E5b">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Paradise" uri="spotify:album:6ydThtRPfXjHS79flxvVMC"/>
 		</track>
 		<track _index="2" name="Elevate My Mind" duration_ms="196826" uri="spotify:track:7uABD1Cd6M8SGA75OxeUqB">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Supernatural" uri="spotify:album:3EqE50w57ZSxSDGhmL1tg4"/>
 		</track>
 		<track _index="3" name="Connected" duration_ms="313000" uri="spotify:track:1ZoE2naC9ySlPLdBZhS1rM">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
 		</track>
 		<track _index="4" name="Step It Up" duration_ms="301000" uri="spotify:track:6Y1HIgqlgYSzMalK6eBiEP">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
 		</track>
 		<track _index="5" name="Traffic" duration_ms="315600" uri="spotify:track:02I0QezAPPO9Q9i1or053S">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
 		</track>
 		<track _index="6" name="The Right Effect" duration_ms="280906" uri="spotify:track:4Mo94v268UDbjG9QLGTWBb">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
 		</track>
 		<track _index="7" name="Creation" duration_ms="304000" uri="spotify:track:2RAX6iVOjhH5vL33shTzfX">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
 		</track>
 		<track _index="8" name="The End" duration_ms="229840" uri="spotify:track:4kWFbqvYW3izvkcCmQVyG0">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
 		</track>
 		<track _index="9" name="Sketch" duration_ms="343666" uri="spotify:track:31z4dKubn9SVuuo4ZAj5R1">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
 		</track>
 		<track _index="10" name="Fade Away" duration_ms="266000" uri="spotify:track:1omeMDcIlyoUuDzeD6XxfS">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
 		</track>
 		<track _index="11" name="Playing With Fire" duration_ms="258826" uri="spotify:track:5F6Yu1s3rvN7UQV5l04Hkl">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
 		</track>
 		<track _index="12" name="Pressure" duration_ms="230840" uri="spotify:track:6GFvGV6yLGInltTbxlzonn">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
 		</track>
 		<track _index="13" name="Chicken Shake" duration_ms="229160" uri="spotify:track:6N0o3pElcfEqTgIdQzLU19">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
 		</track>
 		<track _index="14" name="Deep Down & Dirty - Original Version" duration_ms="261399" uri="spotify:track:16WyvPp6nfgSYgJWPrlXM5">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
 		</track>
 		<track _index="15" name="We Belong In This World Together" duration_ms="279040" uri="spotify:track:1TKdwordQKlZalI2ESv1St">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8" />
+			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
 			<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
 		</track>
 	</Playlist>

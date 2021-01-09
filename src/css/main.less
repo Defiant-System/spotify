@@ -409,6 +409,12 @@ content {
 		z-index: 97;
 		background: transparent;
 	}
+
+	.view-body {
+		display: flex;
+		flex: 1;
+		overflow: auto;
+	}
 }
 
 div[data-area="panel"] {
@@ -879,12 +885,11 @@ div[data-area="panel"] {
 		}
 	}
 
-	.artist-body {
-		display: flex;
-		flex: 1;
-		overflow: auto;
-
+	.view-body {
 		.artist-top-tracks {
+			display: flex;
+			flex: 1;
+
 			.cell {
 				&:nth-child(4) {
 					text-align: right;
@@ -899,24 +904,35 @@ div[data-area="panel"] {
 
 		.artist-albums {
 			width: 100%;
+			font-size: 0;
 			padding: 17px 19px;
 
-			h3 {
-				padding-bottom: 17px;
-			}
-
 			.album {
-				display: flex;
-				flex-direction: row;
+				position: relative;
+				display: inline-block;
+				width: calc( 50% - 5px );
+				border-radius: 5px;
+				padding: 11px 11px 11px 57px;
+				margin: 0 5px 10px 0;
 				line-height: 1;
-				padding: 5px 0 11px;
+
+				&:nth-child(2n) {
+					margin-left: 5px;
+					margin-right: 0;
+				}
+
+				&:hover {
+					background: rgba(100,100,100,.25);
+				}
 
 				.album-cover {
 					background-size: contain;
 					display: inline-block;
+					position: absolute;
+					top: 11px;
+					left: 11px;
 					width: 37px;
 					height: 37px;
-					margin: 0 13px 0 0;
 				}
 
 				.album-info {

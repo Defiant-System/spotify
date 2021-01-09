@@ -18,34 +18,36 @@
 				</div>
 			</h2>
 		</div>
-		<div class="table">
-			<div class="row head" data-click="sort-list">
-				<div class="cell"></div>
-				<div class="cell">Title</div>
-				<div class="cell">Artist</div>
-				<div class="cell">Album</div>
-				<div class="cell"><i class="icon-clock"></i></div>
-			</div>
-			<div class="table-body">
-				<xsl:for-each select="./*">
-					<xsl:sort order="ascending" select="@_index"/>
-					<div class="row">
-						<div class="cell">
-							<i class="icon-player-play"></i>
-							<i class="icon-heart">
-								<xsl:if test="position() &lt; 5">
-									<xsl:attribute name="class">icon-heart-full</xsl:attribute>
-								</xsl:if>
-							</i>
+		<div class="view-body">
+			<div class="table">
+				<div class="row head" data-click="sort-list">
+					<div class="cell"></div>
+					<div class="cell">Title</div>
+					<div class="cell">Artist</div>
+					<div class="cell">Album</div>
+					<div class="cell"><i class="icon-clock"></i></div>
+				</div>
+				<div class="table-body">
+					<xsl:for-each select="./*">
+						<xsl:sort order="ascending" select="@_index"/>
+						<div class="row">
+							<div class="cell">
+								<i class="icon-player-play"></i>
+								<i class="icon-heart">
+									<xsl:if test="position() &lt; 5">
+										<xsl:attribute name="class">icon-heart-full</xsl:attribute>
+									</xsl:if>
+								</i>
+							</div>
+							<div class="cell"><xsl:value-of select="@name"/></div>
+							<div class="cell"><xsl:value-of select="artists/@name"/></div>
+							<div class="cell"><xsl:value-of select="album/@name"/></div>
+							<div class="cell"><xsl:call-template name="translate-duration">
+								<xsl:with-param name="ms" select="@duration_ms" />
+							</xsl:call-template></div>
 						</div>
-						<div class="cell"><xsl:value-of select="@name"/></div>
-						<div class="cell"><xsl:value-of select="artists/@name"/></div>
-						<div class="cell"><xsl:value-of select="album/@name"/></div>
-						<div class="cell"><xsl:call-template name="translate-duration">
-							<xsl:with-param name="ms" select="@duration_ms" />
-						</xsl:call-template></div>
-					</div>
-				</xsl:for-each>
+					</xsl:for-each>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -66,14 +68,13 @@
 			</h2>
 		</div>
 
-		<div class="tabs">
-			<span class="active">Top Tracks</span>
-			<span>Albums</span>
-			<span>About</span>
-			<span>Fans Also Like</span>
+		<div class="tabs" data-click="select-tab">
+			<span data-type="top-tracks" class="active">Top Tracks</span>
+			<span data-type="albums">Albums</span>
+			<span data-type="fans-also-like">Fans Also Like</span>
 		</div>
 
-		<div class="artist-body">
+		<div class="view-body">
 			<xsl:call-template name="artist-top-tracks" />
 		</div>
 	</section>
@@ -112,7 +113,26 @@
 
 
 <xsl:template name="artist-albums">
+	<div class="artist-albums">
+		<xsl:for-each select="./*">
+			<div class="album">
+				<div class="album-cover">
+					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+				</div>
+				<div class="album-info">
+					<span class="album-year"><xsl:value-of select="substring( @release_date, 1, 4 )"/></span>
+					<h4><xsl:value-of select="@name"/></h4>
+				</div>
+			</div>
+		</xsl:for-each>
+	</div>
+</xsl:template>
 
+
+<xsl:template name="artist-fans-also-like">
+	<div class="artist-albums">
+		<h3>Discover more artists</h3>
+	</div>
 </xsl:template>
 
 

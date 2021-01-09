@@ -23,6 +23,12 @@ const spotify = {
 			case "close-panel":
 				Self.sidebar.dispatch(event);
 				break;
+			case "select-tab":
+				event.el.find(".active").removeClass("active");
+				el = $(event.target).addClass("active");
+				// re-route event
+				Self.dispatch({ type: el.data("type"), el });
+				break;
 			default:
 				if (event.el) {
 					let pEl = event.el.parents("[data-area]");
