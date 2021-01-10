@@ -111,7 +111,7 @@
 					<div class="cell">Title</div>
 					<div class="cell">Artist</div>
 					<div class="cell"><i class="icon-clock"></i></div>
-					<div class="cell"></div>
+					<div class="cell"><i class="icon-thumb"></i></div>
 				</div>
 				<div class="table-body" data-click="select-track">
 					<xsl:for-each select="./*">
@@ -165,7 +165,7 @@
 					<div class="cell"></div>
 					<div class="cell">Title</div>
 					<div class="cell"><i class="icon-clock"></i></div>
-					<div class="cell"></div>
+					<div class="cell"><i class="icon-thumb"></i></div>
 				</div>
 				<div class="table-body" data-click="select-track">
 					<xsl:for-each select="./*">
@@ -231,7 +231,7 @@
 				<div class="cell">Title</div>
 				<div class="cell">Album</div>
 				<div class="cell"><i class="icon-clock"></i></div>
-				<div class="cell"></div>
+				<div class="cell"><i class="icon-thumb"></i></div>
 			</div>
 			<div class="table-body" data-click="select-track">
 				<xsl:for-each select="./*">
@@ -311,7 +311,7 @@
 			<div class="cell"></div>
 			<div class="cell">Title</div>
 			<div class="cell"><i class="icon-clock"></i></div>
-			<div class="cell"></div>
+			<div class="cell"><i class="icon-thumb"></i></div>
 		</div>
 		<div class="table-body" data-click="select-track">
 			<xsl:for-each select="./*">
