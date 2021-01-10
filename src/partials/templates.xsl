@@ -308,10 +308,10 @@
 </xsl:template>
 
 
-<xsl:template name="artist-appears-on">
-	<div class="artist-appears-on">
+<xsl:template name="mixed-albums">
+	<div class="mixed-albums">
 		<xsl:for-each select="./*">
-			<div class="appears-item">
+			<div class="album-item">
 				<div class="image">
 					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
 					<i class="icon-player-play"></i>
@@ -323,10 +323,25 @@
 </xsl:template>
 
 
-<xsl:template name="artist-fans-also-like">
-	<div class="related-artists">
+<xsl:template name="artists">
+	<div class="artists">
 		<xsl:for-each select="./*">
 			<div class="artist">
+				<div class="image">
+					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+					<i class="icon-player-play"></i>
+				</div>
+				<h5><xsl:value-of select="@name"/></h5>
+			</div>
+		</xsl:for-each>
+	</div>
+</xsl:template>
+
+
+<xsl:template name="playlists">
+	<div class="playlists">
+		<xsl:for-each select="./*">
+			<div class="playlist">
 				<div class="image">
 					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
 					<i class="icon-player-play"></i>

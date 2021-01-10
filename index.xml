@@ -6,7 +6,7 @@
 		<meta name="license" value="AGPL-3.0"/>
 		<meta name="repository" value="https://github.com/Defiant-System/spotify"/>
 		<meta name="width" value="920"/>
-		<meta name="height" value="720"/>
+		<meta name="height" value="620"/>
 		<meta name="top" value="120"/>
 		<meta name="left" value="120"/>
 		<meta name="headless" value="true" theme="dark"/>

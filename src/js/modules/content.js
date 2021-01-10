@@ -2,16 +2,16 @@
 // spotify.content
 
 {
-	templates: {
-		"artist-top-tracks": "//Artist",
-		"artist-albums": "//Albums",
-		"artist-appears-on": "//Appears",
-		"artist-fans-also-like": "//Related",
+	renders: {
+		"artist-top-tracks":     { template: "top-tracks",    match: "//Artist" },
+		"artist-albums":         { template: "artist-albums", match: "//Data/Albums" },
+		"artist-appears-on":     { template: "mixed-albums",  match: "//Appears" },
+		"artist-fans-also-like": { template: "artists",       match: "//Related" },
 
-		"search-tracks": "//Search/Tracks",
-		"search-artists": "//Search/Artists",
-		"search-albums": "//Search/Albums",
-		"search-playlists": "//Search/Playlists",
+		"search-tracks":    { template: "mixed-tracks", match: "//Search/Tracks" },
+		"search-artists":   { template: "artists",      match: "//Related" },
+		"search-albums":    { template: "mixed-albums", match: "//Appears" },
+		"search-playlists": { template: "playlists",    match: "//Search/Playlists" },
 	},
 	init() {
 		this.els = {
@@ -20,7 +20,7 @@
 	},
 	dispatch(event) {
 		let Self = spotify.content,
-			match,
+			render,
 			target,
 			el;
 		switch (event.type) {
@@ -58,7 +58,7 @@
 			case "search-view":
 				window.render({
 					template: "search-view",
-					match: "//Search",
+					match: "//Search/Tracks",
 					target: Self.els.body
 				});
 				break;
@@ -88,18 +88,18 @@
 			case "search-albums":
 			case "search-playlists":
 				target = Self.els.body.find(".view-body");
-				match = Self.templates[event.type];
+				render = Self.renders[event.type];
 				// render area
-				window.render({ template: event.type, match, target });
+				window.render({ ...render, target });
 				break;
 			case "artist-top-tracks":
 			case "artist-albums":
 			case "artist-appears-on":
 			case "artist-fans-also-like":
 				target = Self.els.body.find(".view-body");
-				match = Self.templates[event.type];
+				render = Self.renders[event.type];
 				// render area
-				window.render({ template: event.type, match, target });
+				window.render({ ...render, target });
 				break;
 		}
 	}

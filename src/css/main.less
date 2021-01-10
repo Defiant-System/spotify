@@ -831,7 +831,8 @@ div[data-area="panel"] {
 			position: relative;
 			width: 47px;
 			height: 47px;
-			border: 3px solid #333;
+			background: #00000045;
+			// border: 3px solid #444;
 			border-radius: 50%;
 			vertical-align: top;
 			display: inline-block;
@@ -839,8 +840,8 @@ div[data-area="panel"] {
 
 			.icon-search {
 				position: absolute;
-				top: 9px;
-				left: 9px;
+				top: 11px;
+				left: 11px;
 				width: 50%;
 				height: 50%;
 				filter: grayscale(100%);
@@ -1106,6 +1107,7 @@ div[data-area="panel"] {
 				}
 
 				.album-cover {
+					background-position: 50% 50%;
 					background-size: contain;
 					display: inline-block;
 					position: absolute;
@@ -1178,13 +1180,13 @@ div[data-area="panel"] {
 					max-height: 0;
 					overflow: hidden;
 					font-size: 13px;
-					transition: max-height 300ms ease-in-out;
+					transition: max-height 200ms ease-in-out;
 
 					.table {
 						display: block;
 						overflow: initial;
 						margin-top: -100%;
-						transition: margin-top 300ms ease-in-out;
+						transition: margin-top 200ms ease-in-out;
 
 						.table-body {
 							padding-bottom: 3px;
@@ -1215,135 +1217,202 @@ div[data-area="panel"] {
 				}
 			}
 		}
+	}
+}
 
-		.artist-appears-on {
-			width: 100%;
-			padding: 17px 0;
-			font-size: 0;
+.playlists {
+	width: 100%;
+	padding: 17px 0;
+	font-size: 0;
 
-			.appears-item {
-				display: inline-block;
-				width: 20%;
-				text-align: center;
-				padding: 0 19px 37px;
-				cursor: pointer;
+	.playlist {
+		display: inline-block;
+		width: 20%;
+		text-align: center;
+		padding: 0 19px;
+		margin-bottom: 37px;
+		cursor: pointer;
 
-				&:hover {
-					.image {
-						.icon-player-play {
-							opacity: 1;
+		&:hover {
+			.image {
+				.icon-player-play {
+					opacity: 1;
 
-							&:hover {
-								transform: translateX(-50%) translateY(-50%) scale(1);
-							}
-						}
-					}
-
-					h5 {
-						color: #fff;
+					&:hover {
+						transform: translateX(-50%) translateY(-50%) scale(1);
 					}
 				}
+			}
 
-				.image {
-					position: relative;
-					width: 91%;
-					display: inline-block;
-					background-size: cover;
-					background-repeat: no-repeat;
-					background-position: 50% 50%;
-					margin-bottom: 5px;
-					border-radius: 7px;
-
-					&:before {
-						content: "";
-						display: block;
-						padding-top: 100%;
-					}
-
-					.icon-player-play {
-						opacity: 0;
-						position: absolute;
-						top: 50%;
-						left: 50%;
-						width: 47px;
-						height: 47px;
-						transform: translateX(-50%) translateY(-50%) scale(.95);
-					}
-				}
-
-				h5 {
-					font-size: 13px;
-					color: #bbb;
-					white-space: nowrap;
-					overflow: hidden;
-					text-overflow: ellipsis;
-				}
+			h5 {
+				color: #fff;
 			}
 		}
 
-		.related-artists {
-			width: 100%;
-			padding: 17px 0;
-			font-size: 0;
+		.image {
+			position: relative;
+			width: 91%;
+			display: inline-block;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			border-radius: 21px;
+			margin-bottom: 5px;
 
-			.artist {
-				display: inline-block;
-				width: 20%;
-				text-align: center;
-				padding: 0 19px 37px;
-				cursor: pointer;
+			&:before {
+				content: "";
+				display: block;
+				padding-top: 100%;
+			}
 
-				&:hover {
-					.image {
-						.icon-player-play {
-							opacity: 1;
+			.icon-player-play {
+				opacity: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 47px;
+				height: 47px;
+				transform: translateX(-50%) translateY(-50%) scale(.95);
+			}
+		}
 
-							&:hover {
-								transform: translateX(-50%) translateY(-50%) scale(1);
-							}
-						}
+		h5 {
+			font-size: 13px;
+			color: #bbb;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+}
+
+.mixed-albums {
+	width: 100%;
+	padding: 17px 0;
+	font-size: 0;
+
+	.album-item {
+		display: inline-block;
+		width: 20%;
+		text-align: center;
+		padding: 0 19px;
+		margin-bottom: 37px;
+		cursor: pointer;
+
+		&:hover {
+			.image {
+				.icon-player-play {
+					opacity: 1;
+
+					&:hover {
+						transform: translateX(-50%) translateY(-50%) scale(1);
 					}
-
-					h5 {
-						color: #fff;
-					}
-				}
-
-				.image {
-					position: relative;
-					width: 91%;
-					display: inline-block;
-					background-size: cover;
-					background-repeat: no-repeat;
-					background-position: 50% 50%;
-					border-radius: 50%;
-					margin-bottom: 5px;
-
-					&:before {
-						content: "";
-						display: block;
-						padding-top: 100%;
-					}
-
-					.icon-player-play {
-						opacity: 0;
-						position: absolute;
-						top: 50%;
-						left: 50%;
-						width: 47px;
-						height: 47px;
-						transform: translateX(-50%) translateY(-50%) scale(.95);
-					}
-				}
-
-				h5 {
-					font-size: 13px;
-					color: #bbb;
-					white-space: nowrap;
-					overflow: hidden;
-					text-overflow: ellipsis;
 				}
 			}
+
+			h5 {
+				color: #fff;
+			}
+		}
+
+		.image {
+			position: relative;
+			width: 91%;
+			display: inline-block;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			margin-bottom: 5px;
+			border-radius: 7px;
+
+			&:before {
+				content: "";
+				display: block;
+				padding-top: 100%;
+			}
+
+			.icon-player-play {
+				opacity: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 47px;
+				height: 47px;
+				transform: translateX(-50%) translateY(-50%) scale(.95);
+			}
+		}
+
+		h5 {
+			font-size: 13px;
+			color: #bbb;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+}
+
+.artists {
+	width: 100%;
+	padding: 17px 0;
+	font-size: 0;
+
+	.artist {
+		display: inline-block;
+		width: 20%;
+		text-align: center;
+		padding: 0 19px 37px;
+		cursor: pointer;
+
+		&:hover {
+			.image {
+				.icon-player-play {
+					opacity: 1;
+
+					&:hover {
+						transform: translateX(-50%) translateY(-50%) scale(1);
+					}
+				}
+			}
+
+			h5 {
+				color: #fff;
+			}
+		}
+
+		.image {
+			position: relative;
+			width: 91%;
+			display: inline-block;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			border-radius: 50%;
+			margin-bottom: 5px;
+
+			&:before {
+				content: "";
+				display: block;
+				padding-top: 100%;
+			}
+
+			.icon-player-play {
+				opacity: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 47px;
+				height: 47px;
+				transform: translateX(-50%) translateY(-50%) scale(.95);
+			}
+		}
+
+		h5 {
+			font-size: 13px;
+			color: #bbb;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 	}
 }
