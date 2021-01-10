@@ -27,8 +27,11 @@ const spotify = {
 				Self.sidebar.dispatch(event);
 				break;
 			case "select-tab":
+				el = $(event.target);
+				if (!el.parent().hasClass("tabs") || el.hasClass("active")) return;
+
 				event.el.find(".active").removeClass("active");
-				el = $(event.target).addClass("active");
+				el.addClass("active");
 				// re-route event
 				Self.dispatch({ type: el.data("type"), el });
 				break;
