@@ -165,16 +165,16 @@
 	</Related>
 
 	<Album>
-		<track name="Ground Level" duration_ms="252666" popularity="34"/>
-		<track name="I Feel You" duration_ms="252666" populairty="34"/>
-		<track name="Elevate My Mind" duration_ms="252666" populairty="34"/>
-		<track name="Connected" duration_ms="252666" populairty="34"/>
-		<track name="Step It Up" duration_ms="252666" populairty="34"/>
-		<track name="Traffic" duration_ms="252666" populairty="34"/>
-		<track name="The Right Effect" duration_ms="252666" populairty="34"/>
-		<track name="Creation" duration_ms="252666" populairty="34"/>
-		<track name="The End" duration_ms="252666" populairty="34"/>
-		<track name="Sketch" duration_ms="252666" populairty="34"/>
+		<track name="Ground Level" duration_ms="252666" popularity="34" uri="spotify:track:31z4dKubn9SVuuo4ZAj5R1"/>
+		<track name="I Feel You" duration_ms="252666" popularity="34" uri="spotify:track:31z4dKubn9SVuuo4ZAj5R1"/>
+		<track name="Elevate My Mind" duration_ms="252666" popularity="34" uri="spotify:track:31z4dKubn9SVuuo4ZAj5R1"/>
+		<track name="Connected" duration_ms="252666" popularity="34" uri="spotify:track:31z4dKubn9SVuuo4ZAj5R1"/>
+		<track name="Step It Up" duration_ms="252666" popularity="34" uri="spotify:track:31z4dKubn9SVuuo4ZAj5R1"/>
+		<track name="Traffic" duration_ms="252666" popularity="34" uri="spotify:track:31z4dKubn9SVuuo4ZAj5R1"/>
+		<track name="The Right Effect" duration_ms="252666" popularity="34" uri="spotify:track:31z4dKubn9SVuuo4ZAj5R1"/>
+		<track name="Creation" duration_ms="252666" popularity="34" uri="spotify:track:31z4dKubn9SVuuo4ZAj5R1"/>
+		<track name="The End" duration_ms="252666" popularity="34" uri="spotify:track:31z4dKubn9SVuuo4ZAj5R1"/>
+		<track name="Sketch" duration_ms="252666" popularity="34" uri="spotify:track:31z4dKubn9SVuuo4ZAj5R1"/>
 	</Album>
 
 	<Albums>

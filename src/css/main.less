@@ -690,9 +690,20 @@ div[data-area="panel"] {
 						&:before { display: none; }
 					}
 
-					.cell:nth-child(1) {
-						.icon-player-play {
+					&.playing {
+						.cell:nth-child(1):before {
 							display: none;
+						}
+					}
+
+					.cell:nth-child(1) {
+						position: relative;
+
+						.icon-player-play {
+							// display: none;
+							position: absolute;
+							top: 10px;
+							left: 14px;
 						}
 
 						&:before {
@@ -751,7 +762,7 @@ div[data-area="panel"] {
 			}
 
 			&.playing {
-				background: #66666620;
+				// background: #66666620;
 				color: #00ea89;
 
 				&:hover .cell:nth-child(1) {
