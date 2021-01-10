@@ -44,7 +44,11 @@
 		</Tracks>
 
 		<Playlists>
-			<playlist name="Holiday Magic" uri="spotify:artist:1G3Eh23f2hwhEnAMw7HsZ6" image="https://i.scdn.co/image/03702d59c0121251fb4d4a633754f81852ad881b"/>
+			<playlist name="Holidays Pop" uri="spotify:playlist:4GxYWwe4QEzLofaRn9a4af" image="https://i.scdn.co/image/ab67706c0000bebb258fc2fb43d2a59b38e5b28f"/>
+			<playlist name="Happy Holidays" uri="spotify:playlist:37i9dQZF1DX0HWhBzpBj05" image="https://i.scdn.co/image/ab67706f00000003012147aa36dafb6530edda75"/>
+			<playlist name="Holidays" uri="spotify:playlist:4fVEWoG84wjkeDGOcxOcEK" image="https://i.scdn.co/image/ab67706c0000bebbe866e6bfc2ace7580fe62775"/>
+			<playlist name="New Music Holiday" uri="spotify:playlist:37i9dQZF1DX5vMTfJy5XKE" image="https://i.scdn.co/image/ab67706f000000033b176faf43fe51fd45308271"/>
+			<playlist name="HolidayStreamingforBE" uri="spotify:playlist:7CXbFDNOOTBZncUN4QSPmd" image="https://i.scdn.co/image/ab67706c0000bebbb1191c9f85bab2422cbfdd20"/>
 		</Playlists>
 	</Search>
 
