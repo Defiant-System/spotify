@@ -7,7 +7,7 @@
 			<div class="search-icon">
 				<i class="icon-search"></i>
 			</div>
-			<h2>holiday</h2>
+			<input type="text" value="holiday" placeholder="Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
 		</div>
 
 		<div class="tabs" data-click="select-tab">
@@ -18,7 +18,7 @@
 		</div>
 
 		<div class="view-body">
-			<xsl:call-template name="mixed-tracks"/>
+			<xsl:call-template name="playlist"/>
 		</div>
 	</section>
 </xsl:template>
@@ -42,13 +42,13 @@
 			</h2>
 		</div>
 		<div class="view-body">
-			<xsl:call-template name="mixed-tracks"/>
+			<xsl:call-template name="playlist"/>
 		</div>
 	</section>
 </xsl:template>
 
 
-<xsl:template name="mixed-tracks">
+<xsl:template name="playlist">
 	<div class="table">
 		<div class="row head" data-click="sort-list">
 			<div class="cell"></div>
@@ -57,12 +57,14 @@
 			<div class="cell">Album</div>
 			<div class="cell"><i class="icon-clock"></i></div>
 		</div>
-		<div class="table-body">
+		<div class="table-body" data-click="select-track">
 			<xsl:for-each select="./*">
 				<xsl:sort order="ascending" select="@_index"/>
 				<div class="row">
 					<div class="cell">
-						<i class="icon-player-play"></i>
+						<i class="icon-player-play">
+							<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+						</i>
 						<i class="icon-heart">
 							<xsl:if test="position() &lt; 5">
 								<xsl:attribute name="class">icon-heart-full</xsl:attribute>
@@ -70,8 +72,14 @@
 						</i>
 					</div>
 					<div class="cell"><xsl:value-of select="@name"/></div>
-					<div class="cell"><xsl:value-of select="artists/@name"/></div>
-					<div class="cell"><xsl:value-of select="album/@name"/></div>
+					<div class="cell">
+						<xsl:attribute name="data-uri"><xsl:value-of select="artists/@uri"/></xsl:attribute>
+						<xsl:value-of select="artists/@name"/>
+					</div>
+					<div class="cell">
+						<xsl:attribute name="data-uri"><xsl:value-of select="album/@uri"/></xsl:attribute>
+						<xsl:value-of select="album/@name"/>
+					</div>
 					<div class="cell"><xsl:call-template name="translate-duration">
 						<xsl:with-param name="ms" select="@duration_ms" />
 					</xsl:call-template></div>
@@ -105,12 +113,14 @@
 					<div class="cell"><i class="icon-clock"></i></div>
 					<div class="cell"></div>
 				</div>
-				<div class="table-body">
+				<div class="table-body" data-click="select-track">
 					<xsl:for-each select="./*">
 						<xsl:sort order="ascending" select="@_index"/>
 						<div class="row">
 							<div class="cell">
-								<i class="icon-player-play"></i>
+								<i class="icon-player-play">
+									<xsl:attribute name="data-uri"><xsl:value-of select="artists/@uri"/></xsl:attribute>
+								</i>
 								<i class="icon-heart">
 									<xsl:if test="position() &lt; 5">
 										<xsl:attribute name="class">icon-heart-full</xsl:attribute>
@@ -118,7 +128,10 @@
 								</i>
 							</div>
 							<div class="cell"><xsl:value-of select="@name"/></div>
-							<div class="cell"><xsl:value-of select="artists/@name"/></div>
+							<div class="cell">
+								<xsl:attribute name="data-uri"><xsl:value-of select="artists/@uri"/></xsl:attribute>
+								<xsl:value-of select="artists/@name"/>
+							</div>
 							<div class="cell"><xsl:call-template name="translate-duration">
 								<xsl:with-param name="ms" select="@duration_ms" />
 							</xsl:call-template></div>
@@ -154,12 +167,14 @@
 					<div class="cell"><i class="icon-clock"></i></div>
 					<div class="cell"></div>
 				</div>
-				<div class="table-body">
+				<div class="table-body" data-click="select-track">
 					<xsl:for-each select="./*">
 						<xsl:sort order="ascending" select="@_index"/>
 						<div class="row">
 							<div class="cell">
-								<i class="icon-player-play"></i>
+								<i class="icon-player-play">
+									<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+								</i>
 								<i class="icon-heart">
 									<xsl:if test="position() &lt; 5">
 										<xsl:attribute name="class">icon-heart-full</xsl:attribute>
@@ -218,15 +233,20 @@
 				<div class="cell"><i class="icon-clock"></i></div>
 				<div class="cell"></div>
 			</div>
-			<div class="table-body">
+			<div class="table-body" data-click="select-track">
 				<xsl:for-each select="./*">
 					<div class="row">
 						<div class="cell">
-							<i class="icon-player-play"></i>
+							<i class="icon-player-play">
+								<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+							</i>
 							<i class="icon-heart"></i>
 						</div>
 						<div class="cell"><xsl:value-of select="@name"/></div>
-						<div class="cell"><xsl:value-of select="album/@name"/></div>
+						<div class="cell">
+							<xsl:attribute name="data-uri"><xsl:value-of select="album/@uri"/></xsl:attribute>
+							<xsl:value-of select="album/@name"/>
+						</div>
 						<div class="cell"><xsl:call-template name="translate-duration">
 							<xsl:with-param name="ms" select="@duration_ms" />
 						</xsl:call-template></div>
@@ -247,7 +267,9 @@
 					<div class="album">
 						<div class="album-cover">
 							<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
-							<i class="icon-player-play" data-click="play-album"></i>
+							<i class="icon-player-play">
+								<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+							</i>
 						</div>
 						<div class="album-info">
 							<span class="album-year"><xsl:value-of select="substring( @release_date, 1, 4 )"/></span>
@@ -265,7 +287,9 @@
 					<div class="album">
 						<div class="album-cover">
 							<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
-							<i class="icon-player-play" data-click="play-album"></i>
+							<i class="icon-player-play">
+								<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+							</i>
 						</div>
 						<div class="album-info">
 							<span class="album-year"><xsl:value-of select="substring( @release_date, 1, 4 )"/></span>
@@ -289,11 +313,13 @@
 			<div class="cell"><i class="icon-clock"></i></div>
 			<div class="cell"></div>
 		</div>
-		<div class="table-body">
+		<div class="table-body" data-click="select-track">
 			<xsl:for-each select="./*">
 				<div class="row">
 					<div class="cell">
-						<i class="icon-player-play"></i>
+						<i class="icon-player-play">
+							<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+						</i>
 						<i class="icon-heart"></i>
 					</div>
 					<div class="cell"><xsl:value-of select="@name"/></div>
@@ -314,7 +340,9 @@
 			<div class="album-item">
 				<div class="image">
 					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
-					<i class="icon-player-play"></i>
+					<i class="icon-player-play">
+						<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+					</i>
 				</div>
 				<h5><xsl:value-of select="@name"/></h5>
 			</div>
@@ -329,7 +357,9 @@
 			<div class="artist">
 				<div class="image">
 					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
-					<i class="icon-player-play"></i>
+					<i class="icon-player-play">
+						<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+					</i>
 				</div>
 				<h5><xsl:value-of select="@name"/></h5>
 			</div>
@@ -344,7 +374,9 @@
 			<div class="playlist">
 				<div class="image">
 					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
-					<i class="icon-player-play"></i>
+					<i class="icon-player-play">
+						<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+					</i>
 				</div>
 				<h5><xsl:value-of select="@name"/></h5>
 			</div>

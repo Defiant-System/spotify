@@ -3,15 +3,14 @@
 
 {
 	renders: {
-		"artist-top-tracks":     { template: "top-tracks",    match: "//Artist" },
-		"artist-albums":         { template: "artist-albums", match: "//Data/Albums" },
-		"artist-appears-on":     { template: "mixed-albums",  match: "//Appears" },
-		"artist-fans-also-like": { template: "artists",       match: "//Related" },
-
-		"search-tracks":    { template: "mixed-tracks", match: "//Search/Tracks" },
+		"artist-top-tracks":     { template: "artist-top-tracks", match: "//Artist" },
+		"artist-albums":         { template: "artist-albums",     match: "//Albums" },
+		"artist-appears-on":     { template: "mixed-albums",      match: "//Appears" },
+		"artist-fans-also-like": { template: "artists",           match: "//Related" },
+		"search-tracks":    { template: "playlist",     match: "//Playlist" },
 		"search-artists":   { template: "artists",      match: "//Related" },
 		"search-albums":    { template: "mixed-albums", match: "//Appears" },
-		"search-playlists": { template: "playlists",    match: "//Search/Playlists" },
+		"search-playlists": { template: "playlists",    match: "//Playlists" },
 	},
 	init() {
 		this.els = {
@@ -22,6 +21,10 @@
 		let Self = spotify.content,
 			render,
 			target,
+			item,
+			str,
+			id,
+			uEl,
 			el;
 		switch (event.type) {
 			case "artist-view":
@@ -62,10 +65,47 @@
 					target: Self.els.body
 				});
 				break;
-			case "sort-list":
-				break;
-			case "play-album":
+			case "play-track":
+				el = event.el.parents(".row");
+				el.parent().find(".active").removeClass("active");
+				el.addClass("playing");
+
 				console.log(event);
+				break;
+			case "show-artist":
+				window.render({
+					template: "artist-view",
+					match: "//Artist",
+					target: Self.els.body
+				});
+				break;
+			case "show-album":
+				window.render({
+					template: "album-view",
+					match: "//Album",
+					target: Self.els.body
+				});
+				break;
+			case "sort-list":
+				el = $(event.target);
+				console.log(el);
+				break;
+			case "select-track":
+				el = $(event.target);
+				uEl = el.data("uri") ? el : el.parents("[data-uri]");
+				if (uEl.length) {
+					[ str, item, id ] = uEl.data("uri").split(":");
+				}
+				
+				if (item === "track") {
+					Self.dispatch({ type: "play-"+ item, el, id });
+				} else if (el.data("uri")) {
+					Self.dispatch({ type: "show-"+ item, el, id });
+				} else {
+					el = el.parents(".row");
+					el.parent().find(".active").removeClass("active");
+					el.addClass("active");
+				}
 				break;
 			case "toggle-album":
 				el = $(event.target);
@@ -99,6 +139,7 @@
 				target = Self.els.body.find(".view-body");
 				render = Self.renders[event.type];
 				// render area
+				console.log({ ...render, target });
 				window.render({ ...render, target });
 				break;
 		}
