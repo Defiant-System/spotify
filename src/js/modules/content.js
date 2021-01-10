@@ -65,12 +65,25 @@
 					target: Self.els.body
 				});
 				break;
+
 			case "play-track":
 				el = event.el.parents(".row");
 				el.parent().find(".active, .playing").removeClass("active playing");
 				el.addClass("active playing");
 
 				console.log("Toggle track", event.id);
+				break;
+			case "play-album":
+				event.el.parent().find(".playing").removeClass("playing");
+				event.el.addClass("playing");
+
+				console.log("Toggle album", event.id);
+				break;
+			case "play-artist":
+				event.el.parent().find(".playing").removeClass("playing");
+				event.el.addClass("playing");
+
+				console.log("Toggle artist", event.id);
 				break;
 			case "show-artist":
 				window.render({
@@ -90,13 +103,28 @@
 				el = $(event.target);
 				console.log(el);
 				break;
+			case "select-album":
+			case "select-artist":
+				el = $(event.target);
+				if (el[0] === event.el[0]) reutrn;
+
+				uEl = el.data("uri") ? el : el.parents("[data-uri]");
+				[ str, item, id ] = uEl.data("uri").split(":");
+
+				if (el.hasClass("icon-player-play")) {
+					Self.dispatch({ type: "play-"+ item, el: uEl, id });
+				} else {
+					Self.dispatch({ type: "show-"+ item, el: uEl, id });
+				}
+				break;
 			case "select-track":
 				el = $(event.target);
+				if (el[0] === event.el[0]) reutrn;
+
 				uEl = el.data("uri") ? el : el.parents("[data-uri]");
 				if (uEl.length) {
 					[ str, item, id ] = uEl.data("uri").split(":");
 				}
-				
 				if (item === "track") {
 					Self.dispatch({ type: "play-"+ item, el, id });
 				} else if (el.data("uri")) {

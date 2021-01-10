@@ -185,6 +185,7 @@ div[data-area="volume"] {
 			filter: grayscale();
 			width: 17px;
 			height: 17px;
+			opacity: .5;
 			pointer-events: none;
 		}
 	}
@@ -361,6 +362,17 @@ div[data-area="player"] {
 		border-radius: 5px;
 		transition: 150ms ease-in-out;
 
+		&:before {
+			content: "";
+			position: absolute;
+			top: -17px;
+			left: 0;
+			right: 0;
+			height: 17px;
+			cursor: default;
+			background: linear-gradient(transparent, rgba(0,0,0,.2));
+		}
+
 		.progress-played {
 			background: #008951;
 			position: absolute;
@@ -416,7 +428,7 @@ content {
 	}
 
 	.view-body {
-		display: flex;
+		// display: flex;
 		flex: 1;
 		overflow: auto;
 
@@ -724,6 +736,10 @@ div[data-area="panel"] {
 			overflow-y: auto;
 			flex: 1;
 			padding-bottom: 21px;
+
+			.row:last-child {
+				border-bottom-color: transparent;
+			}
 		}
 
 		.row {
@@ -762,7 +778,6 @@ div[data-area="panel"] {
 			}
 
 			&.playing {
-				// background: #66666620;
 				color: #00ea89;
 
 				&:hover .cell:nth-child(1) {
@@ -933,6 +948,15 @@ div[data-area="panel"] {
 				color: #999;
 				font-size: 12px;
 				margin-top: -3px;
+
+				span {
+					font-size: 12px;
+
+					span {
+						color: #eee;
+						display: inline-block;
+					}
+				}
 			}
 		}
 
@@ -997,12 +1021,17 @@ div[data-area="panel"] {
 		}
 
 		h2 {
-			.genre {
+			.info {
 				font-size: 0;
 				line-height: 7px;
 
 				span {
 					font-size: 12px;
+
+					span {
+						color: #eee;
+						display: inline-block;
+					}
 				}
 			}
 		}
@@ -1079,6 +1108,11 @@ div[data-area="panel"] {
 
 				span {
 					font-size: 12px;
+
+					span {
+						color: #eee;
+						display: inline-block;
+					}
 				}
 			}
 		}
@@ -1381,12 +1415,45 @@ div[data-area="panel"] {
 
 					&:hover {
 						transform: translateX(-50%) translateY(-50%) scale(1);
+
+						&:before {
+							background: rgba(0,0,0,.5);
+						}
 					}
 				}
 			}
 
 			h5 {
 				color: #fff;
+			}
+		}
+
+		&.playing {
+			&:hover {
+				.image .icon-player-play {
+					&:before {
+						background: rgba(0,0,0,.6);
+						box-shadow: 0 0 0 2px #fff;
+					}
+
+					&:after {
+						background-image: url(~/icons/icon-pause.png);
+						left: 12px;
+					}
+				}
+			}
+
+			.image .icon-player-play {
+				opacity: 1;
+
+				&:before {
+					background: rgba(0,0,0,.6);
+					box-shadow: 0 0 0;;
+				}
+
+				&:after {
+					background-image: url(~/icons/icon-volume.png);
+				}
 			}
 		}
 
@@ -1454,12 +1521,45 @@ div[data-area="panel"] {
 
 					&:hover {
 						transform: translateX(-50%) translateY(-50%) scale(1);
+
+						&:before {
+							background: rgba(0,0,0,.5);
+						}
 					}
 				}
 			}
 
 			h5 {
 				color: #fff;
+			}
+		}
+
+		&.playing {
+			&:hover {
+				.image .icon-player-play {
+					&:before {
+						background: rgba(0,0,0,.6);
+						box-shadow: 0 0 0 2px #fff;
+					}
+
+					&:after {
+						background-image: url(~/icons/icon-pause.png);
+						left: 12px;
+					}
+				}
+			}
+
+			.image .icon-player-play {
+				opacity: 1;
+
+				&:before {
+					background: rgba(0,0,0,.6);
+					box-shadow: 0 0 0;;
+				}
+
+				&:after {
+					background-image: url(~/icons/icon-volume.png);
+				}
 			}
 		}
 

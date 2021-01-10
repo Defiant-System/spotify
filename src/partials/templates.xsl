@@ -36,8 +36,11 @@
 			<h2>
 				Old Playlist
 				<div class="playlist-owner">
-					Playlist by <span>Hakan Bilgin</span>
-					<xsl:value-of select="count(./track)"/> songs
+					<span>
+						Playlist by 
+						<span>Hakan Bilgin</span>
+					</span>
+					<span><xsl:value-of select="count(./track)"/> songs</span>
 				</div>
 			</h2>
 		</div>
@@ -151,8 +154,11 @@
 			<div class="album-image" style="background-image: url(https://i.scdn.co/image/ab67616d00001e02e8c0eca5da75269b2d229116);"></div>
 			<h2>
 				Deep Down &amp; Dirty
-				<div class="genre">
-					<span>Album</span>
+				<div class="info">
+					<span>
+						Album by 
+						<span data-uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8">Stereo MC's</span>
+					</span>
 					<span>2001</span>
 					<span>12 songs</span>
 				</div>
@@ -335,14 +341,13 @@
 
 
 <xsl:template name="mixed-albums">
-	<div class="mixed-albums">
+	<div class="mixed-albums" data-click="select-album">
 		<xsl:for-each select="./*">
 			<div class="album-item">
+				<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
 				<div class="image">
 					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
-					<i class="icon-player-play">
-						<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
-					</i>
+					<i class="icon-player-play"></i>
 				</div>
 				<h5><xsl:value-of select="@name"/></h5>
 			</div>
@@ -352,14 +357,13 @@
 
 
 <xsl:template name="artists">
-	<div class="artists">
+	<div class="artists" data-click="select-artist">
 		<xsl:for-each select="./*">
 			<div class="artist">
+				<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
 				<div class="image">
 					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
-					<i class="icon-player-play">
-						<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
-					</i>
+					<i class="icon-player-play"></i>
 				</div>
 				<h5><xsl:value-of select="@name"/></h5>
 			</div>
