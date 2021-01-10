@@ -35,7 +35,7 @@
 				});
 				// temp
 				// setTimeout(() =>
-				// 	Self.els.body.find(`.tabs [data-type="artist-albums"]`).trigger("click"), 300);
+				// 	Self.els.body.find(`.tabs [data-type="artist-fans-also-like"]`).trigger("click"), 300);
 				break;
 			case "playlist-view":
 				window.render({
