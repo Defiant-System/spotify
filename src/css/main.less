@@ -24,6 +24,25 @@ background-color: rgba(0,0,0,.8);
 backdrop-filter: blur(21px);
 border-radius: 29px;
 
+
+&.hide-cursor {
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 99;
+		cursor: none;
+	}
+
+	div[data-area="volume"] {
+		.ctrl-range .volume-track .knob { opacity: 1; }
+	}
+}
+
+
 .win-caption-buttons_ {
 	top: 7px;
 	left: 27px;
@@ -204,9 +223,9 @@ div[data-area="volume"] {
 		// background: rgba(255,255,255,.2);
 		position: relative;
 		top: 0;
-		left: 3px;
-		width: 20px;
-		height: 83px;
+		left: 0;
+		width: 23px;
+		height: 100px;
 		margin-bottom: 7px;
 
 		&:hover {
@@ -222,7 +241,7 @@ div[data-area="volume"] {
 			position: absolute;
 			top: 0;
 			bottom: 0;
-			left: 7px;
+			left: 10px;
 			width: 2px;
 			border-radius: 5px;
 			transition: background 150ms ease-in-out;
@@ -231,7 +250,7 @@ div[data-area="volume"] {
 				background: #008951;
 				position: absolute;
 				bottom: 0;
-				height: 31%;
+				height: 50px;
 				width: inherit;
 				border-radius: inherit;
 				transition: background 150ms ease-in-out;
@@ -240,10 +259,11 @@ div[data-area="volume"] {
 			.knob {
 				background: #f7f7f7;
 				position: absolute;
-				top: -5px;
+				top: 50px;
 				left: -4px;
 				width: 10px;
 				height: 10px;
+				margin-top: -5px;
 				border-radius: 50%;
 				box-shadow: 0 1px 1px rgba(0,0,0,.35);
 				cursor: ns-resize;
