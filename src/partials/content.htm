@@ -26,6 +26,9 @@
 			<span class="ctrl-search" title="Search" data-click="go-search">
 				<i class="icon-search"></i>
 			</span>
+			<span class="ctrl-library" title="Library" data-click="toggle-library">
+				<i class="icon-library"></i>
+			</span>
 		</div>
 	</div>
 
@@ -79,32 +82,33 @@
 	</div>
 
 	<content>
-		<div class="cover" data-click="close-panel"></div>
 		<div data-area="panel">
-			<h2>Playlists</h2>
-			<ul data-click="toggle-list-folder">
-				<li class="item"><h5>Reggae</h5></li>
-				<li class="item"><h5>70s, 80s</h5></li>
-				<li class="item"><h5>Jazz &amp; Blues</h5></li>
-				<li class="item"><h5>chillout 2</h5></li>
-				<li class="item"><h5>Chillout</h5></li>
-				<li class="item"><h5>Friday</h5></li>
-				<li class="item"><h5>Southern Gothic</h5></li>
-				<li class="item"><h5>Sv Klassiker</h5></li>
-				<li class="folder expanded">
-					<h5>Hiphop</h5>
-					<div class="list-wrapper">
-						<ul>
-							<li class="item active"><h5>Sv. Hiphop</h5></li>
-							<li class="item"><h5>Hiphop</h5></li>
-							<li class="item"><h5>Turkisk Hiphop</h5></li>
-						</ul>
-					</div>
-				</li>
-				<li class="item"><h5>Turkisk</h5></li>
-				<li class="item"><h5>Rock</h5></li>
-				<li class="item"><h5>House</h5></li>
-			</ul>
+			<div class="wrapper">
+				<h2>Playlists</h2>
+				<ul data-click="toggle-list-folder">
+					<li class="item"><h5>Reggae</h5></li>
+					<li class="item"><h5>70s, 80s</h5></li>
+					<li class="item"><h5>Jazz &amp; Blues</h5></li>
+					<li class="item"><h5>chillout 2</h5></li>
+					<li class="item"><h5>Chillout</h5></li>
+					<li class="item"><h5>Friday</h5></li>
+					<li class="item"><h5>Southern Gothic</h5></li>
+					<li class="item"><h5>Sv Klassiker</h5></li>
+					<li class="folder">
+						<h5>Hiphop</h5>
+						<div class="list-wrapper">
+							<ul>
+								<li class="item active"><h5>Sv. Hiphop</h5></li>
+								<li class="item"><h5>Hiphop</h5></li>
+								<li class="item"><h5>Turkisk Hiphop</h5></li>
+							</ul>
+						</div>
+					</li>
+					<li class="item"><h5>Turkisk</h5></li>
+					<li class="item"><h5>Rock</h5></li>
+					<li class="item"><h5>House</h5></li>
+				</ul>
+			</div>
 		</div>
 
 		<div class="body" data-area="content">

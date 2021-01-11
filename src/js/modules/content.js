@@ -106,7 +106,7 @@
 			case "select-album":
 			case "select-artist":
 				el = $(event.target);
-				if (el[0] === event.el[0]) reutrn;
+				if (el[0] === event.el[0]) return;
 
 				uEl = el.data("uri") ? el : el.parents("[data-uri]");
 				[ str, item, id ] = uEl.data("uri").split(":");
@@ -119,7 +119,7 @@
 				break;
 			case "select-track":
 				el = $(event.target);
-				if (el[0] === event.el[0]) reutrn;
+				if (el[0] === event.el[0]) return;
 
 				uEl = el.data("uri") ? el : el.parents("[data-uri]");
 				if (uEl.length) {

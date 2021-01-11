@@ -12,6 +12,7 @@
 	dispatch(event) {
 		let APP = spotify,
 			Self = APP.sidebar,
+			isOn,
 			el;
 		switch (event.type) {
 			case "go-home":
@@ -49,16 +50,11 @@
 				
 				APP.content.dispatch({ type: "search-view" });
 				break;
-			case "go-devices":
-				if (Self.els.panel.hasClass("show")) {
-					return Self.dispatch({ type: "close-panel" });
-				}
-				Self.els.content.addClass("panel-showing");
-				Self.els.panel.addClass("show");
-				break;
-			case "close-panel":
-				Self.els.content.removeClass("panel-showing");
-				Self.els.panel.removeClass("show");
+			case "toggle-library":
+				el = Self.els.panel;
+				isOn = el.hasClass("showing");
+				el.toggleClass("showing", isOn);
+				event.el.toggleClass("active", isOn);
 				break;
 		}
 	}

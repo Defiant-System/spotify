@@ -9,8 +9,8 @@
 		let Self = spotify.volume,
 			el;
 		switch (event.type) {
-			case "":
-				console.log(event);
+			case "toggle-volume":
+				event.el.toggleClass("mute", event.el.hasClass("mute"));
 				break;
 		}
 	}
