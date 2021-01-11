@@ -310,8 +310,11 @@ div[data-area="player"] {
 			height: 13px;
 		}
 	}
+}
 
-	&:hover .progress	{
+&.hide-cursor.seeker div[data-area="player"],
+div[data-area="player"]:hover {
+	.progress {
 		top: -9px;
 		height: 9px;
 
@@ -327,13 +330,13 @@ div[data-area="player"] {
 		.progress-track {
 			top: 4px;
 			height: 3px;
-			left: 29px;
-			right: 29px;
+			left: 31px;
+			right: 31px;
 			cursor: pointer;
 
 			&:before {
-				left: -29px;
-				right: -29px;
+				left: -31px;
+				right: -31px;
 			}
 		}
 
@@ -400,6 +403,7 @@ div[data-area="player"] {
 		right: 2px;
 		height: 2px;
 		border-radius: 5px;
+		pointer-events: none;
 		transition: 150ms ease-in-out;
 
 		&:before {
@@ -420,7 +424,6 @@ div[data-area="player"] {
 			left: 0;
 			width: 270px;
 			height: inherit;
-			pointer-events: none;
 			border-radius: inherit;
 			transition: background 150ms ease-in-out;
 		}
@@ -457,6 +460,7 @@ content {
 		// display: flex;
 		flex: 1;
 		overflow: auto;
+		user-select: none;
 
 		.icon-player-play {
 			position: relative;
@@ -883,6 +887,7 @@ div[data-area="panel"] {
 		text-align: center;
 		font-size: 0;
 		color: #777;
+		user-select: none;
 
 		> span {
 			display: inline-block;
@@ -975,6 +980,7 @@ div[data-area="panel"] {
 	.playlist-head {
 		height: 79px;
 		padding: 19px 19px 0;
+		user-select: none;
 
 		h2 {
 			.playlist-owner {
@@ -1040,6 +1046,7 @@ div[data-area="panel"] {
 	.compilation-head {
 		height: 73px;
 		padding: 17px 19px;
+		user-select: none;
 
 		.album-image,
 		.compilation-image {
@@ -1125,6 +1132,7 @@ div[data-area="panel"] {
 	.artist-head {
 		height: 89px;
 		padding: 17px 19px;
+		user-select: none;
 
 		.artist-image {
 			background-image: inherit;
