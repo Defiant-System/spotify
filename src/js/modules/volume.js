@@ -17,7 +17,10 @@
 	dispatch(event) {
 		let Self = spotify.volume,
 			Drag = Self.drag,
+			isOn,
+			maxY,
 			height,
+			sTop,
 			top,
 			el;
 		switch (event.type) {
@@ -53,7 +56,21 @@
 				break;
 			// native events
 			case "toggle-volume":
-				event.el.toggleClass("mute", event.el.hasClass("mute"));
+				isOn = event.el.hasClass("mute");
+				// store current value as attribute
+				if (!isOn) {
+					Self.els.knob.attr({ "data-top": Self.els.knob[0].offsetTop + 5 });
+				}
+
+				maxY = Self.els.track[0].offsetHeight;
+				sTop = isOn ? +Self.els.knob.data("top") : 0;
+				top = isOn ? sTop : maxY;
+				height = isOn ? maxY - top : 0;
+				// update icon
+				event.el.toggleClass("mute", isOn);
+				// update knob + amount
+				Self.els.knob.css({ top: top +"px" });
+				Self.els.amount.css({ height: height +"px" });
 				break;
 		}
 	}
