@@ -37,9 +37,8 @@ border-radius: 29px;
 		cursor: none;
 	}
 
-	div[data-area="volume"] {
-		.ctrl-range .volume-track .knob { opacity: 1; }
-	}
+	&.volume div[data-area="volume"] .ctrl-range .volume-track .knob { opacity: 1; }
+	&.seeker div[data-area="player"] .progress .progress-track .knob { opacity: 1; }
 }
 
 
@@ -228,12 +227,8 @@ div[data-area="volume"] {
 		height: 90px;
 		margin-bottom: 7px;
 
-		&:hover {
-			.volume-track {
-				.knob {
-					opacity: 1;
-				}
-			}
+		&:hover .volume-track .knob {
+			opacity: 1;
 		}
 
 		.volume-track {
@@ -243,6 +238,7 @@ div[data-area="volume"] {
 			bottom: 0;
 			left: 10px;
 			width: 2px;
+			pointer-events: none;
 			border-radius: 5px;
 			transition: background 150ms ease-in-out;
 			
@@ -264,6 +260,7 @@ div[data-area="volume"] {
 				width: 10px;
 				height: 10px;
 				margin-top: -5px;
+				pointer-events: all;
 				border-radius: 50%;
 				box-shadow: 0 1px 1px rgba(0,0,0,.35);
 				cursor: ns-resize;
@@ -421,11 +418,10 @@ div[data-area="player"] {
 			position: absolute;
 			top: 0;
 			left: 0;
-			width: 31%;
+			width: 270px;
 			height: inherit;
-			display: inline-block;
-			border-radius: inherit;
 			pointer-events: none;
+			border-radius: inherit;
 			transition: background 150ms ease-in-out;
 		}
 
@@ -433,14 +429,15 @@ div[data-area="player"] {
 			background: #f7f7f7;
 			position: absolute;
 			top: -5px;
-			right: -4px;
+			left: 270px;
 			width: 12px;
 			height: 12px;
+			margin-left: -5px;
 			border-radius: 50%;
 			box-shadow: 1px 0 1px rgba(0,0,0,.35);
 			pointer-events: all;
 			cursor: ew-resize;
-			opacity: 0;
+			// opacity: 0;
 			transition: opacity 150ms ease-in-out;
 		}
 	}

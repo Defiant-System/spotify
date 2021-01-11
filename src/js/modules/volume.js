@@ -6,13 +6,13 @@
 		// fast references
 		this.els = {
 			doc: $(document),
+			range: window.find(".ctrl-range"),
 			track: window.find(".ctrl-range .volume-track"),
 			amount: window.find(".ctrl-range .volume-amount"),
 			knob: window.find(".ctrl-range .knob"),
 		};
-
 		// bind event handlers
-		this.els.knob.bind("mousedown", this.dispatch);
+		this.els.range.bind("mousedown", this.dispatch);
 	},
 	dispatch(event) {
 		let Self = spotify.volume,
@@ -28,6 +28,13 @@
 			case "mousedown":
 				// prevent default behaviour
 				event.preventDefault();
+				// clicked on track
+				if (event.target === Self.els.range[0]) {
+					top = event.offsetY;
+					height = Self.els.track[0].offsetHeight - top;
+					Self.els.knob.css({ top: top +"px" });
+					Self.els.amount.css({ height: height +"px" });
+				}
 				// drag start info
 				Self.drag = {
 					knob: Self.els.knob,
@@ -37,7 +44,7 @@
 					maxY: Self.els.track[0].offsetHeight,
 				};
 				// hides cursor
-				window.el.addClass("hide-cursor");
+				window.el.addClass("hide-cursor volume");
 				// bind event handlers
 				Self.els.doc.on("mousemove mouseup", Self.dispatch);
 				break;
@@ -50,18 +57,17 @@
 				break;
 			case "mouseup":
 				// unhide cursor
-				window.el.removeClass("hide-cursor");
+				window.el.removeClass("hide-cursor volume");
 				// unbind event handlers
 				Self.els.doc.off("mousemove mouseup", Self.dispatch);
 				break;
-			// native events
+			// custom events
 			case "toggle-volume":
 				isOn = event.el.hasClass("mute");
 				// store current value as attribute
 				if (!isOn) {
 					Self.els.knob.attr({ "data-top": Self.els.knob[0].offsetTop + 5 });
 				}
-
 				maxY = Self.els.track[0].offsetHeight;
 				sTop = isOn ? +Self.els.knob.data("top") : 0;
 				top = isOn ? sTop : maxY;
