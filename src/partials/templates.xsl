@@ -7,7 +7,7 @@
 			<div class="search-icon">
 				<i class="icon-search"></i>
 			</div>
-			<input type="text" value="holiday" placeholder="Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+			<input type="text" placeholder="Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
 		</div>
 
 		<div class="tabs" data-click="select-tab">

@@ -13,8 +13,16 @@
 			case "player-next":
 			case "player-shuffle":
 			case "player-repeat":
-			case "player-play":
 				console.log(event);
+				break;
+			case "toggle-play":
+				el = event.el.find("> i");
+
+				if (el.hasClass("icon-player-play")) {
+					el.prop({ "className": "icon-player-pause" });
+				} else {
+					el.prop({ "className": "icon-player-play" });
+				}
 				break;
 		}
 	}
