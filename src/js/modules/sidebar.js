@@ -43,6 +43,13 @@
 				
 				APP.content.dispatch({ type: "album-view" });
 				break;
+			case "go-history":
+				el = $(event.target);
+				el.parent().find(".active").removeClass("active");
+				el.addClass("active");
+				
+				APP.content.dispatch({ type: "history-view" });
+				break;
 			case "go-search":
 				el = $(event.target);
 				el.parent().find(".active").removeClass("active");
@@ -54,7 +61,7 @@
 				el = Self.els.panel;
 				isOn = el.hasClass("showing");
 				el.toggleClass("showing", isOn);
-				event.el.toggleClass("active", isOn);
+				event.el.toggleClass("opened", isOn);
 				break;
 		}
 	}

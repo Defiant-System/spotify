@@ -58,6 +58,13 @@
 					target: Self.els.body
 				});
 				break;
+			case "history-view":
+				window.render({
+					template: "recently-view",
+					match: "//Recently",
+					target: Self.els.body
+				});
+				break;
 			case "search-view":
 				window.render({
 					template: "search-view",

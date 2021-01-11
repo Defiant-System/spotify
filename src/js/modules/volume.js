@@ -40,8 +40,8 @@
 					knob: Self.els.knob,
 					amount: Self.els.amount,
 					clickY: event.clientY - Self.els.knob[0].offsetTop - 5,
-					minY: 0,
 					maxY: Self.els.track[0].offsetHeight,
+					minY: 0,
 				};
 				// hides cursor
 				window.el.addClass("hide-cursor volume");

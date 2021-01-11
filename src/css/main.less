@@ -110,6 +110,7 @@ i[class^="icon-"] {
 	&.icon-radio    { background-image: url(~/icons/icon-radio.png); }
 	&.icon-queue    { background-image: url(~/icons/icon-queue.png); }
 	&.icon-devices  { background-image: url(~/icons/icon-devices.png); }
+	&.icon-history  { background-image: url(~/icons/icon-history.png); }
 	&.icon-library  { background-image: url(~/icons/icon-library.png); }
 	&.icon-search   { background-image: url(~/icons/icon-search.png); }
 	&.icon-volume   { background-image: url(~/icons/icon-volume.png); }
@@ -180,10 +181,9 @@ div[data-area="volume"] {
 		flex: 1;
 
 		.ctrl-library {
-			margin-bottom: 17px;
-
-			&.active i {
+			&.opened i {
 				opacity: 1;
+				filter: none;
 			}
 		}
 	}
@@ -1124,6 +1124,26 @@ div[data-area="panel"] {
 					}
 				}
 			}
+		}
+	}
+}
+
+.recently {
+	.recently-head {
+		height: 63px;
+		padding: 17px 19px;
+		user-select: none;
+
+		.icon-history {
+			width: 29px;
+			height: 29px;
+			filter: grayscale(100%);
+			vertical-align: top;
+			margin-right: 5px;
+		}
+
+		h2 {
+			padding-top: 3px;
 		}
 	}
 }

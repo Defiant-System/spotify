@@ -24,6 +24,21 @@
 </xsl:template>
 
 
+<xsl:template name="recently-view">
+	<section class="recently">
+		<div class="recently-head">
+			<i class="icon-history"></i>
+			<h2>
+				Recently Played
+			</h2>
+		</div>
+		<div class="view-body">
+			<xsl:call-template name="playlist"/>
+		</div>
+	</section>
+</xsl:template>
+
+
 <xsl:template name="playlist-view">
 	<section class="playlist">
 		<div class="playlist-head">
