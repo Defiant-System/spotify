@@ -12,6 +12,8 @@
 	dispatch(event) {
 		let APP = spotify,
 			Self = APP.sidebar,
+			old,
+			stamp,
 			isOn,
 			el;
 		switch (event.type) {
@@ -22,10 +24,20 @@
 			case "go-home":
 			case "go-search":
 				el = $(event.target);
-				el.parent().find(".active").removeClass("active");
+				
+				old = el.parent().find(".active").removeClass("active");
+				if (!old.data("stamp")) {
+					stamp = Date.now();
+					old.data({ stamp });
+				}
 				el.addClass("active");
+
 				// forward event to content module
-				APP.content.dispatch({ type: "go-to", view: event.type.split("-")[1] });
+				APP.content.dispatch({
+					type: "go-to",
+					view: event.type.split("-")[1],
+					stamp,
+				});
 				break;
 			case "toggle-library":
 				el = Self.els.panel;

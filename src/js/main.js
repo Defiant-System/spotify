@@ -14,6 +14,8 @@ const spotify = {
 	},
 	dispatch(event) {
 		let Self = spotify,
+			old,
+			stamp,
 			el;
 		switch (event.type) {
 			case "window.open":
@@ -28,10 +30,15 @@ const spotify = {
 				el = $(event.target);
 				if (!el.parent().hasClass("tabs") || el.hasClass("active")) return;
 
-				event.el.find(".active").removeClass("active");
+				old = event.el.find(".active").removeClass("active");
+				if (!old.data("stamp")) {
+					stamp = Date.now();
+					old.data({ stamp });
+				}
 				el.addClass("active");
+
 				// re-route event
-				Self.dispatch({ type: el.data("type"), el });
+				Self.dispatch({ type: el.data("type"), el, stamp });
 				break;
 			default:
 				if (event.el) {

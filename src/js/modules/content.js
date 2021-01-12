@@ -33,6 +33,7 @@
 	},
 	dispatch(event) {
 		let Self = spotify.content,
+			state = Self.history.current,
 			render,
 			target,
 			item,
@@ -45,21 +46,47 @@
 			case "go-back":
 			case "go-forward":
 				if (event.el.hasClass("disabled")) return;
-				if (event.type === "go-back") Self.history.goBack();
+
+				// save scrollTop of elements
+				Self.dispatch({ type: "save-scroll-top" });
+
+				let step = event.type === "go-back" ? -1 : 1;
+				if (step < 0) Self.history.goBack();
 				else Self.history.goForward();
 
 				// update view state
-				Self.setViewState();
+				Self.setViewState(step);
 				break;
 			case "go-to":
-				Self.history.push({ view: event.view });
+				// save scrollTop of elements
+				Self.dispatch({ type: "save-scroll-top", stamp: event.stamp });
+
 				// render view contents
 				target = Self.els.body;
 				render = Self.renders[event.view];
 				window.render({ ...render, target });
-
+				
+				// add state to history
+				Self.history.push({ view: event.view });
 				// update view state
 				Self.setViewState();
+				break;
+			case "save-scroll-top":
+				// save scrollTop of elements
+				if (state) {
+					el = Self.els.body.find(".table-body");
+					if (el.length) {
+						el.data({ scrollTop: el.scrollTop() });
+					} else {
+						el = Self.els.body.find(".view-body");
+						if (el.length) {
+							el.data({ scrollTop: el.scrollTop() });
+						}
+					}
+					state.html = Self.els.body.html();
+					// keeps track of active element
+					if (event.stamp) state.stamp = event.stamp;
+				}
 				break;
 			// tabs
 			case "home-browse":
@@ -74,10 +101,19 @@
 			case "artist-albums":
 			case "artist-appears-on":
 			case "artist-fans-also-like":
+				// save scrollTop of elements
+				Self.dispatch({ type: "save-scroll-top", stamp: event.stamp });
+				
+				// render view contents
 				target = Self.els.body.find(".view-body");
 				render = Self.renders[event.type];
 				// render area
 				window.render({ ...render, target });
+
+				// add state to history
+				Self.history.push({ type: event.type });
+				// update view state
+				Self.setViewState();
 				break;
 			// misc events
 			case "play-track":
@@ -185,12 +221,26 @@
 				break;
 		}
 	},
-	setViewState() {
+	setViewState(step) {
 		let state = this.history.current;
 
 		// navigation buttons UI update
 		this.els.btnBack.toggleClass("disabled", this.history.canGoBack);
 		this.els.btnForward.toggleClass("disabled", this.history.canGoForward);
 		
+		if (state && state.html) {
+			// update body contents
+			this.els.body.html(state.html);
+
+			// fix scrollTop for elements
+			this.els.body.find("[data-scrollTop]").map(el =>
+				el.scrollTop = +el.getAttribute("data-scrollTop"));
+
+			if (step === -1 && state.stamp) {
+				let activeEl = window.find(`[data-stamp="${state.stamp}"]`);
+				activeEl.parent().find(".active").removeClass("active");
+				activeEl.addClass("active");
+			}
+		}
 	}
 }
