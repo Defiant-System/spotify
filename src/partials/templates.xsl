@@ -21,7 +21,14 @@
 			<h2>Browse</h2>
 		</div>
 		<div class="view-body">
-			
+			<xsl:for-each select="//Categories/*">
+				<div class="category">
+					<div class="image">
+						<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+					</div>
+					<h5><xsl:value-of select="@name"/></h5>
+				</div>
+			</xsl:for-each>
 		</div>
 	</section>
 </xsl:template>
