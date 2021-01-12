@@ -241,6 +241,11 @@
 				activeEl.parent().find(".active").removeClass("active");
 				activeEl.addClass("active");
 			}
+
+			/*
+			 * TODO: make sure active playing track / album / playlist
+			 * is tagged with className "playing"
+			 */
 		}
 	}
 }
