@@ -22,8 +22,8 @@
 				} else if (el.hasClass("item")) {
 					Self.els.panel.find(".active").removeClass("active");
 					el.addClass("active");
-
-					APP.content.dispatch({ type: "playlist-view" });
+					// forward event to content module
+					APP.content.dispatch({ type: "select-playlist", el });
 				}
 				break;
 		}

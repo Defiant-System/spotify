@@ -3,29 +3,44 @@
 
 {
 	renders: {
+		"home":           { template: "home-view", match: "//Home" },
 		"home-browse":    { template: "home-browse" },
 		"home-featured":  { template: "home-featured" },
 		"home-favorites": { template: "playlist", match: "//Favorites" },
 		"home-history":   { template: "playlist", match: "//Recently" },
-		"artist-top-tracks":     { template: "artist-top-tracks", match: "//Artist" },
-		"artist-albums":         { template: "artist-albums",     match: "//Albums" },
-		"artist-appears-on":     { template: "mixed-albums",      match: "//Appears" },
-		"artist-fans-also-like": { template: "artists",           match: "//Related" },
+		
+		"search":           { template: "search-view",  match: "//Search/Tracks" },
 		"search-tracks":    { template: "playlist",     match: "//Playlist" },
 		"search-artists":   { template: "artists",      match: "//Related" },
 		"search-albums":    { template: "mixed-albums", match: "//Appears" },
 		"search-playlists": { template: "playlists",    match: "//Playlists" },
+		
+		"artist-top-tracks":     { template: "artist-top-tracks", match: "//Artist" },
+		"artist-albums":         { template: "artist-albums",     match: "//Albums" },
+		"artist-appears-on":     { template: "mixed-albums",      match: "//Appears" },
+		"artist-fans-also-like": { template: "artists",           match: "//Related" },
 	},
 	init() {
 		// fast references
 		this.els = {
-			body: window.find("content .body")
+			body: window.find("content .body"),
+			btnBack: window.find(`.ctrl-navigation [data-click="go-back"]`),
+			btnForward: window.find(`.ctrl-navigation [data-click="go-forward"]`),
 		};
 
 		// history stack
 		this.history = new window.History;
 		// this.history.push({ view: "main" });
 		// this.setViewState();
+
+		// {
+		// 	template: "",
+		// 	match: "",
+		// 	target: "",
+		// 	tab: "",
+		// 	scrollTop: "view:50",
+		// }
+
 	},
 	dispatch(event) {
 		let Self = spotify.content,
@@ -37,43 +52,30 @@
 			uEl,
 			el;
 		switch (event.type) {
-			case "home-view":
-				window.render({
-					template: "home-view",
-					match: "//Home",
-					target: Self.els.body
-				});
-				// temp
-				// setTimeout(() => Self.els.body.find(`.tabs [data-type="home-favorites"]`).trigger("click"), 100);
-				// setTimeout(() => Self.els.body.find(`.category:nth-child(2)`).trigger("click"), 100);
-				// setTimeout(() => Self.els.body.find(`.playlist:nth-child(2)`).trigger("click"), 400);
+			// navigation events
+			case "go-back":
+			case "go-forward":
+				if (event.type === "go-back") Self.history.goBack();
+				else Self.history.goForward();
+				// update view state
+				Self.setViewState();
 				break;
-			case "search-view":
-				window.render({
-					template: "search-view",
-					match: "//Search/Tracks",
-					target: Self.els.body
-				});
+			case "go-to":
+				Self.history.push({ view: event.view });
+				// render view contents
+				target = Self.els.body;
+				render = Self.renders[event.view];
+				window.render({ ...render, target });
 				break;
 			// tabs
 			case "home-browse":
 			case "home-featured":
 			case "home-favorites":
 			case "home-history":
-				target = Self.els.body.find(".view-body");
-				render = Self.renders[event.type];
-				// render area
-				window.render({ ...render, target });
-				break;
 			case "search-tracks":
 			case "search-artists":
 			case "search-albums":
 			case "search-playlists":
-				target = Self.els.body.find(".view-body");
-				render = Self.renders[event.type];
-				// render area
-				window.render({ ...render, target });
-				break;
 			case "artist-top-tracks":
 			case "artist-albums":
 			case "artist-appears-on":
@@ -131,7 +133,7 @@
 				});
 				break;
 			case "select-playlist":
-				el = $(event.target);
+				el = event.el;
 
 				window.render({
 					template: "playlist-view",
@@ -188,5 +190,8 @@
 				}
 				break;
 		}
+	},
+	setViewState() {
+		let state = this.history.current;
 	}
 }

@@ -57,7 +57,7 @@
 			<h2>Category</h2>
 		</div>
 
-		<div class="view-body playlists" data-click="select-playlist">
+		<div class="view-body playlists">
 			<xsl:for-each select="//CategoryPlayList/*">
 				<div class="playlist">
 					<div class="image">

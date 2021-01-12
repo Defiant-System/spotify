@@ -4,8 +4,6 @@ const spotify = {
 		// fast references
 		this.els = {
 			content: window.find("content"),
-			// body: window.find("content .body"),
-			// sidebar: window.find("content .sidebar"),
 		};
 
 		// init sub modules

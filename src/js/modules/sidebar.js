@@ -15,47 +15,17 @@
 			isOn,
 			el;
 		switch (event.type) {
+			case "go-back":
+			case "go-forward":
+				APP.content.dispatch(event);
+				break;
 			case "go-home":
-				el = $(event.target);
-				el.parent().find(".active").removeClass("active");
-				el.addClass("active");
-
-				APP.content.dispatch({ type: "home-view" });
-				break;
-			case "go-browse":
-				el = $(event.target);
-				el.parent().find(".active").removeClass("active");
-				el.addClass("active");
-				
-				APP.content.dispatch({ type: "browse-view" });
-				break;
-			// case "go-radio":
-			// 	el = $(event.target);
-			// 	el.parent().find(".active").removeClass("active");
-			// 	el.addClass("active");
-				
-			// 	APP.content.dispatch({ type: "compilation-view" });
-			// 	break;
-			// case "go-queue":
-			// 	el = $(event.target);
-			// 	el.parent().find(".active").removeClass("active");
-			// 	el.addClass("active");
-				
-			// 	APP.content.dispatch({ type: "album-view" });
-			// 	break;
-			case "go-history":
-				el = $(event.target);
-				el.parent().find(".active").removeClass("active");
-				el.addClass("active");
-				
-				APP.content.dispatch({ type: "history-view" });
-				break;
 			case "go-search":
 				el = $(event.target);
 				el.parent().find(".active").removeClass("active");
 				el.addClass("active");
-				
-				APP.content.dispatch({ type: "search-view" });
+				// forward event to content module
+				APP.content.dispatch({ type: "go-to", view: event.type.split("-")[1] });
 				break;
 			case "toggle-library":
 				el = Self.els.panel;
