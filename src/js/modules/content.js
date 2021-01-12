@@ -38,10 +38,9 @@
 					target: Self.els.body
 				});
 				// temp
-				// setTimeout(() =>
-				// 	Self.els.body.find(`.tabs [data-type="home-favorites"]`).trigger("click"), 100);
-				setTimeout(() =>
-					Self.els.body.find(`.category:nth-child(2)`).trigger("click"), 100);
+				// setTimeout(() => Self.els.body.find(`.tabs [data-type="home-favorites"]`).trigger("click"), 100);
+				// setTimeout(() => Self.els.body.find(`.category:nth-child(2)`).trigger("click"), 100);
+				// setTimeout(() => Self.els.body.find(`.playlist:nth-child(2)`).trigger("click"), 400);
 				break;
 			case "search-view":
 				window.render({
@@ -130,7 +129,7 @@
 
 				window.render({
 					template: "playlist-view",
-					match: "//Compilation",
+					match: "//Playlist",
 					target: Self.els.body
 				});
 				break;
