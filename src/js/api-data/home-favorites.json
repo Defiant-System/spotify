@@ -1,0 +1,1540 @@
+{
+	"total": 50,
+	"limit": 20,
+	"offset": 0,
+	"href": "https://api.spotify.com/v1/me/top/tracks",
+	"previous": null,
+	"next": "https://api.spotify.com/v1/me/top/tracks?limit=20&offset=20",
+	"items": [
+		{
+			"album": {
+				"album_type": "ALBUM",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/6tRmpYzDIjWoRHzbJO7Cpx"
+						},
+						"href": "https://api.spotify.com/v1/artists/6tRmpYzDIjWoRHzbJO7Cpx",
+						"id": "6tRmpYzDIjWoRHzbJO7Cpx",
+						"name": "Fuat",
+						"type": "artist",
+						"uri": "spotify:artist:6tRmpYzDIjWoRHzbJO7Cpx"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/00CCX1CwazBbfX8LtX7om4"
+				},
+				"href": "https://api.spotify.com/v1/albums/00CCX1CwazBbfX8LtX7om4",
+				"id": "00CCX1CwazBbfX8LtX7om4",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b273190c240f8e91da5636232460",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e02190c240f8e91da5636232460",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d00004851190c240f8e91da5636232460",
+						"width": 64
+					}
+				],
+				"name": "Her Ayın Elemanı",
+				"release_date": "2005-04-29",
+				"release_date_precision": "day",
+				"total_tracks": 14,
+				"type": "album",
+				"uri": "spotify:album:00CCX1CwazBbfX8LtX7om4"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/6tRmpYzDIjWoRHzbJO7Cpx"
+					},
+					"href": "https://api.spotify.com/v1/artists/6tRmpYzDIjWoRHzbJO7Cpx",
+					"id": "6tRmpYzDIjWoRHzbJO7Cpx",
+					"name": "Fuat",
+					"type": "artist",
+					"uri": "spotify:artist:6tRmpYzDIjWoRHzbJO7Cpx"
+				},
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/28Qbi9jTj2eej21P2mImZI"
+					},
+					"href": "https://api.spotify.com/v1/artists/28Qbi9jTj2eej21P2mImZI",
+					"id": "28Qbi9jTj2eej21P2mImZI",
+					"name": "Ceza",
+					"type": "artist",
+					"uri": "spotify:artist:28Qbi9jTj2eej21P2mImZI"
+				},
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/4B744cRUGT2IOu9Uuh7Ad7"
+					},
+					"href": "https://api.spotify.com/v1/artists/4B744cRUGT2IOu9Uuh7Ad7",
+					"id": "4B744cRUGT2IOu9Uuh7Ad7",
+					"name": "Ayben",
+					"type": "artist",
+					"uri": "spotify:artist:4B744cRUGT2IOu9Uuh7Ad7"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 207350,
+			"explicit": false,
+			"external_ids": {
+				"isrc": "TR0130600028"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/3q4TbAwfXcs3zP3qpRxed2"
+			},
+			"href": "https://api.spotify.com/v1/tracks/3q4TbAwfXcs3zP3qpRxed2",
+			"id": "3q4TbAwfXcs3zP3qpRxed2",
+			"is_local": false,
+			"name": "İllegal-Rap Emrimde 2",
+			"popularity": 23,
+			"preview_url": "https://p.scdn.co/mp3-preview/67c5c26c9afa59f1817013d39eee3463184d3336?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 5,
+			"type": "track",
+			"uri": "spotify:track:3q4TbAwfXcs3zP3qpRxed2"
+		},
+		{
+			"album": {
+				"album_type": "ALBUM",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/28Qbi9jTj2eej21P2mImZI"
+						},
+						"href": "https://api.spotify.com/v1/artists/28Qbi9jTj2eej21P2mImZI",
+						"id": "28Qbi9jTj2eej21P2mImZI",
+						"name": "Ceza",
+						"type": "artist",
+						"uri": "spotify:artist:28Qbi9jTj2eej21P2mImZI"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/3DO0zQlMhCOttXi6mCTnC8"
+				},
+				"href": "https://api.spotify.com/v1/albums/3DO0zQlMhCOttXi6mCTnC8",
+				"id": "3DO0zQlMhCOttXi6mCTnC8",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/f9ce6868cab624cd14488a884f00100ddab05457",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/19e6684f274833b0cd28f15a55e9edbfeb930240",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/598b08e57a68ffca8838bc1f2aa87e30eaf8aa90",
+						"width": 64
+					}
+				],
+				"name": "Medcezir",
+				"release_date": "2002-02-02",
+				"release_date_precision": "day",
+				"total_tracks": 13,
+				"type": "album",
+				"uri": "spotify:album:3DO0zQlMhCOttXi6mCTnC8"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/28Qbi9jTj2eej21P2mImZI"
+					},
+					"href": "https://api.spotify.com/v1/artists/28Qbi9jTj2eej21P2mImZI",
+					"id": "28Qbi9jTj2eej21P2mImZI",
+					"name": "Ceza",
+					"type": "artist",
+					"uri": "spotify:artist:28Qbi9jTj2eej21P2mImZI"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 215213,
+			"explicit": false,
+			"external_ids": {
+				"isrc": "TR0640600108"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/1501DvYroJTMR2zSvJClgK"
+			},
+			"href": "https://api.spotify.com/v1/tracks/1501DvYroJTMR2zSvJClgK",
+			"id": "1501DvYroJTMR2zSvJClgK",
+			"is_local": false,
+			"name": "Ceza Sahası",
+			"popularity": 32,
+			"preview_url": "https://p.scdn.co/mp3-preview/e46c891b8b72927bb66546757ea8a1eb6a025608?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 10,
+			"type": "track",
+			"uri": "spotify:track:1501DvYroJTMR2zSvJClgK"
+		},
+		{
+			"album": {
+				"album_type": "ALBUM",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+						},
+						"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+						"id": "1k8VBufn1nBs8LN9n4snc8",
+						"name": "Stereo MC's",
+						"type": "artist",
+						"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/3NRQnGdFznbXtP8u2O4VKB"
+				},
+				"href": "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
+				"id": "3NRQnGdFznbXtP8u2O4VKB",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b27342f3ccbc77ffa9a06e6e92d1",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e0242f3ccbc77ffa9a06e6e92d1",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d0000485142f3ccbc77ffa9a06e6e92d1",
+						"width": 64
+					}
+				],
+				"name": "Connected",
+				"release_date": "1992-01-01",
+				"release_date_precision": "day",
+				"total_tracks": 12,
+				"type": "album",
+				"uri": "spotify:album:3NRQnGdFznbXtP8u2O4VKB"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+					},
+					"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+					"id": "1k8VBufn1nBs8LN9n4snc8",
+					"name": "Stereo MC's",
+					"type": "artist",
+					"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 252666,
+			"explicit": false,
+			"external_ids": {
+				"isrc": "GBAAN9290024"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/1UgsbIteej4QpAcX3aUFeV"
+			},
+			"href": "https://api.spotify.com/v1/tracks/1UgsbIteej4QpAcX3aUFeV",
+			"id": "1UgsbIteej4QpAcX3aUFeV",
+			"is_local": false,
+			"name": "Ground Level",
+			"popularity": 36,
+			"preview_url": "https://p.scdn.co/mp3-preview/95281ad424b0e6e72bb0b37e17d5389aa3d6052e?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 2,
+			"type": "track",
+			"uri": "spotify:track:1UgsbIteej4QpAcX3aUFeV"
+		},
+		{
+			"album": {
+				"album_type": "ALBUM",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/63csbI0AR18EE4vCIbjYO6"
+						},
+						"href": "https://api.spotify.com/v1/artists/63csbI0AR18EE4vCIbjYO6",
+						"id": "63csbI0AR18EE4vCIbjYO6",
+						"name": "Nefret",
+						"type": "artist",
+						"uri": "spotify:artist:63csbI0AR18EE4vCIbjYO6"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/68Cfh2cDyFOWkXbRTnyBqP"
+				},
+				"href": "https://api.spotify.com/v1/albums/68Cfh2cDyFOWkXbRTnyBqP",
+				"id": "68Cfh2cDyFOWkXbRTnyBqP",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b273bf4cee85da5ffc25aa1af983",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e02bf4cee85da5ffc25aa1af983",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d00004851bf4cee85da5ffc25aa1af983",
+						"width": 64
+					}
+				],
+				"name": "Anahtar",
+				"release_date": "2001-01-01",
+				"release_date_precision": "day",
+				"total_tracks": 17,
+				"type": "album",
+				"uri": "spotify:album:68Cfh2cDyFOWkXbRTnyBqP"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/63csbI0AR18EE4vCIbjYO6"
+					},
+					"href": "https://api.spotify.com/v1/artists/63csbI0AR18EE4vCIbjYO6",
+					"id": "63csbI0AR18EE4vCIbjYO6",
+					"name": "Nefret",
+					"type": "artist",
+					"uri": "spotify:artist:63csbI0AR18EE4vCIbjYO6"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 231613,
+			"explicit": false,
+			"external_ids": {
+				"isrc": "TR0640600115"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/7e72jch9OiwUHQe31omby7"
+			},
+			"href": "https://api.spotify.com/v1/tracks/7e72jch9OiwUHQe31omby7",
+			"id": "7e72jch9OiwUHQe31omby7",
+			"is_local": false,
+			"name": "2. Şok (feat. Erci E)",
+			"popularity": 25,
+			"preview_url": "https://p.scdn.co/mp3-preview/de7c196d5bc84ebce4bafaa3f488833fc7fe0a9e?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 4,
+			"type": "track",
+			"uri": "spotify:track:7e72jch9OiwUHQe31omby7"
+		},
+		{
+			"album": {
+				"album_type": "ALBUM",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/6EokohBg1kcJXEvxQnKx1E"
+						},
+						"href": "https://api.spotify.com/v1/artists/6EokohBg1kcJXEvxQnKx1E",
+						"id": "6EokohBg1kcJXEvxQnKx1E",
+						"name": "Karakan",
+						"type": "artist",
+						"uri": "spotify:artist:6EokohBg1kcJXEvxQnKx1E"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/1BoSlGged4q9ZVmWVcghr2"
+				},
+				"href": "https://api.spotify.com/v1/albums/1BoSlGged4q9ZVmWVcghr2",
+				"id": "1BoSlGged4q9ZVmWVcghr2",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b27343cee8476ce5afee27c6f26e",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e0243cee8476ce5afee27c6f26e",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d0000485143cee8476ce5afee27c6f26e",
+						"width": 64
+					}
+				],
+				"name": "Al Sana Karakan",
+				"release_date": "2020-01-03",
+				"release_date_precision": "day",
+				"total_tracks": 14,
+				"type": "album",
+				"uri": "spotify:album:1BoSlGged4q9ZVmWVcghr2"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/6EokohBg1kcJXEvxQnKx1E"
+					},
+					"href": "https://api.spotify.com/v1/artists/6EokohBg1kcJXEvxQnKx1E",
+					"id": "6EokohBg1kcJXEvxQnKx1E",
+					"name": "Karakan",
+					"type": "artist",
+					"uri": "spotify:artist:6EokohBg1kcJXEvxQnKx1E"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 225066,
+			"explicit": false,
+			"external_ids": {
+				"isrc": "QMFME1977589"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/3uSXlXaymOuUcEyTOYGnDg"
+			},
+			"href": "https://api.spotify.com/v1/tracks/3uSXlXaymOuUcEyTOYGnDg",
+			"id": "3uSXlXaymOuUcEyTOYGnDg",
+			"is_local": false,
+			"name": "Al Sana Karakan",
+			"popularity": 21,
+			"preview_url": "https://p.scdn.co/mp3-preview/210faa1742c9c97bd6f84dac9987e20f5e6da11f?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 2,
+			"type": "track",
+			"uri": "spotify:track:3uSXlXaymOuUcEyTOYGnDg"
+		},
+		{
+			"album": {
+				"album_type": "ALBUM",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/6EokohBg1kcJXEvxQnKx1E"
+						},
+						"href": "https://api.spotify.com/v1/artists/6EokohBg1kcJXEvxQnKx1E",
+						"id": "6EokohBg1kcJXEvxQnKx1E",
+						"name": "Karakan",
+						"type": "artist",
+						"uri": "spotify:artist:6EokohBg1kcJXEvxQnKx1E"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/1BoSlGged4q9ZVmWVcghr2"
+				},
+				"href": "https://api.spotify.com/v1/albums/1BoSlGged4q9ZVmWVcghr2",
+				"id": "1BoSlGged4q9ZVmWVcghr2",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b27343cee8476ce5afee27c6f26e",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e0243cee8476ce5afee27c6f26e",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d0000485143cee8476ce5afee27c6f26e",
+						"width": 64
+					}
+				],
+				"name": "Al Sana Karakan",
+				"release_date": "2020-01-03",
+				"release_date_precision": "day",
+				"total_tracks": 14,
+				"type": "album",
+				"uri": "spotify:album:1BoSlGged4q9ZVmWVcghr2"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/6EokohBg1kcJXEvxQnKx1E"
+					},
+					"href": "https://api.spotify.com/v1/artists/6EokohBg1kcJXEvxQnKx1E",
+					"id": "6EokohBg1kcJXEvxQnKx1E",
+					"name": "Karakan",
+					"type": "artist",
+					"uri": "spotify:artist:6EokohBg1kcJXEvxQnKx1E"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 225093,
+			"explicit": false,
+			"external_ids": {
+				"isrc": "QMFME1977593"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/7ycYZyBAdAcOdX43FESyTV"
+			},
+			"href": "https://api.spotify.com/v1/tracks/7ycYZyBAdAcOdX43FESyTV",
+			"id": "7ycYZyBAdAcOdX43FESyTV",
+			"is_local": false,
+			"name": "Defol Dazlak",
+			"popularity": 14,
+			"preview_url": "https://p.scdn.co/mp3-preview/007ab3d0999af73297be6139300d62241ac7e4b2?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 6,
+			"type": "track",
+			"uri": "spotify:track:7ycYZyBAdAcOdX43FESyTV"
+		},
+		{
+			"album": {
+				"album_type": "ALBUM",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/6EokohBg1kcJXEvxQnKx1E"
+						},
+						"href": "https://api.spotify.com/v1/artists/6EokohBg1kcJXEvxQnKx1E",
+						"id": "6EokohBg1kcJXEvxQnKx1E",
+						"name": "Karakan",
+						"type": "artist",
+						"uri": "spotify:artist:6EokohBg1kcJXEvxQnKx1E"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/1BoSlGged4q9ZVmWVcghr2"
+				},
+				"href": "https://api.spotify.com/v1/albums/1BoSlGged4q9ZVmWVcghr2",
+				"id": "1BoSlGged4q9ZVmWVcghr2",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b27343cee8476ce5afee27c6f26e",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e0243cee8476ce5afee27c6f26e",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d0000485143cee8476ce5afee27c6f26e",
+						"width": 64
+					}
+				],
+				"name": "Al Sana Karakan",
+				"release_date": "2020-01-03",
+				"release_date_precision": "day",
+				"total_tracks": 14,
+				"type": "album",
+				"uri": "spotify:album:1BoSlGged4q9ZVmWVcghr2"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/6EokohBg1kcJXEvxQnKx1E"
+					},
+					"href": "https://api.spotify.com/v1/artists/6EokohBg1kcJXEvxQnKx1E",
+					"id": "6EokohBg1kcJXEvxQnKx1E",
+					"name": "Karakan",
+					"type": "artist",
+					"uri": "spotify:artist:6EokohBg1kcJXEvxQnKx1E"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 215973,
+			"explicit": false,
+			"external_ids": {
+				"isrc": "QMFME1977592"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/5lzjfq5GqVY3cKb5vc3zjK"
+			},
+			"href": "https://api.spotify.com/v1/tracks/5lzjfq5GqVY3cKb5vc3zjK",
+			"id": "5lzjfq5GqVY3cKb5vc3zjK",
+			"is_local": false,
+			"name": "Evdeki Ses",
+			"popularity": 24,
+			"preview_url": "https://p.scdn.co/mp3-preview/cad91bc75ccce3c579ce9685026db0faa5af3edd?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 5,
+			"type": "track",
+			"uri": "spotify:track:5lzjfq5GqVY3cKb5vc3zjK"
+		},
+		{
+			"album": {
+				"album_type": "ALBUM",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/6EokohBg1kcJXEvxQnKx1E"
+						},
+						"href": "https://api.spotify.com/v1/artists/6EokohBg1kcJXEvxQnKx1E",
+						"id": "6EokohBg1kcJXEvxQnKx1E",
+						"name": "Karakan",
+						"type": "artist",
+						"uri": "spotify:artist:6EokohBg1kcJXEvxQnKx1E"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/1BoSlGged4q9ZVmWVcghr2"
+				},
+				"href": "https://api.spotify.com/v1/albums/1BoSlGged4q9ZVmWVcghr2",
+				"id": "1BoSlGged4q9ZVmWVcghr2",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b27343cee8476ce5afee27c6f26e",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e0243cee8476ce5afee27c6f26e",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d0000485143cee8476ce5afee27c6f26e",
+						"width": 64
+					}
+				],
+				"name": "Al Sana Karakan",
+				"release_date": "2020-01-03",
+				"release_date_precision": "day",
+				"total_tracks": 14,
+				"type": "album",
+				"uri": "spotify:album:1BoSlGged4q9ZVmWVcghr2"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/6EokohBg1kcJXEvxQnKx1E"
+					},
+					"href": "https://api.spotify.com/v1/artists/6EokohBg1kcJXEvxQnKx1E",
+					"id": "6EokohBg1kcJXEvxQnKx1E",
+					"name": "Karakan",
+					"type": "artist",
+					"uri": "spotify:artist:6EokohBg1kcJXEvxQnKx1E"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 252666,
+			"explicit": false,
+			"external_ids": {
+				"isrc": "QMFME1977590"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/2gGTxqOmZlECHQwN8tof9L"
+			},
+			"href": "https://api.spotify.com/v1/tracks/2gGTxqOmZlECHQwN8tof9L",
+			"id": "2gGTxqOmZlECHQwN8tof9L",
+			"is_local": false,
+			"name": "Hepsi Benim",
+			"popularity": 16,
+			"preview_url": "https://p.scdn.co/mp3-preview/a20ad42587c76aabc07557f1afddc0c66a804d87?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 3,
+			"type": "track",
+			"uri": "spotify:track:2gGTxqOmZlECHQwN8tof9L"
+		},
+		{
+			"album": {
+				"album_type": "ALBUM",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/6EokohBg1kcJXEvxQnKx1E"
+						},
+						"href": "https://api.spotify.com/v1/artists/6EokohBg1kcJXEvxQnKx1E",
+						"id": "6EokohBg1kcJXEvxQnKx1E",
+						"name": "Karakan",
+						"type": "artist",
+						"uri": "spotify:artist:6EokohBg1kcJXEvxQnKx1E"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/1BoSlGged4q9ZVmWVcghr2"
+				},
+				"href": "https://api.spotify.com/v1/albums/1BoSlGged4q9ZVmWVcghr2",
+				"id": "1BoSlGged4q9ZVmWVcghr2",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b27343cee8476ce5afee27c6f26e",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e0243cee8476ce5afee27c6f26e",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d0000485143cee8476ce5afee27c6f26e",
+						"width": 64
+					}
+				],
+				"name": "Al Sana Karakan",
+				"release_date": "2020-01-03",
+				"release_date_precision": "day",
+				"total_tracks": 14,
+				"type": "album",
+				"uri": "spotify:album:1BoSlGged4q9ZVmWVcghr2"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/6EokohBg1kcJXEvxQnKx1E"
+					},
+					"href": "https://api.spotify.com/v1/artists/6EokohBg1kcJXEvxQnKx1E",
+					"id": "6EokohBg1kcJXEvxQnKx1E",
+					"name": "Karakan",
+					"type": "artist",
+					"uri": "spotify:artist:6EokohBg1kcJXEvxQnKx1E"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 260373,
+			"explicit": false,
+			"external_ids": {
+				"isrc": "QMFME1977596"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/024bKFMLnVTDu07tsydwlQ"
+			},
+			"href": "https://api.spotify.com/v1/tracks/024bKFMLnVTDu07tsydwlQ",
+			"id": "024bKFMLnVTDu07tsydwlQ",
+			"is_local": false,
+			"name": "Kapıkule'ye Kadar",
+			"popularity": 15,
+			"preview_url": "https://p.scdn.co/mp3-preview/dd4f7324581d16228d51fd8a83ee7c6363945ad1?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 8,
+			"type": "track",
+			"uri": "spotify:track:024bKFMLnVTDu07tsydwlQ"
+		},
+		{
+			"album": {
+				"album_type": "ALBUM",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/4VMYDCV2IEDYJArk749S6m"
+						},
+						"href": "https://api.spotify.com/v1/artists/4VMYDCV2IEDYJArk749S6m",
+						"id": "4VMYDCV2IEDYJArk749S6m",
+						"name": "Daddy Yankee",
+						"type": "artist",
+						"uri": "spotify:artist:4VMYDCV2IEDYJArk749S6m"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/5i2HhIrYyMNQvmsBk9h8Im"
+				},
+				"href": "https://api.spotify.com/v1/albums/5i2HhIrYyMNQvmsBk9h8Im",
+				"id": "5i2HhIrYyMNQvmsBk9h8Im",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b2737f68406bafad6162f6acdf8a",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e027f68406bafad6162f6acdf8a",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d000048517f68406bafad6162f6acdf8a",
+						"width": 64
+					}
+				],
+				"name": "Barrio Fino (Bonus Track Version)",
+				"release_date": "2004-07-13",
+				"release_date_precision": "day",
+				"total_tracks": 23,
+				"type": "album",
+				"uri": "spotify:album:5i2HhIrYyMNQvmsBk9h8Im"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/4VMYDCV2IEDYJArk749S6m"
+					},
+					"href": "https://api.spotify.com/v1/artists/4VMYDCV2IEDYJArk749S6m",
+					"id": "4VMYDCV2IEDYJArk749S6m",
+					"name": "Daddy Yankee",
+					"type": "artist",
+					"uri": "spotify:artist:4VMYDCV2IEDYJArk749S6m"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 206800,
+			"explicit": false,
+			"external_ids": {
+				"isrc": "QM6N21759352"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/5sC0youR92ljJRn6VatElb"
+			},
+			"href": "https://api.spotify.com/v1/tracks/5sC0youR92ljJRn6VatElb",
+			"id": "5sC0youR92ljJRn6VatElb",
+			"is_local": false,
+			"name": "Salud y Vida",
+			"popularity": 61,
+			"preview_url": "https://p.scdn.co/mp3-preview/fa8b7b34e5cfd721210590880b82ff29b9b3aec2?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 15,
+			"type": "track",
+			"uri": "spotify:track:5sC0youR92ljJRn6VatElb"
+		},
+		{
+			"album": {
+				"album_type": "ALBUM",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/6EokohBg1kcJXEvxQnKx1E"
+						},
+						"href": "https://api.spotify.com/v1/artists/6EokohBg1kcJXEvxQnKx1E",
+						"id": "6EokohBg1kcJXEvxQnKx1E",
+						"name": "Karakan",
+						"type": "artist",
+						"uri": "spotify:artist:6EokohBg1kcJXEvxQnKx1E"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/1BoSlGged4q9ZVmWVcghr2"
+				},
+				"href": "https://api.spotify.com/v1/albums/1BoSlGged4q9ZVmWVcghr2",
+				"id": "1BoSlGged4q9ZVmWVcghr2",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b27343cee8476ce5afee27c6f26e",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e0243cee8476ce5afee27c6f26e",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d0000485143cee8476ce5afee27c6f26e",
+						"width": 64
+					}
+				],
+				"name": "Al Sana Karakan",
+				"release_date": "2020-01-03",
+				"release_date_precision": "day",
+				"total_tracks": 14,
+				"type": "album",
+				"uri": "spotify:album:1BoSlGged4q9ZVmWVcghr2"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/6EokohBg1kcJXEvxQnKx1E"
+					},
+					"href": "https://api.spotify.com/v1/artists/6EokohBg1kcJXEvxQnKx1E",
+					"id": "6EokohBg1kcJXEvxQnKx1E",
+					"name": "Karakan",
+					"type": "artist",
+					"uri": "spotify:artist:6EokohBg1kcJXEvxQnKx1E"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 324093,
+			"explicit": false,
+			"external_ids": {
+				"isrc": "QMFME1977588"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/2ydLLDg5SQVfCN4xdwG6g8"
+			},
+			"href": "https://api.spotify.com/v1/tracks/2ydLLDg5SQVfCN4xdwG6g8",
+			"id": "2ydLLDg5SQVfCN4xdwG6g8",
+			"is_local": false,
+			"name": "Alamancı Yabancı",
+			"popularity": 12,
+			"preview_url": "https://p.scdn.co/mp3-preview/e5decb33d0f574573f9ed07ad79a6b1bd982e09f?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 1,
+			"type": "track",
+			"uri": "spotify:track:2ydLLDg5SQVfCN4xdwG6g8"
+		},
+		{
+			"album": {
+				"album_type": "ALBUM",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+						},
+						"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+						"id": "1k8VBufn1nBs8LN9n4snc8",
+						"name": "Stereo MC's",
+						"type": "artist",
+						"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/6ydThtRPfXjHS79flxvVMC"
+				},
+				"href": "https://api.spotify.com/v1/albums/6ydThtRPfXjHS79flxvVMC",
+				"id": "6ydThtRPfXjHS79flxvVMC",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b2733bdf8d1559780fc9598d9f1e",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e023bdf8d1559780fc9598d9f1e",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d000048513bdf8d1559780fc9598d9f1e",
+						"width": 64
+					}
+				],
+				"name": "Paradise",
+				"release_date": "2005-08-25",
+				"release_date_precision": "day",
+				"total_tracks": 12,
+				"type": "album",
+				"uri": "spotify:album:6ydThtRPfXjHS79flxvVMC"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+					},
+					"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+					"id": "1k8VBufn1nBs8LN9n4snc8",
+					"name": "Stereo MC's",
+					"type": "artist",
+					"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 274720,
+			"explicit": false,
+			"external_ids": {
+				"isrc": "GBJHR0500010"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/0XM5qsvRQGSWE1hlSq4E5b"
+			},
+			"href": "https://api.spotify.com/v1/tracks/0XM5qsvRQGSWE1hlSq4E5b",
+			"id": "0XM5qsvRQGSWE1hlSq4E5b",
+			"is_local": false,
+			"name": "I Feel You",
+			"popularity": 10,
+			"preview_url": "https://p.scdn.co/mp3-preview/a346bde5def9e1ebf94caa2ec36151e0fcb7f9c7?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 10,
+			"type": "track",
+			"uri": "spotify:track:0XM5qsvRQGSWE1hlSq4E5b"
+		},
+		{
+			"album": {
+				"album_type": "ALBUM",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/3HVdAiMNjYrQIKlOGxoGh5"
+						},
+						"href": "https://api.spotify.com/v1/artists/3HVdAiMNjYrQIKlOGxoGh5",
+						"id": "3HVdAiMNjYrQIKlOGxoGh5",
+						"name": "Rob Zombie",
+						"type": "artist",
+						"uri": "spotify:artist:3HVdAiMNjYrQIKlOGxoGh5"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/2B4lHoTCpWbxQPTZmCOjnH"
+				},
+				"href": "https://api.spotify.com/v1/albums/2B4lHoTCpWbxQPTZmCOjnH",
+				"id": "2B4lHoTCpWbxQPTZmCOjnH",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b27313d4adf9e4b938f88266f4e4",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e0213d4adf9e4b938f88266f4e4",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d0000485113d4adf9e4b938f88266f4e4",
+						"width": 64
+					}
+				],
+				"name": "Hellbilly Deluxe",
+				"release_date": "1998-01-01",
+				"release_date_precision": "day",
+				"total_tracks": 13,
+				"type": "album",
+				"uri": "spotify:album:2B4lHoTCpWbxQPTZmCOjnH"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/3HVdAiMNjYrQIKlOGxoGh5"
+					},
+					"href": "https://api.spotify.com/v1/artists/3HVdAiMNjYrQIKlOGxoGh5",
+					"id": "3HVdAiMNjYrQIKlOGxoGh5",
+					"name": "Rob Zombie",
+					"type": "artist",
+					"uri": "spotify:artist:3HVdAiMNjYrQIKlOGxoGh5"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 222826,
+			"explicit": false,
+			"external_ids": {
+				"isrc": "USGF19821203"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/6Nm8h73ycDG2saCnZV8poF"
+			},
+			"href": "https://api.spotify.com/v1/tracks/6Nm8h73ycDG2saCnZV8poF",
+			"id": "6Nm8h73ycDG2saCnZV8poF",
+			"is_local": false,
+			"name": "Dragula",
+			"popularity": 74,
+			"preview_url": "https://p.scdn.co/mp3-preview/010a9336d47f6ca60efd7be39fe11dd0228e2faa?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 3,
+			"type": "track",
+			"uri": "spotify:track:6Nm8h73ycDG2saCnZV8poF"
+		},
+		{
+			"album": {
+				"album_type": "ALBUM",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/6nHDuiu6PIpfWt6DswQHvL"
+						},
+						"href": "https://api.spotify.com/v1/artists/6nHDuiu6PIpfWt6DswQHvL",
+						"id": "6nHDuiu6PIpfWt6DswQHvL",
+						"name": "Alpa Gun",
+						"type": "artist",
+						"uri": "spotify:artist:6nHDuiu6PIpfWt6DswQHvL"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/5kfqZtVoejkyFg4NTvddIX"
+				},
+				"href": "https://api.spotify.com/v1/albums/5kfqZtVoejkyFg4NTvddIX",
+				"id": "5kfqZtVoejkyFg4NTvddIX",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b273653636a5b8493bd1e7e27ada",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e02653636a5b8493bd1e7e27ada",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d00004851653636a5b8493bd1e7e27ada",
+						"width": 64
+					}
+				],
+				"name": "Geladen und Entsichert",
+				"release_date": "2007-05-25",
+				"release_date_precision": "day",
+				"total_tracks": 20,
+				"type": "album",
+				"uri": "spotify:album:5kfqZtVoejkyFg4NTvddIX"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/6nHDuiu6PIpfWt6DswQHvL"
+					},
+					"href": "https://api.spotify.com/v1/artists/6nHDuiu6PIpfWt6DswQHvL",
+					"id": "6nHDuiu6PIpfWt6DswQHvL",
+					"name": "Alpa Gun",
+					"type": "artist",
+					"uri": "spotify:artist:6nHDuiu6PIpfWt6DswQHvL"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 210400,
+			"explicit": true,
+			"external_ids": {
+				"isrc": "DEQ020704134"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/75ofa9OSXB48xrnQwPgzLa"
+			},
+			"href": "https://api.spotify.com/v1/tracks/75ofa9OSXB48xrnQwPgzLa",
+			"id": "75ofa9OSXB48xrnQwPgzLa",
+			"is_local": false,
+			"name": "Wir sind echt feat. Snaga & Pillath",
+			"popularity": 10,
+			"preview_url": "https://p.scdn.co/mp3-preview/812be0082f68b4d6bad6b5f99f23673ec4a1a6bb?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 14,
+			"type": "track",
+			"uri": "spotify:track:75ofa9OSXB48xrnQwPgzLa"
+		},
+		{
+			"album": {
+				"album_type": "SINGLE",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/5KnoVkIUGmK0PiDKMjz2LM"
+						},
+						"href": "https://api.spotify.com/v1/artists/5KnoVkIUGmK0PiDKMjz2LM",
+						"id": "5KnoVkIUGmK0PiDKMjz2LM",
+						"name": "Feder",
+						"type": "artist",
+						"uri": "spotify:artist:5KnoVkIUGmK0PiDKMjz2LM"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/4ipzTV3BaGRRdpGNDGzdCP"
+				},
+				"href": "https://api.spotify.com/v1/albums/4ipzTV3BaGRRdpGNDGzdCP",
+				"id": "4ipzTV3BaGRRdpGNDGzdCP",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b273038be723bfb274d0b7cdddfd",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e02038be723bfb274d0b7cdddfd",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d00004851038be723bfb274d0b7cdddfd",
+						"width": 64
+					}
+				],
+				"name": "Goodbye (feat. Lyse) [Slow Version]",
+				"release_date": "2020-10-02",
+				"release_date_precision": "day",
+				"total_tracks": 1,
+				"type": "album",
+				"uri": "spotify:album:4ipzTV3BaGRRdpGNDGzdCP"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/5KnoVkIUGmK0PiDKMjz2LM"
+					},
+					"href": "https://api.spotify.com/v1/artists/5KnoVkIUGmK0PiDKMjz2LM",
+					"id": "5KnoVkIUGmK0PiDKMjz2LM",
+					"name": "Feder",
+					"type": "artist",
+					"uri": "spotify:artist:5KnoVkIUGmK0PiDKMjz2LM"
+				},
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/7K9peN1sknRNqPr9YEYedM"
+					},
+					"href": "https://api.spotify.com/v1/artists/7K9peN1sknRNqPr9YEYedM",
+					"id": "7K9peN1sknRNqPr9YEYedM",
+					"name": "Lyse",
+					"type": "artist",
+					"uri": "spotify:artist:7K9peN1sknRNqPr9YEYedM"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 185173,
+			"explicit": false,
+			"external_ids": {
+				"isrc": "FRY682000007"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/0Cp85ha3RN0FDytbku8nzq"
+			},
+			"href": "https://api.spotify.com/v1/tracks/0Cp85ha3RN0FDytbku8nzq",
+			"id": "0Cp85ha3RN0FDytbku8nzq",
+			"is_local": false,
+			"name": "Goodbye (feat. Lyse) - Slow Version",
+			"popularity": 68,
+			"preview_url": "https://p.scdn.co/mp3-preview/63de3e62f1680fa98fd0504d3deea1354d91c588?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 1,
+			"type": "track",
+			"uri": "spotify:track:0Cp85ha3RN0FDytbku8nzq"
+		},
+		{
+			"album": {
+				"album_type": "SINGLE",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/1Hy8tdpH9ygqoohumHZqVl"
+						},
+						"href": "https://api.spotify.com/v1/artists/1Hy8tdpH9ygqoohumHZqVl",
+						"id": "1Hy8tdpH9ygqoohumHZqVl",
+						"name": "Athena",
+						"type": "artist",
+						"uri": "spotify:artist:1Hy8tdpH9ygqoohumHZqVl"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/4GKcG9JHvWpTcsS8gYNDa0"
+				},
+				"href": "https://api.spotify.com/v1/albums/4GKcG9JHvWpTcsS8gYNDa0",
+				"id": "4GKcG9JHvWpTcsS8gYNDa0",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b2732d9917de4e073a2658502c40",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e022d9917de4e073a2658502c40",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d000048512d9917de4e073a2658502c40",
+						"width": 64
+					}
+				],
+				"name": "İt",
+				"release_date": "2006-04-15",
+				"release_date_precision": "day",
+				"total_tracks": 5,
+				"type": "album",
+				"uri": "spotify:album:4GKcG9JHvWpTcsS8gYNDa0"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1Hy8tdpH9ygqoohumHZqVl"
+					},
+					"href": "https://api.spotify.com/v1/artists/1Hy8tdpH9ygqoohumHZqVl",
+					"id": "1Hy8tdpH9ygqoohumHZqVl",
+					"name": "Athena",
+					"type": "artist",
+					"uri": "spotify:artist:1Hy8tdpH9ygqoohumHZqVl"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 197276,
+			"explicit": false,
+			"external_ids": {
+				"isrc": "TR0440601803"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/7s3NjiTlRPXnHL9O2JwLOe"
+			},
+			"href": "https://api.spotify.com/v1/tracks/7s3NjiTlRPXnHL9O2JwLOe",
+			"id": "7s3NjiTlRPXnHL9O2JwLOe",
+			"is_local": false,
+			"name": "Masum Kalamayız",
+			"popularity": 11,
+			"preview_url": "https://p.scdn.co/mp3-preview/21a26c34f615189dd405d1b603c273206584728c?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 3,
+			"type": "track",
+			"uri": "spotify:track:7s3NjiTlRPXnHL9O2JwLOe"
+		},
+		{
+			"album": {
+				"album_type": "ALBUM",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+						},
+						"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+						"id": "1k8VBufn1nBs8LN9n4snc8",
+						"name": "Stereo MC's",
+						"type": "artist",
+						"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/3EqE50w57ZSxSDGhmL1tg4"
+				},
+				"href": "https://api.spotify.com/v1/albums/3EqE50w57ZSxSDGhmL1tg4",
+				"id": "3EqE50w57ZSxSDGhmL1tg4",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b2731dafb37287f4aeb796695849",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e021dafb37287f4aeb796695849",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d000048511dafb37287f4aeb796695849",
+						"width": 64
+					}
+				],
+				"name": "Supernatural",
+				"release_date": "1990-01-01",
+				"release_date_precision": "day",
+				"total_tracks": 16,
+				"type": "album",
+				"uri": "spotify:album:3EqE50w57ZSxSDGhmL1tg4"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+					},
+					"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+					"id": "1k8VBufn1nBs8LN9n4snc8",
+					"name": "Stereo MC's",
+					"type": "artist",
+					"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 196826,
+			"explicit": false,
+			"external_ids": {
+				"isrc": "GBANY9000019"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/7uABD1Cd6M8SGA75OxeUqB"
+			},
+			"href": "https://api.spotify.com/v1/tracks/7uABD1Cd6M8SGA75OxeUqB",
+			"id": "7uABD1Cd6M8SGA75OxeUqB",
+			"is_local": false,
+			"name": "Elevate My Mind",
+			"popularity": 39,
+			"preview_url": "https://p.scdn.co/mp3-preview/de69e2edf98314ff66fbd94464857d2d8212dde1?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 4,
+			"type": "track",
+			"uri": "spotify:track:7uABD1Cd6M8SGA75OxeUqB"
+		},
+		{
+			"album": {
+				"album_type": "ALBUM",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+						},
+						"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+						"id": "1k8VBufn1nBs8LN9n4snc8",
+						"name": "Stereo MC's",
+						"type": "artist",
+						"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/3NRQnGdFznbXtP8u2O4VKB"
+				},
+				"href": "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
+				"id": "3NRQnGdFznbXtP8u2O4VKB",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b27342f3ccbc77ffa9a06e6e92d1",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e0242f3ccbc77ffa9a06e6e92d1",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d0000485142f3ccbc77ffa9a06e6e92d1",
+						"width": 64
+					}
+				],
+				"name": "Connected",
+				"release_date": "1992-01-01",
+				"release_date_precision": "day",
+				"total_tracks": 12,
+				"type": "album",
+				"uri": "spotify:album:3NRQnGdFznbXtP8u2O4VKB"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+					},
+					"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+					"id": "1k8VBufn1nBs8LN9n4snc8",
+					"name": "Stereo MC's",
+					"type": "artist",
+					"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 313000,
+			"explicit": false,
+			"external_ids": {
+				"isrc": "GBAAN9290023"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/1ZoE2naC9ySlPLdBZhS1rM"
+			},
+			"href": "https://api.spotify.com/v1/tracks/1ZoE2naC9ySlPLdBZhS1rM",
+			"id": "1ZoE2naC9ySlPLdBZhS1rM",
+			"is_local": false,
+			"name": "Connected",
+			"popularity": 59,
+			"preview_url": "https://p.scdn.co/mp3-preview/ce8dff15ccdd54928f3270790557b25bfee230d8?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 1,
+			"type": "track",
+			"uri": "spotify:track:1ZoE2naC9ySlPLdBZhS1rM"
+		},
+		{
+			"album": {
+				"album_type": "ALBUM",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+						},
+						"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+						"id": "1k8VBufn1nBs8LN9n4snc8",
+						"name": "Stereo MC's",
+						"type": "artist",
+						"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/1XlIVmi1cBZvBrdhzDeYTO"
+				},
+				"href": "https://api.spotify.com/v1/albums/1XlIVmi1cBZvBrdhzDeYTO",
+				"id": "1XlIVmi1cBZvBrdhzDeYTO",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b273e8c0eca5da75269b2d229116",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e02e8c0eca5da75269b2d229116",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d00004851e8c0eca5da75269b2d229116",
+						"width": 64
+					}
+				],
+				"name": "Deep Down & Dirty",
+				"release_date": "2001-01-01",
+				"release_date_precision": "day",
+				"total_tracks": 12,
+				"type": "album",
+				"uri": "spotify:album:1XlIVmi1cBZvBrdhzDeYTO"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+					},
+					"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+					"id": "1k8VBufn1nBs8LN9n4snc8",
+					"name": "Stereo MC's",
+					"type": "artist",
+					"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 315600,
+			"explicit": false,
+			"external_ids": {
+				"isrc": "GBAAN0100035"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/02I0QezAPPO9Q9i1or053S"
+			},
+			"href": "https://api.spotify.com/v1/tracks/02I0QezAPPO9Q9i1or053S",
+			"id": "02I0QezAPPO9Q9i1or053S",
+			"is_local": false,
+			"name": "Traffic",
+			"popularity": 24,
+			"preview_url": "https://p.scdn.co/mp3-preview/417528d2c4d06a6635fc222eb1c660029123f988?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 8,
+			"type": "track",
+			"uri": "spotify:track:02I0QezAPPO9Q9i1or053S"
+		},
+		{
+			"album": {
+				"album_type": "ALBUM",
+				"artists": [
+					{
+						"external_urls": {
+							"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+						},
+						"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+						"id": "1k8VBufn1nBs8LN9n4snc8",
+						"name": "Stereo MC's",
+						"type": "artist",
+						"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+					}
+				],
+				"external_urls": {
+					"spotify": "https://open.spotify.com/album/3NRQnGdFznbXtP8u2O4VKB"
+				},
+				"href": "https://api.spotify.com/v1/albums/3NRQnGdFznbXtP8u2O4VKB",
+				"id": "3NRQnGdFznbXtP8u2O4VKB",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b27342f3ccbc77ffa9a06e6e92d1",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e0242f3ccbc77ffa9a06e6e92d1",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d0000485142f3ccbc77ffa9a06e6e92d1",
+						"width": 64
+					}
+				],
+				"name": "Connected",
+				"release_date": "1992-01-01",
+				"release_date_precision": "day",
+				"total_tracks": 12,
+				"type": "album",
+				"uri": "spotify:album:3NRQnGdFznbXtP8u2O4VKB"
+			},
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+					},
+					"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+					"id": "1k8VBufn1nBs8LN9n4snc8",
+					"name": "Stereo MC's",
+					"type": "artist",
+					"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 301000,
+			"explicit": false,
+			"external_ids": {
+				"isrc": "GBAAN9290029"
+			},
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/6Y1HIgqlgYSzMalK6eBiEP"
+			},
+			"href": "https://api.spotify.com/v1/tracks/6Y1HIgqlgYSzMalK6eBiEP",
+			"id": "6Y1HIgqlgYSzMalK6eBiEP",
+			"is_local": false,
+			"name": "Step It Up",
+			"popularity": 50,
+			"preview_url": "https://p.scdn.co/mp3-preview/ec1e6b3e1832f5c7c524fbad558107e937426ceb?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 7,
+			"type": "track",
+			"uri": "spotify:track:6Y1HIgqlgYSzMalK6eBiEP"
+		}
+	]
+}

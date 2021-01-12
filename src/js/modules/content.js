@@ -3,6 +3,10 @@
 
 {
 	renders: {
+		"home-browse":    { template: "home-browse" },
+		"home-featured":  { template: "home-featured" },
+		"home-favorites": { template: "playlist", match: "//Favorites" },
+		"home-history":   { template: "playlist", match: "//Recently" },
 		"artist-top-tracks":     { template: "artist-top-tracks", match: "//Artist" },
 		"artist-albums":         { template: "artist-albums",     match: "//Albums" },
 		"artist-appears-on":     { template: "mixed-albums",      match: "//Appears" },
@@ -34,8 +38,8 @@
 					target: Self.els.body
 				});
 				// temp
-				// setTimeout(() =>
-				// 	Self.els.body.find(`.tabs [data-type="artist-fans-also-like"]`).trigger("click"), 300);
+				setTimeout(() =>
+					Self.els.body.find(`.tabs [data-type="home-favorites"]`).trigger("click"), 300);
 				break;
 			case "browse-view":
 				window.render({
@@ -65,13 +69,13 @@
 			// 		target: Self.els.body
 			// 	});
 			// 	break;
-			case "history-view":
-				window.render({
-					template: "recently-view",
-					match: "//Recently",
-					target: Self.els.body
-				});
-				break;
+			// case "history-view":
+			// 	window.render({
+			// 		template: "recently-view",
+			// 		match: "//Recently",
+			// 		target: Self.els.body
+			// 	});
+			// 	break;
 			case "search-view":
 				window.render({
 					template: "search-view",
@@ -79,7 +83,35 @@
 					target: Self.els.body
 				});
 				break;
-
+			// tabs
+			case "home-browse":
+			case "home-featured":
+			case "home-favorites":
+			case "home-history":
+				target = Self.els.body.find(".view-body");
+				render = Self.renders[event.type];
+				// render area
+				window.render({ ...render, target });
+				break;
+			case "search-tracks":
+			case "search-artists":
+			case "search-albums":
+			case "search-playlists":
+				target = Self.els.body.find(".view-body");
+				render = Self.renders[event.type];
+				// render area
+				window.render({ ...render, target });
+				break;
+			case "artist-top-tracks":
+			case "artist-albums":
+			case "artist-appears-on":
+			case "artist-fans-also-like":
+				target = Self.els.body.find(".view-body");
+				render = Self.renders[event.type];
+				// render area
+				window.render({ ...render, target });
+				break;
+			// misc events
 			case "play-track":
 				el = event.el.parents(".row");
 				el.parent().find(".active, .playing").removeClass("active playing");
@@ -164,24 +196,6 @@
 					// expand album after render
 					requestAnimationFrame(() => el.addClass("expand"));
 				}
-				break;
-			case "search-tracks":
-			case "search-artists":
-			case "search-albums":
-			case "search-playlists":
-				target = Self.els.body.find(".view-body");
-				render = Self.renders[event.type];
-				// render area
-				window.render({ ...render, target });
-				break;
-			case "artist-top-tracks":
-			case "artist-albums":
-			case "artist-appears-on":
-			case "artist-fans-also-like":
-				target = Self.els.body.find(".view-body");
-				render = Self.renders[event.type];
-				// render area
-				window.render({ ...render, target });
 				break;
 		}
 	}

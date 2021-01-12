@@ -7,30 +7,42 @@
 			<i class="icon-home"></i>
 			<h2>Home</h2>
 		</div>
+
+		<div class="tabs" data-click="select-tab">
+			<span data-type="home-browse" class="active">Browse</span>
+			<span data-type="home-featured">Featured</span>
+			<span data-type="home-favorites">Favorites</span>
+			<span data-type="home-history">Play History</span>
+		</div>
+
 		<div class="view-body">
-			
+			<xsl:call-template name="home-browse"/>
 		</div>
 	</section>
 </xsl:template>
 
 
-<xsl:template name="browse-view">
-	<section class="browse">
-		<div class="browse-head">
-			<i class="icon-browse"></i>
-			<h2>Browse</h2>
+<xsl:template name="home-browse">
+	<xsl:for-each select="//Categories/*">
+		<div class="category">
+			<div class="image">
+				<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+			</div>
+			<h5><xsl:value-of select="@name"/></h5>
 		</div>
-		<div class="view-body">
-			<xsl:for-each select="//Categories/*">
-				<div class="category">
-					<div class="image">
-						<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
-					</div>
-					<h5><xsl:value-of select="@name"/></h5>
-				</div>
-			</xsl:for-each>
+	</xsl:for-each>
+</xsl:template>
+
+
+<xsl:template name="home-featured">
+	<xsl:for-each select="//Featured/*">
+		<div class="featured">
+			<div class="image">
+				<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+			</div>
+			<h5><xsl:value-of select="@name"/></h5>
 		</div>
-	</section>
+	</xsl:for-each>
 </xsl:template>
 
 
@@ -50,19 +62,6 @@
 			<span data-type="search-playlists">Playlists</span>
 		</div>
 
-		<div class="view-body">
-			<xsl:call-template name="playlist"/>
-		</div>
-	</section>
-</xsl:template>
-
-
-<xsl:template name="recently-view">
-	<section class="recently">
-		<div class="recently-head">
-			<i class="icon-history"></i>
-			<h2>Recently Played</h2>
-		</div>
 		<div class="view-body">
 			<xsl:call-template name="playlist"/>
 		</div>
