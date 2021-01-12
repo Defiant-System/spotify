@@ -30,17 +30,6 @@
 
 		// history stack
 		this.history = new window.History;
-		// this.history.push({ view: "main" });
-		// this.setViewState();
-
-		// {
-		// 	template: "",
-		// 	match: "",
-		// 	target: "",
-		// 	tab: "",
-		// 	scrollTop: "view:50",
-		// }
-
 	},
 	dispatch(event) {
 		let Self = spotify.content,
@@ -55,8 +44,10 @@
 			// navigation events
 			case "go-back":
 			case "go-forward":
+				if (event.el.hasClass("disabled")) return;
 				if (event.type === "go-back") Self.history.goBack();
 				else Self.history.goForward();
+
 				// update view state
 				Self.setViewState();
 				break;
@@ -66,6 +57,9 @@
 				target = Self.els.body;
 				render = Self.renders[event.view];
 				window.render({ ...render, target });
+
+				// update view state
+				Self.setViewState();
 				break;
 			// tabs
 			case "home-browse":
@@ -193,5 +187,10 @@
 	},
 	setViewState() {
 		let state = this.history.current;
+
+		// navigation buttons UI update
+		this.els.btnBack.toggleClass("disabled", this.history.canGoBack);
+		this.els.btnForward.toggleClass("disabled", this.history.canGoForward);
+		
 	}
 }

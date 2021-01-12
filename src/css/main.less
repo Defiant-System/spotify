@@ -222,7 +222,7 @@ div[data-area="volume"] {
 					}
 				}
 
-				&:hover i[class^="icon-"] {
+				&:hover:not(.disabled) i[class^="icon-"] {
 					opacity: 1;
 				}
 			}
@@ -247,6 +247,14 @@ div[data-area="volume"] {
 
 					&:nth-child(2) {
 						margin-left: 5px;
+					}
+
+					&.disabled {
+						background: transparent;
+
+						&:hover i[class^="icon-"] {
+							opacity: .5;
+						}
 					}
 				}
 			}
@@ -663,7 +671,7 @@ div[data-area="panel"] {
 					opacity: .75;
 					cursor: pointer;
 					background: url(~/icons/icon-chevron-right.png) 50% 50% no-repeat;
-					transition: transform 120ms ease-in-out;
+					transition: transform 80ms ease-in-out;
 				}
 
 				&.expanded {
