@@ -27,37 +27,44 @@
 			uEl,
 			el;
 		switch (event.type) {
-			case "artist-view":
+			case "home-view":
 				window.render({
-					template: "artist-view",
-					match: "//Artist",
+					template: "home-view",
+					match: "//Home",
 					target: Self.els.body
 				});
 				// temp
 				// setTimeout(() =>
 				// 	Self.els.body.find(`.tabs [data-type="artist-fans-also-like"]`).trigger("click"), 300);
 				break;
-			case "playlist-view":
+			case "browse-view":
 				window.render({
-					template: "playlist-view",
-					match: "//Playlist",
+					template: "browse-view",
+					match: "//Browse",
 					target: Self.els.body
 				});
 				break;
-			case "compilation-view":
-				window.render({
-					template: "compilation-view",
-					match: "//Compilation",
-					target: Self.els.body
-				});
-				break;
-			case "album-view":
-				window.render({
-					template: "album-view",
-					match: "//Album",
-					target: Self.els.body
-				});
-				break;
+			// case "playlist-view":
+			// 	window.render({
+			// 		template: "playlist-view",
+			// 		match: "//Playlist",
+			// 		target: Self.els.body
+			// 	});
+			// 	break;
+			// case "compilation-view":
+			// 	window.render({
+			// 		template: "compilation-view",
+			// 		match: "//Compilation",
+			// 		target: Self.els.body
+			// 	});
+			// 	break;
+			// case "album-view":
+			// 	window.render({
+			// 		template: "album-view",
+			// 		match: "//Album",
+			// 		target: Self.els.body
+			// 	});
+			// 	break;
 			case "history-view":
 				window.render({
 					template: "recently-view",

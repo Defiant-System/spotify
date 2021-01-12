@@ -1,6 +1,32 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 
+<xsl:template name="home-view">
+	<section class="home">
+		<div class="home-head">
+			<i class="icon-home"></i>
+			<h2>Home</h2>
+		</div>
+		<div class="view-body">
+			
+		</div>
+	</section>
+</xsl:template>
+
+
+<xsl:template name="browse-view">
+	<section class="browse">
+		<div class="browse-head">
+			<i class="icon-browse"></i>
+			<h2>Browse</h2>
+		</div>
+		<div class="view-body">
+			
+		</div>
+	</section>
+</xsl:template>
+
+
 <xsl:template name="search-view">
 	<section class="search">
 		<div class="search-head">
@@ -28,9 +54,7 @@
 	<section class="recently">
 		<div class="recently-head">
 			<i class="icon-history"></i>
-			<h2>
-				Recently Played
-			</h2>
+			<h2>Recently Played</h2>
 		</div>
 		<div class="view-body">
 			<xsl:call-template name="playlist"/>

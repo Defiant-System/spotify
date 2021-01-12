@@ -1,4 +1,8 @@
 <Data>
+	<Home/>
+
+	<Browse/>
+
 	<Recently>
 		<track _index="0" name="Ground Level" duration_ms="252666" uri="spotify:track:1UgsbIteej4QpAcX3aUFeV">
 			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
