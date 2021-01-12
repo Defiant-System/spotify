@@ -38,44 +38,11 @@
 					target: Self.els.body
 				});
 				// temp
+				// setTimeout(() =>
+				// 	Self.els.body.find(`.tabs [data-type="home-favorites"]`).trigger("click"), 100);
 				setTimeout(() =>
-					Self.els.body.find(`.tabs [data-type="home-favorites"]`).trigger("click"), 300);
+					Self.els.body.find(`.category:nth-child(2)`).trigger("click"), 100);
 				break;
-			case "browse-view":
-				window.render({
-					template: "browse-view",
-					match: "//Browse",
-					target: Self.els.body
-				});
-				break;
-			// case "playlist-view":
-			// 	window.render({
-			// 		template: "playlist-view",
-			// 		match: "//Playlist",
-			// 		target: Self.els.body
-			// 	});
-			// 	break;
-			// case "compilation-view":
-			// 	window.render({
-			// 		template: "compilation-view",
-			// 		match: "//Compilation",
-			// 		target: Self.els.body
-			// 	});
-			// 	break;
-			// case "album-view":
-			// 	window.render({
-			// 		template: "album-view",
-			// 		match: "//Album",
-			// 		target: Self.els.body
-			// 	});
-			// 	break;
-			// case "history-view":
-			// 	window.render({
-			// 		template: "recently-view",
-			// 		match: "//Recently",
-			// 		target: Self.els.body
-			// 	});
-			// 	break;
 			case "search-view":
 				window.render({
 					template: "search-view",
@@ -148,6 +115,24 @@
 			case "sort-list":
 				el = $(event.target);
 				console.log(el);
+				break;
+			case "select-category":
+				el = $(event.target);
+
+				window.render({
+					template: "category-view",
+					match: "//CategoryPlayList",
+					target: Self.els.body
+				});
+				break;
+			case "select-playlist":
+				el = $(event.target);
+
+				window.render({
+					template: "playlist-view",
+					match: "//Compilation",
+					target: Self.els.body
+				});
 				break;
 			case "select-album":
 			case "select-artist":

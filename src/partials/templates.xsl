@@ -23,26 +23,114 @@
 
 
 <xsl:template name="home-browse">
-	<xsl:for-each select="//Categories/*">
-		<div class="category">
-			<div class="image">
-				<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+	<div class="categories" data-click="select-category">
+		<xsl:for-each select="//Categories/*">
+			<div class="category">
+				<div class="image">
+					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+				</div>
+				<h5><xsl:value-of select="@name"/></h5>
 			</div>
-			<h5><xsl:value-of select="@name"/></h5>
-		</div>
-	</xsl:for-each>
+		</xsl:for-each>
+	</div>
 </xsl:template>
 
 
 <xsl:template name="home-featured">
-	<xsl:for-each select="//Featured/*">
-		<div class="featured">
-			<div class="image">
-				<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+	<div class="featured-playlists" data-click="select-featured">
+		<xsl:for-each select="//Featured/*">
+			<div class="featured">
+				<div class="image">
+					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+				</div>
+				<h5><xsl:value-of select="@name"/></h5>
 			</div>
-			<h5><xsl:value-of select="@name"/></h5>
+		</xsl:for-each>
+	</div>
+</xsl:template>
+
+
+<xsl:template name="category-view">
+	<section class="category-playlists">
+		<div class="category-head">
+			<i class="icon-category"></i>
+			<h2>Category</h2>
 		</div>
-	</xsl:for-each>
+
+		<div class="view-body playlists" data-click="select-playlist">
+			<xsl:for-each select="//CategoryPlayList/*">
+				<div class="playlist">
+					<div class="image">
+						<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+						<i class="icon-player-play">
+							<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+						</i>
+					</div>
+					<h5><xsl:value-of select="@name"/></h5>
+					<span><xsl:value-of select="text()"/></span>
+				</div>
+			</xsl:for-each>
+		</div>
+	</section>
+</xsl:template>
+
+
+<xsl:template name="playlists">
+	<div class="playlists">
+		<xsl:for-each select="./*">
+			<div class="playlist">
+				<div class="image">
+					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+					<i class="icon-player-play">
+						<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+					</i>
+				</div>
+				<h5><xsl:value-of select="@name"/></h5>
+			</div>
+		</xsl:for-each>
+	</div>
+</xsl:template>
+
+
+<xsl:template name="playlist">
+	<div class="table">
+		<div class="row head" data-click="sort-list">
+			<div class="cell"></div>
+			<div class="cell">Title</div>
+			<div class="cell">Artist</div>
+			<div class="cell">Album</div>
+			<div class="cell"><i class="icon-clock"></i></div>
+		</div>
+		<div class="table-body" data-click="select-track">
+			<xsl:for-each select="./*">
+				<xsl:sort order="ascending" select="@_index"/>
+				<div class="row">
+					<div class="cell">
+						<i class="icon-player-play">
+							<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+						</i>
+						<i class="icon-heart">
+							<xsl:if test="position() &lt; 5">
+								<xsl:attribute name="class">icon-heart-full</xsl:attribute>
+							</xsl:if>
+						</i>
+					</div>
+					<div class="cell"><xsl:value-of select="@name"/></div>
+					<div class="cell">
+						<xsl:attribute name="data-uri"><xsl:value-of select="artists/@uri"/></xsl:attribute>
+						<xsl:value-of select="artists/@name"/>
+					</div>
+					<div class="cell">
+						<xsl:attribute name="data-uri"><xsl:value-of select="album/@uri"/></xsl:attribute>
+						<xsl:value-of select="album/@name"/>
+					</div>
+					<div class="cell"><xsl:call-template name="translate-duration">
+						<xsl:with-param name="ms" select="@duration_ms" />
+					</xsl:call-template></div>
+				</div>
+			</xsl:for-each>
+		</div>
+	</div>
 </xsl:template>
 
 
@@ -93,48 +181,6 @@
 			<xsl:call-template name="playlist"/>
 		</div>
 	</section>
-</xsl:template>
-
-
-<xsl:template name="playlist">
-	<div class="table">
-		<div class="row head" data-click="sort-list">
-			<div class="cell"></div>
-			<div class="cell">Title</div>
-			<div class="cell">Artist</div>
-			<div class="cell">Album</div>
-			<div class="cell"><i class="icon-clock"></i></div>
-		</div>
-		<div class="table-body" data-click="select-track">
-			<xsl:for-each select="./*">
-				<xsl:sort order="ascending" select="@_index"/>
-				<div class="row">
-					<div class="cell">
-						<i class="icon-player-play">
-							<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
-						</i>
-						<i class="icon-heart">
-							<xsl:if test="position() &lt; 5">
-								<xsl:attribute name="class">icon-heart-full</xsl:attribute>
-							</xsl:if>
-						</i>
-					</div>
-					<div class="cell"><xsl:value-of select="@name"/></div>
-					<div class="cell">
-						<xsl:attribute name="data-uri"><xsl:value-of select="artists/@uri"/></xsl:attribute>
-						<xsl:value-of select="artists/@name"/>
-					</div>
-					<div class="cell">
-						<xsl:attribute name="data-uri"><xsl:value-of select="album/@uri"/></xsl:attribute>
-						<xsl:value-of select="album/@name"/>
-					</div>
-					<div class="cell"><xsl:call-template name="translate-duration">
-						<xsl:with-param name="ms" select="@duration_ms" />
-					</xsl:call-template></div>
-				</div>
-			</xsl:for-each>
-		</div>
-	</div>
 </xsl:template>
 
 
@@ -409,23 +455,6 @@
 				<div class="image">
 					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
 					<i class="icon-player-play"></i>
-				</div>
-				<h5><xsl:value-of select="@name"/></h5>
-			</div>
-		</xsl:for-each>
-	</div>
-</xsl:template>
-
-
-<xsl:template name="playlists">
-	<div class="playlists">
-		<xsl:for-each select="./*">
-			<div class="playlist">
-				<div class="image">
-					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
-					<i class="icon-player-play">
-						<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
-					</i>
 				</div>
 				<h5><xsl:value-of select="@name"/></h5>
 			</div>
