@@ -123,6 +123,7 @@ i[class^="icon-"] {
 	&.icon-player-pause    { background-image: url(~/icons/icon-pause.png); }
 	&.icon-player-next     { background-image: url(~/icons/icon-next.png); }
 	&.icon-player-repeat   { background-image: url(~/icons/icon-repeat.png); }
+	&.icon-navigation      { background-image: url(~/icons/icon-navigation.png); }
 	&.icon-chevron-left    { background-image: url(~/icons/icon-chevron-left.png); }
 	&.icon-chevron-right   { background-image: url(~/icons/icon-chevron-right.png); }
 
@@ -205,6 +206,11 @@ div[data-area="volume"] {
 				display: inline-block;
 				border-radius: 50%;
 
+				.icon-chevron-left {
+					background-image: url(~/icons/icon-navigation.png);
+					left: 4px;
+				}
+
 				&:nth-child(2) {
 					z-index: 1;
 					margin-left: -21px;
@@ -232,6 +238,11 @@ div[data-area="volume"] {
 			&:hover {
 				span {
 					background: #333;
+
+					.icon-chevron-left {
+						background-image: url(~/icons/icon-chevron-left.png);
+						left: 3px;
+					}
 
 					&:nth-child(2) {
 						margin-left: 5px;
