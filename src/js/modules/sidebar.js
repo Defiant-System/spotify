@@ -20,29 +20,29 @@
 				el.parent().find(".active").removeClass("active");
 				el.addClass("active");
 
-				APP.content.dispatch({ type: "playlist-view" });
+				APP.content.dispatch({ type: "home-view" });
 				break;
 			case "go-browse":
 				el = $(event.target);
 				el.parent().find(".active").removeClass("active");
 				el.addClass("active");
 				
-				APP.content.dispatch({ type: "artist-view" });
+				APP.content.dispatch({ type: "browse-view" });
 				break;
-			case "go-radio":
-				el = $(event.target);
-				el.parent().find(".active").removeClass("active");
-				el.addClass("active");
+			// case "go-radio":
+			// 	el = $(event.target);
+			// 	el.parent().find(".active").removeClass("active");
+			// 	el.addClass("active");
 				
-				APP.content.dispatch({ type: "compilation-view" });
-				break;
-			case "go-queue":
-				el = $(event.target);
-				el.parent().find(".active").removeClass("active");
-				el.addClass("active");
+			// 	APP.content.dispatch({ type: "compilation-view" });
+			// 	break;
+			// case "go-queue":
+			// 	el = $(event.target);
+			// 	el.parent().find(".active").removeClass("active");
+			// 	el.addClass("active");
 				
-				APP.content.dispatch({ type: "album-view" });
-				break;
+			// 	APP.content.dispatch({ type: "album-view" });
+			// 	break;
 			case "go-history":
 				el = $(event.target);
 				el.parent().find(".active").removeClass("active");

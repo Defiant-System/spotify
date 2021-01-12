@@ -3,19 +3,27 @@
 
 {
 	init() {
-
+		this.els = {
+			panel: window.find("div[data-area='panel']"),
+		};
 	},
 	dispatch(event) {
-		let Self = spotify.panel,
+		let APP = spotify,
+			Self = APP.panel,
 			el;
 		switch (event.type) {
-			case "toggle-list-folder":
+			case "de-select-playlist":
+				Self.els.panel.find(".active").removeClass("active");
+				break;
+			case "select-playlist":
 				el = $(event.target);
 				if (el.hasClass("folder")) {
 					el.toggleClass("expanded", el.hasClass("expanded"));
 				} else if (el.hasClass("item")) {
-					el.parents(".sidebar").find(".active").removeClass("active");
+					Self.els.panel.find(".active").removeClass("active");
 					el.addClass("active");
+
+					APP.content.dispatch({ type: "playlist-view" });
 				}
 				break;
 		}
