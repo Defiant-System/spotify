@@ -178,6 +178,10 @@ div[data-area="volume"] {
 	display: flex;
 	flex-flow: column;
 
+	&[data-area="sidebar"] {
+		top: 16px;
+	}
+
 	.top {
 		flex: 1;
 
@@ -188,7 +192,7 @@ div[data-area="volume"] {
 			z-index: 3;
 			padding: 3px;
 			white-space: nowrap;
-			border-radius: 29px;
+			border-radius: 0 0 13px 0;
 			font-size: 0;
 
 			span {
@@ -209,6 +213,10 @@ div[data-area="volume"] {
 					.icon-chevron-right {
 						left: 5px;
 					}
+				}
+
+				&:hover i[class^="icon-"] {
+					opacity: 1;
 				}
 			}
 
@@ -232,7 +240,7 @@ div[data-area="volume"] {
 			}
 		}
 
-		.ctrl-range {
+		.ctrl-library {
 			&.opened i {
 				opacity: 1;
 				filter: none;
@@ -257,7 +265,7 @@ div[data-area="volume"] {
 			}
 		}
 
-		&:hover i[class^="icon-"] {
+		&:hover:not(.ctrl-navigation) i[class^="icon-"] {
 			opacity: 1;
 		}
 
