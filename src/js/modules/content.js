@@ -17,9 +17,15 @@
 		"search-playlists": { template: "playlists",    match: "//Playlists" },
 	},
 	init() {
+		// fast references
 		this.els = {
 			body: window.find("content .body")
 		};
+
+		// history stack
+		this.history = new window.History;
+		// this.history.push({ view: "main" });
+		// this.setViewState();
 	},
 	dispatch(event) {
 		let Self = spotify.content,

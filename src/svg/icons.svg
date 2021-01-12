@@ -122,14 +122,14 @@
 		<style type="text/css">
 			.st0{fill:none;stroke:#fff;stroke-width:64;stroke-linecap:round;stroke-linejoin:round;}
 		</style>
-		<polyline class="st0" points="154.4,443 347.2,250.3 152.8,57 "/>
+		<polyline class="st0" points="345.6,57 152.8,249.7 347.2,443 "/>
 	</svg>
 
 	<svg id="icon-chevron-right" viewBox="0 0 500 500">
 		<style type="text/css">
 			.st0{fill:none;stroke:#fff;stroke-width:64;stroke-linecap:round;stroke-linejoin:round;}
 		</style>
-		<polyline class="st0" points="345.6,57 152.8,249.7 347.2,443 "/>
+		<polyline class="st0" points="154.4,443 347.2,250.3 152.8,57 "/>
 	</svg>
 
 </svg>
