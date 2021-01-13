@@ -13,7 +13,7 @@ const spotify = {
 		window.find(`.top span[data-click="go-home"]`).trigger("click");
 
 		// temp
-		setTimeout(() => window.find(".tabs [data-type='home-history']").trigger("click"), 100);
+		// setTimeout(() => window.find(".tabs [data-type='home-history']").trigger("click"), 100);
 	},
 	dispatch(event) {
 		let Self = spotify,
@@ -53,6 +53,7 @@ const spotify = {
 				}
 		}
 	},
+	api:     @import "modules/api.js",
 	panel:   @import "modules/panel.js",
 	sidebar: @import "modules/sidebar.js",
 	content: @import "modules/content.js",
