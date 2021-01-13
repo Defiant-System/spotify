@@ -200,6 +200,12 @@
 						match: "//Album",
 						target: el.find(".album-tracks")
 					});
+
+					// look for playing track uri - update UI, if found
+					uri = APP.player.playing.track;
+					el.find(`.icon-player-play[data-uri="${uri}"]`)
+						.parents(".row").addClass("track-playing");
+
 					// expand album after render
 					requestAnimationFrame(() => el.addClass("expand"));
 				}

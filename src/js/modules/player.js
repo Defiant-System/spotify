@@ -63,9 +63,16 @@
 				break;
 			// custom events
 			case "player-play":
+				el = Self.els.btnPlay.find("> i");
+				el.prop({ "className": "icon-player-pause" });
+
 				Self.playing.track = event.uri;
 				break;
 			case "player-pause":
+				el = Self.els.btnPlay.find("> i");
+				el.prop({ "className": "icon-player-play" });
+
+				Self.playing.pause = Self.playing.track;
 				Self.playing.track = false;
 				break;
 			case "player-previous":
@@ -75,13 +82,8 @@
 				console.log(event);
 				break;
 			case "toggle-play":
-				el = event.el.find("> i");
-
-				if (el.hasClass("icon-player-play")) {
-					el.prop({ "className": "icon-player-pause" });
-				} else {
-					el.prop({ "className": "icon-player-play" });
-				}
+				if (Self.playing.track) Self.dispatch({ type: "player-pause" });
+				else Self.dispatch({ type: "player-play", uri: Self.playing.paused });
 				break;
 		}
 	}
