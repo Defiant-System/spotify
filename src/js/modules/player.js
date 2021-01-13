@@ -66,6 +66,10 @@
 				el = Self.els.btnPlay.find("> i");
 				el.prop({ "className": "icon-player-pause" });
 
+				// look for playing track uri - update UI, if found
+				APP.content.els.body.find(`.icon-player-play[data-uri="${event.uri}"]`)
+					.parents(".row").addClass("track-playing");
+
 				Self.playing.track = event.uri;
 				break;
 			case "player-pause":
@@ -87,8 +91,11 @@
 				console.log(event);
 				break;
 			case "toggle-play":
-				if (Self.playing.track) Self.dispatch({ type: "player-pause" });
-				else Self.dispatch({ type: "player-play", uri: Self.playing.paused });
+				if (Self.playing.track) {
+					Self.dispatch({ type: "player-pause" });
+				} else if (Self.playing.paused) {
+					Self.dispatch({ type: "player-play", uri: Self.playing.paused });
+				}
 				break;
 		}
 	}
