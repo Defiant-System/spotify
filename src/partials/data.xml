@@ -186,50 +186,202 @@
 		</track>
 	</Recently>
 	
-	<Search>
-		<Tracks>
-			<track _index="0" name="Ground Level" duration_ms="252666" uri="spotify:track:1UgsbIteej4QpAcX3aUFeV">
-				<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-				<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
-			</track>
-			<track _index="1" name="I Feel You" duration_ms="274720" uri="spotify:track:0XM5qsvRQGSWE1hlSq4E5b">
-				<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-				<album name="Paradise" uri="spotify:album:6ydThtRPfXjHS79flxvVMC"/>
-			</track>
-			<track _index="2" name="Elevate My Mind" duration_ms="196826" uri="spotify:track:7uABD1Cd6M8SGA75OxeUqB">
-				<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-				<album name="Supernatural" uri="spotify:album:3EqE50w57ZSxSDGhmL1tg4"/>
-			</track>
-			<track _index="3" name="Connected" duration_ms="313000" uri="spotify:track:1ZoE2naC9ySlPLdBZhS1rM">
-				<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-				<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
-			</track>
-			<track _index="4" name="Step It Up" duration_ms="301000" uri="spotify:track:6Y1HIgqlgYSzMalK6eBiEP">
-				<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-				<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
-			</track>
-			<track _index="5" name="Traffic" duration_ms="315600" uri="spotify:track:02I0QezAPPO9Q9i1or053S">
-				<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-				<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
-			</track>
-			<track _index="6" name="The Right Effect" duration_ms="280906" uri="spotify:track:4Mo94v268UDbjG9QLGTWBb">
-				<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-				<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
-			</track>
-			<track _index="7" name="Creation" duration_ms="304000" uri="spotify:track:2RAX6iVOjhH5vL33shTzfX">
-				<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-				<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
-			</track>
-			<track _index="8" name="The End" duration_ms="229840" uri="spotify:track:4kWFbqvYW3izvkcCmQVyG0">
-				<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-				<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
-			</track>
-			<track _index="9" name="Sketch" duration_ms="343666" uri="spotify:track:31z4dKubn9SVuuo4ZAj5R1">
-				<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-				<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
-			</track>
-		</Tracks>
-	</Search>
+	<SearchArtists total="1046" next="https://api.spotify.com/v1/search?query=holiday&amp;type=artist&amp;market=SE&amp;offset=25&amp;limit=25">
+		<artist name="Holidays" uri="spotify:artist:6IxjXsaqZ81Fi1HiwRq4LS" image="https://i.scdn.co/image/967c323dd3753e6f6919b9195656a69490ee9ce6"/>
+		<artist name="Billie Holiday" uri="spotify:artist:1YzCsTRb22dQkh9lghPIrp" image="https://i.scdn.co/image/0f472c69891d82d5049f7de35426b2fdeb6051c0"/>
+		<artist name="Atlantic Holiday" uri="spotify:artist:5D9NYfOaGxFKCalJIeia1N" image="https://i.scdn.co/image/021102db7120d0f8c2ce92100c779d26fe3cb915"/>
+		<artist name="Holiday Jazz Ensemble" uri="spotify:artist:1baSwsjjhEUkDzXPho77Hf" image="https://i.scdn.co/image/f29078586068d90ebf1d2ad3217b6bcb6528342f"/>
+		<artist name="Jack Holiday" uri="spotify:artist:64yON9pK0j392YkionGKAF" image="https://i.scdn.co/image/ab67616d00001e0295489a41fb07013948cddefe"/>
+		<artist name="The Holiday Horns" uri="spotify:artist:4BUCzxTW8MiC4TT0C29CKF" image="https://i.scdn.co/image/ab67616d00001e02ed524b93e09155b537b16421"/>
+		<artist name="The Disney Holiday Chorus" uri="spotify:artist:4ag7CRSzcTZQX2Bter3fLR" image=""/>
+		<artist name="Holiday Band Ensemble" uri="spotify:artist:4L2WIrD69vE4XPjYehJYci" image="https://i.scdn.co/image/ab67616d00001e023ca161e6ca54213bd6bc3896"/>
+		<artist name="J. Holiday" uri="spotify:artist:7G6hXrjGpi6I7waNl4wxAk" image="https://i.scdn.co/image/e7e156d7f4358c8fb932d854ad7580608ce84aaa"/>
+		<artist name="Holiday Countdown" uri="spotify:artist:3n5GnoJe6aBCXVIjI9UJGQ" image="https://i.scdn.co/image/ab67616d00001e0234415aa4ae9abcc00d439e4c"/>
+		<artist name="Christmas Jazz Holiday Music" uri="spotify:artist:2XhOwYHiNFORp3FghkeV6z" image="https://i.scdn.co/image/ab67616d00001e029f89f183135d3a42b8570cfb"/>
+		<artist name="Holiday Sidewinder" uri="spotify:artist:60Z50yxe6i4mkUwoykAnwG" image="https://i.scdn.co/image/8fe681246fbe08e0d989d25bfcc15cf6de37766c"/>
+		<artist name="Holiday Rockers" uri="spotify:artist:3DbbwN6KiTd1SiudMbIHvo" image="https://i.scdn.co/image/ab67616d00001e02fc7d2653a39f4b3e08608fac"/>
+		<artist name="Satan Takes A Holiday" uri="spotify:artist:3BZBnC18MJDRtneF9r7Qx7" image="https://i.scdn.co/image/70bd0f1e9f689f49669e44b631c905dfeed04582"/>
+		<artist name="Purple Holiday" uri="spotify:artist:41ZgpkCgDfKPg0f59pnSNg" image="https://i.scdn.co/image/ab67616d00001e0272e11d4e5abf9832bb6f60f0"/>
+		<artist name="Holiday Safari" uri="spotify:artist:4urAuqNWiY2mZWSRAqWNar" image="https://i.scdn.co/image/ab67616d00001e021641f0e04b378b727909ffe2"/>
+		<artist name="Christmas Music Holiday Trio" uri="spotify:artist:4XWZxmAaLdsJlJvUjlowZF" image="https://i.scdn.co/image/ab67616d00001e02f276d5a8693984a2de549350"/>
+		<artist name="Moon Holiday" uri="spotify:artist:5HAqdulyJZF8EPKIvPMRTy" image="https://i.scdn.co/image/196638ed8b77fc908221af25a120aa5633b42f9c"/>
+		<artist name="Holiday Express" uri="spotify:artist:7CDhOqpVgsVE30D1KC6wng" image="https://i.scdn.co/image/ab67616d00001e024ce9074dcca5ea4928e79e7d"/>
+		<artist name="Vlad Holiday" uri="spotify:artist:4kzBapiIVMxwhJLsTm28Gc" image="https://i.scdn.co/image/4126b60f7e27a033ba84ac1ca9974e3b0f2b4e17"/>
+		<artist name="Holiday Sounds Orchestra" uri="spotify:artist:5e0JSK8KfvtuYXmtX45I09" image="https://i.scdn.co/image/ab67616d00001e02962d6fee4d4874c69c40b9f3"/>
+		<artist name="Mason Holiday" uri="spotify:artist:4lPfX4kSXsp4bWdR4jDfzy" image="https://i.scdn.co/image/738ffca082d0ccd02a44628880a910ddc9cc624d"/>
+		<artist name="Holiday Players" uri="spotify:artist:2UulPuuEMAeXRx2qJbYJPD" image="https://i.scdn.co/image/ab67616d00001e020bdd5eca115f0f027b2185b2"/>
+		<artist name="Sunny Holiday" uri="spotify:artist:2dX157YnbGJAnNclK9HU0X" image="https://i.scdn.co/image/ab67616d00001e02663dab0b9c9f608eb0cd5662"/>
+		<artist name="Holiday Screamer" uri="spotify:artist:3ydteMm18xBjMuFDb8RA1J" image="https://i.scdn.co/image/ab67616d00001e022cbfb59823036fda34a25458"/>
+	</SearchArtists>
+
+	<SearchAlbums total="10015" next="https://api.spotify.com/v1/search?query=holiday&amp;type=album&amp;market=SE&amp;offset=25&amp;limit=25">
+		<album name="HOLIDAY" release_date="2020-11-13" total_tracks="1" uri="spotify:album:4EvukZrmNBiqJbs3LwOSHu" image="https://i.scdn.co/image/ab67616d00001e026771a05f34d77e5fc2bde64c"/>
+		<album name="Holiday Inn (Original Motion Picture Soundtrack)" release_date="1942-01-01" total_tracks="12" uri="spotify:album:4ZZvKnA1YJ2KcwjMmHBinq" image="https://i.scdn.co/image/ab67616d00001e02481bb0db1e8bd0c7104368a4"/>
+		<album name="Holiday Wishes" release_date="2014-10-10" total_tracks="12" uri="spotify:album:0EGX5qfw6VEPOMoCUFJFHl" image="https://i.scdn.co/image/ab67616d00001e02b942e9ff43d692b700328ecc"/>
+		<album name="Wonder (Holiday Deluxe)" release_date="2020-12-05" total_tracks="16" uri="spotify:album:01haNCctw4EUPl8xUHVhdl" image="https://i.scdn.co/image/ab67616d00001e02c6da225391c1c8319a016ce1"/>
+		<album name="Holiday Piano EP" release_date="2016-11-22" total_tracks="3" uri="spotify:album:0pCLie2ziptu5IJwLPJzhI" image="https://i.scdn.co/image/ab67616d00001e02d4d1dbc213728fd8337d974d"/>
+		<album name="White Christmas (Spotify Singles - Holiday, Recorded at Air Studios, London)" release_date="2017-11-29" total_tracks="1" uri="spotify:album:1gDgPEEeuFPfRMASQWU8A0" image="https://i.scdn.co/image/ab67616d00001e02affb8f26c7b1643e6ea93551"/>
+		<album name="Holiday For Swing!" release_date="2014-09-30" total_tracks="13" uri="spotify:album:2RRdk9dTPqgDdeEWRSflbg" image="https://i.scdn.co/image/ab67616d00001e02f310b001b10c35ded37d57fd"/>
+		<album name="Holiday for Kids" release_date="2019-11-09" total_tracks="50" uri="spotify:album:68AQgbEtfO3MDrA3OBUrMN" image="https://i.scdn.co/image/ab67616d00001e0218874be445979c85fba9bb2b"/>
+		<album name="Holiday" release_date="2005-03-30" total_tracks="2" uri="spotify:album:1SPzhFzjXrz9OXLP2rKg1C" image="https://i.scdn.co/image/ab67616d00001e021bb1db39abc18755d7ab2114"/>
+		<album name="Holidays Are Coming (from the Coca-Cola Campaign) (feat. Camélia Jordana &amp; Namika)" release_date="2018-11-09" total_tracks="1" uri="spotify:album:4nQX6yf5kF6m4sCBtHw9wA" image="https://i.scdn.co/image/ab67616d00001e02b2f2a817813440644bcde994"/>
+		<album name="Spotify Singles - Holiday" release_date="2017-11-29" total_tracks="2" uri="spotify:album:0kCDFEzZ3zNnr5zdO0Bh08" image="https://i.scdn.co/image/ab67616d00001e02372cd9cefda2a6d3d11428fc"/>
+		<album name="Holiday At Lake Bodom, 15 Years of Wasted Youth" release_date="2012-01-01" total_tracks="20" uri="spotify:album:3XoY2CTmKFB0MdlKAOnXau" image="https://i.scdn.co/image/ab67616d00001e0222e014f34badd48002a6285e"/>
+		<album name="Holidays" release_date="2020-11-20" total_tracks="6" uri="spotify:album:5stR2YT6kaCj8dOe6VjGvo" image="https://i.scdn.co/image/ab67616d00001e029b01ff6b1eac09ddec7811ed"/>
+		<album name="One Wish / The Holiday Album" release_date="2003-11-18" total_tracks="11" uri="spotify:album:7bEbn6yaqOzXmb3eAXDRbU" image="https://i.scdn.co/image/ab67616d00001e0283637e0f2b1fa0ce1db265f6"/>
+		<album name="Holiday (Frank Walker Remix)" release_date="2020-08-14" total_tracks="1" uri="spotify:album:1lpf7O1Bm6l1ncWRA4P2Qp" image="https://i.scdn.co/image/ab67616d00001e0237d602489f94e0513b347241"/>
+		<album name="Spotify Singles - Holiday" release_date="2017-11-29" total_tracks="1" uri="spotify:album:1knkuS0R3qoY1pmwYrMQ4N" image="https://i.scdn.co/image/ab67616d00001e024e30267ed8f2c5e3ddae9beb"/>
+		<album name="Holiday Road" release_date="1983" total_tracks="2" uri="spotify:album:7H5J8i2zpo24z71bUyv8BX" image="https://i.scdn.co/image/ab67616d00001e02217c0066ccc25db60b58e7aa"/>
+		<album name="Christmas Holiday Lounge" release_date="2012-10-29" total_tracks="29" uri="spotify:album:3Om5raxcA7cu3mGadwtrdc" image="https://i.scdn.co/image/ab67616d00001e02a309c76aef8fe8aa6cb6d9d9"/>
+		<album name="Holiday Sun (feat. Mike Palace)" release_date="2015-04-17" total_tracks="1" uri="spotify:album:0JOv8wiJvBbPbbAw2wl57K" image="https://i.scdn.co/image/ab67616d00001e0285df69290c266b562d8fabc8"/>
+		<album name="Home for the Holidays" release_date="2019-09-15" total_tracks="1" uri="spotify:album:3mcRjaxQEF83X8u7PWHqba" image="https://i.scdn.co/image/ab67616d00001e0256999717694701ca3db63db7"/>
+		<album name="Holiday Jazz" release_date="2017-11-07" total_tracks="33" uri="spotify:album:4Y5LPU1oUNQUGPNOEq8Jkm" image="https://i.scdn.co/image/ab67616d00001e0241f9d386e5320c9bd91718c2"/>
+		<album name="Billie Holiday" release_date="1957-01-01" total_tracks="12" uri="spotify:album:4MkdTflpaaGGcXb5vtOYRs" image="https://i.scdn.co/image/ab67616d00001e02f8743d2c7812763f7f66e83b"/>
+		<album name="Holiday" release_date="2014-10-21" total_tracks="13" uri="spotify:album:2clJOOkMz707eU2OnHgS0z" image="https://i.scdn.co/image/ab67616d00001e022f0e0d7d1f8344558d116a78"/>
+		<album name="Holiday" release_date="1994" total_tracks="14" uri="spotify:album:7EHpguu9kylNKjC1EcS1fR" image="https://i.scdn.co/image/ab67616d00001e02c2ca8f9b52f42edab9890ea6"/>
+		<album name="Under The Mistletoe" release_date="2020-10-28" total_tracks="1" uri="spotify:album:2nndXLmS4C16yX7UJBWW2U" image="https://i.scdn.co/image/ab67616d00001e02b258b7954efb0741bcef97de"/>
+	</SearchAlbums>
+	
+	<SearchTracks total="250018" next="https://api.spotify.com/v1/search?query=holiday&amp;type=track&amp;market=SE&amp;offset=25&amp;limit=25">
+		<track name="HOLIDAY" duration_ms="154997" popularity="95" uri="spotify:track:6zFMeegAMYQo0mt8rXtrli">
+			<artists name="Lil Nas X" uri="spotify:artist:7jVv8c5Fj3E9VhNjxT4snq"/>
+			<album name="HOLIDAY" uri="spotify:album:4EvukZrmNBiqJbs3LwOSHu"/>
+		</track>
+		<track name="Holidays (feat. Earth, Wind &amp; Fire)" duration_ms="165333" popularity="77" uri="spotify:track:0Yeh2VJCsxSgbftSGTiUbN">
+			<artists name="Meghan Trainor" uri="spotify:artist:6JL8zeS1NmiOftqZTRgdTz"/>
+			<artists name="Earth, Wind &amp; Fire" uri="spotify:artist:4QQgXkCYTt3BlENzhyNETg"/>
+			<album name="A Very Trainor Christmas" uri="spotify:album:2Mb2HvX9H2J98qOvZGdsFf"/>
+		</track>
+		<track name="White Christmas" duration_ms="177480" popularity="87" uri="spotify:track:4so0Wek9Ig1p6CRCHuINwW">
+			<artists name="Bing Crosby" uri="spotify:artist:6ZjFtWeHP9XN7FeKSUe80S"/>
+			<artists name="Ken Darby Singers" uri="spotify:artist:69UfPJgUmFFAVT740qGVZi"/>
+			<artists name="John Scott Trotter &amp; His Orchestra" uri="spotify:artist:735L650pvygCZZlPMyHqsN"/>
+			<album name="Holiday Inn (Original Motion Picture Soundtrack)" uri="spotify:album:4ZZvKnA1YJ2KcwjMmHBinq"/>
+		</track>
+		<track name="Holiday" duration_ms="233026" popularity="70" uri="spotify:track:5vfjUAhefN7IjHbTvVCT4Z">
+			<artists name="Green Day" uri="spotify:artist:7oPftvlwr6VrsViSDV7fJY"/>
+			<album name="Holiday" uri="spotify:album:1SPzhFzjXrz9OXLP2rKg1C"/>
+		</track>
+		<track name="White Christmas - Spotify Singles - Holiday, Recorded at Air Studios, London" duration_ms="192458" popularity="78" uri="spotify:track:7F9oCEKbqjN99cV5HpvYER">
+			<artists name="George Ezra" uri="spotify:artist:2ysnwxxNtSgbb9t1m2Ur4j"/>
+			<album name="White Christmas (Spotify Singles - Holiday, Recorded at Air Studios, London)" uri="spotify:album:1gDgPEEeuFPfRMASQWU8A0"/>
+		</track>
+		<track name="Holiday" duration_ms="213600" popularity="71" uri="spotify:track:5428XgSLRJfpMRN3r6YXob">
+			<artists name="Little Mix" uri="spotify:artist:3e7awlrlDSwF3iM0WBjGMp"/>
+			<album name="Confetti" uri="spotify:album:33a8Ha3pE7fo2o4T4xLabF"/>
+		</track>
+		<track name="Holidays Are Coming (from the Coca-Cola Campaign) (feat. Camélia Jordana &amp; Namika)" duration_ms="188144" popularity="62" uri="spotify:track:2fUcw8H81f2XJqRfqWYW93">
+			<artists name="The Kingdom Choir" uri="spotify:artist:3OZZeMIZnTvQKjfQEEqx6C"/>
+			<artists name="Camélia Jordana" uri="spotify:artist:2XkCa3HcntokIgOP5N3QO7"/>
+			<artists name="Namika" uri="spotify:artist:0HSc7yUdNSosxRb2UJnXlz"/>
+			<album name="Holidays Are Coming (from the Coca-Cola Campaign) (feat. Camélia Jordana &amp; Namika)" uri="spotify:album:4nQX6yf5kF6m4sCBtHw9wA"/>
+		</track>
+		<track name="The Christmas Song (Shawn Mendes &amp; Camila Cabello)" duration_ms="196254" popularity="72" uri="spotify:track:66VenHDtrQAw7FCjyF2J56">
+			<artists name="Shawn Mendes" uri="spotify:artist:7n2wHs1TKAczGzO7Dd2rGr"/>
+			<artists name="Camila Cabello" uri="spotify:artist:4nDoRrQiYLoBzwC5BhVJzF"/>
+			<album name="Wonder (Holiday Deluxe)" uri="spotify:album:01haNCctw4EUPl8xUHVhdl"/>
+		</track>
+		<track name="Holiday / Boulevard of Broken Dreams" duration_ms="493400" popularity="73" uri="spotify:track:0MsrWnxQZxPAcov7c74sSo">
+			<artists name="Green Day" uri="spotify:artist:7oPftvlwr6VrsViSDV7fJY"/>
+			<album name="American Idiot" uri="spotify:album:5dN7F9DV0Qg1XRdIgW8rke"/>
+		</track>
+		<track name="Home for the Holidays" duration_ms="226457" popularity="68" uri="spotify:track:6M2ZatEcMJNWrhm7dF8h6M">
+			<artists name="Vlad Kotsky" uri="spotify:artist:4dXJTtjTNvhUGdt2j7CU2M"/>
+			<album name="Home for the Holidays" uri="spotify:album:3mcRjaxQEF83X8u7PWHqba"/>
+		</track>
+		<track name="Holiday - Frank Walker Remix" duration_ms="204210" popularity="57" uri="spotify:track:7o4KaZkEYqCieZyV03bdOk">
+			<artists name="Little Mix" uri="spotify:artist:3e7awlrlDSwF3iM0WBjGMp"/>
+			<artists name="Frank Walker" uri="spotify:artist:6rcE30MaP92XafelMNZ2Sq"/>
+			<album name="Holiday (Frank Walker Remix)" uri="spotify:album:1lpf7O1Bm6l1ncWRA4P2Qp"/>
+		</track>
+		<track name="Merry Christmas, Happy Holidays" duration_ms="252200" popularity="69" uri="spotify:track:5rnqmmWw84pJHhscbeZRsX">
+			<artists name="*NSYNC" uri="spotify:artist:6Ff53KvcvAj5U7Z1vojB5o"/>
+			<album name="The Winter Album" uri="spotify:album:5UwWX4vrHsxTYtjFFI2Dm3"/>
+		</track>
+		<track name="Holiday Sun (feat. Mike Palace)" duration_ms="168387" popularity="39" uri="spotify:track:6HnO8sUhd4NoN1BA0nJ73i">
+			<artists name="Afterklaps" uri="spotify:artist:6UvZWQSMPxusQbkkjltCch"/>
+			<artists name="Mike Palace" uri="spotify:artist:3XHtwcKWhfkmlvtBAB9WZn"/>
+			<album name="Holiday Sun (feat. Mike Palace)" uri="spotify:album:0JOv8wiJvBbPbbAw2wl57K"/>
+		</track>
+		<track name="Baby It's Cold Outside (duet with Michael Bublé)" duration_ms="166146" popularity="83" uri="spotify:track:0Ie5uiv54KgCr7P4sYDTHl">
+			<artists name="Idina Menzel" uri="spotify:artist:73Np75Wv2tju61Eo9Zw4IR"/>
+			<artists name="Michael Bublé" uri="spotify:artist:1GxkXlMwML1oSg5eLPiAz3"/>
+			<album name="Holiday Wishes" uri="spotify:album:0EGX5qfw6VEPOMoCUFJFHl"/>
+		</track>
+		<track name="Holiday" duration_ms="368280" popularity="64" uri="spotify:track:4k6ktr10Hczmh55NY3LfJy">
+			<artists name="Madonna" uri="spotify:artist:6tbjWDEIzxoDsBA1FuhfPW"/>
+			<album name="Celebration (double disc version)" uri="spotify:album:43lok9zd7BW5CoYkXZs7S0"/>
+		</track>
+		<track name="Holiday Road - National Lampoon's Vacation" duration_ms="131520" popularity="57" uri="spotify:track:38i0QcGQ9hu8PMk4QObUTj">
+			<artists name="Lindsey Buckingham" uri="spotify:artist:3Dzj993UEz8Z5ovxuirzFO"/>
+			<album name="Holiday Road" uri="spotify:album:7H5J8i2zpo24z71bUyv8BX"/>
+		</track>
+		<track name="Dreadlock Holiday" duration_ms="267946" popularity="71" uri="spotify:track:1LOZMYF5s8qhW7Rv4w2gun">
+			<artists name="10cc" uri="spotify:artist:6i6WlGzQtXtz7GcC5H5st5"/>
+			<album name="Bloody Tourists" uri="spotify:album:3MecVG0PeBObAhjwEAczFG"/>
+		</track>
+		<track name="Holiday in Cambodia" duration_ms="224866" popularity="63" uri="spotify:track:2OuNnwnNQyWrF47pthWxNb">
+			<artists name="Dead Kennedys" uri="spotify:artist:30U8fYtiNpeA5KH6H87QUV"/>
+			<album name="Give Me Convenience or Give Me Death" uri="spotify:album:5Xv8PCJ7ZMmRd3jXnJqg3V"/>
+		</track>
+		<track name="Happy Holiday / The Holiday Season" duration_ms="156866" popularity="72" uri="spotify:track:3sDdyBHQ60Cs1opmIyRvhp">
+			<artists name="Andy Williams" uri="spotify:artist:4sj6D0zlMOl25nprDJBiU9"/>
+			<album name="The Andy Williams Christmas Album" uri="spotify:album:4dcJHxlOJwtyypL7sx1qch"/>
+		</track>
+		<track name="Holiday - 2015 Remaster" duration_ms="391360" popularity="50" uri="spotify:track:32DYxkf7ZLJrsm5JacvF3Y">
+			<artists name="Scorpions" uri="spotify:artist:27T030eWyCQRmDyuvr1kxY"/>
+			<album name="Lovedrive" uri="spotify:album:1KWIRGaeCscnnFmZUfbYDj"/>
+		</track>
+		<track name="It's the Holiday Season" duration_ms="240706" popularity="49" uri="spotify:track:5k4yYBdh32rpT4npHmd4rn">
+			<artists name="Count Basie Orchestra" uri="spotify:artist:2Hn9fch2OLB5jZuEAVjTCe"/>
+			<album name="A Very Swingin' Basie Christmas!" uri="spotify:album:00MMs3ylOvSmRabsn3ThxU"/>
+		</track>
+		<track name="Holiday - Radio Edit" duration_ms="220626" popularity="0" uri="spotify:track:2Tb9NWZujucfznkfnYuDe0">
+			<artists name="Dizzee Rascal" uri="spotify:artist:0gusqTJKxtU1UTmNRMHZcv"/>
+			<album name="Beats Para Ejercitarse" uri="spotify:album:4jzsBFTbRWvRmaypKusB61"/>
+		</track>
+		<track name="Holidays Have Been Too Nice" duration_ms="195735" popularity="54" uri="spotify:track:2xhhfjG2x3NrD5X1KMjhys">
+			<artists name="Vacachill" uri="spotify:artist:4vPbRfdjSlhQQdXetP93Ny"/>
+			<album name="Holidays Have Been Too Nice" uri="spotify:album:2F3g50j7SKnllyfI3lyddq"/>
+		</track>
+		<track name="Christmas Time" duration_ms="255320" popularity="76" uri="spotify:track:1bIFv1yGWPC4wH4qcSWdzO">
+			<artists name="Backstreet Boys" uri="spotify:artist:5rSXSAkZ67PYJSvpUpkOr7"/>
+			<album name="Holiday for Kids" uri="spotify:album:68AQgbEtfO3MDrA3OBUrMN"/>
+		</track>
+		<track name="Another Holiday" duration_ms="260386" popularity="55" uri="spotify:track:1unpst6H0uMsDKghmIxwjs">
+			<artists name="The Mamas" uri="spotify:artist:5HUGPIHRwh79LbffYIUJeJ"/>
+			<artists name="Dinah Yonas Manna" uri="spotify:artist:73kWcRbUOA5MqXZDvzZEeX"/>
+			<album name="All I Want For December" uri="spotify:album:37ntTCjFmGPkfViJd4vjvK"/>
+		</track>
+	</SearchTracks>
+
+	<SearchPlaylists total="64731" next="https://api.spotify.com/v1/search?query=holiday&amp;type=playlist&amp;market=SE&amp;offset=25&amp;limit=25">
+		<playlist name="Holidays Pop" uri="spotify:playlist:4GxYWwe4QEzLofaRn9a4af" image="https://i.scdn.co/image/ab67706c0000bebb258fc2fb43d2a59b38e5b28f"/>
+		<playlist name="Happy Holidays" uri="spotify:playlist:37i9dQZF1DX0HWhBzpBj05" image="https://i.scdn.co/image/ab67706f00000003012147aa36dafb6530edda75"/>
+		<playlist name="HolidayStreamingforBE" uri="spotify:playlist:7CXbFDNOOTBZncUN4QSPmd" image="https://i.scdn.co/image/ab67706c0000bebbb1191c9f85bab2422cbfdd20"/>
+		<playlist name="New Music Holiday" uri="spotify:playlist:37i9dQZF1DX5vMTfJy5XKE" image="https://i.scdn.co/image/ab67706f000000033b176faf43fe51fd45308271"/>
+		<playlist name="holidays with hoseok" uri="spotify:playlist:6huzmKEByEVUz6Vlk5uo7A" image="https://i.scdn.co/image/ab67706c0000bebb945b82053e87dc99b3f39f40"/>
+		<playlist name="Christmas Songs - Holiday Music 2020" uri="spotify:playlist:5l6rFyXN63iINVsbaBObag" image="https://i.scdn.co/image/ab67706c0000bebb50fc48dc96e56c5a4784c3e6"/>
+		<playlist name="Holiday House Radio" uri="spotify:playlist:5FAkv3eKbV6L9OL3gvQtVz" image="https://i.scdn.co/image/ab67706c0000bebb1e98337dc07c4d8057668c83"/>
+		<playlist name="This Is Billie Holiday" uri="spotify:playlist:37i9dQZF1DZ06evO17hgFa" image="https://thisis-images.scdn.co/37i9dQZF1DZ06evO17hgFa-large.jpg"/>
+		<playlist name="Holiday chill" uri="spotify:playlist:4zHNmNtwJECfBvnuNpxT6e" image="https://mosaic.scdn.co/300/ab67616d0000b27306d7296e24d871345fd19528ab67616d0000b27370e6c775adc0f71e6bef0a9bab67616d0000b27380db5f1340bc1170a22d8e2cab67616d0000b273b3fa5fae40b4dee559440bd7"/>
+		<playlist name="Spotify Singles: Holiday Collection" uri="spotify:playlist:37i9dQZF1DXdam5VrqMf3y" image="https://i.scdn.co/image/ab67706f00000003893c0a0979bf7a730b06fa8c"/>
+		<playlist name="Holiday Mix" uri="spotify:playlist:1aI1M4EtgG8D2bGccut6oN" image="https://i.scdn.co/image/ab67706c0000bebbe7869988f962e9131e1c41ae"/>
+		<playlist name="Holiday Magic" uri="spotify:playlist:37i9dQZF1DWYOLKtM77Hd7" image="https://i.scdn.co/image/ab67706f000000031772ac5dc78ff11a7845456a"/>
+		<playlist name="Billy Holiday" uri="spotify:playlist:3SPNtrY923cTzrG5HjCBbH" image="https://mosaic.scdn.co/300/ab67616d0000b2736711492dfcdbcc5d5e31a3dbab67616d0000b2738d959ef68a66dd3cc9944c5cab67616d0000b273b4c11b1f449be99838ad000fab67616d0000b273eb16ba2cff869c1d4b5fe114"/>
+		<playlist name="HOLIDAY SONGS FOR CITY BOYS &amp; GIRLS" uri="spotify:playlist:6PaPCOW7M7zrJHAooenbz6" image="https://i.scdn.co/image/ab67706c0000bebbd9d0632bf00710e702f4c69a"/>
+		<playlist name="Holiday Pop" uri="spotify:playlist:3WKMQPi33urJxv8Nk5CffW" image="https://i.scdn.co/image/ab67706c0000bebb0f6a9ef5a4a0d91b10f5210d"/>
+		<playlist name="Holiday Mood" uri="spotify:playlist:3DiUiSxdQqFPpgWZ2uyJKt" image="https://i.scdn.co/image/ab67706c0000bebb800f71cd10812059e1e06bdd"/>
+		<playlist name="Holiday Coffeehouse" uri="spotify:playlist:2UUL7QOerpZGHSje1iYFhI" image="https://i.scdn.co/image/ab67706c0000bebb5a3ce6fa2e0c8f6991c20413"/>
+		<playlist name="Holiday8000" uri="spotify:playlist:6GGHneDdKwHWtaJPfPIKGb" image="https://i.scdn.co/image/ab67706c0000bebb37a000dd1a2d7b2c5dd84798"/>
+		<playlist name="Retro Holiday" uri="spotify:playlist:37i9dQZF1DWXcOHfWefCtg" image="https://i.scdn.co/image/ab67706f000000032ef130bf2cfd43be6649c1b5"/>
+		<playlist name="Holiday Chilling" uri="spotify:playlist:1l6g4fdMIVREevsmJdWxd4" image="https://i.scdn.co/image/ab67706c0000bebb05329189787861ee3ca4bd83"/>
+		<playlist name="Christmas Time Holiday Hits" uri="spotify:playlist:4bF8cTpUpw3PcOls3EUoXx" image="https://i.scdn.co/image/ab67706c0000bebbaecf19fab9d6fb260a4e88ac"/>
+		<playlist name="Holidays Rule Vol. 1 &amp; 2" uri="spotify:playlist:2kWTPb86xqC09D4StOPINV" image="https://mosaic.scdn.co/300/ab67616d0000b273b4be2b0f2bee14fd8d40eac4ab67616d0000b273dca646522e9ce778976ee51fab67616d0000b273edf85b0d783d9f5e5a904b49ab67616d0000b273f6cfb6d9385af3a245ffae02"/>
+		<playlist name="❄ HOLIDAY – Lil Nas X | CLEAN ❄" uri="spotify:playlist:2dlMPjKPqNUMglK5VVrGyd" image="https://i.scdn.co/image/ab67706c0000bebb3212505522e96b93eb10c88e"/>
+		<playlist name="Holidays with BTS" uri="spotify:playlist:31XXsknJk3xP7dXG1kDoDo" image="https://mosaic.scdn.co/300/ab67616d0000b2733deb4b0115410a85afe31c29ab67616d0000b2738afcb7dd182cffe8d53b781eab67616d0000b273a40e041dc865ed53f8ea8144ab67616d0000b273edcc2355b480d00f8aad8422"/>
+		<playlist name="Holiday 🏖 " uri="spotify:playlist:67hwuoz8ZMErt9E1ICTBuq" image="https://i.scdn.co/image/ab67706c0000bebbf4f8666b54e96c8f41577275"/>
+	</SearchPlaylists>
 
 	<Playlists>
 		<playlist name="Holidays Pop" uri="spotify:playlist:4GxYWwe4QEzLofaRn9a4af" image="https://i.scdn.co/image/ab67706c0000bebb258fc2fb43d2a59b38e5b28f"/>

@@ -1,11 +1,11 @@
 {
 	"playlists": {
-		"href": "https://api.spotify.com/v1/search?query=holiday&type=playlist&market=SE&offset=0&limit=5",
-		"limit": 5,
-		"next": "https://api.spotify.com/v1/search?query=holiday&type=playlist&market=SE&offset=5&limit=5",
+		"href": "https://api.spotify.com/v1/search?query=holiday&type=playlist&market=SE&offset=0&limit=25",
+		"limit": 25,
+		"next": "https://api.spotify.com/v1/search?query=holiday&type=playlist&market=SE&offset=25&limit=25",
 		"offset": 0,
 		"previous": null,
-		"total": 115009,
+		"total": 64731,
 		"items": [
 			{
 				"collaborative": false,
@@ -35,10 +35,10 @@
 				},
 				"primary_color": null,
 				"public": null,
-				"snapshot_id": "MTcsOTUyMDg1MzA1MTM5YjhhYjU4MWY1NjYyZTEzOGMxZmFhN2JhZjg2ZQ==",
+				"snapshot_id": "MTgsNzIwYTEyMDk1NmUyNTA5OWZkZWQyNjNlNzBhODQxYTNmMjhhOWNiNA==",
 				"tracks": {
 					"href": "https://api.spotify.com/v1/playlists/4GxYWwe4QEzLofaRn9a4af/tracks",
-					"total": 31
+					"total": 30
 				},
 				"type": "playlist",
 				"uri": "spotify:playlist:4GxYWwe4QEzLofaRn9a4af"
@@ -83,78 +83,6 @@
 				"collaborative": false,
 				"description": "",
 				"external_urls": {
-					"spotify": "https://open.spotify.com/playlist/4fVEWoG84wjkeDGOcxOcEK"
-				},
-				"href": "https://api.spotify.com/v1/playlists/4fVEWoG84wjkeDGOcxOcEK",
-				"id": "4fVEWoG84wjkeDGOcxOcEK",
-				"images": [
-					{
-						"height": null,
-						"url": "https://i.scdn.co/image/ab67706c0000bebbe866e6bfc2ace7580fe62775",
-						"width": null
-					}
-				],
-				"name": "Holidays",
-				"owner": {
-					"display_name": "hgsuio@eslink.me",
-					"external_urls": {
-						"spotify": "https://open.spotify.com/user/7a2ujv4m30qffohr1akx9z3av"
-					},
-					"href": "https://api.spotify.com/v1/users/7a2ujv4m30qffohr1akx9z3av",
-					"id": "7a2ujv4m30qffohr1akx9z3av",
-					"type": "user",
-					"uri": "spotify:user:7a2ujv4m30qffohr1akx9z3av"
-				},
-				"primary_color": null,
-				"public": null,
-				"snapshot_id": "MTksYTJkZDdmZjYxYmY5OTE0ZTgwMTIzODBhNGE2NmNkOWE0YWRiNjc3MQ==",
-				"tracks": {
-					"href": "https://api.spotify.com/v1/playlists/4fVEWoG84wjkeDGOcxOcEK/tracks",
-					"total": 14
-				},
-				"type": "playlist",
-				"uri": "spotify:playlist:4fVEWoG84wjkeDGOcxOcEK"
-			},
-			{
-				"collaborative": false,
-				"description": "'Tis the season! All new holiday releases. Cover: Dolly Parton",
-				"external_urls": {
-					"spotify": "https://open.spotify.com/playlist/37i9dQZF1DX5vMTfJy5XKE"
-				},
-				"href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5vMTfJy5XKE",
-				"id": "37i9dQZF1DX5vMTfJy5XKE",
-				"images": [
-					{
-						"height": null,
-						"url": "https://i.scdn.co/image/ab67706f000000033b176faf43fe51fd45308271",
-						"width": null
-					}
-				],
-				"name": "New Music Holiday",
-				"owner": {
-					"display_name": "Spotify",
-					"external_urls": {
-						"spotify": "https://open.spotify.com/user/spotify"
-					},
-					"href": "https://api.spotify.com/v1/users/spotify",
-					"id": "spotify",
-					"type": "user",
-					"uri": "spotify:user:spotify"
-				},
-				"primary_color": null,
-				"public": null,
-				"snapshot_id": "MTYxMDIyNTc3OSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
-				"tracks": {
-					"href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5vMTfJy5XKE/tracks",
-					"total": 100
-				},
-				"type": "playlist",
-				"uri": "spotify:playlist:37i9dQZF1DX5vMTfJy5XKE"
-			},
-			{
-				"collaborative": false,
-				"description": "",
-				"external_urls": {
 					"spotify": "https://open.spotify.com/playlist/7CXbFDNOOTBZncUN4QSPmd"
 				},
 				"href": "https://api.spotify.com/v1/playlists/7CXbFDNOOTBZncUN4QSPmd",
@@ -186,6 +114,839 @@
 				},
 				"type": "playlist",
 				"uri": "spotify:playlist:7CXbFDNOOTBZncUN4QSPmd"
+			},
+			{
+				"collaborative": false,
+				"description": "'Tis the season! All new holiday releases. Cover: Dolly Parton",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/37i9dQZF1DX5vMTfJy5XKE"
+				},
+				"href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5vMTfJy5XKE",
+				"id": "37i9dQZF1DX5vMTfJy5XKE",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706f000000033b176faf43fe51fd45308271",
+						"width": null
+					}
+				],
+				"name": "New Music Holiday",
+				"owner": {
+					"display_name": "Spotify",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/spotify"
+					},
+					"href": "https://api.spotify.com/v1/users/spotify",
+					"id": "spotify",
+					"type": "user",
+					"uri": "spotify:user:spotify"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "MTYxMDU1NDYxNCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5vMTfJy5XKE/tracks",
+					"total": 100
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:37i9dQZF1DX5vMTfJy5XKE"
+			},
+			{
+				"collaborative": false,
+				"description": "",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/6huzmKEByEVUz6Vlk5uo7A"
+				},
+				"href": "https://api.spotify.com/v1/playlists/6huzmKEByEVUz6Vlk5uo7A",
+				"id": "6huzmKEByEVUz6Vlk5uo7A",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706c0000bebb945b82053e87dc99b3f39f40",
+						"width": null
+					}
+				],
+				"name": "holidays with hoseok",
+				"owner": {
+					"display_name": "honeybobo55",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/honeybobo55"
+					},
+					"href": "https://api.spotify.com/v1/users/honeybobo55",
+					"id": "honeybobo55",
+					"type": "user",
+					"uri": "spotify:user:honeybobo55"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "NDMsZGI0MjQyYjEwMTdlMzEzNDBlNzg2MmM0NzVhMGRmYmEyY2JjN2QxNQ==",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/6huzmKEByEVUz6Vlk5uo7A/tracks",
+					"total": 40
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:6huzmKEByEVUz6Vlk5uo7A"
+			},
+			{
+				"collaborative": false,
+				"description": "All I want for Christmas is THIS holiday playlist! Get in the Xmas spirit with festive favorites from Mariah Carey, Pentatonix, Kelly Clarkson, Elvis, Wham!, John Legend, Tony Bennett, Dean Martin &amp; more!",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/5l6rFyXN63iINVsbaBObag"
+				},
+				"href": "https://api.spotify.com/v1/playlists/5l6rFyXN63iINVsbaBObag",
+				"id": "5l6rFyXN63iINVsbaBObag",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706c0000bebb50fc48dc96e56c5a4784c3e6",
+						"width": null
+					}
+				],
+				"name": "Christmas Songs - Holiday Music 2020",
+				"owner": {
+					"display_name": "Filtr US",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/myplay.com"
+					},
+					"href": "https://api.spotify.com/v1/users/myplay.com",
+					"id": "myplay.com",
+					"type": "user",
+					"uri": "spotify:user:myplay.com"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "MjQyNiw1MWRjMGM0YjYxZjZlNGE5ZTkzZDU2NjU4N2VkMmJkMTg1OWM1Njlk",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/5l6rFyXN63iINVsbaBObag/tracks",
+					"total": 196
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:5l6rFyXN63iINVsbaBObag"
+			},
+			{
+				"collaborative": false,
+				"description": "Chill, put your feet up and leave the daily grind behind. Listen to Holiday House Radio. Our mix of eclectic beats carefully curated for your listening pleasure.",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/5FAkv3eKbV6L9OL3gvQtVz"
+				},
+				"href": "https://api.spotify.com/v1/playlists/5FAkv3eKbV6L9OL3gvQtVz",
+				"id": "5FAkv3eKbV6L9OL3gvQtVz",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706c0000bebb1e98337dc07c4d8057668c83",
+						"width": null
+					}
+				],
+				"name": "Holiday House Radio",
+				"owner": {
+					"display_name": "Holiday House",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/brpx65cavg29x6uwjgwnak6ik"
+					},
+					"href": "https://api.spotify.com/v1/users/brpx65cavg29x6uwjgwnak6ik",
+					"id": "brpx65cavg29x6uwjgwnak6ik",
+					"type": "user",
+					"uri": "spotify:user:brpx65cavg29x6uwjgwnak6ik"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "NDYsNmYwY2U3YjM5YjljZWJmYzY1MDY3ODI3MWRmOTBlZjNjMzU3OGU4ZQ==",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/5FAkv3eKbV6L9OL3gvQtVz/tracks",
+					"total": 30
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:5FAkv3eKbV6L9OL3gvQtVz"
+			},
+			{
+				"collaborative": false,
+				"description": "This is Billie Holiday. The essential tracks, all in one playlist.",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO17hgFa"
+				},
+				"href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO17hgFa",
+				"id": "37i9dQZF1DZ06evO17hgFa",
+				"images": [
+					{
+						"height": null,
+						"url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO17hgFa-large.jpg",
+						"width": null
+					}
+				],
+				"name": "This Is Billie Holiday",
+				"owner": {
+					"display_name": "Spotify",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/spotify"
+					},
+					"href": "https://api.spotify.com/v1/users/spotify",
+					"id": "spotify",
+					"type": "user",
+					"uri": "spotify:user:spotify"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "MjY4NDIxNTUsMDAwMDAwMDA4OGM4Yzg2MWYyMzU5M2RkMjdlYmY5MTBjZDE2MTIxZg==",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO17hgFa/tracks",
+					"total": 50
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:37i9dQZF1DZ06evO17hgFa"
+			},
+			{
+				"collaborative": false,
+				"description": "Tune in and unwind as our Yoga team bring you all the chilled vibes for the holidays. ",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/4zHNmNtwJECfBvnuNpxT6e"
+				},
+				"href": "https://api.spotify.com/v1/playlists/4zHNmNtwJECfBvnuNpxT6e",
+				"id": "4zHNmNtwJECfBvnuNpxT6e",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://mosaic.scdn.co/640/ab67616d0000b27306d7296e24d871345fd19528ab67616d0000b27370e6c775adc0f71e6bef0a9bab67616d0000b27380db5f1340bc1170a22d8e2cab67616d0000b273b3fa5fae40b4dee559440bd7",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://mosaic.scdn.co/300/ab67616d0000b27306d7296e24d871345fd19528ab67616d0000b27370e6c775adc0f71e6bef0a9bab67616d0000b27380db5f1340bc1170a22d8e2cab67616d0000b273b3fa5fae40b4dee559440bd7",
+						"width": 300
+					},
+					{
+						"height": 60,
+						"url": "https://mosaic.scdn.co/60/ab67616d0000b27306d7296e24d871345fd19528ab67616d0000b27370e6c775adc0f71e6bef0a9bab67616d0000b27380db5f1340bc1170a22d8e2cab67616d0000b273b3fa5fae40b4dee559440bd7",
+						"width": 60
+					}
+				],
+				"name": "Holiday chill",
+				"owner": {
+					"display_name": "PSYCLE LONDON",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/psyclelondon"
+					},
+					"href": "https://api.spotify.com/v1/users/psyclelondon",
+					"id": "psyclelondon",
+					"type": "user",
+					"uri": "spotify:user:psyclelondon"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "NDIsNmQ1MWVkMmJiNWI3MTRlYmUxMjFmNjI5Y2MyYTYzODYwZDI3MDg2Nw==",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/4zHNmNtwJECfBvnuNpxT6e/tracks",
+					"total": 29
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:4zHNmNtwJECfBvnuNpxT6e"
+			},
+			{
+				"collaborative": false,
+				"description": "Cozy up to a collection of festive favorites—from our home to yours. Cover: Sasha Sloan",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/37i9dQZF1DXdam5VrqMf3y"
+				},
+				"href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdam5VrqMf3y",
+				"id": "37i9dQZF1DXdam5VrqMf3y",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706f00000003893c0a0979bf7a730b06fa8c",
+						"width": null
+					}
+				],
+				"name": "Spotify Singles: Holiday Collection",
+				"owner": {
+					"display_name": "Spotify",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/spotify"
+					},
+					"href": "https://api.spotify.com/v1/users/spotify",
+					"id": "spotify",
+					"type": "user",
+					"uri": "spotify:user:spotify"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "MTYwODA5NDg2MCwwMDAwMDAxODAwMDAwMTc2NjllYzQzNDAwMDAwMDE3NjYyZmNhNmQ0",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdam5VrqMf3y/tracks",
+					"total": 59
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:37i9dQZF1DXdam5VrqMf3y"
+			},
+			{
+				"collaborative": false,
+				"description": "Tên cho vui thôi chứ đây là playlist stream focus LGO, Dynamite (các phiên bản) và Boy With Luv",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/1aI1M4EtgG8D2bGccut6oN"
+				},
+				"href": "https://api.spotify.com/v1/playlists/1aI1M4EtgG8D2bGccut6oN",
+				"id": "1aI1M4EtgG8D2bGccut6oN",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706c0000bebbe7869988f962e9131e1c41ae",
+						"width": null
+					}
+				],
+				"name": "Holiday Mix",
+				"owner": {
+					"display_name": "BTS_playlist",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/kf9g2evip66ve49mh4jwdudc7"
+					},
+					"href": "https://api.spotify.com/v1/users/kf9g2evip66ve49mh4jwdudc7",
+					"id": "kf9g2evip66ve49mh4jwdudc7",
+					"type": "user",
+					"uri": "spotify:user:kf9g2evip66ve49mh4jwdudc7"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "NjgsN2MwZmNmMTE5ZWRmNGU3MWU2OWZkYTRlMDI2ODc1OTRlNzUyODJhOQ==",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/1aI1M4EtgG8D2bGccut6oN/tracks",
+					"total": 63
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:1aI1M4EtgG8D2bGccut6oN"
+			},
+			{
+				"collaborative": false,
+				"description": "'Tis the season to enjoy these classic Christmas songs for the whole family.",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/37i9dQZF1DWYOLKtM77Hd7"
+				},
+				"href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYOLKtM77Hd7",
+				"id": "37i9dQZF1DWYOLKtM77Hd7",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706f000000031772ac5dc78ff11a7845456a",
+						"width": null
+					}
+				],
+				"name": "Holiday Magic",
+				"owner": {
+					"display_name": "Spotify",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/spotify"
+					},
+					"href": "https://api.spotify.com/v1/users/spotify",
+					"id": "spotify",
+					"type": "user",
+					"uri": "spotify:user:spotify"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "MTYwNDQzNzYyNiwwMDAwMDAxNTAwMDAwMTc1OGZlZjRlYjUwMDAwMDE3NTg5ZmVjOGQy",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYOLKtM77Hd7/tracks",
+					"total": 55
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:37i9dQZF1DWYOLKtM77Hd7"
+			},
+			{
+				"collaborative": false,
+				"description": "",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/3SPNtrY923cTzrG5HjCBbH"
+				},
+				"href": "https://api.spotify.com/v1/playlists/3SPNtrY923cTzrG5HjCBbH",
+				"id": "3SPNtrY923cTzrG5HjCBbH",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://mosaic.scdn.co/640/ab67616d0000b2736711492dfcdbcc5d5e31a3dbab67616d0000b2738d959ef68a66dd3cc9944c5cab67616d0000b273b4c11b1f449be99838ad000fab67616d0000b273eb16ba2cff869c1d4b5fe114",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://mosaic.scdn.co/300/ab67616d0000b2736711492dfcdbcc5d5e31a3dbab67616d0000b2738d959ef68a66dd3cc9944c5cab67616d0000b273b4c11b1f449be99838ad000fab67616d0000b273eb16ba2cff869c1d4b5fe114",
+						"width": 300
+					},
+					{
+						"height": 60,
+						"url": "https://mosaic.scdn.co/60/ab67616d0000b2736711492dfcdbcc5d5e31a3dbab67616d0000b2738d959ef68a66dd3cc9944c5cab67616d0000b273b4c11b1f449be99838ad000fab67616d0000b273eb16ba2cff869c1d4b5fe114",
+						"width": 60
+					}
+				],
+				"name": "Billy Holiday",
+				"owner": {
+					"display_name": "Johanna Grace Uribes",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/129464569"
+					},
+					"href": "https://api.spotify.com/v1/users/129464569",
+					"id": "129464569",
+					"type": "user",
+					"uri": "spotify:user:129464569"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "NjIsNzUwYjU0ZjQ0ZjlkOGE2MDJkODUwMGI2Njc1NmU4NWU0MmZjOWNlNg==",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/3SPNtrY923cTzrG5HjCBbH/tracks",
+					"total": 125
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:3SPNtrY923cTzrG5HjCBbH"
+			},
+			{
+				"collaborative": false,
+				"description": "",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/6PaPCOW7M7zrJHAooenbz6"
+				},
+				"href": "https://api.spotify.com/v1/playlists/6PaPCOW7M7zrJHAooenbz6",
+				"id": "6PaPCOW7M7zrJHAooenbz6",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706c0000bebbd9d0632bf00710e702f4c69a",
+						"width": null
+					}
+				],
+				"name": "HOLIDAY SONGS FOR CITY BOYS & GIRLS",
+				"owner": {
+					"display_name": "popeyemagazine",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/t73jlrdlkf0hv0gqdakp94oqp"
+					},
+					"href": "https://api.spotify.com/v1/users/t73jlrdlkf0hv0gqdakp94oqp",
+					"id": "t73jlrdlkf0hv0gqdakp94oqp",
+					"type": "user",
+					"uri": "spotify:user:t73jlrdlkf0hv0gqdakp94oqp"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "OCw5ZGEyNTUxMjNjNDg4MmJjMjMxMjFkNTdhNDlkNjRjZDgyMTQ0M2Vm",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/6PaPCOW7M7zrJHAooenbz6/tracks",
+					"total": 6
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:6PaPCOW7M7zrJHAooenbz6"
+			},
+			{
+				"collaborative": false,
+				"description": "All I want for Christmas is.. you! (Cover: Lil Nas X)",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/3WKMQPi33urJxv8Nk5CffW"
+				},
+				"href": "https://api.spotify.com/v1/playlists/3WKMQPi33urJxv8Nk5CffW",
+				"id": "3WKMQPi33urJxv8Nk5CffW",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706c0000bebb0f6a9ef5a4a0d91b10f5210d",
+						"width": null
+					}
+				],
+				"name": "Holiday Pop",
+				"owner": {
+					"display_name": "TWO Music",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/roberts.family"
+					},
+					"href": "https://api.spotify.com/v1/users/roberts.family",
+					"id": "roberts.family",
+					"type": "user",
+					"uri": "spotify:user:roberts.family"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "MTk4LDEzZjI5Y2ViMzIxYTgzMWM1OTgzZjQ0OWQ4NmE5MzY0YzNkZmM1MzQ=",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/3WKMQPi33urJxv8Nk5CffW/tracks",
+					"total": 100
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:3WKMQPi33urJxv8Nk5CffW"
+			},
+			{
+				"collaborative": false,
+				"description": "Una raccolta di brani perfetta per rilassarti e goderti al meglio queste vacanze natalizie!",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/3DiUiSxdQqFPpgWZ2uyJKt"
+				},
+				"href": "https://api.spotify.com/v1/playlists/3DiUiSxdQqFPpgWZ2uyJKt",
+				"id": "3DiUiSxdQqFPpgWZ2uyJKt",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706c0000bebb800f71cd10812059e1e06bdd",
+						"width": null
+					}
+				],
+				"name": "Holiday Mood",
+				"owner": {
+					"display_name": "Rizzoli Education",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/xx5zwxkdjkouyr3bxgs2dq5l2"
+					},
+					"href": "https://api.spotify.com/v1/users/xx5zwxkdjkouyr3bxgs2dq5l2",
+					"id": "xx5zwxkdjkouyr3bxgs2dq5l2",
+					"type": "user",
+					"uri": "spotify:user:xx5zwxkdjkouyr3bxgs2dq5l2"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "MjMsY2QzYTM0NjMzMjk2ODA0YTY4NTZkMzExNjYzOTBjYWJkOGFhZWUxNA==",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/3DiUiSxdQqFPpgWZ2uyJKt/tracks",
+					"total": 20
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:3DiUiSxdQqFPpgWZ2uyJKt"
+			},
+			{
+				"collaborative": false,
+				"description": "Chill acoustic holiday songs perfect for sipping coffees and drinking teas",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/2UUL7QOerpZGHSje1iYFhI"
+				},
+				"href": "https://api.spotify.com/v1/playlists/2UUL7QOerpZGHSje1iYFhI",
+				"id": "2UUL7QOerpZGHSje1iYFhI",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706c0000bebb5a3ce6fa2e0c8f6991c20413",
+						"width": null
+					}
+				],
+				"name": "Holiday Coffeehouse",
+				"owner": {
+					"display_name": "deannejd",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/deannejd"
+					},
+					"href": "https://api.spotify.com/v1/users/deannejd",
+					"id": "deannejd",
+					"type": "user",
+					"uri": "spotify:user:deannejd"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "NzcsNWU2OGJjNjUzMmUxMjRlMzhmMDU4YTFkODk2ZWFmMTdmZmU1MmI0Ng==",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/2UUL7QOerpZGHSje1iYFhI/tracks",
+					"total": 65
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:2UUL7QOerpZGHSje1iYFhI"
+			},
+			{
+				"collaborative": false,
+				"description": "8000watt Tunes aus dem Wattner*innen Urlaub",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/6GGHneDdKwHWtaJPfPIKGb"
+				},
+				"href": "https://api.spotify.com/v1/playlists/6GGHneDdKwHWtaJPfPIKGb",
+				"id": "6GGHneDdKwHWtaJPfPIKGb",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706c0000bebb37a000dd1a2d7b2c5dd84798",
+						"width": null
+					}
+				],
+				"name": "Holiday8000",
+				"owner": {
+					"display_name": "8000watt",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/toysjhl722tc19uyll1l63ly9"
+					},
+					"href": "https://api.spotify.com/v1/users/toysjhl722tc19uyll1l63ly9",
+					"id": "toysjhl722tc19uyll1l63ly9",
+					"type": "user",
+					"uri": "spotify:user:toysjhl722tc19uyll1l63ly9"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "NTIsNjFiNGY1MDljMWNmZDViMmE2MzkwOWE5ODk0NzllNWI2NjgyZGU2ZA==",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/6GGHneDdKwHWtaJPfPIKGb/tracks",
+					"total": 46
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:6GGHneDdKwHWtaJPfPIKGb"
+			},
+			{
+				"collaborative": false,
+				"description": "Brighten up your holiday party with these  jams.",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/37i9dQZF1DWXcOHfWefCtg"
+				},
+				"href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXcOHfWefCtg",
+				"id": "37i9dQZF1DWXcOHfWefCtg",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706f000000032ef130bf2cfd43be6649c1b5",
+						"width": null
+					}
+				],
+				"name": "Retro Holiday",
+				"owner": {
+					"display_name": "Spotify",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/spotify"
+					},
+					"href": "https://api.spotify.com/v1/users/spotify",
+					"id": "spotify",
+					"type": "user",
+					"uri": "spotify:user:spotify"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "MTU3Mjg5NzAyOSwwMDAwMDAxMzAwMDAwMTZlMzdmN2ZjYjQwMDAwMDE2ZDAwY2JhMWZm",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXcOHfWefCtg/tracks",
+					"total": 38
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:37i9dQZF1DWXcOHfWefCtg"
+			},
+			{
+				"collaborative": false,
+				"description": "เดือนแห่งเทศกาล แนวดนตรีที่ทำให้มีความสุข ฟังสบาย รู้สึกเฉลิมฉลองไปกับเทศกาลส่งท้ายปี ต้อนรับปีใหม่",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/1l6g4fdMIVREevsmJdWxd4"
+				},
+				"href": "https://api.spotify.com/v1/playlists/1l6g4fdMIVREevsmJdWxd4",
+				"id": "1l6g4fdMIVREevsmJdWxd4",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706c0000bebb05329189787861ee3ca4bd83",
+						"width": null
+					}
+				],
+				"name": "Holiday Chilling",
+				"owner": {
+					"display_name": "Jameson Connects",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/w7ztw1q7wg8jj54bg6ti8lg4x"
+					},
+					"href": "https://api.spotify.com/v1/users/w7ztw1q7wg8jj54bg6ti8lg4x",
+					"id": "w7ztw1q7wg8jj54bg6ti8lg4x",
+					"type": "user",
+					"uri": "spotify:user:w7ztw1q7wg8jj54bg6ti8lg4x"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "MzQsMGUwMzI2OWU2OTUwZWRmMzIxNTA3YjJiZDU0Yjk2MWUyMTdjOWNjNg==",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/1l6g4fdMIVREevsmJdWxd4/tracks",
+					"total": 28
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:1l6g4fdMIVREevsmJdWxd4"
+			},
+			{
+				"collaborative": false,
+				"description": "It's Christmas Time! Hit play to enjoy classic holiday music and remember a simpler time. Merry Christmas!",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/4bF8cTpUpw3PcOls3EUoXx"
+				},
+				"href": "https://api.spotify.com/v1/playlists/4bF8cTpUpw3PcOls3EUoXx",
+				"id": "4bF8cTpUpw3PcOls3EUoXx",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706c0000bebbaecf19fab9d6fb260a4e88ac",
+						"width": null
+					}
+				],
+				"name": "Christmas Time Holiday Hits",
+				"owner": {
+					"display_name": "Topsify US",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/warnermusicus"
+					},
+					"href": "https://api.spotify.com/v1/users/warnermusicus",
+					"id": "warnermusicus",
+					"type": "user",
+					"uri": "spotify:user:warnermusicus"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "ODI5LGMxZGU3ZDczOWUzY2U1NGI3MzU5NjQyMWZmNmE2MDIwMzcyZTEwYmU=",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/4bF8cTpUpw3PcOls3EUoXx/tracks",
+					"total": 83
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:4bF8cTpUpw3PcOls3EUoXx"
+			},
+			{
+				"collaborative": false,
+				"description": "",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/2kWTPb86xqC09D4StOPINV"
+				},
+				"href": "https://api.spotify.com/v1/playlists/2kWTPb86xqC09D4StOPINV",
+				"id": "2kWTPb86xqC09D4StOPINV",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://mosaic.scdn.co/640/ab67616d0000b273b4be2b0f2bee14fd8d40eac4ab67616d0000b273dca646522e9ce778976ee51fab67616d0000b273edf85b0d783d9f5e5a904b49ab67616d0000b273f6cfb6d9385af3a245ffae02",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://mosaic.scdn.co/300/ab67616d0000b273b4be2b0f2bee14fd8d40eac4ab67616d0000b273dca646522e9ce778976ee51fab67616d0000b273edf85b0d783d9f5e5a904b49ab67616d0000b273f6cfb6d9385af3a245ffae02",
+						"width": 300
+					},
+					{
+						"height": 60,
+						"url": "https://mosaic.scdn.co/60/ab67616d0000b273b4be2b0f2bee14fd8d40eac4ab67616d0000b273dca646522e9ce778976ee51fab67616d0000b273edf85b0d783d9f5e5a904b49ab67616d0000b273f6cfb6d9385af3a245ffae02",
+						"width": 60
+					}
+				],
+				"name": "Holidays Rule Vol. 1 & 2",
+				"owner": {
+					"display_name": "Claudia Wilson",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/1230147649"
+					},
+					"href": "https://api.spotify.com/v1/users/1230147649",
+					"id": "1230147649",
+					"type": "user",
+					"uri": "spotify:user:1230147649"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "OSwzNWY0MDljMjg3OWExZjVlOWI4YzdjYjE3Zjk2MDA4ZWUxNDE1Njg0",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/2kWTPb86xqC09D4StOPINV/tracks",
+					"total": 37
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:2kWTPb86xqC09D4StOPINV"
+			},
+			{
+				"collaborative": false,
+				"description": "Lil Nas X&#x27;s NEW single out now! Please be sure to check out my profile, my other playlists, &amp; enjoy!",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/2dlMPjKPqNUMglK5VVrGyd"
+				},
+				"href": "https://api.spotify.com/v1/playlists/2dlMPjKPqNUMglK5VVrGyd",
+				"id": "2dlMPjKPqNUMglK5VVrGyd",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706c0000bebb3212505522e96b93eb10c88e",
+						"width": null
+					}
+				],
+				"name": "❄ HOLIDAY – Lil Nas X | CLEAN ❄",
+				"owner": {
+					"display_name": "Ma$terMusic AU",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/st584ah6u1clrueaw48g4odvf"
+					},
+					"href": "https://api.spotify.com/v1/users/st584ah6u1clrueaw48g4odvf",
+					"id": "st584ah6u1clrueaw48g4odvf",
+					"type": "user",
+					"uri": "spotify:user:st584ah6u1clrueaw48g4odvf"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "NDksMDI0OGYzZDQ0ZWU3YWRlOTg2NjkzYjcwNzhiYTVhNDBkZDIxYTk3Nw==",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/2dlMPjKPqNUMglK5VVrGyd/tracks",
+					"total": 20
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:2dlMPjKPqNUMglK5VVrGyd"
+			},
+			{
+				"collaborative": false,
+				"description": "Playlist converted by Soundiiz from another music platform ! Checkout Soundiiz.com",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/31XXsknJk3xP7dXG1kDoDo"
+				},
+				"href": "https://api.spotify.com/v1/playlists/31XXsknJk3xP7dXG1kDoDo",
+				"id": "31XXsknJk3xP7dXG1kDoDo",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://mosaic.scdn.co/640/ab67616d0000b2733deb4b0115410a85afe31c29ab67616d0000b2738afcb7dd182cffe8d53b781eab67616d0000b273a40e041dc865ed53f8ea8144ab67616d0000b273edcc2355b480d00f8aad8422",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://mosaic.scdn.co/300/ab67616d0000b2733deb4b0115410a85afe31c29ab67616d0000b2738afcb7dd182cffe8d53b781eab67616d0000b273a40e041dc865ed53f8ea8144ab67616d0000b273edcc2355b480d00f8aad8422",
+						"width": 300
+					},
+					{
+						"height": 60,
+						"url": "https://mosaic.scdn.co/60/ab67616d0000b2733deb4b0115410a85afe31c29ab67616d0000b2738afcb7dd182cffe8d53b781eab67616d0000b273a40e041dc865ed53f8ea8144ab67616d0000b273edcc2355b480d00f8aad8422",
+						"width": 60
+					}
+				],
+				"name": "Holidays with BTS",
+				"owner": {
+					"display_name": "SherryB66",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/mdyeifse5mq9wxwvyu74vyuq5"
+					},
+					"href": "https://api.spotify.com/v1/users/mdyeifse5mq9wxwvyu74vyuq5",
+					"id": "mdyeifse5mq9wxwvyu74vyuq5",
+					"type": "user",
+					"uri": "spotify:user:mdyeifse5mq9wxwvyu74vyuq5"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "Myw4NDQ2YzU1ODQ3YWFjMTQyMTlkNjAyZWI4N2RiZWI3OWQ5MWM1OTUy",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/31XXsknJk3xP7dXG1kDoDo/tracks",
+					"total": 58
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:31XXsknJk3xP7dXG1kDoDo"
+			},
+			{
+				"collaborative": false,
+				"description": "",
+				"external_urls": {
+					"spotify": "https://open.spotify.com/playlist/67hwuoz8ZMErt9E1ICTBuq"
+				},
+				"href": "https://api.spotify.com/v1/playlists/67hwuoz8ZMErt9E1ICTBuq",
+				"id": "67hwuoz8ZMErt9E1ICTBuq",
+				"images": [
+					{
+						"height": null,
+						"url": "https://i.scdn.co/image/ab67706c0000bebbf4f8666b54e96c8f41577275",
+						"width": null
+					}
+				],
+				"name": "Holiday 🏖 ",
+				"owner": {
+					"display_name": "Sam Clarke",
+					"external_urls": {
+						"spotify": "https://open.spotify.com/user/11101852691"
+					},
+					"href": "https://api.spotify.com/v1/users/11101852691",
+					"id": "11101852691",
+					"type": "user",
+					"uri": "spotify:user:11101852691"
+				},
+				"primary_color": null,
+				"public": null,
+				"snapshot_id": "Mzk1LGZkYzVmOTE1ZGU4NTk0Y2U0ZWRlZjhhYmY4OTZhMDUyMzI3YmJmOGE=",
+				"tracks": {
+					"href": "https://api.spotify.com/v1/playlists/67hwuoz8ZMErt9E1ICTBuq/tracks",
+					"total": 150
+				},
+				"type": "playlist",
+				"uri": "spotify:playlist:67hwuoz8ZMErt9E1ICTBuq"
 			}
-		]	}
+		]
+	}
 }

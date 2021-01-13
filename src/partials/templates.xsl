@@ -38,7 +38,7 @@
 
 <xsl:template name="home-featured">
 	<div class="featured-playlists" data-click="show-featured">
-		<xsl:for-each select="//Featured/*">
+		<xsl:for-each select="./*">
 			<div class="featured">
 				<div class="image">
 					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
@@ -103,22 +103,26 @@
 		</div>
 		<div class="table-body" data-click="select-track">
 			<xsl:for-each select="./*">
-				<xsl:sort order="ascending" select="@_index"/>
+				<xsl:sort order="descending" select="@popularity"/>
 				<div class="row">
 					<div class="cell">
 						<i class="icon-player-play">
 							<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
 						</i>
 						<i class="icon-heart">
-							<xsl:if test="position() &lt; 5">
+							<!-- <xsl:if test="position() &lt; 5">
 								<xsl:attribute name="class">icon-heart-full</xsl:attribute>
-							</xsl:if>
+							</xsl:if> -->
 						</i>
 					</div>
 					<div class="cell"><xsl:value-of select="@name"/></div>
 					<div class="cell">
-						<xsl:attribute name="data-uri"><xsl:value-of select="artists/@uri"/></xsl:attribute>
-						<xsl:value-of select="artists/@name"/>
+						<xsl:for-each select="./artists">
+							<span class="track-artist">
+								<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+								<xsl:value-of select="@name"/>
+							</span>
+						</xsl:for-each>
 					</div>
 					<div class="cell">
 						<xsl:attribute name="data-uri"><xsl:value-of select="album/@uri"/></xsl:attribute>

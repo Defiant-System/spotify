@@ -954,7 +954,7 @@ div[data-area="panel"] {
 			white-space: nowrap;
 			text-overflow: ellipsis;
 			overflow: hidden;
-			padding: 6px 3px;
+			padding: 6px 11px 6px 3px;
 
 			&:nth-child(1) {
 				width: 61px;
@@ -968,11 +968,18 @@ div[data-area="panel"] {
 
 			&:last-child { text-align: right; padding-right: 7px; }
 
-			&[data-uri^="spotify:album:"],
-			&[data-uri^="spotify:artist:"] {
+			.track-artist[data-uri^="spotify:artist:"],
+			&[data-uri^="spotify:artist:"],
+			&[data-uri^="spotify:album:"] {
 				cursor: pointer;
 
 				&:hover { text-decoration: underline; }
+			}
+
+			.track-artist:not(:last-child):after {
+				content: ", ";
+				display: inline-block;
+				margin-right: 3px;
 			}
 		}
 	}
@@ -1963,6 +1970,7 @@ div[data-area="panel"] {
 			position: relative;
 			width: 91%;
 			display: inline-block;
+			background-color: rgba(255,255,255,.15);
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: 50% 50%;

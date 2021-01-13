@@ -1,0 +1,865 @@
+{
+	"artists": {
+		"href": "https://api.spotify.com/v1/search?query=holiday&type=artist&market=SE&offset=0&limit=25",
+		"limit": 25,
+		"next": "https://api.spotify.com/v1/search?query=holiday&type=artist&market=SE&offset=25&limit=25",
+		"offset": 0,
+		"previous": null,
+		"total": 1046,
+		"items": [
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/6IxjXsaqZ81Fi1HiwRq4LS"
+				},
+				"followers": {
+					"href": null,
+					"total": 720
+				},
+				"genres": [
+					"indie dream pop"
+				],
+				"href": "https://api.spotify.com/v1/artists/6IxjXsaqZ81Fi1HiwRq4LS",
+				"id": "6IxjXsaqZ81Fi1HiwRq4LS",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/33b0bc585de8e0d9dfe14e0b0a4a360f43759a26",
+						"width": 640
+					},
+					{
+						"height": 320,
+						"url": "https://i.scdn.co/image/967c323dd3753e6f6919b9195656a69490ee9ce6",
+						"width": 320
+					},
+					{
+						"height": 160,
+						"url": "https://i.scdn.co/image/e71f2866dceee52bedf1caf7c0fd35364640993f",
+						"width": 160
+					}
+				],
+				"name": "Holidays",
+				"popularity": 21,
+				"type": "artist",
+				"uri": "spotify:artist:6IxjXsaqZ81Fi1HiwRq4LS"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/1YzCsTRb22dQkh9lghPIrp"
+				},
+				"followers": {
+					"href": null,
+					"total": 1338788
+				},
+				"genres": [
+					"adult standards",
+					"harlem renaissance",
+					"jazz blues",
+					"lounge",
+					"soul",
+					"torch song",
+					"vocal jazz"
+				],
+				"href": "https://api.spotify.com/v1/artists/1YzCsTRb22dQkh9lghPIrp",
+				"id": "1YzCsTRb22dQkh9lghPIrp",
+				"images": [
+					{
+						"height": 828,
+						"url": "https://i.scdn.co/image/4efa6b6871a0f672b78b3d16fd5a03c6cd212d58",
+						"width": 1000
+					},
+					{
+						"height": 530,
+						"url": "https://i.scdn.co/image/11f685f3011fd163c386ce1afe7ce543ad814817",
+						"width": 640
+					},
+					{
+						"height": 166,
+						"url": "https://i.scdn.co/image/0f472c69891d82d5049f7de35426b2fdeb6051c0",
+						"width": 200
+					},
+					{
+						"height": 53,
+						"url": "https://i.scdn.co/image/73b9538798c13c7be7558d69b02019cf19e1d5db",
+						"width": 64
+					}
+				],
+				"name": "Billie Holiday",
+				"popularity": 69,
+				"type": "artist",
+				"uri": "spotify:artist:1YzCsTRb22dQkh9lghPIrp"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/5D9NYfOaGxFKCalJIeia1N"
+				},
+				"followers": {
+					"href": null,
+					"total": 507
+				},
+				"genres": [],
+				"href": "https://api.spotify.com/v1/artists/5D9NYfOaGxFKCalJIeia1N",
+				"id": "5D9NYfOaGxFKCalJIeia1N",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/1aa266a1fa4595101aaf65fdf863396d4394c1e6",
+						"width": 640
+					},
+					{
+						"height": 320,
+						"url": "https://i.scdn.co/image/021102db7120d0f8c2ce92100c779d26fe3cb915",
+						"width": 320
+					},
+					{
+						"height": 160,
+						"url": "https://i.scdn.co/image/f2ccae4d7c9b284145943d4746fb9963adf5d7ee",
+						"width": 160
+					}
+				],
+				"name": "Atlantic Holiday",
+				"popularity": 65,
+				"type": "artist",
+				"uri": "spotify:artist:5D9NYfOaGxFKCalJIeia1N"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/1baSwsjjhEUkDzXPho77Hf"
+				},
+				"followers": {
+					"href": null,
+					"total": 127
+				},
+				"genres": [],
+				"href": "https://api.spotify.com/v1/artists/1baSwsjjhEUkDzXPho77Hf",
+				"id": "1baSwsjjhEUkDzXPho77Hf",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/a1b58bfee3baed921cd3a5816940e8738c808101",
+						"width": 640
+					},
+					{
+						"height": 320,
+						"url": "https://i.scdn.co/image/f29078586068d90ebf1d2ad3217b6bcb6528342f",
+						"width": 320
+					},
+					{
+						"height": 160,
+						"url": "https://i.scdn.co/image/1979e8f9e75770d3a1ad80ea2f8acaa3ad15b197",
+						"width": 160
+					}
+				],
+				"name": "Holiday Jazz Ensemble",
+				"popularity": 47,
+				"type": "artist",
+				"uri": "spotify:artist:1baSwsjjhEUkDzXPho77Hf"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/64yON9pK0j392YkionGKAF"
+				},
+				"followers": {
+					"href": null,
+					"total": 18159
+				},
+				"genres": [],
+				"href": "https://api.spotify.com/v1/artists/64yON9pK0j392YkionGKAF",
+				"id": "64yON9pK0j392YkionGKAF",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b27395489a41fb07013948cddefe",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e0295489a41fb07013948cddefe",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d0000485195489a41fb07013948cddefe",
+						"width": 64
+					}
+				],
+				"name": "Jack Holiday",
+				"popularity": 55,
+				"type": "artist",
+				"uri": "spotify:artist:64yON9pK0j392YkionGKAF"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/4BUCzxTW8MiC4TT0C29CKF"
+				},
+				"followers": {
+					"href": null,
+					"total": 253
+				},
+				"genres": [
+					"adult standards",
+					"christmas instrumental"
+				],
+				"href": "https://api.spotify.com/v1/artists/4BUCzxTW8MiC4TT0C29CKF",
+				"id": "4BUCzxTW8MiC4TT0C29CKF",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b273ed524b93e09155b537b16421",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e02ed524b93e09155b537b16421",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d00004851ed524b93e09155b537b16421",
+						"width": 64
+					}
+				],
+				"name": "The Holiday Horns",
+				"popularity": 56,
+				"type": "artist",
+				"uri": "spotify:artist:4BUCzxTW8MiC4TT0C29CKF"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/4ag7CRSzcTZQX2Bter3fLR"
+				},
+				"followers": {
+					"href": null,
+					"total": 3145
+				},
+				"genres": [],
+				"href": "https://api.spotify.com/v1/artists/4ag7CRSzcTZQX2Bter3fLR",
+				"id": "4ag7CRSzcTZQX2Bter3fLR",
+				"images": [],
+				"name": "The Disney Holiday Chorus",
+				"popularity": 52,
+				"type": "artist",
+				"uri": "spotify:artist:4ag7CRSzcTZQX2Bter3fLR"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/4L2WIrD69vE4XPjYehJYci"
+				},
+				"followers": {
+					"href": null,
+					"total": 17
+				},
+				"genres": [],
+				"href": "https://api.spotify.com/v1/artists/4L2WIrD69vE4XPjYehJYci",
+				"id": "4L2WIrD69vE4XPjYehJYci",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b2733ca161e6ca54213bd6bc3896",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e023ca161e6ca54213bd6bc3896",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d000048513ca161e6ca54213bd6bc3896",
+						"width": 64
+					}
+				],
+				"name": "Holiday Band Ensemble",
+				"popularity": 36,
+				"type": "artist",
+				"uri": "spotify:artist:4L2WIrD69vE4XPjYehJYci"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/7G6hXrjGpi6I7waNl4wxAk"
+				},
+				"followers": {
+					"href": null,
+					"total": 1093303
+				},
+				"genres": [
+					"bassline",
+					"hip pop",
+					"new jack swing",
+					"pop r&b",
+					"pop rap",
+					"r&b",
+					"urban contemporary"
+				],
+				"href": "https://api.spotify.com/v1/artists/7G6hXrjGpi6I7waNl4wxAk",
+				"id": "7G6hXrjGpi6I7waNl4wxAk",
+				"images": [
+					{
+						"height": 1000,
+						"url": "https://i.scdn.co/image/e8a48dd66904570087b66f1196b900554aef78a0",
+						"width": 1000
+					},
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/d0271364e8f8d479881dc6aaefe739d33d13ef80",
+						"width": 640
+					},
+					{
+						"height": 200,
+						"url": "https://i.scdn.co/image/e7e156d7f4358c8fb932d854ad7580608ce84aaa",
+						"width": 200
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/b3bdd9c10730adceb5099b506920bc47214921f6",
+						"width": 64
+					}
+				],
+				"name": "J. Holiday",
+				"popularity": 56,
+				"type": "artist",
+				"uri": "spotify:artist:7G6hXrjGpi6I7waNl4wxAk"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/3n5GnoJe6aBCXVIjI9UJGQ"
+				},
+				"followers": {
+					"href": null,
+					"total": 5
+				},
+				"genres": [],
+				"href": "https://api.spotify.com/v1/artists/3n5GnoJe6aBCXVIjI9UJGQ",
+				"id": "3n5GnoJe6aBCXVIjI9UJGQ",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b27334415aa4ae9abcc00d439e4c",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e0234415aa4ae9abcc00d439e4c",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d0000485134415aa4ae9abcc00d439e4c",
+						"width": 64
+					}
+				],
+				"name": "Holiday Countdown",
+				"popularity": 17,
+				"type": "artist",
+				"uri": "spotify:artist:3n5GnoJe6aBCXVIjI9UJGQ"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/2XhOwYHiNFORp3FghkeV6z"
+				},
+				"followers": {
+					"href": null,
+					"total": 2374
+				},
+				"genres": [],
+				"href": "https://api.spotify.com/v1/artists/2XhOwYHiNFORp3FghkeV6z",
+				"id": "2XhOwYHiNFORp3FghkeV6z",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b2739f89f183135d3a42b8570cfb",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e029f89f183135d3a42b8570cfb",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d000048519f89f183135d3a42b8570cfb",
+						"width": 64
+					}
+				],
+				"name": "Christmas Jazz Holiday Music",
+				"popularity": 46,
+				"type": "artist",
+				"uri": "spotify:artist:2XhOwYHiNFORp3FghkeV6z"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/60Z50yxe6i4mkUwoykAnwG"
+				},
+				"followers": {
+					"href": null,
+					"total": 4732
+				},
+				"genres": [],
+				"href": "https://api.spotify.com/v1/artists/60Z50yxe6i4mkUwoykAnwG",
+				"id": "60Z50yxe6i4mkUwoykAnwG",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/e8df85f4f39a820346b47301a0c596339080ac12",
+						"width": 640
+					},
+					{
+						"height": 320,
+						"url": "https://i.scdn.co/image/8fe681246fbe08e0d989d25bfcc15cf6de37766c",
+						"width": 320
+					},
+					{
+						"height": 160,
+						"url": "https://i.scdn.co/image/20697b9f0b954cdd91a810a2f6d491f02bf62b17",
+						"width": 160
+					}
+				],
+				"name": "Holiday Sidewinder",
+				"popularity": 31,
+				"type": "artist",
+				"uri": "spotify:artist:60Z50yxe6i4mkUwoykAnwG"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/3DbbwN6KiTd1SiudMbIHvo"
+				},
+				"followers": {
+					"href": null,
+					"total": 194
+				},
+				"genres": [],
+				"href": "https://api.spotify.com/v1/artists/3DbbwN6KiTd1SiudMbIHvo",
+				"id": "3DbbwN6KiTd1SiudMbIHvo",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b273fc7d2653a39f4b3e08608fac",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e02fc7d2653a39f4b3e08608fac",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d00004851fc7d2653a39f4b3e08608fac",
+						"width": 64
+					}
+				],
+				"name": "Holiday Rockers",
+				"popularity": 27,
+				"type": "artist",
+				"uri": "spotify:artist:3DbbwN6KiTd1SiudMbIHvo"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/3BZBnC18MJDRtneF9r7Qx7"
+				},
+				"followers": {
+					"href": null,
+					"total": 4486
+				},
+				"genres": [
+					"swedish alternative rock",
+					"swedish garage rock",
+					"swedish indie pop"
+				],
+				"href": "https://api.spotify.com/v1/artists/3BZBnC18MJDRtneF9r7Qx7",
+				"id": "3BZBnC18MJDRtneF9r7Qx7",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/2d81363c02f138919c680a73093e2523d8361451",
+						"width": 640
+					},
+					{
+						"height": 320,
+						"url": "https://i.scdn.co/image/70bd0f1e9f689f49669e44b631c905dfeed04582",
+						"width": 320
+					},
+					{
+						"height": 160,
+						"url": "https://i.scdn.co/image/476d6a46635ce22358d72f5bdd313bad7009d84e",
+						"width": 160
+					}
+				],
+				"name": "Satan Takes A Holiday",
+				"popularity": 21,
+				"type": "artist",
+				"uri": "spotify:artist:3BZBnC18MJDRtneF9r7Qx7"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/41ZgpkCgDfKPg0f59pnSNg"
+				},
+				"followers": {
+					"href": null,
+					"total": 2
+				},
+				"genres": [],
+				"href": "https://api.spotify.com/v1/artists/41ZgpkCgDfKPg0f59pnSNg",
+				"id": "41ZgpkCgDfKPg0f59pnSNg",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b27372e11d4e5abf9832bb6f60f0",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e0272e11d4e5abf9832bb6f60f0",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d0000485172e11d4e5abf9832bb6f60f0",
+						"width": 64
+					}
+				],
+				"name": "Purple Holiday",
+				"popularity": 42,
+				"type": "artist",
+				"uri": "spotify:artist:41ZgpkCgDfKPg0f59pnSNg"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/4urAuqNWiY2mZWSRAqWNar"
+				},
+				"followers": {
+					"href": null,
+					"total": 66
+				},
+				"genres": [],
+				"href": "https://api.spotify.com/v1/artists/4urAuqNWiY2mZWSRAqWNar",
+				"id": "4urAuqNWiY2mZWSRAqWNar",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b2731641f0e04b378b727909ffe2",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e021641f0e04b378b727909ffe2",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d000048511641f0e04b378b727909ffe2",
+						"width": 64
+					}
+				],
+				"name": "Holiday Safari",
+				"popularity": 22,
+				"type": "artist",
+				"uri": "spotify:artist:4urAuqNWiY2mZWSRAqWNar"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/4XWZxmAaLdsJlJvUjlowZF"
+				},
+				"followers": {
+					"href": null,
+					"total": 26098
+				},
+				"genres": [],
+				"href": "https://api.spotify.com/v1/artists/4XWZxmAaLdsJlJvUjlowZF",
+				"id": "4XWZxmAaLdsJlJvUjlowZF",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b273f276d5a8693984a2de549350",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e02f276d5a8693984a2de549350",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d00004851f276d5a8693984a2de549350",
+						"width": 64
+					}
+				],
+				"name": "Christmas Music Holiday Trio",
+				"popularity": 43,
+				"type": "artist",
+				"uri": "spotify:artist:4XWZxmAaLdsJlJvUjlowZF"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/5HAqdulyJZF8EPKIvPMRTy"
+				},
+				"followers": {
+					"href": null,
+					"total": 2894
+				},
+				"genres": [
+					"australian electropop"
+				],
+				"href": "https://api.spotify.com/v1/artists/5HAqdulyJZF8EPKIvPMRTy",
+				"id": "5HAqdulyJZF8EPKIvPMRTy",
+				"images": [
+					{
+						"height": 1000,
+						"url": "https://i.scdn.co/image/ec66fbef725e4058abe40d7555b060319495e10e",
+						"width": 1000
+					},
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/8b288792f71f4e4986a76a7b857705dbc2d9174b",
+						"width": 640
+					},
+					{
+						"height": 200,
+						"url": "https://i.scdn.co/image/196638ed8b77fc908221af25a120aa5633b42f9c",
+						"width": 200
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/0c76edfb30310cc11513e331d9907ba40420ff42",
+						"width": 64
+					}
+				],
+				"name": "Moon Holiday",
+				"popularity": 46,
+				"type": "artist",
+				"uri": "spotify:artist:5HAqdulyJZF8EPKIvPMRTy"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/7CDhOqpVgsVE30D1KC6wng"
+				},
+				"followers": {
+					"href": null,
+					"total": 342
+				},
+				"genres": [
+					"christmas product"
+				],
+				"href": "https://api.spotify.com/v1/artists/7CDhOqpVgsVE30D1KC6wng",
+				"id": "7CDhOqpVgsVE30D1KC6wng",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b2734ce9074dcca5ea4928e79e7d",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e024ce9074dcca5ea4928e79e7d",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d000048514ce9074dcca5ea4928e79e7d",
+						"width": 64
+					}
+				],
+				"name": "Holiday Express",
+				"popularity": 27,
+				"type": "artist",
+				"uri": "spotify:artist:7CDhOqpVgsVE30D1KC6wng"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/4kzBapiIVMxwhJLsTm28Gc"
+				},
+				"followers": {
+					"href": null,
+					"total": 11768
+				},
+				"genres": [],
+				"href": "https://api.spotify.com/v1/artists/4kzBapiIVMxwhJLsTm28Gc",
+				"id": "4kzBapiIVMxwhJLsTm28Gc",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/b3594955855c5d8f15b9988ee2c878d38228dd55",
+						"width": 640
+					},
+					{
+						"height": 320,
+						"url": "https://i.scdn.co/image/4126b60f7e27a033ba84ac1ca9974e3b0f2b4e17",
+						"width": 320
+					},
+					{
+						"height": 160,
+						"url": "https://i.scdn.co/image/c7a9d7fed05dce02dd5b913ae5c9ffb529456e1a",
+						"width": 160
+					}
+				],
+				"name": "Vlad Holiday",
+				"popularity": 44,
+				"type": "artist",
+				"uri": "spotify:artist:4kzBapiIVMxwhJLsTm28Gc"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/5e0JSK8KfvtuYXmtX45I09"
+				},
+				"followers": {
+					"href": null,
+					"total": 11
+				},
+				"genres": [],
+				"href": "https://api.spotify.com/v1/artists/5e0JSK8KfvtuYXmtX45I09",
+				"id": "5e0JSK8KfvtuYXmtX45I09",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b273962d6fee4d4874c69c40b9f3",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e02962d6fee4d4874c69c40b9f3",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d00004851962d6fee4d4874c69c40b9f3",
+						"width": 64
+					}
+				],
+				"name": "Holiday Sounds Orchestra",
+				"popularity": 14,
+				"type": "artist",
+				"uri": "spotify:artist:5e0JSK8KfvtuYXmtX45I09"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/4lPfX4kSXsp4bWdR4jDfzy"
+				},
+				"followers": {
+					"href": null,
+					"total": 1224
+				},
+				"genres": [],
+				"href": "https://api.spotify.com/v1/artists/4lPfX4kSXsp4bWdR4jDfzy",
+				"id": "4lPfX4kSXsp4bWdR4jDfzy",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/e0d666a6415a2f0e09c7874c716f06a8c58b1440",
+						"width": 640
+					},
+					{
+						"height": 320,
+						"url": "https://i.scdn.co/image/738ffca082d0ccd02a44628880a910ddc9cc624d",
+						"width": 320
+					},
+					{
+						"height": 160,
+						"url": "https://i.scdn.co/image/6201cddf0a23cfa9c7de8c9ad7eb7a4f84d4659f",
+						"width": 160
+					}
+				],
+				"name": "Mason Holiday",
+				"popularity": 19,
+				"type": "artist",
+				"uri": "spotify:artist:4lPfX4kSXsp4bWdR4jDfzy"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/2UulPuuEMAeXRx2qJbYJPD"
+				},
+				"followers": {
+					"href": null,
+					"total": 39
+				},
+				"genres": [],
+				"href": "https://api.spotify.com/v1/artists/2UulPuuEMAeXRx2qJbYJPD",
+				"id": "2UulPuuEMAeXRx2qJbYJPD",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b2730bdd5eca115f0f027b2185b2",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e020bdd5eca115f0f027b2185b2",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d000048510bdd5eca115f0f027b2185b2",
+						"width": 64
+					}
+				],
+				"name": "Holiday Players",
+				"popularity": 25,
+				"type": "artist",
+				"uri": "spotify:artist:2UulPuuEMAeXRx2qJbYJPD"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/2dX157YnbGJAnNclK9HU0X"
+				},
+				"followers": {
+					"href": null,
+					"total": 102
+				},
+				"genres": [],
+				"href": "https://api.spotify.com/v1/artists/2dX157YnbGJAnNclK9HU0X",
+				"id": "2dX157YnbGJAnNclK9HU0X",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b273663dab0b9c9f608eb0cd5662",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e02663dab0b9c9f608eb0cd5662",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d00004851663dab0b9c9f608eb0cd5662",
+						"width": 64
+					}
+				],
+				"name": "Sunny Holiday",
+				"popularity": 33,
+				"type": "artist",
+				"uri": "spotify:artist:2dX157YnbGJAnNclK9HU0X"
+			},
+			{
+				"external_urls": {
+					"spotify": "https://open.spotify.com/artist/3ydteMm18xBjMuFDb8RA1J"
+				},
+				"followers": {
+					"href": null,
+					"total": 0
+				},
+				"genres": [],
+				"href": "https://api.spotify.com/v1/artists/3ydteMm18xBjMuFDb8RA1J",
+				"id": "3ydteMm18xBjMuFDb8RA1J",
+				"images": [
+					{
+						"height": 640,
+						"url": "https://i.scdn.co/image/ab67616d0000b2732cbfb59823036fda34a25458",
+						"width": 640
+					},
+					{
+						"height": 300,
+						"url": "https://i.scdn.co/image/ab67616d00001e022cbfb59823036fda34a25458",
+						"width": 300
+					},
+					{
+						"height": 64,
+						"url": "https://i.scdn.co/image/ab67616d000048512cbfb59823036fda34a25458",
+						"width": 64
+					}
+				],
+				"name": "Holiday Screamer",
+				"popularity": 23,
+				"type": "artist",
+				"uri": "spotify:artist:3ydteMm18xBjMuFDb8RA1J"
+			}
+		]
+	}
+}
