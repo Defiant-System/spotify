@@ -15,6 +15,7 @@ const spotify = {
 		// temp
 		// setTimeout(() => window.find(".ctrl-search").trigger("click"), 100);
 		// setTimeout(() => window.find(".tabs [data-type='home-featured']").trigger("click"), 100);
+		// setTimeout(() => window.find(".wrapper .item:nth-child(2)").trigger("click"), 100);
 	},
 	dispatch(event) {
 		let Self = spotify,

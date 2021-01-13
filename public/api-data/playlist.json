@@ -1,15 +1,4 @@
-/*
-	ID:		4Wqhmyri54LKWet5NmrIRY
-	FIELDS:	name,type,uri,owner(display_name),images,tracks(items(track(name,uri,duration_ms,artists(name,uri),album(name,uri))))
-*/
-
 {
-	"type": "playlist",
-	"name": "old",
-	"owner": {
-		"display_name": "Hakan Bilgin"
-	},
-	"uri": "spotify:playlist:4Wqhmyri54LKWet5NmrIRY",
 	"images": [
 		{
 			"height": 640,
@@ -27,6 +16,10 @@
 			"width": 60
 		}
 	],
+	"name": "old",
+	"owner": {
+		"display_name": "Hakan Bilgin"
+	},
 	"tracks": {
 		"items": [
 			{
@@ -1852,5 +1845,7 @@
 				}
 			}
 		]
-	}
+	},
+	"type": "playlist",
+	"uri": "spotify:playlist:4Wqhmyri54LKWet5NmrIRY"
 }

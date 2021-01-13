@@ -26,6 +26,7 @@
 	<div class="categories" data-click="show-category">
 		<xsl:for-each select="//Categories/*">
 			<div class="category">
+				<xsl:attribute name="data-id"><xsl:value-of select="@id"/></xsl:attribute>
 				<div class="image">
 					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
 				</div>
@@ -40,6 +41,7 @@
 	<div class="featured-playlists" data-click="show-featured">
 		<xsl:for-each select="./*">
 			<div class="featured">
+				<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
 				<div class="image">
 					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
 				</div>
@@ -57,9 +59,10 @@
 			<h2>Category</h2>
 		</div>
 
-		<div class="view-body playlists">
-			<xsl:for-each select="//CategoryPlayList/*">
+		<div class="view-body playlists" data-click="show-playlist">
+			<xsl:for-each select="./*">
 				<div class="playlist">
+					<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
 					<div class="image">
 						<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
 						<i class="icon-player-play">
@@ -164,20 +167,24 @@
 <xsl:template name="playlist-view">
 	<section class="playlist">
 		<div class="playlist-head">
-			<div class="albums" style="background-image: url(~/img/mosaic.jpeg);">
+			<div class="albums">
+				<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
 				<div class="album"></div>
 				<div class="album"></div>
 				<div class="album"></div>
 				<div class="album"></div>
 			</div>
 			<h2>
-				Old Playlist
+				<xsl:value-of select="@name"/>
 				<div class="playlist-owner">
 					<span>
 						Playlist by 
-						<span>Hakan Bilgin</span>
+						<span><xsl:value-of select="@owner"/></span>
 					</span>
-					<span><xsl:value-of select="count(./track)"/> songs</span>
+					<span><xsl:choose>
+						<xsl:when test="@total"><xsl:value-of select="@total"/></xsl:when>
+						<xsl:otherwise><xsl:value-of select="count(./track)"/></xsl:otherwise>
+					</xsl:choose> songs</span>
 				</div>
 			</h2>
 		</div>
