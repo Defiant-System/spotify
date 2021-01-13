@@ -23,7 +23,7 @@
 					Self.els.panel.find(".active").removeClass("active");
 					el.addClass("active");
 					// forward event to content module
-					APP.content.dispatch({ type: "select-playlist", el });
+					APP.content.dispatch({ type: "show-playlist", el });
 				}
 				break;
 		}

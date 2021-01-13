@@ -2,6 +2,7 @@
 // spotify.player
 
 {
+	playing: {},
 	init() {
 		// fast references
 		this.els = {
@@ -10,12 +11,14 @@
 			track: window.find("div[data-area='player'] .progress .progress-track"),
 			amount: window.find("div[data-area='player'] .progress .progress-played"),
 			knob: window.find("div[data-area='player'] .progress .knob"),
+			btnPlay: window.find("div[data-area='player'] .ctrl-play"),
 		};
 		// bind event handlers
 		this.els.range.bind("mousedown", this.dispatch);
 	},
 	dispatch(event) {
-		let Self = spotify.player,
+		let APP = spotify,
+			Self = APP.player,
 			Drag = Self.drag,
 			isOn,
 			maxX,
@@ -59,6 +62,12 @@
 				Self.els.doc.off("mousemove mouseup", Self.dispatch);
 				break;
 			// custom events
+			case "player-play":
+				Self.playing.track = event.uri;
+				break;
+			case "player-pause":
+				Self.playing.track = false;
+				break;
 			case "player-previous":
 			case "player-next":
 			case "player-shuffle":

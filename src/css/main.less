@@ -828,7 +828,7 @@ div[data-area="panel"] {
 						&:before { display: none; }
 					}
 
-					&.playing {
+					&.track-playing {
 						.cell:nth-child(1):before {
 							display: none;
 						}
@@ -889,10 +889,12 @@ div[data-area="panel"] {
 				}
 			}
 
-			&:hover:not(.head):not(.active):not(.playing) {
+			&:hover:not(.head):not(.active):not(.track-playing) {
 				color: #fff;
 				background: #66666630;
+			}
 
+			&:hover {
 				.icon-player-play {
 					opacity: .5;
 				}
@@ -903,7 +905,7 @@ div[data-area="panel"] {
 				color: #eee;
 			}
 
-			&.playing {
+			&.track-playing {
 				color: #00ea89;
 
 				&:hover .cell:nth-child(1) {
@@ -1809,7 +1811,7 @@ div[data-area="panel"] {
 			}
 		}
 
-		&.playing {
+		&.track-playing {
 			&:hover {
 				.image .icon-player-play {
 					&:before {
@@ -1915,7 +1917,7 @@ div[data-area="panel"] {
 			}
 		}
 
-		&.playing {
+		&.track-playing {
 			&:hover {
 				.image .icon-player-play {
 					&:before {

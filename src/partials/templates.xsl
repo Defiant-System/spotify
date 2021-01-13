@@ -23,7 +23,7 @@
 
 
 <xsl:template name="home-browse">
-	<div class="categories" data-click="select-category">
+	<div class="categories" data-click="show-category">
 		<xsl:for-each select="//Categories/*">
 			<div class="category">
 				<div class="image">
@@ -37,7 +37,7 @@
 
 
 <xsl:template name="home-featured">
-	<div class="featured-playlists" data-click="select-featured">
+	<div class="featured-playlists" data-click="show-featured">
 		<xsl:for-each select="//Featured/*">
 			<div class="featured">
 				<div class="image">

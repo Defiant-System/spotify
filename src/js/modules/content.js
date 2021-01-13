@@ -8,17 +8,20 @@
 		"home-featured":  { template: "home-featured" },
 		"home-favorites": { template: "playlist", match: "//Favorites" },
 		"home-history":   { template: "playlist", match: "//Recently" },
-		
 		"search":           { template: "search-view",  match: "//Search/Tracks" },
 		"search-tracks":    { template: "playlist",     match: "//Playlist" },
 		"search-artists":   { template: "artists",      match: "//Related" },
 		"search-albums":    { template: "mixed-albums", match: "//Appears" },
 		"search-playlists": { template: "playlists",    match: "//Playlists" },
-		
 		"artist-top-tracks":     { template: "artist-top-tracks", match: "//Artist" },
 		"artist-albums":         { template: "artist-albums",     match: "//Albums" },
 		"artist-appears-on":     { template: "mixed-albums",      match: "//Appears" },
 		"artist-fans-also-like": { template: "artists",           match: "//Related" },
+		"show-artist":   { template: "artist-view", match: "//Artist" },
+		"show-album":    { template: "album-view",  match: "//Album" },
+		"show-category": { template: "category-view", match: "//CategoryPlayList" },
+		"show-playlist": { template: "playlist-view", match: "//Playlist" },
+		"show-featured": { template: "playlist-view", match: "//Playlist" },
 	},
 	init() {
 		// fast references
@@ -32,14 +35,17 @@
 		this.history = new window.History;
 	},
 	dispatch(event) {
-		let Self = spotify.content,
+		let APP = spotify,
+			Self = APP.content,
 			state = Self.history.current,
+			type,
 			render,
 			target,
 			item,
 			str,
-			id,
+			uri,
 			uEl,
+			row,
 			el;
 		switch (event.type) {
 			// navigation events
@@ -65,7 +71,7 @@
 				target = Self.els.body;
 				render = Self.renders[event.view];
 				window.render({ ...render, target });
-				
+
 				// add state to history
 				Self.history.push({ view: event.view });
 				// update view state
@@ -75,7 +81,7 @@
 				// save scrollTop of elements
 				if (state) {
 					el = Self.els.body.find(".table-body");
-					if (el.length) {
+					if (el.length && el.scrollTop() > 0) {
 						el.data({ scrollTop: el.scrollTop() });
 					} else {
 						el = Self.els.body.find(".view-body");
@@ -83,10 +89,18 @@
 							el.data({ scrollTop: el.scrollTop() });
 						}
 					}
-					state.html = Self.els.body.html();
+					state.html = Self.els.body.html().replace(/\btrack-playing\b/g, "");
 					// keeps track of active element
 					if (event.stamp) state.stamp = event.stamp;
 				}
+				break;
+			// more navigation
+			case "show-artist":
+			case "show-album":
+			case "show-category":
+			case "show-playlist":
+			case "show-featured":
+				Self.dispatch({ type: "go-to", view: event.type });
 				break;
 			// tabs
 			case "home-browse":
@@ -116,60 +130,21 @@
 				Self.setViewState();
 				break;
 			// misc events
-			case "play-track":
-				el = event.el.parents(".row");
-				el.parent().find(".active, .playing").removeClass("active playing");
-				el.addClass("active playing");
-
-				console.log("Toggle track", event.id);
-				break;
 			case "play-album":
-				event.el.parent().find(".playing").removeClass("playing");
-				event.el.addClass("playing");
+				event.el.parent().find(".track-playing").removeClass("track-playing");
+				event.el.addClass("track-playing");
 
 				console.log("Toggle album", event.id);
 				break;
 			case "play-artist":
-				event.el.parent().find(".playing").removeClass("playing");
-				event.el.addClass("playing");
+				event.el.parent().find(".track-playing").removeClass("track-playing");
+				event.el.addClass("track-playing");
 
 				console.log("Toggle artist", event.id);
-				break;
-			case "show-artist":
-				window.render({
-					template: "artist-view",
-					match: "//Artist",
-					target: Self.els.body
-				});
-				break;
-			case "show-album":
-				window.render({
-					template: "album-view",
-					match: "//Album",
-					target: Self.els.body
-				});
 				break;
 			case "sort-list":
 				el = $(event.target);
 				console.log(el);
-				break;
-			case "select-category":
-				el = $(event.target);
-
-				window.render({
-					template: "category-view",
-					match: "//CategoryPlayList",
-					target: Self.els.body
-				});
-				break;
-			case "select-playlist":
-				el = event.el;
-
-				window.render({
-					template: "playlist-view",
-					match: "//Playlist",
-					target: Self.els.body
-				});
 				break;
 			case "select-album":
 			case "select-artist":
@@ -177,12 +152,13 @@
 				if (el[0] === event.el[0]) return;
 
 				uEl = el.data("uri") ? el : el.parents("[data-uri]");
-				[ str, item, id ] = uEl.data("uri").split(":");
+				uri = uEl.data("uri");
+				[ str, item ] = uri.split(":");
 
 				if (el.hasClass("icon-player-play")) {
-					Self.dispatch({ type: "play-"+ item, el: uEl, id });
+					Self.dispatch({ type: "play-"+ item, el: uEl, uri });
 				} else {
-					Self.dispatch({ type: "show-"+ item, el: uEl, id });
+					Self.dispatch({ type: "show-"+ item, el: uEl, uri });
 				}
 				break;
 			case "select-track":
@@ -191,12 +167,21 @@
 
 				uEl = el.data("uri") ? el : el.parents("[data-uri]");
 				if (uEl.length) {
-					[ str, item, id ] = uEl.data("uri").split(":");
+					uri = uEl.data("uri");
+					[ str, item ] = uri.split(":");
 				}
 				if (item === "track") {
-					Self.dispatch({ type: "play-"+ item, el, id });
+					row = uEl.parents(".row");
+					type = row.hasClass("track-playing") ? "pause" : "play";
+					row.parent().find(".active, .track-playing").removeClass("active track-playing");
+					
+					row.addClass("active");
+					if (type === "play") row.addClass("track-playing");
+
+					// toggle track play
+					APP.player.dispatch({ type: "player-"+ type, uri });
 				} else if (el.data("uri")) {
-					Self.dispatch({ type: "show-"+ item, el, id });
+					Self.dispatch({ type: "show-"+ item, el, uri });
 				} else {
 					el = el.parents(".row");
 					el.parent().find(".active").removeClass("active");
@@ -222,7 +207,9 @@
 		}
 	},
 	setViewState(step) {
-		let state = this.history.current;
+		let APP = spotify,
+			Body = this.els.body,
+			state = this.history.current;
 
 		// navigation buttons UI update
 		this.els.btnBack.toggleClass("disabled", this.history.canGoBack);
@@ -230,10 +217,10 @@
 		
 		if (state && state.html) {
 			// update body contents
-			this.els.body.html(state.html);
+			Body.html(state.html);
 
 			// fix scrollTop for elements
-			this.els.body.find("[data-scrollTop]").map(el =>
+			Body.find("[data-scrollTop]").map(el =>
 				el.scrollTop = +el.getAttribute("data-scrollTop"));
 
 			if (step === -1 && state.stamp) {
@@ -241,11 +228,12 @@
 				activeEl.parent().find(".active").removeClass("active");
 				activeEl.addClass("active");
 			}
-
-			/*
-			 * TODO: make sure active playing track / album / playlist
-			 * is tagged with className "playing"
-			 */
 		}
+
+		// UI update on currently playing track
+		let trackUri = APP.player.playing.track;
+		Body.find(".track-playing").removeClass("track-playing");
+		Body.find(`.icon-player-play[data-uri="${trackUri}"]`)
+			.parents(".row").addClass("track-playing");
 	}
 }

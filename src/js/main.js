@@ -9,8 +9,11 @@ const spotify = {
 		// init sub modules
 		Object.keys(this).filter(i => this[i].init).map(i => this[i].init());
 
-		// temp
+		// home view
 		window.find(`.top span[data-click="go-home"]`).trigger("click");
+
+		// temp
+		setTimeout(() => window.find(".tabs [data-type='home-history']").trigger("click"), 100);
 	},
 	dispatch(event) {
 		let Self = spotify,
