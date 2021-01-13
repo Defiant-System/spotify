@@ -20,7 +20,7 @@
 		let APP = spotify,
 			Self = APP.player,
 			Drag = Self.drag,
-			isOn,
+			uri,
 			maxX,
 			sLeft,
 			left,
@@ -71,6 +71,11 @@
 			case "player-pause":
 				el = Self.els.btnPlay.find("> i");
 				el.prop({ "className": "icon-player-play" });
+
+				// look for playing track uri - update UI, if found
+				uri = Self.playing.track;
+				APP.content.els.body.find(`.icon-player-play[data-uri="${uri}"]`)
+					.parents(".row").removeClass("track-playing");
 
 				Self.playing.pause = Self.playing.track;
 				Self.playing.track = false;
