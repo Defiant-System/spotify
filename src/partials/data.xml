@@ -383,13 +383,351 @@
 		<playlist name="Holiday 🏖 " uri="spotify:playlist:67hwuoz8ZMErt9E1ICTBuq" image="https://i.scdn.co/image/ab67706c0000bebbf4f8666b54e96c8f41577275"/>
 	</SearchPlaylists>
 
-	<Playlists>
-		<playlist name="Holidays Pop" uri="spotify:playlist:4GxYWwe4QEzLofaRn9a4af" image="https://i.scdn.co/image/ab67706c0000bebb258fc2fb43d2a59b38e5b28f"/>
-		<playlist name="Happy Holidays" uri="spotify:playlist:37i9dQZF1DX0HWhBzpBj05" image="https://i.scdn.co/image/ab67706f00000003012147aa36dafb6530edda75"/>
-		<playlist name="Holidays" uri="spotify:playlist:4fVEWoG84wjkeDGOcxOcEK" image="https://i.scdn.co/image/ab67706c0000bebbe866e6bfc2ace7580fe62775"/>
-		<playlist name="New Music Holiday" uri="spotify:playlist:37i9dQZF1DX5vMTfJy5XKE" image="https://i.scdn.co/image/ab67706f000000033b176faf43fe51fd45308271"/>
-		<playlist name="HolidayStreamingforBE" uri="spotify:playlist:7CXbFDNOOTBZncUN4QSPmd" image="https://i.scdn.co/image/ab67706c0000bebbb1191c9f85bab2422cbfdd20"/>
-	</Playlists>
+	<Compilation name="Dinner Romance" owner="Spotify" image="https://i.scdn.co/image/ab67706f000000038bb1ac1171362f150919245a">
+	    <track name="How Would You Feel (Paean)" duration_ms="280533" uri="spotify:track:1lyNFzcCl9kXCof6GV32fV">
+	        <artists name="Ed Sheeran" uri="spotify:artist:6eUKZXaKkcviH0Ku9w2n3V"/>
+	        <album name="How Would You Feel (Paean)" uri="spotify:album:6m47Bv7lQlUWNZ5W6N4XjJ"/>
+	    </track>
+	    <track name="As Long as You Love Me" duration_ms="221106" uri="spotify:track:3UpS7kBnkVQYG13pDDFTC4">
+	        <artists name="Backstreet Boys" uri="spotify:artist:5rSXSAkZ67PYJSvpUpkOr7"/>
+	        <album name="Backstreet's Back" uri="spotify:album:2U9ONknz1iFEK9drEKLx8v"/>
+	    </track>
+	    <track name="Cut Me" duration_ms="185357" uri="spotify:track:1wtrJ0dcTjqP8PMRTczdSi">
+	        <artists name="Chris Medina" uri="spotify:artist:2uCmngYSlTEELzZXl1z1dV"/>
+	        <album name="Cut Me" uri="spotify:album:1FWXfOdSVUrPPCXymMMiCK"/>
+	    </track>
+	    <track name="You're Beautiful" duration_ms="209493" uri="spotify:track:5pbajJXEPdcoXQPXoAVR1t">
+	        <artists name="James Blunt" uri="spotify:artist:7KMqksf0UMdyA0UCf4R3ux"/>
+	        <album name="Back to Bedlam" uri="spotify:album:1wklsLLbGIZg1RDpoJovrb"/>
+	    </track>
+	    <track name="Lucky" duration_ms="191360" uri="spotify:track:0IktbUcnAGrvD03AWnz3Q8">
+	        <artists name="Jason Mraz" uri="spotify:artist:4phGZZrJZRo4ElhRtViYdl"/>
+	        <artists name="Colbie Caillat" uri="spotify:artist:6aZyMrc4doVtZyKNilOmwu"/>
+	        <album name="We Sing. We Dance. We Steal Things." uri="spotify:album:04G0YylSjvDQZrjOfE5jA5"/>
+	    </track>
+	    <track name="Beyond" duration_ms="240600" uri="spotify:track:1Omt5bfz1tZUCqd26HxbS0">
+	        <artists name="Leon Bridges" uri="spotify:artist:3qnGvpP8Yth1AqSBMqON5x"/>
+	        <album name="Good Thing" uri="spotify:album:7J9fifadXb0PPSBWXctbi8"/>
+	    </track>
+	    <track name="Burning" duration_ms="203289" uri="spotify:track:2mb6YdoavL6db22p7XKJQZ">
+	        <artists name="Sam Smith" uri="spotify:artist:2wY79sveU1sp5g7SokKOiI"/>
+	        <album name="The Thrill Of It All (Special Edition)" uri="spotify:album:3TJz2UBNYJtlEly0sPeNrQ"/>
+	    </track>
+	    <track name="Happier" duration_ms="207520" uri="spotify:track:2RttW7RAu5nOAfq6YFvApB">
+	        <artists name="Ed Sheeran" uri="spotify:artist:6eUKZXaKkcviH0Ku9w2n3V"/>
+	        <album name="÷ (Deluxe)" uri="spotify:album:3T4tUhGYeRNVUGevb0wThu"/>
+	    </track>
+	    <track name="Stuck On You" duration_ms="192066" uri="spotify:track:6HPLeKiNm92RbykX2BDTUB">
+	        <artists name="Lionel Richie" uri="spotify:artist:3gMaNLQm7D9MornNILzdSl"/>
+	        <album name="Can't Slow Down" uri="spotify:album:5U0NU0T1JKIJwgq2ZDWb2T"/>
+	    </track>
+	    <track name="To Be With You - 2010 Remastered Version" duration_ms="210480" uri="spotify:track:3Mmt6Xk0H6VR92PEp6x3hP">
+	        <artists name="Mr. Big" uri="spotify:artist:5OfhOoKunSnuubxxRML8J3"/>
+	        <album name="Lean Into It [Expanded]" uri="spotify:album:6CrjpyjlfjK95oHF6dvEnQ"/>
+	    </track>
+	    <track name="The Rose" duration_ms="214552" uri="spotify:track:7iLXXTLIaguiWCTRJNU1Tv">
+	        <artists name="Bette Midler" uri="spotify:artist:13y0kncDD4J9wxCyfKr10W"/>
+	        <album name="The Best Bette" uri="spotify:album:2aBNewGpx5XIAdSFKvEKGw"/>
+	    </track>
+	    <track name="FIGURES" duration_ms="240906" uri="spotify:track:3U3J5v3rkx89WnFEQvAJD5">
+	        <artists name="Jessie Reyez" uri="spotify:artist:3KedxarmBCyFBevnqQHy3P"/>
+	        <album name="Kiddo" uri="spotify:album:2q7EwuXduuQGDJrPYPVFyw"/>
+	    </track>
+	    <track name="Back for Good - Radio Mix" duration_ms="241293" uri="spotify:track:2BIBtKMUnHyYs3BsEiILTU">
+	        <artists name="Take That" uri="spotify:artist:1XgFuvRd7r5g0h844A5ZUQ"/>
+	        <album name="Never Forget: The Ultimate Collection" uri="spotify:album:7jzGCK8GdjuWEAe1lZ71xI"/>
+	    </track>
+	    <track name="Whiskey To My Soul" duration_ms="225773" uri="spotify:track:7pSr5TCyEHPPRTXJNAtkNz">
+	        <artists name="Roan Ash" uri="spotify:artist:4Tqhn8v9Cws9SRsViQe61U"/>
+	        <album name="Whiskey To My Soul" uri="spotify:album:7pMY78paFqxpkhTAUanWWb"/>
+	    </track>
+	    <track name="Issues" duration_ms="176320" uri="spotify:track:0xG0SHshCStMEyNbNC5d4k">
+	        <artists name="Julia Michaels" uri="spotify:artist:0ZED1XzwlLHW4ZaG4lOT6m"/>
+	        <album name="Nervous System" uri="spotify:album:2jadjpIZfrJwIIlaJbTpHE"/>
+	    </track>
+	    <track name="Time To Say Goodbye" duration_ms="245893" uri="spotify:track:4aLcGMxwFtcZRpl7NDtNW2">
+	        <artists name="Francesco Sartori" uri="spotify:artist:0VtVDsLKIsyiBa1DeAdKbU"/>
+	        <artists name="Lucio Quarantotto" uri="spotify:artist:1lMNYBJkRVsauCctH6Scvn"/>
+	        <artists name="Frank Peterson" uri="spotify:artist:4uOoGyFAz1G6w3vbmyidwk"/>
+	        <artists name="Sarah Brightman" uri="spotify:artist:7Ead768rc4ShGxnqtqccU5"/>
+	        <artists name="Andrea Bocelli" uri="spotify:artist:3EA9hVIzKfFiQI0Kikz2wo"/>
+	        <album name="The Best of Andrea Bocelli - 'Vivere'" uri="spotify:album:6O4lYKMQFLDcaUrBocYSRz"/>
+	    </track>
+	    <track name="Impossible" duration_ms="209440" uri="spotify:track:5yVIlYEHZxQVLyInCdldoS">
+	        <artists name="James Arthur" uri="spotify:artist:4IWBUUAFIplrNtaOHcJPRM"/>
+	        <album name="James Arthur (Deluxe)" uri="spotify:album:029WUoBjWc7Js1QiPH3mw0"/>
+	    </track>
+	    <track name="Please Keep Loving Me" duration_ms="195920" uri="spotify:track:78zUxUPvONPgMIt46q5be6">
+	        <artists name="James TW" uri="spotify:artist:0B3N0ZINFWvizfa8bKiz4v"/>
+	        <album name="Please Keep Loving Me" uri="spotify:album:53ZfIHyk0AhUHeVRBCIl64"/>
+	    </track>
+	    <track name="Friends (feat. Bon Iver)" duration_ms="188336" uri="spotify:track:0ZpBPavoID3eDbaXKSWpAD">
+	        <artists name="Francis and the Lights" uri="spotify:artist:23EA28263XvtIrXuySX6oI"/>
+	        <artists name="Bon Iver" uri="spotify:artist:4LEiUm1SRbFMgfqnQTwUbQ"/>
+	        <album name="Farewell, Starlite!" uri="spotify:album:5gc2S04vG0rEGnTaTwOvus"/>
+	    </track>
+	    <track name="Say You Won't Let Go" duration_ms="211466" uri="spotify:track:5uCax9HTNlzGybIStD3vDh">
+	        <artists name="James Arthur" uri="spotify:artist:4IWBUUAFIplrNtaOHcJPRM"/>
+	        <album name="Back from the Edge" uri="spotify:album:7oiJYvEJHsmYtrgviAVIBD"/>
+	    </track>
+	    <track name="TG4M" duration_ms="172896" uri="spotify:track:4n7fU54ByDflhlz2udlOLc">
+	        <artists name="Zara Larsson" uri="spotify:artist:1Xylc3o4UrD53lo9CvFvVg"/>
+	        <album name="So Good" uri="spotify:album:4QPSmOSVqg7AG8RHCkHdqX"/>
+	    </track>
+	    <track name="Perfect" duration_ms="263400" uri="spotify:track:0tgVpDi06FyKpA1z0VMD4v">
+	        <artists name="Ed Sheeran" uri="spotify:artist:6eUKZXaKkcviH0Ku9w2n3V"/>
+	        <album name="÷ (Deluxe)" uri="spotify:album:3T4tUhGYeRNVUGevb0wThu"/>
+	    </track>
+	    <track name="Photograph" duration_ms="258986" uri="spotify:track:1HNkqx9Ahdgi1Ixy2xkKkL">
+	        <artists name="Ed Sheeran" uri="spotify:artist:6eUKZXaKkcviH0Ku9w2n3V"/>
+	        <album name="x (Deluxe Edition)" uri="spotify:album:1xn54DMo2qIqBuMqHtUsFd"/>
+	    </track>
+	    <track name="Falcons" duration_ms="234013" uri="spotify:track:1FNvsOtp6bnSOQTBgJOtha">
+	        <artists name="Amanda Bergman" uri="spotify:artist:4FmkyL0ggkDBUUoPzBlo80"/>
+	        <album name="Docks" uri="spotify:album:46ouJiWK0jC4QlaWP6DTCH"/>
+	    </track>
+	    <track name="Show Me Heaven - From &quot;Days Of Thunder&quot;" duration_ms="229920" uri="spotify:track:1umFfZGw8bsBd1a0fLTQI3">
+	        <artists name="Maria McKee" uri="spotify:artist:30GIF9g2UJ1ifn45kSMTFf"/>
+	        <album name="Movie Ballads" uri="spotify:album:3FxKnSu0AwZCVimULvmlUj"/>
+	    </track>
+	    <track name="I Will Always Love You" duration_ms="271093" uri="spotify:track:4eHbdreAnSOrDDsFfc4Fpm">
+	        <artists name="Whitney Houston" uri="spotify:artist:6XpaIBNiVzIetEPCWDvAFP"/>
+	        <album name="The Bodyguard - Original Soundtrack Album" uri="spotify:album:7JVJlkNNobS0GSoy4tCS96"/>
+	    </track>
+	    <track name="Lovers" duration_ms="215773" uri="spotify:track:6bZuZKR8hoyzZXNh1IW2Bu">
+	        <artists name="Anna of the North" uri="spotify:artist:1mSJCvDX0W7Dn7S9C6vmvI"/>
+	        <album name="Lovers" uri="spotify:album:5NEfU3Z8PfjeJXABaHf1FF"/>
+	    </track>
+	    <track name="Arthur's Theme (Best That You Can Do)" duration_ms="234493" uri="spotify:track:5fnOrhQ4KgT5irGCjIccGH">
+	        <artists name="Christopher Cross" uri="spotify:artist:695W5F2Ih8dYahLdjVOIoH"/>
+	        <album name="Arthur - The Album [Original Soundtrack]" uri="spotify:album:0QXYfxXpKeLlr3hueenIHB"/>
+	    </track>
+	    <track name="Vart du än går" duration_ms="229066" uri="spotify:track:3nD5Zyg1zbmlLFcDXZswa0">
+	        <artists name="Lisa Nilsson" uri="spotify:artist:68QvqbdqwqqjW39YpUJHdG"/>
+	        <album name="Ingen gör det bättre" uri="spotify:album:0Z6CdX7lZC4Tu3Sw7I4pbD"/>
+	    </track>
+	    <track name="Beautiful to Me" duration_ms="213945" uri="spotify:track:7fa1oiFqQFhlO8ghtLIGpR">
+	        <artists name="Shane Filan" uri="spotify:artist:3Q2ya2vGeOhQ9CaF9wWNP6"/>
+	        <album name="Right Here" uri="spotify:album:2X5hXnYddswmHZUDOsHq0D"/>
+	    </track>
+	    <track name="Long Way Down" duration_ms="257973" uri="spotify:track:25Caem6cbUveFkgPSXtGXe">
+	        <artists name="Joshua Hyslop" uri="spotify:artist:1I7oHjCjMrMUz66v67yJJu"/>
+	        <album name="Echos" uri="spotify:album:5IxfsBZbu9tnPQRgTjwOyc"/>
+	    </track>
+	    <track name="Close" duration_ms="234213" uri="spotify:track:2wJhFcye5iiW2mVBpGednz">
+	        <artists name="Nick Jonas" uri="spotify:artist:4Rxn7Im3LGfyRkY2FlHhWi"/>
+	        <artists name="Tove Lo" uri="spotify:artist:4NHQUGzhtTLFvgF5SZesLK"/>
+	        <album name="Last Year Was Complicated" uri="spotify:album:1J1mjhlth8XnU8ttfRKp5r"/>
+	    </track>
+	    <track name="Thinking out Loud" duration_ms="281560" uri="spotify:track:34gCuhDGsG4bRPIf9bb02f">
+	        <artists name="Ed Sheeran" uri="spotify:artist:6eUKZXaKkcviH0Ku9w2n3V"/>
+	        <album name="x (Deluxe Edition)" uri="spotify:album:1xn54DMo2qIqBuMqHtUsFd"/>
+	    </track>
+	    <track name="Falling Into You" duration_ms="258240" uri="spotify:track:7KWMxUH7lORLTob6aMpXBU">
+	        <artists name="Céline Dion" uri="spotify:artist:4S9EykWXhStSc15wEx8QFK"/>
+	        <album name="Falling into You" uri="spotify:album:2vk0n8aeQSO74VtQBbNDPR"/>
+	    </track>
+	    <track name="Up Where We Belong" duration_ms="233240" uri="spotify:track:5NoUgO4Kr93QymQGQlBC7b">
+	        <artists name="Joe Cocker" uri="spotify:artist:3pFCERyEiP5xeN2EsPXhjI"/>
+	        <artists name="Jennifer Warnes" uri="spotify:artist:1BwHztAQKypBuy5WBEdJnG"/>
+	        <album name="The Ultimate Collection 1968-2003" uri="spotify:album:7kJxjkRxiAy0NeFIaRqcKV"/>
+	    </track>
+	    <track name="I Believe in Us" duration_ms="202146" uri="spotify:track:59JtQ8mThUAnRGValaExhc">
+	        <artists name="LÉON" uri="spotify:artist:4SqTiwOEdYrNayaGMkc7ia"/>
+	        <album name="Surround Me - EP" uri="spotify:album:3m61NACPLHynQ8JHZpPXd4"/>
+	    </track>
+	    <track name="Heartbeat" duration_ms="200373" uri="spotify:track:2Cj2XFOMBT8IrT0aapNTee">
+	        <artists name="Christopher" uri="spotify:artist:3zDRCqOhJXJfS2YWOEwGMC"/>
+	        <album name="Heartbeat" uri="spotify:album:052xFq8blHwU5tv1kjeiak"/>
+	    </track>
+	    <track name="Bubbly" duration_ms="196226" uri="spotify:track:1lkvpmrCaXK8QtliFDcHBO">
+	        <artists name="Colbie Caillat" uri="spotify:artist:6aZyMrc4doVtZyKNilOmwu"/>
+	        <album name="Coco" uri="spotify:album:7a8mrq83VEf0PoFh6pvtsb"/>
+	    </track>
+	    <track name="It Must Have Been Love - From the Film &quot;Pretty Woman&quot;" duration_ms="258786" uri="spotify:track:1JZZkORheU1RpGqJdZ77WL">
+	        <artists name="Roxette" uri="spotify:artist:2SHhfs4BiDxGQ3oxqf0UHY"/>
+	        <album name="A Collection of Roxette Hits! Their 20 Greatest Songs!" uri="spotify:album:1nQK4dpultSS3YeHfYrgEW"/>
+	    </track>
+	    <track name="Make Me (Cry)" duration_ms="242081" uri="spotify:track:2BrzlUj1u1CtvaJDGIKpsP">
+	        <artists name="Noah Cyrus" uri="spotify:artist:55fhWPvDiMpLnE4ZzNXZyW"/>
+	        <artists name="Labrinth" uri="spotify:artist:2feDdbD5araYcm6JhFHHw7"/>
+	        <album name="Make Me (Cry)" uri="spotify:album:46yAYzRhSMPA44m0MzSr6g"/>
+	    </track>
+	    <track name="Fields Of Gold" duration_ms="217733" uri="spotify:track:22gLGCKbFKwmgZhrpVcnFb">
+	        <artists name="Sting" uri="spotify:artist:0Ty63ceoRnnJKVEYP0VQpk"/>
+	        <album name="Fields Of Gold - The Best Of Sting 1984 - 1994" uri="spotify:album:1rZTn68Lgr5J4F4vIpgpWf"/>
+	    </track>
+	    <track name="Carry Me Home" duration_ms="282329" uri="spotify:track:6fracv4du3sDwo1XKcPrkw">
+	        <artists name="Jorja Smith" uri="spotify:artist:1CoZyIx7UvdxT5c8UkMzHd"/>
+	        <artists name="Maverick Sabre" uri="spotify:artist:0ukgrNYk51TkMQr0f2Br4Q"/>
+	        <album name="Project 11" uri="spotify:album:0aytGzjInPwluxhlSLxoot"/>
+	    </track>
+	    <track name="You're Still The One" duration_ms="212200" uri="spotify:track:1wb4P4F0sxAQ2KXrRvsx6n">
+	        <artists name="Shania Twain" uri="spotify:artist:5e4Dhzv426EvQe3aDb64jL"/>
+	        <album name="Come On Over" uri="spotify:album:4UMe0Ods7kygK6OISasZe9"/>
+	    </track>
+	    <track name="You Raise Me Up" duration_ms="292333" uri="spotify:track:1xugsCboIm1yILqpLvH9aD">
+	        <artists name="Josh Groban" uri="spotify:artist:6cXMpsP9x0SH4kFfMyVezF"/>
+	        <album name="Closer (Special Edition)" uri="spotify:album:33TIHVlvlxFVDPGpiunsT3"/>
+	    </track>
+	    <track name="Helium" duration_ms="252320" uri="spotify:track:4S6fv0puLCsfYjyBTPDb9k">
+	        <artists name="Sia" uri="spotify:artist:5WUlDfRSoLAfcVSX1WnrxN"/>
+	        <album name="Fifty Shades Darker (Original Motion Picture Soundtrack)" uri="spotify:album:5VML6S956h4YfoYPooqLEi"/>
+	    </track>
+	    <track name="Think About You" duration_ms="201133" uri="spotify:track:6BWTZwXamKhjdYlicjjVjB">
+	        <artists name="LÉON" uri="spotify:artist:4SqTiwOEdYrNayaGMkc7ia"/>
+	        <album name="Think About You" uri="spotify:album:2kaTgeLOxXoLVi4S85sANb"/>
+	    </track>
+	    <track name="Underneath Your Clothes" duration_ms="224066" uri="spotify:track:15f8Cv8RXUlOOCIf2oaceN">
+	        <artists name="Shakira" uri="spotify:artist:0EmeFodog0BfCgMzAIvKQp"/>
+	        <album name="Laundry Service" uri="spotify:album:4DyMK9x2gnmRkRa16zHaEV"/>
+	    </track>
+	    <track name="You Are Not Alone - Single Version" duration_ms="295986" uri="spotify:track:3KtIVDOChQMVi3SxHc6RrK">
+	        <artists name="Michael Jackson" uri="spotify:artist:3fMbdgg4jU18AjLCKBhRSm"/>
+	        <album name="The Essential Michael Jackson" uri="spotify:album:77dNyQA0z8dV33M4so4eRY"/>
+	    </track>
+	    <track name="Hello" duration_ms="295502" uri="spotify:track:1Yk0cQdMLx5RzzFTYwmuld">
+	        <artists name="Adele" uri="spotify:artist:4dpARuHxo51G3z768sgnrY"/>
+	        <album name="25" uri="spotify:album:6TVfiWmo8KtflUAmkK9gGF"/>
+	    </track>
+	    <track name="Earned It (Fifty Shades Of Grey) - From The &quot;Fifty Shades Of Grey&quot; Soundtrack" duration_ms="252226" uri="spotify:track:2PIvq1pGrUjY007X5y1UpM">
+	        <artists name="The Weeknd" uri="spotify:artist:1Xyo4u8uXC1ZmMpatF05PJ"/>
+	        <album name="Earned It (Fifty Shades Of Grey) [From The &quot;Fifty Shades Of Grey&quot; Soundtrack]" uri="spotify:album:61Ba3txRZWfiX6ZTEZlFCV"/>
+	    </track>
+	    <track name="True Love" duration_ms="246000" uri="spotify:track:0fQuzbQNLcD1ofo7B2NcFI">
+	        <artists name="Coldplay" uri="spotify:artist:4gzpq5DPGxSnKTe4SA8HAU"/>
+	        <album name="Ghost Stories" uri="spotify:album:2G4AUqfwxcV1UdQjm2ouYr"/>
+	    </track>
+	    <track name="Love" duration_ms="272742" uri="spotify:track:2Kerz9H9IejzeIpjhDJoYG">
+	        <artists name="Lana Del Rey" uri="spotify:artist:00FQb4jTyendYWaN8pK0wa"/>
+	        <album name="Lust For Life" uri="spotify:album:7xYiTrbTL57QO0bb4hXIKo"/>
+	    </track>
+	    <track name="Dream of You" duration_ms="222999" uri="spotify:track:7jJ4y8hXMLMlGBu7Zm1XZj">
+	        <artists name="Camila Cabello" uri="spotify:artist:4nDoRrQiYLoBzwC5BhVJzF"/>
+	        <album name="Romance" uri="spotify:album:3Vsbl0diFGw8HNSjG8ue9m"/>
+	    </track>
+	    <track name="Ännu doftar kärlek" duration_ms="224266" uri="spotify:track:2cvgUpzXjHLtoE6P8SccL6">
+	        <artists name="Marie Fredriksson" uri="spotify:artist:4YkPXMsmFf3K2XFHPddqFU"/>
+	        <album name="Het Vind" uri="spotify:album:3FSeVAROTnxA1143QnIrHR"/>
+	    </track>
+	    <track name="Wonderful Tonight" duration_ms="225026" uri="spotify:track:6zC0mpGYwbNTpk9SKwh08f">
+	        <artists name="Eric Clapton" uri="spotify:artist:6PAt558ZEZl0DmdXlnjMgD"/>
+	        <album name="Slowhand 35th Anniversary (Super Deluxe)" uri="spotify:album:5MAL7e4EnKXW1hFg6NbFqP"/>
+	    </track>
+	    <track name="When You Tell the World You're Mine" duration_ms="246040" uri="spotify:track:3jM6BW6XXCDaMfaBwnLwuy">
+	        <artists name="Björn Skifs" uri="spotify:artist:1Ek3VdZ8EPmcvgRIqnHlrF"/>
+	        <artists name="Agnes" uri="spotify:artist:6SsTlCsuCYleNza6xGwynu"/>
+	        <album name="When You Tell the World You're Mine" uri="spotify:album:5VfOL7MlhCj56sveEhqJGE"/>
+	    </track>
+	    <track name="Slow" duration_ms="163547" uri="spotify:track:1Ia95g66IhlAJ3qVI4qI8W">
+	        <artists name="SHY Martin" uri="spotify:artist:7eCmccnRwPmRnWPw61x6jM"/>
+	        <album name="Slow" uri="spotify:album:6u4ZwK6xSWHhREBVzhjQg6"/>
+	    </track>
+	    <track name="Piano Joint (This Kind Of Love)" duration_ms="231586" uri="spotify:track:3kERuxcw7g0URUtzIs7H5d">
+	        <artists name="Michael Kiwanuka" uri="spotify:artist:0bzfPKdbXL5ezYW2z3UGQj"/>
+	        <album name="Piano Joint (This Kind Of Love)" uri="spotify:album:2ibsoJps6tosNlFJtFlBDN"/>
+	    </track>
+	    <track name="Right Here Waiting" duration_ms="264333" uri="spotify:track:4LFwNJWoj74Yd71fIr1W8x">
+	        <artists name="Richard Marx" uri="spotify:artist:0grdhNhiRLFBaFVyybqsj6"/>
+	        <album name="Repeat Offender" uri="spotify:album:0Zf6FJVyK6qUxmg1WMNruG"/>
+	    </track>
+	    <track name="Endless Love (with Mariah Carey)" duration_ms="259573" uri="spotify:track:6D4vhXwVrO2OCgZvqEjsuA">
+	        <artists name="Luther Vandross" uri="spotify:artist:19y5MFBH7gohEdGwKM7QsP"/>
+	        <artists name="Mariah Carey" uri="spotify:artist:4iHNK0tOyZPYnBU7nGAgpQ"/>
+	        <album name="The Essential Luther Vandross" uri="spotify:album:0JzmsNDLZ6NCc6Mc3J2UgN"/>
+	    </track>
+	    <track name="Hero" duration_ms="264240" uri="spotify:track:1PAgmT6YqGhd6zT9kN9gIo">
+	        <artists name="Enrique Iglesias" uri="spotify:artist:7qG3b048QCHVRO5Pv1T5lw"/>
+	        <album name="Escape" uri="spotify:album:3DeHyfe2Da8xznvABSfIE5"/>
+	    </track>
+	    <track name="I Knew I Loved You" duration_ms="252911" uri="spotify:track:1DuGc5Zk2HD9u8J9phRWGo">
+	        <artists name="Savage Garden" uri="spotify:artist:3NRFinRTEqUCfaTTZmk8ek"/>
+	        <album name="Savage Garden - The Singles" uri="spotify:album:14JCVMAbCs1MlE5n59m0t6"/>
+	    </track>
+	    <track name="Take My Breath Away - Love Theme from &quot;Top Gun&quot;" duration_ms="253413" uri="spotify:track:4z3QwWOFfRN2gd9N1hQ3CS">
+	        <artists name="Berlin" uri="spotify:artist:2aS6jYh7ysTL1ZUsHneNgM"/>
+	        <album name="Love Songs" uri="spotify:album:74RK3gsxjigff01cRt7pLL"/>
+	    </track>
+	    <track name="(I've Had) The Time of My Life - From &quot;Dirty Dancing&quot; Soundtrack" duration_ms="289253" uri="spotify:track:0VOd4WMzhzxAd9cCIwLsMV">
+	        <artists name="Bill Medley" uri="spotify:artist:1XE70WwxhnrXNAJYQQ9ygx"/>
+	        <artists name="Jennifer Warnes" uri="spotify:artist:1BwHztAQKypBuy5WBEdJnG"/>
+	        <album name="Pure... Love" uri="spotify:album:6mc30D5zvEF39EE7XljFn5"/>
+	    </track>
+	    <track name="Have I Told You Lately" duration_ms="260386" uri="spotify:track:1VsGYaCBFjCVudtX9IGqDg">
+	        <artists name="Van Morrison" uri="spotify:artist:44NX2ffIYHr6D4n7RaZF7A"/>
+	        <album name="Avalon Sunset" uri="spotify:album:2vE3SSFPxYt7jRu93j6rsi"/>
+	    </track>
+	    <track name="Regresa a Mí" duration_ms="280680" uri="spotify:track:3p8szomcjl5ghqOKSH5vZf">
+	        <artists name="Il Divo" uri="spotify:artist:3KNZ9AOjBajjmr6ZR2VGfl"/>
+	        <album name="Il Divo" uri="spotify:album:2wHQ8jRc9zKG5tyNzopmJt"/>
+	    </track>
+	    <track name="Adore You" duration_ms="207133" uri="spotify:track:1M4qEo4HE3PRaCOM7EXNJq">
+	        <artists name="Harry Styles" uri="spotify:artist:6KImCVD70vtIoJWnq6nGn3"/>
+	        <album name="Adore You" uri="spotify:album:5SL9nXZYZZl68bHwaM8uLa"/>
+	    </track>
+	    <track name="golden thing" duration_ms="219300" uri="spotify:track:5y2TuOFgwlpztHlqENHQOE">
+	        <artists name="Cody Simpson" uri="spotify:artist:79Xp2rRN7wdsaTJgttdX3K"/>
+	        <album name="golden thing" uri="spotify:album:33MiMpGm7MU2UBggBqBIUz"/>
+	    </track>
+	    <track name="Stand Your Ground" duration_ms="203253" uri="spotify:track:5nhptWSQJ8WRqHGJDJXrPM">
+	        <artists name="Joshua Hyslop" uri="spotify:artist:1I7oHjCjMrMUz66v67yJJu"/>
+	        <album name="Echos" uri="spotify:album:5IxfsBZbu9tnPQRgTjwOyc"/>
+	    </track>
+	    <track name="Say It First" duration_ms="247554" uri="spotify:track:4K1vOdIFqskQv3zoI0FdAk">
+	        <artists name="Sam Smith" uri="spotify:artist:2wY79sveU1sp5g7SokKOiI"/>
+	        <album name="The Thrill Of It All (Special Edition)" uri="spotify:album:3TJz2UBNYJtlEly0sPeNrQ"/>
+	    </track>
+	    <track name="Open Your Heart" duration_ms="240560" uri="spotify:track:1f7bJzsezTm9ZS2DVBUVOM">
+	        <artists name="Jill Johnson" uri="spotify:artist:2aaGbpl5Y2ykZsNFZM6ofw"/>
+	        <album name="Så mycket bättre / Tolkningarna (Säsong 7)" uri="spotify:album:7rQh2zaslI0a4RqbfRuJX8"/>
+	    </track>
+	    <track name="I Love You Always Forever" duration_ms="239960" uri="spotify:track:1PEqh7awkpuepLBSq8ZwqD">
+	        <artists name="Donna Lewis" uri="spotify:artist:2EfG2EoT8GFJrMiilbTVl2"/>
+	        <album name="Now In A Minute" uri="spotify:album:1VzYTrtId9CgUTo7VQBFbL"/>
+	    </track>
+	    <track name="Birthday" duration_ms="201786" uri="spotify:track:5dYaElq0nua2omNCimEapq">
+	        <artists name="JP Cooper" uri="spotify:artist:4kYGAK2zu9EAomwj3hXkXy"/>
+	        <album name="Fifty Shades Darker (Original Motion Picture Soundtrack)" uri="spotify:album:5VML6S956h4YfoYPooqLEi"/>
+	    </track>
+	    <track name="Last Request" duration_ms="220413" uri="spotify:track:6xM8oBy40nK1rOd8WmoOPx">
+	        <artists name="Paolo Nutini" uri="spotify:artist:7x5rK9BClDQ8wmCkYAGsQp"/>
+	        <album name="These Streets" uri="spotify:album:6L2FiSnFMisCgbhbag4KTl"/>
+	    </track>
+	    <track name="Bitter With The Sweet" duration_ms="148040" uri="spotify:track:6bMrfP9V5s5fgL3Z02tcES">
+	        <artists name="Carole King" uri="spotify:artist:319yZVtYM9MBGqmSQnMyY6"/>
+	        <album name="Carole King: The Ode Collection" uri="spotify:album:3kbEbYvWSub8LsGZpq6lcp"/>
+	    </track>
+	    <track name="Real Love Baby" duration_ms="189293" uri="spotify:track:3MyQn1xBQwPtFJUUP7zB8s">
+	        <artists name="Father John Misty" uri="spotify:artist:2kGBy2WHvF0VdZyqiVCkDT"/>
+	        <album name="Real Love Baby" uri="spotify:album:6iTNM4iKs4myLCsqUnODJa"/>
+	    </track>
+	    <track name="Attention" duration_ms="197653" uri="spotify:track:6pDVjCUA3B1vg9waKutAsv">
+	        <artists name="The Weeknd" uri="spotify:artist:1Xyo4u8uXC1ZmMpatF05PJ"/>
+	        <album name="Starboy" uri="spotify:album:2ODvWsOgouMbaA5xf0RkJe"/>
+	    </track>
+	    <track name="Just Like You" duration_ms="205217" uri="spotify:track:5IF6IBPqbclVR7SQKmCIyA">
+	        <artists name="Louis Tomlinson" uri="spotify:artist:57WHJIHrjOE3iAxpihhMnp"/>
+	        <album name="Just Like You" uri="spotify:album:1VZoGsObyr7YAZOmP8DYEZ"/>
+	    </track>
+	    <track name="If I Ain't Got You (feat. Usher)" duration_ms="231493" uri="spotify:track:1DmoN9uX1oyiyZYSy080yQ">
+	        <artists name="Alicia Keys" uri="spotify:artist:3DiDSECUqqY1AuBP8qtaIa"/>
+	        <artists name="Usher" uri="spotify:artist:23zg3TcAtWQy7J6upgbUnj"/>
+	        <album name="Pure... Love" uri="spotify:album:6mc30D5zvEF39EE7XljFn5"/>
+	    </track>
+	    <track name="Dusk Till Dawn - Radio Edit" duration_ms="239000" uri="spotify:track:1j4kHkkpqZRBwE0A4CN4Yv">
+	        <artists name="ZAYN" uri="spotify:artist:5ZsFI1h6hIdQRw2ti0hz81"/>
+	        <artists name="Sia" uri="spotify:artist:5WUlDfRSoLAfcVSX1WnrxN"/>
+	        <album name="Dusk Till Dawn (Radio Edit)" uri="spotify:album:5l5gR4rh26QI3fijGFTDrp"/>
+	    </track>
+	    <track name="All I Can Think About Is You" duration_ms="274586" uri="spotify:track:4gDyoe1FImDlXVt58ssnMf">
+	        <artists name="Coldplay" uri="spotify:artist:4gzpq5DPGxSnKTe4SA8HAU"/>
+	        <album name="All I Can Think About Is You" uri="spotify:album:6E8RU4JTgtxnUT3BT0yOdb"/>
+	    </track>
+	    <track name="Miracle of Love" duration_ms="268839" uri="spotify:track:7oBGripcuBszD5sL8zYyUp">
+	        <artists name="Jamie Lawson" uri="spotify:artist:1jhdZdzOd4TJLAHqQdkUND"/>
+	        <album name="Miracle of Love" uri="spotify:album:5TdiHAoc87RInbeJFwACQx"/>
+	    </track>
+	</Compilation>
 
 	<Artist>
 		<track _index="0" name="Ground Level" duration_ms="252666" uri="spotify:track:1UgsbIteej4QpAcX3aUFeV">

@@ -1,846 +1,1473 @@
 {
-	"album_type": "compilation",
-	"type": "album",
-	"uri": "spotify:album:6bPPRGbZHRoXUVLvx4SB0M",
-	"artists": [
-		{
-			"external_urls": {
-				"spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
-			},
-			"href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
-			"id": "0LyfQWJT6nXafLPZqxe9Of",
-			"name": "Various Artists",
-			"type": "artist",
-			"uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
-		}
-	],
-	"copyrights": [
-		{
-			"text": "© 2020 UMG Recordings, Inc.",
-			"type": "C"
-		},
-		{
-			"text": "FP; ℗ 2020 UMG Recordings, Inc.",
-			"type": "P"
-		}
-	],
-	"external_ids": {
-		"upc": "00602435438603"
-	},
-	"external_urls": {
-		"spotify": "https://open.spotify.com/album/6bPPRGbZHRoXUVLvx4SB0M"
-	},
-	"genres": [],
-	"href": "https://api.spotify.com/v1/albums/6bPPRGbZHRoXUVLvx4SB0M",
-	"id": "6bPPRGbZHRoXUVLvx4SB0M",
 	"images": [
 		{
-			"height": 640,
-			"url": "https://i.scdn.co/image/ab67616d0000b273ca56ba31dcd3d6f07a2d227b",
-			"width": 640
-		},
-		{
-			"height": 300,
-			"url": "https://i.scdn.co/image/ab67616d00001e02ca56ba31dcd3d6f07a2d227b",
-			"width": 300
-		},
-		{
-			"height": 64,
-			"url": "https://i.scdn.co/image/ab67616d00004851ca56ba31dcd3d6f07a2d227b",
-			"width": 64
+			"height": null,
+			"url": "https://i.scdn.co/image/ab67706f000000038bb1ac1171362f150919245a",
+			"width": null
 		}
 	],
-	"label": "UMG Recordings, Inc.",
-	"name": "90´s Hits",
-	"popularity": 20,
-	"release_date": "2020-10-30",
-	"release_date_precision": "day",
-	"total_tracks": 23,
+	"name": "Dinner Romance",
+	"owner": {
+		"display_name": "Spotify"
+	},
 	"tracks": {
-		"href": "https://api.spotify.com/v1/albums/6bPPRGbZHRoXUVLvx4SB0M/tracks?offset=0&limit=50&market=SE",
 		"items": [
 			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/7t0rwkOPGlDPEhaOcVtOt9"
-						},
-						"href": "https://api.spotify.com/v1/artists/7t0rwkOPGlDPEhaOcVtOt9",
-						"id": "7t0rwkOPGlDPEhaOcVtOt9",
-						"name": "The Cranberries",
-						"type": "artist",
-						"uri": "spotify:artist:7t0rwkOPGlDPEhaOcVtOt9"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 270786,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/0o5mhUptW4xKf9yUfigTpg"
-				},
-				"href": "https://api.spotify.com/v1/tracks/0o5mhUptW4xKf9yUfigTpg",
-				"id": "0o5mhUptW4xKf9yUfigTpg",
-				"is_local": false,
-				"is_playable": true,
-				"name": "Ode To My Family",
-				"preview_url": "https://p.scdn.co/mp3-preview/4eda164f5528790809a356fc1d818b9b0ee202f7?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 1,
-				"type": "track",
-				"uri": "spotify:track:0o5mhUptW4xKf9yUfigTpg"
-			},
-			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/5gznATMVO85ZcLTkE9ULU7"
-						},
-						"href": "https://api.spotify.com/v1/artists/5gznATMVO85ZcLTkE9ULU7",
-						"id": "5gznATMVO85ZcLTkE9ULU7",
-						"name": "Lenny Kravitz",
-						"type": "artist",
-						"uri": "spotify:artist:5gznATMVO85ZcLTkE9ULU7"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 228933,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/71FgYtRBUJaGUkB7Ci4aTx"
-				},
-				"href": "https://api.spotify.com/v1/tracks/71FgYtRBUJaGUkB7Ci4aTx",
-				"id": "71FgYtRBUJaGUkB7Ci4aTx",
-				"is_local": false,
-				"is_playable": true,
-				"name": "Again",
-				"preview_url": "https://p.scdn.co/mp3-preview/0c7944b15a9a16b4bbdeea47f5ccb865f1ab731d?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 2,
-				"type": "track",
-				"uri": "spotify:track:71FgYtRBUJaGUkB7Ci4aTx"
-			},
-			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/3nlHsNqwCSvT988ZfSW1Yh"
-						},
-						"href": "https://api.spotify.com/v1/artists/3nlHsNqwCSvT988ZfSW1Yh",
-						"id": "3nlHsNqwCSvT988ZfSW1Yh",
-						"name": "Ronan Keating",
-						"type": "artist",
-						"uri": "spotify:artist:3nlHsNqwCSvT988ZfSW1Yh"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 259173,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/4H5ObMdYFCfsuo25BHSNlS"
-				},
-				"href": "https://api.spotify.com/v1/tracks/4H5ObMdYFCfsuo25BHSNlS",
-				"id": "4H5ObMdYFCfsuo25BHSNlS",
-				"is_local": false,
-				"is_playable": true,
-				"name": "When You Say Nothing At All",
-				"preview_url": "https://p.scdn.co/mp3-preview/340caae52f4d1e1204f13fe868452873256246a5?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 3,
-				"type": "track",
-				"uri": "spotify:track:4H5ObMdYFCfsuo25BHSNlS"
-			},
-			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/5gznATMVO85ZcLTkE9ULU7"
-						},
-						"href": "https://api.spotify.com/v1/artists/5gznATMVO85ZcLTkE9ULU7",
-						"id": "5gznATMVO85ZcLTkE9ULU7",
-						"name": "Lenny Kravitz",
-						"type": "artist",
-						"uri": "spotify:artist:5gznATMVO85ZcLTkE9ULU7"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 261706,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/0ZlFKM2ayeXTrWpZUct7iw"
-				},
-				"href": "https://api.spotify.com/v1/tracks/0ZlFKM2ayeXTrWpZUct7iw",
-				"id": "0ZlFKM2ayeXTrWpZUct7iw",
-				"is_local": false,
-				"is_playable": true,
-				"name": "American Woman",
-				"preview_url": "https://p.scdn.co/mp3-preview/63e5ccf5f4fd5ecd449e9dc4378bc7f33bd3fce3?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 4,
-				"type": "track",
-				"uri": "spotify:track:0ZlFKM2ayeXTrWpZUct7iw"
-			},
-			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/3Z02hBLubJxuFJfhacLSDc"
-						},
-						"href": "https://api.spotify.com/v1/artists/3Z02hBLubJxuFJfhacLSDc",
-						"id": "3Z02hBLubJxuFJfhacLSDc",
-						"name": "Bryan Adams",
-						"type": "artist",
-						"uri": "spotify:artist:3Z02hBLubJxuFJfhacLSDc"
+				"track": {
+					"album": {
+						"name": "How Would You Feel (Paean)",
+						"uri": "spotify:album:6m47Bv7lQlUWNZ5W6N4XjJ"
 					},
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/0Ty63ceoRnnJKVEYP0VQpk"
-						},
-						"href": "https://api.spotify.com/v1/artists/0Ty63ceoRnnJKVEYP0VQpk",
-						"id": "0Ty63ceoRnnJKVEYP0VQpk",
-						"name": "Sting",
-						"type": "artist",
-						"uri": "spotify:artist:0Ty63ceoRnnJKVEYP0VQpk"
+					"artists": [
+						{
+							"name": "Ed Sheeran",
+							"uri": "spotify:artist:6eUKZXaKkcviH0Ku9w2n3V"
+						}
+					],
+					"duration_ms": 280533,
+					"name": "How Would You Feel (Paean)",
+					"uri": "spotify:track:1lyNFzcCl9kXCof6GV32fV"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Backstreet's Back",
+						"uri": "spotify:album:2U9ONknz1iFEK9drEKLx8v"
 					},
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/2y8Jo9CKhJvtfeKOsYzRdT"
-						},
-						"href": "https://api.spotify.com/v1/artists/2y8Jo9CKhJvtfeKOsYzRdT",
-						"id": "2y8Jo9CKhJvtfeKOsYzRdT",
-						"name": "Rod Stewart",
-						"type": "artist",
-						"uri": "spotify:artist:2y8Jo9CKhJvtfeKOsYzRdT"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 283706,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/73141J8lIcoG8hw3IJVIpi"
-				},
-				"href": "https://api.spotify.com/v1/tracks/73141J8lIcoG8hw3IJVIpi",
-				"id": "73141J8lIcoG8hw3IJVIpi",
-				"is_local": false,
-				"is_playable": true,
-				"name": "All For Love - From \"The Three Musketeers\" Soundtrack",
-				"preview_url": "https://p.scdn.co/mp3-preview/813f1153e22c45bef1e290527ee429f4529677de?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 5,
-				"type": "track",
-				"uri": "spotify:track:73141J8lIcoG8hw3IJVIpi"
+					"artists": [
+						{
+							"name": "Backstreet Boys",
+							"uri": "spotify:artist:5rSXSAkZ67PYJSvpUpkOr7"
+						}
+					],
+					"duration_ms": 221106,
+					"name": "As Long as You Love Me",
+					"uri": "spotify:track:3UpS7kBnkVQYG13pDDFTC4"
+				}
 			},
 			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/7t0rwkOPGlDPEhaOcVtOt9"
-						},
-						"href": "https://api.spotify.com/v1/artists/7t0rwkOPGlDPEhaOcVtOt9",
-						"id": "7t0rwkOPGlDPEhaOcVtOt9",
-						"name": "The Cranberries",
-						"type": "artist",
-						"uri": "spotify:artist:7t0rwkOPGlDPEhaOcVtOt9"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 221293,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/4kdiB0UCW7NqjarRVo163A"
-				},
-				"href": "https://api.spotify.com/v1/tracks/4kdiB0UCW7NqjarRVo163A",
-				"id": "4kdiB0UCW7NqjarRVo163A",
-				"is_local": false,
-				"is_playable": true,
-				"name": "Just My Imagination",
-				"preview_url": "https://p.scdn.co/mp3-preview/a784bf9add0079f7d1e9b03e58b3ab00612a3e21?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 6,
-				"type": "track",
-				"uri": "spotify:track:4kdiB0UCW7NqjarRVo163A"
-			},
-			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/2yEkZBBjhzKzt6LF5XMaFi"
-						},
-						"href": "https://api.spotify.com/v1/artists/2yEkZBBjhzKzt6LF5XMaFi",
-						"id": "2yEkZBBjhzKzt6LF5XMaFi",
-						"name": "Blue",
-						"type": "artist",
-						"uri": "spotify:artist:2yEkZBBjhzKzt6LF5XMaFi"
+				"track": {
+					"album": {
+						"name": "Cut Me",
+						"uri": "spotify:album:1FWXfOdSVUrPPCXymMMiCK"
 					},
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/3PhoLpVuITZKcymswpck5b"
-						},
-						"href": "https://api.spotify.com/v1/artists/3PhoLpVuITZKcymswpck5b",
-						"id": "3PhoLpVuITZKcymswpck5b",
-						"name": "Elton John",
-						"type": "artist",
-						"uri": "spotify:artist:3PhoLpVuITZKcymswpck5b"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 210066,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/2YzGCMLcjpdrPIJ8rerDeK"
-				},
-				"href": "https://api.spotify.com/v1/tracks/2YzGCMLcjpdrPIJ8rerDeK",
-				"id": "2YzGCMLcjpdrPIJ8rerDeK",
-				"is_local": false,
-				"is_playable": true,
-				"name": "Sorry Seems To Be The Hardest Word - Radio Edit",
-				"preview_url": "https://p.scdn.co/mp3-preview/2a092a3fda2907d997325ecd0c0f7e9221a14d6e?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 7,
-				"type": "track",
-				"uri": "spotify:track:2YzGCMLcjpdrPIJ8rerDeK"
+					"artists": [
+						{
+							"name": "Chris Medina",
+							"uri": "spotify:artist:2uCmngYSlTEELzZXl1z1dV"
+						}
+					],
+					"duration_ms": 185357,
+					"name": "Cut Me",
+					"uri": "spotify:track:1wtrJ0dcTjqP8PMRTczdSi"
+				}
 			},
 			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/3X0tJzVYoWlfjLYI0Ridsw"
-						},
-						"href": "https://api.spotify.com/v1/artists/3X0tJzVYoWlfjLYI0Ridsw",
-						"id": "3X0tJzVYoWlfjLYI0Ridsw",
-						"name": "Suzanne Vega",
-						"type": "artist",
-						"uri": "spotify:artist:3X0tJzVYoWlfjLYI0Ridsw"
+				"track": {
+					"album": {
+						"name": "Back to Bedlam",
+						"uri": "spotify:album:1wklsLLbGIZg1RDpoJovrb"
 					},
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/5ISgOPcI1bY7Rd28GUWWE8"
-						},
-						"href": "https://api.spotify.com/v1/artists/5ISgOPcI1bY7Rd28GUWWE8",
-						"id": "5ISgOPcI1bY7Rd28GUWWE8",
-						"name": "DNA",
-						"type": "artist",
-						"uri": "spotify:artist:5ISgOPcI1bY7Rd28GUWWE8"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 228413,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/6JxUZpphDrhaEN9uEG2esp"
-				},
-				"href": "https://api.spotify.com/v1/tracks/6JxUZpphDrhaEN9uEG2esp",
-				"id": "6JxUZpphDrhaEN9uEG2esp",
-				"is_local": false,
-				"is_playable": true,
-				"name": "Tom's Diner",
-				"preview_url": "https://p.scdn.co/mp3-preview/cee27fcc7490fdadca43259d8429d369f8dc02f5?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 8,
-				"type": "track",
-				"uri": "spotify:track:6JxUZpphDrhaEN9uEG2esp"
+					"artists": [
+						{
+							"name": "James Blunt",
+							"uri": "spotify:artist:7KMqksf0UMdyA0UCf4R3ux"
+						}
+					],
+					"duration_ms": 209493,
+					"name": "You're Beautiful",
+					"uri": "spotify:track:5pbajJXEPdcoXQPXoAVR1t"
+				}
 			},
 			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/3DmG65yHQsMms7WAvrZOdt"
-						},
-						"href": "https://api.spotify.com/v1/artists/3DmG65yHQsMms7WAvrZOdt",
-						"id": "3DmG65yHQsMms7WAvrZOdt",
-						"name": "Enigma",
-						"type": "artist",
-						"uri": "spotify:artist:3DmG65yHQsMms7WAvrZOdt"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 258906,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/0jQBp680d0HpJoJz6rfmU6"
-				},
-				"href": "https://api.spotify.com/v1/tracks/0jQBp680d0HpJoJz6rfmU6",
-				"id": "0jQBp680d0HpJoJz6rfmU6",
-				"is_local": false,
-				"is_playable": true,
-				"name": "Return To Innocence",
-				"preview_url": "https://p.scdn.co/mp3-preview/0341b4927ca8a76a5e0684017f8f636699382b7b?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 9,
-				"type": "track",
-				"uri": "spotify:track:0jQBp680d0HpJoJz6rfmU6"
-			},
-			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
-						},
-						"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
-						"id": "1k8VBufn1nBs8LN9n4snc8",
-						"name": "Stereo MC's",
-						"type": "artist",
-						"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 313000,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/5LJpbHGAg6YAQ3E6DuQHbG"
-				},
-				"href": "https://api.spotify.com/v1/tracks/5LJpbHGAg6YAQ3E6DuQHbG",
-				"id": "5LJpbHGAg6YAQ3E6DuQHbG",
-				"is_local": false,
-				"is_playable": true,
-				"name": "Connected",
-				"preview_url": "https://p.scdn.co/mp3-preview/2c322d0dce68b86766a78581703185a1198ddbef?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 10,
-				"type": "track",
-				"uri": "spotify:track:5LJpbHGAg6YAQ3E6DuQHbG"
-			},
-			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/6FXMGgJwohJLUSr5nVlf9X"
-						},
-						"href": "https://api.spotify.com/v1/artists/6FXMGgJwohJLUSr5nVlf9X",
-						"id": "6FXMGgJwohJLUSr5nVlf9X",
-						"name": "Massive Attack",
-						"type": "artist",
-						"uri": "spotify:artist:6FXMGgJwohJLUSr5nVlf9X"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 312293,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/2ILV289GkWV4uhR2ZdfgEQ"
-				},
-				"href": "https://api.spotify.com/v1/tracks/2ILV289GkWV4uhR2ZdfgEQ",
-				"id": "2ILV289GkWV4uhR2ZdfgEQ",
-				"is_local": false,
-				"is_playable": true,
-				"name": "Unfinished Sympathy",
-				"preview_url": "https://p.scdn.co/mp3-preview/2eac1678e8cc3da5d9d8fcce3788da90b11ff4a3?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 11,
-				"type": "track",
-				"uri": "spotify:track:2ILV289GkWV4uhR2ZdfgEQ"
-			},
-			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/58lV9VcRSjABbAbfWS6skp"
-						},
-						"href": "https://api.spotify.com/v1/artists/58lV9VcRSjABbAbfWS6skp",
-						"id": "58lV9VcRSjABbAbfWS6skp",
-						"name": "Bon Jovi",
-						"type": "artist",
-						"uri": "spotify:artist:58lV9VcRSjABbAbfWS6skp"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 394400,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/1ggbwrcAE6pOp9CZnnAwp0"
-				},
-				"href": "https://api.spotify.com/v1/tracks/1ggbwrcAE6pOp9CZnnAwp0",
-				"id": "1ggbwrcAE6pOp9CZnnAwp0",
-				"is_local": false,
-				"is_playable": true,
-				"name": "Bed Of Roses",
-				"preview_url": "https://p.scdn.co/mp3-preview/a9e3b382834dce9a72f6703b9712b7001dd91aef?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 12,
-				"type": "track",
-				"uri": "spotify:track:1ggbwrcAE6pOp9CZnnAwp0"
-			},
-			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/2Cd98zHVdZeOCisc6Gi2sB"
-						},
-						"href": "https://api.spotify.com/v1/artists/2Cd98zHVdZeOCisc6Gi2sB",
-						"id": "2Cd98zHVdZeOCisc6Gi2sB",
-						"name": "Technotronic",
-						"type": "artist",
-						"uri": "spotify:artist:2Cd98zHVdZeOCisc6Gi2sB"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 320306,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/2Idrsdl0Mxrwm4LtVBlSsT"
-				},
-				"href": "https://api.spotify.com/v1/tracks/2Idrsdl0Mxrwm4LtVBlSsT",
-				"id": "2Idrsdl0Mxrwm4LtVBlSsT",
-				"is_local": false,
-				"is_playable": true,
-				"name": "Pump Up The Jam",
-				"preview_url": "https://p.scdn.co/mp3-preview/c189ea590a9497fb38066b7f13adc35fe12a0fbf?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 13,
-				"type": "track",
-				"uri": "spotify:track:2Idrsdl0Mxrwm4LtVBlSsT"
-			},
-			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/7wqtxqI3eo7Gn1P7SpP6cQ"
-						},
-						"href": "https://api.spotify.com/v1/artists/7wqtxqI3eo7Gn1P7SpP6cQ",
-						"id": "7wqtxqI3eo7Gn1P7SpP6cQ",
-						"name": "Salt-N-Pepa",
-						"type": "artist",
-						"uri": "spotify:artist:7wqtxqI3eo7Gn1P7SpP6cQ"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 209933,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/4K7seCAeduQ5tVWtobs6UX"
-				},
-				"href": "https://api.spotify.com/v1/tracks/4K7seCAeduQ5tVWtobs6UX",
-				"id": "4K7seCAeduQ5tVWtobs6UX",
-				"is_local": false,
-				"is_playable": true,
-				"name": "Let's Talk About Sex",
-				"preview_url": "https://p.scdn.co/mp3-preview/e5be6089f6b874ae5a0f33f486a5f919f0d21676?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 14,
-				"type": "track",
-				"uri": "spotify:track:4K7seCAeduQ5tVWtobs6UX"
-			},
-			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/0TcYeHEK9sBtv7xPbKhzHz"
-						},
-						"href": "https://api.spotify.com/v1/artists/0TcYeHEK9sBtv7xPbKhzHz",
-						"id": "0TcYeHEK9sBtv7xPbKhzHz",
-						"name": "Chumbawamba",
-						"type": "artist",
-						"uri": "spotify:artist:0TcYeHEK9sBtv7xPbKhzHz"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 213226,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/1yPPK8ZqLLf8QOf3H6FwQZ"
-				},
-				"href": "https://api.spotify.com/v1/tracks/1yPPK8ZqLLf8QOf3H6FwQZ",
-				"id": "1yPPK8ZqLLf8QOf3H6FwQZ",
-				"is_local": false,
-				"is_playable": true,
-				"name": "Tubthumping - Radio Edit",
-				"preview_url": "https://p.scdn.co/mp3-preview/2f831395e75740d63cd225e3cb032b399b8d9c63?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 15,
-				"type": "track",
-				"uri": "spotify:track:1yPPK8ZqLLf8QOf3H6FwQZ"
-			},
-			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/4LtIfuFeAamus9OOItuWDD"
-						},
-						"href": "https://api.spotify.com/v1/artists/4LtIfuFeAamus9OOItuWDD",
-						"id": "4LtIfuFeAamus9OOItuWDD",
-						"name": "Us3",
-						"type": "artist",
-						"uri": "spotify:artist:4LtIfuFeAamus9OOItuWDD"
+				"track": {
+					"album": {
+						"name": "We Sing. We Dance. We Steal Things.",
+						"uri": "spotify:album:04G0YylSjvDQZrjOfE5jA5"
 					},
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/2cNCyL3WSlAatld5duatyD"
+					"artists": [
+						{
+							"name": "Jason Mraz",
+							"uri": "spotify:artist:4phGZZrJZRo4ElhRtViYdl"
 						},
-						"href": "https://api.spotify.com/v1/artists/2cNCyL3WSlAatld5duatyD",
-						"id": "2cNCyL3WSlAatld5duatyD",
-						"name": "Rahsaan",
-						"type": "artist",
-						"uri": "spotify:artist:2cNCyL3WSlAatld5duatyD"
+						{
+							"name": "Colbie Caillat",
+							"uri": "spotify:artist:6aZyMrc4doVtZyKNilOmwu"
+						}
+					],
+					"duration_ms": 191360,
+					"name": "Lucky",
+					"uri": "spotify:track:0IktbUcnAGrvD03AWnz3Q8"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Good Thing",
+						"uri": "spotify:album:7J9fifadXb0PPSBWXctbi8"
 					},
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/5A8UenAZRv51yZVv13nFQo"
-						},
-						"href": "https://api.spotify.com/v1/artists/5A8UenAZRv51yZVv13nFQo",
-						"id": "5A8UenAZRv51yZVv13nFQo",
-						"name": "Gerard Presencer",
-						"type": "artist",
-						"uri": "spotify:artist:5A8UenAZRv51yZVv13nFQo"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 279706,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/2X988BZZAut9gQeVOlymSJ"
-				},
-				"href": "https://api.spotify.com/v1/tracks/2X988BZZAut9gQeVOlymSJ",
-				"id": "2X988BZZAut9gQeVOlymSJ",
-				"is_local": false,
-				"is_playable": true,
-				"name": "Cantaloop (Flip Fantasia)",
-				"preview_url": "https://p.scdn.co/mp3-preview/1426fc0c53d843404bba623da42b39a35f0d5e29?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 16,
-				"type": "track",
-				"uri": "spotify:track:2X988BZZAut9gQeVOlymSJ"
+					"artists": [
+						{
+							"name": "Leon Bridges",
+							"uri": "spotify:artist:3qnGvpP8Yth1AqSBMqON5x"
+						}
+					],
+					"duration_ms": 240600,
+					"name": "Beyond",
+					"uri": "spotify:track:1Omt5bfz1tZUCqd26HxbS0"
+				}
 			},
 			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/7wqtxqI3eo7Gn1P7SpP6cQ"
-						},
-						"href": "https://api.spotify.com/v1/artists/7wqtxqI3eo7Gn1P7SpP6cQ",
-						"id": "7wqtxqI3eo7Gn1P7SpP6cQ",
-						"name": "Salt-N-Pepa",
-						"type": "artist",
-						"uri": "spotify:artist:7wqtxqI3eo7Gn1P7SpP6cQ"
+				"track": {
+					"album": {
+						"name": "The Thrill Of It All (Special Edition)",
+						"uri": "spotify:album:3TJz2UBNYJtlEly0sPeNrQ"
 					},
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/5fikk4h5qbEebqK2Fc6e48"
-						},
-						"href": "https://api.spotify.com/v1/artists/5fikk4h5qbEebqK2Fc6e48",
-						"id": "5fikk4h5qbEebqK2Fc6e48",
-						"name": "En Vogue",
-						"type": "artist",
-						"uri": "spotify:artist:5fikk4h5qbEebqK2Fc6e48"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 308173,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/7KoZuNVANn88W4zesyhGLM"
-				},
-				"href": "https://api.spotify.com/v1/tracks/7KoZuNVANn88W4zesyhGLM",
-				"id": "7KoZuNVANn88W4zesyhGLM",
-				"is_local": false,
-				"is_playable": true,
-				"name": "Whatta Man",
-				"preview_url": "https://p.scdn.co/mp3-preview/42002395ab0ab2c6d51989b9c4da9336de582a4a?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 17,
-				"type": "track",
-				"uri": "spotify:track:7KoZuNVANn88W4zesyhGLM"
+					"artists": [
+						{
+							"name": "Sam Smith",
+							"uri": "spotify:artist:2wY79sveU1sp5g7SokKOiI"
+						}
+					],
+					"duration_ms": 203289,
+					"name": "Burning",
+					"uri": "spotify:track:2mb6YdoavL6db22p7XKJQZ"
+				}
 			},
 			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/4sLklwvfOYr12fMGwrnlc7"
-						},
-						"href": "https://api.spotify.com/v1/artists/4sLklwvfOYr12fMGwrnlc7",
-						"id": "4sLklwvfOYr12fMGwrnlc7",
-						"name": "Apache Indian",
-						"type": "artist",
-						"uri": "spotify:artist:4sLklwvfOYr12fMGwrnlc7"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 271333,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/7lrRH7iBcHtqMEud5THuT9"
-				},
-				"href": "https://api.spotify.com/v1/tracks/7lrRH7iBcHtqMEud5THuT9",
-				"id": "7lrRH7iBcHtqMEud5THuT9",
-				"is_local": false,
-				"is_playable": true,
-				"name": "Boom Shack-A-Lak",
-				"preview_url": "https://p.scdn.co/mp3-preview/40073428c3c9862b004beffecbcdebcc3a82b2c8?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 18,
-				"type": "track",
-				"uri": "spotify:track:7lrRH7iBcHtqMEud5THuT9"
-			},
-			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/3aTuTR5Nf6pVW3837q2ZL7"
-						},
-						"href": "https://api.spotify.com/v1/artists/3aTuTR5Nf6pVW3837q2ZL7",
-						"id": "3aTuTR5Nf6pVW3837q2ZL7",
-						"name": "Maxi Priest",
-						"type": "artist",
-						"uri": "spotify:artist:3aTuTR5Nf6pVW3837q2ZL7"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 331093,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/1Swiu9dwcBukWzu712ttoo"
-				},
-				"href": "https://api.spotify.com/v1/tracks/1Swiu9dwcBukWzu712ttoo",
-				"id": "1Swiu9dwcBukWzu712ttoo",
-				"is_local": false,
-				"is_playable": true,
-				"name": "Close To You",
-				"preview_url": "https://p.scdn.co/mp3-preview/39094d0ae61d4a4fab1a1a1933ceabba7ab0417c?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 19,
-				"type": "track",
-				"uri": "spotify:track:1Swiu9dwcBukWzu712ttoo"
-			},
-			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/5e4Dhzv426EvQe3aDb64jL"
-						},
-						"href": "https://api.spotify.com/v1/artists/5e4Dhzv426EvQe3aDb64jL",
-						"id": "5e4Dhzv426EvQe3aDb64jL",
-						"name": "Shania Twain",
-						"type": "artist",
-						"uri": "spotify:artist:5e4Dhzv426EvQe3aDb64jL"
+				"track": {
+					"album": {
+						"name": "÷ (Deluxe)",
+						"uri": "spotify:album:3T4tUhGYeRNVUGevb0wThu"
 					},
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/45kyLFJs5SIEqyzfVopuSc"
-						},
-						"href": "https://api.spotify.com/v1/artists/45kyLFJs5SIEqyzfVopuSc",
-						"id": "45kyLFJs5SIEqyzfVopuSc",
-						"name": "Bryan White",
-						"type": "artist",
-						"uri": "spotify:artist:45kyLFJs5SIEqyzfVopuSc"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 291640,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/0f8D8Szgfk0DMc2XWmt1yK"
-				},
-				"href": "https://api.spotify.com/v1/tracks/0f8D8Szgfk0DMc2XWmt1yK",
-				"id": "0f8D8Szgfk0DMc2XWmt1yK",
-				"is_local": false,
-				"is_playable": true,
-				"name": "From This Moment On",
-				"preview_url": "https://p.scdn.co/mp3-preview/509e3237f37f6198d31c57d3cc58fd2a09e13197?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 20,
-				"type": "track",
-				"uri": "spotify:track:0f8D8Szgfk0DMc2XWmt1yK"
+					"artists": [
+						{
+							"name": "Ed Sheeran",
+							"uri": "spotify:artist:6eUKZXaKkcviH0Ku9w2n3V"
+						}
+					],
+					"duration_ms": 207520,
+					"name": "Happier",
+					"uri": "spotify:track:2RttW7RAu5nOAfq6YFvApB"
+				}
 			},
 			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/6lOC7lwSO1ql4Gc2Y3QObY"
-						},
-						"href": "https://api.spotify.com/v1/artists/6lOC7lwSO1ql4Gc2Y3QObY",
-						"id": "6lOC7lwSO1ql4Gc2Y3QObY",
-						"name": "East 17",
-						"type": "artist",
-						"uri": "spotify:artist:6lOC7lwSO1ql4Gc2Y3QObY"
+				"track": {
+					"album": {
+						"name": "Can't Slow Down",
+						"uri": "spotify:album:5U0NU0T1JKIJwgq2ZDWb2T"
 					},
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/7rftfGIYEeZ79sLb58ZBDi"
-						},
-						"href": "https://api.spotify.com/v1/artists/7rftfGIYEeZ79sLb58ZBDi",
-						"id": "7rftfGIYEeZ79sLb58ZBDi",
-						"name": "Gabrielle",
-						"type": "artist",
-						"uri": "spotify:artist:7rftfGIYEeZ79sLb58ZBDi"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 254573,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/4OjRDE7LBmdQLY2lFXyn0u"
-				},
-				"href": "https://api.spotify.com/v1/tracks/4OjRDE7LBmdQLY2lFXyn0u",
-				"id": "4OjRDE7LBmdQLY2lFXyn0u",
-				"is_local": false,
-				"is_playable": true,
-				"name": "If You Ever",
-				"preview_url": "https://p.scdn.co/mp3-preview/de28d6b5a242540224b44f3306b31a79d9e63699?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 21,
-				"type": "track",
-				"uri": "spotify:track:4OjRDE7LBmdQLY2lFXyn0u"
+					"artists": [
+						{
+							"name": "Lionel Richie",
+							"uri": "spotify:artist:3gMaNLQm7D9MornNILzdSl"
+						}
+					],
+					"duration_ms": 192066,
+					"name": "Stuck On You",
+					"uri": "spotify:track:6HPLeKiNm92RbykX2BDTUB"
+				}
 			},
 			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/2Q4FnG5T6NTUcAAZwuMV5K"
-						},
-						"href": "https://api.spotify.com/v1/artists/2Q4FnG5T6NTUcAAZwuMV5K",
-						"id": "2Q4FnG5T6NTUcAAZwuMV5K",
-						"name": "Del Amitri",
-						"type": "artist",
-						"uri": "spotify:artist:2Q4FnG5T6NTUcAAZwuMV5K"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 132666,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/3TBKEEcqVTGIUpozecnT4R"
-				},
-				"href": "https://api.spotify.com/v1/tracks/3TBKEEcqVTGIUpozecnT4R",
-				"id": "3TBKEEcqVTGIUpozecnT4R",
-				"is_local": false,
-				"is_playable": true,
-				"name": "Roll To Me",
-				"preview_url": "https://p.scdn.co/mp3-preview/299ea4404f1efef00199c1aee151212f7032fdc3?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 22,
-				"type": "track",
-				"uri": "spotify:track:3TBKEEcqVTGIUpozecnT4R"
+				"track": {
+					"album": {
+						"name": "Lean Into It [Expanded]",
+						"uri": "spotify:album:6CrjpyjlfjK95oHF6dvEnQ"
+					},
+					"artists": [
+						{
+							"name": "Mr. Big",
+							"uri": "spotify:artist:5OfhOoKunSnuubxxRML8J3"
+						}
+					],
+					"duration_ms": 210480,
+					"name": "To Be With You - 2010 Remastered Version",
+					"uri": "spotify:track:3Mmt6Xk0H6VR92PEp6x3hP"
+				}
 			},
 			{
-				"artists": [
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/6RQkaOWddQmiLLJqSgnTbm"
-						},
-						"href": "https://api.spotify.com/v1/artists/6RQkaOWddQmiLLJqSgnTbm",
-						"id": "6RQkaOWddQmiLLJqSgnTbm",
-						"name": "Chaka Demus & Pliers",
-						"type": "artist",
-						"uri": "spotify:artist:6RQkaOWddQmiLLJqSgnTbm"
+				"track": {
+					"album": {
+						"name": "The Best Bette",
+						"uri": "spotify:album:2aBNewGpx5XIAdSFKvEKGw"
 					},
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/0YeIluqMsCUwn5NC3TG2iQ"
-						},
-						"href": "https://api.spotify.com/v1/artists/0YeIluqMsCUwn5NC3TG2iQ",
-						"id": "0YeIluqMsCUwn5NC3TG2iQ",
-						"name": "Jack Radics",
-						"type": "artist",
-						"uri": "spotify:artist:0YeIluqMsCUwn5NC3TG2iQ"
+					"artists": [
+						{
+							"name": "Bette Midler",
+							"uri": "spotify:artist:13y0kncDD4J9wxCyfKr10W"
+						}
+					],
+					"duration_ms": 214552,
+					"name": "The Rose",
+					"uri": "spotify:track:7iLXXTLIaguiWCTRJNU1Tv"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Kiddo",
+						"uri": "spotify:album:2q7EwuXduuQGDJrPYPVFyw"
 					},
-					{
-						"external_urls": {
-							"spotify": "https://open.spotify.com/artist/2Af07b1sTnXHHSdCqdLSfy"
+					"artists": [
+						{
+							"name": "Jessie Reyez",
+							"uri": "spotify:artist:3KedxarmBCyFBevnqQHy3P"
+						}
+					],
+					"duration_ms": 240906,
+					"name": "FIGURES",
+					"uri": "spotify:track:3U3J5v3rkx89WnFEQvAJD5"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Never Forget: The Ultimate Collection",
+						"uri": "spotify:album:7jzGCK8GdjuWEAe1lZ71xI"
+					},
+					"artists": [
+						{
+							"name": "Take That",
+							"uri": "spotify:artist:1XgFuvRd7r5g0h844A5ZUQ"
+						}
+					],
+					"duration_ms": 241293,
+					"name": "Back for Good - Radio Mix",
+					"uri": "spotify:track:2BIBtKMUnHyYs3BsEiILTU"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Whiskey To My Soul",
+						"uri": "spotify:album:7pMY78paFqxpkhTAUanWWb"
+					},
+					"artists": [
+						{
+							"name": "Roan Ash",
+							"uri": "spotify:artist:4Tqhn8v9Cws9SRsViQe61U"
+						}
+					],
+					"duration_ms": 225773,
+					"name": "Whiskey To My Soul",
+					"uri": "spotify:track:7pSr5TCyEHPPRTXJNAtkNz"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Nervous System",
+						"uri": "spotify:album:2jadjpIZfrJwIIlaJbTpHE"
+					},
+					"artists": [
+						{
+							"name": "Julia Michaels",
+							"uri": "spotify:artist:0ZED1XzwlLHW4ZaG4lOT6m"
+						}
+					],
+					"duration_ms": 176320,
+					"name": "Issues",
+					"uri": "spotify:track:0xG0SHshCStMEyNbNC5d4k"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "The Best of Andrea Bocelli - 'Vivere'",
+						"uri": "spotify:album:6O4lYKMQFLDcaUrBocYSRz"
+					},
+					"artists": [
+						{
+							"name": "Francesco Sartori",
+							"uri": "spotify:artist:0VtVDsLKIsyiBa1DeAdKbU"
 						},
-						"href": "https://api.spotify.com/v1/artists/2Af07b1sTnXHHSdCqdLSfy",
-						"id": "2Af07b1sTnXHHSdCqdLSfy",
-						"name": "The Taxi Gang",
-						"type": "artist",
-						"uri": "spotify:artist:2Af07b1sTnXHHSdCqdLSfy"
-					}
-				],
-				"disc_number": 1,
-				"duration_ms": 237506,
-				"explicit": false,
-				"external_urls": {
-					"spotify": "https://open.spotify.com/track/12wDZtAMq1BcQFzKk1qwU9"
-				},
-				"href": "https://api.spotify.com/v1/tracks/12wDZtAMq1BcQFzKk1qwU9",
-				"id": "12wDZtAMq1BcQFzKk1qwU9",
-				"is_local": false,
-				"is_playable": true,
-				"name": "Twist And Shout",
-				"preview_url": "https://p.scdn.co/mp3-preview/a384cb603e5e245ba3e9ed829ecaf7d2df050f0f?cid=774b29d4f13844c495f206cafdad9c86",
-				"track_number": 23,
-				"type": "track",
-				"uri": "spotify:track:12wDZtAMq1BcQFzKk1qwU9"
+						{
+							"name": "Lucio Quarantotto",
+							"uri": "spotify:artist:1lMNYBJkRVsauCctH6Scvn"
+						},
+						{
+							"name": "Frank Peterson",
+							"uri": "spotify:artist:4uOoGyFAz1G6w3vbmyidwk"
+						},
+						{
+							"name": "Sarah Brightman",
+							"uri": "spotify:artist:7Ead768rc4ShGxnqtqccU5"
+						},
+						{
+							"name": "Andrea Bocelli",
+							"uri": "spotify:artist:3EA9hVIzKfFiQI0Kikz2wo"
+						}
+					],
+					"duration_ms": 245893,
+					"name": "Time To Say Goodbye",
+					"uri": "spotify:track:4aLcGMxwFtcZRpl7NDtNW2"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "James Arthur (Deluxe)",
+						"uri": "spotify:album:029WUoBjWc7Js1QiPH3mw0"
+					},
+					"artists": [
+						{
+							"name": "James Arthur",
+							"uri": "spotify:artist:4IWBUUAFIplrNtaOHcJPRM"
+						}
+					],
+					"duration_ms": 209440,
+					"name": "Impossible",
+					"uri": "spotify:track:5yVIlYEHZxQVLyInCdldoS"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Please Keep Loving Me",
+						"uri": "spotify:album:53ZfIHyk0AhUHeVRBCIl64"
+					},
+					"artists": [
+						{
+							"name": "James TW",
+							"uri": "spotify:artist:0B3N0ZINFWvizfa8bKiz4v"
+						}
+					],
+					"duration_ms": 195920,
+					"name": "Please Keep Loving Me",
+					"uri": "spotify:track:78zUxUPvONPgMIt46q5be6"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Farewell, Starlite!",
+						"uri": "spotify:album:5gc2S04vG0rEGnTaTwOvus"
+					},
+					"artists": [
+						{
+							"name": "Francis and the Lights",
+							"uri": "spotify:artist:23EA28263XvtIrXuySX6oI"
+						},
+						{
+							"name": "Bon Iver",
+							"uri": "spotify:artist:4LEiUm1SRbFMgfqnQTwUbQ"
+						}
+					],
+					"duration_ms": 188336,
+					"name": "Friends (feat. Bon Iver)",
+					"uri": "spotify:track:0ZpBPavoID3eDbaXKSWpAD"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Back from the Edge",
+						"uri": "spotify:album:7oiJYvEJHsmYtrgviAVIBD"
+					},
+					"artists": [
+						{
+							"name": "James Arthur",
+							"uri": "spotify:artist:4IWBUUAFIplrNtaOHcJPRM"
+						}
+					],
+					"duration_ms": 211466,
+					"name": "Say You Won't Let Go",
+					"uri": "spotify:track:5uCax9HTNlzGybIStD3vDh"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "So Good",
+						"uri": "spotify:album:4QPSmOSVqg7AG8RHCkHdqX"
+					},
+					"artists": [
+						{
+							"name": "Zara Larsson",
+							"uri": "spotify:artist:1Xylc3o4UrD53lo9CvFvVg"
+						}
+					],
+					"duration_ms": 172896,
+					"name": "TG4M",
+					"uri": "spotify:track:4n7fU54ByDflhlz2udlOLc"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "÷ (Deluxe)",
+						"uri": "spotify:album:3T4tUhGYeRNVUGevb0wThu"
+					},
+					"artists": [
+						{
+							"name": "Ed Sheeran",
+							"uri": "spotify:artist:6eUKZXaKkcviH0Ku9w2n3V"
+						}
+					],
+					"duration_ms": 263400,
+					"name": "Perfect",
+					"uri": "spotify:track:0tgVpDi06FyKpA1z0VMD4v"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "x (Deluxe Edition)",
+						"uri": "spotify:album:1xn54DMo2qIqBuMqHtUsFd"
+					},
+					"artists": [
+						{
+							"name": "Ed Sheeran",
+							"uri": "spotify:artist:6eUKZXaKkcviH0Ku9w2n3V"
+						}
+					],
+					"duration_ms": 258986,
+					"name": "Photograph",
+					"uri": "spotify:track:1HNkqx9Ahdgi1Ixy2xkKkL"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Docks",
+						"uri": "spotify:album:46ouJiWK0jC4QlaWP6DTCH"
+					},
+					"artists": [
+						{
+							"name": "Amanda Bergman",
+							"uri": "spotify:artist:4FmkyL0ggkDBUUoPzBlo80"
+						}
+					],
+					"duration_ms": 234013,
+					"name": "Falcons",
+					"uri": "spotify:track:1FNvsOtp6bnSOQTBgJOtha"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Movie Ballads",
+						"uri": "spotify:album:3FxKnSu0AwZCVimULvmlUj"
+					},
+					"artists": [
+						{
+							"name": "Maria McKee",
+							"uri": "spotify:artist:30GIF9g2UJ1ifn45kSMTFf"
+						}
+					],
+					"duration_ms": 229920,
+					"name": "Show Me Heaven - From \"Days Of Thunder\"",
+					"uri": "spotify:track:1umFfZGw8bsBd1a0fLTQI3"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "The Bodyguard - Original Soundtrack Album",
+						"uri": "spotify:album:7JVJlkNNobS0GSoy4tCS96"
+					},
+					"artists": [
+						{
+							"name": "Whitney Houston",
+							"uri": "spotify:artist:6XpaIBNiVzIetEPCWDvAFP"
+						}
+					],
+					"duration_ms": 271093,
+					"name": "I Will Always Love You",
+					"uri": "spotify:track:4eHbdreAnSOrDDsFfc4Fpm"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Lovers",
+						"uri": "spotify:album:5NEfU3Z8PfjeJXABaHf1FF"
+					},
+					"artists": [
+						{
+							"name": "Anna of the North",
+							"uri": "spotify:artist:1mSJCvDX0W7Dn7S9C6vmvI"
+						}
+					],
+					"duration_ms": 215773,
+					"name": "Lovers",
+					"uri": "spotify:track:6bZuZKR8hoyzZXNh1IW2Bu"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Arthur - The Album [Original Soundtrack]",
+						"uri": "spotify:album:0QXYfxXpKeLlr3hueenIHB"
+					},
+					"artists": [
+						{
+							"name": "Christopher Cross",
+							"uri": "spotify:artist:695W5F2Ih8dYahLdjVOIoH"
+						}
+					],
+					"duration_ms": 234493,
+					"name": "Arthur's Theme (Best That You Can Do)",
+					"uri": "spotify:track:5fnOrhQ4KgT5irGCjIccGH"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Ingen gör det bättre",
+						"uri": "spotify:album:0Z6CdX7lZC4Tu3Sw7I4pbD"
+					},
+					"artists": [
+						{
+							"name": "Lisa Nilsson",
+							"uri": "spotify:artist:68QvqbdqwqqjW39YpUJHdG"
+						}
+					],
+					"duration_ms": 229066,
+					"name": "Vart du än går",
+					"uri": "spotify:track:3nD5Zyg1zbmlLFcDXZswa0"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Right Here",
+						"uri": "spotify:album:2X5hXnYddswmHZUDOsHq0D"
+					},
+					"artists": [
+						{
+							"name": "Shane Filan",
+							"uri": "spotify:artist:3Q2ya2vGeOhQ9CaF9wWNP6"
+						}
+					],
+					"duration_ms": 213945,
+					"name": "Beautiful to Me",
+					"uri": "spotify:track:7fa1oiFqQFhlO8ghtLIGpR"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Echos",
+						"uri": "spotify:album:5IxfsBZbu9tnPQRgTjwOyc"
+					},
+					"artists": [
+						{
+							"name": "Joshua Hyslop",
+							"uri": "spotify:artist:1I7oHjCjMrMUz66v67yJJu"
+						}
+					],
+					"duration_ms": 257973,
+					"name": "Long Way Down",
+					"uri": "spotify:track:25Caem6cbUveFkgPSXtGXe"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Last Year Was Complicated",
+						"uri": "spotify:album:1J1mjhlth8XnU8ttfRKp5r"
+					},
+					"artists": [
+						{
+							"name": "Nick Jonas",
+							"uri": "spotify:artist:4Rxn7Im3LGfyRkY2FlHhWi"
+						},
+						{
+							"name": "Tove Lo",
+							"uri": "spotify:artist:4NHQUGzhtTLFvgF5SZesLK"
+						}
+					],
+					"duration_ms": 234213,
+					"name": "Close",
+					"uri": "spotify:track:2wJhFcye5iiW2mVBpGednz"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "x (Deluxe Edition)",
+						"uri": "spotify:album:1xn54DMo2qIqBuMqHtUsFd"
+					},
+					"artists": [
+						{
+							"name": "Ed Sheeran",
+							"uri": "spotify:artist:6eUKZXaKkcviH0Ku9w2n3V"
+						}
+					],
+					"duration_ms": 281560,
+					"name": "Thinking out Loud",
+					"uri": "spotify:track:34gCuhDGsG4bRPIf9bb02f"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Falling into You",
+						"uri": "spotify:album:2vk0n8aeQSO74VtQBbNDPR"
+					},
+					"artists": [
+						{
+							"name": "Céline Dion",
+							"uri": "spotify:artist:4S9EykWXhStSc15wEx8QFK"
+						}
+					],
+					"duration_ms": 258240,
+					"name": "Falling Into You",
+					"uri": "spotify:track:7KWMxUH7lORLTob6aMpXBU"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "The Ultimate Collection 1968-2003",
+						"uri": "spotify:album:7kJxjkRxiAy0NeFIaRqcKV"
+					},
+					"artists": [
+						{
+							"name": "Joe Cocker",
+							"uri": "spotify:artist:3pFCERyEiP5xeN2EsPXhjI"
+						},
+						{
+							"name": "Jennifer Warnes",
+							"uri": "spotify:artist:1BwHztAQKypBuy5WBEdJnG"
+						}
+					],
+					"duration_ms": 233240,
+					"name": "Up Where We Belong",
+					"uri": "spotify:track:5NoUgO4Kr93QymQGQlBC7b"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Surround Me - EP",
+						"uri": "spotify:album:3m61NACPLHynQ8JHZpPXd4"
+					},
+					"artists": [
+						{
+							"name": "LÉON",
+							"uri": "spotify:artist:4SqTiwOEdYrNayaGMkc7ia"
+						}
+					],
+					"duration_ms": 202146,
+					"name": "I Believe in Us",
+					"uri": "spotify:track:59JtQ8mThUAnRGValaExhc"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Heartbeat",
+						"uri": "spotify:album:052xFq8blHwU5tv1kjeiak"
+					},
+					"artists": [
+						{
+							"name": "Christopher",
+							"uri": "spotify:artist:3zDRCqOhJXJfS2YWOEwGMC"
+						}
+					],
+					"duration_ms": 200373,
+					"name": "Heartbeat",
+					"uri": "spotify:track:2Cj2XFOMBT8IrT0aapNTee"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Coco",
+						"uri": "spotify:album:7a8mrq83VEf0PoFh6pvtsb"
+					},
+					"artists": [
+						{
+							"name": "Colbie Caillat",
+							"uri": "spotify:artist:6aZyMrc4doVtZyKNilOmwu"
+						}
+					],
+					"duration_ms": 196226,
+					"name": "Bubbly",
+					"uri": "spotify:track:1lkvpmrCaXK8QtliFDcHBO"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "A Collection of Roxette Hits! Their 20 Greatest Songs!",
+						"uri": "spotify:album:1nQK4dpultSS3YeHfYrgEW"
+					},
+					"artists": [
+						{
+							"name": "Roxette",
+							"uri": "spotify:artist:2SHhfs4BiDxGQ3oxqf0UHY"
+						}
+					],
+					"duration_ms": 258786,
+					"name": "It Must Have Been Love - From the Film \"Pretty Woman\"",
+					"uri": "spotify:track:1JZZkORheU1RpGqJdZ77WL"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Make Me (Cry)",
+						"uri": "spotify:album:46yAYzRhSMPA44m0MzSr6g"
+					},
+					"artists": [
+						{
+							"name": "Noah Cyrus",
+							"uri": "spotify:artist:55fhWPvDiMpLnE4ZzNXZyW"
+						},
+						{
+							"name": "Labrinth",
+							"uri": "spotify:artist:2feDdbD5araYcm6JhFHHw7"
+						}
+					],
+					"duration_ms": 242081,
+					"name": "Make Me (Cry)",
+					"uri": "spotify:track:2BrzlUj1u1CtvaJDGIKpsP"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Fields Of Gold - The Best Of Sting 1984 - 1994",
+						"uri": "spotify:album:1rZTn68Lgr5J4F4vIpgpWf"
+					},
+					"artists": [
+						{
+							"name": "Sting",
+							"uri": "spotify:artist:0Ty63ceoRnnJKVEYP0VQpk"
+						}
+					],
+					"duration_ms": 217733,
+					"name": "Fields Of Gold",
+					"uri": "spotify:track:22gLGCKbFKwmgZhrpVcnFb"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Project 11",
+						"uri": "spotify:album:0aytGzjInPwluxhlSLxoot"
+					},
+					"artists": [
+						{
+							"name": "Jorja Smith",
+							"uri": "spotify:artist:1CoZyIx7UvdxT5c8UkMzHd"
+						},
+						{
+							"name": "Maverick Sabre",
+							"uri": "spotify:artist:0ukgrNYk51TkMQr0f2Br4Q"
+						}
+					],
+					"duration_ms": 282329,
+					"name": "Carry Me Home",
+					"uri": "spotify:track:6fracv4du3sDwo1XKcPrkw"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Come On Over",
+						"uri": "spotify:album:4UMe0Ods7kygK6OISasZe9"
+					},
+					"artists": [
+						{
+							"name": "Shania Twain",
+							"uri": "spotify:artist:5e4Dhzv426EvQe3aDb64jL"
+						}
+					],
+					"duration_ms": 212200,
+					"name": "You're Still The One",
+					"uri": "spotify:track:1wb4P4F0sxAQ2KXrRvsx6n"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Closer (Special Edition)",
+						"uri": "spotify:album:33TIHVlvlxFVDPGpiunsT3"
+					},
+					"artists": [
+						{
+							"name": "Josh Groban",
+							"uri": "spotify:artist:6cXMpsP9x0SH4kFfMyVezF"
+						}
+					],
+					"duration_ms": 292333,
+					"name": "You Raise Me Up",
+					"uri": "spotify:track:1xugsCboIm1yILqpLvH9aD"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Fifty Shades Darker (Original Motion Picture Soundtrack)",
+						"uri": "spotify:album:5VML6S956h4YfoYPooqLEi"
+					},
+					"artists": [
+						{
+							"name": "Sia",
+							"uri": "spotify:artist:5WUlDfRSoLAfcVSX1WnrxN"
+						}
+					],
+					"duration_ms": 252320,
+					"name": "Helium",
+					"uri": "spotify:track:4S6fv0puLCsfYjyBTPDb9k"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Think About You",
+						"uri": "spotify:album:2kaTgeLOxXoLVi4S85sANb"
+					},
+					"artists": [
+						{
+							"name": "LÉON",
+							"uri": "spotify:artist:4SqTiwOEdYrNayaGMkc7ia"
+						}
+					],
+					"duration_ms": 201133,
+					"name": "Think About You",
+					"uri": "spotify:track:6BWTZwXamKhjdYlicjjVjB"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Laundry Service",
+						"uri": "spotify:album:4DyMK9x2gnmRkRa16zHaEV"
+					},
+					"artists": [
+						{
+							"name": "Shakira",
+							"uri": "spotify:artist:0EmeFodog0BfCgMzAIvKQp"
+						}
+					],
+					"duration_ms": 224066,
+					"name": "Underneath Your Clothes",
+					"uri": "spotify:track:15f8Cv8RXUlOOCIf2oaceN"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "The Essential Michael Jackson",
+						"uri": "spotify:album:77dNyQA0z8dV33M4so4eRY"
+					},
+					"artists": [
+						{
+							"name": "Michael Jackson",
+							"uri": "spotify:artist:3fMbdgg4jU18AjLCKBhRSm"
+						}
+					],
+					"duration_ms": 295986,
+					"name": "You Are Not Alone - Single Version",
+					"uri": "spotify:track:3KtIVDOChQMVi3SxHc6RrK"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "25",
+						"uri": "spotify:album:6TVfiWmo8KtflUAmkK9gGF"
+					},
+					"artists": [
+						{
+							"name": "Adele",
+							"uri": "spotify:artist:4dpARuHxo51G3z768sgnrY"
+						}
+					],
+					"duration_ms": 295502,
+					"name": "Hello",
+					"uri": "spotify:track:1Yk0cQdMLx5RzzFTYwmuld"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Earned It (Fifty Shades Of Grey) [From The \"Fifty Shades Of Grey\" Soundtrack]",
+						"uri": "spotify:album:61Ba3txRZWfiX6ZTEZlFCV"
+					},
+					"artists": [
+						{
+							"name": "The Weeknd",
+							"uri": "spotify:artist:1Xyo4u8uXC1ZmMpatF05PJ"
+						}
+					],
+					"duration_ms": 252226,
+					"name": "Earned It (Fifty Shades Of Grey) - From The \"Fifty Shades Of Grey\" Soundtrack",
+					"uri": "spotify:track:2PIvq1pGrUjY007X5y1UpM"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Ghost Stories",
+						"uri": "spotify:album:2G4AUqfwxcV1UdQjm2ouYr"
+					},
+					"artists": [
+						{
+							"name": "Coldplay",
+							"uri": "spotify:artist:4gzpq5DPGxSnKTe4SA8HAU"
+						}
+					],
+					"duration_ms": 246000,
+					"name": "True Love",
+					"uri": "spotify:track:0fQuzbQNLcD1ofo7B2NcFI"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Lust For Life",
+						"uri": "spotify:album:7xYiTrbTL57QO0bb4hXIKo"
+					},
+					"artists": [
+						{
+							"name": "Lana Del Rey",
+							"uri": "spotify:artist:00FQb4jTyendYWaN8pK0wa"
+						}
+					],
+					"duration_ms": 272742,
+					"name": "Love",
+					"uri": "spotify:track:2Kerz9H9IejzeIpjhDJoYG"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Romance",
+						"uri": "spotify:album:3Vsbl0diFGw8HNSjG8ue9m"
+					},
+					"artists": [
+						{
+							"name": "Camila Cabello",
+							"uri": "spotify:artist:4nDoRrQiYLoBzwC5BhVJzF"
+						}
+					],
+					"duration_ms": 222999,
+					"name": "Dream of You",
+					"uri": "spotify:track:7jJ4y8hXMLMlGBu7Zm1XZj"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Het Vind",
+						"uri": "spotify:album:3FSeVAROTnxA1143QnIrHR"
+					},
+					"artists": [
+						{
+							"name": "Marie Fredriksson",
+							"uri": "spotify:artist:4YkPXMsmFf3K2XFHPddqFU"
+						}
+					],
+					"duration_ms": 224266,
+					"name": "Ännu doftar kärlek",
+					"uri": "spotify:track:2cvgUpzXjHLtoE6P8SccL6"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Slowhand 35th Anniversary (Super Deluxe)",
+						"uri": "spotify:album:5MAL7e4EnKXW1hFg6NbFqP"
+					},
+					"artists": [
+						{
+							"name": "Eric Clapton",
+							"uri": "spotify:artist:6PAt558ZEZl0DmdXlnjMgD"
+						}
+					],
+					"duration_ms": 225026,
+					"name": "Wonderful Tonight",
+					"uri": "spotify:track:6zC0mpGYwbNTpk9SKwh08f"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "When You Tell the World You're Mine",
+						"uri": "spotify:album:5VfOL7MlhCj56sveEhqJGE"
+					},
+					"artists": [
+						{
+							"name": "Björn Skifs",
+							"uri": "spotify:artist:1Ek3VdZ8EPmcvgRIqnHlrF"
+						},
+						{
+							"name": "Agnes",
+							"uri": "spotify:artist:6SsTlCsuCYleNza6xGwynu"
+						}
+					],
+					"duration_ms": 246040,
+					"name": "When You Tell the World You're Mine",
+					"uri": "spotify:track:3jM6BW6XXCDaMfaBwnLwuy"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Slow",
+						"uri": "spotify:album:6u4ZwK6xSWHhREBVzhjQg6"
+					},
+					"artists": [
+						{
+							"name": "SHY Martin",
+							"uri": "spotify:artist:7eCmccnRwPmRnWPw61x6jM"
+						}
+					],
+					"duration_ms": 163547,
+					"name": "Slow",
+					"uri": "spotify:track:1Ia95g66IhlAJ3qVI4qI8W"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Piano Joint (This Kind Of Love)",
+						"uri": "spotify:album:2ibsoJps6tosNlFJtFlBDN"
+					},
+					"artists": [
+						{
+							"name": "Michael Kiwanuka",
+							"uri": "spotify:artist:0bzfPKdbXL5ezYW2z3UGQj"
+						}
+					],
+					"duration_ms": 231586,
+					"name": "Piano Joint (This Kind Of Love)",
+					"uri": "spotify:track:3kERuxcw7g0URUtzIs7H5d"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Repeat Offender",
+						"uri": "spotify:album:0Zf6FJVyK6qUxmg1WMNruG"
+					},
+					"artists": [
+						{
+							"name": "Richard Marx",
+							"uri": "spotify:artist:0grdhNhiRLFBaFVyybqsj6"
+						}
+					],
+					"duration_ms": 264333,
+					"name": "Right Here Waiting",
+					"uri": "spotify:track:4LFwNJWoj74Yd71fIr1W8x"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "The Essential Luther Vandross",
+						"uri": "spotify:album:0JzmsNDLZ6NCc6Mc3J2UgN"
+					},
+					"artists": [
+						{
+							"name": "Luther Vandross",
+							"uri": "spotify:artist:19y5MFBH7gohEdGwKM7QsP"
+						},
+						{
+							"name": "Mariah Carey",
+							"uri": "spotify:artist:4iHNK0tOyZPYnBU7nGAgpQ"
+						}
+					],
+					"duration_ms": 259573,
+					"name": "Endless Love (with Mariah Carey)",
+					"uri": "spotify:track:6D4vhXwVrO2OCgZvqEjsuA"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Escape",
+						"uri": "spotify:album:3DeHyfe2Da8xznvABSfIE5"
+					},
+					"artists": [
+						{
+							"name": "Enrique Iglesias",
+							"uri": "spotify:artist:7qG3b048QCHVRO5Pv1T5lw"
+						}
+					],
+					"duration_ms": 264240,
+					"name": "Hero",
+					"uri": "spotify:track:1PAgmT6YqGhd6zT9kN9gIo"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Savage Garden - The Singles",
+						"uri": "spotify:album:14JCVMAbCs1MlE5n59m0t6"
+					},
+					"artists": [
+						{
+							"name": "Savage Garden",
+							"uri": "spotify:artist:3NRFinRTEqUCfaTTZmk8ek"
+						}
+					],
+					"duration_ms": 252911,
+					"name": "I Knew I Loved You",
+					"uri": "spotify:track:1DuGc5Zk2HD9u8J9phRWGo"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Love Songs",
+						"uri": "spotify:album:74RK3gsxjigff01cRt7pLL"
+					},
+					"artists": [
+						{
+							"name": "Berlin",
+							"uri": "spotify:artist:2aS6jYh7ysTL1ZUsHneNgM"
+						}
+					],
+					"duration_ms": 253413,
+					"name": "Take My Breath Away - Love Theme from \"Top Gun\"",
+					"uri": "spotify:track:4z3QwWOFfRN2gd9N1hQ3CS"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Pure... Love",
+						"uri": "spotify:album:6mc30D5zvEF39EE7XljFn5"
+					},
+					"artists": [
+						{
+							"name": "Bill Medley",
+							"uri": "spotify:artist:1XE70WwxhnrXNAJYQQ9ygx"
+						},
+						{
+							"name": "Jennifer Warnes",
+							"uri": "spotify:artist:1BwHztAQKypBuy5WBEdJnG"
+						}
+					],
+					"duration_ms": 289253,
+					"name": "(I've Had) The Time of My Life - From \"Dirty Dancing\" Soundtrack",
+					"uri": "spotify:track:0VOd4WMzhzxAd9cCIwLsMV"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Avalon Sunset",
+						"uri": "spotify:album:2vE3SSFPxYt7jRu93j6rsi"
+					},
+					"artists": [
+						{
+							"name": "Van Morrison",
+							"uri": "spotify:artist:44NX2ffIYHr6D4n7RaZF7A"
+						}
+					],
+					"duration_ms": 260386,
+					"name": "Have I Told You Lately",
+					"uri": "spotify:track:1VsGYaCBFjCVudtX9IGqDg"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Il Divo",
+						"uri": "spotify:album:2wHQ8jRc9zKG5tyNzopmJt"
+					},
+					"artists": [
+						{
+							"name": "Il Divo",
+							"uri": "spotify:artist:3KNZ9AOjBajjmr6ZR2VGfl"
+						}
+					],
+					"duration_ms": 280680,
+					"name": "Regresa a Mí",
+					"uri": "spotify:track:3p8szomcjl5ghqOKSH5vZf"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Adore You",
+						"uri": "spotify:album:5SL9nXZYZZl68bHwaM8uLa"
+					},
+					"artists": [
+						{
+							"name": "Harry Styles",
+							"uri": "spotify:artist:6KImCVD70vtIoJWnq6nGn3"
+						}
+					],
+					"duration_ms": 207133,
+					"name": "Adore You",
+					"uri": "spotify:track:1M4qEo4HE3PRaCOM7EXNJq"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "golden thing",
+						"uri": "spotify:album:33MiMpGm7MU2UBggBqBIUz"
+					},
+					"artists": [
+						{
+							"name": "Cody Simpson",
+							"uri": "spotify:artist:79Xp2rRN7wdsaTJgttdX3K"
+						}
+					],
+					"duration_ms": 219300,
+					"name": "golden thing",
+					"uri": "spotify:track:5y2TuOFgwlpztHlqENHQOE"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Echos",
+						"uri": "spotify:album:5IxfsBZbu9tnPQRgTjwOyc"
+					},
+					"artists": [
+						{
+							"name": "Joshua Hyslop",
+							"uri": "spotify:artist:1I7oHjCjMrMUz66v67yJJu"
+						}
+					],
+					"duration_ms": 203253,
+					"name": "Stand Your Ground",
+					"uri": "spotify:track:5nhptWSQJ8WRqHGJDJXrPM"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "The Thrill Of It All (Special Edition)",
+						"uri": "spotify:album:3TJz2UBNYJtlEly0sPeNrQ"
+					},
+					"artists": [
+						{
+							"name": "Sam Smith",
+							"uri": "spotify:artist:2wY79sveU1sp5g7SokKOiI"
+						}
+					],
+					"duration_ms": 247554,
+					"name": "Say It First",
+					"uri": "spotify:track:4K1vOdIFqskQv3zoI0FdAk"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Så mycket bättre / Tolkningarna (Säsong 7)",
+						"uri": "spotify:album:7rQh2zaslI0a4RqbfRuJX8"
+					},
+					"artists": [
+						{
+							"name": "Jill Johnson",
+							"uri": "spotify:artist:2aaGbpl5Y2ykZsNFZM6ofw"
+						}
+					],
+					"duration_ms": 240560,
+					"name": "Open Your Heart",
+					"uri": "spotify:track:1f7bJzsezTm9ZS2DVBUVOM"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Now In A Minute",
+						"uri": "spotify:album:1VzYTrtId9CgUTo7VQBFbL"
+					},
+					"artists": [
+						{
+							"name": "Donna Lewis",
+							"uri": "spotify:artist:2EfG2EoT8GFJrMiilbTVl2"
+						}
+					],
+					"duration_ms": 239960,
+					"name": "I Love You Always Forever",
+					"uri": "spotify:track:1PEqh7awkpuepLBSq8ZwqD"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Fifty Shades Darker (Original Motion Picture Soundtrack)",
+						"uri": "spotify:album:5VML6S956h4YfoYPooqLEi"
+					},
+					"artists": [
+						{
+							"name": "JP Cooper",
+							"uri": "spotify:artist:4kYGAK2zu9EAomwj3hXkXy"
+						}
+					],
+					"duration_ms": 201786,
+					"name": "Birthday",
+					"uri": "spotify:track:5dYaElq0nua2omNCimEapq"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "These Streets",
+						"uri": "spotify:album:6L2FiSnFMisCgbhbag4KTl"
+					},
+					"artists": [
+						{
+							"name": "Paolo Nutini",
+							"uri": "spotify:artist:7x5rK9BClDQ8wmCkYAGsQp"
+						}
+					],
+					"duration_ms": 220413,
+					"name": "Last Request",
+					"uri": "spotify:track:6xM8oBy40nK1rOd8WmoOPx"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Carole King: The Ode Collection",
+						"uri": "spotify:album:3kbEbYvWSub8LsGZpq6lcp"
+					},
+					"artists": [
+						{
+							"name": "Carole King",
+							"uri": "spotify:artist:319yZVtYM9MBGqmSQnMyY6"
+						}
+					],
+					"duration_ms": 148040,
+					"name": "Bitter With The Sweet",
+					"uri": "spotify:track:6bMrfP9V5s5fgL3Z02tcES"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Real Love Baby",
+						"uri": "spotify:album:6iTNM4iKs4myLCsqUnODJa"
+					},
+					"artists": [
+						{
+							"name": "Father John Misty",
+							"uri": "spotify:artist:2kGBy2WHvF0VdZyqiVCkDT"
+						}
+					],
+					"duration_ms": 189293,
+					"name": "Real Love Baby",
+					"uri": "spotify:track:3MyQn1xBQwPtFJUUP7zB8s"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Starboy",
+						"uri": "spotify:album:2ODvWsOgouMbaA5xf0RkJe"
+					},
+					"artists": [
+						{
+							"name": "The Weeknd",
+							"uri": "spotify:artist:1Xyo4u8uXC1ZmMpatF05PJ"
+						}
+					],
+					"duration_ms": 197653,
+					"name": "Attention",
+					"uri": "spotify:track:6pDVjCUA3B1vg9waKutAsv"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Just Like You",
+						"uri": "spotify:album:1VZoGsObyr7YAZOmP8DYEZ"
+					},
+					"artists": [
+						{
+							"name": "Louis Tomlinson",
+							"uri": "spotify:artist:57WHJIHrjOE3iAxpihhMnp"
+						}
+					],
+					"duration_ms": 205217,
+					"name": "Just Like You",
+					"uri": "spotify:track:5IF6IBPqbclVR7SQKmCIyA"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Pure... Love",
+						"uri": "spotify:album:6mc30D5zvEF39EE7XljFn5"
+					},
+					"artists": [
+						{
+							"name": "Alicia Keys",
+							"uri": "spotify:artist:3DiDSECUqqY1AuBP8qtaIa"
+						},
+						{
+							"name": "Usher",
+							"uri": "spotify:artist:23zg3TcAtWQy7J6upgbUnj"
+						}
+					],
+					"duration_ms": 231493,
+					"name": "If I Ain't Got You (feat. Usher)",
+					"uri": "spotify:track:1DmoN9uX1oyiyZYSy080yQ"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Dusk Till Dawn (Radio Edit)",
+						"uri": "spotify:album:5l5gR4rh26QI3fijGFTDrp"
+					},
+					"artists": [
+						{
+							"name": "ZAYN",
+							"uri": "spotify:artist:5ZsFI1h6hIdQRw2ti0hz81"
+						},
+						{
+							"name": "Sia",
+							"uri": "spotify:artist:5WUlDfRSoLAfcVSX1WnrxN"
+						}
+					],
+					"duration_ms": 239000,
+					"name": "Dusk Till Dawn - Radio Edit",
+					"uri": "spotify:track:1j4kHkkpqZRBwE0A4CN4Yv"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "All I Can Think About Is You",
+						"uri": "spotify:album:6E8RU4JTgtxnUT3BT0yOdb"
+					},
+					"artists": [
+						{
+							"name": "Coldplay",
+							"uri": "spotify:artist:4gzpq5DPGxSnKTe4SA8HAU"
+						}
+					],
+					"duration_ms": 274586,
+					"name": "All I Can Think About Is You",
+					"uri": "spotify:track:4gDyoe1FImDlXVt58ssnMf"
+				}
+			},
+			{
+				"track": {
+					"album": {
+						"name": "Miracle of Love",
+						"uri": "spotify:album:5TdiHAoc87RInbeJFwACQx"
+					},
+					"artists": [
+						{
+							"name": "Jamie Lawson",
+							"uri": "spotify:artist:1jhdZdzOd4TJLAHqQdkUND"
+						}
+					],
+					"duration_ms": 268839,
+					"name": "Miracle of Love",
+					"uri": "spotify:track:7oBGripcuBszD5sL8zYyUp"
+				}
 			}
-		],
-		"limit": 50,
-		"next": null,
-		"offset": 0,
-		"previous": null,
-		"total": 23
-	}
+		]
+	},
+	"type": "playlist",
+	"uri": "spotify:playlist:37i9dQZF1DX6T7BDvbGhmT"
 }

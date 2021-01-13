@@ -59,7 +59,7 @@
 			<h2>Category</h2>
 		</div>
 
-		<div class="view-body playlists" data-click="show-playlist">
+		<div class="view-body playlists" data-click="show-compilation">
 			<xsl:for-each select="./*">
 				<div class="playlist">
 					<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
@@ -198,13 +198,20 @@
 <xsl:template name="compilation-view">
 	<section class="compilation">
 		<div class="compilation-head">
-			<div class="compilation-image" style="background-image: url(https://i.scdn.co/image/ab67616d00004851ca56ba31dcd3d6f07a2d227b);"></div>
+			<div class="compilation-image">
+				<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+			</div>
 			<h2>
-				90's Hits
+				<xsl:value-of select="@name"/>
 				<div class="genre">
-					<span>Compilation</span>
-					<span>2000</span>
-					<span>23 songs</span>
+					<span><xsl:value-of select="@owner"/></span>
+					<xsl:if test="@release_date">
+						<span><xsl:value-of select="@release_date"/></span>
+					</xsl:if>
+					<span><xsl:choose>
+						<xsl:when test="@total"><xsl:value-of select="@total"/></xsl:when>
+						<xsl:otherwise><xsl:value-of select="count(./track)"/></xsl:otherwise>
+					</xsl:choose> songs</span>
 				</div>
 			</h2>
 		</div>
@@ -227,9 +234,9 @@
 									<xsl:attribute name="data-uri"><xsl:value-of select="artists/@uri"/></xsl:attribute>
 								</i>
 								<i class="icon-heart">
-									<xsl:if test="position() &lt; 5">
+									<!-- <xsl:if test="position() &lt; 5">
 										<xsl:attribute name="class">icon-heart-full</xsl:attribute>
-									</xsl:if>
+									</xsl:if> -->
 								</i>
 							</div>
 							<div class="cell"><xsl:value-of select="@name"/></div>

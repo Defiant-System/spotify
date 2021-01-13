@@ -3,6 +3,7 @@
 
 {
 	requests: [
+		{ url: "~/api-data/compilation.json",             type: "parse-compilation" },
 		{ url: "~/api-data/playlist.json",                type: "parse-playlist" },
 		{ url: "~/api-data/search-artists.json",          type: "parse-search-artists" },
 		{ url: "~/api-data/search-albums.json",           type: "parse-search-albums" },
@@ -278,6 +279,32 @@
 				res = $.xmlFromString(`<Playlist name="${plName}" owner="${plOwner}" image="${plImage}">${nodes.join("")}</Playlist>`);
 				// change reference for total + next
 				data = data.playlists;
+				break;
+			case "parse-compilation":
+				data.tracks.items.map(entry => {
+					let name = entry.track.name.escapeHtml(),
+						uri = entry.track.uri,
+						duration_ms = entry.track.duration_ms,
+						album_name = entry.track.album.name.escapeHtml(),
+						album_uri = entry.track.album.uri,
+						artists = [];
+					// prepare artists nodes
+					entry.track.artists.map(artist => {
+						let artist_name = artist.name.escapeHtml(),
+							artist_uri = artist.uri;
+						artists.push(`<artists name="${artist_name}" uri="${artist_uri}"/>`);
+					});
+					// prepare node
+					nodes.push(`<track name="${name}" duration_ms="${duration_ms}" uri="${uri}">
+									${artists.join("")}
+									<album name="${album_name}" uri="${album_uri}"/>
+								</track>`);
+				});
+				let cName = data.name,
+					cOwner = data.owner.display_name,
+					cImage = Self.getImage(data.images);
+				// make XML of entries
+				res = $.xmlFromString(`<Compilation name="${cName}" owner="${cOwner}" image="${cImage}">${nodes.join("")}</Compilation>`);
 				break;
 		}
 		// additional response info

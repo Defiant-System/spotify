@@ -3,11 +3,11 @@
 
 {
 	renders: {
-		"home":             { template: "home-view", match: "*" },
+		"home":             { template: "home-view",     match: "*" },
 		"home-browse":      { template: "home-browse" },
 		"home-featured":    { template: "home-featured", match: "//Featured" },
-		"home-favorites":   { template: "playlist", match: "//Favorites" },
-		"home-history":     { template: "playlist", match: "//Recently" },
+		"home-favorites":   { template: "playlist",     match: "//Favorites" },
+		"home-history":     { template: "playlist",     match: "//Recently" },
 		"search":           { template: "search-view",  match: "//SearchTracks" },
 		"search-tracks":    { template: "playlist",     match: "//SearchTracks" },
 		"search-artists":   { template: "artists",      match: "//SearchArtists" },
@@ -17,11 +17,12 @@
 		"artist-albums":         { template: "artist-albums",     match: "//Albums" },
 		"artist-appears-on":     { template: "mixed-albums",      match: "//Appears" },
 		"artist-fans-also-like": { template: "artists",           match: "//Related" },
-		"show-artist":      { template: "artist-view", match: "//Artist" },
-		"show-album":       { template: "album-view",  match: "//Album" },
-		"show-category":    { template: "category-view", match: "//CategoryPlayLists" },
-		"show-playlist":    { template: "playlist-view", match: "//Playlist" },
-		"show-featured":    { template: "playlist-view", match: "//Playlist" },
+		"show-artist":      { template: "artist-view",      match: "//Artist" },
+		"show-album":       { template: "album-view",       match: "//Album" },
+		"show-category":    { template: "category-view",    match: "//CategoryPlayLists" },
+		"show-playlist":    { template: "playlist-view",    match: "//Playlist" },
+		"show-featured":    { template: "playlist-view",    match: "//Playlist" },
+		"show-compilation": { template: "compilation-view", match: "//Compilation" },
 	},
 	init() {
 		// fast references
@@ -100,6 +101,7 @@
 			case "show-category":
 			case "show-playlist":
 			case "show-featured":
+			case "show-compilation":
 				Self.dispatch({ type: "go-to", view: event.type });
 				break;
 			// tabs
