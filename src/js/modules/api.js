@@ -3,6 +3,9 @@
 
 {
 	requests: [
+		{ url: "~/api-data/home-featured-playlists.json", type: "parse-home-featured-playlists" },
+		{ url: "~/api-data/home-recently-played.json",    type: "parse-home-recently-played" },
+		{ url: "~/api-data/home-favorites.json",          type: "parse-home-favorites" },
 		{ url: "~/api-data/home-categories.json",         type: "parse-home-categories" },
 		{ url: "~/api-data/home-category-playlists.json", type: "parse-home-category-playlists" },
 		{ url: "~/api-data/artist-related.json",          type: "parse-artist-related" },
@@ -24,6 +27,64 @@
 			res,
 			str;
 		switch (event.type) {
+			case "parse-home-featured-playlists":
+				data.playlists.items.map(playlist => {
+					let name = playlist.name.escapeHtml(),
+						image = playlist.images[playlist.images.length-1].url,
+						uri = playlist.uri;
+					// prepare node
+					nodes.push(`<i name="${name}" uri="${uri}" image="${image}"/>`);
+				});
+				// make XML of entries
+				res = $.xmlFromString(`<Featured>${nodes.join("")}</Featured>`);
+				break;
+			case "parse-home-recently-played":
+				data.items.map(entry => {
+					let name = entry.track.name.escapeHtml(),
+						duration_ms = entry.track.duration_ms,
+						uri = entry.track.uri,
+						album_name = entry.track.album.name.escapeHtml(),
+						album_uri = entry.track.album.uri,
+						artists = [];
+					// prepare artists nodes
+					entry.track.artists.map(artist => {
+						let artist_name = entry.track.artists[0].name.escapeHtml(),
+							artist_uri = entry.track.artists[0].uri;
+						artists.push(`<artists name="${artist_name}" uri="${artist_uri}"/>`);
+					});
+					// prepare node
+					nodes.push(`<track name="${name}" duration_ms="${duration_ms}" uri="${uri}">
+									${artists.join("")}
+									<album name="${album_name}" uri="${album_uri}"/>
+								</track>`);
+				});
+				// make XML of entries
+				res = $.xmlFromString(`<Recently>${nodes.join("")}</Recently>`);
+				break;
+			case "parse-home-favorites":
+				data.items.map(track => {
+					let name = track.name.escapeHtml(),
+						uri = track.uri,
+						popularity = track.popularity,
+						duration_ms = track.duration_ms,
+						album_name = track.album.name.escapeHtml(),
+						album_uri = track.album.uri,
+						artists = [];
+					// prepare artists nodes
+					track.artists.map(artist => {
+						let artist_name = track.artists[0].name.escapeHtml(),
+							artist_uri = track.artists[0].uri;
+						artists.push(`<artists name="${artist_name}" uri="${artist_uri}"/>`);
+					});
+					// prepare node
+					nodes.push(`<track name="${name}" duration_ms="${duration_ms}" popularity="${popularity}" uri="${uri}">
+									${artists.join("")}
+									<album name="${album_name}" uri="${album_uri}"/>
+								</track>`);
+				});
+				// make XML of entries
+				res = $.xmlFromString(`<Favorites>${nodes.join("")}</Favorites>`);
+				break;
 			case "parse-home-category-playlists":
 				data.playlists.items.map(playlist => {
 					let name = item.name.escapeHtml(),
@@ -93,12 +154,17 @@
 						duration_ms = track.duration_ms,
 						album_name = track.album.name.escapeHtml(),
 						album_uri = track.album.uri,
-						artist_name = track.artists[0].name.escapeHtml(),
-						artist_uri = track.artists[0].uri;
+						artists = [];
+					// prepare artists nodes
+					track.artists.map(artist => {
+						let artist_name = track.artists[0].name.escapeHtml(),
+							artist_uri = track.artists[0].uri;
+						artists.push(`<artists name="${artist_name}" uri="${artist_uri}"/>`);
+					});
 					// prepare node
-					nodes.push(`<track name="${name}" duration_ms="${duration_ms}" uri="${uri}">
-									<artists name="${artist_name}" uri="${artist_uri}"/>
-									<album name="${artist_name}" uri="${album_uri}"/>
+					nodes.push(`<track name="${name}" duration_ms="${duration_ms}" popularity="${popularity}" uri="${uri}">
+									${artists.join("")}
+									<album name="${album_name}" uri="${album_uri}"/>
 								</track>`);
 				});
 				// make XML of entries
