@@ -369,8 +369,11 @@
 							</i>
 						</div>
 						<div class="album-info">
-							<span class="album-year"><xsl:value-of select="substring( @release_date, 1, 4 )"/></span>
 							<h4><xsl:value-of select="@name"/></h4>
+							<span class="details">
+								<span><xsl:value-of select="substring( @release_date, 1, 4 )"/></span>
+								<span><xsl:value-of select="@total_tracks"/> tracks</span>
+							</span>
 							<i class="icon-chevron-left"></i>
 						</div>
 						<div class="album-tracks"></div>
@@ -389,8 +392,11 @@
 							</i>
 						</div>
 						<div class="album-info">
-							<span class="album-year"><xsl:value-of select="substring( @release_date, 1, 4 )"/></span>
 							<h4><xsl:value-of select="@name"/></h4>
+							<span class="details">
+								<span><xsl:value-of select="substring( @release_date, 1, 4 )"/></span>
+								<span><xsl:value-of select="@total_tracks"/> tracks</span>
+							</span>
 							<i class="icon-chevron-left"></i>
 						</div>
 						<div class="album-tracks"></div>

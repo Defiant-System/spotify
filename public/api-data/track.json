@@ -1,5 +1,10 @@
 {
 	"href": "https://api.spotify.com/v1/playlists/4Wqhmyri54LKWet5NmrIRY/tracks?offset=0&limit=1&market=ES",
+	"limit": 1,
+	"next": "https://api.spotify.com/v1/playlists/4Wqhmyri54LKWet5NmrIRY/tracks?offset=1&limit=1&market=ES",
+	"offset": 0,
+	"previous": null,
+	"total": 583,
 	"items": [
 		{
 			"added_at": "2012-05-24T13:45:07Z",
@@ -105,10 +110,5 @@
 				"url": null
 			}
 		}
-	],
-	"limit": 1,
-	"next": "https://api.spotify.com/v1/playlists/4Wqhmyri54LKWet5NmrIRY/tracks?offset=1&limit=1&market=ES",
-	"offset": 0,
-	"previous": null,
-	"total": 583
+	]
 }

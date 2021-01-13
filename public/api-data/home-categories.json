@@ -1,11 +1,11 @@
 {
 	"categories": {
-		"href": "https://api.spotify.com/v1/browse/categories?country=SE&offset=0&limit=20",,
+		"href": "https://api.spotify.com/v1/browse/categories?country=SE&offset=0&limit=20",
 		"limit": 20,
 		"next": "https://api.spotify.com/v1/browse/categories?country=SE&offset=20&limit=20",
 		"offset": 0,
 		"previous": null,
-		"total": 41
+		"total": 41,
 		"items": [
 			{
 				"href": "https://api.spotify.com/v1/browse/categories/toplists",

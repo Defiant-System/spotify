@@ -80,7 +80,7 @@
 		<item id="thirdparty" name="Trendsättare" image="https://t.scdn.co/images/b4182906bf244b4994805084c057e9ee.jpeg"/>
 	</Categories>
 
-	<CategoryPlayList>
+	<CategoryPlayLists>
 		<item name="Dinner with Friends" uri="spotify:playlist:37i9dQZF1DX4xuWVBs4FgJ" image="https://i.scdn.co/image/ab67706f00000003c5704d2aefd525c003f4586c">
 			<![CDATA[Dinner with Friends? Here's the perfect playlist.]]>
 		</item>
@@ -141,7 +141,7 @@
 		<item name="Date Night Jazz" uri="spotify:playlist:37i9dQZF1DX6ZiG5Dz8cUM" image="https://i.scdn.co/image/ab67706f00000003193b0c9a9d895a0c7ff38d95">
 			<![CDATA[Set the tone for your dinner with cozy jazz.]]>
 		</item>
-	</CategoryPlayList>
+	</CategoryPlayLists>
 
 	<Recently>
 		<track _index="0" name="Ground Level" duration_ms="252666" uri="spotify:track:1UgsbIteej4QpAcX3aUFeV">

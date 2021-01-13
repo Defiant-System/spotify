@@ -19,7 +19,7 @@
 		"artist-fans-also-like": { template: "artists",           match: "//Related" },
 		"show-artist":   { template: "artist-view", match: "//Artist" },
 		"show-album":    { template: "album-view",  match: "//Album" },
-		"show-category": { template: "category-view", match: "//CategoryPlayList" },
+		"show-category": { template: "category-view", match: "//CategoryPlayLists" },
 		"show-playlist": { template: "playlist-view", match: "//Playlist" },
 		"show-featured": { template: "playlist-view", match: "//Playlist" },
 	},

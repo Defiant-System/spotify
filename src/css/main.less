@@ -1587,7 +1587,7 @@ div[data-area="panel"] {
 					background-size: contain;
 					display: inline-block;
 					position: absolute;
-					top: 11px;
+					top: 13px;
 					left: 11px;
 					width: 37px;
 					height: 37px;
@@ -1630,13 +1630,26 @@ div[data-area="panel"] {
 				.album-info {
 					flex: 1;
 					position: relative;
-					padding: 2px 37px 3px 57px;
+					padding: 0 37px 3px 53px;
 					pointer-events: none;
 
-					.album-year {
+					.details {
 						color: #777;
 						font-size: 11px;
 						padding-bottom: 3px;
+
+						span {
+							&:not(:last-child):after {
+								content: "";
+								background: #777;
+								width: 4px;
+								height: 4px;
+								vertical-align: middle;
+								display: inline-block;
+								border-radius: 50%;
+								margin: -1px 5px 0;
+							}
+						}
 					}
 
 					h4 {
