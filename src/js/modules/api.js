@@ -3,6 +3,12 @@
 
 {
 	requests: [
+		{ url: "~/api-data/artist.json",                  type: "parse-artist" },
+		{ url: "~/api-data/artist-related.json",          type: "parse-artist-related" },
+		{ url: "~/api-data/artist-albums.json",           type: "parse-artist-albums" },
+		{ url: "~/api-data/artist-appears-on.json",       type: "parse-artist-appears-on" },
+		{ url: "~/api-data/artist-top-tracks.json",       type: "parse-artist-top-tracks" },
+		{ url: "~/api-data/album.json",                   type: "parse-album" },
 		{ url: "~/api-data/compilation.json",             type: "parse-compilation" },
 		{ url: "~/api-data/playlist.json",                type: "parse-playlist" },
 		{ url: "~/api-data/search-artists.json",          type: "parse-search-artists" },
@@ -14,13 +20,9 @@
 		{ url: "~/api-data/home-favorites.json",          type: "parse-home-favorites" },
 		{ url: "~/api-data/home-categories.json",         type: "parse-home-categories" },
 		{ url: "~/api-data/home-category-playlists.json", type: "parse-home-category-playlists" },
-		{ url: "~/api-data/artist-related.json",          type: "parse-artist-related" },
-		{ url: "~/api-data/artist-albums.json",           type: "parse-artist-albums" },
-		{ url: "~/api-data/artist-appears-on.json",       type: "parse-artist-appears-on" },
-		{ url: "~/api-data/artist-top-tracks.json",       type: "parse-artist-top-tracks" },
 	],
 	init() {
-		let request = this.requests[0];
+		let request = this.requests[4];
 		window.fetch(request.url)
 			.then(data => this.dispatch({ ...request, data }));
 	},
@@ -201,7 +203,7 @@
 					nodes.push(`<artist name="${name}" uri="${uri}" image="${image}"/>`);
 				});
 				// make XML of entries
-				res = $.xmlFromString(`<Related>${nodes.join("")}</Related>`);
+				res = $.xmlFromString(`<ArtistRelated>${nodes.join("")}</ArtistRelated>`);
 				break;
 			case "parse-artist-albums":
 				data.items.map(album => {
@@ -214,7 +216,7 @@
 					nodes.push(`<album name="${name}" release_date="${release_date}" total_tracks="${total_tracks}" uri="${uri}" image="${image}"/>`);
 				});
 				// make XML of entries
-				res = $.xmlFromString(`<Albums>${nodes.join("")}</Albums>`);
+				res = $.xmlFromString(`<ArtistAlbums>${nodes.join("")}</ArtistAlbums>`);
 				break;
 			case "parse-artist-appears-on":
 				data.items.map(album => {
@@ -226,7 +228,7 @@
 					nodes.push(`<i name="${name}" release_date="${release_date}" uri="${uri}" image="${image}"/>`);
 				});
 				// make XML of entries
-				res = $.xmlFromString(`<Appears>${nodes.join("")}</Appears>`);
+				res = $.xmlFromString(`<ArtistAppears>${nodes.join("")}</ArtistAppears>`);
 				break;
 			case "parse-artist-top-tracks":
 				data.tracks.map(track => {
@@ -250,7 +252,7 @@
 								</track>`);
 				});
 				// make XML of entries
-				res = $.xmlFromString(`<Artist>${nodes.join("")}</Artist>`);
+				res = $.xmlFromString(`<ArtistTopTracks>${nodes.join("")}</ArtistTopTracks>`);
 				break;
 			case "parse-playlist":
 				data.tracks.items.map(entry => {
@@ -305,6 +307,32 @@
 					cImage = Self.getImage(data.images);
 				// make XML of entries
 				res = $.xmlFromString(`<Compilation name="${cName}" owner="${cOwner}" image="${cImage}">${nodes.join("")}</Compilation>`);
+				break;
+			case "parse-album":
+				data.tracks.items.map(track => {
+					let name = track.name.escapeHtml(),
+						duration_ms = track.duration_ms,
+						uri = track.uri;
+					// prepare node
+					nodes.push(`<track name="${name}" duration_ms="${duration_ms}" uri="${uri}"/>`);
+				});
+				let aName = data.name.escapeHtml(),
+					aArtistName = data.artists[0].name.escapeHtml(),
+					aArtistUri = data.artists[0].uri,
+					aImage = Self.getImage(data.images),
+					aDate = data.release_date;
+				// make XML of entries
+				res = $.xmlFromString(`<Album name="${aName}" release_date="${aDate}" image="${aImage}" artist_name="${aArtistName}" artist_uri="${aArtistUri}">${nodes.join("")}</Album>`);
+				break;
+			case "parse-artist":
+				let arName = data.name.escapeHtml(),
+					arImage = Self.getImage(data.images),
+					arUri = data.uri;
+				data.genres.map(genre => {
+					nodes.push(`<genre name="${genre}"/>`);
+				});
+				// make XML of entries
+				res = $.xmlFromString(`<Artist name="${arName}" uri="${arUri}" image="${arImage}">${nodes.join("")}</Artist>`);
 				break;
 		}
 		// additional response info

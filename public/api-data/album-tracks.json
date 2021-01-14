@@ -1,0 +1,358 @@
+{
+	"href": "https://api.spotify.com/v1/albums/1XlIVmi1cBZvBrdhzDeYTO/tracks?offset=0&limit=20&market=SE",
+	"limit": 20,
+	"next": null,
+	"offset": 0,
+	"previous": null,
+	"total": 12,
+	"items": [
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+					},
+					"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+					"id": "1k8VBufn1nBs8LN9n4snc8",
+					"name": "Stereo MC's",
+					"type": "artist",
+					"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 261399,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/16WyvPp6nfgSYgJWPrlXM5"
+			},
+			"href": "https://api.spotify.com/v1/tracks/16WyvPp6nfgSYgJWPrlXM5",
+			"id": "16WyvPp6nfgSYgJWPrlXM5",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Deep Down & Dirty - Original Version",
+			"preview_url": "https://p.scdn.co/mp3-preview/dac6be7a92457048ca7f8506a3bf5dff90349ea3?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 1,
+			"type": "track",
+			"uri": "spotify:track:16WyvPp6nfgSYgJWPrlXM5"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+					},
+					"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+					"id": "1k8VBufn1nBs8LN9n4snc8",
+					"name": "Stereo MC's",
+					"type": "artist",
+					"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 279040,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/1TKdwordQKlZalI2ESv1St"
+			},
+			"href": "https://api.spotify.com/v1/tracks/1TKdwordQKlZalI2ESv1St",
+			"id": "1TKdwordQKlZalI2ESv1St",
+			"is_local": false,
+			"is_playable": true,
+			"name": "We Belong In This World Together",
+			"preview_url": "https://p.scdn.co/mp3-preview/c5e0a58b50312fa0a5d85ec92038e0d756276302?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 2,
+			"type": "track",
+			"uri": "spotify:track:1TKdwordQKlZalI2ESv1St"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+					},
+					"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+					"id": "1k8VBufn1nBs8LN9n4snc8",
+					"name": "Stereo MC's",
+					"type": "artist",
+					"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 265933,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/3HB0sDUD3fZaCRjxEKlwMq"
+			},
+			"href": "https://api.spotify.com/v1/tracks/3HB0sDUD3fZaCRjxEKlwMq",
+			"id": "3HB0sDUD3fZaCRjxEKlwMq",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Breeze",
+			"preview_url": "https://p.scdn.co/mp3-preview/bdbffb4a23d655803ef47086d2dfca299f04abf4?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 3,
+			"type": "track",
+			"uri": "spotify:track:3HB0sDUD3fZaCRjxEKlwMq"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+					},
+					"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+					"id": "1k8VBufn1nBs8LN9n4snc8",
+					"name": "Stereo MC's",
+					"type": "artist",
+					"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 293800,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/1SSaGZeeQzUdFwCYQJyl7h"
+			},
+			"href": "https://api.spotify.com/v1/tracks/1SSaGZeeQzUdFwCYQJyl7h",
+			"id": "1SSaGZeeQzUdFwCYQJyl7h",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Running",
+			"preview_url": "https://p.scdn.co/mp3-preview/652ee3812f549e854d9c58572604d8a0fa1b01b7?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 4,
+			"type": "track",
+			"uri": "spotify:track:1SSaGZeeQzUdFwCYQJyl7h"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+					},
+					"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+					"id": "1k8VBufn1nBs8LN9n4snc8",
+					"name": "Stereo MC's",
+					"type": "artist",
+					"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 154466,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/65XGZ9EfS121FjuIKIUKPR"
+			},
+			"href": "https://api.spotify.com/v1/tracks/65XGZ9EfS121FjuIKIUKPR",
+			"id": "65XGZ9EfS121FjuIKIUKPR",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Graffiti - Pt. 1",
+			"preview_url": "https://p.scdn.co/mp3-preview/85e4c92ff73dbe8065d428a0454963b9e4e41e44?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 5,
+			"type": "track",
+			"uri": "spotify:track:65XGZ9EfS121FjuIKIUKPR"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+					},
+					"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+					"id": "1k8VBufn1nBs8LN9n4snc8",
+					"name": "Stereo MC's",
+					"type": "artist",
+					"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 169493,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/5xs1Is4ObVZd3hmxk8336q"
+			},
+			"href": "https://api.spotify.com/v1/tracks/5xs1Is4ObVZd3hmxk8336q",
+			"id": "5xs1Is4ObVZd3hmxk8336q",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Graffiti - Pt. 2",
+			"preview_url": "https://p.scdn.co/mp3-preview/893b0470d7f8850fbcc763c6ba0ff7ee34c23f44?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 6,
+			"type": "track",
+			"uri": "spotify:track:5xs1Is4ObVZd3hmxk8336q"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+					},
+					"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+					"id": "1k8VBufn1nBs8LN9n4snc8",
+					"name": "Stereo MC's",
+					"type": "artist",
+					"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 254733,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/7DUteeNU9KwbyBHGyhGOUJ"
+			},
+			"href": "https://api.spotify.com/v1/tracks/7DUteeNU9KwbyBHGyhGOUJ",
+			"id": "7DUteeNU9KwbyBHGyhGOUJ",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Sofisticated",
+			"preview_url": "https://p.scdn.co/mp3-preview/992df7e77bd2ff1b04d0ec573ed6b5aeaeee29b8?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 7,
+			"type": "track",
+			"uri": "spotify:track:7DUteeNU9KwbyBHGyhGOUJ"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+					},
+					"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+					"id": "1k8VBufn1nBs8LN9n4snc8",
+					"name": "Stereo MC's",
+					"type": "artist",
+					"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 315600,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/02I0QezAPPO9Q9i1or053S"
+			},
+			"href": "https://api.spotify.com/v1/tracks/02I0QezAPPO9Q9i1or053S",
+			"id": "02I0QezAPPO9Q9i1or053S",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Traffic",
+			"preview_url": "https://p.scdn.co/mp3-preview/417528d2c4d06a6635fc222eb1c660029123f988?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 8,
+			"type": "track",
+			"uri": "spotify:track:02I0QezAPPO9Q9i1or053S"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+					},
+					"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+					"id": "1k8VBufn1nBs8LN9n4snc8",
+					"name": "Stereo MC's",
+					"type": "artist",
+					"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 280906,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/4Mo94v268UDbjG9QLGTWBb"
+			},
+			"href": "https://api.spotify.com/v1/tracks/4Mo94v268UDbjG9QLGTWBb",
+			"id": "4Mo94v268UDbjG9QLGTWBb",
+			"is_local": false,
+			"is_playable": true,
+			"name": "The Right Effect",
+			"preview_url": "https://p.scdn.co/mp3-preview/d3badced3fc6b2f1468c859e543232a5f2e09200?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 9,
+			"type": "track",
+			"uri": "spotify:track:4Mo94v268UDbjG9QLGTWBb"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+					},
+					"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+					"id": "1k8VBufn1nBs8LN9n4snc8",
+					"name": "Stereo MC's",
+					"type": "artist",
+					"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 241760,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/59nPyncSoJ0wVkvwqSRVxJ"
+			},
+			"href": "https://api.spotify.com/v1/tracks/59nPyncSoJ0wVkvwqSRVxJ",
+			"id": "59nPyncSoJ0wVkvwqSRVxJ",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Stop At Nothing",
+			"preview_url": "https://p.scdn.co/mp3-preview/8375e2b770ae9676ceb7e4a704a57b9b5d809350?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 10,
+			"type": "track",
+			"uri": "spotify:track:59nPyncSoJ0wVkvwqSRVxJ"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+					},
+					"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+					"id": "1k8VBufn1nBs8LN9n4snc8",
+					"name": "Stereo MC's",
+					"type": "artist",
+					"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 245533,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/2nn5oxWxi70dY78vNcpB5t"
+			},
+			"href": "https://api.spotify.com/v1/tracks/2nn5oxWxi70dY78vNcpB5t",
+			"id": "2nn5oxWxi70dY78vNcpB5t",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Unconscious",
+			"preview_url": "https://p.scdn.co/mp3-preview/3c398bcaa76ea6d218d531d6aae733e01f665a58?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 11,
+			"type": "track",
+			"uri": "spotify:track:2nn5oxWxi70dY78vNcpB5t"
+		},
+		{
+			"artists": [
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/1k8VBufn1nBs8LN9n4snc8"
+					},
+					"href": "https://api.spotify.com/v1/artists/1k8VBufn1nBs8LN9n4snc8",
+					"id": "1k8VBufn1nBs8LN9n4snc8",
+					"name": "Stereo MC's",
+					"type": "artist",
+					"uri": "spotify:artist:1k8VBufn1nBs8LN9n4snc8"
+				}
+			],
+			"disc_number": 1,
+			"duration_ms": 293293,
+			"explicit": false,
+			"external_urls": {
+				"spotify": "https://open.spotify.com/track/2snvxQ3MoCphseaTuBlg3P"
+			},
+			"href": "https://api.spotify.com/v1/tracks/2snvxQ3MoCphseaTuBlg3P",
+			"id": "2snvxQ3MoCphseaTuBlg3P",
+			"is_local": false,
+			"is_playable": true,
+			"name": "Shameless",
+			"preview_url": "https://p.scdn.co/mp3-preview/1de48f266c06b5abe1c4102d58d468ffceeec5e3?cid=774b29d4f13844c495f206cafdad9c86",
+			"track_number": 12,
+			"type": "track",
+			"uri": "spotify:track:2snvxQ3MoCphseaTuBlg3P"
+		}
+	]
+}
