@@ -1,4 +1,6 @@
 
+const token = "BQD5q4Gujg-A7YJbifSD21BucrfNgzG7VpXRxFhe6c2L__isFGp4UP5PMgXthuPKbu4v-YYd8diDn-NKAChGgnT0MnbCkqq7aoBoF0EfXZ7BG6wIA2NsW5S2EHroNYFH0iwnRJXW-4bBLiQGHwnUkn5y29zTXWSJGLGnRuse1zOvubbVzXt5EJ_vrA";
+
 const spotify = {
 	init() {
 		// fast references
@@ -11,6 +13,13 @@ const spotify = {
 
 		// login view
 		this.content.dispatch({ type: "show-login" })
+
+		let headers = { Authorization: "Bearer "+ token };
+		window.fetch("https://api.spotify.com/v1/me", { headers })
+			.then(res => res.json())
+			.then(res => {
+				console.log(res);
+			});
 
 		// home view
 		// window.find(`.top span[data-click="go-home"]`).trigger("click");
