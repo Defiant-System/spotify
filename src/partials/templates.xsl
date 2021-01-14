@@ -96,6 +96,7 @@
 
 
 <xsl:template name="playlist">
+	<xsl:variable name="pNode" select="name()" />
 	<div class="table">
 		<div class="row head" data-click="sort-list">
 			<div class="cell"></div>
@@ -113,9 +114,9 @@
 							<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
 						</i>
 						<i class="icon-heart">
-							<!-- <xsl:if test="position() &lt; 5">
+							<xsl:if test="$pNode = 'Favorites'">
 								<xsl:attribute name="class">icon-heart-full</xsl:attribute>
-							</xsl:if> -->
+							</xsl:if>
 						</i>
 					</div>
 					<div class="cell"><xsl:value-of select="@name"/></div>
@@ -233,11 +234,7 @@
 								<i class="icon-player-play">
 									<xsl:attribute name="data-uri"><xsl:value-of select="artists/@uri"/></xsl:attribute>
 								</i>
-								<i class="icon-heart">
-									<!-- <xsl:if test="position() &lt; 5">
-										<xsl:attribute name="class">icon-heart-full</xsl:attribute>
-									</xsl:if> -->
-								</i>
+								<i class="icon-heart"></i>
 							</div>
 							<div class="cell"><xsl:value-of select="@name"/></div>
 							<div class="cell">
@@ -288,7 +285,6 @@
 					<div class="cell"></div>
 					<div class="cell">Title</div>
 					<div class="cell"><i class="icon-clock"></i></div>
-					<!-- <div class="cell"><i class="icon-thumb"></i></div> -->
 				</div>
 				<div class="table-body" data-click="select-track">
 					<xsl:for-each select="./*">
@@ -298,17 +294,12 @@
 								<i class="icon-player-play">
 									<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
 								</i>
-								<i class="icon-heart">
-									<!-- <xsl:if test="position() &lt; 5">
-										<xsl:attribute name="class">icon-heart-full</xsl:attribute>
-									</xsl:if> -->
-								</i>
+								<i class="icon-heart"></i>
 							</div>
 							<div class="cell"><xsl:value-of select="@name"/></div>
 							<div class="cell"><xsl:call-template name="translate-duration">
 								<xsl:with-param name="ms" select="@duration_ms" />
 							</xsl:call-template></div>
-							<!-- <div class="cell"><i class="icon-bars"></i></div> -->
 						</div>
 					</xsl:for-each>
 				</div>
@@ -442,7 +433,6 @@
 			<div class="cell"></div>
 			<div class="cell">Title</div>
 			<div class="cell"><i class="icon-clock"></i></div>
-			<!-- <div class="cell"><i class="icon-thumb"></i></div> -->
 		</div>
 		<div class="table-body" data-click="select-track">
 			<xsl:for-each select="./*">
@@ -457,7 +447,6 @@
 					<div class="cell"><xsl:call-template name="translate-duration">
 						<xsl:with-param name="ms" select="@duration_ms" />
 					</xsl:call-template></div>
-					<!-- <div class="cell"><i class="icon-bars"></i></div> -->
 				</div>
 			</xsl:for-each>
 		</div>

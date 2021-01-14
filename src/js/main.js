@@ -19,7 +19,7 @@ const spotify = {
 		// setTimeout(() => window.find(".tabs [data-type='home-favorites']").trigger("click"), 100);
 		// setTimeout(() => window.find(".wrapper .item:nth-child(2)").trigger("click"), 100);
 		
-		setTimeout(() => spotify.content.dispatch({ type: "show-artist" }), 100);
+		// setTimeout(() => spotify.content.dispatch({ type: "show-artist" }), 100);
 		// setTimeout(() => window.find(".tabs [data-type='artist-albums']").trigger("click"), 200);
 		// setTimeout(() => window.find(".column-right .album:nth-child(3)").trigger("click"), 400);
 	},
