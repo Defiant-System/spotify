@@ -22,6 +22,20 @@
 </xsl:template>
 
 
+<xsl:template name="my-playlists">
+	<div class="wrapper">
+		<h2>Playlists</h2>
+		<ul data-click="select-playlist">
+			<xsl:for-each select="./playlist">
+				<li class="item">
+					<h5><xsl:value-of select="@name"/></h5>
+				</li>
+			</xsl:for-each>
+		</ul>
+	</div>
+</xsl:template>
+
+
 <xsl:template name="home-browse">
 	<div class="categories" data-click="show-category">
 		<xsl:for-each select="//Categories/*">

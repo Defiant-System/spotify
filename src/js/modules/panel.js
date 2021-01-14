@@ -3,9 +3,16 @@
 
 {
 	init() {
+		// fast references
 		this.els = {
 			panel: window.find("div[data-area='panel']"),
 		};
+		// render area
+		window.render({
+			template: "my-playlists",
+			match: "//Playlists",
+			target: this.els.panel
+		});
 	},
 	dispatch(event) {
 		let APP = spotify,

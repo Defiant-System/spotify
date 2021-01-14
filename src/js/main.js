@@ -13,7 +13,7 @@ const spotify = {
 		window.find(`.top span[data-click="go-home"]`).trigger("click");
 
 		// temp
-		// setTimeout(() => window.find(".ctrl-search").trigger("click"), 100);
+		// setTimeout(() => window.find(".ctrl-library").trigger("click"), 100);
 		// setTimeout(() => window.find(".category:nth-child(2)").trigger("click"), 100);
 		// setTimeout(() => window.find(".playlist:nth-child(4)").trigger("click"), 400);
 		// setTimeout(() => window.find(".tabs [data-type='home-favorites']").trigger("click"), 100);

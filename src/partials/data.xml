@@ -1,6 +1,47 @@
 <Data>
 	<Home/>
 
+	<Playlists total="38">
+		<playlist name="Reggae" uri="spotify:playlist:0YBFjxvkLsknyCgRA5okUB"/>
+		<playlist name="70s, 80s" uri="spotify:playlist:1EV7WsOrLMPAEleP87ymge"/>
+		<playlist name="Jazz &amp; Blues" uri="spotify:playlist:7w1DAWuN5O4fxte4KTxKtS"/>
+		<playlist name="chillout 2" uri="spotify:playlist:62zCM9ct8YHVhoIoQK9uS0"/>
+		<playlist name="Chillout" uri="spotify:playlist:7gtky4sYYwiuDEQuPpVy4h"/>
+		<playlist name="Friday" uri="spotify:playlist:2JeKDjHo6yOjlMFtqup1kW"/>
+		<playlist name="Southern Gothic" uri="spotify:playlist:37i9dQZF1DX58NJL8iVBGW"/>
+		<playlist name="Hakan's Metal Curriculum" uri="spotify:playlist:4rRY4XiTPwLvs4yYsu0BI6"/>
+		<playlist name="PPAP" uri="spotify:playlist:1SIAM5CPOtMV9s0Mt4TQxz"/>
+		<playlist name="Lara 2.0" uri="spotify:playlist:61IPrPN1iQcH7sHtoSLMLW"/>
+		<playlist name="Heart. Papers. Border. inspiration" uri="spotify:playlist:6Y4cYJlVWrnFOLhcSWLI7N"/>
+		<playlist name="Gillat från Radio" uri="spotify:playlist:6k8eJCv0MeFLEi7TVqQNov"/>
+		<playlist name="My Shazam Tracks" uri="spotify:playlist:3RUWKayNhOpGgII1qGaDku"/>
+		<playlist name="Sv Klassiker" uri="spotify:playlist:2rTxMBQybX5uOyU2PCIc3Z"/>
+		<playlist name="barnsligt" uri="spotify:playlist:5zLWxDllZo89tXKn19KR6u"/>
+		<playlist name="Starred" uri="spotify:playlist:39MINyDwAaGL9QkudEXxLV"/>
+		<playlist name="old" uri="spotify:playlist:4Wqhmyri54LKWet5NmrIRY"/>
+		<playlist name="absolut playlist" uri="spotify:playlist:169mr6qHfUu1fENRzHCCGP"/>
+		<playlist name="Sv. Hiphop" uri="spotify:playlist:2e9yekr878NhVFJCjrkiuE"/>
+		<playlist name="Hiphop" uri="spotify:playlist:16txH6lVSFDwMg3NYrFxkX"/>
+		<playlist name="Turkisk Hiphop" uri="spotify:playlist:3NaZmbyJAdJVPQbLBRzjGa"/>
+		<playlist name="Progressive Trance" uri="spotify:playlist:37XOUU0mha2gy7GEN3LrvQ"/>
+		<playlist name="Turkisk" uri="spotify:playlist:2EqLEgwEGGbgwap4YspcNe"/>
+		<playlist name="Rock" uri="spotify:playlist:763PqUyTqamIHfqBEo6njf"/>
+		<playlist name="House" uri="spotify:playlist:450z5I1Gq8dpruVfK50IgR"/>
+		<playlist name="Workout" uri="spotify:playlist:0450GuLKsqbxVqLVi752yk"/>
+		<playlist name="Trance" uri="spotify:playlist:6DoFImL7d0lbdSCz98XIZi"/>
+		<playlist name="Dubstep" uri="spotify:playlist:3rgJngKwr5uGtZkWY0kQuS"/>
+		<playlist name="Missy Elliot" uri="spotify:playlist:6DCNmWjf3qIBuxSHogu8n1"/>
+		<playlist name="Slow" uri="spotify:playlist:4tH6f4B8zvuaLvoTeZpgXT"/>
+		<playlist name="Michael Jackson" uri="spotify:playlist:5k8kBQhzyWYPeAO1SZZoRR"/>
+		<playlist name="Elektropop" uri="spotify:playlist:2nwBooJnHcXrh98BjonN4T"/>
+		<playlist name="M.I.A." uri="spotify:playlist:5c4oVxhBLwtjvvfTVqm1ch"/>
+		<playlist name="Breakbeat" uri="spotify:playlist:6xWd79GDCBJZXfy26Jb8tu"/>
+		<playlist name="Popular" uri="spotify:playlist:3CRZdgg5VLQ1lEOdAXDHSC"/>
+		<playlist name="Dancefloor" uri="spotify:playlist:1pxfl3n3Qgy2WJA4cW5E2v"/>
+		<playlist name="Classical" uri="spotify:playlist:5Y9APuhr7vOcni8GHPUM5I"/>
+		<playlist name="Softish" uri="spotify:playlist:6FpV2aDWM0HKWqJ7osczSN"/>
+	</Playlists>
+
 	<Featured>
 		<i name="It's Hits Sweden" uri="spotify:playlist:37i9dQZF1DWTMYgB8TqtmR" image="https://i.scdn.co/image/ab67706f000000037c1882e0768785c608aea95b"/>
 		<i name="Lugnt &amp; Skönt" uri="spotify:playlist:37i9dQZF1DX4Umko6nOmN7" image="https://i.scdn.co/image/ab67706f000000031f65c8dbb5ce549ff2cabdc9"/>

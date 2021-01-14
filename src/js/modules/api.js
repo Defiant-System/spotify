@@ -3,6 +3,7 @@
 
 {
 	requests: [
+		{ url: "~/api-data/playlists.json",               type: "parse-playlists" },
 		{ url: "~/api-data/artist.json",                  type: "parse-artist" },
 		{ url: "~/api-data/artist-related.json",          type: "parse-artist-related" },
 		{ url: "~/api-data/artist-albums.json",           type: "parse-artist-albums" },
@@ -22,7 +23,8 @@
 		{ url: "~/api-data/home-category-playlists.json", type: "parse-home-category-playlists" },
 	],
 	init() {
-		let request = this.requests[4];
+		return;
+		let request = this.requests[0];
 		window.fetch(request.url)
 			.then(data => this.dispatch({ ...request, data }));
 	},
@@ -325,14 +327,23 @@
 				res = $.xmlFromString(`<Album name="${aName}" release_date="${aDate}" image="${aImage}" artist_name="${aArtistName}" artist_uri="${aArtistUri}">${nodes.join("")}</Album>`);
 				break;
 			case "parse-artist":
-				let arName = data.name.escapeHtml(),
-					arImage = Self.getImage(data.images),
-					arUri = data.uri;
 				data.genres.map(genre => {
 					nodes.push(`<genre name="${genre}"/>`);
 				});
+				let arName = data.name.escapeHtml(),
+					arImage = Self.getImage(data.images),
+					arUri = data.uri;
 				// make XML of entries
 				res = $.xmlFromString(`<Artist name="${arName}" uri="${arUri}" image="${arImage}">${nodes.join("")}</Artist>`);
+				break;
+			case "parse-playlists":
+				data.items.map(playlist => {
+					let name = playlist.name.escapeHtml(),
+						uri = playlist.uri;
+					nodes.push(`<playlist name="${name}" uri="${uri}"/>`);
+				});
+				// make XML of entries
+				res = $.xmlFromString(`<Playlists>${nodes.join("")}</Playlists>`);
 				break;
 		}
 		// additional response info
