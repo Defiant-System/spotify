@@ -1,6 +1,18 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 
+<xsl:template name="login-view">
+	<section class="login">
+		<div class="login-head">
+			<h2></h2>
+		</div>
+		<div class="view-body">
+			<div class="spotify-login" data-click="spotify-authenticate">Login with Spotify</div>
+		</div>
+	</section>
+</xsl:template>
+
+
 <xsl:template name="home-view">
 	<section class="home">
 		<div class="home-head">

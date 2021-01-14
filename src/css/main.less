@@ -152,8 +152,17 @@ layout {
 	padding: 6px 0 0;
 	text-align: center;
 
+	&.empty {
+		.artist-name,
+		.track-name {
+			opacity: 0;
+		}
+	}
+
 	.artist-name {
 		color: #999;
+		opacity: 1;
+		transition: opacity 80ms ease-in-out;
 
 		&:after {
 			content: "-";
@@ -164,6 +173,8 @@ layout {
 
 	.track-name {
 		color: #bbb;
+		opacity: 1;
+		transition: opacity 80ms ease-in-out;
 	}
 }
 
@@ -1096,6 +1107,27 @@ div[data-area="panel"] {
 				overflow: hidden;
 				text-overflow: ellipsis;
 			}
+		}
+	}
+}
+
+.login {
+	text-align: center;
+
+	.login-head {
+		height: 63px;
+		padding: 19px 17px 17px;
+		user-select: none;
+	}
+
+	.view-body {
+		.spotify-login {
+			background: #008951;
+			color: #fff;
+			display: inline-block;
+			padding: 5px 17px;
+			border-radius: 23px;
+			cursor: pointer;
 		}
 	}
 }

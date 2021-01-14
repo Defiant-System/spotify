@@ -9,8 +9,11 @@ const spotify = {
 		// init sub modules
 		Object.keys(this).filter(i => this[i].init).map(i => this[i].init());
 
+		// login view
+		this.content.dispatch({ type: "show-login" })
+
 		// home view
-		window.find(`.top span[data-click="go-home"]`).trigger("click");
+		// window.find(`.top span[data-click="go-home"]`).trigger("click");
 
 		// temp
 		// setTimeout(() => window.find(".ctrl-library").trigger("click"), 100);

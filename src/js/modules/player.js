@@ -70,7 +70,11 @@
 				APP.content.els.body.find(`.icon-player-play[data-uri="${event.uri}"]`)
 					.parents(".row").addClass("track-playing");
 
+				// update application title
+				APP.content.dispatch({ type: "set-title", artist: "Stereo MC's", track: "Elevate My Mind" });
+
 				Self.playing.track = event.uri;
+				Self.playing.pause = false;
 				break;
 			case "player-pause":
 				el = Self.els.btnPlay.find("> i");
@@ -93,8 +97,8 @@
 			case "toggle-play":
 				if (Self.playing.track) {
 					Self.dispatch({ type: "player-pause" });
-				} else if (Self.playing.paused) {
-					Self.dispatch({ type: "player-play", uri: Self.playing.paused });
+				} else if (Self.playing.pause) {
+					Self.dispatch({ type: "player-play", uri: Self.playing.pause });
 				}
 				break;
 		}

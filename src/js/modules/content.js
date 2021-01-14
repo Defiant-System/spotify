@@ -3,7 +3,8 @@
 
 {
 	renders: {
-		"home":             { template: "home-view",     match: "*" },
+		"show-login":       { template: "login-view" },
+		"home":             { template: "home-view" },
 		"home-browse":      { template: "home-browse" },
 		"home-featured":    { template: "home-featured", match: "//Featured" },
 		"home-favorites":   { template: "playlist",     match: "//Favorites" },
@@ -27,6 +28,7 @@
 	init() {
 		// fast references
 		this.els = {
+			title: window.find(".top-title"),
 			body: window.find("content .body"),
 			btnBack: window.find(`.ctrl-navigation [data-click="go-back"]`),
 			btnForward: window.find(`.ctrl-navigation [data-click="go-forward"]`),
@@ -49,6 +51,16 @@
 			row,
 			el;
 		switch (event.type) {
+			// login view
+			case "show-login":
+				// render view contents
+				target = Self.els.body;
+				render = Self.renders[event.type];
+				window.render({ ...render, target });
+				break;
+			case "spotify-authenticate":
+				console.log(event);
+				break;
 			// navigation events
 			case "go-back":
 			case "go-forward":
@@ -132,6 +144,15 @@
 				Self.setViewState();
 				break;
 			// misc events
+			case "set-title":
+				Self.els.title.find(".artist-name").html(event.artist);
+				Self.els.title.find(".track-name").html(event.track);
+				Self.els.title.removeClass("empty");
+				break;
+			case "sort-list":
+				el = $(event.target);
+				console.log(el);
+				break;
 			case "play-album":
 				event.el.parent().find(".track-playing").removeClass("track-playing");
 				event.el.addClass("track-playing");
@@ -143,10 +164,6 @@
 				event.el.addClass("track-playing");
 
 				console.log("Toggle artist", event.id);
-				break;
-			case "sort-list":
-				el = $(event.target);
-				console.log(el);
 				break;
 			case "select-album":
 			case "select-artist":
