@@ -3,7 +3,7 @@
 
 {
 	renders: {
-		"show-login":       { template: "login-view" },
+		"show-login":       { template: "login-view", match: "//Login" },
 		"home":             { template: "home-view" },
 		"home-browse":      { template: "home-browse" },
 		"home-featured":    { template: "home-featured", match: "//Featured" },
@@ -59,7 +59,8 @@
 				window.render({ ...render, target });
 				break;
 			case "spotify-authenticate":
-				console.log(event);
+				window.fetch("~/oauth-uri")
+					.then(res => window.open(res.oAuthUri));
 				break;
 			// navigation events
 			case "go-back":

@@ -4,7 +4,7 @@
 <xsl:template name="login-view">
 	<section class="login">
 		<div class="login-head">
-			<h2></h2>
+			<h2>Spotify</h2>
 		</div>
 		<div class="view-body">
 			<div class="spotify-login" data-click="spotify-authenticate">Login with Spotify</div>

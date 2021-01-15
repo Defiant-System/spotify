@@ -1,18 +1,28 @@
 
-const token = "BQD5q4Gujg-A7YJbifSD21BucrfNgzG7VpXRxFhe6c2L__isFGp4UP5PMgXthuPKbu4v-YYd8diDn-NKAChGgnT0MnbCkqq7aoBoF0EfXZ7BG6wIA2NsW5S2EHroNYFH0iwnRJXW-4bBLiQGHwnUkn5y29zTXWSJGLGnRuse1zOvubbVzXt5EJ_vrA";
+let Auth = window.settings.get("auth") || {};
 
 const spotify = {
 	init() {
 		// fast references
 		this.els = {
-			content: window.find("content"),
+			body: window.find(".win-body_"),
 		};
+
+		if (!Auth.token) {
+			// login view
+			this.content.dispatch({ type: "show-login" })
+			this.els.body.addClass("not-logged-in");
+		}
 
 		// init sub modules
 		Object.keys(this).filter(i => this[i].init).map(i => this[i].init());
 
-		// login view
-		this.content.dispatch({ type: "show-login" })
+		if (Auth.token) {
+			// home view
+			window.find(`.top span[data-click="go-home"]`).trigger("click");
+			// temp
+			setTimeout(() => window.find(".tabs [data-type='home-favorites']").trigger("click"), 100);
+		}
 
 		// let headers = { Authorization: "Bearer "+ token };
 		// window.fetch("https://api.spotify.com/v1/me", { headers })
@@ -21,14 +31,10 @@ const spotify = {
 		// 		console.log(res);
 		// 	});
 
-		// home view
-		// window.find(`.top span[data-click="go-home"]`).trigger("click");
-
 		// temp
 		// setTimeout(() => window.find(".ctrl-library").trigger("click"), 100);
 		// setTimeout(() => window.find(".category:nth-child(2)").trigger("click"), 100);
 		// setTimeout(() => window.find(".playlist:nth-child(4)").trigger("click"), 400);
-		// setTimeout(() => window.find(".tabs [data-type='home-favorites']").trigger("click"), 100);
 		// setTimeout(() => window.find(".wrapper .item:nth-child(2)").trigger("click"), 100);
 		
 		// setTimeout(() => spotify.content.dispatch({ type: "show-artist" }), 100);
@@ -42,8 +48,18 @@ const spotify = {
 			el;
 		switch (event.type) {
 			case "oauth-failure":
-			case "oauth-success":
+				// reset application settings
+				window.settings.clear();
+				
+				console.log("authentication failed");
 				console.log(event);
+				break;
+			case "oauth-success":
+				Auth.token = event.token;
+				Auth.expires_in = event.expires_in;
+				// save token authentication details in app settings
+				window.settings.set("auth", Auth);
+				// console.log(event);
 				break;
 			case "window.open":
 				break;

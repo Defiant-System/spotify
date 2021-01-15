@@ -41,6 +41,15 @@ border-radius: 29px;
 	&.seeker div[data-area="player"] .progress .progress-track .knob { opacity: 1; }
 }
 
+.not-logged-in {
+	div[data-area="sidebar"],
+	div[data-area="volume"],
+	div[data-area="player"] {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
 
 .win-caption-buttons_ {
 	top: 7px;
@@ -1115,7 +1124,7 @@ div[data-area="panel"] {
 	text-align: center;
 
 	.login-head {
-		height: 63px;
+		height: 73px;
 		padding: 19px 17px 17px;
 		user-select: none;
 	}
