@@ -14,12 +14,12 @@ const spotify = {
 		// login view
 		this.content.dispatch({ type: "show-login" })
 
-		let headers = { Authorization: "Bearer "+ token };
-		window.fetch("https://api.spotify.com/v1/me", { headers })
-			.then(res => res.json())
-			.then(res => {
-				console.log(res);
-			});
+		// let headers = { Authorization: "Bearer "+ token };
+		// window.fetch("https://api.spotify.com/v1/me", { headers })
+		// 	.then(res => res.json())
+		// 	.then(res => {
+		// 		console.log(res);
+		// 	});
 
 		// home view
 		// window.find(`.top span[data-click="go-home"]`).trigger("click");
@@ -41,6 +41,10 @@ const spotify = {
 			stamp,
 			el;
 		switch (event.type) {
+			case "oauth-failure":
+			case "oauth-success":
+				console.log(event);
+				break;
 			case "window.open":
 				break;
 			case "open-help":
