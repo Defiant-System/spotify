@@ -1,5 +1,12 @@
 
+// by pass web based API
+window.onSpotifyPlayerAPIReady =
+window.onSpotifyWebPlaybackSDKReady = () => {};
+
+@import "ext/spotify-player.js";
+
 let Auth = window.settings.get("auth") || {};
+
 
 const spotify = {
 	init() {
@@ -8,20 +15,20 @@ const spotify = {
 			body: window.find(".win-body_"),
 		};
 
-		if (!Auth.token) {
-			// login view
-			this.content.dispatch({ type: "show-login" })
-			this.els.body.addClass("not-logged-in");
-		}
-
 		// init sub modules
 		Object.keys(this).filter(i => this[i].init).map(i => this[i].init());
 
 		if (Auth.token) {
+			// connect api player
+			this.player.dispatch({ type: "api-connect" });
 			// home view
 			window.find(`.top span[data-click="go-home"]`).trigger("click");
 			// temp
 			setTimeout(() => window.find(".tabs [data-type='home-favorites']").trigger("click"), 100);
+		} else {
+			this.els.body.addClass("not-logged-in");
+			// login view
+			this.content.dispatch({ type: "show-login" });
 		}
 
 		// let headers = { Authorization: "Bearer "+ token };
@@ -50,7 +57,7 @@ const spotify = {
 			case "oauth-failure":
 				// reset application settings
 				window.settings.clear();
-				
+
 				console.log("authentication failed");
 				console.log(event);
 				break;
@@ -60,6 +67,10 @@ const spotify = {
 				// save token authentication details in app settings
 				window.settings.set("auth", Auth);
 				// console.log(event);
+				break;
+			case "disconnect-api":
+				// reset application settings
+				window.settings.clear();
 				break;
 			case "window.open":
 				break;

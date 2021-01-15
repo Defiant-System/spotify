@@ -62,6 +62,37 @@
 				Self.els.doc.off("mousemove mouseup", Self.dispatch);
 				break;
 			// custom events
+			case "api-connect":
+				// instantiate Spotify Player
+				Self.API = new window.Spotify.Player({
+					name: "Spotify Player",
+					volume: 0.5,
+					getOAuthToken: cb => cb(Auth.token)
+				});
+
+				// Error handling
+				Self.API.addListener("initialization_error", ({ message }) => { console.error(message); });
+				Self.API.addListener("authentication_error", ({ message }) => { console.error(message); });
+				Self.API.addListener("account_error", ({ message }) => { console.error(message); });
+				Self.API.addListener("playback_error", ({ message }) => { console.error(message); });
+
+				// Playback status updates
+				Self.API.addListener("player_state_changed", state => { console.log(state); });
+
+				// Ready
+				Self.API.addListener("ready", ({ device_id }) => {
+					console.log("Ready with Device ID", device_id);
+				});
+
+				// Not Ready
+				Self.API.addListener("not_ready", ({ device_id }) => {
+					console.log("Device ID has gone offline", device_id);
+				});
+
+				// Connect to the player!
+				Self.API.connect()
+					.then(r => console.log(r));
+				break;
 			case "player-play":
 				el = Self.els.btnPlay.find("> i");
 				el.prop({ "className": "icon-player-pause" });

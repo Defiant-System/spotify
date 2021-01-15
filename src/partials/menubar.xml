@@ -2,6 +2,8 @@
 	<Menu name="Spotify">
 		<Menu name="About Spotify" shell="win -a"/>
 		<Menu type="divider"/>
+		<Menu name="Log Out" click="disconnect-api"/>
+		<Menu type="divider"/>
 		<Menu name="Quit Spotify" shell="win -c"/>
 	</Menu>
 	<Menu name="Help">
