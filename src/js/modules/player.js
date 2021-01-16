@@ -35,9 +35,8 @@ const Player = {
 				console.log("Player.dispatch - ERROR -", event);
 				break;
 			case "player_state_changed":
-				console.log(event);
 				// update application title
-				// Content.dispatch({ type: "set-title", state: event.state });
+				Content.dispatch({ ...event, type: "set-title" });
 				break;
 			case "ready":
 				// Ready with Device ID
@@ -56,24 +55,24 @@ const Player = {
 		fetch(`${this.apiUrl}/me/player/play?device_id=${this.deviceID}`, options);
 	},
 	pause() {
-		
+		console.log("pause");
 	},
 	next() {
-		
+		console.log("next");
 	},
 	previous() {
-		
+		console.log("previous");
 	},
 	seek() {
-		
+		console.log("seek");
 	},
 	volume() {
-		
+		console.log("volume");
 	},
 	shuffle() {
-		
+		console.log("shuffle");
 	},
-	random() {
-		
+	repeat() {
+		console.log("repeat");
 	}
 };

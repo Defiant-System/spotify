@@ -79,6 +79,8 @@
 				el = Self.els.btnPlay.find("> i");
 				el.prop({ "className": "icon-player-play" });
 
+				Player.pause();
+
 				// look for playing track uri - update UI, if found
 				// uri = Self.playing.track;
 				// APP.content.els.body.find(`.icon-player-play[data-uri="${uri}"]`)
@@ -88,10 +90,16 @@
 				// Self.playing.track = false;
 				break;
 			case "player-previous":
+				Player.previous();
+				break;
 			case "player-next":
+				Player.next();
+				break;
 			case "player-shuffle":
+				Player.shuffle();
+				break;
 			case "player-repeat":
-				console.log(event);
+				Player.repeat();
 				break;
 			case "toggle-play":
 				// if (Self.playing.track) {

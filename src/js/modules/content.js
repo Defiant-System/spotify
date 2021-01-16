@@ -158,10 +158,10 @@
 			// misc events
 			case "set-title":
 				// artist
-				str = event.state.track_window.current_track.artists[0].name;
+				str = event.track_window.current_track.artists[0].name;
 				Self.els.title.find(".artist-name").html(str);
 				// artist
-				str = event.state.track_window.current_track.name;
+				str = event.track_window.current_track.name;
 				Self.els.title.find(".track-name").html(str);
 
 				Self.els.title.removeClass("empty");
