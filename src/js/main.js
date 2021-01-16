@@ -4,6 +4,7 @@ window.onSpotifyPlayerAPIReady =
 window.onSpotifyWebPlaybackSDKReady = () => {};
 
 @import "ext/spotify-player.js";
+@import "modules/player.js";
 
 let Auth = window.settings.get("auth") || {};
 
@@ -102,12 +103,12 @@ const spotify = {
 				}
 		}
 	},
-	api:     @import "modules/api.js",
-	panel:   @import "modules/panel.js",
-	sidebar: @import "modules/sidebar.js",
-	content: @import "modules/content.js",
-	volume:  @import "modules/volume.js",
-	player:  @import "modules/player.js",
+	api:      @import "modules/api.js",
+	panel:    @import "modules/panel.js",
+	sidebar:  @import "modules/sidebar.js",
+	content:  @import "modules/content.js",
+	volume:   @import "modules/volume.js",
+	controls: @import "modules/controls.js",
 };
 
 window.exports = spotify;

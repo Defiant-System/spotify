@@ -38,13 +38,13 @@ border-radius: 29px;
 	}
 
 	&.volume div[data-area="volume"] .ctrl-range .volume-track .knob { opacity: 1; }
-	&.seeker div[data-area="player"] .progress .progress-track .knob { opacity: 1; }
+	&.seeker div[data-area="controls"] .progress .progress-track .knob { opacity: 1; }
 }
 
 .not-logged-in {
 	div[data-area="sidebar"],
 	div[data-area="volume"],
-	div[data-area="player"] {
+	div[data-area="controls"] {
 		opacity: 0;
 		visibility: hidden;
 	}
@@ -384,7 +384,7 @@ div[data-area="volume"] {
 	right: 1px;
 }
 
-div[data-area="player"] {
+div[data-area="controls"] {
 	// background: rgba(100,100,100,.2);
 	position: absolute;
 	bottom: 1px;
@@ -412,8 +412,8 @@ div[data-area="player"] {
 	}
 }
 
-&.hide-cursor.seeker div[data-area="player"],
-div[data-area="player"]:hover {
+&.hide-cursor.seeker div[data-area="controls"],
+div[data-area="controls"]:hover {
 	.progress {
 		top: -9px;
 		height: 9px;

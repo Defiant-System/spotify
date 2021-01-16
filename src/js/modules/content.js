@@ -66,7 +66,7 @@
 				// enable app UI
 				APP.els.body.removeClass("not-logged-in");
 				// connect api player
-				APP.player.dispatch({ type: "api-connect" });
+				Player.init();
 				// home view
 				window.find(`.top span[data-click="go-home"]`).trigger("click");
 				// temp
@@ -215,7 +215,7 @@
 					if (type === "play") row.addClass("track-playing");
 
 					// toggle track play
-					APP.player.dispatch({ type: "player-"+ type, uri });
+					APP.controls.dispatch({ type: "player-"+ type, uri });
 				} else if (el.data("uri")) {
 					Self.dispatch({ type: "show-"+ item, el, uri });
 				} else {
@@ -238,7 +238,7 @@
 					});
 
 					// look for playing track uri - update UI, if found
-					uri = APP.player.playing.track;
+					uri = Player.playing.track;
 					el.find(`.icon-player-play[data-uri="${uri}"]`)
 						.parents(".row").addClass("track-playing");
 
@@ -273,7 +273,7 @@
 		}
 
 		// UI update on currently playing track
-		let trackUri = APP.player.playing.track;
+		let trackUri = Player.playing.track;
 		Body.find(".track-playing").removeClass("track-playing");
 		Body.find(`.icon-player-play[data-uri="${trackUri}"]`)
 			.parents(".row").addClass("track-playing");
