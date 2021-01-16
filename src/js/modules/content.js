@@ -62,6 +62,17 @@
 				window.fetch("~/oauth-uri")
 					.then(res => window.open(res.oAuthUri));
 				break;
+			case "spotify-authorized":
+				// enable app UI
+				APP.els.body.removeClass("not-logged-in");
+				// connect api player
+				APP.player.dispatch({ type: "api-connect" });
+				// home view
+				window.find(`.top span[data-click="go-home"]`).trigger("click");
+				// temp
+				// setTimeout(() => window.find(".tabs [data-type='home-favorites']").trigger("click"), 10);
+				break;
+
 			// navigation events
 			case "go-back":
 			case "go-forward":
@@ -146,8 +157,13 @@
 				break;
 			// misc events
 			case "set-title":
-				Self.els.title.find(".artist-name").html(event.artist);
-				Self.els.title.find(".track-name").html(event.track);
+				// artist
+				str = event.state.track_window.current_track.artists[0].name;
+				Self.els.title.find(".artist-name").html(str);
+				// artist
+				str = event.state.track_window.current_track.name;
+				Self.els.title.find(".track-name").html(str);
+
 				Self.els.title.removeClass("empty");
 				break;
 			case "sort-list":

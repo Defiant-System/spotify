@@ -15,16 +15,13 @@ const spotify = {
 			body: window.find(".win-body_"),
 		};
 
+		//window.settings.clear();
+
 		// init sub modules
 		Object.keys(this).filter(i => this[i].init).map(i => this[i].init());
 
 		if (Auth.token) {
-			// connect api player
-			this.player.dispatch({ type: "api-connect" });
-			// home view
-			window.find(`.top span[data-click="go-home"]`).trigger("click");
-			// temp
-			setTimeout(() => window.find(".tabs [data-type='home-favorites']").trigger("click"), 100);
+			this.content.dispatch({ type: "spotify-authorized" });
 		} else {
 			this.els.body.addClass("not-logged-in");
 			// login view
@@ -66,7 +63,8 @@ const spotify = {
 				Auth.expires_in = event.expires_in;
 				// save token authentication details in app settings
 				window.settings.set("auth", Auth);
-				// console.log(event);
+				// continue
+				Self.content.dispatch({ type: "spotify-authorized" });
 				break;
 			case "disconnect-api":
 				// reset application settings

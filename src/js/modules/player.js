@@ -77,10 +77,15 @@
 				Self.API.addListener("playback_error", ({ message }) => { console.error(message); });
 
 				// Playback status updates
-				Self.API.addListener("player_state_changed", state => { console.log(state); });
+				Self.API.addListener("player_state_changed", state => {
+					console.log(state);
+					// update application title
+					APP.content.dispatch({ type: "set-title", state });
+				});
 
 				// Ready
 				Self.API.addListener("ready", ({ device_id }) => {
+					Self.deviceID = device_id;
 					console.log("Ready with Device ID", device_id);
 				});
 
@@ -90,8 +95,7 @@
 				});
 
 				// Connect to the player!
-				Self.API.connect()
-					.then(r => console.log(r));
+				Self.API.connect();
 				break;
 			case "player-play":
 				el = Self.els.btnPlay.find("> i");
@@ -101,8 +105,26 @@
 				APP.content.els.body.find(`.icon-player-play[data-uri="${event.uri}"]`)
 					.parents(".row").addClass("track-playing");
 
-				// update application title
-				APP.content.dispatch({ type: "set-title", artist: "Stereo MC's", track: "Elevate My Mind" });
+const play = ({
+	uris,
+	playerInstance: { _options: { getOAuthToken, id } }
+}) => {
+	getOAuthToken(access_token => {
+		fetch(`https://api.spotify.com/v1/me/player/play?device_id=${id}`, {
+			method: "PUT",
+			body: JSON.stringify({ uris }),
+			headers: {
+				"Content-Type": "application/json",
+				"Authorization": `Bearer ${access_token}`
+			},
+		});
+	});
+};
+
+play({
+	playerInstance: Self.API,
+	uris: [ event.uri ],
+});
 
 				Self.playing.track = event.uri;
 				Self.playing.pause = false;
@@ -129,6 +151,7 @@
 				if (Self.playing.track) {
 					Self.dispatch({ type: "player-pause" });
 				} else if (Self.playing.pause) {
+
 					Self.dispatch({ type: "player-play", uri: Self.playing.pause });
 				}
 				break;
