@@ -21,7 +21,7 @@ const spotify = {
 		// init sub modules
 		Object.keys(this).filter(i => this[i].init).map(i => this[i].init());
 
-		if (Auth.token) {
+		if (Auth.token && Auth.expires > Date.now()) {
 			this.content.dispatch({ type: "spotify-authorized" });
 		} else {
 			this.els.body.addClass("not-logged-in");
@@ -61,7 +61,7 @@ const spotify = {
 				break;
 			case "oauth-success":
 				Auth.token = event.token;
-				Auth.expires_in = event.expires_in;
+				Auth.expires = event.expires;
 				// save token authentication details in app settings
 				window.settings.set("auth", Auth);
 				// continue

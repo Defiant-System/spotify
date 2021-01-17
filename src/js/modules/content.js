@@ -70,7 +70,7 @@
 				// home view
 				window.find(`.top span[data-click="go-home"]`).trigger("click");
 				// temp
-				// setTimeout(() => window.find(".tabs [data-type='home-favorites']").trigger("click"), 10);
+				setTimeout(() => window.find(".tabs [data-type='home-history']").trigger("click"), 10);
 				break;
 
 			// navigation events
@@ -158,11 +158,14 @@
 			// misc events
 			case "set-title":
 				// artist
-				str = event.track_window.current_track.artists[0].name;
-				Self.els.title.find(".artist-name").html(str);
-				// artist
-				str = event.track_window.current_track.name;
-				Self.els.title.find(".track-name").html(str);
+				Self.els.title.find(".artist-name").html(Player.playing.artistName.join(", "));
+				// track
+				Self.els.title.find(".track-name").html(Player.playing.trackName);
+
+				// look for playing track uri - update UI, if found
+				Self.els.body.find(".track-playing, .active").removeClass("track-playing active");
+				Self.els.body.find(`.icon-player-play[data-uri="${Player.playing.trackUri}"]`)
+							.parents(".row").addClass("track-playing active");
 
 				Self.els.title.removeClass("empty");
 				break;
@@ -215,7 +218,7 @@
 					if (type === "play") row.addClass("track-playing");
 
 					// toggle track play
-					APP.controls.dispatch({ type: "player-"+ type, uri });
+					APP.controls.dispatch({ type: "player-"+ type, el, uri });
 				} else if (el.data("uri")) {
 					Self.dispatch({ type: "show-"+ item, el, uri });
 				} else {

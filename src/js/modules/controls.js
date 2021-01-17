@@ -7,11 +7,11 @@
 		// fast references
 		this.els = {
 			doc: $(document),
-			range: window.find("div[data-area='player'] .progress"),
-			track: window.find("div[data-area='player'] .progress .progress-track"),
-			amount: window.find("div[data-area='player'] .progress .progress-played"),
-			knob: window.find("div[data-area='player'] .progress .knob"),
-			btnPlay: window.find("div[data-area='player'] .ctrl-play"),
+			range: window.find("div[data-area='controls'] .progress"),
+			track: window.find("div[data-area='controls'] .progress .progress-track"),
+			amount: window.find("div[data-area='controls'] .progress .progress-played"),
+			knob: window.find("div[data-area='controls'] .progress .knob"),
+			btnPlay: window.find("div[data-area='controls'] .ctrl-play"),
 		};
 		// bind event handlers
 		this.els.range.bind("mousedown", this.dispatch);
@@ -65,29 +65,27 @@
 			case "player-play":
 				el = Self.els.btnPlay.find("> i");
 				el.prop({ "className": "icon-player-pause" });
+				uri = event.uri || Player.playing.trackUri;
 
-				// look for playing track uri - update UI, if found
-				APP.content.els.body.find(`.icon-player-play[data-uri="${event.uri}"]`)
-					.parents(".row").addClass("track-playing");
-
-				Player.play([ event.uri ]);
-
-				// Self.playing.track = event.uri;
-				// Self.playing.pause = false;
+				if (event.uri) {
+					// get all uri's below current row
+					let more = event.el.parents(".row:first").nextAll(".row").map(row =>
+								$(".icon-player-play[data-uri]", row).data("uri"));
+					Player.play([ event.uri, ...more ]);
+				} else {
+					Player.resume();
+				}
 				break;
 			case "player-pause":
 				el = Self.els.btnPlay.find("> i");
 				el.prop({ "className": "icon-player-play" });
-
-				Player.pause();
+				uri = Player.playing.trackUri;
 
 				// look for playing track uri - update UI, if found
-				// uri = Self.playing.track;
-				// APP.content.els.body.find(`.icon-player-play[data-uri="${uri}"]`)
-				// 	.parents(".row").removeClass("track-playing");
+				APP.content.els.body.find(`.icon-player-play[data-uri="${uri}"]`)
+					.parents(".row").removeClass("track-playing");
 
-				// Self.playing.pause = Self.playing.track;
-				// Self.playing.track = false;
+				Player.pause();
 				break;
 			case "player-previous":
 				Player.previous();
@@ -102,12 +100,11 @@
 				Player.repeat();
 				break;
 			case "toggle-play":
-				// if (Self.playing.track) {
-				// 	Self.dispatch({ type: "player-pause" });
-				// } else if (Self.playing.pause) {
-
-				// 	Self.dispatch({ type: "player-play", uri: Self.playing.pause });
-				// }
+				if (Player.playing.paused) {
+					Self.dispatch({ type: "player-play" });
+				} else if (Player.playing.trackUri) {
+					Self.dispatch({ type: "player-pause" });
+				}
 				break;
 		}
 	}

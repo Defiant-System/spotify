@@ -10,7 +10,7 @@ const Player = {
 		};
 		
 		// instantiate Spotify Player
-		this.conn = new window.Spotify.Player({
+		this._player = new window.Spotify.Player({
 			name: "Defiant Spotify Player",
 			volume: 0.5,
 			getOAuthToken: cb => cb(Auth.token)
@@ -19,10 +19,10 @@ const Player = {
 		// event listeners
 		"initialization_error authentication_error account_error playback_error "+
 		"player_state_changed ready not_ready".split(" ")
-			.map(type => this.conn.addListener(type, event => this.dispatch({ ...event, type })));
+			.map(type => this._player.addListener(type, event => this.dispatch({ ...event, type })));
 
-		// Connect to the player
-		this.conn.connect();
+		// _playerect to the player
+		this._player.connect();
 	},
 	dispatch(event) {
 		let Content = spotify.content;
@@ -35,8 +35,15 @@ const Player = {
 				console.log("Player.dispatch - ERROR -", event);
 				break;
 			case "player_state_changed":
+				console.log(event);
+				this.playing = {
+					paused: event.paused,
+					trackUri: event.track_window.current_track.uri,
+					trackName: event.track_window.current_track.name,
+					artistName: event.track_window.current_track.artists.map(a => a.name),
+				};
 				// update application title
-				Content.dispatch({ ...event, type: "set-title" });
+				Content.dispatch({ type: "set-title", playing: this.playing });
 				break;
 			case "ready":
 				// Ready with Device ID
@@ -55,24 +62,27 @@ const Player = {
 		fetch(`${this.apiUrl}/me/player/play?device_id=${this.deviceID}`, options);
 	},
 	pause() {
-		console.log("pause");
+		this._player.pause();
+	},
+	resume() {
+		this._player.resume();
 	},
 	next() {
-		console.log("next");
+		this._player.nextTrack();
 	},
 	previous() {
-		console.log("previous");
-	},
-	seek() {
-		console.log("seek");
-	},
-	volume() {
-		console.log("volume");
+		this._player.previousTrack();
 	},
 	shuffle() {
 		console.log("shuffle");
 	},
 	repeat() {
 		console.log("repeat");
+	},
+	seek() {
+		console.log("seek");
+	},
+	volume() {
+		console.log("volume");
 	}
 };
