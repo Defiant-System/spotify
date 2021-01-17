@@ -12,7 +12,6 @@ const Player = {
 		// instantiate Spotify Player
 		this._player = new window.Spotify.Player({
 			name: "Defiant Spotify Player",
-			volume: 0.15,
 			getOAuthToken: cb => cb(Auth.token)
 		});
 		
@@ -22,7 +21,12 @@ const Player = {
 			.map(type => this._player.addListener(type, event => this.dispatch({ ...event, type })));
 
 		// _playerect to the player
-		this._player.connect();
+		this._player.connect()
+			.then(async success => {
+				let value = await this._player.getVolume();
+				// update volume control
+				spotify.volume.dispatch({ type: "set-volume", value });
+			});
 	},
 	dispatch(event) {
 		let APP = spotify;
@@ -89,7 +93,7 @@ const Player = {
 	seek() {
 		console.log("seek");
 	},
-	volume() {
-		console.log("volume");
+	volume(value) {
+		this._player.setVolume(value);
 	}
 };

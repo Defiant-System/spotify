@@ -54,6 +54,8 @@
 
 				Drag.knob.css({ top: top +"px" });
 				Drag.amount.css({ height: height +"px" });
+				// call player
+				Player.volume(height / Drag.maxY);
 				break;
 			case "mouseup":
 				// unhide cursor
@@ -62,6 +64,14 @@
 				Self.els.doc.off("mousemove mouseup", Self.dispatch);
 				break;
 			// custom events
+			case "set-volume":
+				maxY = Self.els.track[0].offsetHeight;
+				top = maxY - (maxY * event.value);
+				height = maxY - top;
+
+				Self.els.knob.css({ top: top +"px" });
+				Self.els.amount.css({ height: height +"px" });
+				break;
 			case "toggle-volume":
 				isOn = event.el.hasClass("mute");
 				// store current value as attribute
