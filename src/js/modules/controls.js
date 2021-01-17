@@ -87,7 +87,7 @@
 					.then(state => {
 						let timeMs = 1000,
 							left1 = (state.position / state.duration) * 100,
-							left2 = ((state.position + timeMs) / state.duration) * 100;
+							left2 = (Math.min(state.position + timeMs, state.duration) / state.duration) * 100;
 						if (!Self.drag) {
 							// Seeker
 							requestAnimationFrame(() => {

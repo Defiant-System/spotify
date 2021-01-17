@@ -258,7 +258,7 @@
 						<div class="row">
 							<div class="cell">
 								<i class="icon-player-play">
-									<xsl:attribute name="data-uri"><xsl:value-of select="artists/@uri"/></xsl:attribute>
+									<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
 								</i>
 								<i class="icon-heart"></i>
 							</div>
@@ -487,7 +487,9 @@
 				<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
 				<div class="image">
 					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
-					<i class="icon-player-play"></i>
+					<i class="icon-player-play">
+						<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+					</i>
 				</div>
 				<h5><xsl:value-of select="@name"/></h5>
 			</div>
@@ -503,7 +505,9 @@
 				<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
 				<div class="image">
 					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
-					<i class="icon-player-play"></i>
+					<i class="icon-player-play">
+						<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+					</i>
 				</div>
 				<h5><xsl:value-of select="@name"/></h5>
 			</div>
