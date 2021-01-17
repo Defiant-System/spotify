@@ -44,22 +44,35 @@
 				Self.drag = {
 					knob: Self.els.knob,
 					amount: Self.els.amount,
+					timePlayed: Self.els.timePlayed,
+					duration: Player.playing.duration,
 					clickX: event.clientX - Self.els.knob[0].offsetLeft - 5,
 					maxX: Self.els.track[0].offsetWidth,
 					minX: 0,
 				};
+				// prevent transition animation
+				clearTimeout(Self.timer);
+				Self.els.track.removeClass("do-transition");
 				// hides cursor
 				window.el.addClass("hide-cursor seeker");
 				// bind event handlers
 				Self.els.doc.on("mousemove mouseup", Self.dispatch);
 				break;
 			case "mousemove":
-				left = Math.max(Math.min(event.clientX - Drag.clickX, Drag.maxX), Drag.minX);
+				Drag.left = Math.max(Math.min(event.clientX - Drag.clickX, Drag.maxX), Drag.minX);
+				Drag.knob.css({ left: Drag.left +"px" });
+				Drag.amount.css({ width: Drag.left +"px" });
 
-				Drag.knob.css({ left: left +"px" });
-				Drag.amount.css({ width: left +"px" });
+				let position = (Drag.duration * (Drag.left / Drag.maxX))/1000,
+					minutes = parseInt(position/60),
+					seconds = parseInt(position%60).toString().padStart(2, "0");
+				Drag.timePlayed.html(`${minutes}:${seconds}`);
 				break;
 			case "mouseup":
+				// call player
+				Player.seek(Drag.duration * (Drag.left / Drag.maxX));
+				// reset drag object
+				Self.drag = false;
 				// unhide cursor
 				window.el.removeClass("hide-cursor seeker");
 				// unbind event handlers
@@ -69,38 +82,40 @@
 			case "set-timer":
 				// reset animation speed
 				Self.els.track.removeClass("do-transition");
-
+				// get player state
 				Player._player.getCurrentState()
 					.then(state => {
 						let timeMs = 1000,
 							left1 = (state.position / state.duration) * 100,
 							left2 = ((state.position + timeMs) / state.duration) * 100;
-						// Seeker
-						requestAnimationFrame(() => {
-							// Seeker: current position
-							Self.els.knob.css({ left: left1 +"%" });
-							Self.els.amount.css({ width: left1 +"%" });
+						if (!Self.drag) {
+							// Seeker
 							requestAnimationFrame(() => {
-								// Seeker: set animation speed
-								Self.els.track
-									.attr({ style: `--speed: ${timeMs}ms;` })
-									.addClass("do-transition");
-								// Seeker: position 1 second from now
-								Self.els.knob.css({ left: left2 +"%" });
-								Self.els.amount.css({ width: left2 +"%" });
+								// Seeker: current position
+								Self.els.knob.css({ left: left1 +"%" });
+								Self.els.amount.css({ width: left1 +"%" });
+								requestAnimationFrame(() => {
+									// Seeker: set animation speed
+									Self.els.track
+										.attr({ style: `--speed: ${timeMs}ms;` })
+										.addClass("do-transition");
+									// Seeker: position 1 second from now
+									Self.els.knob.css({ left: left2 +"%" });
+									Self.els.amount.css({ width: left2 +"%" });
+								});
 							});
-						});
-
+						}
+						// if state is available; update time played
 						if (state) {
 							let position = state.position/1000,
 								minutes = parseInt(position/60),
 								seconds = parseInt(position%60).toString().padStart(2, "0");
 							Self.els.timePlayed.html(`${minutes}:${seconds}`);
 						}
-
+						// reset
 						clearTimeout(Self.timer);
 						Self.timer = false;
-
+						// set timer if not paused
 						if (!state.paused) {
 							Self.timer = setTimeout(() => Self.dispatch({ type: "set-timer" }), timeMs);
 						}

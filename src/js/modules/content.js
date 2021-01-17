@@ -70,7 +70,7 @@
 				// home view
 				window.find(`.top span[data-click="go-home"]`).trigger("click");
 				// temp
-				setTimeout(() => window.find(".tabs [data-type='home-favorites']").trigger("click"), 10);
+				setTimeout(() => window.find(".tabs [data-type='home-favorites']").trigger("click"), 100);
 				break;
 
 			// navigation events

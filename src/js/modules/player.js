@@ -90,8 +90,8 @@ const Player = {
 	repeat() {
 		console.log("repeat");
 	},
-	seek() {
-		console.log("seek");
+	seek(value) {
+		this._player.seek(value);
 	},
 	volume(value) {
 		this._player.setVolume(value);
