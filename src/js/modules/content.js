@@ -161,6 +161,11 @@
 				Self.els.title.find(".artist-name").html(Player.playing.artistName.join(", "));
 				// track
 				Self.els.title.find(".track-name").html(Player.playing.trackName);
+				// track duration
+				let duration = event.playing.duration/1000,
+					minutes = parseInt(duration/60),
+					seconds = parseInt(duration%60).toString().padStart(2, "0");
+				APP.controls.els.timeTotal.html(`${minutes}:${seconds}`);
 
 				// look for playing track uri - update UI, if found
 				Self.els.body.find(".track-playing, .active").removeClass("track-playing active");

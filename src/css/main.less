@@ -455,6 +455,7 @@ div[data-area="controls"]:hover {
 	height: 2px;
 	z-index: 99;
 	transition: 150ms ease-in-out;
+	--speed: 0;
 
 	&:before,
 	&:after {
@@ -517,6 +518,17 @@ div[data-area="controls"]:hover {
 			background: linear-gradient(transparent, rgba(0,0,0,.2));
 		}
 
+		&.do-transition {
+			.progress-played {
+				transition: background 150ms ease-in-out,
+							width var(--speed) linear;
+			}
+			.knob {
+				transition: opacity 150ms ease-in-out,
+							left var(--speed) linear;
+			}
+		}
+
 		.progress-played {
 			background: #008951;
 			position: absolute;
@@ -525,8 +537,7 @@ div[data-area="controls"]:hover {
 			width: 0;
 			height: inherit;
 			border-radius: inherit;
-			transition: background 150ms ease-in-out,
-						width var(--speed) linear;
+			transition: background 150ms ease-in-out;
 		}
 
 		.knob {
@@ -542,8 +553,7 @@ div[data-area="controls"]:hover {
 			pointer-events: all;
 			cursor: ew-resize;
 			opacity: 0;
-			transition: opacity 150ms ease-in-out,
-						left var(--speed) linear;
+			transition: opacity 150ms ease-in-out;
 		}
 	}
 }

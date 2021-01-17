@@ -12,7 +12,7 @@ const Player = {
 		// instantiate Spotify Player
 		this._player = new window.Spotify.Player({
 			name: "Defiant Spotify Player",
-			volume: 0.5,
+			volume: 0.15,
 			getOAuthToken: cb => cb(Auth.token)
 		});
 		
@@ -37,7 +37,7 @@ const Player = {
 			case "player_state_changed":
 				console.log(event);
 				// assemble info about play status
-				this.playing = { paused: true };
+				this.playing = { duration: event.duration, paused: true };
 				if (event.track_window) {
 					this.playing.paused = event.paused;
 					this.playing.trackUri = event.track_window.current_track.uri;

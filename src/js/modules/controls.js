@@ -17,14 +17,6 @@
 		};
 		// bind event handlers
 		this.els.range.bind("mousedown", this.dispatch);
-
-		// temp
-		// this.dispatch({
-		// 	type: "set-seeker",
-		// 	duration: 231637,
-		// 	position: 0, // 29946 231512 55375 30172 12971
-		// 	paused: false,
-		// });
 	},
 	dispatch(event) {
 		let APP = spotify,
@@ -75,34 +67,44 @@
 				break;
 			// custom events
 			case "set-timer":
+				// reset animation speed
+				Self.els.track.removeClass("do-transition");
+
 				Player._player.getCurrentState()
 					.then(state => {
-						let duration = state.duration/1000,
-							position = state.position/1000;
+						let timeMs = 1000,
+							left1 = (state.position / state.duration) * 100,
+							left2 = ((state.position + timeMs) / state.duration) * 100;
+						// Seeker
+						requestAnimationFrame(() => {
+							// Seeker: current position
+							Self.els.knob.css({ left: left1 +"%" });
+							Self.els.amount.css({ width: left1 +"%" });
+							requestAnimationFrame(() => {
+								// Seeker: set animation speed
+								Self.els.track
+									.attr({ style: `--speed: ${timeMs}ms;` })
+									.addClass("do-transition");
+								// Seeker: position 1 second from now
+								Self.els.knob.css({ left: left2 +"%" });
+								Self.els.amount.css({ width: left2 +"%" });
+							});
+						});
 
-						Self.els.timeTotal.html(`${parseInt(duration/60)}:${parseInt(duration%60).toString().padStart(2, "0")}`);
-						Self.els.timePlayed.html(`${parseInt(position/60)}:${parseInt(position%60).toString().padStart(2, "0")}`);
+						if (state) {
+							let position = state.position/1000,
+								minutes = parseInt(position/60),
+								seconds = parseInt(position%60).toString().padStart(2, "0");
+							Self.els.timePlayed.html(`${minutes}:${seconds}`);
+						}
 
-						if (state.paused) {
-							clearTimeout(Self.timer);
-							Self.timer = false;
-						} else {
-							Self.timer = setTimeout(() => Self.dispatch({ type: "set-timer" }), 1000);
+						clearTimeout(Self.timer);
+						Self.timer = false;
+
+						if (!state.paused) {
+							Self.timer = setTimeout(() => Self.dispatch({ type: "set-timer" }), timeMs);
 						}
 					});
-				break;
-			case "set-seeker":
-				maxX = Self.els.track[0].offsetWidth;
-				left = parseInt((event.position / event.duration) * maxX, 10);
-
-				Self.els.range.attr({ style: `--speed: ${event.duration - event.position}ms;` });
-				Self.els.knob.css({ left: left +"px" });
-				Self.els.amount.css({ width: left +"px" });
-
-				requestAnimationFrame(() => {
-					Self.els.knob.css({ left: maxX +"px" });
-					Self.els.amount.css({ width: maxX +"px" });
-				});
 				break;
 			case "player-play":
 				el = Self.els.btnPlay.find("> i");
