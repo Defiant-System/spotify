@@ -36,23 +36,18 @@ const Player = {
 				break;
 			case "player_state_changed":
 				console.log(event);
-				this.playing = {
-					paused: event.paused,
-					trackUri: event.track_window.current_track.uri,
-					trackName: event.track_window.current_track.name,
-					artistName: event.track_window.current_track.artists.map(a => a.name),
-				};
+				// assemble info about play status
+				this.playing = { paused: true };
+				if (event.track_window) {
+					this.playing.paused = event.paused;
+					this.playing.trackUri = event.track_window.current_track.uri;
+					this.playing.trackName = event.track_window.current_track.name;
+					this.playing.artistName = event.track_window.current_track.artists.map(a => a.name);
+				}
 				// update application title
 				APP.content.dispatch({ type: "set-title", playing: this.playing });
-
+				// update controls timer
 				APP.controls.dispatch({ type: "set-timer" });
-
-				// APP.controls.dispatch({
-				// 	type: "set-seeker",
-				// 	duration: event.duration,
-				// 	position: event.position,
-				// 	paused: event.paused,
-				// });
 				break;
 			case "ready":
 				// Ready with Device ID
@@ -64,6 +59,9 @@ const Player = {
 				// TODO: try to re-connect
 				break;
 		}
+	},
+	disconnect() {
+		this._player.disconnect();
 	},
 	play(uris) {
 		let body = JSON.stringify({ uris });

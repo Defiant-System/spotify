@@ -68,6 +68,8 @@ const spotify = {
 				Self.content.dispatch({ type: "spotify-authorized" });
 				break;
 			case "disconnect-api":
+				// Disconnect web player
+				Player.disconnect();
 				// reset application settings
 				window.settings.clear();
 				break;
