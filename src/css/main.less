@@ -522,17 +522,18 @@ div[data-area="controls"]:hover {
 			position: absolute;
 			top: 0;
 			left: 0;
-			width: 270px;
+			width: 0;
 			height: inherit;
 			border-radius: inherit;
-			transition: background 150ms ease-in-out;
+			transition: background 150ms ease-in-out,
+						width var(--speed) linear;
 		}
 
 		.knob {
 			background: #f7f7f7;
 			position: absolute;
 			top: -5px;
-			left: 270px;
+			left: 0;
 			width: 12px;
 			height: 12px;
 			margin-left: -5px;
@@ -541,7 +542,8 @@ div[data-area="controls"]:hover {
 			pointer-events: all;
 			cursor: ew-resize;
 			opacity: 0;
-			transition: opacity 150ms ease-in-out;
+			transition: opacity 150ms ease-in-out,
+						left var(--speed) linear;
 		}
 	}
 }

@@ -7,6 +7,8 @@
 		// fast references
 		this.els = {
 			doc: $(document),
+			timePlayed: window.find("div[data-area='controls'] .time-played"),
+			timeTotal: window.find("div[data-area='controls'] .time-total"),
 			range: window.find("div[data-area='controls'] .progress"),
 			track: window.find("div[data-area='controls'] .progress .progress-track"),
 			amount: window.find("div[data-area='controls'] .progress .progress-played"),
@@ -15,15 +17,25 @@
 		};
 		// bind event handlers
 		this.els.range.bind("mousedown", this.dispatch);
+
+		// temp
+		// this.dispatch({
+		// 	type: "set-seeker",
+		// 	duration: 231637,
+		// 	position: 0, // 29946 231512 55375 30172 12971
+		// 	paused: false,
+		// });
 	},
 	dispatch(event) {
 		let APP = spotify,
 			Self = APP.controls,
 			Drag = Self.drag,
+			state,
 			uri,
 			maxX,
 			sLeft,
 			left,
+			str,
 			el;
 		switch (event.type) {
 			// native events
@@ -62,6 +74,36 @@
 				Self.els.doc.off("mousemove mouseup", Self.dispatch);
 				break;
 			// custom events
+			case "set-timer":
+				Player._player.getCurrentState()
+					.then(state => {
+						let duration = state.duration/1000,
+							position = state.position/1000;
+
+						Self.els.timeTotal.html(`${parseInt(duration/60)}:${parseInt(duration%60).toString().padStart(2, "0")}`);
+						Self.els.timePlayed.html(`${parseInt(position/60)}:${parseInt(position%60).toString().padStart(2, "0")}`);
+
+						if (state.paused) {
+							clearTimeout(Self.timer);
+							Self.timer = false;
+						} else {
+							Self.timer = setTimeout(() => Self.dispatch({ type: "set-timer" }), 1000);
+						}
+					});
+				break;
+			case "set-seeker":
+				maxX = Self.els.track[0].offsetWidth;
+				left = parseInt((event.position / event.duration) * maxX, 10);
+
+				Self.els.range.attr({ style: `--speed: ${event.duration - event.position}ms;` });
+				Self.els.knob.css({ left: left +"px" });
+				Self.els.amount.css({ width: left +"px" });
+
+				requestAnimationFrame(() => {
+					Self.els.knob.css({ left: maxX +"px" });
+					Self.els.amount.css({ width: maxX +"px" });
+				});
+				break;
 			case "player-play":
 				el = Self.els.btnPlay.find("> i");
 				el.prop({ "className": "icon-player-pause" });

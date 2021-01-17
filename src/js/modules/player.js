@@ -25,7 +25,7 @@ const Player = {
 		this._player.connect();
 	},
 	dispatch(event) {
-		let Content = spotify.content;
+		let APP = spotify;
 
 		switch (event.type) {
 			case "initialization_error":
@@ -43,7 +43,16 @@ const Player = {
 					artistName: event.track_window.current_track.artists.map(a => a.name),
 				};
 				// update application title
-				Content.dispatch({ type: "set-title", playing: this.playing });
+				APP.content.dispatch({ type: "set-title", playing: this.playing });
+
+				APP.controls.dispatch({ type: "set-timer" });
+
+				// APP.controls.dispatch({
+				// 	type: "set-seeker",
+				// 	duration: event.duration,
+				// 	position: event.position,
+				// 	paused: event.paused,
+				// });
 				break;
 			case "ready":
 				// Ready with Device ID
