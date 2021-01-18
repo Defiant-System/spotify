@@ -57,6 +57,7 @@ const spotify = {
 				console.log("authentication failed", event);
 				break;
 			case "oauth-success":
+				// transfer properties
 				for (let key in event) {
 					if (key === "type") continue;
 					Auth[key] = event[key];
@@ -65,6 +66,15 @@ const spotify = {
 				window.settings.set("auth", Auth);
 				// continue
 				Self.content.dispatch({ type: "spotify-authorized" });
+				break;
+			case "oauth-refresh-token":
+				// transfer properties
+				for (let key in event) {
+					if (key === "type") continue;
+					Auth[key] = event[key];
+				}
+				// save token authentication details in app settings
+				window.settings.set("auth", Auth);
 				break;
 			case "disconnect-api":
 				// Disconnect web player
