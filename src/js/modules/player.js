@@ -6,13 +6,13 @@ const Player = {
 		// call headers
 		this.headers = {
 			"Content-Type": "application/json",
-			"Authorization": `Bearer ${Auth.token}`,
+			"Authorization": `Bearer ${Auth.access_token}`,
 		};
 		
 		// instantiate Spotify Player
 		this._player = new window.Spotify.Player({
 			name: "Defiant Spotify Player",
-			getOAuthToken: cb => cb(Auth.token)
+			getOAuthToken: cb => cb(Auth.access_token)
 		});
 		
 		// event listeners

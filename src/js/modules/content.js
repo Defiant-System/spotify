@@ -168,7 +168,7 @@
 				APP.controls.els.timeTotal.html(`${minutes}:${seconds}`);
 
 				// look for playing track uri - update UI, if found
-				Self.els.body.find(".track-playing, .active").removeClass("track-playing active");
+				Self.els.body.find(".row.track-playing, .row.active").removeClass("track-playing active");
 				Self.els.body.find(`.icon-player-play[data-uri="${Player.playing.trackUri}"]`)
 							.parents(".row").addClass("track-playing active");
 
@@ -280,10 +280,9 @@
 			}
 		}
 
-		// UI update on currently playing track
-		let trackUri = Player.playing.track;
-		Body.find(".track-playing").removeClass("track-playing");
-		Body.find(`.icon-player-play[data-uri="${trackUri}"]`)
-			.parents(".row").addClass("track-playing");
+		// look for playing track uri - update UI, if found
+		Body.find(".row.track-playing, .row.active").removeClass("track-playing active");
+		Body.find(`.icon-player-play[data-uri="${Player.playing.trackUri}"]`)
+			.parents(".row").addClass("track-playing active");
 	}
 }

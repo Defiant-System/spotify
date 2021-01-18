@@ -16,12 +16,10 @@ const spotify = {
 			body: window.find(".win-body_"),
 		};
 
-		//window.settings.clear();
-
 		// init sub modules
 		Object.keys(this).filter(i => this[i].init).map(i => this[i].init());
-
-		if (Auth.token && Auth.expires > Date.now()) {
+		
+		if (Auth.access_token && Auth.expires > Date.now()) {
 			this.content.dispatch({ type: "spotify-authorized" });
 		} else {
 			this.els.body.addClass("not-logged-in");
@@ -56,12 +54,13 @@ const spotify = {
 				// reset application settings
 				window.settings.clear();
 
-				console.log("authentication failed");
-				console.log(event);
+				console.log("authentication failed", event);
 				break;
 			case "oauth-success":
-				Auth.token = event.token;
-				Auth.expires = event.expires;
+				for (let key in event) {
+					if (key === "type") continue;
+					Auth[key] = event[key];
+				}
 				// save token authentication details in app settings
 				window.settings.set("auth", Auth);
 				// continue
