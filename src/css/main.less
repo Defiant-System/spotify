@@ -136,10 +136,10 @@ i[class^="icon-"] {
 	&.icon-chevron-left    { background-image: url(~/icons/icon-chevron-left.png); }
 	&.icon-chevron-right   { background-image: url(~/icons/icon-chevron-right.png); }
 
-	&.icon-thumb       { background-image: url(~/icons/icon-thumb.png); }
-	&.icon-clock       { background-image: url(~/icons/icon-clock.png); }
-	&.icon-heart       { background-image: url(~/icons/icon-heart.png); }
-	&.icon-heart-full  { background-image: url(~/icons/icon-heart-full.png); }
+	&.icon-thumb        { background-image: url(~/icons/icon-thumb.png); }
+	&.icon-clock        { background-image: url(~/icons/icon-clock.png); }
+	&.icon-heart        { background-image: url(~/icons/icon-heart.png); }
+	&.icon-heart-full   { background-image: url(~/icons/icon-heart-full.png); }
 }
 
 layout {
@@ -1132,11 +1132,24 @@ div[data-area="panel"] {
 	}
 }
 
+.spotify-loader {
+	background: rgba(0,0,0,.2);
+	position: relative;
+	display: block;
+	margin: 11px auto;
+	width: 160px;
+	height: 90px;
+}
+
+.bounce {
+	animation: sineMove 1s ease-in-out infinite alternate;
+}
+
 .login {
 	text-align: center;
 
 	.login-head {
-		height: 137px;
+		height: 197px;
 		padding: 19px 17px 17px;
 		user-select: none;
 
@@ -2085,4 +2098,9 @@ div[data-area="panel"] {
 			text-overflow: ellipsis;
 		}
 	}
+}
+
+@keyframes sineMove {
+	  0%   { transform: translateY(50%) translateX(-25%); }
+	  100% { transform: translateY(50%) translateX(25%); }
 }

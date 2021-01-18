@@ -5,12 +5,42 @@
 	<section class="login">
 		<div class="login-head">
 			<h2>Spotify</h2>
-			<div class="spotify-logo"></div>
+
+			<xsl:call-template name="spotify-loader"/>
+
 		</div>
 		<div class="view-body">
 			<div class="spotify-login" data-click="spotify-authenticate">Login with Spotify</div>
 		</div>
 	</section>
+</xsl:template>
+
+
+<xsl:template name="spotify-loader">
+	<svg class="spotify-loader" viewBox="0 0 500 250" filter="url(#goo)">
+		<defs>
+			<filter id="goo">
+				<!-- tympanus.net/codrops/creative-gooey-effects -->
+				<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+				<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="goo" />
+				<feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+			</filter>
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="277.8554" y1="381.3551" x2="278.8395" y2="590.9971" gradientTransform="matrix(1 0 0 -1 -28.3689 610.7189)">
+				<stop  offset="0" style="stop-color:#2E3436"/>
+				<stop  offset="1" style="stop-color:#555753"/>
+			</linearGradient>
+			<circle class="st0" cx="250" cy="125" r="103.6"/>
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="277.4475" y1="384.1911" x2="279.3219" y2="590.7258" gradientTransform="matrix(1 0 0 -1 -28.3689 610.7189)">
+				<stop  offset="0" style="stop-color:#23CF5F"/>
+				<stop  offset="1" style="stop-color:#60FF98"/>
+			</linearGradient>
+		</defs>
+		<g>
+			<circle class="bounce" fill="#41e679" cy="0" cx="250" r="50"/>
+			<circle fill="url(#SVGID_1_)" cy="125" cx="250" r="103.6"/>
+			<path fill="#41e679" d="M250,19.9c-58,0-105.1,47.1-105.1,105.1S191.9,230.1,250,230.1S355.1,183,355.1,125S308.1,19.9,250,19.9 M234.6,74.8c30.9,0,63.3,6.4,87,20.3c3.2,1.8,5.4,4.5,5.4,9.5c0,5.7-4.6,9.9-9.9,9.9c-2.1,0-3.4-0.5-5.4-1.6 c-19-11.4-48.6-17.7-77.1-17.7c-14.2,0-28.7,1.5-42,5c-1.5,0.4-3.4,1.1-5.4,1.1c-5.6,0-9.9-4.4-9.9-10c0-5.7,3.5-8.9,7.4-10 C199.7,76.8,216.4,74.8,234.6,74.8 M232.4,110.9c27.5,0,54.1,6.8,75.1,19.4c3.5,2,4.8,4.6,4.8,8.3c0,4.6-3.6,8.3-8.2,8.3 c-2.3,0-3.7-0.9-5.3-1.8c-17.1-10.1-40.8-16.9-66.7-16.9c-13.3,0-24.8,1.9-34.3,4.4c-2,0.6-3.2,1.2-5.1,1.2c-4.5,0-8.2-3.7-8.2-8.3 c0-4.5,2.2-7.5,6.6-8.8C202.8,113.4,214.9,110.9,232.4,110.9 M233.9,145.2c23,0,43.5,5.3,61.2,15.8c2.6,1.6,4.1,3.1,4.1,7 c0,3.8-3.1,6.6-6.6,6.6c-1.7,0-2.9-0.6-4.4-1.6c-15.2-9.2-34.2-14.1-54.4-14.1c-11.3,0-22.6,1.5-33.1,3.6c-1.7,0.4-3.9,1-5.2,1 c-4,0-6.6-3.2-6.6-6.6c0-4.4,2.5-6.6,5.7-7.2C207.5,146.9,220.5,145.2,233.9,145.2"/>
+		</g>
+	</svg>
 </xsl:template>
 
 
