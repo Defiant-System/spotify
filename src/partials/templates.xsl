@@ -5,6 +5,7 @@
 	<section class="login">
 		<div class="login-head">
 			<h2>Spotify</h2>
+			<div class="spotify-logo"></div>
 		</div>
 		<div class="view-body">
 			<div class="spotify-login" data-click="spotify-authenticate">Login with Spotify</div>
