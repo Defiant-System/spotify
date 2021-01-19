@@ -44,7 +44,8 @@
 		<playlist name="Softish" uri="spotify:playlist:6FpV2aDWM0HKWqJ7osczSN"/>
 	</Playlists>
 
-	<Featured>
+	<Featured />
+	<!-- <Featured>
 		<i name="It's Hits Sweden" uri="spotify:playlist:37i9dQZF1DWTMYgB8TqtmR" image="https://i.scdn.co/image/ab67706f000000037c1882e0768785c608aea95b"/>
 		<i name="Lugnt &amp; Skönt" uri="spotify:playlist:37i9dQZF1DX4Umko6nOmN7" image="https://i.scdn.co/image/ab67706f000000031f65c8dbb5ce549ff2cabdc9"/>
 		<i name="Life is good!" uri="spotify:playlist:37i9dQZF1DX1y2vWSgwjbV" image="https://i.scdn.co/image/ab67706f000000034dc98644bc6a8359d16180a6"/>
@@ -55,7 +56,7 @@
 		<i name="Hit Replay Sweden" uri="spotify:playlist:37i9dQZF1DWX4OQBd6GoaY" image="https://i.scdn.co/image/ab67706f00000003c4578910f6d383310ba84b45"/>
 		<i name="Broken Heart" uri="spotify:playlist:37i9dQZF1DXbrUpGvoi3TS" image="https://i.scdn.co/image/ab67706f0000000350f34f0e7a0b73effe02fa6f"/>
 		<i name="Svensk Rap" uri="spotify:playlist:37i9dQZF1DX5cpU86I7OAy" image="https://i.scdn.co/image/ab67706f00000003698a55c458139f4046edab67"/>
-	</Featured>
+	</Featured> -->
 
 	<Favorites total="50" next="https://api.spotify.com/v1/me/top/tracks?limit=20&amp;offset=20">
 		<track name="İllegal-Rap Emrimde 2" duration_ms="207350" popularity="23" uri="spotify:track:3q4TbAwfXcs3zP3qpRxed2">
@@ -143,7 +144,8 @@
 		</track>
 	</Favorites>
 
-	<Categories>
+	<Categories />
+	<!-- <Categories>
 		<item id="toplists" name="Topplistor" image="https://t.scdn.co/media/derived/toplists_11160599e6a04ac5d6f2757f5511778f_0_0_275_275.jpg"/>
 		<item id="2020" name="2020 Wrapped" image="https://t.scdn.co/images/a81ea7bba0f644d698e291875f06ecc2"/>
 		<item id="pop" name="Pop" image="https://t.scdn.co/media/derived/pop-274x274_447148649685019f5e2a03a39e78ba52_0_0_274_274.jpg"/>
@@ -164,7 +166,7 @@
 		<item id="metal" name="Metal" image="https://t.scdn.co/media/original/metal_27c921443fd0a5ba95b1b2c2ae654b2b_274x274.jpg"/>
 		<item id="dinner" name="Matlagning och middag" image="https://t.scdn.co/media/original/dinner_1b6506abba0ba52c54e6d695c8571078_274x274.jpg"/>
 		<item id="thirdparty" name="Trendsättare" image="https://t.scdn.co/images/b4182906bf244b4994805084c057e9ee.jpeg"/>
-	</Categories>
+	</Categories> -->
 
 	<CategoryPlayLists>
 		<item name="Dinner with Friends" uri="spotify:playlist:37i9dQZF1DX4xuWVBs4FgJ" image="https://i.scdn.co/image/ab67706f00000003c5704d2aefd525c003f4586c">

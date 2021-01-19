@@ -2,6 +2,11 @@
 // spotify.api
 
 {
+	apiUrl: "https://api.spotify.com/v1",
+	records: {
+		"home-browse":   { url: "/browse/categories",         type: "parse-home-categories",         xPath: "//Categories" },
+		"home-featured": { url: "/browse/featured-playlists", type: "parse-home-featured-playlists", xPath: "//Featured" },
+	},
 	requests: [
 		{ url: "~/api-data/playlists.json",               type: "parse-playlists" },
 		{ url: "~/api-data/artist.json",                  type: "parse-artist" },
@@ -23,10 +28,27 @@
 		{ url: "~/api-data/home-category-playlists.json", type: "parse-home-category-playlists" },
 	],
 	init() {
-		return;
-		let request = this.requests[0];
-		window.fetch(request.url)
-			.then(data => this.dispatch({ ...request, data }));
+		// let request = this.requests[0];
+		// window.fetch(request.url)
+		// 	.then(data => this.dispatch({ ...request, data }));
+	},
+	requestData(key) {
+		let Self = this,
+			record = this.records[key],
+			xDoc = window.bluePrint.selectSingleNode(record.xPath),
+			url = this.apiUrl + record.url,
+			headers = { Authorization: "Bearer "+ Auth.access_token };
+
+		if (xDoc.hasChildNodes()) {
+			return Promise.resolve(() => xDoc);
+		}
+
+		return window.fetch(url, { headers })
+					.then(data => {
+						let doc = Self.dispatch({ ...record, data });
+						xDoc.parentNode.replaceChild(doc, xDoc);
+						return doc;
+					});
 	},
 	getImage(arr) {
 		let img = arr.length ? arr[arr.length-1].url : "";

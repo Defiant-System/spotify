@@ -74,8 +74,9 @@
 				Player.init();
 				// home view
 				window.find(`.top span[data-click="go-home"]`).trigger("click");
-				// temp
-				setTimeout(() => window.find(".tabs [data-type='home-favorites']").trigger("click"), 100);
+				// first active tab in home view
+				setTimeout(() =>
+					window.find(".tabs [data-type='home-browse']").trigger("click"), 100);
 				break;
 
 			// navigation events
@@ -146,19 +147,23 @@
 			case "artist-albums":
 			case "artist-appears-on":
 			case "artist-fans-also-like":
-				// save scrollTop of elements
-				Self.dispatch({ type: "save-scroll-top", stamp: event.stamp });
-				
-				// render view contents
-				target = Self.els.body.find(".view-body");
-				render = Self.renders[event.type];
-				// render area
-				window.render({ ...render, target });
+				APP.api.requestData(event.type)
+					.then(data => {
+						// save scrollTop of elements
+						Self.dispatch({ type: "save-scroll-top", stamp: event.stamp });
+						
+						// render view contents
+						target = Self.els.body.find(".view-body");
+						render = Self.renders[event.type];
+						// render area
+						window.render({ ...render, target });
 
-				// add state to history
-				Self.history.push({ type: event.type });
-				// update view state
-				Self.setViewState();
+						// add state to history
+						Self.history.push({ type: event.type });
+						// update view state
+						Self.setViewState();
+					});
+
 				break;
 			// misc events
 			case "set-title":

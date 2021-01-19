@@ -5,7 +5,9 @@
 	<section class="login">
 		<div class="login-head">
 			<h2>Spotify</h2>
-			<xsl:call-template name="spotify-loader"/>
+			<xsl:call-template name="spotify-loader">
+				<xsl:with-param name="isActive" select="1" />
+			</xsl:call-template>
 		</div>
 		<div class="view-body">
 			<div class="spotify-login" data-click="spotify-authenticate">Login with Spotify</div>
@@ -15,6 +17,7 @@
 
 
 <xsl:template name="spotify-loader">
+	<xsl:param name="isActive" select="2"/>
 	<svg class="spotify-loader" viewBox="0 0 500 250" filter="url(#goo)">
 		<defs>
 			<filter id="goo">
@@ -33,10 +36,16 @@
 				<stop  offset="1" style="stop-color:#60FF98"/>
 			</linearGradient>
 		</defs>
-		<circle class="anim-circle" fill="url(#SVGID_2_)" cy="125" cx="250" r="69"/>
-		<circle fill="url(#SVGID_2_)" cy="125" cx="250" r="110"/>
-		<circle fill="url(#SVGID_1_)" cy="125" cx="250" r="100"/>
-		<path fill="url(#SVGID_2_)" d="M250,19.9C192,19.9,144.9,67,144.9,125s47,105.1,105.1,105.1S355.1,183,355.1,125S308.1,19.9,250,19.9 M238.5,85.8c24.1,0,49.3,5,67.8,15.8c2.5,1.4,4.2,3.5,4.2,7.4c0,4.4-3.6,7.7-7.7,7.7c-1.6,0-2.6-0.4-4.2-1.2 c-14.8-8.9-37.9-13.8-60.1-13.8c-11.1,0-22.4,1.2-32.7,3.9c-1.2,0.3-2.6,0.9-4.2,0.9c-4.4,0-7.7-3.4-7.7-7.8c0-4.4,2.7-6.9,5.8-7.8 C211.3,87.4,224.3,85.8,238.5,85.8 M236.8,113.9c21.4,0,42.1,5.3,58.5,15.1c2.7,1.6,3.7,3.6,3.7,6.5c0,3.6-2.8,6.5-6.4,6.5 c-1.8,0-2.9-0.7-4.1-1.4c-13.3-7.9-31.8-13.2-52-13.2c-10.4,0-19.3,1.5-26.7,3.4c-1.6,0.5-2.5,0.9-4,0.9c-3.5,0-6.4-2.9-6.4-6.5 c0-3.5,1.7-5.8,5.1-6.9C213.7,115.9,223.1,113.9,236.8,113.9 M237.9,140.7c17.9,0,33.9,4.1,47.7,12.3c2,1.2,3.2,2.4,3.2,5.5 c0,3-2.4,5.1-5.1,5.1c-1.3,0-2.3-0.5-3.4-1.2c-11.8-7.2-26.6-11-42.4-11c-8.8,0-17.6,1.2-25.8,2.8c-1.3,0.3-3,0.8-4.1,0.8 c-3.1,0-5.1-2.5-5.1-5.1c0-3.4,1.9-5.1,4.4-5.6C217.4,142,227.5,140.7,237.9,140.7"/>
+		<circle class="anim-circle" fill="url(#SVGID_2_)" cy="125" cx="250" r="69">
+			<xsl:if test="$isActive = 2">
+				<xsl:attribute name="class">anim-circle bounce</xsl:attribute>
+			</xsl:if>
+		</circle>
+		<g>
+			<circle fill="url(#SVGID_2_)" cy="125" cx="250" r="110"/>
+			<circle fill="url(#SVGID_1_)" cy="125" cx="250" r="100"/>
+			<path fill="url(#SVGID_2_)" d="M250,19.9C192,19.9,144.9,67,144.9,125s47,105.1,105.1,105.1S355.1,183,355.1,125S308.1,19.9,250,19.9 M238.5,85.8c24.1,0,49.3,5,67.8,15.8c2.5,1.4,4.2,3.5,4.2,7.4c0,4.4-3.6,7.7-7.7,7.7c-1.6,0-2.6-0.4-4.2-1.2 c-14.8-8.9-37.9-13.8-60.1-13.8c-11.1,0-22.4,1.2-32.7,3.9c-1.2,0.3-2.6,0.9-4.2,0.9c-4.4,0-7.7-3.4-7.7-7.8c0-4.4,2.7-6.9,5.8-7.8 C211.3,87.4,224.3,85.8,238.5,85.8 M236.8,113.9c21.4,0,42.1,5.3,58.5,15.1c2.7,1.6,3.7,3.6,3.7,6.5c0,3.6-2.8,6.5-6.4,6.5 c-1.8,0-2.9-0.7-4.1-1.4c-13.3-7.9-31.8-13.2-52-13.2c-10.4,0-19.3,1.5-26.7,3.4c-1.6,0.5-2.5,0.9-4,0.9c-3.5,0-6.4-2.9-6.4-6.5 c0-3.5,1.7-5.8,5.1-6.9C213.7,115.9,223.1,113.9,236.8,113.9 M237.9,140.7c17.9,0,33.9,4.1,47.7,12.3c2,1.2,3.2,2.4,3.2,5.5 c0,3-2.4,5.1-5.1,5.1c-1.3,0-2.3-0.5-3.4-1.2c-11.8-7.2-26.6-11-42.4-11c-8.8,0-17.6,1.2-25.8,2.8c-1.3,0.3-3,0.8-4.1,0.8 c-3.1,0-5.1-2.5-5.1-5.1c0-3.4,1.9-5.1,4.4-5.6C217.4,142,227.5,140.7,237.9,140.7"/>
+		</g>
 	</svg>
 </xsl:template>
 
@@ -49,14 +58,14 @@
 		</div>
 
 		<div class="tabs" data-click="select-tab">
-			<span data-type="home-browse" class="active">Browse</span>
+			<span data-type="home-browse">Browse</span>
 			<span data-type="home-featured">Featured</span>
 			<span data-type="home-favorites">Favorites</span>
 			<span data-type="home-history">Play History</span>
 		</div>
 
 		<div class="view-body">
-			<xsl:call-template name="home-browse"/>
+			<xsl:call-template name="spotify-loader"/>
 		</div>
 	</section>
 </xsl:template>

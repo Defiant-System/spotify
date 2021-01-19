@@ -31,13 +31,6 @@ const spotify = {
 			this.content.dispatch({ type: "show-login" });
 		}
 
-		// let headers = { Authorization: "Bearer "+ token };
-		// window.fetch("https://api.spotify.com/v1/me", { headers })
-		// 	.then(res => res.json())
-		// 	.then(res => {
-		// 		console.log(res);
-		// 	});
-
 		// temp
 		// setTimeout(() => window.find(".ctrl-library").trigger("click"), 100);
 		// setTimeout(() => window.find(".category:nth-child(2)").trigger("click"), 100);
