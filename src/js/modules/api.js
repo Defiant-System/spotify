@@ -11,7 +11,7 @@
 		{ url: "~/api-data/artist-appears-on.json",       type: "parse-artist-appears-on" },
 		{ url: "~/api-data/artist-top-tracks.json",       type: "parse-artist-top-tracks" },
 		{ url: "~/api-data/album.json",                   type: "parse-album" },
-		{ url: "~/api-data/compilation.json",             type: "parse-compilation" },
+		{ url: "~/api-data/compilation.json",             type: "parse-show-compilation" },
 		{ url: "~/api-data/playlist.json",                type: "parse-playlist" },
 		{ url: "~/api-data/search-artists.json",          type: "parse-search-artists" },
 		{ url: "~/api-data/search-albums.json",           type: "parse-search-albums" },
@@ -305,7 +305,7 @@
 				// change reference for total + next
 				data = data.playlists;
 				break;
-			case "parse-compilation":
+			case "parse-show-compilation":
 				data.tracks.items.map(entry => {
 					let name = entry.track.name.escapeHtml(),
 						uri = entry.track.uri,
@@ -329,7 +329,7 @@
 					cOwner = data.owner.display_name,
 					cImage = Self.getImage(data.images);
 				// make XML of entries
-				res = $.xmlFromString(`<Compilation name="${cName}" owner="${cOwner}" image="${cImage}">${nodes.join("")}</Compilation>`);
+				res = $.xmlFromString(`<CategoryPlayList name="${cName}" owner="${cOwner}" image="${cImage}">${nodes.join("")}</CategoryPlayList>`);
 				break;
 			case "parse-album":
 				data.tracks.items.map(track => {

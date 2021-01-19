@@ -48,6 +48,7 @@
 		let APP = spotify,
 			Self = APP.content,
 			state = Self.history.current,
+			id,
 			type,
 			render,
 			target,
@@ -135,8 +136,8 @@
 				break;
 			// more navigation
 			case "show-category-playlists":
-				let categoryId = event.target.parentNode.getAttribute("data-id");
-				APP.api.requestData(event.type, { categoryId })
+				id = event.target.parentNode.getAttribute("data-id");
+				APP.api.requestData(event.type, { categoryId: id })
 					.then(data => {
 						Self.dispatch({ type: "go-to", view: event.type });
 						// remove children after view render
@@ -145,11 +146,18 @@
 						}
 					});
 				break;
+			case "show-compilation":
+				id = event.target.parentNode.getAttribute("data-uri").split(":");
+				APP.api.requestData(event.type, { categoryId: id[id.length-1] })
+					.then(data => {
+						console.log(data);
+						// Self.dispatch({ type: "go-to", view: event.type });
+					});
+				break;
 			case "show-artist":
 			case "show-album":
 			case "show-playlist":
 			case "show-featured":
-			case "show-compilation":
 				Self.dispatch({ type: "go-to", view: event.type });
 				break;
 			// tabs
