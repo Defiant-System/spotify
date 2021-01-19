@@ -23,10 +23,7 @@ const spotify = {
 			if (Auth.expires > Date.now()) {
 				this.content.dispatch({ type: "spotify-authorized" });
 			} else {
-				this.els.body.addClass("not-logged-in");
-				// login view
-				this.content.dispatch({ type: "show-login" });
-				console.log("request refresh token");
+				this.dispatch({ type: "get-refresh-token" });
 			}
 		} else {
 			this.els.body.addClass("not-logged-in");
@@ -82,6 +79,13 @@ const spotify = {
 				}
 				// save token authentication details in app settings
 				window.settings.set("auth", Auth);
+				// in case token expired while app was not opened
+				if (!Self.content.history.stack.length) {
+					Self.content.dispatch({ type: "spotify-authorized" });
+				}
+				break;
+			case "get-refresh-token":
+				defiant.message({ ...event, refresh_token: Auth.refresh_token });
 				break;
 			case "disconnect-api":
 				// Disconnect web player
