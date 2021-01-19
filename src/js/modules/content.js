@@ -37,6 +37,13 @@
 		// history stack
 		this.history = new window.History;
 	},
+	getRenderProperties(type) {
+		let record = window.bluePrint.selectSingleNode(`//Records/*[@name="${type}"]`);
+		return {
+			template: record.getAttribute("template"),
+			match: record.getAttribute("match"),
+		};
+	},
 	dispatch(event) {
 		let APP = spotify,
 			Self = APP.content,
@@ -100,7 +107,8 @@
 
 				// render view contents
 				target = Self.els.body;
-				render = Self.renders[event.view];
+				// render = Self.renders[event.view];
+				render = Self.getRenderProperties(event.view);
 				window.render({ ...render, target });
 
 				// add state to history
@@ -126,9 +134,19 @@
 				}
 				break;
 			// more navigation
+			case "show-category-playlists":
+				let categoryId = event.target.parentNode.getAttribute("data-id");
+				APP.api.requestData(event.type, { categoryId })
+					.then(data => {
+						Self.dispatch({ type: "go-to", view: event.type });
+						// remove children after view render
+						while (data.hasChildNodes()) {
+							data.removeChild(data.firstChild);
+						}
+					});
+				break;
 			case "show-artist":
 			case "show-album":
-			case "show-category":
 			case "show-playlist":
 			case "show-featured":
 			case "show-compilation":
@@ -154,7 +172,7 @@
 						
 						// render view contents
 						target = Self.els.body.find(".view-body");
-						render = Self.renders[event.type];
+						render = Self.getRenderProperties(event.type);
 						// render area
 						window.render({ ...render, target });
 
@@ -163,7 +181,6 @@
 						// update view state
 						Self.setViewState();
 					});
-
 				break;
 			// misc events
 			case "set-title":

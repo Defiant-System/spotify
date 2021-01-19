@@ -86,7 +86,7 @@
 
 
 <xsl:template name="home-browse">
-	<div class="categories" data-click="show-category">
+	<div class="categories" data-click="show-category-playlists">
 		<xsl:for-each select="//Categories/*">
 			<div class="category">
 				<xsl:attribute name="data-id"><xsl:value-of select="@id"/></xsl:attribute>

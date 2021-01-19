@@ -3,10 +3,6 @@
 
 {
 	apiUrl: "https://api.spotify.com/v1",
-	records: {
-		"home-browse":   { url: "/browse/categories",         type: "parse-home-categories",         xPath: "//Categories" },
-		"home-featured": { url: "/browse/featured-playlists", type: "parse-home-featured-playlists", xPath: "//Featured" },
-	},
 	requests: [
 		{ url: "~/api-data/playlists.json",               type: "parse-playlists" },
 		{ url: "~/api-data/artist.json",                  type: "parse-artist" },
@@ -21,23 +17,26 @@
 		{ url: "~/api-data/search-albums.json",           type: "parse-search-albums" },
 		{ url: "~/api-data/search-tracks.json",           type: "parse-search-tracks" },
 		{ url: "~/api-data/search-playlists.json",        type: "parse-search-playlists" },
-		{ url: "~/api-data/home-featured-playlists.json", type: "parse-home-featured-playlists" },
-		{ url: "~/api-data/home-recently-played.json",    type: "parse-home-recently-played" },
+		{ url: "~/api-data/home-featured-playlists.json", type: "parse-home-featured" },
+		{ url: "~/api-data/home-recently-played.json",    type: "parse-home-history" },
 		{ url: "~/api-data/home-favorites.json",          type: "parse-home-favorites" },
-		{ url: "~/api-data/home-categories.json",         type: "parse-home-categories" },
-		{ url: "~/api-data/home-category-playlists.json", type: "parse-home-category-playlists" },
+		{ url: "~/api-data/home-categories.json",         type: "parse-home-browse" },
+		{ url: "~/api-data/home-category-playlists.json", type: "parse-show-category-playlists" },
 	],
 	init() {
 		// let request = this.requests[0];
 		// window.fetch(request.url)
 		// 	.then(data => this.dispatch({ ...request, data }));
 	},
-	requestData(key) {
+	requestData(type, params) {
 		let Self = this,
-			record = this.records[key],
-			xDoc = window.bluePrint.selectSingleNode(record.xPath),
-			url = this.apiUrl + record.url,
+			record = window.bluePrint.selectSingleNode(`//Records/*[@name="${type}"]`),
+			xDoc = window.bluePrint.selectSingleNode(record.getAttribute("match")),
+			url = this.apiUrl + record.getAttribute("url"),
 			headers = { Authorization: "Bearer "+ Auth.access_token };
+
+		// add params if needed
+		url = url.replace(/\{.+?\}/g, match => params[match.slice(1,-1)]);
 
 		if (xDoc.hasChildNodes()) {
 			return Promise.resolve(() => xDoc);
@@ -45,7 +44,7 @@
 
 		return window.fetch(url, { headers })
 					.then(data => {
-						let doc = Self.dispatch({ ...record, data });
+						let doc = Self.dispatch({ type: "parse-"+ type, data });
 						xDoc.parentNode.replaceChild(doc, xDoc);
 						return doc;
 					});
@@ -129,7 +128,7 @@
 				// change reference for total + next
 				data = data.playlists;
 				break;
-			case "parse-home-featured-playlists":
+			case "parse-home-featured":
 				data.playlists.items.map(playlist => {
 					let name = playlist.name.escapeHtml(),
 						image = Self.getImage(playlist.images),
@@ -142,7 +141,7 @@
 				// change reference for total + next
 				data = data.playlists;
 				break;
-			case "parse-home-recently-played":
+			case "parse-home-history":
 				data.items.map(entry => {
 					let name = entry.track.name.escapeHtml(),
 						duration_ms = entry.track.duration_ms,
@@ -189,7 +188,7 @@
 				// make XML of entries
 				res = $.xmlFromString(`<Favorites>${nodes.join("")}</Favorites>`);
 				break;
-			case "parse-home-category-playlists":
+			case "parse-show-category-playlists":
 				data.playlists.items.map(playlist => {
 					let name = playlist.name.escapeHtml(),
 						image = Self.getImage(playlist.images),
@@ -201,11 +200,11 @@
 								</item>`);
 				});
 				// make XML of entries
-				res = $.xmlFromString(`<Categories>${nodes.join("")}</Categories>`);
+				res = $.xmlFromString(`<CategoryPlayLists>${nodes.join("")}</CategoryPlayLists>`);
 				// change reference for total + next
 				data = data.playlists;
 				break;
-			case "parse-home-categories":
+			case "parse-home-browse":
 				data.categories.items.map(item => {
 					let name = item.name.escapeHtml(),
 						image = Self.getImage(item.icons),
