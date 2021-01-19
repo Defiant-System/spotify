@@ -1069,32 +1069,24 @@ div[data-area="panel"] {
 
 .category-playlists {
 	.category-head {
-		height: 63px;
+		height: 83px;
 		padding: 19px 19px 17px;
 		user-select: none;
 
-		.icon-category {
-			width: 29px;
-			height: 29px;
-			filter: grayscale(100%);
+		.image {
+			width: 43px;
+			height: 43px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			display: inline-block;
 			vertical-align: top;
-			margin-right: 17px;
-			opacity: .35;
-
-			&:before {
-				content: "";
-				position: absolute;
-				top: -7px;
-				left: -7px;
-				right: -7px;
-				bottom: -7px;
-				border-radius: 50%;
-				background: rgba(0,0,0,.35);
-			}
+			margin-right: 13px;
+			border-radius: 7px;
 		}
 
 		h2 {
-			padding-top: 3px;
+			padding-top: 9px;
 		}
 	}
 	
@@ -1144,10 +1136,16 @@ div[data-area="panel"] {
 	}
 }
 
+.show-loading,
 .view-body {
 	.spotify-loader {
 		opacity: .5;
 	}
+}
+
+.show-loading {
+	text-align: center;
+	padding: 73px 0;
 }
 
 

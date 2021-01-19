@@ -16,6 +16,13 @@
 </xsl:template>
 
 
+<xsl:template name="loading-full-view">
+	<section class="show-loading">
+		<xsl:call-template name="spotify-loader"/>
+	</section>
+</xsl:template>
+
+
 <xsl:template name="spotify-loader">
 	<xsl:param name="isActive" select="2"/>
 	<svg class="spotify-loader" viewBox="0 0 500 250" filter="url(#goo)">
@@ -86,7 +93,7 @@
 
 
 <xsl:template name="home-browse">
-	<div class="categories" data-click="show-category-playlists">
+	<div class="categories" data-click="show-category">
 		<xsl:for-each select="//Categories/*">
 			<div class="category">
 				<xsl:attribute name="data-id"><xsl:value-of select="@id"/></xsl:attribute>
@@ -118,26 +125,38 @@
 <xsl:template name="category-view">
 	<section class="category-playlists">
 		<div class="category-head">
-			<i class="icon-category"></i>
-			<h2>Category</h2>
+			<xsl:attribute name="data-id"><xsl:value-of select="@id"/></xsl:attribute>
+			<div class="image">
+				<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+			</div>
+			<h2>
+				<xsl:value-of select="@name"/>
+			</h2>
 		</div>
 
-		<div class="view-body playlists" data-click="show-compilation">
-			<xsl:for-each select="./*">
-				<div class="playlist">
-					<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
-					<div class="image">
-						<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
-						<i class="icon-player-play">
-							<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
-						</i>
-					</div>
-					<h5><xsl:value-of select="@name"/></h5>
-					<span><xsl:value-of select="text()"/></span>
-				</div>
-			</xsl:for-each>
+		<div class="view-body">
+			<xsl:call-template name="spotify-loader"/>
 		</div>
 	</section>
+</xsl:template>
+
+
+<xsl:template name="categories-view">
+	<div class="playlists" data-click="show-compilation">
+		<xsl:for-each select="./*">
+			<div class="playlist">
+				<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+				<div class="image">
+					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+					<i class="icon-player-play">
+						<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+					</i>
+				</div>
+				<h5><xsl:value-of select="@name"/></h5>
+				<span><xsl:value-of select="text()"/></span>
+			</div>
+		</xsl:for-each>
+	</div>
 </xsl:template>
 
 
@@ -389,14 +408,14 @@
 		</div>
 
 		<div class="tabs" data-click="select-tab">
-			<span data-type="artist-top-tracks" class="active">Top Tracks</span>
+			<span data-type="artist-top-tracks" class="active">Top 10</span>
 			<span data-type="artist-albums">Albums</span>
 			<span data-type="artist-appears-on">Appears on</span>
 			<span data-type="artist-fans-also-like">Fans Also Like</span>
 		</div>
 
 		<div class="view-body">
-			<xsl:call-template name="artist-top-tracks" />
+			<xsl:call-template name="spotify-loader"/>
 		</div>
 	</section>
 </xsl:template>

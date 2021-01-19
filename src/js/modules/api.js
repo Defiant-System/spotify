@@ -5,11 +5,11 @@
 	apiUrl: "https://api.spotify.com/v1",
 	requests: [
 		{ url: "~/api-data/playlists.json",               type: "parse-playlists" },
-		{ url: "~/api-data/artist.json",                  type: "parse-artist" },
+		{ url: "~/api-data/artist.json",                  type: "parse-show-artist" },
 		{ url: "~/api-data/artist-related.json",          type: "parse-artist-related" },
 		{ url: "~/api-data/artist-albums.json",           type: "parse-artist-albums" },
 		{ url: "~/api-data/artist-appears-on.json",       type: "parse-artist-appears-on" },
-		{ url: "~/api-data/artist-top-tracks.json",       type: "parse-artist-top-tracks" },
+		{ url: "~/api-data/artist-top-tracks.json",       type: "parse-show-artist-top-tracks" },
 		{ url: "~/api-data/album.json",                   type: "parse-album" },
 		{ url: "~/api-data/compilation.json",             type: "parse-show-compilation" },
 		{ url: "~/api-data/playlist.json",                type: "parse-playlist" },
@@ -188,6 +188,13 @@
 				// make XML of entries
 				res = $.xmlFromString(`<Favorites>${nodes.join("")}</Favorites>`);
 				break;
+			case "parse-show-category":
+				let catId = data.id,
+					catName = data.name,
+					catImage = Self.getImage(data.icons);
+				// make XML of entries
+				res = $.xmlFromString(`<Category id="${catId}" name="${catName}" image="${catImage}"/>`);
+				break;
 			case "parse-show-category-playlists":
 				data.playlists.items.map(playlist => {
 					let name = playlist.name.escapeHtml(),
@@ -253,7 +260,7 @@
 				// make XML of entries
 				res = $.xmlFromString(`<ArtistAppears>${nodes.join("")}</ArtistAppears>`);
 				break;
-			case "parse-artist-top-tracks":
+			case "parse-show-artist-top-tracks":
 				data.tracks.map(track => {
 					let name = track.name.escapeHtml(),
 						uri = track.uri,
@@ -347,7 +354,7 @@
 				// make XML of entries
 				res = $.xmlFromString(`<Album name="${aName}" release_date="${aDate}" image="${aImage}" artist_name="${aArtistName}" artist_uri="${aArtistUri}">${nodes.join("")}</Album>`);
 				break;
-			case "parse-artist":
+			case "parse-show-artist":
 				data.genres.map(genre => {
 					nodes.push(`<genre name="${genre}"/>`);
 				});

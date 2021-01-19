@@ -135,9 +135,36 @@
 				}
 				break;
 			// more navigation
-			case "show-category-playlists":
+			case "show-category":
 				id = event.target.parentNode.getAttribute("data-id");
 				APP.api.requestData(event.type, { categoryId: id })
+					.then(data => {
+						Self.dispatch({ type: "go-to", view: event.type });
+
+						let type = "show-category-playlists";
+						APP.api.requestData(type, { categoryId: id })
+							.then(data => {
+								// render view contents
+								let target = Self.els.body.find(".view-body");
+								// render = Self.renders[event.view];
+								let render = Self.getRenderProperties(type);
+								window.render({ ...render, target });
+								// remove children after view render
+								while (data.hasChildNodes()) {
+									data.removeChild(data.firstChild);
+								}
+							});
+					});
+				break;
+			case "show-compilation":
+				// render view contents
+				target = Self.els.body;
+				// render = Self.renders[event.view];
+				render = Self.getRenderProperties("loading");
+				window.render({ ...render, target });
+				// get compilation (playlist) data
+				id = event.target.parentNode.getAttribute("data-uri").split(":");
+				APP.api.requestData(event.type, { categoryId: id[id.length-1] })
 					.then(data => {
 						Self.dispatch({ type: "go-to", view: event.type });
 						// remove children after view render
@@ -146,15 +173,31 @@
 						}
 					});
 				break;
-			case "show-compilation":
-				id = event.target.parentNode.getAttribute("data-uri").split(":");
-				APP.api.requestData(event.type, { categoryId: id[id.length-1] })
+			case "show-artist":
+				id = event.uri.slice(event.uri.lastIndexOf(":")+1);
+				APP.api.requestData(event.type, { artistId: id })
 					.then(data => {
-						console.log(data);
-						// Self.dispatch({ type: "go-to", view: event.type });
+						Self.dispatch({ type: "go-to", view: event.type });
+						// remove children after view render
+						while (data.hasChildNodes()) {
+							data.removeChild(data.firstChild);
+						}
+
+						let type = "show-artist-top-tracks";
+						APP.api.requestData(type, { artistId: id, market: "SE" })
+							.then(data => {
+								// render view contents
+								let target = Self.els.body.find(".view-body");
+								// render = Self.renders[event.view];
+								let render = Self.getRenderProperties(type);
+								window.render({ ...render, target });
+								// remove children after view render
+								while (data.hasChildNodes()) {
+									data.removeChild(data.firstChild);
+								}
+							});
 					});
 				break;
-			case "show-artist":
 			case "show-album":
 			case "show-playlist":
 			case "show-featured":

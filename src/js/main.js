@@ -33,13 +33,8 @@ const spotify = {
 
 		// temp
 		// setTimeout(() => window.find(".ctrl-library").trigger("click"), 100);
-		// setTimeout(() => window.find(".category:nth-child(2)").trigger("click"), 100);
-		// setTimeout(() => window.find(".playlist:nth-child(4)").trigger("click"), 400);
-		// setTimeout(() => window.find(".wrapper .item:nth-child(2)").trigger("click"), 100);
-		
 		// setTimeout(() => spotify.content.dispatch({ type: "show-artist" }), 100);
-		// setTimeout(() => window.find(".tabs [data-type='artist-albums']").trigger("click"), 200);
-		// setTimeout(() => window.find(".column-right .album:nth-child(3)").trigger("click"), 400);
+		setTimeout(() => window.find(".tabs [data-type='home-favorites']").trigger("click"), 500);
 	},
 	dispatch(event) {
 		let Self = spotify,

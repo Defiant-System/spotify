@@ -41,7 +41,13 @@ const Player = {
 			case "player_state_changed":
 				console.log(event);
 				// assemble info about play status
-				this.playing = { duration: event.duration, paused: true };
+				this.playing = {
+					duration: event.duration,
+					trackUri: false,
+					trackName: "",
+					artistName: "",
+					paused: true
+				};
 				if (event.track_window) {
 					this.playing.paused = event.paused;
 					this.playing.trackUri = event.track_window.current_track.uri;
