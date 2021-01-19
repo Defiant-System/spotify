@@ -1136,33 +1136,25 @@ div[data-area="panel"] {
 	background: rgba(0,0,0,.2);
 	position: relative;
 	display: block;
-	margin: 11px auto;
-	width: 160px;
-	height: 90px;
-}
+	margin: 3px auto;
+	width: 150px;
+	height: 84px;
 
-.bounce {
-	animation: sineMove 1s ease-in-out infinite alternate;
+	.bounce {
+		animation: sineMove 2000ms ease-in-out infinite;
+	}
 }
 
 .login {
 	text-align: center;
 
 	.login-head {
-		height: 197px;
+		height: 143px;
 		padding: 19px 17px 17px;
 		user-select: none;
 
 		h2 {
 			display: block;
-		}
-
-		.spotify-logo {
-			background: url(~/icon.svg) 50% 50%/contain no-repeat;
-			display: block;
-			margin: 11px auto;
-			width: 53px;
-			height: 53px;
 		}
 	}
 
@@ -2101,6 +2093,8 @@ div[data-area="panel"] {
 }
 
 @keyframes sineMove {
-	  0%   { transform: translateY(50%) translateX(-25%); }
-	  100% { transform: translateY(50%) translateX(25%); }
+	  0%   { transform: translateX(0%); }
+	  25%  { transform: translateX(-41%); }
+	  75%  { transform: translateX(41%); }
+	  100% { transform: translateX(0%); }
 }

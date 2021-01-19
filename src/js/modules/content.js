@@ -59,6 +59,11 @@
 				window.render({ ...render, target });
 				break;
 			case "spotify-authenticate":
+				if (event.el.hasClass("disabled")) return;
+				event.el.addClass("disabled");
+				// loader animation
+				window.find(".login .anim-circle").addClass("bounce");
+				// open Spotify window
 				window.fetch("~/oauth-uri")
 					.then(res => window.open(res.oAuthUri));
 				break;
