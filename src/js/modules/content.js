@@ -8,8 +8,8 @@
 		"search-artists":   { template: "artists",      match: "//SearchArtists" },
 		"search-albums":    { template: "mixed-albums", match: "//SearchAlbums" },
 		"search-playlists": { template: "playlists",    match: "//SearchPlaylists" },
-		"show-artist":      { template: "artist-view",      match: "//Artist" },
-		"show-album":       { template: "album-view",       match: "//Album" },
+		"show-artist":      { template: "artist-view",  match: "//Artist" },
+		"show-album":       { template: "album-view",   match: "//Album" },
 	},
 	init() {
 		// fast references
@@ -297,7 +297,34 @@
 				break;
 			case "toggle-album":
 				el = $(event.target);
-				console.log(el);
+				if (el.hasClass("loading")) return;
+
+				if (el.hasClass("expand")) {
+					el.removeClass("expand");
+				} else {
+					// render loading animation
+					target = el.find(".album-tracks");
+					render = Self.getRenderProperties("loading");
+					window.render({ ...render, target });
+
+					// expand album after render
+					requestAnimationFrame(() => el.addClass("loading"));
+
+					id = el.find(".icon-player-play").data("uri").split(":");
+					type = "show-artist-albums-album";
+					APP.api.requestData(type, { albumId: id[id.length-1], market: "SE" })
+						.then(data => {
+							// update element className
+							el.removeClass("loading").addClass("expand");
+							// render view contents
+							render = Self.getRenderProperties(type);
+							window.render({ ...render, target });
+							// remove children after view render
+							while (data.hasChildNodes()) {
+								data.removeChild(data.firstChild);
+							}
+						});
+				}
 				break;
 			case "toggle-album2":
 				el = $(event.target);

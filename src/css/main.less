@@ -1673,6 +1673,28 @@ div[data-area="panel"] {
 					}
 				}
 
+				&.loading {
+					background: rgba(100,100,100,.2);
+
+					.album-tracks {
+						max-height: 60px;
+
+						section.show-loading {
+							margin-top: 0;
+						}
+					}
+				}
+
+				section.show-loading {
+					padding: 0;
+					margin-top: -100%;
+					transform: translateY(-10px) scale(.75);
+
+					.spotify-loader {
+						height: 73px;
+					}
+				}
+
 				.album-cover {
 					background-position: 50% 50%;
 					background-size: contain;

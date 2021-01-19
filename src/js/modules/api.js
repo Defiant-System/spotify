@@ -344,6 +344,17 @@
 				// make XML of entries
 				res = $.xmlFromString(`<CategoryPlayList name="${cName}" owner="${cOwner}" image="${cImage}">${nodes.join("")}</CategoryPlayList>`);
 				break;
+			case "parse-show-artist-albums-album":
+				data.items.map(track => {
+					let name = track.name.escapeHtml(),
+						duration_ms = track.duration_ms,
+						uri = track.uri;
+					// prepare node
+					nodes.push(`<track name="${name}" duration_ms="${duration_ms}" uri="${uri}"/>`);
+				});
+				// make XML of entries
+				res = $.xmlFromString(`<ArtistAlbumsAlbum>${nodes.join("")}</ArtistAlbumsAlbum>`);
+				break;
 			case "parse-album":
 				data.tracks.items.map(track => {
 					let name = track.name.escapeHtml(),
