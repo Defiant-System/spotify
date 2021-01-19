@@ -3,27 +3,13 @@
 
 {
 	renders: {
-		"show-login":       { template: "login-view", match: "//Login" },
-		"home":             { template: "home-view" },
-		"home-browse":      { template: "home-browse" },
-		"home-featured":    { template: "home-featured", match: "//Featured" },
-		"home-favorites":   { template: "playlist",     match: "//Favorites" },
-		"home-history":     { template: "playlist",     match: "//Recently" },
 		"search":           { template: "search-view",  match: "//SearchTracks" },
 		"search-tracks":    { template: "playlist",     match: "//SearchTracks" },
 		"search-artists":   { template: "artists",      match: "//SearchArtists" },
 		"search-albums":    { template: "mixed-albums", match: "//SearchAlbums" },
 		"search-playlists": { template: "playlists",    match: "//SearchPlaylists" },
-		"artist-top-tracks":     { template: "artist-top-tracks", match: "//ArtistTopTracks" },
-		"artist-albums":         { template: "artist-albums",     match: "//ArtistAlbums" },
-		"artist-appears-on":     { template: "mixed-albums",      match: "//ArtistAppears" },
-		"artist-fans-also-like": { template: "artists",           match: "//ArtistRelated" },
 		"show-artist":      { template: "artist-view",      match: "//Artist" },
 		"show-album":       { template: "album-view",       match: "//Album" },
-		"show-category":    { template: "category-view",    match: "//CategoryPlayLists" },
-		"show-playlist":    { template: "playlist-view",    match: "//Playlist" },
-		"show-featured":    { template: "playlist-view",    match: "//Playlist" },
-		"show-compilation": { template: "compilation-view", match: "//Compilation" },
 	},
 	init() {
 		// fast references
@@ -63,7 +49,7 @@
 			case "show-login":
 				// render view contents
 				target = Self.els.body;
-				render = Self.renders[event.type];
+				render = Self.getRenderProperties(event.type);
 				window.render({ ...render, target });
 				break;
 			case "spotify-authenticate":
@@ -108,7 +94,6 @@
 
 				// render view contents
 				target = Self.els.body;
-				// render = Self.renders[event.view];
 				render = Self.getRenderProperties(event.view);
 				window.render({ ...render, target });
 
@@ -146,7 +131,6 @@
 							.then(data => {
 								// render view contents
 								let target = Self.els.body.find(".view-body");
-								// render = Self.renders[event.view];
 								let render = Self.getRenderProperties(type);
 								window.render({ ...render, target });
 								// remove children after view render
@@ -159,7 +143,6 @@
 			case "show-compilation":
 				// render view contents
 				target = Self.els.body;
-				// render = Self.renders[event.view];
 				render = Self.getRenderProperties("loading");
 				window.render({ ...render, target });
 				// get compilation (playlist) data
@@ -187,14 +170,16 @@
 							.trigger("click");
 					});
 				break;
+			case "show-artist-related":
+			case "show-artist-appears-on":
 			case "show-artist-top-tracks":
+			case "show-artist-albums":
 				el = event.el.parents(".artist");
 				id = el.data("uri").split(":");
 				APP.api.requestData(event.type, { artistId: id[id.length-1], market: "SE" })
 					.then(data => {
 						// render view contents
 						let target = Self.els.body.find(".view-body");
-						// render = Self.renders[event.view];
 						let render = Self.getRenderProperties(event.type);
 						window.render({ ...render, target });
 						// remove children after view render
@@ -203,7 +188,6 @@
 						}
 					});
 				break;
-			case "show-album":
 			case "show-playlist":
 			case "show-featured":
 				Self.dispatch({ type: "go-to", view: event.type });
@@ -217,10 +201,6 @@
 			case "search-artists":
 			case "search-albums":
 			case "search-playlists":
-			case "artist-top-tracks":
-			case "artist-albums":
-			case "artist-appears-on":
-			case "artist-fans-also-like":
 				APP.api.requestData(event.type)
 					.then(data => {
 						// save scrollTop of elements
@@ -316,6 +296,10 @@
 				}
 				break;
 			case "toggle-album":
+				el = $(event.target);
+				console.log(el);
+				break;
+			case "toggle-album2":
 				el = $(event.target);
 
 				if (el.hasClass("expand")) {

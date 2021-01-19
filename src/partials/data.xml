@@ -14,11 +14,42 @@
 
 		<i name="show-artist" url="/artists/{artistId}" match="//Artist" template="artist-view"/>
 		<i name="show-artist-top-tracks" url="/artists/{artistId}/top-tracks?market={market}" match="//ArtistTopTracks" template="artist-top-tracks"/>
+		<i name="show-artist-albums" url="/artists/{artistId}/albums?market={market}" match="//ArtistAlbums" template="artist-albums"/>
+		<i name="show-artist-appears-on" url="/artists/{artistId}/albums?market={market}" match="//ArtistAppearsOn" template="mixed-albums"/>
+		<i name="show-artist-related" url="/artists/{artistId}/related-artists" match="//ArtistRelated" template="artists"/>
 	</Records>	
 
-	<Login/>
+	<Login />
+	<Home />
+	<Featured />
+	<Favorites />
+	<Categories />
+	<Category />
+	<CategoryPlayLists />
+	<CategoryPlayList />
+	<Recently />
+	<Artist />
+	<ArtistTopTracks />
+	<ArtistAlbums />
+	<ArtistAppearsOn />
+	<ArtistRelated />
 
-	<Home/>
+
+
+	<Album name="Deep Down &amp; Dirty" release_date="2001-01-01" image="https://i.scdn.co/image/ab67616d00001e02e8c0eca5da75269b2d229116" artist_name="Stereo MC's" artist_uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8">
+		<track name="Deep Down &amp; Dirty - Original Version" duration_ms="261399" uri="spotify:track:16WyvPp6nfgSYgJWPrlXM5"/>
+		<track name="We Belong In This World Together" duration_ms="279040" uri="spotify:track:1TKdwordQKlZalI2ESv1St"/>
+		<track name="Breeze" duration_ms="265933" uri="spotify:track:3HB0sDUD3fZaCRjxEKlwMq"/>
+		<track name="Running" duration_ms="293800" uri="spotify:track:1SSaGZeeQzUdFwCYQJyl7h"/>
+		<track name="Graffiti - Pt. 1" duration_ms="154466" uri="spotify:track:65XGZ9EfS121FjuIKIUKPR"/>
+		<track name="Graffiti - Pt. 2" duration_ms="169493" uri="spotify:track:5xs1Is4ObVZd3hmxk8336q"/>
+		<track name="Sofisticated" duration_ms="254733" uri="spotify:track:7DUteeNU9KwbyBHGyhGOUJ"/>
+		<track name="Traffic" duration_ms="315600" uri="spotify:track:02I0QezAPPO9Q9i1or053S"/>
+		<track name="The Right Effect" duration_ms="280906" uri="spotify:track:4Mo94v268UDbjG9QLGTWBb"/>
+		<track name="Stop At Nothing" duration_ms="241760" uri="spotify:track:59nPyncSoJ0wVkvwqSRVxJ"/>
+		<track name="Unconscious" duration_ms="245533" uri="spotify:track:2nn5oxWxi70dY78vNcpB5t"/>
+		<track name="Shameless" duration_ms="293293" uri="spotify:track:2snvxQ3MoCphseaTuBlg3P"/>
+	</Album>
 
 	<Playlists total="38">
 		<playlist name="Reggae" uri="spotify:playlist:0YBFjxvkLsknyCgRA5okUB"/>
@@ -60,90 +91,6 @@
 		<playlist name="Classical" uri="spotify:playlist:5Y9APuhr7vOcni8GHPUM5I"/>
 		<playlist name="Softish" uri="spotify:playlist:6FpV2aDWM0HKWqJ7osczSN"/>
 	</Playlists>
-
-	<Featured />
-	<Favorites />
-	<Categories />
-	<Category />
-	<CategoryPlayLists />
-	<CategoryPlayList />
-	<Recently />
-	<Artist />
-	<ArtistTopTracks />
-	
-
-	<ArtistAppears>
-		<i name="90s New Year's Party" release_date="2020-12-16" uri="spotify:album:4pzTLmB6ChwgcTAmKWWYGY" image="https://i.scdn.co/image/ab67616d00001e02aa212ff72bf6d74a0116284b"/>
-		<i name="Electronic Aspects VIII" release_date="2020-12-06" uri="spotify:album:3PlexHHhQvy1SoZrmYBsWM" image="https://i.scdn.co/image/ab67616d00001e0233df3e71ce47ecab2bc1c0db"/>
-		<i name="90´s Hits" release_date="2020-10-30" uri="spotify:album:6bPPRGbZHRoXUVLvx4SB0M" image="https://i.scdn.co/image/ab67616d00001e02ca56ba31dcd3d6f07a2d227b"/>
-		<i name="Silently Bad Minded" release_date="2020-10-23" uri="spotify:album:3aLZs3frlARGPNAqKB2jo1" image="https://i.scdn.co/image/ab67616d00001e02ad8115a6bca51ccfc94f1865"/>
-		<i name="Wasted Berlin Youth, Vol. 17" release_date="2020-09-18" uri="spotify:album:68fsEFgE6ycJNIZ5TRI0qu" image="https://i.scdn.co/image/ab67616d00001e028d72907f7012372290195abe"/>
-		<i name="Maison 'The Remixes'" release_date="2020-07-24" uri="spotify:album:0sdpLNuVlwTakX1YPljA1P" image="https://i.scdn.co/image/ab67616d00001e0275b1a20ab2142fef199566c2"/>
-		<i name="Forgotten Hits" release_date="2020-07-03" uri="spotify:album:1ojrKbjzykigeta5GfATDs" image="https://i.scdn.co/image/ab67616d00001e021c9e34da332dc67d1b028579"/>
-		<i name="SWAG" release_date="2020-07-03" uri="spotify:album:5IzqvZmaStxwdPopEyw3B1" image="https://i.scdn.co/image/ab67616d00001e021a37b2ad81a1d2f7545f5874"/>
-		<i name="Summer In The 90s" release_date="2020-06-26" uri="spotify:album:3pSuW7LhWBu42KK3JDkcyN" image="https://i.scdn.co/image/ab67616d00001e02416cbad446d418656660cbc6"/>
-		<i name="Basketball Songs" release_date="2020-06-05" uri="spotify:album:7aNaGQIeZug57ZDBvdplbu" image="https://i.scdn.co/image/ab67616d00001e02a1e818acb7020ec2f56a566c"/>
-		<i name="Olodumare" release_date="2020-06-05" uri="spotify:album:6CdOZQKHC3aDPzfUz1xA8F" image="https://i.scdn.co/image/ab67616d00001e022e5311f02a356137bd96d56b"/>
-		<i name="Maison" release_date="2020-05-29" uri="spotify:album:4M28pdTLFYIDAvgbsqnSvC" image="https://i.scdn.co/image/ab67616d00001e02176e0311a50b5f448dcc41a3"/>
-		<i name="It's Time EP" release_date="2020-04-24" uri="spotify:album:0wxpFYWSih6ozFuLGFxZ5n" image="https://i.scdn.co/image/ab67616d00001e02bb25e8b89cc41770473083be"/>
-		<i name="Let's Go 90s Party!" release_date="2020-03-20" uri="spotify:album:3L5lMEG8C7JLOpB7zyFloz" image="https://i.scdn.co/image/ab67616d00001e02912fb469483ac148a1570432"/>
-		<i name="Donkey Engine" release_date="2020-02-07" uri="spotify:album:3NbTpc8jMqi603IIgCgmI1" image="https://i.scdn.co/image/ab67616d00001e02aff0a71a60b8a84bdf8da9b8"/>
-		<i name="Tech House Skulls, Vol. 11" release_date="2020-01-27" uri="spotify:album:7IZMbQe3H6rQbgdPj2nCB4" image="https://i.scdn.co/image/ab67616d00001e0292296c9a65dce88b2376de3b"/>
-		<i name="Selected Works 2020 (Mixed by Anthony Pappa)" release_date="2020-01-01" uri="spotify:album:0Ds9Gk1WuPwd5Q90afa6TM" image="https://i.scdn.co/image/ab67616d00001e024e3028abf40762eca561072f"/>
-		<i name="Jazz Hip Hop" release_date="2019-12-06" uri="spotify:album:2H1X1HGQKoG4KXR4Zlhi7Y" image="https://i.scdn.co/image/ab67616d00001e02ece2c1fc385e3c867049c413"/>
-		<i name="Jazz Hip Hop" release_date="2019-12-06" uri="spotify:album:4f7yEoRedZPPnnxYmUyWKH" image="https://i.scdn.co/image/ab67616d00001e0291ca5341c64ad647a9ff5144"/>
-		<i name="Stairway to Heaven 5" release_date="2019-11-25" uri="spotify:album:06FfYW4XUF1vsD6NM5ak7m" image="https://i.scdn.co/image/ab67616d00001e027772259bbf0c019149124e59"/>
-	</ArtistAppears>
-
-	<ArtistRelated>
-		<artist name="Bomb The Bass" uri="spotify:artist:1G3Eh23f2hwhEnAMw7HsZ6" image="https://i.scdn.co/image/03702d59c0121251fb4d4a633754f81852ad881b"/>
-		<artist name="Propellerheads" uri="spotify:artist:3Z7thZHrtFvqp8OpPffPKp" image="https://i.scdn.co/image/745855335bb56bc90fb95bec043f21e79d65ffeb"/>
-		<artist name="Fun Lovin' Criminals" uri="spotify:artist:0hWRiJV8KlRZvsZeemUJVv" image="https://i.scdn.co/image/04c35d0d00f1a60baabf85b20ae62c51ce2b572f"/>
-		<artist name="Us3" uri="spotify:artist:4LtIfuFeAamus9OOItuWDD" image="https://i.scdn.co/image/4e40387c8a3c70236ecd41bf070c84ca7ab554be"/>
-		<artist name="Terranova" uri="spotify:artist:5ZrGK55yglfGEOvnB2japP" image="https://i.scdn.co/image/99040d33f46f29f141eed8720465efa7566480eb"/>
-		<artist name="Apollo 440" uri="spotify:artist:37f9cjf8Ic4t7vYNRYAzI7" image="https://i.scdn.co/image/cded57f5cf8616175a6a6a74e6025bceaecc2b87"/>
-		<artist name="Rae &amp; Christian" uri="spotify:artist:75WMfaHMMwtiMW8tfR92Pn" image="https://i.scdn.co/image/7435c478c8d9acdbe3372a223a361a88f596f660"/>
-		<artist name="Death In Vegas" uri="spotify:artist:5aj3LEYRbuaabjjHkj5oE1" image="https://i.scdn.co/image/2c1783e7481e9f354bd946a4af97904230b8c385"/>
-		<artist name="Tosca" uri="spotify:artist:0TYvluyvV1Es8lTHiBfnAn" image="https://i.scdn.co/image/e1acc19280bafd14cc3a121dd454ec7f588f6a50"/>
-		<artist name="Sofa Surfers" uri="spotify:artist:0pNP0TPeyffi8QbE8U5D1X" image="https://i.scdn.co/image/99c5faa5c1b0dec842252bdb1c63631c7158bb30"/>
-	</ArtistRelated>
-
-	<Album name="Deep Down &amp; Dirty" release_date="2001-01-01" image="https://i.scdn.co/image/ab67616d00001e02e8c0eca5da75269b2d229116" artist_name="Stereo MC's" artist_uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8">
-		<track name="Deep Down &amp; Dirty - Original Version" duration_ms="261399" uri="spotify:track:16WyvPp6nfgSYgJWPrlXM5"/>
-		<track name="We Belong In This World Together" duration_ms="279040" uri="spotify:track:1TKdwordQKlZalI2ESv1St"/>
-		<track name="Breeze" duration_ms="265933" uri="spotify:track:3HB0sDUD3fZaCRjxEKlwMq"/>
-		<track name="Running" duration_ms="293800" uri="spotify:track:1SSaGZeeQzUdFwCYQJyl7h"/>
-		<track name="Graffiti - Pt. 1" duration_ms="154466" uri="spotify:track:65XGZ9EfS121FjuIKIUKPR"/>
-		<track name="Graffiti - Pt. 2" duration_ms="169493" uri="spotify:track:5xs1Is4ObVZd3hmxk8336q"/>
-		<track name="Sofisticated" duration_ms="254733" uri="spotify:track:7DUteeNU9KwbyBHGyhGOUJ"/>
-		<track name="Traffic" duration_ms="315600" uri="spotify:track:02I0QezAPPO9Q9i1or053S"/>
-		<track name="The Right Effect" duration_ms="280906" uri="spotify:track:4Mo94v268UDbjG9QLGTWBb"/>
-		<track name="Stop At Nothing" duration_ms="241760" uri="spotify:track:59nPyncSoJ0wVkvwqSRVxJ"/>
-		<track name="Unconscious" duration_ms="245533" uri="spotify:track:2nn5oxWxi70dY78vNcpB5t"/>
-		<track name="Shameless" duration_ms="293293" uri="spotify:track:2snvxQ3MoCphseaTuBlg3P"/>
-	</Album>
-
-	<ArtistAlbums>
-		<album name="Deeper/Turnaround Remixes" release_date="2016-05-06" total_tracks="5" image="https://i.scdn.co/image/ab67616d0000485185ffb810ec4a8c1e4277bc74"/>
-		<album name="Double Bubble" release_date="2008-07-27" total_tracks="12" image="https://i.scdn.co/image/ab67616d000048516fe9a0e5618c995348d9cf1e"/>
-		<album name="Double Bubble" release_date="2008-07-21" total_tracks="12" image="https://i.scdn.co/image/ab67616d00001e02832ce8bbeb737ae482152f36"/>
-		<album name="Live at The BBC" release_date="2007-01-01" total_tracks="18" image="https://i.scdn.co/image/ab67616d00001e02e748cffd978af5f43d08c73d"/>
-		<album name="Paradise" release_date="2005-08-25" total_tracks="12" image="https://i.scdn.co/image/ab67616d00001e023bdf8d1559780fc9598d9f1e"/>
-		<album name="Deep Down &amp; Dirty" release_date="2001-01-01" total_tracks="12" image="https://i.scdn.co/image/ab67616d00001e02e8c0eca5da75269b2d229116"/>
-		<album name="Connected" release_date="1992-01-01" total_tracks="12" image="https://i.scdn.co/image/ab67616d00001e0242f3ccbc77ffa9a06e6e92d1"/>
-		<album name="Supernatural" release_date="1990-01-01" total_tracks="16" image="https://i.scdn.co/image/ab67616d000048511dafb37287f4aeb796695849"/>
-		<album name="33-45-78" release_date="1989-01-01" total_tracks="15" image="https://i.scdn.co/image/ab67616d00004851651a3f0e36a8e1a4c700e0b3"/>
-		<album name="Deeper/Turnaround Remixes" release_date="2016-05-06" total_tracks="5" image="https://i.scdn.co/image/ab67616d0000485185ffb810ec4a8c1e4277bc74"/>
-		<album name="Double Bubble" release_date="2008-07-27" total_tracks="12" image="https://i.scdn.co/image/ab67616d000048516fe9a0e5618c995348d9cf1e"/>
-		<album name="Double Bubble" release_date="2008-07-21" total_tracks="12" image="https://i.scdn.co/image/ab67616d00001e02832ce8bbeb737ae482152f36"/>
-		<album name="Live at The BBC" release_date="2007-01-01" total_tracks="18" image="https://i.scdn.co/image/ab67616d00001e02e748cffd978af5f43d08c73d"/>
-		<album name="Paradise" release_date="2005-08-25" total_tracks="12" image="https://i.scdn.co/image/ab67616d00001e023bdf8d1559780fc9598d9f1e"/>
-		<album name="Deep Down &amp; Dirty" release_date="2001-01-01" total_tracks="12" image="https://i.scdn.co/image/ab67616d00001e02e8c0eca5da75269b2d229116"/>
-		<album name="Connected" release_date="1992-01-01" total_tracks="12" image="https://i.scdn.co/image/ab67616d00001e0242f3ccbc77ffa9a06e6e92d1"/>
-		<album name="Supernatural" release_date="1990-01-01" total_tracks="16" image="https://i.scdn.co/image/ab67616d000048511dafb37287f4aeb796695849"/>
-		<album name="33-45-78" release_date="1989-01-01" total_tracks="15" image="https://i.scdn.co/image/ab67616d00004851651a3f0e36a8e1a4c700e0b3"/>
-		<album name="Changes" release_date="2017-01-27" total_tracks="3" image="https://i.scdn.co/image/ab67616d00004851656243f2d4a052a746c0c990"/>
-	</ArtistAlbums>
 
 	<Playlist name="old" owner="Hakan Bilgin" image="https://mosaic.scdn.co/300/ab67616d0000b2731dafb37287f4aeb796695849ab67616d0000b2733bdf8d1559780fc9598d9f1eab67616d0000b27342f3ccbc77ffa9a06e6e92d1ab67616d0000b273e8c0eca5da75269b2d229116">
 		<track name="Ground Level" duration_ms="252666" uri="spotify:track:1UgsbIteej4QpAcX3aUFeV">

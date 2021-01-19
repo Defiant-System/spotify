@@ -6,9 +6,9 @@
 	requests: [
 		{ url: "~/api-data/playlists.json",               type: "parse-playlists" },
 		{ url: "~/api-data/artist.json",                  type: "parse-show-artist" },
-		{ url: "~/api-data/artist-related.json",          type: "parse-artist-related" },
-		{ url: "~/api-data/artist-albums.json",           type: "parse-artist-albums" },
-		{ url: "~/api-data/artist-appears-on.json",       type: "parse-artist-appears-on" },
+		{ url: "~/api-data/artist-related.json",          type: "parse-show-artist-related" },
+		{ url: "~/api-data/artist-albums.json",           type: "parse-show-artist-albums" },
+		{ url: "~/api-data/artist-appears-on.json",       type: "parse-show-artist-appears-on" },
 		{ url: "~/api-data/artist-top-tracks.json",       type: "parse-show-artist-top-tracks" },
 		{ url: "~/api-data/album.json",                   type: "parse-album" },
 		{ url: "~/api-data/compilation.json",             type: "parse-show-compilation" },
@@ -224,7 +224,7 @@
 				// change reference for total + next
 				data = data.playlists;
 				break;
-			case "parse-artist-related":
+			case "parse-show-artist-related":
 				data.artists.map(artist => {
 					let name = artist.name.escapeHtml(),
 						image = Self.getImage(artist.images),
@@ -235,8 +235,11 @@
 				// make XML of entries
 				res = $.xmlFromString(`<ArtistRelated>${nodes.join("")}</ArtistRelated>`);
 				break;
-			case "parse-artist-albums":
+			case "parse-show-artist-albums":
 				data.items.map(album => {
+					// skip if not album
+					if (album.album_type !== "album") return;
+
 					let name = album.name.escapeHtml(),
 						release_date = album.release_date,
 						total_tracks = album.total_tracks,
@@ -248,8 +251,11 @@
 				// make XML of entries
 				res = $.xmlFromString(`<ArtistAlbums>${nodes.join("")}</ArtistAlbums>`);
 				break;
-			case "parse-artist-appears-on":
+			case "parse-show-artist-appears-on":
 				data.items.map(album => {
+					// skip if not album
+					if (album.album_type === "album") return;
+
 					let name = album.name.escapeHtml(),
 						release_date = album.release_date,
 						image = Self.getImage(album.images),
@@ -258,7 +264,7 @@
 					nodes.push(`<i name="${name}" release_date="${release_date}" uri="${uri}" image="${image}"/>`);
 				});
 				// make XML of entries
-				res = $.xmlFromString(`<ArtistAppears>${nodes.join("")}</ArtistAppears>`);
+				res = $.xmlFromString(`<ArtistAppearsOn>${nodes.join("")}</ArtistAppearsOn>`);
 				break;
 			case "parse-show-artist-top-tracks":
 				data.tracks.map(track => {

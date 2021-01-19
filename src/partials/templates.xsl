@@ -412,7 +412,7 @@
 			<span data-type="show-artist-top-tracks">Top 10</span>
 			<span data-type="show-artist-albums">Albums</span>
 			<span data-type="show-artist-appears-on">Appears on</span>
-			<span data-type="show-artist-fans-also-like">Fans Also Like</span>
+			<span data-type="show-artist-related">Fans Also Like</span>
 		</div>
 
 		<div class="view-body">
