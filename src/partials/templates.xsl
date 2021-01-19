@@ -234,7 +234,7 @@
 		</div>
 
 		<div class="tabs" data-click="select-tab">
-			<span data-type="search-tracks" class="active">Tracks</span>
+			<span data-type="search-tracks">Tracks</span>
 			<span data-type="search-artists">Artists</span>
 			<span data-type="search-albums">Albums</span>
 			<span data-type="search-playlists">Playlists</span>
@@ -393,6 +393,7 @@
 
 <xsl:template name="artist-view">
 	<section class="artist">
+		<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
 		<div class="artist-head">
 			<div class="artist-image">
 				<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
@@ -408,10 +409,10 @@
 		</div>
 
 		<div class="tabs" data-click="select-tab">
-			<span data-type="artist-top-tracks" class="active">Top 10</span>
-			<span data-type="artist-albums">Albums</span>
-			<span data-type="artist-appears-on">Appears on</span>
-			<span data-type="artist-fans-also-like">Fans Also Like</span>
+			<span data-type="show-artist-top-tracks">Top 10</span>
+			<span data-type="show-artist-albums">Albums</span>
+			<span data-type="show-artist-appears-on">Appears on</span>
+			<span data-type="show-artist-fans-also-like">Fans Also Like</span>
 		</div>
 
 		<div class="view-body">

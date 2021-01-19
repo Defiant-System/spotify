@@ -174,28 +174,33 @@
 					});
 				break;
 			case "show-artist":
-				id = event.uri.slice(event.uri.lastIndexOf(":")+1);
-				APP.api.requestData(event.type, { artistId: id })
+				id = event.uri.split(":");
+				APP.api.requestData(event.type, { artistId: id[id.length-1] })
 					.then(data => {
 						Self.dispatch({ type: "go-to", view: event.type });
 						// remove children after view render
 						while (data.hasChildNodes()) {
 							data.removeChild(data.firstChild);
 						}
-
-						let type = "show-artist-top-tracks";
-						APP.api.requestData(type, { artistId: id, market: "SE" })
-							.then(data => {
-								// render view contents
-								let target = Self.els.body.find(".view-body");
-								// render = Self.renders[event.view];
-								let render = Self.getRenderProperties(type);
-								window.render({ ...render, target });
-								// remove children after view render
-								while (data.hasChildNodes()) {
-									data.removeChild(data.firstChild);
-								}
-							});
+						// auto click "top tracks" tab
+						Self.els.body.find(".tabs [data-type='show-artist-top-tracks']")
+							.trigger("click");
+					});
+				break;
+			case "show-artist-top-tracks":
+				el = event.el.parents(".artist");
+				id = el.data("uri").split(":");
+				APP.api.requestData(event.type, { artistId: id[id.length-1], market: "SE" })
+					.then(data => {
+						// render view contents
+						let target = Self.els.body.find(".view-body");
+						// render = Self.renders[event.view];
+						let render = Self.getRenderProperties(event.type);
+						window.render({ ...render, target });
+						// remove children after view render
+						while (data.hasChildNodes()) {
+							data.removeChild(data.firstChild);
+						}
 					});
 				break;
 			case "show-album":
