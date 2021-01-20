@@ -1,6 +1,7 @@
 <Data>
 	<Records>
 		<i name="loading" match="//Home" template="loading-full-view"/>
+		<i name="get-my-playlists" url="/users/{username}/playlists?offset=0&amp;limit=50" match="//Playlists" template="my-playlists"/>
 
 		<i name="home" match="//Home" template="home-view"/>
 		<i name="home-browse" url="/browse/categories" match="//Categories" template="home-browse"/>
@@ -11,6 +12,7 @@
 		<i name="show-category" url="/browse/categories/{categoryId}" match="//Category" template="category-view"/>
 		<i name="show-category-playlists" url="/browse/categories/{categoryId}/playlists" match="//CategoryPlayLists" template="categories-view"/>
 		<i name="show-compilation" url="/playlists/{categoryId}" match="//CategoryPlayList" template="compilation-view"/>
+		<i name="show-playlist" url="/playlists/{id}?market={market}" match="//Playlist" template="playlist-view" fields="name,type,uri,owner(display_name),images,tracks(items(track(name,uri,duration_ms,artists(name,uri),album(name,uri))))"/>
 
 		<i name="show-artist" url="/artists/{artistId}" match="//Artist" template="artist-view"/>
 		<i name="show-artist-top-tracks" url="/artists/{artistId}/top-tracks?market={market}" match="//ArtistTopTracks" template="artist-top-tracks"/>
@@ -23,6 +25,7 @@
 	<Login />
 	<Home />
 	<Featured />
+	<!-- <Playlists /> -->
 	<Favorites />
 	<Categories />
 	<Category />
@@ -35,6 +38,7 @@
 	<ArtistAppearsOn />
 	<ArtistRelated />
 	<ArtistAlbumsAlbum />
+	<Playlist />
 
 	<Album name="Deep Down &amp; Dirty" release_date="2001-01-01" image="https://i.scdn.co/image/ab67616d00001e02e8c0eca5da75269b2d229116" artist_name="Stereo MC's" artist_uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8">
 		<track name="Deep Down &amp; Dirty - Original Version" duration_ms="261399" uri="spotify:track:16WyvPp6nfgSYgJWPrlXM5"/>
@@ -52,472 +56,45 @@
 	</Album>
 
 	<Playlists total="38">
-		<playlist name="Reggae" uri="spotify:playlist:0YBFjxvkLsknyCgRA5okUB"/>
-		<playlist name="70s, 80s" uri="spotify:playlist:1EV7WsOrLMPAEleP87ymge"/>
-		<playlist name="Jazz &amp; Blues" uri="spotify:playlist:7w1DAWuN5O4fxte4KTxKtS"/>
-		<playlist name="chillout 2" uri="spotify:playlist:62zCM9ct8YHVhoIoQK9uS0"/>
-		<playlist name="Chillout" uri="spotify:playlist:7gtky4sYYwiuDEQuPpVy4h"/>
-		<playlist name="Friday" uri="spotify:playlist:2JeKDjHo6yOjlMFtqup1kW"/>
-		<playlist name="Southern Gothic" uri="spotify:playlist:37i9dQZF1DX58NJL8iVBGW"/>
-		<playlist name="Hakan's Metal Curriculum" uri="spotify:playlist:4rRY4XiTPwLvs4yYsu0BI6"/>
-		<playlist name="PPAP" uri="spotify:playlist:1SIAM5CPOtMV9s0Mt4TQxz"/>
-		<playlist name="Lara 2.0" uri="spotify:playlist:61IPrPN1iQcH7sHtoSLMLW"/>
-		<playlist name="Heart. Papers. Border. inspiration" uri="spotify:playlist:6Y4cYJlVWrnFOLhcSWLI7N"/>
-		<playlist name="Gillat från Radio" uri="spotify:playlist:6k8eJCv0MeFLEi7TVqQNov"/>
-		<playlist name="My Shazam Tracks" uri="spotify:playlist:3RUWKayNhOpGgII1qGaDku"/>
-		<playlist name="Sv Klassiker" uri="spotify:playlist:2rTxMBQybX5uOyU2PCIc3Z"/>
-		<playlist name="barnsligt" uri="spotify:playlist:5zLWxDllZo89tXKn19KR6u"/>
-		<playlist name="Starred" uri="spotify:playlist:39MINyDwAaGL9QkudEXxLV"/>
-		<playlist name="old" uri="spotify:playlist:4Wqhmyri54LKWet5NmrIRY"/>
-		<playlist name="absolut playlist" uri="spotify:playlist:169mr6qHfUu1fENRzHCCGP"/>
-		<playlist name="Sv. Hiphop" uri="spotify:playlist:2e9yekr878NhVFJCjrkiuE"/>
-		<playlist name="Hiphop" uri="spotify:playlist:16txH6lVSFDwMg3NYrFxkX"/>
-		<playlist name="Turkisk Hiphop" uri="spotify:playlist:3NaZmbyJAdJVPQbLBRzjGa"/>
-		<playlist name="Progressive Trance" uri="spotify:playlist:37XOUU0mha2gy7GEN3LrvQ"/>
-		<playlist name="Turkisk" uri="spotify:playlist:2EqLEgwEGGbgwap4YspcNe"/>
-		<playlist name="Rock" uri="spotify:playlist:763PqUyTqamIHfqBEo6njf"/>
-		<playlist name="House" uri="spotify:playlist:450z5I1Gq8dpruVfK50IgR"/>
-		<playlist name="Workout" uri="spotify:playlist:0450GuLKsqbxVqLVi752yk"/>
-		<playlist name="Trance" uri="spotify:playlist:6DoFImL7d0lbdSCz98XIZi"/>
-		<playlist name="Dubstep" uri="spotify:playlist:3rgJngKwr5uGtZkWY0kQuS"/>
-		<playlist name="Missy Elliot" uri="spotify:playlist:6DCNmWjf3qIBuxSHogu8n1"/>
-		<playlist name="Slow" uri="spotify:playlist:4tH6f4B8zvuaLvoTeZpgXT"/>
-		<playlist name="Michael Jackson" uri="spotify:playlist:5k8kBQhzyWYPeAO1SZZoRR"/>
-		<playlist name="Elektropop" uri="spotify:playlist:2nwBooJnHcXrh98BjonN4T"/>
-		<playlist name="M.I.A." uri="spotify:playlist:5c4oVxhBLwtjvvfTVqm1ch"/>
-		<playlist name="Breakbeat" uri="spotify:playlist:6xWd79GDCBJZXfy26Jb8tu"/>
-		<playlist name="Popular" uri="spotify:playlist:3CRZdgg5VLQ1lEOdAXDHSC"/>
-		<playlist name="Dancefloor" uri="spotify:playlist:1pxfl3n3Qgy2WJA4cW5E2v"/>
-		<playlist name="Classical" uri="spotify:playlist:5Y9APuhr7vOcni8GHPUM5I"/>
-		<playlist name="Softish" uri="spotify:playlist:6FpV2aDWM0HKWqJ7osczSN"/>
+		<playlist tracks="18" name="Reggae" uri="spotify:playlist:0YBFjxvkLsknyCgRA5okUB"/>
+		<playlist tracks="183" name="70s, 80s" uri="spotify:playlist:1EV7WsOrLMPAEleP87ymge"/>
+		<playlist tracks="11" name="Jazz &amp; Blues" uri="spotify:playlist:7w1DAWuN5O4fxte4KTxKtS"/>
+		<playlist tracks="63" name="chillout 2" uri="spotify:playlist:62zCM9ct8YHVhoIoQK9uS0"/>
+		<playlist tracks="247" name="Chillout" uri="spotify:playlist:7gtky4sYYwiuDEQuPpVy4h"/>
+		<playlist tracks="41" name="Friday" uri="spotify:playlist:2JeKDjHo6yOjlMFtqup1kW"/>
+		<playlist tracks="128" name="Southern Gothic" uri="spotify:playlist:37i9dQZF1DX58NJL8iVBGW"/>
+		<playlist tracks="34" name="Hakan's Metal Curriculum" uri="spotify:playlist:4rRY4XiTPwLvs4yYsu0BI6"/>
+		<playlist tracks="108" name="PPAP" uri="spotify:playlist:1SIAM5CPOtMV9s0Mt4TQxz"/>
+		<playlist tracks="24" name="Lara 2.0" uri="spotify:playlist:61IPrPN1iQcH7sHtoSLMLW"/>
+		<playlist tracks="39" name="Heart. Papers. Border. inspiration" uri="spotify:playlist:6Y4cYJlVWrnFOLhcSWLI7N"/>
+		<playlist tracks="6" name="Gillat från Radio" uri="spotify:playlist:6k8eJCv0MeFLEi7TVqQNov"/>
+		<playlist tracks="44" name="My Shazam Tracks" uri="spotify:playlist:3RUWKayNhOpGgII1qGaDku"/>
+		<playlist tracks="48" name="Sv Klassiker" uri="spotify:playlist:2rTxMBQybX5uOyU2PCIc3Z"/>
+		<playlist tracks="17" name="barnsligt" uri="spotify:playlist:5zLWxDllZo89tXKn19KR6u"/>
+		<playlist tracks="178" name="Starred" uri="spotify:playlist:39MINyDwAaGL9QkudEXxLV"/>
+		<playlist tracks="583" name="old" uri="spotify:playlist:4Wqhmyri54LKWet5NmrIRY"/>
+		<playlist tracks="76" name="absolut playlist" uri="spotify:playlist:169mr6qHfUu1fENRzHCCGP"/>
+		<playlist tracks="135" name="Sv. Hiphop" uri="spotify:playlist:2e9yekr878NhVFJCjrkiuE"/>
+		<playlist tracks="232" name="Hiphop" uri="spotify:playlist:16txH6lVSFDwMg3NYrFxkX"/>
+		<playlist tracks="118" name="Turkisk Hiphop" uri="spotify:playlist:3NaZmbyJAdJVPQbLBRzjGa"/>
+		<playlist tracks="54" name="Progressive Trance" uri="spotify:playlist:37XOUU0mha2gy7GEN3LrvQ"/>
+		<playlist tracks="165" name="Turkisk" uri="spotify:playlist:2EqLEgwEGGbgwap4YspcNe"/>
+		<playlist tracks="173" name="Rock" uri="spotify:playlist:763PqUyTqamIHfqBEo6njf"/>
+		<playlist tracks="28" name="House" uri="spotify:playlist:450z5I1Gq8dpruVfK50IgR"/>
+		<playlist tracks="51" name="Workout" uri="spotify:playlist:0450GuLKsqbxVqLVi752yk"/>
+		<playlist tracks="103" name="Trance" uri="spotify:playlist:6DoFImL7d0lbdSCz98XIZi"/>
+		<playlist tracks="33" name="Dubstep" uri="spotify:playlist:3rgJngKwr5uGtZkWY0kQuS"/>
+		<playlist tracks="44" name="Missy Elliot" uri="spotify:playlist:6DCNmWjf3qIBuxSHogu8n1"/>
+		<playlist tracks="59" name="Slow" uri="spotify:playlist:4tH6f4B8zvuaLvoTeZpgXT"/>
+		<playlist tracks="22" name="Michael Jackson" uri="spotify:playlist:5k8kBQhzyWYPeAO1SZZoRR"/>
+		<playlist tracks="61" name="Elektropop" uri="spotify:playlist:2nwBooJnHcXrh98BjonN4T"/>
+		<playlist tracks="21" name="M.I.A." uri="spotify:playlist:5c4oVxhBLwtjvvfTVqm1ch"/>
+		<playlist tracks="80" name="Breakbeat" uri="spotify:playlist:6xWd79GDCBJZXfy26Jb8tu"/>
+		<playlist tracks="181" name="Popular" uri="spotify:playlist:3CRZdgg5VLQ1lEOdAXDHSC"/>
+		<playlist tracks="215" name="Dancefloor" uri="spotify:playlist:1pxfl3n3Qgy2WJA4cW5E2v"/>
+		<playlist tracks="30" name="Classical" uri="spotify:playlist:5Y9APuhr7vOcni8GHPUM5I"/>
+		<playlist tracks="252" name="Softish" uri="spotify:playlist:6FpV2aDWM0HKWqJ7osczSN"/>
 	</Playlists>
-
-	<Playlist name="old" owner="Hakan Bilgin" image="https://mosaic.scdn.co/300/ab67616d0000b2731dafb37287f4aeb796695849ab67616d0000b2733bdf8d1559780fc9598d9f1eab67616d0000b27342f3ccbc77ffa9a06e6e92d1ab67616d0000b273e8c0eca5da75269b2d229116">
-		<track name="Ground Level" duration_ms="252666" uri="spotify:track:1UgsbIteej4QpAcX3aUFeV">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
-		</track>
-		<track name="I Feel You" duration_ms="274720" uri="spotify:track:0XM5qsvRQGSWE1hlSq4E5b">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Paradise" uri="spotify:album:6ydThtRPfXjHS79flxvVMC"/>
-		</track>
-		<track name="Elevate My Mind" duration_ms="196826" uri="spotify:track:7uABD1Cd6M8SGA75OxeUqB">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Supernatural" uri="spotify:album:3EqE50w57ZSxSDGhmL1tg4"/>
-		</track>
-		<track name="Connected" duration_ms="313000" uri="spotify:track:1ZoE2naC9ySlPLdBZhS1rM">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
-		</track>
-		<track name="Step It Up" duration_ms="301000" uri="spotify:track:6Y1HIgqlgYSzMalK6eBiEP">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
-		</track>
-		<track name="Traffic" duration_ms="315600" uri="spotify:track:02I0QezAPPO9Q9i1or053S">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
-		</track>
-		<track name="The Right Effect" duration_ms="280906" uri="spotify:track:4Mo94v268UDbjG9QLGTWBb">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
-		</track>
-		<track name="Creation" duration_ms="304000" uri="spotify:track:2RAX6iVOjhH5vL33shTzfX">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
-		</track>
-		<track name="The End" duration_ms="229840" uri="spotify:track:4kWFbqvYW3izvkcCmQVyG0">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
-		</track>
-		<track name="Sketch" duration_ms="343666" uri="spotify:track:31z4dKubn9SVuuo4ZAj5R1">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
-		</track>
-		<track name="Fade Away" duration_ms="266000" uri="spotify:track:1omeMDcIlyoUuDzeD6XxfS">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
-		</track>
-		<track name="Playing With Fire" duration_ms="258826" uri="spotify:track:5F6Yu1s3rvN7UQV5l04Hkl">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
-		</track>
-		<track name="Pressure" duration_ms="230840" uri="spotify:track:6GFvGV6yLGInltTbxlzonn">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
-		</track>
-		<track name="Chicken Shake" duration_ms="229160" uri="spotify:track:6N0o3pElcfEqTgIdQzLU19">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Connected" uri="spotify:album:3NRQnGdFznbXtP8u2O4VKB"/>
-		</track>
-		<track name="Deep Down &amp; Dirty - Original Version" duration_ms="261399" uri="spotify:track:16WyvPp6nfgSYgJWPrlXM5">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
-		</track>
-		<track name="We Belong In This World Together" duration_ms="279040" uri="spotify:track:1TKdwordQKlZalI2ESv1St">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
-		</track>
-		<track name="Breeze" duration_ms="265933" uri="spotify:track:3HB0sDUD3fZaCRjxEKlwMq">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
-		</track>
-		<track name="Running" duration_ms="293800" uri="spotify:track:1SSaGZeeQzUdFwCYQJyl7h">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
-		</track>
-		<track name="Graffiti - Pt. 1" duration_ms="154466" uri="spotify:track:65XGZ9EfS121FjuIKIUKPR">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
-		</track>
-		<track name="Graffiti - Pt. 2" duration_ms="169493" uri="spotify:track:5xs1Is4ObVZd3hmxk8336q">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
-		</track>
-		<track name="Sofisticated" duration_ms="254733" uri="spotify:track:7DUteeNU9KwbyBHGyhGOUJ">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
-		</track>
-		<track name="Unconscious" duration_ms="245533" uri="spotify:track:2nn5oxWxi70dY78vNcpB5t">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
-		</track>
-		<track name="Shameless" duration_ms="293293" uri="spotify:track:2snvxQ3MoCphseaTuBlg3P">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
-		</track>
-		<track name="Stop At Nothing" duration_ms="241760" uri="spotify:track:59nPyncSoJ0wVkvwqSRVxJ">
-			<artists name="Stereo MC's" uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8"/>
-			<album name="Deep Down &amp; Dirty" uri="spotify:album:1XlIVmi1cBZvBrdhzDeYTO"/>
-		</track>
-		<track name="Bohemian Rhapsody - Remastered 2011" duration_ms="354320" uri="spotify:track:4u7EnebtmKWzUH433cf5Qv">
-			<artists name="Queen" uri="spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"/>
-			<album name="A Night At The Opera (2011 Remaster)" uri="spotify:album:1GbtB4zTqAsyfZEsm1RZfx"/>
-		</track>
-		<track name="Another One Bites The Dust - Remastered 2011" duration_ms="214653" uri="spotify:track:5vdp5UmvTsnMEMESIF2Ym7">
-			<artists name="Queen" uri="spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"/>
-			<album name="The Game (2011 Remaster)" uri="spotify:album:58alCatewkjNm9IM1Ucj67"/>
-		</track>
-		<track name="Under Pressure - Remastered 2011" duration_ms="248440" uri="spotify:track:2fuCquhmrzHpu5xcA1ci9x">
-			<artists name="Queen" uri="spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"/>
-			<artists name="David Bowie" uri="spotify:artist:0oSGxfWSnnOXhD2fKuz2Gy"/>
-			<album name="Hot Space (2011 Remaster)" uri="spotify:album:6reTSIf5MoBco62rk8T7Q1"/>
-		</track>
-		<track name="Radio Ga Ga - Remastered 2011" duration_ms="348226" uri="spotify:track:1nQRg9q9uwALGzouOX5OyQ">
-			<artists name="Queen" uri="spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"/>
-			<album name="The Works (2011 Remaster)" uri="spotify:album:5RS9xkMuDmeVISqGDBmnSa"/>
-		</track>
-		<track name="I Want To Break Free - Single Remix" duration_ms="258013" uri="spotify:track:2AkmdLbVKS1steeZdy8H1l">
-			<artists name="Queen" uri="spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"/>
-			<album name="The Works (Deluxe Edition 2011 Remaster)" uri="spotify:album:61foK8xa76FEOk36uOxoc9"/>
-		</track>
-		<track name="Into the Groove" duration_ms="285093" uri="spotify:track:2m0M7YqCy4lXfedh18qd8N">
-			<artists name="Madonna" uri="spotify:artist:6tbjWDEIzxoDsBA1FuhfPW"/>
-			<album name="Celebration (double disc version)" uri="spotify:album:43lok9zd7BW5CoYkXZs7S0"/>
-		</track>
-		<track name="Rush Rush" duration_ms="292933" uri="spotify:track:015qd1I4v00JIoK7yOUgKC">
-			<artists name="Paula Abdul" uri="spotify:artist:4PpmBoqphQusNFsxuVKb6j"/>
-			<album name="Spellbound" uri="spotify:album:6gHhunUztPgpyBmzeie6MH"/>
-		</track>
-		<track name="Straight Up" duration_ms="251466" uri="spotify:track:5xl5582IihbEZAnfj0xyso">
-			<artists name="Paula Abdul" uri="spotify:artist:4PpmBoqphQusNFsxuVKb6j"/>
-			<album name="Forever Your Girl" uri="spotify:album:7zduRJgS6v79QmNUhKGozu"/>
-		</track>
-		<track name="Cold Hearted" duration_ms="231400" uri="spotify:track:6jrp8qBMJO6vhAeYVAsdk9">
-			<artists name="Paula Abdul" uri="spotify:artist:4PpmBoqphQusNFsxuVKb6j"/>
-			<album name="Forever Your Girl" uri="spotify:album:7zduRJgS6v79QmNUhKGozu"/>
-		</track>
-		<track name="Clint Eastwood" duration_ms="340920" uri="spotify:track:1RKUoGiLEbcXN4GY4spQDx">
-			<artists name="Gorillaz" uri="spotify:artist:3AA28KZvwAUcZuOKwyblJQ"/>
-			<album name="Gorillaz" uri="spotify:album:4tUxQkrduOE8sfgwJ5BI2F"/>
-		</track>
-		<track name="Motownphilly" duration_ms="235226" uri="spotify:track:4LxIGAVfcQIw0zAQRyFhU8">
-			<artists name="Boyz II Men" uri="spotify:artist:6O74knDqdv3XaWtkII7Xjp"/>
-			<album name="Cooleyhighharmony (Bonus Tracks Version)" uri="spotify:album:3jknvlUSe6D9Oyn2E3JBLO"/>
-		</track>
-		<track name="The Chamber" duration_ms="297320" uri="spotify:track:2wBW9jGZRRMbQ416NDc7LW">
-			<artists name="Lenny Kravitz" uri="spotify:artist:5gznATMVO85ZcLTkE9ULU7"/>
-			<album name="Strut" uri="spotify:album:03vJ0BcslLb4fKyBYN78Gy"/>
-		</track>
-		<track name="One More" duration_ms="208221" uri="spotify:track:4nnKErDH3XokK9cG2tMs6a">
-			<artists name="Elliphant" uri="spotify:artist:134GdR5tUtxJrf8cpsfpyY"/>
-			<artists name="MO" uri="spotify:artist:19ljcscFgVcdmlNNTYnejw"/>
-			<album name="One More" uri="spotify:album:3T63sUIqazFcBbodR7xe10"/>
-		</track>
-		<track name="Creep" duration_ms="268533" uri="spotify:track:1aWV3uY3SIEZVbmv45oFWS">
-			<artists name="TLC" uri="spotify:artist:0TImkz4nPqjegtVSMZnMRq"/>
-			<album name="Crazysexycool" uri="spotify:album:5eg56dCpFn32neJak2vk0f"/>
-		</track>
-		<track name="No Scrubs" duration_ms="214400" uri="spotify:track:1KGi9sZVMeszgZOWivFpxs">
-			<artists name="TLC" uri="spotify:artist:0TImkz4nPqjegtVSMZnMRq"/>
-			<album name="Fanmail" uri="spotify:album:1CvjjpvqVMoyprsf74bpYW"/>
-		</track>
-		<track name="Red Light Special" duration_ms="303960" uri="spotify:track:6dW75XbJ1WAMljOXWjTK46">
-			<artists name="TLC" uri="spotify:artist:0TImkz4nPqjegtVSMZnMRq"/>
-			<album name="Crazysexycool" uri="spotify:album:5eg56dCpFn32neJak2vk0f"/>
-		</track>
-		<track name="Diggin' On You" duration_ms="254560" uri="spotify:track:2W2vmNmTLERMWT9XBxm35E">
-			<artists name="TLC" uri="spotify:artist:0TImkz4nPqjegtVSMZnMRq"/>
-			<album name="Crazysexycool" uri="spotify:album:5eg56dCpFn32neJak2vk0f"/>
-		</track>
-		<track name="Waterfalls" duration_ms="279506" uri="spotify:track:6qspW4YKycviDFjHBOaqUY">
-			<artists name="TLC" uri="spotify:artist:0TImkz4nPqjegtVSMZnMRq"/>
-			<album name="Crazysexycool" uri="spotify:album:5eg56dCpFn32neJak2vk0f"/>
-		</track>
-		<track name="Every Little Thing" duration_ms="225680" uri="spotify:track:747Zu3dIc2iLzg0ZauUOO7">
-			<artists name="Dilba" uri="spotify:artist:7EIe1Y7mnJmzqQ3OzrDHWq"/>
-			<album name="Revolution" uri="spotify:album:6MpXazCWGzqGQiz8XfaghM"/>
-		</track>
-		<track name="She's A Lady" duration_ms="172466" uri="spotify:track:5QfQ5iROTerk3MZ5amX01z">
-			<artists name="Tom Jones" uri="spotify:artist:1T0wRBO0CK0vK8ouUMqEl5"/>
-			<album name="The Complete Decca Studio Albums Collection" uri="spotify:album:3WPr3e2yvKTjNS2JJi4tGk"/>
-		</track>
-		<track name="Humpin' Around - Radio Edit" duration_ms="322000" uri="spotify:track:3FsPxHAATCITLHZZVIa7Us">
-			<artists name="Bobby Brown" uri="spotify:artist:62sPt3fswraiEPnKQpAbdE"/>
-			<album name="'90s Soul Number 1's" uri="spotify:album:4LbbUj2bytdZ1PWEs69QCn"/>
-		</track>
-		<track name="My Prerogative" duration_ms="288800" uri="spotify:track:0FjMLXne5a6RXzlZyl6ftr">
-			<artists name="Bobby Brown" uri="spotify:artist:62sPt3fswraiEPnKQpAbdE"/>
-			<album name="Don't Be Cruel" uri="spotify:album:4JYhOe7TlnOQkwWNAcCfPt"/>
-		</track>
-		<track name="Genie In a Bottle" duration_ms="217573" uri="spotify:track:11mwFrKvLXCbcVGNxffGyP">
-			<artists name="Christina Aguilera" uri="spotify:artist:1l7ZsJRRS8wlW3WfJfPfNS"/>
-			<album name="Christina Aguilera (Expanded Edition)" uri="spotify:album:6fpPZS13ImRVpr7Tqs6yP9"/>
-		</track>
-		<track name="Fighter" duration_ms="245960" uri="spotify:track:7nXq1vaZiz7PdbfojpPjW5">
-			<artists name="Christina Aguilera" uri="spotify:artist:1l7ZsJRRS8wlW3WfJfPfNS"/>
-			<album name="Stripped" uri="spotify:album:2USigX9DhGuAini71XZEEK"/>
-		</track>
-		<track name="Lady Marmalade - From &quot;Moulin Rouge&quot; Soundtrack" duration_ms="264893" uri="spotify:track:7GbqE3MlkKosIaCvf50JRK">
-			<artists name="Christina Aguilera" uri="spotify:artist:1l7ZsJRRS8wlW3WfJfPfNS"/>
-			<artists name="Lil' Kim" uri="spotify:artist:5tth2a3v0sWwV1C7bApBdX"/>
-			<artists name="Mýa" uri="spotify:artist:6lHL3ubAMgSasKjNqKb8HF"/>
-			<artists name="P!nk" uri="spotify:artist:1KCSPY1glIKqW2TotWuXOR"/>
-			<album name="Moulin Rouge" uri="spotify:album:5cbAqQZSEgRiiNjuEHWTXc"/>
-		</track>
-		<track name="Ain't No Other Man" duration_ms="228906" uri="spotify:track:7huo2wvrCgRucUsjdSDLQV">
-			<artists name="Christina Aguilera" uri="spotify:artist:1l7ZsJRRS8wlW3WfJfPfNS"/>
-			<album name="Back To Basics" uri="spotify:album:0zRJsgzHZUUdk8Rjk6Segd"/>
-		</track>
-		<track name="Dirrty (feat. Redman)" duration_ms="298853" uri="spotify:track:59ZTxQo8rBycIXPLUIKvE2">
-			<artists name="Christina Aguilera" uri="spotify:artist:1l7ZsJRRS8wlW3WfJfPfNS"/>
-			<artists name="Redman" uri="spotify:artist:7xTKLpo7UCzXSnlH7fOIoM"/>
-			<album name="Stripped" uri="spotify:album:2USigX9DhGuAini71XZEEK"/>
-		</track>
-		<track name="What a Girl Wants" duration_ms="215800" uri="spotify:track:5bGmuxShUba9maPswDnhCs">
-			<artists name="Christina Aguilera" uri="spotify:artist:1l7ZsJRRS8wlW3WfJfPfNS"/>
-			<album name="Christina Aguilera (Expanded Edition)" uri="spotify:album:6fpPZS13ImRVpr7Tqs6yP9"/>
-		</track>
-		<track name="All 4 Love" duration_ms="211493" uri="spotify:track:4XmsMIMjvDIFEjeY3ycMzW">
-			<artists name="Color Me Badd" uri="spotify:artist:1QtIfAa6y7w2JhxYJhYeUG"/>
-			<album name="C.M.B." uri="spotify:album:17mrdLXkhmlY36jRm9cUbw"/>
-		</track>
-		<track name="I Wanna Sex You Up - Single Mix" duration_ms="236946" uri="spotify:track:1kPBHRXyXdrtYfUfeRwBko">
-			<artists name="Color Me Badd" uri="spotify:artist:1QtIfAa6y7w2JhxYJhYeUG"/>
-			<album name="C.M.B." uri="spotify:album:17mrdLXkhmlY36jRm9cUbw"/>
-		</track>
-		<track name="Sunchyme" duration_ms="379200" uri="spotify:track:7bRFOn6x2XT1mPNuBL6DHs">
-			<artists name="Dario G" uri="spotify:artist:3Eo78i1MPfle0XVjMvia8A"/>
-			<album name="Sunmachine" uri="spotify:album:3g7HQDyHtfgIUf9qle9iFl"/>
-		</track>
-		<track name="Måndagsbarn" duration_ms="205546" uri="spotify:track:4MXHBiKcdqHBJ4PeHQJBHO">
-			<artists name="Veronica Maggio" uri="spotify:artist:2OIWxN9xUhgUHkeUCWCaNs"/>
-			<album name="Och vinnaren är..." uri="spotify:album:7K3z58HrZ2RJR2j82xWbsc"/>
-		</track>
-		<track name="Nöjd? - Radio Version" duration_ms="183600" uri="spotify:track:6bvNKLqRlzXrBxfjjETvD3">
-			<artists name="Veronica Maggio" uri="spotify:artist:2OIWxN9xUhgUHkeUCWCaNs"/>
-			<album name="Vatten och bröd" uri="spotify:album:3cj1E5Fhfjmj3nj6BIzrK2"/>
-		</track>
-		<track name="V för Vendetta" duration_ms="214960" uri="spotify:track:5F7bTcdeDDs4CA7R1eNWGL">
-			<artists name="Veronica Maggio" uri="spotify:artist:2OIWxN9xUhgUHkeUCWCaNs"/>
-			<album name="Och vinnaren är..." uri="spotify:album:7K3z58HrZ2RJR2j82xWbsc"/>
-		</track>
-		<track name="Stopp" duration_ms="186466" uri="spotify:track:6XJI8e062EqXIO4SMXkP83">
-			<artists name="Veronica Maggio" uri="spotify:artist:2OIWxN9xUhgUHkeUCWCaNs"/>
-			<album name="Och vinnaren är..." uri="spotify:album:7K3z58HrZ2RJR2j82xWbsc"/>
-		</track>
-		<track name="Wannabe" duration_ms="173026" uri="spotify:track:1Je1IMUlBXcx1Fz0WE7oPT">
-			<artists name="Spice Girls" uri="spotify:artist:0uq5PttqEjj3IH1bzwcrXF"/>
-			<album name="Spice" uri="spotify:album:3x2jF7blR6bFHtk4MccsyJ"/>
-		</track>
-		<track name="Spice Up Your Life" duration_ms="175813" uri="spotify:track:0Co5UMAXjlBvElEAtFegdt">
-			<artists name="Spice Girls" uri="spotify:artist:0uq5PttqEjj3IH1bzwcrXF"/>
-			<album name="Greatest Hits" uri="spotify:album:2XLpqfYjGTecYQJQU9wFxG"/>
-		</track>
-		<track name="Say You'll Be There" duration_ms="235973" uri="spotify:track:1yTQ39my3MoNROlFw3RDNy">
-			<artists name="Spice Girls" uri="spotify:artist:0uq5PttqEjj3IH1bzwcrXF"/>
-			<album name="Spice" uri="spotify:album:3x2jF7blR6bFHtk4MccsyJ"/>
-		</track>
-		<track name="Stop" duration_ms="204753" uri="spotify:track:3FteycP8CaXS1MhjcXekVT">
-			<artists name="Spice Girls" uri="spotify:artist:0uq5PttqEjj3IH1bzwcrXF"/>
-			<album name="Spiceworld" uri="spotify:album:3sr6lAuO3nmB1u8ZuQgpiX"/>
-		</track>
-		<track name="Who Do You Think You Are" duration_ms="240706" uri="spotify:track:1jI1aLmm5HTwiMtvsbwDJw">
-			<artists name="Spice Girls" uri="spotify:artist:0uq5PttqEjj3IH1bzwcrXF"/>
-			<album name="Spice" uri="spotify:album:3x2jF7blR6bFHtk4MccsyJ"/>
-		</track>
-		<track name="Viva Forever" duration_ms="310666" uri="spotify:track:6BPDPcnbDMDf58srVzbfX9">
-			<artists name="Spice Girls" uri="spotify:artist:0uq5PttqEjj3IH1bzwcrXF"/>
-			<album name="Spiceworld" uri="spotify:album:3sr6lAuO3nmB1u8ZuQgpiX"/>
-		</track>
-		<track name="Move Over" duration_ms="163760" uri="spotify:track:6hXb6O286px9J2Qyd5G3Nu">
-			<artists name="Spice Girls" uri="spotify:artist:0uq5PttqEjj3IH1bzwcrXF"/>
-			<album name="Greatest Hits" uri="spotify:album:2XLpqfYjGTecYQJQU9wFxG"/>
-		</track>
-		<track name="Spice Up Your Life" duration_ms="173666" uri="spotify:track:5qGwqO0lkbBXw4xNfzT7SF">
-			<artists name="Spice Girls" uri="spotify:artist:0uq5PttqEjj3IH1bzwcrXF"/>
-			<album name="Spiceworld" uri="spotify:album:3sr6lAuO3nmB1u8ZuQgpiX"/>
-		</track>
-		<track name="Holler" duration_ms="236586" uri="spotify:track:36dQazx2WAniLorlTihOtW">
-			<artists name="Spice Girls" uri="spotify:artist:0uq5PttqEjj3IH1bzwcrXF"/>
-			<album name="Greatest Hits" uri="spotify:album:2XLpqfYjGTecYQJQU9wFxG"/>
-		</track>
-		<track name="Mi chico latino" duration_ms="193466" uri="spotify:track:3Qu88IYwuDpUQNi6UwJsDz">
-			<artists name="Geri Halliwell" uri="spotify:artist:5orH1OWgjAYUX8sZ5gihTv"/>
-			<album name="Schizophonic" uri="spotify:album:7r14xPWDHH2ao9gLrDxHMd"/>
-		</track>
-		<track name="Look at Me" duration_ms="272160" uri="spotify:track:7jsYlbbaAzP2VHkLGlfn6r">
-			<artists name="Geri Halliwell" uri="spotify:artist:5orH1OWgjAYUX8sZ5gihTv"/>
-			<album name="Schizophonic" uri="spotify:album:7r14xPWDHH2ao9gLrDxHMd"/>
-		</track>
-		<track name="Never Be The Same Again" duration_ms="294200" uri="spotify:track:79EAVfOpzgfHx3IE2BVFQv">
-			<artists name="Melanie C" uri="spotify:artist:60vX3zLcdKRXvKLITVh5Df"/>
-			<artists name="Lisa &quot;Left Eye&quot; Lopes" uri="spotify:artist:64ccradw8gAQn9gMQZmEha"/>
-			<album name="Northern Star" uri="spotify:album:6TjfhQSmmBOEwIXkoT3fdZ"/>
-		</track>
-		<track name="I Turn To You" duration_ms="352173" uri="spotify:track:1Le4SDanBrX8OtmnnyTNrh">
-			<artists name="Melanie C" uri="spotify:artist:60vX3zLcdKRXvKLITVh5Df"/>
-			<album name="Northern Star" uri="spotify:album:6TjfhQSmmBOEwIXkoT3fdZ"/>
-		</track>
-		<track name="Ooh Wee (feat. Ghostface Killah, Nate Dogg, Trife &amp; Saigon)" duration_ms="209626" uri="spotify:track:4WimB4Ei0LU3MotHhL3kBL">
-			<artists name="Mark Ronson" uri="spotify:artist:3hv9jJF3adDNsBSIQDqcjp"/>
-			<artists name="Ghostface Killah" uri="spotify:artist:6FD0unjzGQhX3b6eMccMJe"/>
-			<artists name="Nate Dogg" uri="spotify:artist:1Oa0bMld0A3u5OTYfMzp5h"/>
-			<artists name="Trife" uri="spotify:artist:3wPM3fbGYp56vzXMId27qs"/>
-			<artists name="Saigon" uri="spotify:artist:0mTfntDCCWRozUnyxpGf6E"/>
-			<album name="Here Comes The Fuzz" uri="spotify:album:62Qu5QoNx3De0p5qQT0u7o"/>
-		</track>
-		<track name="Give It To Me (Feat Nelly Furtado &amp; Justin Timberlake)" duration_ms="234000" uri="spotify:local:Timbaland:Present+Shock+Value+%28Deluxe+Edition%29:Give+It+To+Me+%28Feat+Nelly+Furtado+%26+Justin+Timberlake%29:234">
-			<artists name="Timbaland" uri="null"/>
-			<album name="Present Shock Value (Deluxe Edition)" uri="null"/>
-		</track>
-		<track name="Chase the Sun" duration_ms="233040" uri="spotify:track:2mkBHN67xLpHrpqOuj79Yz">
-			<artists name="Planet Funk" uri="spotify:artist:4c4Ce4N4vJOs3Tzee020S4"/>
-			<album name="Non Zero Sumness Plus One" uri="spotify:album:4DcIgdBbqm0Fqhmh5RcoCD"/>
-		</track>
-		<track name="Theme from S-Express" duration_ms="234080" uri="spotify:track:1ZT36B4fO2R7rBCGRb3XIM">
-			<artists name="S'Express" uri="spotify:artist:2PvqyOwynRF4BveaU6IA7S"/>
-			<album name="The Definitive 80's (eighties)" uri="spotify:album:0H8w0t8lsZiSTVA3yORSVP"/>
-		</track>
-		<track name="U Can't Touch This" duration_ms="257360" uri="spotify:track:1B75hgRqe7A4fwee3g3Wmu">
-			<artists name="MC Hammer" uri="spotify:artist:2rblp9fJo16ZPTcKDtlmKW"/>
-			<album name="Please Hammer Don't Hurt 'Em" uri="spotify:album:4r1WecJyt5FOhglysp9zhN"/>
-		</track>
-		<track name="Intergalactic - Remastered" duration_ms="231493" uri="spotify:track:5fpizYGbi5IQoEraj6FP0R">
-			<artists name="Beastie Boys" uri="spotify:artist:03r4iKL2g2442PT9n2UKsx"/>
-			<album name="Hello Nasty (Deluxe Version/Remastered 2009)" uri="spotify:album:6eGYLONkDMja0MNtZWnRRB"/>
-		</track>
-		<track name="Sabotage" duration_ms="178440" uri="spotify:track:0Puj4YlTm6xNzDDADXHMI9">
-			<artists name="Beastie Boys" uri="spotify:artist:03r4iKL2g2442PT9n2UKsx"/>
-			<album name="Ill Communication" uri="spotify:album:6lfjbwFGzQ6aSNP1N3JlT8"/>
-		</track>
-		<track name="Fight For Your Right" duration_ms="208653" uri="spotify:track:5NLuC70kZQv8q34QyQa1DP">
-			<artists name="Beastie Boys" uri="spotify:artist:03r4iKL2g2442PT9n2UKsx"/>
-			<album name="Licensed To Ill" uri="spotify:album:11oR0ZuqB3ucZwb5TGbZxb"/>
-		</track>
-		<track name="Shoop" duration_ms="248573" uri="spotify:track:0Pu71wxadDlB8fJXfjIjeJ">
-			<artists name="Salt-N-Pepa" uri="spotify:artist:7wqtxqI3eo7Gn1P7SpP6cQ"/>
-			<album name="Very Necessary" uri="spotify:album:2W2EmEpud13QHlhCFS9P8g"/>
-		</track>
-		<track name="Push It" duration_ms="272133" uri="spotify:track:6sT9MWlJManry3EQwf4V80">
-			<artists name="Salt-N-Pepa" uri="spotify:artist:7wqtxqI3eo7Gn1P7SpP6cQ"/>
-			<album name="Hot, Cool &amp; Vicious" uri="spotify:album:5QFYPgLGw6DYz8S3TrLM2d"/>
-		</track>
-		<track name="Whatta Man" duration_ms="308360" uri="spotify:track:7sJN693sYKEIEMu7fc5VnJ">
-			<artists name="Salt-N-Pepa" uri="spotify:artist:7wqtxqI3eo7Gn1P7SpP6cQ"/>
-			<artists name="En Vogue" uri="spotify:artist:5fikk4h5qbEebqK2Fc6e48"/>
-			<album name="Very Necessary" uri="spotify:album:2W2EmEpud13QHlhCFS9P8g"/>
-		</track>
-		<track name="Aicha" duration_ms="275680" uri="spotify:track:7mze3mJmu79AJu8SnS37pS">
-			<artists name="Outlandish" uri="spotify:artist:5tqMW5dSAlvh0GvgD3XfDy"/>
-			<artists name="Isam Bachiri" uri="spotify:artist:31aoUeWDfZNAfgdDmGFCgw"/>
-			<artists name="Waqas Qadri" uri="spotify:artist:689gVHpG7iFqqN8Su9k1lF"/>
-			<artists name="Lenny Martinez" uri="spotify:artist:07CyZVvGY4aiBrf14etUAC"/>
-			<album name="Bread &amp; Barrels Of Water" uri="spotify:album:23KueVfptj2FK6Wk5ZMKPk"/>
-		</track>
-		<track name="Walou" duration_ms="234600" uri="spotify:track:1tLRQ2BjSoSpEkq3EOQyuD">
-			<artists name="Outlandish" uri="spotify:artist:5tqMW5dSAlvh0GvgD3XfDy"/>
-			<artists name="Isam Bachiri" uri="spotify:artist:31aoUeWDfZNAfgdDmGFCgw"/>
-			<artists name="Waqas Qadri" uri="spotify:artist:689gVHpG7iFqqN8Su9k1lF"/>
-			<artists name="Lenny Martinez" uri="spotify:artist:07CyZVvGY4aiBrf14etUAC"/>
-			<album name="Bread &amp; Barrels Of Water" uri="spotify:album:23KueVfptj2FK6Wk5ZMKPk"/>
-		</track>
-		<track name="Choose Life" duration_ms="231466" uri="spotify:track:3ieiClXnS99ctYrUSeZPGu">
-			<artists name="PF Project" uri="spotify:artist:4Je0lOFAaFI0xXIddnctaj"/>
-			<artists name="Ewan McGregor" uri="spotify:artist:105Paee9vmV5rfLSG652e1"/>
-			<album name="Choose Life" uri="spotify:album:5lyr6aF1azrH77MAkWrO6o"/>
-		</track>
-		<track name="Smalltown Boy" duration_ms="302413" uri="spotify:track:5vmRQ3zELMLUQPo2FLQ76x">
-			<artists name="Bronski Beat" uri="spotify:artist:2wpWOzQE5TpA0dVnh5YD08"/>
-			<album name="The Age of Consent" uri="spotify:album:6OMYQUITdN6wBaWfEtgooI"/>
-		</track>
-		<track name="Don't Worry Be Happy" duration_ms="292400" uri="spotify:track:5YbgcwHjQhdT1BYQ4rxWlD">
-			<artists name="Bobby McFerrin" uri="spotify:artist:2FjkZT851ez950cyPjeYid"/>
-			<album name="The Collection" uri="spotify:album:5QXK9xXDSYvSOXYSJHdwOD"/>
-		</track>
-		<track name="Everybody Wants To Rule The World" duration_ms="251488" uri="spotify:track:4RvWPyQ5RL0ao9LPZeSouE">
-			<artists name="Tears For Fears" uri="spotify:artist:4bthk9UfsYUYdcFyqxmSUU"/>
-			<album name="Songs From The Big Chair (Super Deluxe Edition)" uri="spotify:album:3myPwaMYjdwhtq0nFgeG6W"/>
-		</track>
-		<track name="Big in Japan - 2019 Remaster" duration_ms="284625" uri="spotify:track:7wnagOAqma4Sg6JOGjWr5R">
-			<artists name="Alphaville" uri="spotify:artist:0xliTEbFfy5HQHvsTknTkX"/>
-			<album name="Forever Young (Super Deluxe Edition; 2019 Remaster)" uri="spotify:album:1BAmE3bdBnxej0umzyHQ5x"/>
-		</track>
-		<track name="I'm Too Sexy" duration_ms="170466" uri="spotify:track:2WElktskrNJEwgpp5Vouxk">
-			<artists name="Right Said Fred" uri="spotify:artist:15ajdFAi5bjj5pS9laBfBL"/>
-			<album name="Up" uri="spotify:album:1qgGxfnTXeBOkBNnLzDi36"/>
-		</track>
-		<track name="Missing - Todd Terry Club Mix / US Radio Edit" duration_ms="249533" uri="spotify:track:36sL3KPEfXIp5KH3tDO7oo">
-			<artists name="Everything But The Girl" uri="spotify:artist:13ccXrK7AmXb4TddMkE7jy"/>
-			<artists name="Todd Terry" uri="spotify:artist:3dE92yGWcrboP1kC5SWyqu"/>
-			<album name="Amplified Heart" uri="spotify:album:6ZMxoed3JJVjSzDQ2iVeYN"/>
-		</track>
-		<track name="Pump Up The Jam - Edit" duration_ms="215040" uri="spotify:track:0UAEHlFR79k9CJvknSGUNf">
-			<artists name="Technotronic" uri="spotify:artist:2Cd98zHVdZeOCisc6Gi2sB"/>
-			<artists name="Felly" uri="spotify:artist:1pvibpCqTQG4mnbZ7vVSDj"/>
-			<album name="Best Of" uri="spotify:album:5uuAdNhG4ruMYRFPVCW8gL"/>
-		</track>
-		<track name="Yeah! (feat. Lil Jon &amp; Ludacris)" duration_ms="250373" uri="spotify:track:5rb9QrpfcKFHM1EUbSIurX">
-			<artists name="Usher" uri="spotify:artist:23zg3TcAtWQy7J6upgbUnj"/>
-			<artists name="Lil Jon" uri="spotify:artist:7sfl4Xt5KmfyDs2T3SVSMK"/>
-			<artists name="Ludacris" uri="spotify:artist:3ipn9JLAPI5GUEo4y4jcoi"/>
-			<album name="Confessions (Expanded Edition)" uri="spotify:album:1RM6MGv6bcl6NrAG8PGoZk"/>
-		</track>
-		<track name="Sugar Town" duration_ms="340933" uri="spotify:track:0vT1Q3qFCQgJcyLsFuK60O">
-			<artists name="M People" uri="spotify:artist:3lcbKPLl0ci2mKRdcP5Etf"/>
-			<album name="Bizarre Fruit" uri="spotify:album:0RUjiRi4UXzRUdTq1ANou7"/>
-		</track>
-		<track name="Do You See the Light? (Looking For) [feat. Niki Haris] - 7&quot; Edit" duration_ms="254791" uri="spotify:track:1ClsTc9ppIu8aU3KaGAB0g">
-			<artists name="SNAP!" uri="spotify:artist:2FrKQPjJe4pVMZOgm0ESOx"/>
-			<artists name="Niki Haris" uri="spotify:artist:6AKDBd8dDnM715jeUivRm1"/>
-			<album name="SNAP! The Power Greatest Hits" uri="spotify:album:0f7ZSi2EcurDJU0UeKFjuZ"/>
-		</track>
-		<track name="Time Is Now" duration_ms="222226" uri="spotify:track:7xG0XZhUxTu6Axewwq0jfN">
-			<artists name="Moloko" uri="spotify:artist:4aaBjq7VqqQvpSF69GglvO"/>
-			<album name="Catalogue" uri="spotify:album:5sCp2ukwrtpYj5wGfMx78M"/>
-		</track>
-		<track name="Who Let The Dogs Out" duration_ms="198400" uri="spotify:track:1H5tvpoApNDxvxDexoaAUo">
-			<artists name="Baha Men" uri="spotify:artist:67FFKYikvTlvsPNk4NPOYJ"/>
-			<album name="Who Let The Dogs Out" uri="spotify:album:44UH34qoCNNfEqo0VnOkGd"/>
-		</track>
-		<track name="Mr. Vain - Original Radio Edit" duration_ms="257466" uri="spotify:track:4ih3dyFZoeTdaeJW9mPbOI">
-			<artists name="Culture Beat" uri="spotify:artist:0BZ3BHzfYwpd3k5TDnvAz8"/>
-			<album name="Mr. Vain" uri="spotify:album:0eVj6uUqoagjDPSOmz2rRj"/>
-		</track>
-		<track name="What Is Love - 7&quot; Mix" duration_ms="270373" uri="spotify:track:2IHaGyfxNoFPLJnaEg4GTs">
-			<artists name="Haddaway" uri="spotify:artist:0Suv0tRrNrUlRzAy8aXjma"/>
-			<album name="The Album" uri="spotify:album:1LAx7yCVbGwskdnGDof8SC"/>
-		</track>
-	</Playlist>
 
 	<SearchArtists total="1046" next="https://api.spotify.com/v1/search?query=holiday&amp;type=artist&amp;market=SE&amp;offset=25&amp;limit=25">
 		<artist name="Holidays" uri="spotify:artist:6IxjXsaqZ81Fi1HiwRq4LS" image="https://i.scdn.co/image/967c323dd3753e6f6919b9195656a69490ee9ce6"/>

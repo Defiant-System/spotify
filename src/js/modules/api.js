@@ -4,23 +4,12 @@
 {
 	apiUrl: "https://api.spotify.com/v1",
 	requests: [
-		{ url: "~/api-data/playlists.json",               type: "parse-playlists" },
-		{ url: "~/api-data/artist.json",                  type: "parse-show-artist" },
-		{ url: "~/api-data/artist-related.json",          type: "parse-show-artist-related" },
-		{ url: "~/api-data/artist-albums.json",           type: "parse-show-artist-albums" },
-		{ url: "~/api-data/artist-appears-on.json",       type: "parse-show-artist-appears-on" },
-		{ url: "~/api-data/artist-top-tracks.json",       type: "parse-show-artist-top-tracks" },
 		{ url: "~/api-data/album.json",                   type: "parse-album" },
 		{ url: "~/api-data/compilation.json",             type: "parse-show-compilation" },
-		{ url: "~/api-data/playlist.json",                type: "parse-playlist" },
 		{ url: "~/api-data/search-artists.json",          type: "parse-search-artists" },
 		{ url: "~/api-data/search-albums.json",           type: "parse-search-albums" },
 		{ url: "~/api-data/search-tracks.json",           type: "parse-search-tracks" },
 		{ url: "~/api-data/search-playlists.json",        type: "parse-search-playlists" },
-		{ url: "~/api-data/home-featured-playlists.json", type: "parse-home-featured" },
-		{ url: "~/api-data/home-recently-played.json",    type: "parse-home-history" },
-		{ url: "~/api-data/home-favorites.json",          type: "parse-home-favorites" },
-		{ url: "~/api-data/home-categories.json",         type: "parse-home-browse" },
 		{ url: "~/api-data/home-category-playlists.json", type: "parse-show-category-playlists" },
 	],
 	init() {
@@ -32,11 +21,13 @@
 		let Self = this,
 			record = window.bluePrint.selectSingleNode(`//Records/*[@name="${type}"]`),
 			xDoc = window.bluePrint.selectSingleNode(record.getAttribute("match")),
+			fields = record.getAttribute("fields"),
 			url = this.apiUrl + record.getAttribute("url"),
 			headers = { Authorization: "Bearer "+ Auth.access_token };
 
 		// add params if needed
 		url = url.replace(/\{.+?\}/g, match => params[match.slice(1,-1)]);
+		if (fields) url+= "&fields="+ fields.replace(/,/g, "%2C");
 
 		if (xDoc.hasChildNodes()) {
 			return Promise.resolve(() => xDoc);
@@ -190,7 +181,7 @@
 				break;
 			case "parse-show-category":
 				let catId = data.id,
-					catName = data.name,
+					catName = data.name.escapeHtml(),
 					catImage = Self.getImage(data.icons);
 				// make XML of entries
 				res = $.xmlFromString(`<Category id="${catId}" name="${catName}" image="${catImage}"/>`);
@@ -290,7 +281,7 @@
 				// make XML of entries
 				res = $.xmlFromString(`<ArtistTopTracks>${nodes.join("")}</ArtistTopTracks>`);
 				break;
-			case "parse-playlist":
+			case "parse-show-playlist":
 				data.tracks.items.map(entry => {
 					let name = entry.track.name.escapeHtml(),
 						uri = entry.track.uri,
@@ -310,7 +301,7 @@
 									<album name="${album_name}" uri="${album_uri}"/>
 								</track>`);
 				});
-				let plName = data.name,
+				let plName = data.name.escapeHtml(),
 					plOwner = data.owner.display_name,
 					plImage = Self.getImage(data.images);
 				// make XML of entries
@@ -338,7 +329,7 @@
 									<album name="${album_name}" uri="${album_uri}"/>
 								</track>`);
 				});
-				let cName = data.name,
+				let cName = data.name.escapeHtml(),
 					cOwner = data.owner.display_name,
 					cImage = Self.getImage(data.images);
 				// make XML of entries
@@ -381,11 +372,12 @@
 				// make XML of entries
 				res = $.xmlFromString(`<Artist name="${arName}" uri="${arUri}" image="${arImage}">${nodes.join("")}</Artist>`);
 				break;
-			case "parse-playlists":
+			case "parse-get-my-playlists":
 				data.items.map(playlist => {
 					let name = playlist.name.escapeHtml(),
+						total = playlist.tracks.total,
 						uri = playlist.uri;
-					nodes.push(`<playlist name="${name}" uri="${uri}"/>`);
+					nodes.push(`<playlist name="${name}" total="${total}" uri="${uri}"/>`);
 				});
 				// make XML of entries
 				res = $.xmlFromString(`<Playlists>${nodes.join("")}</Playlists>`);

@@ -64,13 +64,17 @@
 			case "spotify-authorized":
 				// enable app UI
 				APP.els.body.removeClass("not-logged-in");
+				// load my playlists
+				APP.panel.dispatch({ type: "get-my-playlists" });
 				// connect api player
 				Player.init();
 				// home view
 				window.find(`.top span[data-click="go-home"]`).trigger("click");
 				// first active tab in home view
-				setTimeout(() =>
-					window.find(".tabs [data-type='home-browse']").trigger("click"), 100);
+				// setTimeout(() => window.find(".tabs [data-type='home-browse']").trigger("click"), 100);
+				
+				// temp
+				setTimeout(() => window.find(".ctrl-library").trigger("click"), 500);
 				break;
 
 			// navigation events
@@ -190,17 +194,21 @@
 				break;
 			case "show-playlist":
 			case "show-featured":
-				Self.dispatch({ type: "go-to", view: event.type });
+				id = event.uri.split(":");
+				APP.api.requestData(event.type, { id: id[id.length-1], market: "SE" })
+					.then(data => {
+						Self.dispatch({ type: "go-to", view: event.type });
+						// remove children after view render
+						while (data.hasChildNodes()) {
+							data.removeChild(data.firstChild);
+						}
+					});
 				break;
 			// tabs
 			case "home-browse":
 			case "home-featured":
 			case "home-favorites":
 			case "home-history":
-			case "search-tracks":
-			case "search-artists":
-			case "search-albums":
-			case "search-playlists":
 				APP.api.requestData(event.type)
 					.then(data => {
 						// save scrollTop of elements
@@ -217,6 +225,11 @@
 						// update view state
 						Self.setViewState();
 					});
+				break;
+			case "search-tracks":
+			case "search-artists":
+			case "search-albums":
+			case "search-playlists":
 				break;
 			// misc events
 			case "set-title":

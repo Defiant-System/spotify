@@ -38,11 +38,6 @@ const spotify = {
 			// login view
 			this.content.dispatch({ type: "show-login" });
 		}
-
-		// temp
-		// setTimeout(() => window.find(".ctrl-library").trigger("click"), 100);
-		// setTimeout(() => spotify.content.dispatch({ type: "show-artist" }), 100);
-		// setTimeout(() => window.find(".tabs [data-type='home-favorites']").trigger("click"), 500);
 	},
 	dispatch(event) {
 		let Self = spotify,

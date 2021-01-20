@@ -84,6 +84,7 @@
 		<ul data-click="select-playlist">
 			<xsl:for-each select="./playlist">
 				<li class="item">
+					<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
 					<h5><xsl:value-of select="@name"/></h5>
 				</li>
 			</xsl:for-each>
