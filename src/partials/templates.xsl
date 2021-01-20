@@ -346,7 +346,7 @@
 				<div class="info">
 					<span>
 						Album by 
-						<span>
+						<span data-click="show-artist">
 							<xsl:attribute name="data-uri"><xsl:value-of select="@artist_uri"/></xsl:attribute>
 							<xsl:value-of select="@artist_name"/>
 						</span>

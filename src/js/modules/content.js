@@ -161,7 +161,8 @@
 					});
 				break;
 			case "show-artist":
-				id = event.uri.split(":");
+				uri = event.uri || event.el.data("uri");
+				id = uri.split(":");
 				APP.api.requestData(event.type, { artistId: id[id.length-1] })
 					.then(data => {
 						Self.dispatch({ type: "go-to", view: event.type });

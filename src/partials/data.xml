@@ -42,21 +42,6 @@
 	<Playlist />
 	<Album />
 
-	<!-- <Album name="Deep Down &amp; Dirty" release_date="2001-01-01" image="https://i.scdn.co/image/ab67616d00001e02e8c0eca5da75269b2d229116" artist_name="Stereo MC's" artist_uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8">
-		<track name="Deep Down &amp; Dirty - Original Version" duration_ms="261399" uri="spotify:track:16WyvPp6nfgSYgJWPrlXM5"/>
-		<track name="We Belong In This World Together" duration_ms="279040" uri="spotify:track:1TKdwordQKlZalI2ESv1St"/>
-		<track name="Breeze" duration_ms="265933" uri="spotify:track:3HB0sDUD3fZaCRjxEKlwMq"/>
-		<track name="Running" duration_ms="293800" uri="spotify:track:1SSaGZeeQzUdFwCYQJyl7h"/>
-		<track name="Graffiti - Pt. 1" duration_ms="154466" uri="spotify:track:65XGZ9EfS121FjuIKIUKPR"/>
-		<track name="Graffiti - Pt. 2" duration_ms="169493" uri="spotify:track:5xs1Is4ObVZd3hmxk8336q"/>
-		<track name="Sofisticated" duration_ms="254733" uri="spotify:track:7DUteeNU9KwbyBHGyhGOUJ"/>
-		<track name="Traffic" duration_ms="315600" uri="spotify:track:02I0QezAPPO9Q9i1or053S"/>
-		<track name="The Right Effect" duration_ms="280906" uri="spotify:track:4Mo94v268UDbjG9QLGTWBb"/>
-		<track name="Stop At Nothing" duration_ms="241760" uri="spotify:track:59nPyncSoJ0wVkvwqSRVxJ"/>
-		<track name="Unconscious" duration_ms="245533" uri="spotify:track:2nn5oxWxi70dY78vNcpB5t"/>
-		<track name="Shameless" duration_ms="293293" uri="spotify:track:2snvxQ3MoCphseaTuBlg3P"/>
-	</Album> -->
-
 	<Playlists total="38">
 		<playlist tracks="18" name="Reggae" uri="spotify:playlist:0YBFjxvkLsknyCgRA5okUB"/>
 		<playlist tracks="183" name="70s, 80s" uri="spotify:playlist:1EV7WsOrLMPAEleP87ymge"/>
