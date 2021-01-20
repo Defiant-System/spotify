@@ -235,14 +235,16 @@
 		</div>
 
 		<div class="tabs" data-click="select-tab">
-			<span data-type="search-tracks">Tracks</span>
+			<span data-type="search-tracks" class="active">Tracks</span>
 			<span data-type="search-artists">Artists</span>
 			<span data-type="search-albums">Albums</span>
 			<span data-type="search-playlists">Playlists</span>
 		</div>
 
 		<div class="view-body">
-			<xsl:call-template name="playlist"/>
+			<xsl:call-template name="spotify-loader">
+				<xsl:with-param name="isActive" select="1" />
+			</xsl:call-template>
 		</div>
 	</section>
 </xsl:template>

@@ -69,7 +69,7 @@
 				// connect api player
 				Player.init();
 				// home view
-				window.find(`.top span[data-click="go-home"]`).trigger("click");
+				window.find(`.top span[data-click="go-search"]`).trigger("click");
 				// first active tab in home view
 				// setTimeout(() => window.find(".tabs [data-type='home-browse']").trigger("click"), 100);
 				

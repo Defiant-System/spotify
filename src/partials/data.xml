@@ -8,7 +8,9 @@
 		<i name="home-featured" url="/browse/featured-playlists" match="//Featured" template="home-featured"/>
 		<i name="home-favorites" url="/me/top/tracks" match="//Favorites" template="playlist"/>
 		<i name="home-history" url="/me/player/recently-played" match="//Recently" template="playlist"/>
-		
+
+		<i name="search" match="//Search" template="search-view"/>
+
 		<i name="show-category" url="/browse/categories/{categoryId}" match="//Category" template="category-view"/>
 		<i name="show-category-playlists" url="/browse/categories/{categoryId}/playlists" match="//CategoryPlayLists" template="categories-view"/>
 		<i name="show-compilation" url="/playlists/{categoryId}" match="//CategoryPlayList" template="compilation-view"/>
@@ -26,6 +28,7 @@
 
 	<Login />
 	<Home />
+	<Search />
 	<Featured />
 	<!-- <Playlists /> -->
 	<Favorites />
