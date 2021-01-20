@@ -2,20 +2,9 @@
 // spotify.api
 
 {
-	apiUrl: "https://api.spotify.com/v1",
-	requests: [
-		{ url: "~/api-data/album.json",                   type: "parse-album" },
-		{ url: "~/api-data/compilation.json",             type: "parse-show-compilation" },
-		{ url: "~/api-data/search-artists.json",          type: "parse-search-artists" },
-		{ url: "~/api-data/search-albums.json",           type: "parse-search-albums" },
-		{ url: "~/api-data/search-tracks.json",           type: "parse-search-tracks" },
-		{ url: "~/api-data/search-playlists.json",        type: "parse-search-playlists" },
-		{ url: "~/api-data/home-category-playlists.json", type: "parse-show-category-playlists" },
-	],
 	init() {
-		// let request = this.requests[0];
-		// window.fetch(request.url)
-		// 	.then(data => this.dispatch({ ...request, data }));
+		// fast references
+		this.apiUrl = "https://api.spotify.com/v1";
 	},
 	requestData(type, params) {
 		let Self = this,

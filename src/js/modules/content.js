@@ -2,15 +2,6 @@
 // spotify.content
 
 {
-	renders: {
-		"search":           { template: "search-view",  match: "//SearchTracks" },
-		"search-tracks":    { template: "playlist",     match: "//SearchTracks" },
-		"search-artists":   { template: "artists",      match: "//SearchArtists" },
-		"search-albums":    { template: "mixed-albums", match: "//SearchAlbums" },
-		"search-playlists": { template: "playlists",    match: "//SearchPlaylists" },
-		"show-artist":      { template: "artist-view",  match: "//Artist" },
-		"show-album":       { template: "album-view",   match: "//Album" },
-	},
 	init() {
 		// fast references
 		this.els = {
@@ -69,9 +60,10 @@
 				// connect api player
 				Player.init();
 				// home view
-				window.find(`.top span[data-click="go-search"]`).trigger("click");
+				window.find(`.top span[data-click="go-home"]`).trigger("click");
+				// window.find(`.top span[data-click="go-search"]`).trigger("click");
 				// first active tab in home view
-				// setTimeout(() => window.find(".tabs [data-type='home-browse']").trigger("click"), 100);
+				setTimeout(() => window.find(".tabs [data-type='home-browse']").trigger("click"), 100);
 				
 				// temp
 				// setTimeout(() => window.find(".ctrl-library").trigger("click"), 500);
@@ -233,6 +225,23 @@
 			case "search-artists":
 			case "search-albums":
 			case "search-playlists":
+				str = "stereo";
+				APP.api.requestData(event.type, { query: str, market: "SE" })
+					.then(data => {
+						// save scrollTop of elements
+						Self.dispatch({ type: "save-scroll-top", stamp: event.stamp });
+						
+						// render view contents
+						target = Self.els.body.find(".view-body");
+						render = Self.getRenderProperties(event.type);
+						// render area
+						window.render({ ...render, target });
+
+						// add state to history
+						Self.history.push({ type: event.type });
+						// update view state
+						Self.setViewState();
+					});
 				break;
 			// misc events
 			case "set-title":

@@ -38,6 +38,9 @@
 					view: event.type.split("-")[1],
 					stamp,
 				});
+
+				// temp
+				// APP.content.dispatch({ type: "search-tracks" });
 				break;
 			case "toggle-library":
 				el = Self.els.panel;
