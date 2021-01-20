@@ -233,6 +233,7 @@
 				<i class="icon-search"></i>
 			</div>
 			<input type="text" name="query" placeholder="Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+			<i class="icon-return"></i>
 		</div>
 
 		<div class="tabs" data-click="select-tab">

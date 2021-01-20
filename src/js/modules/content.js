@@ -243,6 +243,20 @@
 						Self.setViewState();
 					});
 				break;
+			case "init-search":
+				// empty search nodes
+				let nodes = ["SearchTracks", "SearchArtists", "SearchAlbums", "SearchPlaylists"];
+				nodes.map(item => {
+					let data = window.bluePrint.selectSingleNode(`//${item}`);
+					// remove children after view render
+					while (data.hasChildNodes()) {
+						data.removeChild(data.firstChild);
+					}
+				});
+				// forward event
+				type = Self.els.body.find(".tabs .active").data("type");
+				Self.dispatch({ type });
+				break;
 			case "search-tracks":
 			case "search-artists":
 			case "search-albums":
@@ -301,16 +315,17 @@
 				break;
 			// misc events
 			case "set-title":
-				// artist
-				Self.els.title.find(".artist-name").html(Player.playing.artistName.join(", "));
-				// track
-				Self.els.title.find(".track-name").html(Player.playing.trackName);
-				// track duration
-				let duration = event.playing.duration/1000,
-					minutes = parseInt(duration/60),
-					seconds = parseInt(duration%60).toString().padStart(2, "0");
-				APP.controls.els.timeTotal.html(`${minutes}:${seconds}`);
-
+				if (Player.playing) {
+					// artist
+					Self.els.title.find(".artist-name").html(Player.playing.artistName.join(", "));
+					// track
+					Self.els.title.find(".track-name").html(Player.playing.trackName);
+					// track duration
+					let duration = event.playing.duration/1000,
+						minutes = parseInt(duration/60),
+						seconds = parseInt(duration%60).toString().padStart(2, "0");
+					APP.controls.els.timeTotal.html(`${minutes}:${seconds}`);
+				}
 				// look for playing track uri - update UI, if found
 				Self.els.body.find(".row.track-playing, .row.active").removeClass("track-playing active");
 				Self.els.body.find(`.icon-player-play[data-uri="${Player.playing.trackUri}"]`)

@@ -34,15 +34,19 @@ const spotify = {
 	dispatch(event) {
 		let Self = spotify,
 			type,
+			isOn,
 			stamp,
 			old,
 			el;
 		switch (event.type) {
 			case "window.keystroke":
+				el = $(event.target);
+				// return pressable
+				isOn = el.val().length < 3;
+				el.parent().toggleClass("press-enter", isOn);
 				// assumes search input
-				if (event.keyCode === 13) {
-					type = Self.els.body.find(".tabs .active").data("type");
-					Self.content.dispatch({ type });
+				if (event.keyCode === 13 && isOn) {
+					Self.content.dispatch({ type: "init-search" });
 				}
 				break;
 			case "oauth-failure":

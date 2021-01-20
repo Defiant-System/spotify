@@ -141,6 +141,7 @@ i[class^="icon-"] {
 	&.icon-clock        { background-image: url(~/icons/icon-clock.png); }
 	&.icon-heart        { background-image: url(~/icons/icon-heart.png); }
 	&.icon-heart-full   { background-image: url(~/icons/icon-heart-full.png); }
+	&.icon-return       { background-image: url(~/icons/icon-return.png); }
 }
 
 layout {
@@ -1394,6 +1395,12 @@ div[data-area="panel"] {
 		padding: 19px 19px 29px;
 		white-space: nowrap;
 
+		&.press-enter {
+			.icon-return {
+				opacity: 1;
+			}
+		}
+
 		.search-icon {
 			position: absolute;
 			top: 20px;
@@ -1412,7 +1419,19 @@ div[data-area="panel"] {
 			}
 		}
 
+		.icon-return {
+			position: absolute;
+			top: 29px;
+			right: 35px;
+			width: 23px;
+			height: 23px;
+			z-index: 1;
+			opacity: 0;
+		}
+
 		input {
+			position: relative;
+			z-index: 2;
 			background: rgba(0,0,0,.15);
 			color: #eee;
 			height: auto;
