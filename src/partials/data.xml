@@ -4,7 +4,7 @@
 		<i name="get-my-playlists" url="/users/{username}/playlists?offset=0&amp;limit=50" match="//Playlists" template="my-playlists"/>
 
 		<i name="home" match="//Home" template="home-view"/>
-		<i name="home-browse" url="/browse/categories" match="//Categories" template="home-browse"/>
+		<i name="home-browse" url="/browse/categories?country={country}&amp;locale={locale}" match="//Categories" template="home-browse"/>
 		<i name="home-featured" url="/browse/featured-playlists" match="//Featured" template="home-featured"/>
 		<i name="home-favorites" url="/me/top/tracks" match="//Favorites" template="playlist"/>
 		<i name="home-history" url="/me/player/recently-played" match="//Recently" template="playlist"/>

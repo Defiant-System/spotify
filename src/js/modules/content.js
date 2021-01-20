@@ -214,13 +214,18 @@
 			case "home-featured":
 			case "home-favorites":
 			case "home-history":
-				APP.api.requestData(event.type)
+				target = Self.els.body.find(".view-body");
+				if (!target.find(".spotify-loader").length) {
+					// render loading animation
+					render = Self.getRenderProperties("loading");
+					window.render({ ...render, target });
+				}
+				APP.api.requestData(event.type, { country: "SE", locale: "sv_SE" })
 					.then(data => {
 						// save scrollTop of elements
 						Self.dispatch({ type: "save-scroll-top", stamp: event.stamp });
 						
 						// render view contents
-						target = Self.els.body.find(".view-body");
 						render = Self.getRenderProperties(event.type);
 						// render area
 						window.render({ ...render, target });
@@ -235,6 +240,12 @@
 			case "search-artists":
 			case "search-albums":
 			case "search-playlists":
+				target = Self.els.body.find(".view-body");
+				if (!target.find(".spotify-loader").length) {
+					// render loading animation
+					render = Self.getRenderProperties("loading");
+					window.render({ ...render, target });
+				}
 				str = "stereo";
 				APP.api.requestData(event.type, { query: str, market: "SE" })
 					.then(data => {
@@ -242,7 +253,6 @@
 						Self.dispatch({ type: "save-scroll-top", stamp: event.stamp });
 						
 						// render view contents
-						target = Self.els.body.find(".view-body");
 						render = Self.getRenderProperties(event.type);
 						// render area
 						window.render({ ...render, target });
