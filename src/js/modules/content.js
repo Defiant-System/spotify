@@ -158,7 +158,7 @@
 				render = Self.getRenderProperties("loading");
 				window.render({ ...render, target });
 				// get playlist data
-				id = event.target.parentNode.getAttribute("data-uri").split(":");
+				id = event.target.getAttribute("data-uri").split(":");
 				APP.api.requestData(event.type, { categoryId: id[id.length-1] })
 					.then(data => {
 						Self.dispatch({ type: "go-to", view: event.type });
