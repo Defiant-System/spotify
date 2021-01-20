@@ -24,7 +24,7 @@
 
 		return window.fetch(url, { headers })
 					.then(data => {
-						let doc = Self.dispatch({ type: "parse-"+ type, data });
+						let doc = Self.dispatch({ type: "parse-"+ type, data, params });
 						xDoc.parentNode.replaceChild(doc, xDoc);
 						return doc;
 					});
@@ -41,6 +41,20 @@
 			res,
 			str;
 		switch (event.type) {
+			case "parse-search-genre":
+				data.artists.items.map(artist => {
+					let name = artist.name.escapeHtml(),
+						image = Self.getImage(artist.images),
+						uri = artist.uri;
+					// prepare node
+					nodes.push(`<artist name="${name}" uri="${uri}" image="${image}"/>`);
+				});
+				// make XML of entries
+				let gName = event.params.id.escapeHtml();
+				res = $.xmlFromString(`<SearchGenreArtists genre="${gName}">${nodes.join("")}</SearchGenreArtists>`);
+				// change reference for total + next
+				data = data.artists;
+				break;
 			case "parse-search-artists":
 				data.artists.items.map(artist => {
 					let name = artist.name.escapeHtml(),

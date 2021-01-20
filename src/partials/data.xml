@@ -14,6 +14,7 @@
 		<i name="search-artists" url="/search?q={query}&amp;type=artist&amp;market={market}" match="//SearchArtists" template="artists"/>
 		<i name="search-albums" url="/search?q={query}&amp;type=album&amp;market={market}" match="//SearchAlbums" template="mixed-albums"/>
 		<i name="search-playlists" url="/search?q={query}&amp;type=playlist&amp;market={market}" match="//SearchPlaylists" template="playlists"/>
+		<i name="search-genre" url="/search?q=genre:{id}&amp;type=artist&amp;market={market}" match="//SearchGenreArtists" template="genre-view"/>
 
 		<i name="show-category" url="/browse/categories/{categoryId}" match="//Category" template="category-view"/>
 		<i name="show-category-playlists" url="/browse/categories/{categoryId}/playlists" match="//CategoryPlayLists" template="categories-view"/>
@@ -54,5 +55,6 @@
 	<SearchArtists />
 	<SearchAlbums />
 	<SearchPlaylists />
+	<SearchGenreArtists />
 
 </Data>

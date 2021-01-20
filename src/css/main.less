@@ -115,6 +115,7 @@ i[class^="icon-"] {
 	transition: opacity 200ms ease-in-out;
 
 	&.icon-home     { background-image: url(~/icons/icon-home.png); }
+	&.icon-genre    { background-image: url(~/icons/icon-genre.png); }
 	&.icon-browse   { background-image: url(~/icons/icon-browse.png); }
 	&.icon-radio    { background-image: url(~/icons/icon-radio.png); }
 	&.icon-queue    { background-image: url(~/icons/icon-queue.png); }
@@ -1188,12 +1189,15 @@ div[data-area="panel"] {
 	}
 }
 
+.genre,
 .home {
+	.genre-head,
 	.home-head {
 		height: 63px;
 		padding: 19px 19px 17px;
 		user-select: none;
 
+		.icon-genre,
 		.icon-home {
 			width: 29px;
 			height: 29px;
@@ -1217,6 +1221,10 @@ div[data-area="panel"] {
 		h2 {
 			padding-top: 3px;
 		}
+	}
+
+	&.genre .genre-head h2 {
+		text-transform: capitalize;
 	}
 	
 	.view-body {
@@ -1515,6 +1523,11 @@ div[data-area="panel"] {
 
 					&[data-click] {
 						cursor: pointer;
+
+						&:hover {
+							text-decoration: underline;
+							color: #eee;
+						}
 					}
 
 					span {
@@ -1598,6 +1611,15 @@ div[data-area="panel"] {
 
 				span {
 					font-size: 12px;
+
+					&[data-click] {
+						cursor: pointer;
+
+						&:hover {
+							text-decoration: underline;
+							color: #eee;
+						}
+					}
 
 					span {
 						color: #eee;

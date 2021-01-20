@@ -339,6 +339,19 @@
 </xsl:template>
 
 
+<xsl:template name="genre-view">
+	<section class="genre">
+		<div class="genre-head">
+			<i class="icon-genre"></i>
+			<h2>Genre: <xsl:value-of select="@genre"/></h2>
+		</div>
+		<div class="view-body">
+			<xsl:call-template name="artists"/>
+		</div>
+	</section>
+</xsl:template>
+
+
 <xsl:template name="album-view">
 	<section class="album">
 		<div class="album-head">
@@ -405,7 +418,9 @@
 				<xsl:value-of select="@name"/>
 				<div class="genre">
 					<xsl:for-each select="./genre">
-						<span><xsl:value-of select="@name"/></span>
+						<span data-click="search-genre">
+							<xsl:value-of select="@name"/>
+						</span>
 					</xsl:for-each>
 				</div>
 			</h2>

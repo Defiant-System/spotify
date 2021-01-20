@@ -243,6 +243,30 @@
 						Self.setViewState();
 					});
 				break;
+			case "search-genre":
+				id = event.id || event.el.html();
+				APP.api.requestData(event.type, { id, market: "SE" })
+					.then(data => {
+						// save scrollTop of elements
+						Self.dispatch({ type: "save-scroll-top", stamp: event.stamp });
+						
+						// render view contents
+						target = Self.els.body;
+						render = Self.getRenderProperties(event.type);
+						// render area
+						window.render({ ...render, target });
+						
+						// remove children after view render
+						while (data.hasChildNodes()) {
+							data.removeChild(data.firstChild);
+						}
+
+						// add state to history
+						Self.history.push({ type: event.type });
+						// update view state
+						Self.setViewState();
+					});
+				break;
 			// misc events
 			case "set-title":
 				// artist
