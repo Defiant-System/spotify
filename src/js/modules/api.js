@@ -281,6 +281,7 @@
 				// make XML of entries
 				res = $.xmlFromString(`<ArtistTopTracks>${nodes.join("")}</ArtistTopTracks>`);
 				break;
+			case "parse-show-featured":
 			case "parse-show-playlist":
 				data.tracks.items.map(entry => {
 					let name = entry.track.name.escapeHtml(),

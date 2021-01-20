@@ -161,7 +161,7 @@
 					});
 				break;
 			case "show-artist":
-				uri = event.uri || event.el.data("uri");
+				uri = event.uri || event.el.data("uri") || $(event.target).data("uri");
 				id = uri.split(":");
 				APP.api.requestData(event.type, { artistId: id[id.length-1] })
 					.then(data => {
@@ -196,7 +196,8 @@
 			case "show-album":
 			case "show-playlist":
 			case "show-featured":
-				id = event.uri.split(":");
+				uri = event.uri || event.el.data("uri") || $(event.target).data("uri");
+				id = uri.split(":");
 				APP.api.requestData(event.type, { id: id[id.length-1], market: "SE" })
 					.then(data => {
 						Self.dispatch({ type: "go-to", view: event.type });
