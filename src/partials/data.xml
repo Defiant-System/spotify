@@ -35,7 +35,7 @@
 	<Login />
 	<Home />
 	<Featured />
-	<!-- <Playlists /> -->
+	<Playlists />
 	<Favorites />
 	<Categories />
 	<Category />
@@ -59,7 +59,7 @@
 	<SearchPlaylists />
 	<SearchGenreArtists />
 
-	<Playlists>
+	<!-- <Playlists>
 	    <playlist name="Reggae" total="18" uri="spotify:playlist:0YBFjxvkLsknyCgRA5okUB"/>
 	    <playlist name="70s, 80s" total="183" uri="spotify:playlist:1EV7WsOrLMPAEleP87ymge"/>
 	    <playlist name="Jazz &amp; Blues" total="11" uri="spotify:playlist:7w1DAWuN5O4fxte4KTxKtS"/>
@@ -92,5 +92,5 @@
 	    <playlist name="Dancefloor" total="215" uri="spotify:playlist:1pxfl3n3Qgy2WJA4cW5E2v"/>
 	    <playlist name="Classical" total="30" uri="spotify:playlist:5Y9APuhr7vOcni8GHPUM5I"/>
 	    <playlist name="Softish" total="252" uri="spotify:playlist:6FpV2aDWM0HKWqJ7osczSN"/>
-	</Playlists>
+	</Playlists> -->
 </Data>
