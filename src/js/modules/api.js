@@ -346,7 +346,7 @@
 				// make XML of entries
 				res = $.xmlFromString(`<ArtistAlbumsAlbum>${nodes.join("")}</ArtistAlbumsAlbum>`);
 				break;
-			case "parse-album":
+			case "parse-show-album":
 				data.tracks.items.map(track => {
 					let name = track.name.escapeHtml(),
 						duration_ms = track.duration_ms,

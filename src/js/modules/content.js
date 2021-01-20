@@ -74,7 +74,7 @@
 				// setTimeout(() => window.find(".tabs [data-type='home-browse']").trigger("click"), 100);
 				
 				// temp
-				setTimeout(() => window.find(".ctrl-library").trigger("click"), 500);
+				// setTimeout(() => window.find(".ctrl-library").trigger("click"), 500);
 				break;
 
 			// navigation events
@@ -192,6 +192,7 @@
 						}
 					});
 				break;
+			case "show-album":
 			case "show-playlist":
 			case "show-featured":
 				id = event.uri.split(":");
@@ -337,28 +338,6 @@
 								data.removeChild(data.firstChild);
 							}
 						});
-				}
-				break;
-			case "toggle-album2":
-				el = $(event.target);
-
-				if (el.hasClass("expand")) {
-					el.removeClass("expand");
-				} else {
-					// render area
-					window.render({
-						template: "artist-album",
-						match: "//Album",
-						target: el.find(".album-tracks")
-					});
-
-					// look for playing track uri - update UI, if found
-					uri = Player.playing.track;
-					el.find(`.icon-player-play[data-uri="${uri}"]`)
-						.parents(".row").addClass("track-playing");
-
-					// expand album after render
-					requestAnimationFrame(() => el.addClass("expand"));
 				}
 				break;
 		}

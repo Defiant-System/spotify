@@ -13,6 +13,7 @@
 		<i name="show-category-playlists" url="/browse/categories/{categoryId}/playlists" match="//CategoryPlayLists" template="categories-view"/>
 		<i name="show-compilation" url="/playlists/{categoryId}" match="//CategoryPlayList" template="compilation-view"/>
 		<i name="show-playlist" url="/playlists/{id}?market={market}" match="//Playlist" template="playlist-view" fields="name,type,uri,owner(display_name),images,tracks(items(track(name,uri,duration_ms,artists(name,uri),album(name,uri))))"/>
+		<i name="show-album" url="/albums/{id}?market={market}" match="//Album" template="album-view"/>
 
 		<i name="show-artist" url="/artists/{artistId}" match="//Artist" template="artist-view"/>
 		<i name="show-artist-top-tracks" url="/artists/{artistId}/top-tracks?market={market}" match="//ArtistTopTracks" template="artist-top-tracks"/>
@@ -39,8 +40,9 @@
 	<ArtistRelated />
 	<ArtistAlbumsAlbum />
 	<Playlist />
+	<Album />
 
-	<Album name="Deep Down &amp; Dirty" release_date="2001-01-01" image="https://i.scdn.co/image/ab67616d00001e02e8c0eca5da75269b2d229116" artist_name="Stereo MC's" artist_uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8">
+	<!-- <Album name="Deep Down &amp; Dirty" release_date="2001-01-01" image="https://i.scdn.co/image/ab67616d00001e02e8c0eca5da75269b2d229116" artist_name="Stereo MC's" artist_uri="spotify:artist:1k8VBufn1nBs8LN9n4snc8">
 		<track name="Deep Down &amp; Dirty - Original Version" duration_ms="261399" uri="spotify:track:16WyvPp6nfgSYgJWPrlXM5"/>
 		<track name="We Belong In This World Together" duration_ms="279040" uri="spotify:track:1TKdwordQKlZalI2ESv1St"/>
 		<track name="Breeze" duration_ms="265933" uri="spotify:track:3HB0sDUD3fZaCRjxEKlwMq"/>
@@ -53,7 +55,7 @@
 		<track name="Stop At Nothing" duration_ms="241760" uri="spotify:track:59nPyncSoJ0wVkvwqSRVxJ"/>
 		<track name="Unconscious" duration_ms="245533" uri="spotify:track:2nn5oxWxi70dY78vNcpB5t"/>
 		<track name="Shameless" duration_ms="293293" uri="spotify:track:2snvxQ3MoCphseaTuBlg3P"/>
-	</Album>
+	</Album> -->
 
 	<Playlists total="38">
 		<playlist tracks="18" name="Reggae" uri="spotify:playlist:0YBFjxvkLsknyCgRA5okUB"/>
