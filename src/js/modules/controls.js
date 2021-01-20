@@ -34,22 +34,29 @@
 			case "mousedown":
 				// prevent default behaviour
 				event.preventDefault();
+
 				// clicked on track
 				if (event.target === Self.els.range[0]) {
 					left = event.offsetX - Self.els.track[0].offsetLeft;
-					Self.els.knob.css({ left: left +"px" });
-					Self.els.amount.css({ width: left +"px" });
 				}
+
 				// drag start info
 				Self.drag = {
 					knob: Self.els.knob,
 					amount: Self.els.amount,
 					timePlayed: Self.els.timePlayed,
 					duration: Player.playing.duration,
-					clickX: event.clientX - Self.els.knob[0].offsetLeft - 5,
+					clickX: left || event.clientX - Self.els.knob[0].offsetLeft - 5,
 					maxX: Self.els.track[0].offsetWidth,
 					minX: 0,
 				};
+
+				if (event.target === Self.els.range[0]) {
+					Self.drag.left = left;
+					Self.els.knob.css({ left: left +"px" });
+					Self.els.amount.css({ width: left +"px" });
+				}
+
 				// prevent transition animation
 				clearTimeout(Self.timer);
 				Self.els.track.removeClass("do-transition");

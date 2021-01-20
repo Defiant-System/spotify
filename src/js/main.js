@@ -22,14 +22,6 @@ const spotify = {
 		if (Auth.access_token) {
 			if (Auth.expires > Date.now()) {
 				this.content.dispatch({ type: "spotify-authorized" });
-
-				// temp
-				// this.content.dispatch({
-				// 	type: "show-artist",
-				// 	uri: "spotify:artist:1k8VBufn1nBs8LN9n4snc8",
-				// });
-				// setTimeout(() => window.find(".tabs [data-type='show-artist-albums']").trigger("click"), 500);
-
 			} else {
 				this.dispatch({ type: "get-refresh-token" });
 			}

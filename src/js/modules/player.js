@@ -39,7 +39,7 @@ const Player = {
 				console.log("Player.dispatch - ERROR -", event);
 				break;
 			case "player_state_changed":
-				console.log(event);
+				// console.log(event);
 				// assemble info about play status
 				this.playing = {
 					duration: event.duration,
@@ -97,6 +97,7 @@ const Player = {
 		console.log("repeat");
 	},
 	seek(value) {
+		console.log(value);
 		this._player.seek(value);
 	},
 	volume(value) {
