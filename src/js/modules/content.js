@@ -60,22 +60,9 @@
 				// connect api player
 				Player.init();
 				// home view
-				window.find(`.top span[data-click="go-search"]`).trigger("click");
+				window.find(`.top span[data-click="go-home"]`).trigger("click");
 				// first active tab in home view
-				// setTimeout(() => window.find(".tabs [data-type='home-browse']").trigger("click"), 100);
-				
-				return;
-				// temp
-				setTimeout(() => {
-					Self.dispatch({
-						type: "show-artist",
-						uri: "spotify:artist:1G3Eh23f2hwhEnAMw7HsZ6",
-					});
-					// setTimeout(() => window.find(".tabs [data-type='show-artist-albums']").trigger("click"), 500);
-				}, 500);
-
-				// temp
-				// setTimeout(() => window.find(".ctrl-library").trigger("click"), 500);
+				setTimeout(() => window.find(".tabs [data-type='home-browse']").trigger("click"), 100);
 				break;
 
 			// navigation events
