@@ -60,9 +60,9 @@
 				// connect api player
 				Player.init();
 				// home view
-				window.find(`.top span[data-click="go-home"]`).trigger("click");
+				window.find(`.top span[data-click="go-search"]`).trigger("click");
 				// first active tab in home view
-				setTimeout(() => window.find(".tabs [data-type='home-browse']").trigger("click"), 100);
+				// setTimeout(() => window.find(".tabs [data-type='home-browse']").trigger("click"), 100);
 				
 				return;
 				// temp
@@ -102,6 +102,10 @@
 				render = Self.getRenderProperties(event.view);
 				window.render({ ...render, target });
 
+				if (event.view === "search") {
+					requestAnimationFrame(() => target.find(`input[name="query"]`).focus());
+				}
+
 				// add state to history
 				Self.history.push({ view: event.view });
 				// update view state
@@ -123,6 +127,9 @@
 					// keeps track of active element
 					if (event.stamp) state.stamp = event.stamp;
 				}
+				// store input values
+				Self.els.body.find("input").map(iEl =>
+					iEl.setAttribute("data-value", iEl.value));
 				break;
 			// more navigation
 			case "show-category":
@@ -246,7 +253,12 @@
 					render = Self.getRenderProperties("loading");
 					window.render({ ...render, target });
 				}
-				str = "stereo";
+				// get query value
+				str = Self.els.body.find(`input[name="query"]`).val();
+				if (!str) return;
+				// start animation
+				target.find(".spotify-loader .anim-circle").addClass("bounce");
+				
 				APP.api.requestData(event.type, { query: str, market: "SE" })
 					.then(data => {
 						// save scrollTop of elements
@@ -337,6 +349,11 @@
 					Self.dispatch({ type: "show-"+ item, el: uEl, uri });
 				}
 				break;
+			case "select-playlist":
+				el = $(event.target);
+				uri = el.data("uri");
+				Self.dispatch({ type: "show-playlist", uri });
+				break;
 			case "select-track":
 				el = $(event.target);
 				if (el[0] === event.el[0]) return;
@@ -414,6 +431,10 @@
 			// fix scrollTop for elements
 			Body.find("[data-scrollTop]").map(el =>
 				el.scrollTop = +el.getAttribute("data-scrollTop"));
+
+			// fix input values
+			Body.find("input[data-value]").map(el =>
+				el.value = el.getAttribute("data-value"));
 
 			if (step === -1 && state.stamp) {
 				let activeEl = window.find(`[data-stamp="${state.stamp}"]`);

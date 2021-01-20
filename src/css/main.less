@@ -1093,7 +1093,8 @@ div[data-area="panel"] {
 		height: 83px;
 		padding: 19px 19px 17px;
 		user-select: none;
-
+		white-space: nowrap;
+		
 		.image {
 			width: 43px;
 			height: 43px;
@@ -1177,6 +1178,7 @@ div[data-area="panel"] {
 		height: 143px;
 		padding: 19px 17px 17px;
 		user-select: none;
+		white-space: nowrap;
 
 		h2 {
 			display: block;
@@ -1202,6 +1204,7 @@ div[data-area="panel"] {
 		height: 63px;
 		padding: 19px 19px 17px;
 		user-select: none;
+		white-space: nowrap;
 
 		.icon-genre,
 		.icon-home {
@@ -1357,6 +1360,7 @@ div[data-area="panel"] {
 		height: 63px;
 		padding: 19px 19px 17px;
 		user-select: none;
+		white-space: nowrap;
 
 		.icon-history {
 			width: 29px;
@@ -1388,6 +1392,7 @@ div[data-area="panel"] {
 	.search-head {
 		position: relative;
 		padding: 19px 19px 29px;
+		white-space: nowrap;
 
 		.search-icon {
 			position: absolute;
@@ -1434,6 +1439,7 @@ div[data-area="panel"] {
 		height: 79px;
 		padding: 19px 19px 0;
 		user-select: none;
+		white-space: nowrap;
 
 		h2 {
 			.playlist-owner {
@@ -1503,6 +1509,7 @@ div[data-area="panel"] {
 		height: 73px;
 		padding: 17px 19px;
 		user-select: none;
+		white-space: nowrap;
 
 		.album-image,
 		.compilation-image,
@@ -1609,6 +1616,7 @@ div[data-area="panel"] {
 		height: 89px;
 		padding: 17px 19px;
 		user-select: none;
+		white-space: nowrap;
 
 		.artist-image {
 			background-image: inherit;
@@ -1940,6 +1948,7 @@ div[data-area="panel"] {
 			background-position: 50% 50%;
 			border-radius: 7px;
 			margin-bottom: 5px;
+			pointer-events: none;
 
 			&:before {
 				content: "";
@@ -1954,6 +1963,7 @@ div[data-area="panel"] {
 				left: 50%;
 				width: 43px;
 				height: 43px;
+				pointer-events: all;
 				transform: translateX(-50%) translateY(-50%) scale(.95);
 
 				&:after {
@@ -1972,6 +1982,7 @@ div[data-area="panel"] {
 			white-space: nowrap;
 			overflow: hidden;
 			text-overflow: ellipsis;
+			pointer-events: none;
 		}
 	}
 }

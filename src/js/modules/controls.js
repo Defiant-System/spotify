@@ -92,10 +92,10 @@
 				// get player state
 				Player._player.getCurrentState()
 					.then(state => {
-						let timeMs = 1000,
-							left1 = (state.position / state.duration) * 100,
-							left2 = (Math.min(state.position + timeMs, state.duration) / state.duration) * 100;
+						let timeMs = 1000;
 						if (!Self.drag) {
+							let left1 = (state.position / state.duration) * 100,
+								left2 = (Math.min(state.position + timeMs, state.duration) / state.duration) * 100;
 							// Seeker
 							requestAnimationFrame(() => {
 								// Seeker: current position

@@ -33,10 +33,18 @@ const spotify = {
 	},
 	dispatch(event) {
 		let Self = spotify,
-			old,
+			type,
 			stamp,
+			old,
 			el;
 		switch (event.type) {
+			case "window.keystroke":
+				// assumes search input
+				if (event.keyCode === 13) {
+					type = Self.els.body.find(".tabs .active").data("type");
+					Self.content.dispatch({ type });
+				}
+				break;
 			case "oauth-failure":
 				// reset application settings
 				window.settings.clear();

@@ -162,9 +162,10 @@
 
 
 <xsl:template name="playlists">
-	<div class="playlists">
+	<div class="playlists" data-click="select-playlist">
 		<xsl:for-each select="./*">
 			<div class="playlist">
+				<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
 				<div class="image">
 					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
 					<i class="icon-player-play">
@@ -231,7 +232,7 @@
 			<div class="search-icon">
 				<i class="icon-search"></i>
 			</div>
-			<input type="text" placeholder="Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+			<input type="text" name="query" placeholder="Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
 		</div>
 
 		<div class="tabs" data-click="select-tab">

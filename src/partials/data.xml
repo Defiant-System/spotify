@@ -35,7 +35,7 @@
 	<Login />
 	<Home />
 	<Featured />
-	<Playlists />
+	<!-- <Playlists /> -->
 	<Favorites />
 	<Categories />
 	<Category />
@@ -59,4 +59,38 @@
 	<SearchPlaylists />
 	<SearchGenreArtists />
 
+	<Playlists>
+	    <playlist name="Reggae" total="18" uri="spotify:playlist:0YBFjxvkLsknyCgRA5okUB"/>
+	    <playlist name="70s, 80s" total="183" uri="spotify:playlist:1EV7WsOrLMPAEleP87ymge"/>
+	    <playlist name="Jazz &amp; Blues" total="11" uri="spotify:playlist:7w1DAWuN5O4fxte4KTxKtS"/>
+	    <playlist name="chillout 2" total="63" uri="spotify:playlist:62zCM9ct8YHVhoIoQK9uS0"/>
+	    <playlist name="Chillout" total="247" uri="spotify:playlist:7gtky4sYYwiuDEQuPpVy4h"/>
+	    <playlist name="Friday" total="41" uri="spotify:playlist:2JeKDjHo6yOjlMFtqup1kW"/>
+	    <playlist name="Gillat från Radio" total="6" uri="spotify:playlist:6k8eJCv0MeFLEi7TVqQNov"/>
+	    <playlist name="My Shazam Tracks" total="44" uri="spotify:playlist:3RUWKayNhOpGgII1qGaDku"/>
+	    <playlist name="Sv Klassiker" total="48" uri="spotify:playlist:2rTxMBQybX5uOyU2PCIc3Z"/>
+	    <playlist name="barnsligt" total="17" uri="spotify:playlist:5zLWxDllZo89tXKn19KR6u"/>
+	    <playlist name="Starred" total="178" uri="spotify:playlist:39MINyDwAaGL9QkudEXxLV"/>
+	    <playlist name="old" total="585" uri="spotify:playlist:4Wqhmyri54LKWet5NmrIRY"/>
+	    <playlist name="Sv. Hiphop" total="135" uri="spotify:playlist:2e9yekr878NhVFJCjrkiuE"/>
+	    <playlist name="Hiphop" total="232" uri="spotify:playlist:16txH6lVSFDwMg3NYrFxkX"/>
+	    <playlist name="Turkisk Hiphop" total="119" uri="spotify:playlist:3NaZmbyJAdJVPQbLBRzjGa"/>
+	    <playlist name="Progressive Trance" total="54" uri="spotify:playlist:37XOUU0mha2gy7GEN3LrvQ"/>
+	    <playlist name="Turkisk" total="165" uri="spotify:playlist:2EqLEgwEGGbgwap4YspcNe"/>
+	    <playlist name="Rock" total="173" uri="spotify:playlist:763PqUyTqamIHfqBEo6njf"/>
+	    <playlist name="House" total="28" uri="spotify:playlist:450z5I1Gq8dpruVfK50IgR"/>
+	    <playlist name="Workout" total="51" uri="spotify:playlist:0450GuLKsqbxVqLVi752yk"/>
+	    <playlist name="Trance" total="103" uri="spotify:playlist:6DoFImL7d0lbdSCz98XIZi"/>
+	    <playlist name="Dubstep" total="33" uri="spotify:playlist:3rgJngKwr5uGtZkWY0kQuS"/>
+	    <playlist name="Missy Elliot" total="44" uri="spotify:playlist:6DCNmWjf3qIBuxSHogu8n1"/>
+	    <playlist name="Slow" total="59" uri="spotify:playlist:4tH6f4B8zvuaLvoTeZpgXT"/>
+	    <playlist name="Michael Jackson" total="22" uri="spotify:playlist:5k8kBQhzyWYPeAO1SZZoRR"/>
+	    <playlist name="Elektropop" total="61" uri="spotify:playlist:2nwBooJnHcXrh98BjonN4T"/>
+	    <playlist name="M.I.A." total="21" uri="spotify:playlist:5c4oVxhBLwtjvvfTVqm1ch"/>
+	    <playlist name="Breakbeat" total="80" uri="spotify:playlist:6xWd79GDCBJZXfy26Jb8tu"/>
+	    <playlist name="Popular" total="181" uri="spotify:playlist:3CRZdgg5VLQ1lEOdAXDHSC"/>
+	    <playlist name="Dancefloor" total="215" uri="spotify:playlist:1pxfl3n3Qgy2WJA4cW5E2v"/>
+	    <playlist name="Classical" total="30" uri="spotify:playlist:5Y9APuhr7vOcni8GHPUM5I"/>
+	    <playlist name="Softish" total="252" uri="spotify:playlist:6FpV2aDWM0HKWqJ7osczSN"/>
+	</Playlists>
 </Data>
