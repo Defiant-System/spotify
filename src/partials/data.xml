@@ -18,10 +18,11 @@
 
 		<i name="show-category" url="/browse/categories/{categoryId}" match="//Category" template="category-view"/>
 		<i name="show-category-playlists" url="/browse/categories/{categoryId}/playlists" match="//CategoryPlayLists" template="categories-view"/>
-		<i name="show-compilation" url="/playlists/{categoryId}" match="//CategoryPlayList" template="compilation-view"/>
+		<i name="show-category-playlist" url="/playlists/{categoryId}" match="//CategoryPlayList" template="category-playlist-view"/>
 		<i name="show-playlist" url="/playlists/{id}?market={market}" match="//Playlist" template="playlist-view" fields="name,type,uri,owner(display_name),images,tracks(items(track(name,uri,duration_ms,artists(name,uri),album(name,uri))))"/>
 		<i name="show-album" url="/albums/{id}?market={market}" match="//Album" template="album-view"/>
-		<i name="show-featured" url="/playlists/{id}?market={market}" match="//Playlist" template="compilation-view"/>
+		<i name="show-compilation" url="/albums/{id}?market={market}" match="//Compilation" template="compilation-view"/>
+		<i name="show-featured" url="/playlists/{id}?market={market}" match="//Playlist" template="category-playlist-view"/>
 
 		<i name="show-artist" url="/artists/{artistId}" match="//Artist" template="artist-view"/>
 		<i name="show-artist-top-tracks" url="/artists/{artistId}/top-tracks?market={market}" match="//ArtistTopTracks" template="artist-top-tracks"/>
@@ -48,6 +49,7 @@
 	<ArtistRelated />
 	<ArtistAlbumsAlbum />
 	<Playlist />
+	<Compilation />
 	<Album />
 	
 	<Search />

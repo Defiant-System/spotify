@@ -143,7 +143,7 @@
 
 
 <xsl:template name="categories-view">
-	<div class="playlists" data-click="show-compilation">
+	<div class="playlists" data-click="show-category-playlist">
 		<xsl:for-each select="./*">
 			<div class="playlist">
 				<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
@@ -281,10 +281,10 @@
 </xsl:template>
 
 
-<xsl:template name="compilation-view">
-	<section class="compilation">
-		<div class="compilation-head">
-			<div class="compilation-image">
+<xsl:template name="category-playlist-view">
+	<section class="category-playlist">
+		<div class="category-playlist-head">
+			<div class="category-playlist-image">
 				<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
 			</div>
 			<h2>
@@ -352,10 +352,71 @@
 </xsl:template>
 
 
+<xsl:template name="compilation-view">
+	<section class="compilation">
+		<div class="compilation-head">
+			<div class="album-image">
+				<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+			</div>
+			<h2>
+				<xsl:value-of select="@name"/>
+				<div class="info">
+					<span>Compilation</span>
+					<xsl:if test="@release_date">
+						<span><xsl:value-of select="substring( @release_date, 1, 4 )"/></span>
+					</xsl:if>
+					<span><xsl:choose>
+						<xsl:when test="@total"><xsl:value-of select="@total"/></xsl:when>
+						<xsl:otherwise><xsl:value-of select="count(./track)"/></xsl:otherwise>
+					</xsl:choose> songs</span>
+				</div>
+			</h2>
+		</div>
+		<div class="view-body">
+			<div class="table enum">
+				<div class="row head" data-click="sort-list">
+					<div class="cell"></div>
+					<div class="cell">Title</div>
+					<div class="cell">Artist</div>
+					<div class="cell"><i class="icon-clock"></i></div>
+				</div>
+				<div class="table-body" data-click="select-track">
+					<xsl:for-each select="./*">
+						<xsl:sort order="ascending" select="@_index"/>
+						<div class="row">
+							<div class="cell">
+								<i class="icon-player-play">
+									<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+								</i>
+								<i class="icon-heart"></i>
+							</div>
+							<div class="cell"><xsl:value-of select="@name"/></div>
+							<div class="cell">
+								<xsl:for-each select="./artists">
+									<span class="track-artist">
+										<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+										<xsl:value-of select="@name"/>
+									</span>
+								</xsl:for-each>
+							</div>
+							<div class="cell"><xsl:call-template name="translate-duration">
+								<xsl:with-param name="ms" select="@duration_ms" />
+							</xsl:call-template></div>
+						</div>
+					</xsl:for-each>
+				</div>
+			</div>
+		</div>
+	</section>
+</xsl:template>
+
+
 <xsl:template name="album-view">
 	<section class="album">
 		<div class="album-head">
-			<div class="album-image" style="background-image: url(https://i.scdn.co/image/ab67616d00001e02e8c0eca5da75269b2d229116);"></div>
+			<div class="album-image">
+				<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+			</div>
 			<h2>
 				<xsl:value-of select="@name"/>
 				<div class="info">
@@ -448,7 +509,7 @@
 				<div class="cell">Title</div>
 				<div class="cell">Album</div>
 				<div class="cell"><i class="icon-clock"></i></div>
-				<div class="cell"><i class="icon-thumb"></i></div>
+				<!-- <div class="cell"><i class="icon-thumb"></i></div> -->
 			</div>
 			<div class="table-body" data-click="select-track">
 				<xsl:for-each select="./track">
@@ -462,12 +523,13 @@
 						<div class="cell"><xsl:value-of select="@name"/></div>
 						<div class="cell">
 							<xsl:attribute name="data-uri"><xsl:value-of select="album/@uri"/></xsl:attribute>
+							<xsl:attribute name="data-type"><xsl:value-of select="album/@type"/></xsl:attribute>
 							<xsl:value-of select="album/@name"/>
 						</div>
 						<div class="cell"><xsl:call-template name="translate-duration">
 							<xsl:with-param name="ms" select="@duration_ms" />
 						</xsl:call-template></div>
-						<div class="cell"><i class="icon-bars"></i></div>
+						<!-- <div class="cell"><i class="icon-bars"></i></div> -->
 					</div>
 				</xsl:for-each>
 			</div>

@@ -62,10 +62,11 @@
 				// home view
 				window.find(`.top span[data-click="go-home"]`).trigger("click");
 				// first active tab in home view
-				// setTimeout(() => window.find(".tabs [data-type='home-browse']").trigger("click"), 100);
+				setTimeout(() => window.find(".tabs [data-type='home-browse']").trigger("click"), 100);
 				
+				return;
+				// temp
 				setTimeout(() => {
-					// temp
 					Self.dispatch({
 						type: "show-artist",
 						uri: "spotify:artist:1G3Eh23f2hwhEnAMw7HsZ6",
@@ -144,12 +145,12 @@
 							});
 					});
 				break;
-			case "show-compilation":
+			case "show-category-playlist":
 				// render view contents
 				target = Self.els.body;
 				render = Self.getRenderProperties("loading");
 				window.render({ ...render, target });
-				// get compilation (playlist) data
+				// get playlist data
 				id = event.target.parentNode.getAttribute("data-uri").split(":");
 				APP.api.requestData(event.type, { categoryId: id[id.length-1] })
 					.then(data => {
@@ -194,6 +195,7 @@
 					});
 				break;
 			case "show-album":
+			case "show-compilation":
 			case "show-playlist":
 			case "show-featured":
 				uri = event.uri || event.el.data("uri") || $(event.target).data("uri");
@@ -345,6 +347,7 @@
 					// toggle track play
 					APP.controls.dispatch({ type: "player-"+ type, el, uri });
 				} else if (el.data("uri")) {
+					if (el.data("type")) item = el.data("type");
 					Self.dispatch({ type: "show-"+ item, el, uri });
 				} else {
 					el = el.parents(".row");

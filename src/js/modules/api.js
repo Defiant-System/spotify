@@ -267,6 +267,7 @@
 						popularity = track.popularity,
 						duration_ms = track.duration_ms,
 						album_name = track.album.name.escapeHtml(),
+						album_type = track.album.album_type,
 						album_uri = track.album.uri,
 						artists = [];
 					// prepare artists nodes
@@ -278,7 +279,7 @@
 					// prepare node
 					nodes.push(`<track name="${name}" duration_ms="${duration_ms}" popularity="${popularity}" uri="${uri}">
 									${artists.join("")}
-									<album name="${album_name}" uri="${album_uri}"/>
+									<album name="${album_name}" type="${album_type}" uri="${album_uri}"/>
 								</track>`);
 				});
 				// make XML of entries
@@ -313,7 +314,7 @@
 				// change reference for total + next
 				data = data.playlists;
 				break;
-			case "parse-show-compilation":
+			case "parse-show-category-playlist":
 				data.tracks.items.map(entry => {
 					let name = entry.track.name.escapeHtml(),
 						uri = entry.track.uri,
@@ -349,6 +350,29 @@
 				});
 				// make XML of entries
 				res = $.xmlFromString(`<ArtistAlbumsAlbum>${nodes.join("")}</ArtistAlbumsAlbum>`);
+				break;
+			case "parse-show-compilation":
+				data.tracks.items.map(track => {
+					let name = track.name.escapeHtml(),
+						uri = track.uri,
+						duration_ms = track.duration_ms,
+						artists = [];
+					// prepare artists nodes
+					track.artists.map(artist => {
+						let artist_name = artist.name.escapeHtml(),
+							artist_uri = artist.uri;
+						artists.push(`<artists name="${artist_name}" uri="${artist_uri}"/>`);
+					});
+					// prepare node
+					nodes.push(`<track name="${name}" duration_ms="${duration_ms}" uri="${uri}">
+									${artists.join("")}
+								</track>`);
+				});
+				let compName = data.name.escapeHtml(),
+					compDate = data.release_date,
+					compImage = Self.getImage(data.images);
+				// make XML of entries
+				res = $.xmlFromString(`<Compilation name="${compName}" release_date="${compDate}" image="${compImage}">${nodes.join("")}</Compilation>`);
 				break;
 			case "parse-show-album":
 				data.tracks.items.map(track => {

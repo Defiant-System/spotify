@@ -1489,15 +1489,18 @@ div[data-area="panel"] {
 }
 
 .album,
-.compilation {
+.compilation,
+.category-playlist {
 	.album-head,
-	.compilation-head {
+	.compilation-head,
+	.category-playlist-head {
 		height: 73px;
 		padding: 17px 19px;
 		user-select: none;
 
 		.album-image,
-		.compilation-image {
+		.compilation-image,
+		.category-playlist-image {
 			background-image: inherit;
 			background-size: contain;
 			background-repeat: no-repeat;
@@ -1565,6 +1568,16 @@ div[data-area="panel"] {
 
 			.icon-player-play {
 				left: -3px;
+			}
+		}
+	}
+
+	&.compilation .view-body .table {
+		.row {
+			.cell {
+				&:nth-child(3) {
+					width: 31%;
+				}
 			}
 		}
 	}
