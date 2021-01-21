@@ -74,7 +74,7 @@
 				// }, 500);
 
 				// setTimeout(() => window.find(".ctrl-library").trigger("click"), 500);
-				setTimeout(() => Self.els.body.find(".tabs [data-type='home-favorites']").trigger("click"), 500);
+				// setTimeout(() => Self.els.body.find(".tabs [data-type='home-favorites']").trigger("click"), 500);
 				// setTimeout(() => Self.els.body.find(".category:nth-child(4) .image").trigger("click"), 500);
 				break;
 
@@ -229,7 +229,7 @@
 				if (!uri) return;
 
 				id = uri.split(":");
-				if (el.hasClass("icon-player-play")) {
+				if (el && el.hasClass("icon-player-play")) {
 					// ui update
 					el = el.parents(".featured");
 					el.parent().find(".featured-playing").removeClass("featured-playing");
