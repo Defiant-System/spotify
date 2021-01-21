@@ -414,6 +414,12 @@
 
 
 <xsl:template name="album-view">
+	<xsl:param name="total">
+		<xsl:choose>
+			<xsl:when test="@total"><xsl:value-of select="@total"/></xsl:when>
+			<xsl:otherwise><xsl:value-of select="count(./track)"/></xsl:otherwise>
+		</xsl:choose>
+	</xsl:param>
 	<section class="album">
 		<div class="album-head">
 			<div class="album-image">
@@ -423,7 +429,10 @@
 				<xsl:value-of select="@name"/>
 				<div class="info">
 					<span>
-						Album by 
+						<xsl:choose>
+							<xsl:when test="@type = 'single'">Single by </xsl:when>
+							<xsl:when test="@type = 'album'">Album by </xsl:when>
+						</xsl:choose>
 						<span data-click="show-artist">
 							<xsl:attribute name="data-uri"><xsl:value-of select="@artist_uri"/></xsl:attribute>
 							<xsl:value-of select="@artist_name"/>
@@ -432,10 +441,7 @@
 					<xsl:if test="@release_date">
 						<span><xsl:value-of select="substring( @release_date, 1, 4 )"/></span>
 					</xsl:if>
-					<span><xsl:choose>
-						<xsl:when test="@total"><xsl:value-of select="@total"/></xsl:when>
-						<xsl:otherwise><xsl:value-of select="count(./track)"/></xsl:otherwise>
-					</xsl:choose> songs</span>
+					<span><xsl:value-of select="$total"/> song<xsl:if test="$total &gt; 1">s</xsl:if></span>
 				</div>
 			</h2>
 		</div>

@@ -375,6 +375,7 @@
 				res = $.xmlFromString(`<Compilation name="${compName}" release_date="${compDate}" image="${compImage}">${nodes.join("")}</Compilation>`);
 				break;
 			case "parse-show-album":
+				console.log(data);
 				data.tracks.items.map(track => {
 					let name = track.name.escapeHtml(),
 						duration_ms = track.duration_ms,
@@ -386,9 +387,10 @@
 					aArtistName = data.artists[0].name.escapeHtml(),
 					aArtistUri = data.artists[0].uri,
 					aImage = Self.getImage(data.images),
+					aType = data.album_type,
 					aDate = data.release_date;
 				// make XML of entries
-				res = $.xmlFromString(`<Album name="${aName}" release_date="${aDate}" image="${aImage}" artist_name="${aArtistName}" artist_uri="${aArtistUri}">${nodes.join("")}</Album>`);
+				res = $.xmlFromString(`<Album name="${aName}" type="${aType}" release_date="${aDate}" image="${aImage}" artist_name="${aArtistName}" artist_uri="${aArtistUri}">${nodes.join("")}</Album>`);
 				break;
 			case "parse-show-artist":
 				data.genres.map(genre => {

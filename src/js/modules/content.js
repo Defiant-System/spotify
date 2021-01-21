@@ -68,9 +68,9 @@
 				// setTimeout(() => {
 				// 	Self.dispatch({
 				// 		type: "show-artist",
-				// 		uri: "spotify:artist:1G3Eh23f2hwhEnAMw7HsZ6",
+				// 		uri: "spotify:artist:2wIVse2owClT7go1WT98tk",
 				// 	});
-				// 	setTimeout(() => window.find(".tabs [data-type='show-artist-albums']").trigger("click"), 500);
+				// 	setTimeout(() => window.find(".tabs [data-type='show-artist-appears-on']").trigger("click"), 500);
 				// }, 500);
 
 				// setTimeout(() => window.find(".ctrl-library").trigger("click"), 500);
@@ -351,16 +351,16 @@
 				console.log(el);
 				break;
 			case "play-album":
-				event.el.parent().find(".track-playing").removeClass("track-playing");
-				event.el.addClass("track-playing");
+				// event.el.parent().find(".track-playing").removeClass("track-playing");
+				// event.el.addClass("track-playing");
 
-				console.log("Toggle album", event.id);
+				console.log("Toggle album", event);
 				break;
 			case "play-artist":
-				event.el.parent().find(".track-playing").removeClass("track-playing");
-				event.el.addClass("track-playing");
+				// event.el.parent().find(".track-playing").removeClass("track-playing");
+				// event.el.addClass("track-playing");
 
-				console.log("Toggle artist", event.id);
+				console.log("Toggle artist", event);
 				break;
 			case "select-album":
 			case "select-artist":
