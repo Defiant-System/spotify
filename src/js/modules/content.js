@@ -230,6 +230,11 @@
 
 				id = uri.split(":");
 				if (el.hasClass("icon-player-play")) {
+					// ui update
+					el = el.parents(".featured");
+					el.parent().find(".featured-playing").removeClass("featured-playing");
+					el.addClass("featured-playing");
+
 					APP.api.requestData(event.type, { id: id[id.length-1], market: "SE" })
 						.then(data => {
 							// get all URI's from playlist and play them

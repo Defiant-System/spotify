@@ -129,6 +129,10 @@
 						if (!state.paused) {
 							Self.timer = setTimeout(() => Self.dispatch({ type: "set-timer" }), timeMs);
 						}
+
+						let el = Self.els.btnPlay.find("> i"),
+							className = state.paused ? "icon-player-play" : "icon-player-pause";
+						el.prop({ className });
 					});
 				break;
 			case "player-play":
