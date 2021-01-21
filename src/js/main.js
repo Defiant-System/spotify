@@ -40,13 +40,15 @@ const spotify = {
 			el;
 		switch (event.type) {
 			case "window.keystroke":
-				el = $(event.target);
-				// return pressable
-				isOn = el.val().length > 3;
-				el.parent().toggleClass("press-enter", !isOn);
-				// assumes search input
-				if (event.keyCode === 13 && isOn) {
-					Self.content.dispatch({ type: "init-search" });
+				if (event.target) {
+					el = $(event.target);
+					// return pressable
+					isOn = el.val().length > 3;
+					el.parent().toggleClass("press-enter", !isOn);
+					// assumes search input
+					if (event.keyCode === 13 && isOn) {
+						Self.content.dispatch({ type: "init-search" });
+					}
 				}
 				break;
 			case "oauth-failure":
