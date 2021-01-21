@@ -74,7 +74,7 @@
 				// }, 500);
 
 				// setTimeout(() => window.find(".ctrl-library").trigger("click"), 500);
-				setTimeout(() => Self.els.body.find(".tabs [data-type='home-featured']").trigger("click"), 500);
+				// setTimeout(() => Self.els.body.find(".tabs [data-type='home-featured']").trigger("click"), 500);
 				// setTimeout(() => Self.els.body.find(".category:nth-child(4) .image").trigger("click"), 500);
 				break;
 
