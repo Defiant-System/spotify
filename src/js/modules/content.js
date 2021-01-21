@@ -74,7 +74,7 @@
 				// }, 500);
 
 				// setTimeout(() => window.find(".ctrl-library").trigger("click"), 500);
-				// setTimeout(() => Self.els.body.find(".tabs [data-type='home-favorites']").trigger("click"), 500);
+				setTimeout(() => Self.els.body.find(".tabs [data-type='home-favorites']").trigger("click"), 500);
 				// setTimeout(() => Self.els.body.find(".category:nth-child(4) .image").trigger("click"), 500);
 				break;
 
@@ -224,8 +224,8 @@
 			case "show-compilation":
 			case "show-playlist":
 			case "show-featured":
-				el = $(event.target);
-				uri = event.uri || event.el.data("uri") || el.data("uri");
+				el = event.target ? $(event.target) : event.el;
+				uri = event.uri || el.data("uri") || el.data("uri");
 				if (!uri) return;
 
 				id = uri.split(":");
