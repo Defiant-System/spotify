@@ -74,6 +74,7 @@
 				// }, 500);
 
 				// setTimeout(() => window.find(".ctrl-library").trigger("click"), 500);
+				// setTimeout(() => Self.els.body.find(".category:nth-child(4) .image").trigger("click"), 500);
 				break;
 
 			// navigation events
@@ -151,20 +152,34 @@
 					});
 				break;
 			case "show-category-playlist":
-				// render view contents
-				target = Self.els.body;
-				render = Self.getRenderProperties("loading");
-				window.render({ ...render, target });
-				// get playlist data
-				id = event.target.getAttribute("data-uri").split(":");
-				APP.api.requestData(event.type, { categoryId: id[id.length-1] })
-					.then(data => {
-						Self.dispatch({ type: "go-to", view: event.type });
-						// remove children after view render
-						while (data.hasChildNodes()) {
-							data.removeChild(data.firstChild);
-						}
-					});
+				el = $(event.target);
+				id = el.data("uri").split(":");
+				if (el.hasClass("icon-player-play")) {
+					APP.api.requestData(event.type, { categoryId: id[id.length-1] })
+						.then(data => {
+							// get all URI's from playlist and play them
+							let uris = data.selectNodes("./*").map(node => node.getAttribute("uri"));
+							Player.play(uris);
+							// remove children after view render
+							while (data.hasChildNodes()) {
+								data.removeChild(data.firstChild);
+							}
+						});
+				} else {
+					// render view contents
+					target = Self.els.body;
+					render = Self.getRenderProperties("loading");
+					window.render({ ...render, target });
+					// get playlist data
+					APP.api.requestData(event.type, { categoryId: id[id.length-1] })
+						.then(data => {
+							Self.dispatch({ type: "go-to", view: event.type });
+							// remove children after view render
+							while (data.hasChildNodes()) {
+								data.removeChild(data.firstChild);
+							}
+						});
+				}
 				break;
 			case "show-artist":
 				uri = event.uri || event.el.data("uri") || $(event.target).data("uri");
