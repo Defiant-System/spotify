@@ -412,10 +412,23 @@
 				break;
 			case "toggle-album":
 				el = $(event.target);
+				type = "show-artist-albums-album";
 				if (el.hasClass("loading")) return;
 
 				if (el.hasClass("expand")) {
 					el.removeClass("expand");
+				} else if (el.hasClass("icon-player-play")) {
+					id = el.data("uri").split(":");
+					APP.api.requestData(type, { albumId: id[id.length-1], market: "SE" })
+						.then(data => {
+							// get all URI's from playlist and play them
+							let uris = data.selectNodes("./*").map(node => node.getAttribute("uri"));
+							Player.play(uris);
+							// remove children after view render
+							while (data.hasChildNodes()) {
+								data.removeChild(data.firstChild);
+							}
+						});
 				} else {
 					// render loading animation
 					target = el.find(".album-tracks");
@@ -426,7 +439,6 @@
 					requestAnimationFrame(() => el.addClass("loading"));
 
 					id = el.find(".icon-player-play").data("uri").split(":");
-					type = "show-artist-albums-album";
 					APP.api.requestData(type, { albumId: id[id.length-1], market: "SE" })
 						.then(data => {
 							// update element className
