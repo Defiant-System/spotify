@@ -74,7 +74,7 @@
 				// }, 500);
 
 				// setTimeout(() => window.find(".ctrl-library").trigger("click"), 500);
-				// setTimeout(() => Self.els.body.find(".tabs [data-type='home-featured']").trigger("click"), 500);
+				// setTimeout(() => Self.els.body.find(".tabs [data-type='home-favorites']").trigger("click"), 500);
 				// setTimeout(() => Self.els.body.find(".category:nth-child(4) .image").trigger("click"), 500);
 				break;
 
@@ -355,7 +355,9 @@
 				break;
 			// misc events
 			case "set-title":
+				let isPaused = false;
 				if (Player.playing) {
+					isPaused = Player.playing.paused;
 					// artist
 					Self.els.title.find(".artist-name").html(Player.playing.artistName.join(", "));
 					// track
@@ -367,9 +369,10 @@
 					APP.controls.els.timeTotal.html(`${minutes}:${seconds}`);
 				}
 				// look for playing track uri - update UI, if found
-				Self.els.body.find(".row.track-playing, .row.active").removeClass("track-playing active");
+				Self.els.body.find(".row.track-playing, .row.active, .row.paused")
+					.removeClass("track-playing active paused");
 				Self.els.body.find(`.icon-player-play[data-uri="${Player.playing.trackUri}"]`)
-							.parents(".row").addClass("track-playing active");
+							.parents(".row").addClass("track-playing active"+ (isPaused ? " paused" : ""));
 
 				Self.els.title.removeClass("empty");
 				break;
