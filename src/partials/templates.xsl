@@ -115,6 +115,9 @@
 				<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
 				<div class="image">
 					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+					<i class="icon-player-play">
+						<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+					</i>
 				</div>
 				<h5><xsl:value-of select="@name"/></h5>
 			</div>
@@ -517,7 +520,7 @@
 				<div class="cell">Title</div>
 				<div class="cell">Album</div>
 				<div class="cell"><i class="icon-clock"></i></div>
-				<!-- <div class="cell"><i class="icon-thumb"></i></div> -->
+				<div class="cell"><i class="icon-thumb"></i></div>
 			</div>
 			<div class="table-body" data-click="select-track">
 				<xsl:for-each select="./track">
@@ -537,7 +540,10 @@
 						<div class="cell"><xsl:call-template name="translate-duration">
 							<xsl:with-param name="ms" select="@duration_ms" />
 						</xsl:call-template></div>
-						<!-- <div class="cell"><i class="icon-bars"></i></div> -->
+						<div class="cell">
+							<xsl:value-of select="@popularity"/>
+							<!-- <i class="icon-bars"></i> -->
+						</div>
 					</div>
 				</xsl:for-each>
 			</div>

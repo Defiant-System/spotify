@@ -74,6 +74,7 @@
 				// }, 500);
 
 				// setTimeout(() => window.find(".ctrl-library").trigger("click"), 500);
+				setTimeout(() => Self.els.body.find(".tabs [data-type='home-featured']").trigger("click"), 500);
 				// setTimeout(() => Self.els.body.find(".category:nth-child(4) .image").trigger("click"), 500);
 				break;
 
@@ -155,6 +156,11 @@
 				el = $(event.target);
 				id = el.data("uri").split(":");
 				if (el.hasClass("icon-player-play")) {
+					// ui update
+					el = el.parents(".playlist");
+					el.parent().find(".playlist-playing").removeClass("playlist-playing");
+					el.addClass("playlist-playing");
+					// get playlist data
 					APP.api.requestData(event.type, { categoryId: id[id.length-1] })
 						.then(data => {
 							// get all URI's from playlist and play them
@@ -218,16 +224,30 @@
 			case "show-compilation":
 			case "show-playlist":
 			case "show-featured":
-				uri = event.uri || event.el.data("uri") || $(event.target).data("uri");
+				el = $(event.target);
+				uri = event.uri || event.el.data("uri") || el.data("uri");
 				id = uri.split(":");
-				APP.api.requestData(event.type, { id: id[id.length-1], market: "SE" })
-					.then(data => {
-						Self.dispatch({ type: "go-to", view: event.type });
-						// remove children after view render
-						while (data.hasChildNodes()) {
-							data.removeChild(data.firstChild);
-						}
-					});
+				if (el.hasClass("icon-player-play")) {
+					APP.api.requestData(event.type, { id: id[id.length-1], market: "SE" })
+						.then(data => {
+							// get all URI's from playlist and play them
+							let uris = data.selectNodes("./*").map(node => node.getAttribute("uri"));
+							Player.play(uris);
+							// remove children after view render
+							while (data.hasChildNodes()) {
+								data.removeChild(data.firstChild);
+							}
+						});
+				} else {
+					APP.api.requestData(event.type, { id: id[id.length-1], market: "SE" })
+						.then(data => {
+							Self.dispatch({ type: "go-to", view: event.type });
+							// remove children after view render
+							while (data.hasChildNodes()) {
+								data.removeChild(data.firstChild);
+							}
+						});
+				}
 				break;
 			// tabs
 			case "home-browse":
@@ -351,16 +371,42 @@
 				console.log(el);
 				break;
 			case "play-album":
-				// event.el.parent().find(".track-playing").removeClass("track-playing");
-				// event.el.addClass("track-playing");
-
-				console.log("Toggle album", event);
+				// ui update
+				el = event.el.parents(".album-item");
+				el.parent().find(".album-playing").removeClass("album-playing");
+				el.addClass("album-playing");
+				// get playlist data
+				uri = event.uri;
+				id = uri.split(":");
+				APP.api.requestData("show-album", { id: id[id.length-1], market: "SE" })
+					.then(data => {
+						// get all URI's from playlist and play them
+						let uris = data.selectNodes("./*").map(node => node.getAttribute("uri"));
+						Player.play(uris);
+						// remove children after view render
+						while (data.hasChildNodes()) {
+							data.removeChild(data.firstChild);
+						}
+					});
 				break;
 			case "play-artist":
-				// event.el.parent().find(".track-playing").removeClass("track-playing");
-				// event.el.addClass("track-playing");
-
-				console.log("Toggle artist", event);
+				// ui update
+				el = event.el.parents(".artist");
+				el.parent().find(".artist-playing").removeClass("artist-playing");
+				el.addClass("artist-playing");
+				// get playlist data
+				uri = event.uri;
+				id = uri.split(":");
+				APP.api.requestData("show-artist-top-tracks", { artistId: id[id.length-1], market: "SE" })
+					.then(data => {
+						// get all URI's from playlist and play them
+						let uris = data.selectNodes("./*").map(node => node.getAttribute("uri"));
+						Player.play(uris);
+						// remove children after view render
+						while (data.hasChildNodes()) {
+							data.removeChild(data.firstChild);
+						}
+					});
 				break;
 			case "select-album":
 			case "select-artist":

@@ -375,7 +375,6 @@
 				res = $.xmlFromString(`<Compilation name="${compName}" release_date="${compDate}" image="${compImage}">${nodes.join("")}</Compilation>`);
 				break;
 			case "parse-show-album":
-				console.log(data);
 				data.tracks.items.map(track => {
 					let name = track.name.escapeHtml(),
 						duration_ms = track.duration_ms,
