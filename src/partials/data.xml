@@ -1,7 +1,7 @@
 <Data>
 	<Records>
 		<i name="loading" match="//Home" template="loading-full-view"/>
-		<i name="get-my-playlists" url="/users/{username}/playlists?offset=0&amp;limit=50" match="//Playlists" template="my-playlists"/>
+		<i name="get-my-playlists" url="/me/playlists?offset=0&amp;limit=50" match="//Playlists" template="my-playlists"/>
 
 		<i name="home" match="//Home" template="home-view"/>
 		<i name="home-browse" url="/browse/categories?country={country}&amp;locale={locale}" match="//Categories" template="home-browse"/>

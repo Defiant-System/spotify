@@ -21,7 +21,7 @@
 			el;
 		switch (event.type) {
 			case "get-my-playlists":
-				APP.api.requestData(event.type, { username: "hbi" })
+				APP.api.requestData(event.type)
 					.then(data => {
 						// render view contents
 						let target = Self.els.panel;
