@@ -97,7 +97,6 @@ const Player = {
 		console.log("repeat");
 	},
 	seek(value) {
-		console.log(value);
 		this._player.seek(value);
 	},
 	volume(value) {
