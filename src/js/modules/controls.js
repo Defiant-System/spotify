@@ -101,15 +101,18 @@
 								// Seeker: current position
 								Self.els.knob.css({ left: left1 +"%" });
 								Self.els.amount.css({ width: left1 +"%" });
-								requestAnimationFrame(() => {
-									// Seeker: set animation speed
-									Self.els.track
-										.attr({ style: `--speed: ${timeMs}ms;` })
-										.addClass("do-transition");
-									// Seeker: position 1 second from now
-									Self.els.knob.css({ left: left2 +"%" });
-									Self.els.amount.css({ width: left2 +"%" });
-								});
+								
+								if (!state.paused) {
+									requestAnimationFrame(() => {
+										// Seeker: set animation speed
+										Self.els.track
+											.attr({ style: `--speed: ${timeMs}ms;` })
+											.addClass("do-transition");
+										// Seeker: position 1 second from now
+										Self.els.knob.css({ left: left2 +"%" });
+										Self.els.amount.css({ width: left2 +"%" });
+									});
+								}
 							});
 						}
 						// if state is available; update time played

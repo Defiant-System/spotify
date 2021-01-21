@@ -226,6 +226,8 @@
 			case "show-featured":
 				el = $(event.target);
 				uri = event.uri || event.el.data("uri") || el.data("uri");
+				if (!uri) return;
+
 				id = uri.split(":");
 				if (el.hasClass("icon-player-play")) {
 					APP.api.requestData(event.type, { id: id[id.length-1], market: "SE" })
@@ -459,7 +461,7 @@
 			case "toggle-album":
 				el = $(event.target);
 				type = "show-artist-albums-album";
-				if (el.hasClass("loading")) return;
+				if (el.hasClass("loading") || !el.hasClass("album")) return;
 
 				if (el.hasClass("expand")) {
 					el.removeClass("expand");
