@@ -11,14 +11,15 @@
 		// defaults
 		this.vars = {
 			pressed: false,
-			timeConstant: 250,
-			dim: 135,
+			cTime: 250,
+			dim: 110,
 			center: 0,
+			radius: 5,
 			offset: 0,
 			target: 0,
-			angle: -60,
-			dist: -200,
-			shift: 15,
+			angle: -55,
+			dist: -250,
+			shift: 20,
 			images: [],
 			count: 0,
 			ticker: false,
@@ -37,6 +38,9 @@
 				Self.vars.count = Self.vars.images.length;
 				Self.vars.innerWidth = Self.els.coverflow.width();
 				Self.vars.innerHeight = Self.els.coverflow.height();
+				el = Self.els.coverflow.find(".cover");
+				Self.vars.coverWidth = el.width();
+				Self.vars.coverHeight = el.height();
 				// default ui setup
 				Self.scroll(0);
 				// bind event handlers
@@ -109,8 +113,8 @@
 		delta = Vars.offset - Vars.center * Vars.dim;
 		Vars.dir = (delta < 0) ? 1 : -1;
 		tween = -Vars.dir * delta * 2 / Vars.dim;
-		alignment = `translateX(${(Vars.innerWidth - Vars.dim) / 2}px)
-					translateY(${(Vars.innerHeight - Vars.dim) / 2}px)`;
+		alignment = `translateX(${(Vars.innerWidth - Vars.coverWidth) / 2}px)
+					translateY(${(Vars.innerHeight - Vars.coverHeight) / 2}px)`;
 
 		// center
 		transform = `${alignment}
@@ -123,16 +127,18 @@
 		for (let i=1, half=count>>1; i<=half; ++i) {
 			// right side
 			transform = `${alignment}
-							translateX(${Vars.shift + (Vars.dim * i - delta) / 2}px)
+							translateX(${Vars.shift + (Vars.dim * i - delta) / 1.75}px)
 							translateZ(${Vars.dist}px) rotateY(${Vars.angle}deg)`;
-			opacity = (i === half && delta < 0) ? 1 - tween : 1;
+			opacity = (i === Vars.radius && delta < 0) ? 1 - tween : 1;
+			if (i > Vars.radius) opacity = 0;
 			images.get(wrap(Vars.center + i)).css({ transform, opacity, zIndex: -i });
 
 			// left side
 			transform = `${alignment}
-							translateX(${-Vars.shift + (-Vars.dim * i - delta) / 2}px)
+							translateX(${-Vars.shift + (-Vars.dim * i - delta) / 1.75}px)
 							translateZ(${Vars.dist}px) rotateY(${-Vars.angle}deg)`;
-			opacity = (i === half && delta > 0) ? 1 - tween : 1;
+			opacity = (i === Vars.radius && delta > 0) ? 1 - tween : 1;
+			if (i > Vars.radius) opacity = 0;
 			images.get(wrap(Vars.center - i)).css({ transform, opacity, zIndex: -i });
 		}
 	},
@@ -152,7 +158,7 @@
 		let Vars = this.vars;
 		if (Vars.amplitude) {
 			let elapsed = Date.now() - Vars.timestamp,
-				delta = Vars.amplitude * Math.exp(-elapsed / Vars.timeConstant);
+				delta = Vars.amplitude * Math.exp(-elapsed / Vars.cTime);
 			if (delta > 4 || delta < -4) {
 				this.scroll(Vars.target - delta);
 				requestAnimationFrame(this.autoScroll.bind(this));
