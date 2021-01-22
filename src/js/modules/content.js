@@ -5,6 +5,7 @@
 	init() {
 		// fast references
 		this.els = {
+			layout: window.find("layout"),
 			title: window.find(".top-title"),
 			body: window.find("content .body"),
 			btnBack: window.find(`.ctrl-navigation [data-click="go-back"]`),
@@ -374,7 +375,7 @@
 				Self.els.body.find(`.icon-player-play[data-uri="${Player.playing.trackUri}"]`)
 							.parents(".row").addClass("track-playing active"+ (isPaused ? " paused" : ""));
 
-				Self.els.title.removeClass("empty");
+				Self.els.layout.removeClass("no-track-selected");
 				break;
 			case "sort-list":
 				el = $(event.target);

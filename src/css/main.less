@@ -152,6 +152,29 @@ layout {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+
+	&.no-track-selected {
+		div[data-area="volume"],
+		div[data-area="controls"] {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.top-title {
+			.artist-name {
+				&:after {
+					content: "";
+					background: url(~/icons/icon-heart-full.png) 50% 50% no-repeat;
+					width: 14px;
+					height: 14px;
+					opacity: .55;
+					vertical-align: top;
+					position: relative;
+					top: -1px;
+				}
+			}
+		}
+	}
 }
 
 .top-title {
@@ -162,13 +185,6 @@ layout {
 	height: 22px;
 	padding: 6px 0 0;
 	text-align: center;
-
-	&.empty {
-		.artist-name,
-		.track-name {
-			opacity: 0;
-		}
-	}
 
 	.artist-name {
 		color: #999;

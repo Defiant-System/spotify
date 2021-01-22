@@ -64,7 +64,7 @@ const spotify = {
 					Auth[key] = event[key];
 				}
 				// save token authentication details in app settings
-				window.settings.set("auth", Auth);
+				window.settings.set("auth", Auth, true);
 				// continue
 				Self.content.dispatch({ type: "spotify-authorized" });
 				break;
