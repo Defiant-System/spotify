@@ -64,7 +64,8 @@
 
 				clearInterval(Vars.ticker);
 				Vars.ticker = setInterval(Self.track.bind(Self), 100);
-				
+				// remove center from centered child
+				Self.els.coverflow.find(".center").removeClass("center");
 				// bind event handlers
 				Self.els.coverflow.bind("mousemove mouseup", Self.dispatch);
 				return false;
@@ -122,9 +123,7 @@
 					translateX(${Vars.dir * (Vars.shift + 50) * tween}px)
 					translateZ(${(Vars.dist * tween)}px)
 					rotateY(${(Vars.dir * Vars.angle * tween)}deg)`;
-		images.get(wrap(Vars.center))
-			.addClass("center")
-			.css({ transform, opacity, zIndex: 0 });
+		images.get(wrap(Vars.center)).css({ transform, opacity, zIndex: 0 });
 
 		for (let i=1, half=count>>1; i<=half; ++i) {
 			// right side
@@ -133,9 +132,7 @@
 							translateZ(${Vars.dist}px) rotateY(${Vars.angle}deg)`;
 			opacity = (i === Vars.radius && delta < 0) ? 1 - tween : 1;
 			if (i > Vars.radius) opacity = 0;
-			images.get(wrap(Vars.center + i))
-				.removeClass("center")
-				.css({ transform, opacity, zIndex: -i });
+			images.get(wrap(Vars.center + i)).css({ transform, opacity, zIndex: -i });
 
 			// left side
 			transform = `${alignment}
@@ -143,9 +140,7 @@
 							translateZ(${Vars.dist}px) rotateY(${-Vars.angle}deg)`;
 			opacity = (i === Vars.radius && delta > 0) ? 1 - tween : 1;
 			if (i > Vars.radius) opacity = 0;
-			images.get(wrap(Vars.center - i))
-				.removeClass("center")
-				.css({ transform, opacity, zIndex: -i });
+			images.get(wrap(Vars.center - i)).css({ transform, opacity, zIndex: -i });
 		}
 	},
 	track() {
@@ -170,6 +165,10 @@
 				requestAnimationFrame(this.autoScroll.bind(this));
 			} else {
 				this.scroll(Vars.target);
+
+				let len = Vars.images.length,
+					item = ((len * 10) + (Vars.target / Vars.dim)) % len;
+				Vars.images.get(item).addClass("center")
 			}
 		}
 	}

@@ -113,6 +113,9 @@
 		<xsl:for-each select="./*">
 			<div class="featured cover">
 				<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
+				<xsl:if test="position() = 1">
+					<xsl:attribute name="class">featured cover center</xsl:attribute>
+				</xsl:if>
 				<div class="image">
 					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
 					<i class="icon-player-play">
