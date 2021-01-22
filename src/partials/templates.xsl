@@ -109,9 +109,9 @@
 
 
 <xsl:template name="home-featured">
-	<div class="featured-playlists" data-click="show-featured">
+	<div class="featured-playlists coverflow">
 		<xsl:for-each select="./*">
-			<div class="featured">
+			<div class="featured cover">
 				<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
 				<div class="image">
 					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>

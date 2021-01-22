@@ -59,11 +59,11 @@
 				// load my playlists
 				APP.panel.dispatch({ type: "get-my-playlists" });
 				// connect api player
-				Player.init();
+				// Player.init();
 				// home view
 				window.find(`.top span[data-click="go-home"]`).trigger("click");
 				// first active tab in home view
-				setTimeout(() => window.find(".tabs [data-type='home-browse']").trigger("click"), 100);
+				setTimeout(() => window.find(".tabs [data-type='home-featured']").trigger("click"), 100);
 				
 				// temp
 				// setTimeout(() => {
@@ -544,5 +544,10 @@
 		Body.find(".row.track-playing, .row.active").removeClass("track-playing active");
 		Body.find(`.icon-player-play[data-uri="${Player.playing.trackUri}"]`)
 			.parents(".row").addClass("track-playing active");
+
+		// look for coverflow and init, if needed
+		if (Body.find(".coverflow").length) {
+			APP.coverflow.dispatch({ type: "init-coverflow" });
+		}
 	}
 }

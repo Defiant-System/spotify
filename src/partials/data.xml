@@ -34,7 +34,7 @@
 
 	<Login />
 	<Home />
-	<Featured />
+	<!-- <Featured /> -->
 	<!-- <Playlists /> -->
 	<Favorites />
 	<Categories />
@@ -58,6 +58,21 @@
 	<SearchAlbums />
 	<SearchPlaylists />
 	<SearchGenreArtists />
+
+	<Featured>
+		<i name="Rain Sounds" uri="spotify:playlist:37i9dQZF1DX8ymr6UES7vc" image="https://i.scdn.co/image/ab67706f00000003aba1f07094bd3e98cd0122de"/>
+		<i name="Bedroom Jams" uri="spotify:playlist:37i9dQZF1DX0QKpU3cGsyb" image="https://i.scdn.co/image/ab67706f000000039fec2373847cde79dcdba5b5"/>
+		<i name="Dark &amp; Stormy" uri="spotify:playlist:37i9dQZF1DX2pSTOxoPbx9" image="https://i.scdn.co/image/ab67706f00000003a6e2870c97bde5e2719c20b8"/>
+		<i name="90s Love Songs" uri="spotify:playlist:37i9dQZF1DWXqpDKK4ed9O" image="https://i.scdn.co/image/ab67706f00000003c030f31ac8d5084607e193af"/>
+		<i name="Sleep" uri="spotify:playlist:37i9dQZF1DWZd79rJ6a7lp" image="https://i.scdn.co/image/ab67706f00000003b70e0223f544b1faa2e95ed0"/>
+		<i name="Heart Beats" uri="spotify:playlist:37i9dQZF1DWSRc3WJklgBs" image="https://i.scdn.co/image/ab67706f00000003314724fc7ca36a4fce2f1b6a"/>
+		<i name="Peaceful Piano" uri="spotify:playlist:37i9dQZF1DX4sWSpwq3LiO" image="https://i.scdn.co/image/ab67706f00000003ca5a7517156021292e5663a6"/>
+		<i name="Deep Sleep" uri="spotify:playlist:37i9dQZF1DWYcDQ1hSjOpY" image="https://i.scdn.co/image/ab67706f00000003c601a6a746366286845b8fda"/>
+		<i name="Bedroom Pop" uri="spotify:playlist:37i9dQZF1DXcxvFzl58uP7" image="https://i.scdn.co/image/ab67706f00000003f336332699dd46ae4396e15f"/>
+		<i name="Jazz Rap" uri="spotify:playlist:37i9dQZF1DX8Kgdykz6OKj" image="https://i.scdn.co/image/ab67706f000000035115b9702d26cd841fda7827"/>
+		<i name="Soft Rock" uri="spotify:playlist:37i9dQZF1DX6xOPeSOGone" image="https://i.scdn.co/image/ab67706f000000038f7cea2939220d6a326924fa"/>
+		<i name="Classical Sleep" uri="spotify:playlist:37i9dQZF1DX8Sz1gsYZdwj" image="https://i.scdn.co/image/ab67706f000000038f5b6bf8fd58ce6ab15e037a"/>
+	</Featured>
 
 	<Playlists>
 	    <playlist name="Reggae" total="18" uri="spotify:playlist:0YBFjxvkLsknyCgRA5okUB"/>
