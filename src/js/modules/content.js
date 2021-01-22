@@ -66,13 +66,13 @@
 				setTimeout(() => window.find(".tabs [data-type='home-featured']").trigger("click"), 100);
 				
 				// temp
-				// setTimeout(() => {
-				// 	Self.dispatch({
-				// 		type: "show-artist",
-				// 		uri: "spotify:artist:2wIVse2owClT7go1WT98tk",
-				// 	});
-				// 	setTimeout(() => window.find(".tabs [data-type='show-artist-appears-on']").trigger("click"), 500);
-				// }, 500);
+				setTimeout(() => {
+					Self.dispatch({
+						type: "show-playlist",
+						uri: "spotify:playlist:7gtky4sYYwiuDEQuPpVy4h",
+					});
+					// setTimeout(() => window.find(".tabs [data-type='show-artist-appears-on']").trigger("click"), 500);
+				}, 500);
 
 				// setTimeout(() => window.find(".ctrl-library").trigger("click"), 500);
 				// setTimeout(() => Self.els.body.find(".tabs [data-type='home-favorites']").trigger("click"), 500);

@@ -115,7 +115,7 @@
 		Vars.dir = (delta < 0) ? 1 : -1;
 		tween = -Vars.dir * delta * 2 / Vars.dim;
 		alignment = `translateX(${(Vars.innerWidth - Vars.coverWidth) / 2}px)
-					translateY(${(Vars.innerHeight - Vars.coverHeight) / 2}px)`;
+					translateY(${(Vars.innerHeight - Vars.coverHeight - 20) / 2}px)`;
 
 		// center
 		transform = `${alignment}

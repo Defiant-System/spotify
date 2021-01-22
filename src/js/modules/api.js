@@ -312,7 +312,7 @@
 				// make XML of entries
 				res = $.xmlFromString(`<Playlist name="${plName}" owner="${plOwner}" image="${plImage}">${nodes.join("")}</Playlist>`);
 				// change reference for total + next
-				data = data.playlists;
+				data = data.tracks;
 				break;
 			case "parse-show-category-playlist":
 				data.tracks.items.map(entry => {
