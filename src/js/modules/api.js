@@ -6,7 +6,7 @@
 		// fast references
 		this.apiUrl = "https://api.spotify.com/v1";
 	},
-	requestData(type, params) {
+	async requestData(type, params) {
 		let Self = this,
 			record = window.bluePrint.selectSingleNode(`//Records/*[@name="${type}"]`),
 			xDoc = window.bluePrint.selectSingleNode(record.getAttribute("match")),
@@ -22,12 +22,34 @@
 			return Promise.resolve(() => xDoc);
 		}
 
-		return window.fetch(url, { headers })
-					.then(data => {
-						let doc = Self.dispatch({ type: "parse-"+ type, data, params });
-						xDoc.parentNode.replaceChild(doc, xDoc);
-						return doc;
-					});
+		let list = [];
+		await Self.getList({ url, headers, fields, type, params }, list);
+		
+		let data = list.shift();
+		// concat next items into all items
+		list.map(next => data.tracks.items.push(...next.items));
+		
+		let doc = Self.dispatch({ type: "parse-"+ type, data, params });
+		xDoc.parentNode.replaceChild(doc, xDoc);
+		return doc;
+	},
+	getList(opt, list) {
+		let Self = this;
+
+		return new Promise((resolve, reject) => {
+			window.fetch(opt.url, { headers: opt.headers })
+				.then(async data => {
+					let check = Self.dispatch({ ...opt, type: "check-next-"+ opt.type, data });
+					// add result to response list
+					list.push(data);
+
+					if (check.constructor === Object) {
+						await Self.getList({ ...opt, url: check.next }, list);
+					}
+					
+					resolve();
+				});
+		});
 	},
 	getImage(arr) {
 		let img = arr.length ? arr[arr.length-1].url : "";
@@ -37,10 +59,14 @@
 	dispatch(event) {
 		let Self = spotify.api,
 			data = event.data,
+			ret = data.tracks ? data.tracks : data,
 			nodes = [],
 			res,
 			str;
 		switch (event.type) {
+			case "check-next-show-playlist":
+				return ret.next ? { next: ret.next +"&"+ event.fields } : false
+
 			case "parse-search-genre":
 				data.artists.items.map(artist => {
 					let name = artist.name.escapeHtml(),
