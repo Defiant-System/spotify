@@ -17,7 +17,7 @@
 			radius: 5,
 			offset: 0,
 			target: 0,
-			angle: -55,
+			angle: -53,
 			dist: -250,
 			shift: 20,
 			images: [],
@@ -119,27 +119,33 @@
 		// center
 		transform = `${alignment}
 					translateX(${-delta / 2}px)
-					translateX(${Vars.dir * Vars.shift * tween}px)
+					translateX(${Vars.dir * (Vars.shift + 50) * tween}px)
 					translateZ(${(Vars.dist * tween)}px)
 					rotateY(${(Vars.dir * Vars.angle * tween)}deg)`;
-		images.get(wrap(Vars.center)).css({ transform, opacity, zIndex: 0 });
+		images.get(wrap(Vars.center))
+			.addClass("center")
+			.css({ transform, opacity, zIndex: 0 });
 
 		for (let i=1, half=count>>1; i<=half; ++i) {
 			// right side
 			transform = `${alignment}
-							translateX(${Vars.shift + (Vars.dim * i - delta) / 1.75}px)
+							translateX(${Vars.shift + (Vars.dim * i - delta + 100) / 1.75}px)
 							translateZ(${Vars.dist}px) rotateY(${Vars.angle}deg)`;
 			opacity = (i === Vars.radius && delta < 0) ? 1 - tween : 1;
 			if (i > Vars.radius) opacity = 0;
-			images.get(wrap(Vars.center + i)).css({ transform, opacity, zIndex: -i });
+			images.get(wrap(Vars.center + i))
+				.removeClass("center")
+				.css({ transform, opacity, zIndex: -i });
 
 			// left side
 			transform = `${alignment}
-							translateX(${-Vars.shift + (-Vars.dim * i - delta) / 1.75}px)
+							translateX(${-Vars.shift + (-Vars.dim * i - delta - 100) / 1.75}px)
 							translateZ(${Vars.dist}px) rotateY(${-Vars.angle}deg)`;
 			opacity = (i === Vars.radius && delta > 0) ? 1 - tween : 1;
 			if (i > Vars.radius) opacity = 0;
-			images.get(wrap(Vars.center - i)).css({ transform, opacity, zIndex: -i });
+			images.get(wrap(Vars.center - i))
+				.removeClass("center")
+				.css({ transform, opacity, zIndex: -i });
 		}
 	},
 	track() {

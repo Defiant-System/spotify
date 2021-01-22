@@ -109,7 +109,7 @@
 
 
 <xsl:template name="home-featured">
-	<div class="featured-playlists coverflow">
+	<div class="featured-playlists coverflow" data-click="show-featured">
 		<xsl:for-each select="./*">
 			<div class="featured cover">
 				<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
