@@ -99,13 +99,14 @@
 				// setTimeout(() => window.find(".tabs [data-type='home-browse']").trigger("click"), 100);
 				
 				// temp
-				// setTimeout(() => {
-				// 	Self.dispatch({
-				// 		type: "show-artist",
-				// 		uri: "spotify:artist:0vrtC9TrcdezrJZshpwLkg",
-				// 	});
-				// 	// setTimeout(() => window.find(".tabs [data-type='show-artist-appears-on']").trigger("click"), 500);
-				// }, 500);
+				setTimeout(() => {
+					Self.dispatch({
+						type: "show-category-playlist",
+						uri: "spotify:playlist:37i9dQZF1DX0SCimY7Xzdc",
+						target: APP.els.body[0],
+					});
+					// setTimeout(() => window.find(".tabs [data-type='show-artist-appears-on']").trigger("click"), 500);
+				}, 500);
 
 				// setTimeout(() => window.find(".ctrl-library").trigger("click"), 500);
 				// setTimeout(() => Self.els.body.find(".tabs [data-type='home-favorites']").trigger("click"), 500);
@@ -193,7 +194,7 @@
 				break;
 			case "show-category-playlist":
 				el = $(event.target);
-				id = el.data("uri").split(":");
+				id = event.uri ? event.uri.split(":") : el.data("uri").split(":");
 				if (el.hasClass("icon-player-play")) {
 					// ui update
 					el = el.parents(".playlist");

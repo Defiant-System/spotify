@@ -388,6 +388,7 @@
 				data.tracks.items.map(entry => {
 					let name = entry.track.name.escapeHtml(),
 						uri = entry.track.uri,
+						popularity = entry.track.popularity,
 						duration_ms = entry.track.duration_ms,
 						album_name = entry.track.album.name.escapeHtml(),
 						album_uri = entry.track.album.uri,
@@ -399,7 +400,7 @@
 						artists.push(`<artists name="${artist_name}" uri="${artist_uri}"/>`);
 					});
 					// prepare node
-					nodes.push(`<track name="${name}" duration_ms="${duration_ms}" uri="${uri}">
+					nodes.push(`<track name="${name}" popularity="${popularity}" duration_ms="${duration_ms}" uri="${uri}">
 									${artists.join("")}
 									<album name="${album_name}" uri="${album_uri}"/>
 								</track>`);
