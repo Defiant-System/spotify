@@ -28,6 +28,7 @@
 	dispatch(event) {
 		let Self = spotify.coverflow,
 			Vars = Self.vars,
+			dir,
 			cX,
 			el;
 		switch (event.type) {
@@ -46,8 +47,23 @@
 				// bind event handlers
 				Self.els.coverflow.bind("mousedown", Self.dispatch);
 				break;
+			case "coverflow-go":
+				dir = event.dir !== undefined ? event.dir : event.el.hasClass("btn-previous") ? -1 : 1;
+				Vars.target = Vars.offset + (Vars.dim * dir);
+				Vars.timestamp = Date.now();
+				Vars.amplitude = Vars.target - Vars.offset;
+				// remove center from centered child
+				Self.els.coverflow.find(".center").removeClass("center");
+				// unhide buttons
+				Self.els.coverflow.addClass("moving");
+				// trigger animation
+				requestAnimationFrame(Self.autoScroll.bind(Self));
+				break;
 			// native events
 			case "mousedown":
+				el = $(event.target);
+				if (!el.hasClass("cover")) return;
+
 				// prevent default behaviour
 				event.preventDefault();
 				event.stopPropagation();
@@ -66,6 +82,8 @@
 				Vars.ticker = setInterval(Self.track.bind(Self), 100);
 				// remove center from centered child
 				Self.els.coverflow.find(".center").removeClass("center");
+				// unhide buttons
+				Self.els.coverflow.addClass("moving");
 				// bind event handlers
 				Self.els.coverflow.bind("mousemove mouseup", Self.dispatch);
 				return false;
@@ -160,7 +178,7 @@
 		if (Vars.amplitude) {
 			let elapsed = Date.now() - Vars.timestamp,
 				delta = Vars.amplitude * Math.exp(-elapsed / Vars.cTime);
-			if (delta > 4 || delta < -4) {
+			if (delta > 1 || delta < -1) {
 				this.scroll(Vars.target - delta);
 				requestAnimationFrame(this.autoScroll.bind(this));
 			} else {
@@ -169,6 +187,8 @@
 				let len = Vars.images.length,
 					item = ((len * 10) + (Vars.target / Vars.dim)) % len;
 				Vars.images.get(item).addClass("center")
+				// unhide buttons
+				this.els.coverflow.removeClass("moving");
 			}
 		}
 	}

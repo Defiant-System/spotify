@@ -125,6 +125,10 @@
 				<h5><xsl:value-of select="@name"/></h5>
 			</div>
 		</xsl:for-each>
+		<div class="cover-buttons">
+			<span class="btn-previous" data-click="coverflow-go"></span>
+			<span class="btn-next" data-click="coverflow-go"></span>
+		</div>
 	</div>
 </xsl:template>
 

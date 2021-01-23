@@ -1289,12 +1289,14 @@ div[data-area="panel"] {
 			background-position: 50% 50%;
 			border-radius: 5px;
 			display: inline-block;
+			pointer-events: none;
 			width: 100%;
 
 			&:before {
 				content: "";
 				display: block;
 				padding-top: 100%;
+				pointer-events: none;
 			}
 
 			.icon-player-play {
@@ -1328,11 +1330,11 @@ div[data-area="panel"] {
 		h5 {
 			opacity: 0;
 			visibility: hidden;
-			font-size: 21px;
+			font-size: 19px;
 			position: absolute;
 			bottom: -83px;
-			left: -53px;
-			right: -53px;
+			left: -7px;
+			right: -7px;
 			text-align: center;
 			color: #fff;
 		}
@@ -1362,6 +1364,51 @@ div[data-area="panel"] {
 				visibility: visible;
 				transition: opacity 500ms 300ms ease-in-out;
 				pointer-events: none;
+			}
+		}
+	}
+
+	&:hover:not(.moving) {
+		.cover-buttons {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	.cover-buttons {
+		position: absolute;
+		bottom: 19px;
+		left: 50%;
+		width: 350px;
+		height: 31px;
+		border-radius: 31px;
+		transform: translateX(-50%);
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 120ms ease-in-out;
+
+		.btn-previous,
+		.btn-next {
+			background: url(~/icons/icon-chevron-left.png) 6px 55% no-repeat;
+			background-size: 50%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 31px;
+			height: 31px;
+			border-radius: 50%;
+			filter: opacity(.35);
+			transition: opacity 120ms ease-in-out;
+
+			&.btn-next {
+				background-image: url(~/icons/icon-chevron-right.png);
+				background-position: 8px 50%;
+				left: auto;
+				right: 0;
+			}
+
+			&:hover {
+				background-color: rgba(255,255,255,.5);
 			}
 		}
 	}

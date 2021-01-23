@@ -48,7 +48,12 @@
 						break;
 					case 37: // left
 					case 39: // right
-						// if coverflow in view, iterate covers
+						if (Self.els.body.find(".coverflow").length) {
+							APP.coverflow.dispatch({
+								type: "coverflow-go",
+								dir: event.keyCode === 39 ? 1 : -1
+							});
+						}
 						break;
 					case 13: // return
 						if (event.target && event.target.name === "query") {
@@ -105,6 +110,11 @@
 				// setTimeout(() => window.find(".ctrl-library").trigger("click"), 500);
 				// setTimeout(() => Self.els.body.find(".tabs [data-type='home-favorites']").trigger("click"), 500);
 				// setTimeout(() => Self.els.body.find(".category:nth-child(4) .image").trigger("click"), 500);
+				break;
+
+			case "coverflow-go":
+				// forward event
+				APP.coverflow.dispatch(event);
 				break;
 
 			// navigation events
