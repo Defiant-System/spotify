@@ -96,13 +96,13 @@
 				// home view
 				window.find(`.top span[data-click="go-home"]`).trigger("click");
 				// first active tab in home view
-				setTimeout(() => window.find(".tabs [data-type='home-featured']").trigger("click"), 100);
+				// setTimeout(() => window.find(".tabs [data-type='home-browse']").trigger("click"), 100);
 				
 				// temp
 				// setTimeout(() => {
 				// 	Self.dispatch({
-				// 		type: "show-playlist",
-				// 		uri: "spotify:playlist:39MINyDwAaGL9QkudEXxLV",
+				// 		type: "show-artist",
+				// 		uri: "spotify:artist:0vrtC9TrcdezrJZshpwLkg",
 				// 	});
 				// 	// setTimeout(() => window.find(".tabs [data-type='show-artist-appears-on']").trigger("click"), 500);
 				// }, 500);
@@ -519,11 +519,16 @@
 			case "toggle-album":
 				el = $(event.target);
 				type = "show-artist-albums-album";
-				if (el.hasClass("loading") || !el.hasClass("album")) return;
+				if (el.hasClass("loading") || (!el.hasClass("album") && !el.hasClass("icon-player-play"))) return;
 
 				if (el.hasClass("expand")) {
 					el.removeClass("expand");
 				} else if (el.hasClass("icon-player-play")) {
+					// ui update
+					let pEl = el.parents(".album");
+					pEl.parent().find(".album-playing").removeClass("album-playing");
+					pEl.addClass("album-playing");
+
 					id = el.data("uri").split(":");
 					APP.api.requestData(type, { albumId: id[id.length-1], market: "SE" })
 						.then(data => {

@@ -80,6 +80,16 @@
 		switch (event.type) {
 			case "check-next-home-browse":
 				return ret.categories.next ? { next: ret.categories.next +"&"+ event.fields } : false;
+			case "check-next-show-artist":
+			case "check-next-show-artist-top-tracks":
+			case "check-next-show-artist-albums":
+			case "check-next-show-artist-appears-on":
+			case "check-next-show-artist-related":
+			case "check-next-show-artist-albums-album":
+			case "check-next-show-category":
+			case "check-next-show-category-playlists":
+			case "check-next-show-category-playlist":
+			case "check-next-show-album":
 			case "check-next-show-featured":
 			case "check-next-show-playlist":
 				return ret.next ? { next: ret.next +"&"+ event.fields } : false;

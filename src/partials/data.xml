@@ -16,8 +16,8 @@
 		<i name="search-playlists" url="/search?q={query}&amp;type=playlist&amp;market={market}" match="//SearchPlaylists" template="playlists"/>
 		<i name="search-genre" url="/search?q=genre:{id}&amp;type=artist&amp;market={market}" match="//SearchGenreArtists" template="genre-view"/>
 
-		<i name="show-category" url="/browse/categories/{categoryId}" match="//Category" template="category-view"/>
-		<i name="show-category-playlists" url="/browse/categories/{categoryId}/playlists" match="//CategoryPlayLists" template="categories-view"/>
+		<i name="show-category" url="/browse/categories/{categoryId}?limit=50" match="//Category" template="category-view"/>
+		<i name="show-category-playlists" url="/browse/categories/{categoryId}/playlists?limit=50" match="//CategoryPlayLists" template="categories-view"/>
 		<i name="show-category-playlist" url="/playlists/{categoryId}" match="//CategoryPlayList" template="category-playlist-view"/>
 		<i name="show-playlist" url="/playlists/{id}?market={market}" match="//Playlist" template="playlist-view" fields="name,type,uri,owner(display_name),images,tracks(next,total,items(track(name,uri,duration_ms,artists(name,uri),album(name,uri))))"/>
 		<i name="show-album" url="/albums/{id}?market={market}" match="//Album" template="album-view"/>
@@ -26,10 +26,10 @@
 
 		<i name="show-artist" url="/artists/{artistId}" match="//Artist" template="artist-view"/>
 		<i name="show-artist-top-tracks" url="/artists/{artistId}/top-tracks?market={market}" match="//ArtistTopTracks" template="artist-top-tracks"/>
-		<i name="show-artist-albums" url="/artists/{artistId}/albums?market={market}" match="//ArtistAlbums" template="artist-albums"/>
-		<i name="show-artist-appears-on" url="/artists/{artistId}/albums?market={market}" match="//ArtistAppearsOn" template="mixed-albums"/>
+		<i name="show-artist-albums" url="/artists/{artistId}/albums?market={market}&amp;limit=50" match="//ArtistAlbums" template="artist-albums"/>
+		<i name="show-artist-appears-on" url="/artists/{artistId}/albums?market={market}&amp;limit=50" match="//ArtistAppearsOn" template="mixed-albums"/>
 		<i name="show-artist-related" url="/artists/{artistId}/related-artists" match="//ArtistRelated" template="artists"/>
-		<i name="show-artist-albums-album" url="/albums/{albumId}/tracks?market={market}" match="//ArtistAlbumsAlbum" template="artist-album"/>
+		<i name="show-artist-albums-album" url="/albums/{albumId}/tracks?market={market}&amp;limit=50" match="//ArtistAlbumsAlbum" template="artist-album"/>
 	</Records>
 
 	<Login />
