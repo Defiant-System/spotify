@@ -956,25 +956,33 @@ div[data-area="panel"] {
 				.cell {
 					i.icon-clock {
 						margin: 3px 6px -3px 0;
+						pointer-events: none;
 					}
 
 					i.icon-thumb {
 						margin: 3px 8px -3px 0;
+						pointer-events: none;
 					}
 
-					&.sort-desc:after,
-					&.sort-asc:after {
-						content: "";
-						background: url(~/icons/icon-chevron-left.png) 50% 50% no-repeat;
-						position: relative;
-						top: 7px;
-						left: 7px;
-						width: 9px;
-						height: 9px;
-						display: inline-block;
-						vertical-align: top;
-						opacity: .6;
-						transform: rotate(-90deg);
+					&.sort-desc,
+					&.sort-asc {
+						&:after {
+							content: "";
+							background: url(~/icons/icon-chevron-left.png) 50% 50% no-repeat;
+							position: relative;
+							top: 7px;
+							left: 7px;
+							width: 9px;
+							height: 9px;
+							display: inline-block;
+							vertical-align: top;
+							opacity: .6;
+							transform: rotate(-90deg);
+						}
+
+						i.icon-clock {
+							margin-right: -3px;
+						}
 					}
 
 					&.sort-desc:after {
