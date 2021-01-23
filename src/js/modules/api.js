@@ -80,6 +80,7 @@
 		switch (event.type) {
 			case "check-next-home-browse":
 				return ret.categories.next ? { next: ret.categories.next +"&"+ event.fields } : false;
+			case "check-next-show-featured":
 			case "check-next-show-playlist":
 				return ret.next ? { next: ret.next +"&"+ event.fields } : false;
 			case "check-next-home-featured":
