@@ -92,21 +92,21 @@
 				// load my playlists
 				APP.panel.dispatch({ type: "get-my-playlists" });
 				// connect api player
-				// Player.init();
+				Player.init();
 				// home view
 				window.find(`.top span[data-click="go-home"]`).trigger("click");
 				// first active tab in home view
-				// setTimeout(() => window.find(".tabs [data-type='home-browse']").trigger("click"), 100);
+				setTimeout(() => window.find(".tabs [data-type='home-browse']").trigger("click"), 100);
 				
 				// temp
-				setTimeout(() => {
-					Self.dispatch({
-						type: "show-playlist",
-						uri: "spotify:playlist:0YBFjxvkLsknyCgRA5okUB",
-						target: Self.els.body,
-					});
-					// setTimeout(() => window.find(".tabs [data-type='show-artist-appears-on']").trigger("click"), 500);
-				}, 500);
+				// setTimeout(() => {
+				// 	Self.dispatch({
+				// 		type: "show-playlist",
+				// 		uri: "spotify:playlist:0YBFjxvkLsknyCgRA5okUB",
+				// 		target: Self.els.body,
+				// 	});
+				// 	// setTimeout(() => window.find(".tabs [data-type='show-artist-appears-on']").trigger("click"), 500);
+				// }, 500);
 
 				// setTimeout(() => window.find(".ctrl-library").trigger("click"), 500);
 				// setTimeout(() => Self.els.body.find(".tabs [data-type='home-favorites']").trigger("click"), 500);

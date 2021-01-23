@@ -48,7 +48,7 @@
 	<ArtistAppearsOn />
 	<ArtistRelated />
 	<ArtistAlbumsAlbum />
-	<!-- <Playlist /> -->
+	<Playlist />
 	<Compilation />
 	<Album />
 	
@@ -58,82 +58,6 @@
 	<SearchAlbums />
 	<SearchPlaylists />
 	<SearchGenreArtists />
-
-<Playlist name="Reggae" owner="Hakan Bilgin" image="https://mosaic.scdn.co/300/ab67616d0000b2731176d82e5fd70b909eefb89bab67616d0000b2731c40418d1c37d727e8e91b04ab67616d0000b2737afdd5111fbd791d4a7606f2ab67616d0000b27391417aa416807fc59b11b919" total="18">
-    <track name="Do-Ther-Tum (Doo Doo Doo)" duration_ms="359584" uri="spotify:track:2gzVA60TU6hK2gqCIhoWUf">
-        <artists name="Job 2 do" uri="spotify:artist:0lVK4PlZTcw9QWyjIyKj4X"/>
-        <album name="No War" uri="spotify:album:3msy4d1R6YMd6OVSYCtcwM"/>
-    </track>
-    <track name="Redemption Song" duration_ms="233560" uri="spotify:track:26PwuMotZqcczKLHi4Htz3">
-        <artists name="Bob Marley &amp; The Wailers" uri="spotify:artist:2QsynagSdAqZj3U9HgDzjD"/>
-        <album name="Uprising" uri="spotify:album:321q9p7PELvzcFAWxml7VX"/>
-    </track>
-    <track name="Here I Come" duration_ms="217200" uri="spotify:track:4abVwdCy5QUcyI3KS2lMJK">
-        <artists name="Barrington Levy" uri="spotify:artist:5mMuiFhh7faS7qxnTLRA6u"/>
-        <album name="Reggae Anthology: Sweet Reggae Music (1979-84)" uri="spotify:album:55FfXQVWDbB3tEC7L9lvzA"/>
-    </track>
-    <track name="Work Work" duration_ms="184773" uri="spotify:track:2rgYDM3cRzgLLLJDWWdC68">
-        <artists name="Dr. Alban" uri="spotify:artist:6BkcAbUkfIBM4XudxieMq8"/>
-        <album name="Work Work" uri="spotify:album:74sA9b1HU5zG5A3F3vYOWO"/>
-    </track>
-    <track name="Mr. Loverman (feat. Chevelle Franklin)" duration_ms="336466" uri="spotify:track:3Vs5Ez1aRlNVorMwGuaPL1">
-        <artists name="Shabba Ranks" uri="spotify:artist:3j7Sw80qzL2FJlryUhI3wG"/>
-        <artists name="Chevelle Franklin" uri="spotify:artist:1owFk9HCCiomrmEt6k9cqC"/>
-        <album name="Shabba Ranks and Friends" uri="spotify:album:1KpDi7nizptcBm7WrCAWnq"/>
-    </track>
-    <track name="I Shot The Sheriff" duration_ms="279720" uri="spotify:track:5uBKhKWTJ4E47rcLQqu3YH">
-        <artists name="The Wailers" uri="spotify:artist:6uSKeCyQEhvPC2NODgiqFE"/>
-        <album name="Burnin' (Deluxe Edition)" uri="spotify:album:5EZMcYc3xK0rlru83kHpUe"/>
-    </track>
-    <track name="Zungguzungguguzungguzeng" duration_ms="387306" uri="spotify:track:4czopM9AcLjrH4IunzRoBg">
-        <artists name="Yellowman" uri="spotify:artist:6yTNMMqumesCWhMJ47HB2a"/>
-        <album name="Most Wanted Series - Yellowman" uri="spotify:album:7nPRCptBHN7td5mKb6ON3N"/>
-    </track>
-    <track name="Uptown Top Ranking - Remastered" duration_ms="229160" uri="spotify:track:34zWZOSpU2V1ab0PiZCcv4">
-        <artists name="Althea And Donna" uri="spotify:artist:5E8FbSTegbOlYAH4b2rZj2"/>
-        <album name="Uptown Top Ranking" uri="spotify:album:1FWimRgPFwDVyVlHe9EEnP"/>
-    </track>
-    <track name="You Don't Love Me (No, No, No) - Extended Mix" duration_ms="277893" uri="spotify:track:0INtJm8gCJKtNaAYQNVlpZ">
-        <artists name="Dawn Penn" uri="spotify:artist:6mLXvSt7Xxy2r9uBba1O6Z"/>
-        <album name="No, No, No" uri="spotify:album:7DLI0K5q6Gb1vgtlgKSgmU"/>
-    </track>
-    <track name="Could You Be Loved" duration_ms="237000" uri="spotify:track:5O4erNlJ74PIF6kGol1ZrC">
-        <artists name="Bob Marley &amp; The Wailers" uri="spotify:artist:2QsynagSdAqZj3U9HgDzjD"/>
-        <album name="Uprising" uri="spotify:album:321q9p7PELvzcFAWxml7VX"/>
-    </track>
-    <track name="Three Little Birds" duration_ms="180266" uri="spotify:track:6A9mKXlFRPMPem6ygQSt7z">
-        <artists name="Bob Marley &amp; The Wailers" uri="spotify:artist:2QsynagSdAqZj3U9HgDzjD"/>
-        <album name="Exodus (Deluxe Edition)" uri="spotify:album:1vHvJVBK0WnpbYFw4f4UTD"/>
-    </track>
-    <track name="Is This Love" duration_ms="232200" uri="spotify:track:6JRLFiX9NJSoRRKxowlBYr">
-        <artists name="Bob Marley &amp; The Wailers" uri="spotify:artist:2QsynagSdAqZj3U9HgDzjD"/>
-        <album name="Kaya" uri="spotify:album:13dXX35pYjr8FqRla40K2a"/>
-    </track>
-    <track name="One Love / People Get Ready - Medley" duration_ms="172933" uri="spotify:track:2HcyIzVsX45jLIxK7SH2aI">
-        <artists name="Bob Marley &amp; The Wailers" uri="spotify:artist:2QsynagSdAqZj3U9HgDzjD"/>
-        <album name="Exodus (Deluxe Edition)" uri="spotify:album:1vHvJVBK0WnpbYFw4f4UTD"/>
-    </track>
-    <track name="Buffalo Soldier" duration_ms="255840" uri="spotify:track:7BfW1eoDh27W69nxsmRicb">
-        <artists name="Bob Marley &amp; The Wailers" uri="spotify:artist:2QsynagSdAqZj3U9HgDzjD"/>
-        <album name="Confrontation" uri="spotify:album:5Rg4ZSwf1LPCuAMr0msdun"/>
-    </track>
-    <track name="Jamming" duration_ms="211000" uri="spotify:track:4zn0kScuV9Oj28d4g9CQQs">
-        <artists name="Bob Marley &amp; The Wailers" uri="spotify:artist:2QsynagSdAqZj3U9HgDzjD"/>
-        <album name="Exodus (Deluxe Edition)" uri="spotify:album:1vHvJVBK0WnpbYFw4f4UTD"/>
-    </track>
-    <track name="No Woman, No Cry - Live At The Lyceum, London/1975" duration_ms="427800" uri="spotify:track:423hwXFgoN8RYmqLoLuVvY">
-        <artists name="Bob Marley &amp; The Wailers" uri="spotify:artist:2QsynagSdAqZj3U9HgDzjD"/>
-        <album name="Live!" uri="spotify:album:5mvQHYARofQRsOE2cqBzik"/>
-    </track>
-    <track name="Get Up, Stand Up" duration_ms="198160" uri="spotify:track:2Mw8xQJpIDAgrktDXEqxCs">
-        <artists name="The Wailers" uri="spotify:artist:6uSKeCyQEhvPC2NODgiqFE"/>
-        <album name="Burnin'" uri="spotify:album:25WE9xmZIYadg5lhdgscTJ"/>
-    </track>
-    <track name="Murderer" duration_ms="233160" uri="spotify:track:4Qmbc7KFWkKvxBz5KjcA6g">
-        <artists name="Barrington Levy" uri="spotify:artist:5mMuiFhh7faS7qxnTLRA6u"/>
-        <album name="Original Ragga Muffin, Pt.1" uri="spotify:album:5GT7CLKowdpkKRFaiYXfmN"/>
-    </track>
-</Playlist>
 
 	<!-- <Featured>
 		<i name="Rain Sounds" uri="spotify:playlist:37i9dQZF1DX8ymr6UES7vc" image="https://i.scdn.co/image/ab67706f00000003aba1f07094bd3e98cd0122de"/>
