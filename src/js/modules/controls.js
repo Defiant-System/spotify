@@ -142,7 +142,7 @@
 
 				if (event.uri) {
 					// get all uri's below current row
-					let more = event.el.parents(".row:first").nextAll(".row").map(row =>
+					let more = event.el.parents(".row:first").nextAll(".row:not(.local)").map(row =>
 								$(".icon-player-play[data-uri]", row).data("uri"));
 					Player.play([ event.uri, ...more ]);
 				} else {

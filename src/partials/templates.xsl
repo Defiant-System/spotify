@@ -199,6 +199,9 @@
 			<xsl:for-each select="./*">
 				<xsl:sort order="descending" select="@popularity"/>
 				<div class="row">
+					<xsl:if test="@is_local">
+						<xsl:attribute name="class">row local</xsl:attribute>
+					</xsl:if>
 					<div class="cell">
 						<i class="icon-player-play">
 							<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>

@@ -66,13 +66,13 @@
 				setTimeout(() => window.find(".tabs [data-type='home-featured']").trigger("click"), 100);
 				
 				// temp
-				setTimeout(() => {
-					Self.dispatch({
-						type: "show-playlist",
-						uri: "spotify:playlist:7gtky4sYYwiuDEQuPpVy4h",
-					});
-					// setTimeout(() => window.find(".tabs [data-type='show-artist-appears-on']").trigger("click"), 500);
-				}, 500);
+				// setTimeout(() => {
+				// 	Self.dispatch({
+				// 		type: "show-playlist",
+				// 		uri: "spotify:playlist:39MINyDwAaGL9QkudEXxLV",
+				// 	});
+				// 	// setTimeout(() => window.find(".tabs [data-type='show-artist-appears-on']").trigger("click"), 500);
+				// }, 500);
 
 				// setTimeout(() => window.find(".ctrl-library").trigger("click"), 500);
 				// setTimeout(() => Self.els.body.find(".tabs [data-type='home-favorites']").trigger("click"), 500);
@@ -191,6 +191,7 @@
 			case "show-artist":
 				uri = event.uri || event.el.data("uri") || $(event.target).data("uri");
 				id = uri.split(":");
+				// get content data
 				APP.api.requestData(event.type, { artistId: id[id.length-1] })
 					.then(data => {
 						Self.dispatch({ type: "go-to", view: event.type });
@@ -209,6 +210,7 @@
 			case "show-artist-albums":
 				el = event.el.parents(".artist");
 				id = el.data("uri").split(":");
+				// get content data
 				APP.api.requestData(event.type, { artistId: id[id.length-1], market: "SE" })
 					.then(data => {
 						// render view contents
@@ -235,7 +237,7 @@
 					el = el.parents(".featured");
 					el.parent().find(".featured-playing").removeClass("featured-playing");
 					el.addClass("featured-playing");
-
+					// get content data
 					APP.api.requestData(event.type, { id: id[id.length-1], market: "SE" })
 						.then(data => {
 							// get all URI's from playlist and play them
@@ -247,6 +249,13 @@
 							}
 						});
 				} else {
+					target = Self.els.body;
+					if (!target.find(".spotify-loader").length) {
+						// render loading animation
+						render = Self.getRenderProperties("loading");
+						window.render({ ...render, target });
+					}
+					// get content data
 					APP.api.requestData(event.type, { id: id[id.length-1], market: "SE" })
 						.then(data => {
 							Self.dispatch({ type: "go-to", view: event.type });
@@ -268,6 +277,7 @@
 					render = Self.getRenderProperties("loading");
 					window.render({ ...render, target });
 				}
+				// get content data
 				APP.api.requestData(event.type, { country: "SE", locale: "sv_SE" })
 					.then(data => {
 						// save scrollTop of elements
@@ -313,7 +323,7 @@
 				if (!str) return;
 				// start animation
 				target.find(".spotify-loader .anim-circle").addClass("bounce");
-				
+				// get content data
 				APP.api.requestData(event.type, { query: str, market: "SE" })
 					.then(data => {
 						// save scrollTop of elements
@@ -332,6 +342,7 @@
 				break;
 			case "search-genre":
 				id = event.id || event.el.html();
+				// get content data
 				APP.api.requestData(event.type, { id, market: "SE" })
 					.then(data => {
 						// save scrollTop of elements

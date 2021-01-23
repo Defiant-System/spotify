@@ -19,7 +19,7 @@
 		if (fields) url+= "&fields="+ fields.replace(/,/g, "%2C");
 
 		if (xDoc.hasChildNodes()) {
-			return Promise.resolve(() => xDoc);
+			return Promise.resolve(xDoc);
 		}
 
 		let list = [];
@@ -27,7 +27,21 @@
 		
 		let data = list.shift();
 		// concat next items into all items
-		list.map(next => data.tracks.items.push(...next.items));
+		list.map(response => {
+			switch (true) {
+				case !!data.categories:
+					data.categories.items.push(...response.categories.items);
+					break;
+				case !!data.tracks:
+					data.tracks.items.push(...response.items);
+					break;
+				case !!data.items:
+					data.items.push(...response.items);
+					break;
+				default:
+					console.log("What to do?", data, response);
+			}
+		});
 		
 		let doc = Self.dispatch({ type: "parse-"+ type, data, params });
 		xDoc.parentNode.replaceChild(doc, xDoc);
@@ -64,8 +78,10 @@
 			res,
 			str;
 		switch (event.type) {
+			case "check-next-home-browse":
+				return ret.categories.next ? { next: ret.categories.next +"&"+ event.fields } : false;
 			case "check-next-show-playlist":
-				return ret.next ? { next: ret.next +"&"+ event.fields } : false
+				return ret.next ? { next: ret.next +"&"+ event.fields } : false;
 
 			case "parse-search-genre":
 				data.artists.items.map(artist => {
@@ -320,6 +336,11 @@
 						album_name = entry.track.album.name.escapeHtml(),
 						album_uri = entry.track.album.uri,
 						artists = [];
+
+					if (entry.track.is_local) {
+						uri = `" is_local="true`;
+					}
+
 					// prepare artists nodes
 					entry.track.artists.map(artist => {
 						let artist_name = artist.name.escapeHtml(),
