@@ -6,8 +6,8 @@
 		<i name="home" match="//Home" template="home-view"/>
 		<i name="home-browse" url="/browse/categories?country={country}&amp;locale={locale}" match="//Categories" template="home-browse"/>
 		<i name="home-featured" url="/browse/featured-playlists" match="//Featured" template="home-featured"/>
-		<i name="home-favorites" url="/me/top/tracks" match="//Favorites" template="playlist"/>
-		<i name="home-history" url="/me/player/recently-played" match="//Recently" template="playlist"/>
+		<i name="home-favorites" url="/me/top/tracks?limit=50" match="//Favorites" template="playlist"/>
+		<i name="home-history" url="/me/player/recently-played?limit=50" match="//Recently" template="playlist"/>
 
 		<i name="search" match="//Search" template="search-view"/>
 		<i name="search-tracks" url="/search?q={query}&amp;type=track&amp;market={market}" match="//SearchTracks" template="playlist"/>

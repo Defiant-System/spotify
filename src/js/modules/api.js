@@ -82,6 +82,8 @@
 				return ret.categories.next ? { next: ret.categories.next +"&"+ event.fields } : false;
 			case "check-next-show-playlist":
 				return ret.next ? { next: ret.next +"&"+ event.fields } : false;
+			case "check-next-home-favorites":
+			case "check-next-home-history":
 			case "check-next-search-tracks":
 			case "check-next-search-artists":
 			case "check-next-search-albums":
