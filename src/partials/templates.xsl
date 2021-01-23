@@ -661,7 +661,9 @@
 			<div class="artist">
 				<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
 				<div class="image">
-					<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+					<xsl:if test="@image != ''">
+						<xsl:attribute name="style">background-image: url(<xsl:value-of select="@image"/>);</xsl:attribute>
+					</xsl:if>
 					<i class="icon-player-play">
 						<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
 					</i>
