@@ -194,15 +194,15 @@
 	<div class="table">
 		<div class="row head" data-click="sort-list">
 			<div class="cell"></div>
-			<div class="cell">Title</div>
-			<div class="cell">Artist</div>
-			<div class="cell">Album</div>
-			<div class="cell"><i class="icon-clock"></i></div>
+			<div class="cell sortable">Title</div>
+			<div class="cell sortable">Artist</div>
+			<div class="cell sortable">Album</div>
+			<div class="cell sortable"><i class="icon-clock"></i></div>
 		</div>
 		<div class="table-body" data-click="select-track">
 			<xsl:for-each select="./*">
-				<xsl:sort order="descending" select="@popularity"/>
 				<div class="row">
+					<xsl:attribute name="data-pos"><xsl:value-of select="position()"/></xsl:attribute>
 					<xsl:if test="@is_local">
 						<xsl:attribute name="class">row local</xsl:attribute>
 					</xsl:if>
@@ -218,7 +218,7 @@
 					</div>
 					<div class="cell"><xsl:value-of select="@name"/></div>
 					<div class="cell">
-						<xsl:for-each select="./artists">
+						<xsl:for-each select="artists">
 							<span class="track-artist">
 								<xsl:attribute name="data-uri"><xsl:value-of select="@uri"/></xsl:attribute>
 								<xsl:value-of select="@name"/>

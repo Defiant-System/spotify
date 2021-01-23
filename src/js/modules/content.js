@@ -101,8 +101,9 @@
 				// temp
 				setTimeout(() => {
 					Self.dispatch({
-						type: "show-artist",
-						uri: "spotify:artist:1k8VBufn1nBs8LN9n4snc8",
+						type: "show-playlist",
+						uri: "spotify:playlist:0YBFjxvkLsknyCgRA5okUB",
+						target: Self.els.body,
 					});
 					// setTimeout(() => window.find(".tabs [data-type='show-artist-appears-on']").trigger("click"), 500);
 				}, 500);
@@ -428,7 +429,19 @@
 				break;
 			case "sort-list":
 				el = $(event.target);
-				console.log(el);
+				if (!el.hasClass("sortable")) return;
+
+				// reset siblings
+				el.parent().find(".sort-desc, .sort-asc").map(hEl =>
+					(el[0] !== hEl) ? $(hEl).removeClass("sort-desc sort-asc") : null);
+
+				if (el.hasClass("sort-desc")) {
+					el.removeClass("sort-desc").addClass("sort-asc");
+				} else if (el.hasClass("sort-asc")) {
+					el.removeClass("sort-asc");
+				} else {
+					el.addClass("sort-desc");
+				}
 				break;
 			case "play-album":
 				// ui update
