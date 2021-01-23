@@ -40,7 +40,7 @@
 	<Categories />
 	<Category />
 	<CategoryPlayLists />
-	<!-- <CategoryPlayList /> -->
+	<CategoryPlayList />
 	<Recently />
 	<Artist />
 	<ArtistTopTracks />
@@ -59,187 +59,53 @@
 	<SearchPlaylists />
 	<SearchGenreArtists />
 
-	<CategoryPlayList name="SWEDrill" owner="Spotify" image="https://i.scdn.co/image/ab67706f0000000312d4793a4e4bb75c2bfd7107">
-	    <track name="EXTENDO" popularity="0" duration_ms="166285" uri="spotify:track:5Pww1E3L6p0DnY9w8JnpE6">
-	        <artists name="Dizzy" uri="spotify:artist:7lKk7yXNockkDjhb1GCeOy"/>
-	        <album name="EXTENDO" uri="spotify:album:6qzEysGx8jDuzIx4XKAbWg"/>
-	    </track>
-	    <track name="TWIST N TURN" popularity="59" duration_ms="176560" uri="spotify:track:5etoPuEXh6uHZWTc3LBhWT">
-	        <artists name="Naod" uri="spotify:artist:31KGMx2XwpugdUpJzeZOv1"/>
-	        <album name="TWIST N TURN" uri="spotify:album:4SS8POFf8mnfb1Z5t45NtK"/>
-	    </track>
-	    <track name="Scorpio" popularity="52" duration_ms="190985" uri="spotify:track:3GWt9BsgKL5T0wQRobfOEz">
-	        <artists name="23" uri="spotify:artist:2Dor6diK1zw9BEluKBOdoA"/>
-	        <album name="Scorpio" uri="spotify:album:5c4vChOyrLRHrd0Jl0EhI5"/>
-	    </track>
-	    <track name="Tr4p" popularity="40" duration_ms="210206" uri="spotify:track:3ElNNE3PSJGs2rI69EnAVL">
-	        <artists name="Blacky" uri="spotify:artist:4vPryUsOzD7R9daRuvKwFz"/>
-	        <album name="Tr4p" uri="spotify:album:3vyO1FjIn89w55Uac2AoCN"/>
-	    </track>
-	    <track name="NÄRINGSKEDJAN" popularity="51" duration_ms="169514" uri="spotify:track:3scAU86kBSldApcJMpT6sn">
-	        <artists name="GULEED" uri="spotify:artist:1Mw40k757jZuiL0NIJpdO5"/>
-	        <album name="NÄRINGSKEDJAN" uri="spotify:album:3NzKkHz8psrSHTgW8v92CD"/>
-	    </track>
-	    <track name="Yeye" popularity="44" duration_ms="162947" uri="spotify:track:1YWVfffHuUaIeFNQnYdStu">
-	        <artists name="2M" uri="spotify:artist:0gQ38ZwplqsXARPDmNIL9c"/>
-	        <artists name="Ant Wan" uri="spotify:artist:51TXQniEQkYh89tfLjiuSy"/>
-	        <album name="Sos vol. 1" uri="spotify:album:1Wf4XeUXCxQJqdpBrG5KMU"/>
-	    </track>
-	    <track name="TRIANGELDRAMA" popularity="52" duration_ms="232012" uri="spotify:track:0ntVXbLbKbgCesFWS6qRet">
-	        <artists name="Robbz x Brookz" uri="spotify:artist:28Yka7aPiP0TcDk7TYH14h"/>
-	        <artists name="Robbz" uri="spotify:artist:75wlxltp4lLk2HGVZll725"/>
-	        <artists name="Brookz" uri="spotify:artist:1cjddO4yaU13OzgomZYDA7"/>
-	        <album name="TRIANGELDRAMA" uri="spotify:album:64ROjYzOijH4Zb8QlAOEXh"/>
-	    </track>
-	    <track name="Tankarna" popularity="50" duration_ms="170466" uri="spotify:track:2L0hF77EA112IEPmJFMnnr">
-	        <artists name="Jireel" uri="spotify:artist:2EWsHDexsSInArfFkhA2i6"/>
-	        <album name="Tankarna" uri="spotify:album:435LZLI9aJz5XoBqmKrzeD"/>
-	    </track>
-	    <track name="GOONS" popularity="43" duration_ms="152537" uri="spotify:track:2SxoFUbSvs3m6w3ewsMcyo">
-	        <artists name="BANDOW" uri="spotify:artist:6arPEifMs28ehVIDVw256A"/>
-	        <artists name="CS" uri="spotify:artist:3EdQt5r3nf1minlwPGVQpG"/>
-	        <album name="GOONS" uri="spotify:album:6eEIqJgtFVW7rwXVG5TXyS"/>
-	    </track>
-	    <track name="VEM E VEM ?" popularity="43" duration_ms="132214" uri="spotify:track:3tHxZOR9pDLnsKGikqHqd8">
-	        <artists name="Dree Low" uri="spotify:artist:3tNPDodRNuLdezJnTsYOqy"/>
-	        <artists name="P.J" uri="spotify:artist:26SfC2rUkcGiSpZfLtla29"/>
-	        <album name="FLAWLESS 2" uri="spotify:album:2pFhesoVKZP6J560UoakSp"/>
-	    </track>
-	    <track name="KAKTUS" popularity="52" duration_ms="175787" uri="spotify:track:41KBQEGetZ2eoZR7xwcfb2">
-	        <artists name="24K" uri="spotify:artist:4kKkAIpkNWG3XpUIl9yENt"/>
-	        <artists name="Greekazo" uri="spotify:artist:0I0zS0aiq9JeGMBT45x6d8"/>
-	        <album name="KAKTUS" uri="spotify:album:2CefjYkGoGjGuTn4xpoMNy"/>
-	    </track>
-	    <track name="Låg nyckel" popularity="52" duration_ms="206433" uri="spotify:track:5caFTCg1mo8R6ZWbH4pFXc">
-	        <artists name="ODZ" uri="spotify:artist:295SPRt7YTtIPdYoMkkF7K"/>
-	        <artists name="Kayen" uri="spotify:artist:3ntW47aiIFFvi4glmmP8a1"/>
-	        <album name="Skator &amp; Kråkor" uri="spotify:album:17YAwA59t2ivgNWBkML5Hd"/>
-	    </track>
-	    <track name="Party" popularity="0" duration_ms="123333" uri="spotify:track:6qdy6pExVLTuUippfTpAP8">
-	        <artists name="Dauda" uri="spotify:artist:3jvZrCJrN1dTaMPbitet7b"/>
-	        <album name="Party" uri="spotify:album:2iBircQZfS4P81QkPs0u18"/>
-	    </track>
-	    <track name="Hur &amp; När" popularity="54" duration_ms="157714" uri="spotify:track:3eObGKb9JdnmoLTRe3RjPd">
-	        <artists name="Dizzy" uri="spotify:artist:7lKk7yXNockkDjhb1GCeOy"/>
-	        <album name="Hur &amp; När" uri="spotify:album:4ksHVfAkw2iCJrMQGWKXnF"/>
-	    </track>
-	    <track name="Lola" popularity="40" duration_ms="181894" uri="spotify:track:6qFBWwAf43pwz6Rm4k9tug">
-	        <artists name="2M" uri="spotify:artist:0gQ38ZwplqsXARPDmNIL9c"/>
-	        <album name="Lola" uri="spotify:album:0tsSBxIQQaYg44q6LV7agd"/>
-	    </track>
-	    <track name="Claude Makélélé" popularity="29" duration_ms="213698" uri="spotify:track:0IGoPLyUSoA9OSxqdpaE0j">
-	        <artists name="Blacky" uri="spotify:artist:4vPryUsOzD7R9daRuvKwFz"/>
-	        <album name="Claude Makélélé" uri="spotify:album:1jhN60YSMD7TwAjtseKwEY"/>
-	    </track>
-	    <track name="Du Var Inte Där" popularity="24" duration_ms="214129" uri="spotify:track:0nUfkKLmkSchxSsKRDL2aJ">
-	        <artists name="Ivory" uri="spotify:artist:3jmh6dena7pZQpjUnlKcrD"/>
-	        <artists name="MIVAS" uri="spotify:artist:21xJtgcxDrr0ahUS5GIjFG"/>
-	        <artists name="Finess" uri="spotify:artist:4PcgIWHeqqLmAi7kCGiNet"/>
-	        <album name="SKORPIONERNA" uri="spotify:album:0fTZcfMcU4wSEOCGAGLYMZ"/>
-	    </track>
-	    <track name="Life Of Sin" popularity="32" duration_ms="185379" uri="spotify:track:1WZFM1EeLm2aAVMotFSyL6">
-	        <artists name="GULEED" uri="spotify:artist:1Mw40k757jZuiL0NIJpdO5"/>
-	        <artists name="Adam Aden" uri="spotify:artist:3tEZ6bzTrFzApPwyyUlADz"/>
-	        <album name="LUCKY 20" uri="spotify:album:2YTvyVZxequVl2mx9mwyUj"/>
-	    </track>
-	    <track name="UPDATE" popularity="24" duration_ms="164571" uri="spotify:track:5q2GNFXzXJTC67V6Gz6PTU">
-	        <artists name="Nigma" uri="spotify:artist:1nXKebLP3LjQqDhWvXH3Pf"/>
-	        <album name="UPDATE" uri="spotify:album:55xZj8XlwqrP1UepTSU01J"/>
-	    </track>
-	    <track name="Backa" popularity="34" duration_ms="162168" uri="spotify:track:26ixdsQdLCJjc8Y8ZFxRgf">
-	        <artists name="Dizzy" uri="spotify:artist:7lKk7yXNockkDjhb1GCeOy"/>
-	        <album name="Dirty South" uri="spotify:album:3l5jDX3FQ2UwnkXNPJu6qc"/>
-	    </track>
-	    <track name="Majkel Gakson" popularity="41" duration_ms="125700" uri="spotify:track:4xcPHcFH49cG05lNbV5NJw">
-	        <artists name="2M" uri="spotify:artist:0gQ38ZwplqsXARPDmNIL9c"/>
-	        <album name="Majkel Gakson" uri="spotify:album:2RRVHCfdFzu061xOQ0WWKb"/>
-	    </track>
-	    <track name="ZMM" popularity="40" duration_ms="171107" uri="spotify:track:4WjfRbogG7TLlpvnCSMtbg">
-	        <artists name="Robbz x Brookz" uri="spotify:artist:28Yka7aPiP0TcDk7TYH14h"/>
-	        <artists name="Robbz" uri="spotify:artist:75wlxltp4lLk2HGVZll725"/>
-	        <artists name="Brookz" uri="spotify:artist:1cjddO4yaU13OzgomZYDA7"/>
-	        <album name="ZMM" uri="spotify:album:3oJsSBTYvuvJ7cfbUAajHH"/>
-	    </track>
-	    <track name="Kom Till Saken" popularity="40" duration_ms="192000" uri="spotify:track:5e34k5betfXu1SEFT1tx2F">
-	        <artists name="Z.E" uri="spotify:artist:3PtEOX0PJSh7ndOL4tP0NR"/>
-	        <album name="Trilogin" uri="spotify:album:7hLgPEPdMy3294XQrEcV6k"/>
-	    </track>
-	    <track name="Officer Down" popularity="8" duration_ms="216814" uri="spotify:track:2OAgEvwNBdRTlu7LB9eZ7C">
-	        <artists name="$.HARK" uri="spotify:artist:34CPhhOQRe042i9hwaLzhY"/>
-	        <album name="Officer Down" uri="spotify:album:4jQCBDGfy2igaENQqyCYWo"/>
-	    </track>
-	    <track name="90/90" popularity="37" duration_ms="150428" uri="spotify:track:11AsKqjVk7ZgaVKYIYwd1a">
-	        <artists name="Malik" uri="spotify:artist:2qsoFMht5lDvaEfjM84Zew"/>
-	        <album name="90/90" uri="spotify:album:0JYPQX08X4LK4dTI0wJ9vO"/>
-	    </track>
-	    <track name="Sticky" popularity="33" duration_ms="203687" uri="spotify:track:6SYXUrkOMVSy3bUyrDGzVn">
-	        <artists name="JLN" uri="spotify:artist:7CulXDYP40xUKlDHNbz7dr"/>
-	        <album name="Sticky / Andas" uri="spotify:album:0jZN9B6ZPWra88ALlYwnhM"/>
-	    </track>
-	    <track name="Sanzura" popularity="38" duration_ms="151714" uri="spotify:track:57oPJPUTCHkgNXM7pQX2cH">
-	        <artists name="BAWS" uri="spotify:artist:3AJxg1LAMYLSbiTvuoGXgK"/>
-	        <album name="Plata o plomo" uri="spotify:album:09NszuKSaAqlfryrAErmsq"/>
-	    </track>
-	    <track name="Magasinet" popularity="20" duration_ms="185142" uri="spotify:track:4lC7dyTtN2v0gEB0gVfESI">
-	        <artists name="Lavon" uri="spotify:artist:4I8UZmOcDPuE3Q9NoNzm5y"/>
-	        <album name="Magasinet" uri="spotify:album:7jwBMmpFcLr3UyqvcppyFR"/>
-	    </track>
-	    <track name="13 PÅ INSATS" popularity="5" duration_ms="205000" uri="spotify:track:4JiMQPqrcqLB3OfwAqfT0v">
-	        <artists name="Roscoe.T" uri="spotify:artist:6Uqwbf5p5su1uPInXOj1rg"/>
-	        <album name="BLACK DEEP" uri="spotify:album:2E07hKWWdkFeu9BC4ncyVV"/>
-	    </track>
-	    <track name="Paranoid" popularity="6" duration_ms="182730" uri="spotify:track:0CyoTMI4cXVdEToR322h8y">
-	        <artists name="Sju5fyra" uri="spotify:artist:2TBDhJpc9suT9tq7SYRwVA"/>
-	        <album name="Paranoid" uri="spotify:album:63rlYKjwFc9760uzoYrZ9g"/>
-	    </track>
-	    <track name="BADDIE ON ME" popularity="30" duration_ms="184819" uri="spotify:track:3Cg3khJtjjktphK1KxYJd6">
-	        <artists name="Robbz x Brookz" uri="spotify:artist:28Yka7aPiP0TcDk7TYH14h"/>
-	        <artists name="Robbz" uri="spotify:artist:75wlxltp4lLk2HGVZll725"/>
-	        <artists name="Brookz" uri="spotify:artist:1cjddO4yaU13OzgomZYDA7"/>
-	        <album name="BADDIE ON ME" uri="spotify:album:1bYkXTwEexOLBufyPpUOou"/>
-	    </track>
-	    <track name="MAD MAX" popularity="48" duration_ms="150895" uri="spotify:track:6MPF778VwQIQT65G6sJUMn">
-	        <artists name="BAWS" uri="spotify:artist:3AJxg1LAMYLSbiTvuoGXgK"/>
-	        <album name="MAD MAX" uri="spotify:album:1HapjEhWaZjIY8iXZPSkaA"/>
-	    </track>
-	    <track name="BLACK DEMONS" popularity="24" duration_ms="202000" uri="spotify:track:3oFUj5rnPGKs0jJzqgjHVd">
-	        <artists name="Roscoe.T" uri="spotify:artist:6Uqwbf5p5su1uPInXOj1rg"/>
-	        <album name="BLACK DEEP" uri="spotify:album:2E07hKWWdkFeu9BC4ncyVV"/>
-	    </track>
-	</CategoryPlayList>
+	<!-- <Featured>
+		<i name="Rain Sounds" uri="spotify:playlist:37i9dQZF1DX8ymr6UES7vc" image="https://i.scdn.co/image/ab67706f00000003aba1f07094bd3e98cd0122de"/>
+		<i name="Bedroom Jams" uri="spotify:playlist:37i9dQZF1DX0QKpU3cGsyb" image="https://i.scdn.co/image/ab67706f000000039fec2373847cde79dcdba5b5"/>
+		<i name="Dark &amp; Stormy" uri="spotify:playlist:37i9dQZF1DX2pSTOxoPbx9" image="https://i.scdn.co/image/ab67706f00000003a6e2870c97bde5e2719c20b8"/>
+		<i name="90s Love Songs" uri="spotify:playlist:37i9dQZF1DWXqpDKK4ed9O" image="https://i.scdn.co/image/ab67706f00000003c030f31ac8d5084607e193af"/>
+		<i name="Sleep" uri="spotify:playlist:37i9dQZF1DWZd79rJ6a7lp" image="https://i.scdn.co/image/ab67706f00000003b70e0223f544b1faa2e95ed0"/>
+		<i name="Heart Beats" uri="spotify:playlist:37i9dQZF1DWSRc3WJklgBs" image="https://i.scdn.co/image/ab67706f00000003314724fc7ca36a4fce2f1b6a"/>
+		<i name="Peaceful Piano" uri="spotify:playlist:37i9dQZF1DX4sWSpwq3LiO" image="https://i.scdn.co/image/ab67706f00000003ca5a7517156021292e5663a6"/>
+		<i name="Deep Sleep" uri="spotify:playlist:37i9dQZF1DWYcDQ1hSjOpY" image="https://i.scdn.co/image/ab67706f00000003c601a6a746366286845b8fda"/>
+		<i name="Bedroom Pop" uri="spotify:playlist:37i9dQZF1DXcxvFzl58uP7" image="https://i.scdn.co/image/ab67706f00000003f336332699dd46ae4396e15f"/>
+		<i name="Jazz Rap" uri="spotify:playlist:37i9dQZF1DX8Kgdykz6OKj" image="https://i.scdn.co/image/ab67706f000000035115b9702d26cd841fda7827"/>
+		<i name="Soft Rock" uri="spotify:playlist:37i9dQZF1DX6xOPeSOGone" image="https://i.scdn.co/image/ab67706f000000038f7cea2939220d6a326924fa"/>
+		<i name="Classical Sleep" uri="spotify:playlist:37i9dQZF1DX8Sz1gsYZdwj" image="https://i.scdn.co/image/ab67706f000000038f5b6bf8fd58ce6ab15e037a"/>
+	</Featured> -->
 
 	<Playlists>
-		<playlist name="Reggae" total="18" uri="spotify:playlist:0YBFjxvkLsknyCgRA5okUB"/>
-		<playlist name="70s, 80s" total="183" uri="spotify:playlist:1EV7WsOrLMPAEleP87ymge"/>
-		<playlist name="Jazz &amp; Blues" total="11" uri="spotify:playlist:7w1DAWuN5O4fxte4KTxKtS"/>
-		<playlist name="chillout 2" total="63" uri="spotify:playlist:62zCM9ct8YHVhoIoQK9uS0"/>
-		<playlist name="Chillout" total="247" uri="spotify:playlist:7gtky4sYYwiuDEQuPpVy4h"/>
-		<playlist name="Friday" total="41" uri="spotify:playlist:2JeKDjHo6yOjlMFtqup1kW"/>
-		<playlist name="Gillat från Radio" total="6" uri="spotify:playlist:6k8eJCv0MeFLEi7TVqQNov"/>
-		<playlist name="My Shazam Tracks" total="44" uri="spotify:playlist:3RUWKayNhOpGgII1qGaDku"/>
-		<playlist name="Sv Klassiker" total="48" uri="spotify:playlist:2rTxMBQybX5uOyU2PCIc3Z"/>
-		<playlist name="barnsligt" total="17" uri="spotify:playlist:5zLWxDllZo89tXKn19KR6u"/>
-		<playlist name="Starred" total="178" uri="spotify:playlist:39MINyDwAaGL9QkudEXxLV"/>
-		<playlist name="old" total="585" uri="spotify:playlist:4Wqhmyri54LKWet5NmrIRY"/>
-		<playlist name="Sv. Hiphop" total="135" uri="spotify:playlist:2e9yekr878NhVFJCjrkiuE"/>
-		<playlist name="Hiphop" total="232" uri="spotify:playlist:16txH6lVSFDwMg3NYrFxkX"/>
-		<playlist name="Turkisk Hiphop" total="119" uri="spotify:playlist:3NaZmbyJAdJVPQbLBRzjGa"/>
-		<playlist name="Progressive Trance" total="54" uri="spotify:playlist:37XOUU0mha2gy7GEN3LrvQ"/>
-		<playlist name="Turkisk" total="165" uri="spotify:playlist:2EqLEgwEGGbgwap4YspcNe"/>
-		<playlist name="Rock" total="173" uri="spotify:playlist:763PqUyTqamIHfqBEo6njf"/>
-		<playlist name="House" total="28" uri="spotify:playlist:450z5I1Gq8dpruVfK50IgR"/>
-		<playlist name="Workout" total="51" uri="spotify:playlist:0450GuLKsqbxVqLVi752yk"/>
-		<playlist name="Trance" total="103" uri="spotify:playlist:6DoFImL7d0lbdSCz98XIZi"/>
-		<playlist name="Dubstep" total="33" uri="spotify:playlist:3rgJngKwr5uGtZkWY0kQuS"/>
-		<playlist name="Missy Elliot" total="44" uri="spotify:playlist:6DCNmWjf3qIBuxSHogu8n1"/>
-		<playlist name="Slow" total="59" uri="spotify:playlist:4tH6f4B8zvuaLvoTeZpgXT"/>
-		<playlist name="Michael Jackson" total="22" uri="spotify:playlist:5k8kBQhzyWYPeAO1SZZoRR"/>
-		<playlist name="Elektropop" total="61" uri="spotify:playlist:2nwBooJnHcXrh98BjonN4T"/>
-		<playlist name="M.I.A." total="21" uri="spotify:playlist:5c4oVxhBLwtjvvfTVqm1ch"/>
-		<playlist name="Breakbeat" total="80" uri="spotify:playlist:6xWd79GDCBJZXfy26Jb8tu"/>
-		<playlist name="Popular" total="181" uri="spotify:playlist:3CRZdgg5VLQ1lEOdAXDHSC"/>
-		<playlist name="Dancefloor" total="215" uri="spotify:playlist:1pxfl3n3Qgy2WJA4cW5E2v"/>
-		<playlist name="Classical" total="30" uri="spotify:playlist:5Y9APuhr7vOcni8GHPUM5I"/>
-		<playlist name="Softish" total="252" uri="spotify:playlist:6FpV2aDWM0HKWqJ7osczSN"/>
+	    <playlist name="Reggae" total="18" uri="spotify:playlist:0YBFjxvkLsknyCgRA5okUB"/>
+	    <playlist name="70s, 80s" total="183" uri="spotify:playlist:1EV7WsOrLMPAEleP87ymge"/>
+	    <playlist name="Jazz &amp; Blues" total="11" uri="spotify:playlist:7w1DAWuN5O4fxte4KTxKtS"/>
+	    <playlist name="chillout 2" total="63" uri="spotify:playlist:62zCM9ct8YHVhoIoQK9uS0"/>
+	    <playlist name="Chillout" total="247" uri="spotify:playlist:7gtky4sYYwiuDEQuPpVy4h"/>
+	    <playlist name="Friday" total="41" uri="spotify:playlist:2JeKDjHo6yOjlMFtqup1kW"/>
+	    <playlist name="Gillat från Radio" total="6" uri="spotify:playlist:6k8eJCv0MeFLEi7TVqQNov"/>
+	    <playlist name="My Shazam Tracks" total="44" uri="spotify:playlist:3RUWKayNhOpGgII1qGaDku"/>
+	    <playlist name="Sv Klassiker" total="48" uri="spotify:playlist:2rTxMBQybX5uOyU2PCIc3Z"/>
+	    <playlist name="barnsligt" total="17" uri="spotify:playlist:5zLWxDllZo89tXKn19KR6u"/>
+	    <playlist name="Starred" total="178" uri="spotify:playlist:39MINyDwAaGL9QkudEXxLV"/>
+	    <playlist name="old" total="585" uri="spotify:playlist:4Wqhmyri54LKWet5NmrIRY"/>
+	    <playlist name="Sv. Hiphop" total="135" uri="spotify:playlist:2e9yekr878NhVFJCjrkiuE"/>
+	    <playlist name="Hiphop" total="232" uri="spotify:playlist:16txH6lVSFDwMg3NYrFxkX"/>
+	    <playlist name="Turkisk Hiphop" total="119" uri="spotify:playlist:3NaZmbyJAdJVPQbLBRzjGa"/>
+	    <playlist name="Progressive Trance" total="54" uri="spotify:playlist:37XOUU0mha2gy7GEN3LrvQ"/>
+	    <playlist name="Turkisk" total="165" uri="spotify:playlist:2EqLEgwEGGbgwap4YspcNe"/>
+	    <playlist name="Rock" total="173" uri="spotify:playlist:763PqUyTqamIHfqBEo6njf"/>
+	    <playlist name="House" total="28" uri="spotify:playlist:450z5I1Gq8dpruVfK50IgR"/>
+	    <playlist name="Workout" total="51" uri="spotify:playlist:0450GuLKsqbxVqLVi752yk"/>
+	    <playlist name="Trance" total="103" uri="spotify:playlist:6DoFImL7d0lbdSCz98XIZi"/>
+	    <playlist name="Dubstep" total="33" uri="spotify:playlist:3rgJngKwr5uGtZkWY0kQuS"/>
+	    <playlist name="Missy Elliot" total="44" uri="spotify:playlist:6DCNmWjf3qIBuxSHogu8n1"/>
+	    <playlist name="Slow" total="59" uri="spotify:playlist:4tH6f4B8zvuaLvoTeZpgXT"/>
+	    <playlist name="Michael Jackson" total="22" uri="spotify:playlist:5k8kBQhzyWYPeAO1SZZoRR"/>
+	    <playlist name="Elektropop" total="61" uri="spotify:playlist:2nwBooJnHcXrh98BjonN4T"/>
+	    <playlist name="M.I.A." total="21" uri="spotify:playlist:5c4oVxhBLwtjvvfTVqm1ch"/>
+	    <playlist name="Breakbeat" total="80" uri="spotify:playlist:6xWd79GDCBJZXfy26Jb8tu"/>
+	    <playlist name="Popular" total="181" uri="spotify:playlist:3CRZdgg5VLQ1lEOdAXDHSC"/>
+	    <playlist name="Dancefloor" total="215" uri="spotify:playlist:1pxfl3n3Qgy2WJA4cW5E2v"/>
+	    <playlist name="Classical" total="30" uri="spotify:playlist:5Y9APuhr7vOcni8GHPUM5I"/>
+	    <playlist name="Softish" total="252" uri="spotify:playlist:6FpV2aDWM0HKWqJ7osczSN"/>
 	</Playlists>
 </Data>

@@ -555,8 +555,9 @@
 							<xsl:with-param name="ms" select="@duration_ms" />
 						</xsl:call-template></div>
 						<div class="cell">
-							<xsl:value-of select="@popularity"/>
-							<!-- <i class="icon-bars"></i> -->
+							<i class="icon-bars">
+								<xsl:attribute name="style">--clip: inset(0 <xsl:value-of select="31 - floor( 31 * ( @popularity div 100 ) )"/>px 0 0);</xsl:attribute>
+							</i>
 						</div>
 					</div>
 				</xsl:for-each>

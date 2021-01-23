@@ -101,9 +101,8 @@
 				// temp
 				setTimeout(() => {
 					Self.dispatch({
-						type: "show-category-playlist",
-						uri: "spotify:playlist:37i9dQZF1DX0SCimY7Xzdc",
-						target: APP.els.body[0],
+						type: "show-artist",
+						uri: "spotify:artist:1k8VBufn1nBs8LN9n4snc8",
 					});
 					// setTimeout(() => window.find(".tabs [data-type='show-artist-appears-on']").trigger("click"), 500);
 				}, 500);
