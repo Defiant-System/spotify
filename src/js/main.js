@@ -34,23 +34,15 @@ const spotify = {
 	dispatch(event) {
 		let Self = spotify,
 			type,
-			isOn,
 			stamp,
 			old,
 			el;
 		switch (event.type) {
+			// system events
 			case "window.keystroke":
-				if (event.target) {
-					el = $(event.target);
-					// return pressable
-					isOn = el.val().length > 3;
-					el.parent().toggleClass("press-enter", !isOn);
-					// assumes search input
-					if (event.keyCode === 13 && isOn) {
-						Self.content.dispatch({ type: "init-search" });
-					}
-				}
+				Self.content.dispatch(event);
 				break;
+			// oauth events
 			case "oauth-failure":
 				// reset application settings
 				window.settings.clear();
@@ -81,6 +73,7 @@ const spotify = {
 					Self.content.dispatch({ type: "spotify-authorized" });
 				}
 				break;
+			// custom events
 			case "get-refresh-token":
 				defiant.message({ ...event, refresh_token: Auth.refresh_token });
 				break;

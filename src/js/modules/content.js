@@ -31,12 +31,40 @@
 			render,
 			target,
 			item,
+			isOn,
 			str,
 			uri,
 			uEl,
 			row,
 			el;
 		switch (event.type) {
+			// system events
+			case "window.keystroke":
+
+				switch (event.keyCode) {
+					case 38: // up
+					case 40: // down
+						// if table in view, iterate rows
+						break;
+					case 37: // left
+					case 39: // right
+						// if coverflow in view, iterate covers
+						break;
+					case 13: // return
+						if (event.target && event.target.name === "query") {
+							el = $(event.target);
+							// return pressable
+							isOn = el.val().length > 3;
+							el.parent().toggleClass("press-enter", !isOn);
+							// assumes search input
+							if (event.keyCode === 13 && isOn) {
+								Self.dispatch({ type: "init-search" });
+							}
+						}
+						break;
+				}
+
+				break;
 			// login view
 			case "show-login":
 				// render view contents
