@@ -4,8 +4,8 @@
 		<i name="get-my-playlists" url="/me/playlists?offset=0&amp;limit=50" match="//Playlists" template="my-playlists"/>
 
 		<i name="home" match="//Home" template="home-view"/>
-		<i name="home-browse" url="/browse/categories?country={country}&amp;locale={locale}" match="//Categories" template="home-browse"/>
-		<i name="home-featured" url="/browse/featured-playlists" match="//Featured" template="home-featured"/>
+		<i name="home-browse" url="/browse/categories?country={country}&amp;locale={locale}&amp;limit=50" match="//Categories" template="home-browse"/>
+		<i name="home-featured" url="/browse/featured-playlists?limit=50" match="//Featured" template="home-featured"/>
 		<i name="home-favorites" url="/me/top/tracks?limit=50" match="//Favorites" template="playlist"/>
 		<i name="home-history" url="/me/player/recently-played?limit=50" match="//Recently" template="playlist"/>
 
@@ -34,7 +34,7 @@
 
 	<Login />
 	<Home />
-	<!-- <Featured /> -->
+	<Featured />
 	<!-- <Playlists /> -->
 	<Favorites />
 	<Categories />
@@ -59,7 +59,7 @@
 	<SearchPlaylists />
 	<SearchGenreArtists />
 
-	<Featured>
+	<!-- <Featured>
 		<i name="Rain Sounds" uri="spotify:playlist:37i9dQZF1DX8ymr6UES7vc" image="https://i.scdn.co/image/ab67706f00000003aba1f07094bd3e98cd0122de"/>
 		<i name="Bedroom Jams" uri="spotify:playlist:37i9dQZF1DX0QKpU3cGsyb" image="https://i.scdn.co/image/ab67706f000000039fec2373847cde79dcdba5b5"/>
 		<i name="Dark &amp; Stormy" uri="spotify:playlist:37i9dQZF1DX2pSTOxoPbx9" image="https://i.scdn.co/image/ab67706f00000003a6e2870c97bde5e2719c20b8"/>
@@ -72,7 +72,7 @@
 		<i name="Jazz Rap" uri="spotify:playlist:37i9dQZF1DX8Kgdykz6OKj" image="https://i.scdn.co/image/ab67706f000000035115b9702d26cd841fda7827"/>
 		<i name="Soft Rock" uri="spotify:playlist:37i9dQZF1DX6xOPeSOGone" image="https://i.scdn.co/image/ab67706f000000038f7cea2939220d6a326924fa"/>
 		<i name="Classical Sleep" uri="spotify:playlist:37i9dQZF1DX8Sz1gsYZdwj" image="https://i.scdn.co/image/ab67706f000000038f5b6bf8fd58ce6ab15e037a"/>
-	</Featured>
+	</Featured> -->
 
 	<Playlists>
 	    <playlist name="Reggae" total="18" uri="spotify:playlist:0YBFjxvkLsknyCgRA5okUB"/>

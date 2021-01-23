@@ -48,6 +48,9 @@
 				Self.els.coverflow.bind("mousedown", Self.dispatch);
 				break;
 			case "coverflow-go":
+				// ignore if already animating
+				if (Self.els.coverflow.hasClass("moving")) return;
+
 				dir = event.dir !== undefined ? event.dir : event.el.hasClass("btn-previous") ? -1 : 1;
 				Vars.target = Vars.offset + (Vars.dim * dir);
 				Vars.timestamp = Date.now();
