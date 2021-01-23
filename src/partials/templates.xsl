@@ -199,7 +199,7 @@
 			<div class="cell sortable">Album</div>
 			<div class="cell sortable"><i class="icon-clock"></i></div>
 		</div>
-		<div class="table-body" data-click="select-track">
+		<div class="table-body" data-click="select-track" data-dbl-click="track-double-click">
 			<xsl:for-each select="./*">
 				<div class="row">
 					<xsl:attribute name="data-pos"><xsl:value-of select="position()"/></xsl:attribute>
@@ -326,7 +326,7 @@
 					<div class="cell"><i class="icon-clock"></i></div>
 					<div class="cell"><i class="icon-thumb"></i></div>
 				</div>
-				<div class="table-body" data-click="select-track">
+				<div class="table-body" data-click="select-track" data-dbl-click="track-double-click">
 					<xsl:for-each select="./*">
 						<xsl:sort order="ascending" select="@_index"/>
 						<div class="row">
@@ -399,7 +399,7 @@
 					<div class="cell">Artist</div>
 					<div class="cell"><i class="icon-clock"></i></div>
 				</div>
-				<div class="table-body" data-click="select-track">
+				<div class="table-body" data-click="select-track" data-dbl-click="track-double-click">
 					<xsl:for-each select="./*">
 						<xsl:sort order="ascending" select="@_index"/>
 						<div class="row">
@@ -470,7 +470,7 @@
 					<div class="cell">Title</div>
 					<div class="cell"><i class="icon-clock"></i></div>
 				</div>
-				<div class="table-body" data-click="select-track">
+				<div class="table-body" data-click="select-track" data-dbl-click="track-double-click">
 					<xsl:for-each select="./*">
 						<xsl:sort order="ascending" select="@_index"/>
 						<div class="row">
@@ -536,7 +536,7 @@
 				<div class="cell"><i class="icon-clock"></i></div>
 				<div class="cell"><i class="icon-thumb"></i></div>
 			</div>
-			<div class="table-body" data-click="select-track">
+			<div class="table-body" data-click="select-track" data-dbl-click="track-double-click">
 				<xsl:for-each select="./track">
 					<div class="row">
 						<div class="cell">
@@ -626,7 +626,7 @@
 			<div class="cell">Title</div>
 			<div class="cell"><i class="icon-clock"></i></div>
 		</div>
-		<div class="table-body" data-click="select-track">
+		<div class="table-body" data-click="select-track" data-dbl-click="track-double-click">
 			<xsl:for-each select="./*">
 				<div class="row">
 					<div class="cell">

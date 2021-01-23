@@ -530,6 +530,10 @@
 				uri = el.data("uri");
 				Self.dispatch({ type: "show-playlist", uri });
 				break;
+			case "track-double-click":
+				el = $(event.target).parents(".row");
+				el.find(".icon-player-play").trigger("click");
+				break;
 			case "select-track":
 				el = $(event.target);
 				if (el[0] === event.el[0]) return;
