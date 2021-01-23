@@ -90,8 +90,10 @@
 			case "check-next-show-category-playlists":
 			case "check-next-show-category-playlist":
 			case "check-next-show-album":
+			case "check-next-show-compilation":
 			case "check-next-show-featured":
 			case "check-next-show-playlist":
+			case "check-next-get-my-playlists":
 				return ret.next ? { next: ret.next +"&"+ event.fields } : false;
 			case "check-next-home-featured":
 			case "check-next-home-favorites":

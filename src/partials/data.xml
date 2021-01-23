@@ -10,11 +10,11 @@
 		<i name="home-history" url="/me/player/recently-played?limit=50" match="//Recently" template="playlist"/>
 
 		<i name="search" match="//Search" template="search-view"/>
-		<i name="search-tracks" url="/search?q={query}&amp;type=track&amp;market={market}" match="//SearchTracks" template="playlist"/>
-		<i name="search-artists" url="/search?q={query}&amp;type=artist&amp;market={market}" match="//SearchArtists" template="artists"/>
-		<i name="search-albums" url="/search?q={query}&amp;type=album&amp;market={market}" match="//SearchAlbums" template="mixed-albums"/>
-		<i name="search-playlists" url="/search?q={query}&amp;type=playlist&amp;market={market}" match="//SearchPlaylists" template="playlists"/>
-		<i name="search-genre" url="/search?q=genre:{id}&amp;type=artist&amp;market={market}" match="//SearchGenreArtists" template="genre-view"/>
+		<i name="search-tracks" url="/search?q={query}&amp;type=track&amp;market={market}}&amp;limit=30" match="//SearchTracks" template="playlist"/>
+		<i name="search-artists" url="/search?q={query}&amp;type=artist&amp;market={market}}&amp;limit=30" match="//SearchArtists" template="artists"/>
+		<i name="search-albums" url="/search?q={query}&amp;type=album&amp;market={market}}&amp;limit=30" match="//SearchAlbums" template="mixed-albums"/>
+		<i name="search-playlists" url="/search?q={query}&amp;type=playlist&amp;market={market}}&amp;limit=30" match="//SearchPlaylists" template="playlists"/>
+		<i name="search-genre" url="/search?q=genre:{id}&amp;type=artist&amp;market={market}}&amp;limit=30" match="//SearchGenreArtists" template="genre-view"/>
 
 		<i name="show-category" url="/browse/categories/{categoryId}?limit=50" match="//Category" template="category-view"/>
 		<i name="show-category-playlists" url="/browse/categories/{categoryId}/playlists?limit=50" match="//CategoryPlayLists" template="categories-view"/>
@@ -35,7 +35,7 @@
 	<Login />
 	<Home />
 	<Featured />
-	<!-- <Playlists /> -->
+	<Playlists />
 	<Favorites />
 	<Categories />
 	<Category />
@@ -74,7 +74,7 @@
 		<i name="Classical Sleep" uri="spotify:playlist:37i9dQZF1DX8Sz1gsYZdwj" image="https://i.scdn.co/image/ab67706f000000038f5b6bf8fd58ce6ab15e037a"/>
 	</Featured> -->
 
-	<Playlists>
+	<!-- <Playlists>
 	    <playlist name="Reggae" total="18" uri="spotify:playlist:0YBFjxvkLsknyCgRA5okUB"/>
 	    <playlist name="70s, 80s" total="183" uri="spotify:playlist:1EV7WsOrLMPAEleP87ymge"/>
 	    <playlist name="Jazz &amp; Blues" total="11" uri="spotify:playlist:7w1DAWuN5O4fxte4KTxKtS"/>
@@ -107,5 +107,5 @@
 	    <playlist name="Dancefloor" total="215" uri="spotify:playlist:1pxfl3n3Qgy2WJA4cW5E2v"/>
 	    <playlist name="Classical" total="30" uri="spotify:playlist:5Y9APuhr7vOcni8GHPUM5I"/>
 	    <playlist name="Softish" total="252" uri="spotify:playlist:6FpV2aDWM0HKWqJ7osczSN"/>
-	</Playlists>
+	</Playlists> -->
 </Data>
