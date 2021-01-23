@@ -431,17 +431,46 @@
 				el = $(event.target);
 				if (!el.hasClass("sortable")) return;
 
+				let hRow = el.parent(),
+					tBody = hRow.nextAll(".table-body"),
+					tRows = tBody.find(".row"),
+					cIndex = el.index(),
+					matrix = [],
+					order;
+
 				// reset siblings
-				el.parent().find(".sort-desc, .sort-asc").map(hEl =>
+				hRow.find(".sort-desc, .sort-asc").map(hEl =>
 					(el[0] !== hEl) ? $(hEl).removeClass("sort-desc sort-asc") : null);
 
 				if (el.hasClass("sort-desc")) {
 					el.removeClass("sort-desc").addClass("sort-asc");
+					order = "asc";
 				} else if (el.hasClass("sort-asc")) {
 					el.removeClass("sort-asc");
+					order = "pos";
 				} else {
 					el.addClass("sort-desc");
+					order = "desc";
 				}
+				// assemble matrix
+				tRows.map(row => {
+					let rEl = $(row),
+						id = order === "pos" ? rEl.data("pos") : rEl.find(".cell").get(cIndex).html(),
+						htm = row.outerHTML;
+					matrix.push({ id, htm });
+				});
+				// sort matrix
+				matrix.sort((a, b) => {
+					if (a.id > b.id) return -1;
+					if (a.id < b.id) return 1;
+					return 0;
+				});
+				// post-sort fix
+				if (["asc", "pos"].includes(order)) {
+					matrix = matrix.reverse();
+				}
+				// replace rows with sorted rows
+				tBody.html(matrix.map(row => row.htm).join(""));
 				break;
 			case "play-album":
 				// ui update
