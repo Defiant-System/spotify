@@ -100,6 +100,7 @@
 			case "check-next-search-artists":
 			case "check-next-search-albums":
 			case "check-next-search-playlists":
+			case "check-next-search-genre":
 				// dont follow next
 				return false;
 
