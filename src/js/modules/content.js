@@ -142,7 +142,9 @@
 				render = Self.getRenderProperties(event.view);
 				window.render({ ...render, target });
 
-				if (event.view === "search") {
+				if (event.view === "home") {
+					window.find(".tabs [data-type='home-browse']").trigger("click");
+				} else if (event.view === "search") {
 					requestAnimationFrame(() => target.find(`input[name="query"]`).focus());
 				}
 

@@ -1,5 +1,6 @@
 <Data>
 	<Records>
+		<i name="show-login" match="//Home" template="login-view"/>
 		<i name="loading" match="//Home" template="loading-full-view"/>
 		<i name="get-my-playlists" url="/me/playlists?offset=0&amp;limit=50" match="//Playlists" template="my-playlists"/>
 
