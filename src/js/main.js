@@ -7,7 +7,7 @@ window.onSpotifyWebPlaybackSDKReady = () => {};
 @import "modules/player.js";
 
 
-let Auth = window.settings.get("auth") || {};
+let Auth = window.settings.getItem("auth") || {};
 
 const spotify = {
 	init() {
@@ -56,7 +56,7 @@ const spotify = {
 					Auth[key] = event[key];
 				}
 				// save token authentication details in app settings
-				window.settings.set("auth", Auth, true);
+				window.settings.setItem("auth", Auth, true);
 				// continue
 				Self.content.dispatch({ type: "spotify-authorized" });
 				break;
@@ -67,7 +67,7 @@ const spotify = {
 					Auth[key] = event[key];
 				}
 				// save token authentication details in app settings
-				window.settings.set("auth", Auth, true);
+				window.settings.setItem("auth", Auth, true);
 				// in case token expired while app was not opened
 				if (!Self.content.history.stack.length) {
 					Self.content.dispatch({ type: "spotify-authorized" });
