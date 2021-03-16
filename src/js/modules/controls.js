@@ -106,7 +106,7 @@
 									requestAnimationFrame(() => {
 										// Seeker: set animation speed
 										Self.els.track
-											.attr({ style: `--speed: ${timeMs}ms;` })
+											.css({ "--speed": `${timeMs}ms;` })
 											.addClass("do-transition");
 										// Seeker: position 1 second from now
 										Self.els.knob.css({ left: left2 +"%" });
