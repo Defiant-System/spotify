@@ -19,6 +19,9 @@
 		<meta name="style" value="src/css/main.less"/>
 		<meta name="content" value="src/partials/content.htm"/>
 		<meta name="xsl" value="src/partials/templates.xsl"/>
+		<meta name="requires">
+			<entry id="oauth" description="'oauth-credentials.json' is required for Spotify API."/>
+		</meta>
 
 		@import "src/partials/menubar.xml"
 	</Head>
