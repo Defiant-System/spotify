@@ -64,7 +64,7 @@
 <xsl:template name="home-view">
 	<section class="home">
 		<div class="home-head">
-			<i class="icon-home"></i>
+			<i class="icon-head-home"></i>
 			<h2>Home</h2>
 		</div>
 
@@ -365,7 +365,7 @@
 <xsl:template name="genre-view">
 	<section class="genre">
 		<div class="genre-head">
-			<i class="icon-genre"></i>
+			<i class="icon-head-genre"></i>
 			<h2>Genre: <xsl:value-of select="@genre"/></h2>
 		</div>
 		<div class="view-body">

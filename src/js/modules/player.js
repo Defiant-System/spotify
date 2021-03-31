@@ -20,13 +20,8 @@ const Player = {
 		"player_state_changed ready not_ready".split(" ")
 			.map(type => this._player.addListener(type, event => this.dispatch({ ...event, type })));
 
-		// _playerect to the player
-		this._player.connect()
-			.then(async success => {
-				let value = await this._player.getVolume();
-				// update volume control
-				spotify.volume.dispatch({ type: "set-volume", value });
-			});
+		// connect to the player
+		this._player.connect();
 	},
 	dispatch(event) {
 		let APP = spotify;
@@ -62,6 +57,12 @@ const Player = {
 			case "ready":
 				// Ready with Device ID
 				this.deviceID = event.device_id;
+
+				requestAnimationFrame(() => 
+					this._player.getVolume()
+						.then(value => 
+							// update volume control
+							spotify.volume.dispatch({ type: "set-volume", value })));
 				break;
 			case "not_ready":
 				// Device ID has gone offline

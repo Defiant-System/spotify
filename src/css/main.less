@@ -114,8 +114,10 @@ i[class^="icon-"] {
 	opacity: .3;
 	transition: opacity 200ms ease-in-out;
 
+	&.icon-head-home   { background-image: url(~/icons/icon-head-home.png); }
+	&.icon-head-genre  { background-image: url(~/icons/icon-head-genre.png); }
+	
 	&.icon-home     { background-image: url(~/icons/icon-home.png); }
-	&.icon-genre    { background-image: url(~/icons/icon-genre.png); }
 	&.icon-browse   { background-image: url(~/icons/icon-browse.png); }
 	&.icon-radio    { background-image: url(~/icons/icon-radio.png); }
 	&.icon-queue    { background-image: url(~/icons/icon-queue.png); }
@@ -868,7 +870,7 @@ div[data-area="panel"] {
 			&.icon-bars {
 				position: relative;
 				top: 7px;
-				width: 31px;
+				width: 32px;
 				height: 9px;
 
 				&:after {
@@ -1484,8 +1486,8 @@ div[data-area="panel"] {
 		user-select: none;
 		white-space: nowrap;
 
-		.icon-genre,
-		.icon-home {
+		.icon-head-genre,
+		.icon-head-home {
 			width: 29px;
 			height: 29px;
 			filter: grayscale(100%);
@@ -1671,7 +1673,7 @@ div[data-area="panel"] {
 
 			&:focus,
 			&:active {
-				box-shadow: 0 0 0;
+				box-shadow: 0 0 0 2px #333;
 			}
 
 			&::-webkit-input-placeholder {

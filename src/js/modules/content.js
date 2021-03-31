@@ -55,12 +55,10 @@
 							});
 						}
 						break;
-					case 13: // return
+					case 13: // return					
 						if (event.target && event.target.name === "query") {
 							el = $(event.target);
-							// return pressable
 							isOn = el.val().length > 3;
-							el.parent().toggleClass("press-enter", !isOn);
 							// assumes search input
 							if (event.keyCode === 13 && isOn) {
 								Self.dispatch({ type: "init-search" });
@@ -68,7 +66,12 @@
 						}
 						break;
 				}
-
+				if (event.target && event.target.name === "query") {
+					el = $(event.target);
+					// return pressable
+					isOn = el.val().length > 3;
+					el.parent().toggleClass("press-enter", !isOn);
+				}
 				break;
 			// login view
 			case "show-login":
@@ -109,7 +112,7 @@
 				// }, 500);
 
 				// setTimeout(() => window.find(".ctrl-library").trigger("click"), 500);
-				// setTimeout(() => Self.els.body.find(".tabs [data-type='home-favorites']").trigger("click"), 500);
+				// setTimeout(() => Self.els.body.find(".tabs [data-type='home-history']").trigger("click"), 500);
 				// setTimeout(() => Self.els.body.find(".category:nth-child(4) .image").trigger("click"), 500);
 				break;
 

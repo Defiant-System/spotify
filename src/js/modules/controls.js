@@ -96,6 +96,7 @@
 						if (!Self.drag) {
 							let left1 = (state.position / state.duration) * 100,
 								left2 = (Math.min(state.position + timeMs, state.duration) / state.duration) * 100;
+
 							// Seeker
 							requestAnimationFrame(() => {
 								// Seeker: current position
@@ -106,7 +107,7 @@
 									requestAnimationFrame(() => {
 										// Seeker: set animation speed
 										Self.els.track
-											.css({ "--speed": `${timeMs}ms;` })
+											.css({ "--speed": `${timeMs}ms` })
 											.addClass("do-transition");
 										// Seeker: position 1 second from now
 										Self.els.knob.css({ left: left2 +"%" });
