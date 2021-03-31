@@ -18,7 +18,7 @@ const spotify = {
 
 		// init sub modules
 		Object.keys(this).filter(i => this[i].init).map(i => this[i].init());
-		
+
 		if (Auth.access_token) {
 			if (Auth.expires > Date.now()) {
 				this.content.dispatch({ type: "spotify-authorized" });

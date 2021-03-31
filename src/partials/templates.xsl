@@ -25,7 +25,7 @@
 
 <xsl:template name="spotify-loader">
 	<xsl:param name="isActive" select="2"/>
-	<svg class="spotify-loader" viewBox="0 0 500 250" filter="url(#goo)">
+	<svg class="spotify-loader" viewBox="0 0 150 84" filter="url(#goo)">
 		<defs>
 			<filter id="goo">
 				<!-- tympanus.net/codrops/creative-gooey-effects -->
@@ -33,25 +33,29 @@
 				<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -15" result="goo" />
 				<feComposite in="SourceGraphic" in2="goo" operator="atop"/>
 			</filter>
-			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="277.8554" y1="381.3551" x2="278.8395" y2="590.9971" gradientTransform="matrix(1 0 0 -1 -28.3689 610.7189)">
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="103.1866" y1="-445.8939" x2="103.5527" y2="-523.8839" gradientTransform="matrix(1 0 0 1 -28.3689 526.7189)">
 				<stop  offset="0" style="stop-color:#2E3436"/>
 				<stop  offset="1" style="stop-color:#555753"/>
 			</linearGradient>
-			<circle class="st0" cx="250" cy="125" r="103.6"/>
-			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="277.4475" y1="384.1911" x2="279.3219" y2="590.7258" gradientTransform="matrix(1 0 0 -1 -28.3689 610.7189)">
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="103.0261" y1="-446.949" x2="103.7234" y2="-523.7831" gradientTransform="matrix(1 0 0 1 -28.3689 526.7189)">
 				<stop  offset="0" style="stop-color:#23CF5F"/>
 				<stop  offset="1" style="stop-color:#60FF98"/>
 			</linearGradient>
 		</defs>
-		<circle class="anim-circle" fill="url(#SVGID_2_)" cy="125" cx="250" r="69">
+		<circle class="anim-circle" fill="url(#SVGID_2_)" cy="42" cx="75" r="21">
 			<xsl:if test="$isActive = 2">
 				<xsl:attribute name="class">anim-circle bounce</xsl:attribute>
 			</xsl:if>
 		</circle>
 		<g>
-			<circle fill="url(#SVGID_2_)" cy="125" cx="250" r="110"/>
-			<circle fill="url(#SVGID_1_)" cy="125" cx="250" r="100"/>
-			<path fill="url(#SVGID_2_)" d="M250,19.9C192,19.9,144.9,67,144.9,125s47,105.1,105.1,105.1S355.1,183,355.1,125S308.1,19.9,250,19.9 M238.5,85.8c24.1,0,49.3,5,67.8,15.8c2.5,1.4,4.2,3.5,4.2,7.4c0,4.4-3.6,7.7-7.7,7.7c-1.6,0-2.6-0.4-4.2-1.2 c-14.8-8.9-37.9-13.8-60.1-13.8c-11.1,0-22.4,1.2-32.7,3.9c-1.2,0.3-2.6,0.9-4.2,0.9c-4.4,0-7.7-3.4-7.7-7.8c0-4.4,2.7-6.9,5.8-7.8 C211.3,87.4,224.3,85.8,238.5,85.8 M236.8,113.9c21.4,0,42.1,5.3,58.5,15.1c2.7,1.6,3.7,3.6,3.7,6.5c0,3.6-2.8,6.5-6.4,6.5 c-1.8,0-2.9-0.7-4.1-1.4c-13.3-7.9-31.8-13.2-52-13.2c-10.4,0-19.3,1.5-26.7,3.4c-1.6,0.5-2.5,0.9-4,0.9c-3.5,0-6.4-2.9-6.4-6.5 c0-3.5,1.7-5.8,5.1-6.9C213.7,115.9,223.1,113.9,236.8,113.9 M237.9,140.7c17.9,0,33.9,4.1,47.7,12.3c2,1.2,3.2,2.4,3.2,5.5 c0,3-2.4,5.1-5.1,5.1c-1.3,0-2.3-0.5-3.4-1.2c-11.8-7.2-26.6-11-42.4-11c-8.8,0-17.6,1.2-25.8,2.8c-1.3,0.3-3,0.8-4.1,0.8 c-3.1,0-5.1-2.5-5.1-5.1c0-3.4,1.9-5.1,4.4-5.6C217.4,142,227.5,140.7,237.9,140.7"/>
+			<circle fill="url(#SVGID_1_)" cx="75" cy="42" r="31"/>
+			<path fill="url(#SVGID_2_)" d="M75,6.1C55.2,6.1,39.1,22.2,39.1,42S55.1,77.9,75,77.9s35.9-16.1,35.9-35.9S94.9,6.1,75,6.1 M71.5,29.7
+				c7.5,0,15.4,1.6,21.2,4.9c0.8,0.4,1.3,1.1,1.3,2.3c0,1.4-1.1,2.4-2.4,2.4c-0.5,0-0.8-0.1-1.3-0.4c-4.6-2.8-11.8-4.3-18.8-4.3
+				c-3.5,0-7,0.4-10.2,1.2c-0.4,0.1-0.8,0.3-1.3,0.3c-1.4,0-2.4-1.1-2.4-2.4c0-1.4,0.8-2.2,1.8-2.4C63,30.2,67,29.7,71.5,29.7
+				 M70.9,38.5c6.7,0,13.1,1.7,18.3,4.7c0.8,0.5,1.2,1.1,1.2,2c0,1.1-0.9,2-2,2c-0.6,0-0.9-0.2-1.3-0.4c-4.2-2.5-9.9-4.1-16.2-4.1
+				c-3.2,0-6,0.5-8.3,1.1c-0.5,0.2-0.8,0.3-1.2,0.3c-1.1,0-2-0.9-2-2c0-1.1,0.5-1.8,1.6-2.2C63.7,39.1,66.7,38.5,70.9,38.5 M71.3,46.9
+				c5.6,0,10.6,1.3,14.9,3.8c0.6,0.4,1,0.7,1,1.7c0,0.9-0.7,1.6-1.6,1.6c-0.4,0-0.7-0.2-1.1-0.4c-3.7-2.2-8.3-3.4-13.2-3.4
+				c-2.7,0-5.5,0.4-8.1,0.9c-0.4,0.1-0.9,0.2-1.3,0.2c-1,0-1.6-0.8-1.6-1.6c0-1.1,0.6-1.6,1.4-1.7C64.9,47.3,68,46.9,71.3,46.9"/>
 		</g>
 	</svg>
 </xsl:template>
