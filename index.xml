@@ -7,7 +7,7 @@
 		<meta name="repository" value="https://github.com/Defiant-System/spotify"/>
 		<meta name="width" value="920" min="660"/>
 		<meta name="height" value="620" min="500"/>
-		<meta name="top" value="150"/>
+		<meta name="top" value="80"/>
 		<meta name="left" value="150"/>
 		<meta name="headless" value="true" theme="dark"/>
 		<meta name="minimize"/>
