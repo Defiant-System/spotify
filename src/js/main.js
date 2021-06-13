@@ -7,7 +7,7 @@ window.onSpotifyWebPlaybackSDKReady = () => {};
 @import "modules/player.js";
 
 
-let Auth = window.settings.getItem("auth") || {};
+let Auth = window.settings.getItem("auth") || {};
 
 const spotify = {
 	init() {
@@ -93,7 +93,7 @@ const spotify = {
 				break;
 			case "select-tab":
 				el = $(event.target);
-				if (!el.parent().hasClass("tabs") || el.hasClass("active")) return;
+				if (!el.parent().hasClass("tabs") || el.hasClass("active")) return;
 
 				old = event.el.find(".active").removeClass("active");
 				if (!old.data("stamp")) {

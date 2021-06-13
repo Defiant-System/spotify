@@ -558,7 +558,7 @@
 
 					// toggle track play
 					APP.controls.dispatch({ type: "player-"+ type, el, uri });
-				} else if (el.data("uri")) {
+				} else if (el.data("uri")) {
 					if (el.data("type")) item = el.data("type");
 					Self.dispatch({ type: "show-"+ item, el, uri });
 				} else {
