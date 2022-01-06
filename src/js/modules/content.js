@@ -75,6 +75,8 @@
 				break;
 			// login view
 			case "show-login":
+				// enable app UI
+				APP.els.body.addClass("not-logged-in");
 				// render view contents
 				target = Self.els.body;
 				render = Self.getRenderProperties(event.type);
@@ -412,7 +414,7 @@
 			// misc events
 			case "set-title":
 				let isPaused = false;
-				if (Player.playing) {
+				if (Player.playing.artistName) {
 					isPaused = Player.playing.paused;
 					// artist
 					Self.els.title.find(".artist-name").html(Player.playing.artistName.join(", "));

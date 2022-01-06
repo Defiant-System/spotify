@@ -72,7 +72,9 @@ const Player = {
 		}
 	},
 	disconnect() {
-		this._player.disconnect();
+		if (this.playing.artistName) {
+			this._player.disconnect();
+		}
 	},
 	play(uris) {
 		let body = JSON.stringify({ uris });

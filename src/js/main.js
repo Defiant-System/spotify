@@ -78,6 +78,11 @@ const spotify = {
 				defiant.message({ ...event, refresh_token: Auth.refresh_token });
 				break;
 			case "disconnect-api":
+				// show login view
+				Self.content.dispatch({ type: "show-login" });
+				if (Player.playing) {
+					Player.pause();
+				}
 				// Disconnect web player
 				Player.disconnect();
 				// reset application settings
