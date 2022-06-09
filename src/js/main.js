@@ -88,8 +88,6 @@ const spotify = {
 				// reset application settings
 				window.settings.clear();
 				break;
-			case "window.open":
-				break;
 			case "open-help":
 				defiant.shell("fs -u '~/help/index.md'");
 				break;
