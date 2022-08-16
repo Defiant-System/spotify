@@ -75,7 +75,7 @@ const spotify = {
 				break;
 			// custom events
 			case "get-refresh-token":
-				defiant.message({ ...event, refresh_token: Auth.refresh_token });
+				karaqu.message({ ...event, refresh_token: Auth.refresh_token });
 				break;
 			case "disconnect-api":
 				// show login view
@@ -89,7 +89,7 @@ const spotify = {
 				window.settings.clear();
 				break;
 			case "open-help":
-				defiant.shell("fs -u '~/help/index.md'");
+				karaqu.shell("fs -u '~/help/index.md'");
 				break;
 			case "close-panel":
 				Self.sidebar.dispatch(event);

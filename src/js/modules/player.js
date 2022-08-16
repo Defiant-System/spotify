@@ -11,7 +11,7 @@ const Player = {
 		
 		// instantiate Spotify Player
 		this._player = new window.Spotify.Player({
-			name: "Defiant Spotify Player",
+			name: "Karaqu Spotify Player",
 			getOAuthToken: cb => cb(Auth.access_token)
 		});
 		
