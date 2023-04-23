@@ -100,8 +100,9 @@
 				Player.init();
 				// home view
 				window.find(`.top span[data-click="go-home"]`).trigger("click");
+				
 				// first active tab in home view
-				setTimeout(() => window.find(".tabs [data-type='home-browse']").trigger("click"), 100);
+				// setTimeout(() => window.find(".tabs [data-type='home-favorites']").trigger("click"), 100);
 				
 				// temp
 				// setTimeout(() => {

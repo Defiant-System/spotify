@@ -36,12 +36,12 @@
 			case "init-coverflow":
 				Self.els.coverflow = Self.els.body.find(".coverflow");
 				Self.vars.images = Self.els.coverflow.find(".cover");
+				console.log( Self.els.coverflow );
 				Self.vars.count = Self.vars.images.length;
 				Self.vars.innerWidth = Self.els.coverflow.width();
 				Self.vars.innerHeight = Self.els.coverflow.height();
-				el = Self.els.coverflow.find(".cover");
-				Self.vars.coverWidth = el.width();
-				Self.vars.coverHeight = el.height();
+				Self.vars.coverWidth = Self.vars.images.width();
+				Self.vars.coverHeight = Self.vars.images.height();
 				// default ui setup
 				Self.scroll(0);
 				// bind event handlers

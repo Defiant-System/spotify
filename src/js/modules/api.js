@@ -53,6 +53,10 @@
 		return new Promise((resolve, reject) => {
 			window.fetch(opt.url, { headers: opt.headers })
 				.then(async data => {
+					if (data.error) {
+						return reject(data.error);
+					}
+
 					let check = Self.dispatch({ ...opt, type: "check-next-"+ opt.type, data });
 					// add result to response list
 					list.push(data);

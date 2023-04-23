@@ -1,4 +1,13 @@
 
+
+// by pass web based API
+window.onSpotifyPlayerAPIReady =
+window.onSpotifyWebPlaybackSDKReady = () => {};
+
+@import "../ext/spotify-player.js";
+
+
+
 const Player = {
 	apiUrl: "https://api.spotify.com/v1",
 	playing: {},
@@ -12,20 +21,20 @@ const Player = {
 		// instantiate Spotify Player
 		this._player = new window.Spotify.Player({
 			name: "Karaqu Spotify Player",
-			getOAuthToken: cb => cb(Auth.access_token)
+			getOAuthToken: cb => cb(Auth.access_token),
 		});
-		
+
 		// event listeners
 		"initialization_error authentication_error account_error playback_error "+
 		"player_state_changed ready not_ready".split(" ")
 			.map(type => this._player.addListener(type, event => this.dispatch({ ...event, type })));
-
+		
 		// connect to the player
 		this._player.connect();
 	},
 	dispatch(event) {
 		let APP = spotify;
-
+		// console.log(event);
 		switch (event.type) {
 			case "initialization_error":
 			case "authentication_error":
@@ -82,16 +91,16 @@ const Player = {
 		fetch(`${this.apiUrl}/me/player/play?device_id=${this.deviceID}`, options);
 	},
 	pause() {
-		this._player.pause();
+		if (this._player) this._player.pause();
 	},
 	resume() {
-		this._player.resume();
+		if (this._player) this._player.resume();
 	},
 	next() {
-		this._player.nextTrack();
+		if (this._player) this._player.nextTrack();
 	},
 	previous() {
-		this._player.previousTrack();
+		if (this._player) this._player.previousTrack();
 	},
 	shuffle() {
 		console.log("shuffle");
@@ -100,9 +109,9 @@ const Player = {
 		console.log("repeat");
 	},
 	seek(value) {
-		this._player.seek(value);
+		if (this._player) this._player.seek(value);
 	},
 	volume(value) {
-		this._player.setVolume(value);
+		if (this._player) this._player.setVolume(value);
 	}
 };

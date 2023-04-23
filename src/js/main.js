@@ -1,13 +1,9 @@
 
-// by pass web based API
-window.onSpotifyPlayerAPIReady =
-window.onSpotifyWebPlaybackSDKReady = () => {};
-
-@import "ext/spotify-player.js";
-@import "modules/player.js";
+@import "./modules/player.js";
 
 
 let Auth = window.settings.getItem("auth") || {};
+
 
 const spotify = {
 	init() {
@@ -18,7 +14,7 @@ const spotify = {
 
 		// init sub modules
 		Object.keys(this).filter(i => this[i].init).map(i => this[i].init());
-
+		
 		if (Auth.access_token) {
 			if (Auth.expires > Date.now()) {
 				this.content.dispatch({ type: "spotify-authorized" });
@@ -37,6 +33,7 @@ const spotify = {
 			stamp,
 			old,
 			el;
+		// console.log(event);
 		switch (event.type) {
 			// system events
 			case "window.keystroke":
@@ -55,6 +52,7 @@ const spotify = {
 					if (key === "type") continue;
 					Auth[key] = event[key];
 				}
+
 				// save token authentication details in app settings
 				window.settings.setItem("auth", Auth, true);
 				// continue
