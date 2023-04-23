@@ -4,9 +4,10 @@
 {
 	init() {
 		// fast references
-		this.els = {
-			body: window.find(".view-body"),
-		};
+		this.els = {};
+
+		// bind event handlers
+		spotify.els.body.on("mousedown", ".coverflow", this.dispatch);
 
 		// defaults
 		this.vars = {
@@ -26,7 +27,8 @@
 		};
 	},
 	dispatch(event) {
-		let Self = spotify.coverflow,
+		let APP = spotify,
+			Self = APP.coverflow,
 			Vars = Self.vars,
 			dir,
 			cX,
@@ -34,18 +36,16 @@
 		switch (event.type) {
 			// custom events
 			case "init-coverflow":
-				Self.els.coverflow = Self.els.body.find(".coverflow");
+				Self.els.coverflow = APP.els.body.find(".coverflow");
 				Self.vars.images = Self.els.coverflow.find(".cover");
-				console.log( Self.els.coverflow );
 				Self.vars.count = Self.vars.images.length;
 				Self.vars.innerWidth = Self.els.coverflow.width();
 				Self.vars.innerHeight = Self.els.coverflow.height();
-				Self.vars.coverWidth = Self.vars.images.width();
-				Self.vars.coverHeight = Self.vars.images.height();
+				el = Self.els.coverflow.find(".cover");
+				Self.vars.coverWidth = el.width();
+				Self.vars.coverHeight = el.height();
 				// default ui setup
 				Self.scroll(0);
-				// bind event handlers
-				Self.els.coverflow.bind("mousedown", Self.dispatch);
 				break;
 			case "coverflow-go":
 				// ignore if already animating
