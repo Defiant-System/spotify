@@ -1,4 +1,5 @@
 
+@import "./modules/test.js";
 @import "./modules/player.js";
 
 
@@ -21,6 +22,10 @@ const spotify = {
 			} else {
 				this.dispatch({ type: "get-refresh-token" });
 			}
+
+			// DEV-ONLY-START
+			Test.init(this);
+			// DEV-ONLY-END
 		} else {
 			this.els.body.addClass("not-logged-in");
 			// login view

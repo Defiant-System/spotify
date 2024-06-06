@@ -24,22 +24,24 @@
 
 		let list = [];
 		await Self.getList({ url, headers, fields, type, params }, list);
-		
+
 		let data = list.shift();
 		// concat next items into all items
 		list.map(response => {
-			switch (true) {
-				case !!data.categories:
-					data.categories.items.push(...response.categories.items);
-					break;
-				case !!data.tracks:
-					data.tracks.items.push(...response.items);
-					break;
-				case !!data.items:
-					data.items.push(...response.items);
-					break;
-				default:
-					console.log("What to do?", data, response);
+			if (Object.keys(response).length) {
+				switch (true) {
+					case !!data.categories:
+						data.categories.items.push(...response.categories.items);
+						break;
+					case !!data.tracks:
+						data.tracks.items.push(...response.items);
+						break;
+					case !!data.items:
+						data.items.push(...response.items);
+						break;
+					default:
+						console.log("What to do?", data, response);
+				}
 			}
 		});
 		
